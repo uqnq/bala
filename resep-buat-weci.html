@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Weci Renyah & Gurih - Dijamin Anti Gagal!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul yang cerah dan menenangkan */
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #80cbc4; /* Garis bawah yang serasi */
+            padding-bottom: 5px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .ingredients ul, .instructions ol {
+            text-align: left;
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .ingredients strong, .instructions strong {
+            color: #004d40; /* Warna teks penting yang lebih gelap */
+        }
+        .note {
+            background-color: #fce4ec; /* Warna catatan yang lembut */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 25px;
+            border-left: 5px solid #e91e63; /* Aksen warna */
+            text-align: left;
+        }
+        .note p {
+            margin: 0;
+            font-style: italic;
+        }
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Weci Renyah dan Gurih</h1>
+        <p>Siapa yang tidak suka jajanan pasar satu ini? Weci atau bakwan sayur adalah camilan favorit banyak orang. Dengan resep ini, Anda bisa membuat weci yang renyah di luar dan lembut di dalam, dengan rasa yang gurih maksimal. Cocok dinikmati kapan saja, baik sebagai teman ngopi sore atau saat berkumpul bersama keluarga.</p>
+
+        <!-- SVG Image -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%" height="auto" aria-labelledby="svgTitle">
+            <title id="svgTitle">Ilustrasi aneka sayuran dan tepung untuk membuat weci</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#80CBC4;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#4DB6AC;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feMerge>
+                        <feMergeNode in="offsetblur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect width="600" height="300" rx="15" fill="#e0f7fa"/>
+            <g transform="translate(20, 30)" filter="url(#shadow)">
+                <!-- Sayuran -->
+                <circle cx="50" cy="100" r="20" fill="#a5d6a7" /> <!-- Wortel -->
+                <path d="M 100 50 Q 120 60 130 80 T 150 120 Q 130 140 110 130 T 90 100 Z" fill="#81c784" /> <!-- Brokoli -->
+                <ellipse cx="200" cy="80" rx="25" ry="15" fill="#c8e6c9" /> <!-- Tauge -->
+                <rect x="250" y="40" width="30" height="60" rx="5" fill="#e6ee9c" /> <!-- Jagung -->
+            </g>
+            <g transform="translate(50, 160)" filter="url(#shadow)">
+                <!-- Tepung & Bumbu -->
+                <path d="M 50 20 L 100 20 L 120 80 L 30 80 Z" fill="#d7ccc8" /> <!-- Mangkuk Tepung -->
+                <text x="75" y="50" font-family="Segoe UI" font-size="12" fill="#4e342e" text-anchor="middle">Tepung</text>
+                <circle cx="180" cy="50" r="15" fill="#ffccbc" /> <!-- Merica -->
+                <text x="180" y="55" font-family="Segoe UI" font-size="10" fill="#b71c1c" text-anchor="middle">!</text> <!-- Cabe -->
+                <circle cx="230" cy="50" r="15" fill="#fff9c4" /> <!-- Garam -->
+            </g>
+            <text x="50%" y="95%" font-family="Segoe UI" font-size="18" fill="#00796b" text-anchor="middle" dominant-baseline="middle">Weci Lezat!</text>
+        </svg>
+
+        <h2>Bahan-bahan Wajib</h2>
+        <div class="ingredients">
+            <ul>
+                <li><strong>Sayuran:</strong></li>
+                <li>1 buah wortel ukuran sedang, iris korek api tipis</li>
+                <li>100 gram tauge, siangi</li>
+                <li>50 gram kol, iris tipis</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>Opsional: jagung manis pipil, buncis iris tipis</li>
+                <li><br></li>
+                <li><strong>Adonan Tepung:</strong></li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>30 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 sendok teh garam</li>
+                <li>½ sendok teh merica bubuk</li>
+                <li>½ sendok teh kaldu bubuk (opsional)</li>
+                <li>¼ sendok teh kunyit bubuk (untuk warna cantik)</li>
+                <li>1 siung bawang putih, haluskan</li>
+                <li>100-150 ml air dingin (sesuaikan kekentalan)</li>
+                <li><br></li>
+                <li><strong>Untuk Menggoreng:</strong></li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <h2>Langkah Membuat Weci Sempurna</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Siapkan Sayuran:</strong> Cuci bersih semua sayuran. Wortel diiris korek api, kol diiris tipis, tauge disiangi, dan daun bawang diiris halus. Campurkan semua sayuran dalam wadah besar.</li>
+                <li><strong>Buat Adonan Tepung:</strong> Dalam mangkuk terpisah, campurkan tepung terigu, tepung beras, garam, merica bubuk, kaldu bubuk (jika pakai), kunyit bubuk, dan bawang putih halus. Aduk rata.</li>
+                <li><strong>Larutkan Tepung:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kental sedang, tidak terlalu encer dan tidak terlalu kental. Kekentalan yang pas akan membuat weci renyah.</li>
+                <li><strong>Campurkan Adonan dan Sayuran:</strong> Masukkan campuran sayuran ke dalam adonan tepung. Aduk perlahan hingga semua sayuran terbalut rata oleh adonan. Pastikan tidak terlalu banyak diaduk agar weci tidak alot.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam wajan dengan api sedang cenderung kecil. Gunakan minyak yang cukup banyak agar weci terendam saat digoreng.</li>
+                <li><strong>Goreng Weci:</strong> Ambil satu sendok sayuran yang sudah berbalut adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga bagian bawah kokoh, lalu balik. Goreng hingga kedua sisi berwarna cokelat keemasan dan matang sempurna. Hindari menggoreng terlalu banyak sekaligus agar suhu minyak tidak turun drastis.</li>
+                <li><strong>Tiriskan:</strong> Angkat weci yang sudah matang dan tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Weci siap dinikmati selagi hangat. Sajikan dengan sambal kecap, saus sambal, atau cabai rawit hijau.</li>
+            </ol>
+        </div>
+
+        <div class="note">
+            <p><strong>Tips Tambahan:</strong> Untuk hasil yang lebih renyah, Anda bisa menambahkan sedikit soda kue (sekitar ¼ sendok teh) ke dalam adonan tepung. Gunakan air es atau air dingin untuk hasil yang lebih crispy. Pastikan minyak sudah benar-benar panas sebelum menggoreng agar weci tidak menyerap banyak minyak.</p>
+        </div>
+
+        <p style="margin-top: 30px; font-size: 0.9em; color: #777;">Selamat mencoba resep weci ini di rumah!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/pia-pia-sayur">Pia Pia Sayur</a></li>
+<li><a href="/pili-berfungsi">Pili Berfungsi</a></li>
+<li><a href="/bakpia-75-terdekat">Bakpia 75 Terdekat</a></li>
+<li><a href="/resep-bakwan-udang-rebon-basah">Resep Bakwan Udang Rebon Basah</a></li>
+<li><a href="/bakso-mercon-9">Bakso Mercon 9</a></li>
+<li><a href="/bakpao-teratai">Bakpao Teratai</a></li>
+<li><a href="/kukus-bakpao">Kukus Bakpao</a></li>
+<li><a href="/resep-perkedel-jagung-halus">Resep Perkedel Jagung Halus</a></li>
+<li><a href="/cara-membuat-bakso-mercon-yang-enak">Cara Membuat Bakso Mercon Yang Enak</a></li>
+<li><a href="/bakwan-teri-nasi-basah">Bakwan Teri Nasi Basah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

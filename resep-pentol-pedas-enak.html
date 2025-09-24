@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Pentol Pedas Enak & Praktis</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 95%;
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #4682b4; /* SteelBlue - warna cerah */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #5f9ea0; /* CadetBlue - warna cerah */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #b0e0e6; /* PowderBlue - warna lembut */
+            padding-bottom: 5px;
+        }
+        .recipe-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients, .instructions {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #ff6347; /* Tomato - sedikit sentuhan warna cerah */
+            font-weight: bold;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        strong {
+            color: #20b2aa; /* LightSeaGreen - warna cerah */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            width: 100%;
+            background-color: #e0ffff; /* LightCyan - warna sejuk */
+            color: #005f5f;
+            font-size: 0.9em;
+            border-top: 1px solid #b0e0e6;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-image {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Pentol Pedas Mantap Jiwa</h1>
+
+        <!-- Gambar SVG Kustom -->
+        <svg class="recipe-image" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc">
+            <title id="title">Ilustrasi Pentol Pedas dalam Mangkok</title>
+            <desc id="desc">Gambar ilustrasi yang cerah menampilkan beberapa pentol merah pedas dalam mangkok keramik biru muda dengan taburan cabai dan daun bawang.</desc>
+            <rect width="100%" height="100%" rx="10" fill="#e0f7fa"/>
+            <path d="M100 150 Q 150 120 200 150 T 300 150 T 400 150" stroke="#00bcd4" stroke-width="8" fill="none"/>
+            <circle cx="150" cy="160" r="25" fill="#f44336"/>
+            <circle cx="220" cy="170" r="28" fill="#f44336"/>
+            <circle cx="290" cy="155" r="26" fill="#f44336"/>
+            <circle cx="360" cy="165" r="24" fill="#f44336"/>
+            <circle cx="430" cy="160" r="27" fill="#f44336"/>
+            <ellipse cx="250" cy="190" rx="150" ry="40" fill="#80deea" opacity="0.7"/>
+            <text x="250" y="180" font-family="Segoe UI, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">PENTOL PEDAS</text>
+            <circle cx="200" cy="145" r="5" fill="#d32f2f"/>
+            <circle cx="230" cy="130" r="6" fill="#d32f2f"/>
+            <circle cx="260" cy="150" r="4" fill="#d32f2f"/>
+            <circle cx="290" cy="135" r="5" fill="#d32f2f"/>
+            <circle cx="320" cy="155" r="6" fill="#d32f2f"/>
+            <circle cx="350" cy="140" r="4" fill="#d32f2f"/>
+            <circle cx="380" cy="160" r="5" fill="#d32f2f"/>
+            <path d="M220 140 L225 130 L230 140 Z" fill="#76ff03"/>
+            <path d="M280 130 L285 120 L290 130 Z" fill="#76ff03"/>
+            <path d="M340 135 L345 125 L350 135 Z" fill="#76ff03"/>
+        </svg>
+
+        <p>Siapa yang tidak tergoda dengan aroma pentol yang kenyal dan gurih, apalagi jika disajikan dengan bumbu pedas yang menggugah selera? Pentol pedas menjadi salah satu jajanan favorit banyak orang, mulai dari anak-anak hingga dewasa. Rasanya yang <strong>nendang</strong> dan teksturnya yang unik membuat pentol ini selalu dinanti. Kali ini, kami akan membagikan resep pentol pedas yang bisa Anda buat sendiri di rumah dengan mudah dan dijamin enak!</p>
+
+        <h2>Bahan-bahan Pentol:</h2>
+        <ul>
+            <li>500 gram daging sapi giling berkualitas</li>
+            <li>150 gram tepung tapioka (kanji)</li>
+            <li>50 gram tepung terigu</li>
+            <li>1 butir telur ayam</li>
+            <li>5 siung bawang putih, haluskan</li>
+            <li>1 sendok teh merica bubuk</li>
+            <li>1 sendok teh garam (sesuai selera)</li>
+            <li>1/2 sendok teh kaldu bubuk sapi</li>
+            <li>100 ml air es</li>
+            <li>Es batu secukupnya (untuk merendam pentol sebelum direbus)</li>
+        </ul>
+
+        <h2>Bahan-bahan Bumbu Pedas:</h2>
+        <ul>
+            <li>15 buah cabai rawit merah (sesuaikan tingkat kepedasan)</li>
+            <li>5 buah cabai merah keriting</li>
+            <li>4 siung bawang merah</li>
+            <li>3 siung bawang putih</li>
+            <li>1 cm lengkuas, memarkan</li>
+            <li>1 lembar daun salam</li>
+            <li>1 batang serai, memarkan</li>
+            <li>2 sendok makan kecap manis</li>
+            <li>1 sendok makan saus sambal</li>
+            <li>1/2 sendok teh garam</li>
+            <li>1/2 sendok teh gula pasir</li>
+            <li>300 ml air</li>
+            <li>Minyak goreng secukupnya untuk menumis</li>
+            <li>Daun bawang iris tipis untuk taburan (opsional)</li>
+        </ul>
+
+        <h2>Langkah-langkah Membuat Pentol:</h2>
+        <ol>
+            <li>Dalam wadah besar, campurkan daging sapi giling, tepung tapioka, tepung terigu, telur, bawang putih halus, merica bubuk, garam, dan kaldu bubuk.</li>
+            <li>Uleni adonan hingga tercampur rata dan terasa kalis.</li>
+            <li>Tuangkan air es sedikit demi sedikit sambil terus diuleni hingga adonan menjadi lembut dan mudah dibentuk. Jangan terlalu banyak air agar adonan tidak lembek.</li>
+            <li>Didihkan air dalam panci besar. Tambahkan sedikit garam dan minyak agar pentol tidak lengket.</li>
+            <li>Ambil sedikit adonan, bentuk bulat-bulat sesuai selera menggunakan tangan yang sudah dibasahi air atau sendok.</li>
+            <li>Masukkan pentol yang sudah dibentuk ke dalam air mendidih. Masak hingga pentol mengapung, menandakan pentol sudah matang. Angkat dan tiriskan.</li>
+            <li>Siapkan wadah berisi air es dan es batu. Masukkan pentol yang sudah matang ke dalam air es. Ini bertujuan agar pentol menjadi lebih kenyal dan tidak mengerut. Tiriskan kembali setelah beberapa saat.</li>
+        </ol>
+
+        <h2>Langkah-langkah Membuat Bumbu Pedas:</h2>
+        <ol>
+            <li>Haluskan cabai rawit, cabai merah keriting, bawang merah, dan bawang putih.</li>
+            <li>Panaskan sedikit minyak goreng dalam wajan. Tumis bumbu halus hingga harum.</li>
+            <li>Masukkan lengkuas, daun salam, dan serai. Aduk rata dan masak hingga bumbu matang.</li>
+            <li>Tuangkan air, lalu masukkan kecap manis, saus sambal, garam, dan gula pasir. Aduk rata.</li>
+            <li>Masak bumbu hingga mendidih dan sedikit mengental. Koreksi rasa sesuai selera Anda.</li>
+            <li>Masukkan pentol yang sudah ditiriskan ke dalam bumbu pedas. Aduk rata perlahan agar pentol terbalut sempurna dengan bumbu.</li>
+            <li>Masak sebentar hingga bumbu meresap ke dalam pentol.</li>
+            <li>Angkat dan sajikan pentol pedas selagi hangat. Taburi dengan irisan daun bawang jika suka.</li>
+        </ol>
+
+        <p>Menikmati <span class="highlight">pentol pedas</span> buatan sendiri memang memberikan kepuasan tersendiri. Anda bisa mengatur tingkat kepedasannya sesuai dengan selera keluarga. Resep ini sangat cocok dijadikan ide camilan di sore hari atau hidangan pelengkap saat berkumpul dengan orang terkasih. Jangan ragu untuk mencoba, karena resep ini <strong>praktis</strong> dan hasilnya pasti membuat Anda ketagihan!</p>
+    </div>
+
+    <footer>
+        Temukan lebih banyak resep lezat lainnya!
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/membuat-bakwan-crispy">Membuat Bakwan Crispy</a></li>
+<li><a href="/bakpia-modern">Bakpia Modern</a></li>
+<li><a href="/bakpia-kuat-berapa-hari">Bakpia Kuat Berapa Hari</a></li>
+<li><a href="/cara-jualan-bakpao-chik-yen">Cara Jualan Bakpao Chik Yen</a></li>
+<li><a href="/bakpia-234">Bakpia 234</a></li>
+<li><a href="/bahan-bahan-untuk-membuat-perkedel-jagung">Bahan Bahan Untuk Membuat Perkedel Jagung</a></li>
+<li><a href="/isian-bakpia-keju">Isian Bakpia Keju</a></li>
+<li><a href="/balasan-allahumma-baarik-fiihi">Balasan Allahumma Baarik Fiihi</a></li>
+<li><a href="/resep-bakwan-kawi-pinggir-jalan">Resep Bakwan Kawi Pinggir Jalan</a></li>
+<li><a href="/kalimantan-timur-balikpapan">Kalimantan Timur Balikpapan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

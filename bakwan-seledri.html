@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Seledri: Renyah, Sehat, & Lezat!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* Alice Blue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4682b4; /* Steel Blue - warna sejuk cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #87ceeb; /* Sky Blue - sentuhan cerah */
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e0f7fa; /* Light Cyan - sentuhan cerah */
+            border-radius: 10px;
+        }
+        .recipe-details p {
+            margin: 5px 10px;
+            font-weight: bold;
+            color: #00796b; /* Teal - warna sejuk yang menenangkan */
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 12px;
+        }
+        .highlight {
+            color: #0077cc; /* Cerulean - sentuhan cerah */
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed #87ceeb;
+            color: #607d8b; /* Blue Grey - warna sejuk */
+            font-size: 0.9em;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .recipe-details {
+                flex-direction: column;
+                align-items: center;
+            }
+            .recipe-details p {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80" style="display: block; margin: 20px auto;">
+            <circle cx="50" cy="50" r="45" fill="#87ceeb" stroke="#4682b4" stroke-width="3"/>
+            <path d="M 35 65 Q 50 40 65 65 L 65 30 Q 50 55 35 30 Z" fill="#ffffff" stroke="#4682b4" stroke-width="2"/>
+            <text x="50" y="55" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">Bakwan</text>
+            <text x="50" y="70" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">Seledri</text>
+        </svg>
+        <h1>Resep Bakwan Seledri: Renyah, Sehat, dan Penuh Aroma!</h1>
+
+        <p>Siapa yang tidak suka bakwan? Camilan gurih yang renyah di luar dan lembut di dalam ini memang selalu jadi favorit. Kali ini, kita akan berkreasi dengan menambahkan sentuhan segar dan sehat dari seledri, menciptakan <span class="highlight">bakwan seledri</span> yang istimewa. Perpaduan rasa gurih, tekstur renyah, serta aroma khas seledri yang menggugah selera membuat bakwan ini cocok dinikmati kapan saja, baik sebagai camilan ringan maupun pendamping santapan utama.</p>
+
+        <div class="recipe-details">
+            <p>Waktu Persiapan: 15 menit</p>
+            <p>Waktu Memasak: 20 menit</p>
+            <p>Porsi: 4-5 orang</p>
+        </div>
+
+        <h2>Mengapa Bakwan Seledri?</h2>
+        <p>Seledri bukan hanya sekadar penambah aroma dalam masakan. Daun berwarna hijau cerah ini kaya akan vitamin K, vitamin A, vitamin C, serta folat. Menambahkan seledri ke dalam adonan bakwan tidak hanya meningkatkan nilai gizinya tetapi juga memberikan sensasi rasa yang unik dan menyegarkan. Bakwan seledri menjadi pilihan camilan yang lebih baik, menawarkan kombinasi kenikmatan dan manfaat kesehatan. Aroma seledri yang kuat akan membuat bakwan Anda semakin istimewa dan berbeda dari bakwan pada umumnya.</p>
+
+        <h2>Bahan-Bahan untuk Bakwan Seledri yang Sempurna</h2>
+        <div class="ingredients">
+            <ul>
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>2 ikat seledri segar, cincang kasar (sekitar 100 gram daun dan batang mudanya)</li>
+                <li>1 buah wortel ukuran sedang, parut kasar</li>
+                <li>50 gram tauge (opsional, untuk tambahan tekstur)</li>
+                <li>1 butir telur</li>
+                <li>200-250 ml air es (sesuaikan kekentalan adonan)</li>
+                <li>1 sdt garam</li>
+                <li>1/2 sdt kaldu bubuk (opsional)</li>
+                <li>1/4 sdt merica bubuk</li>
+                <li>Bumbu halus:</li>
+                <li>3 siung bawang putih</li>
+                <li>2 butir kemiri sangrai</li>
+                <li>1/2 cm kunyit (opsional, untuk warna lebih cerah)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Bakwan Seledri Lezat</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Persiapan Adonan:</strong> Dalam wadah besar, campurkan tepung terigu, tepung beras, garam, kaldu bubuk, dan merica bubuk. Aduk rata.</li>
+                <li>Masukkan bumbu halus (bawang putih, kemiri, kunyit) ke dalam campuran tepung.</li>
+                <li>Tambahkan telur, lalu aduk rata.</li>
+                <li>Masukkan irisan daun bawang, cincangan seledri, parutan wortel, dan tauge (jika menggunakan). Aduk kembali hingga tercampur merata dengan bumbu.</li>
+                <li>Tuang air es sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak terlalu encer dan tidak terlalu kental, cukup untuk melapisi sayuran.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng dalam jumlah cukup banyak di wajan dengan api sedang cenderung besar. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Jangan terlalu memenuhi wajan agar bakwan matang merata dan renyah.</li>
+                <li>Goreng bakwan hingga berwarna kuning keemasan dan matang sempurna di kedua sisinya.</li>
+                <li>Angkat bakwan dan tiriskan di atas kertas tisu atau rak kawat agar minyak berlebih terserap.</li>
+                <li>Sajikan <span class="highlight">bakwan seledri</span> selagi hangat dengan cocolan sambal favorit Anda atau cabai rawit.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Menghasilkan Bakwan Seledri yang Sempurna</h2>
+        <ul>
+            <li>Gunakan air es saat membuat adonan. Air dingin membantu menciptakan tekstur bakwan yang lebih renyah.</li>
+            <li>Jangan mengaduk adonan terlalu lama setelah dituang air. Cukup sampai tercampur rata.</li>
+            <li>Pastikan minyak benar-benar panas saat menggoreng. Suhu minyak yang tepat adalah kunci kerenyahan.</li>
+            <li>Goreng bakwan dalam beberapa tahap agar tidak saling menempel dan matangnya merata.</li>
+            <li>Untuk variasi, Anda bisa menambahkan udang cincang atau sedikit ayam cincang ke dalam adonan.</li>
+        </ul>
+
+        <p>Selamat mencoba resep bakwan seledri ini! Nikmati kelezatan camilan tradisional yang diperkaya dengan kebaikan sayuran hijau. Dijamin membuat ketagihan!</p>
+
+        <footer>
+            <p>Artikel ini dibuat untuk informasi resep.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-123">Bakpia 123</a></li>
+<li><a href="/isian-coklat-untuk-bakpao">Isian Coklat Untuk Bakpao</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-kangkung">Cara Membuat Bakwan Sayur Kangkung</a></li>
+<li><a href="/cara-buat-bakwan-crispy">Cara Buat Bakwan Crispy</a></li>
+<li><a href="/pasangan-bakwan-jagung">Pasangan Bakwan Jagung</a></li>
+<li><a href="/perkedel-jagung-enak-dan-renyah">Perkedel Jagung Enak Dan Renyah</a></li>
+<li><a href="/g-ll-oglu-baklava-fiyatlari">G Ll Oglu Baklava Fiyatlari</a></li>
+<li><a href="/bakpia-mahen">Bakpia Mahen</a></li>
+<li><a href="/bakpao-unti">Bakpao Unti</a></li>
+<li><a href="/salmonella-sp-pdf">Salmonella Sp Pdf</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

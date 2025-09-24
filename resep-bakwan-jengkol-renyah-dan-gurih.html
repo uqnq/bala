@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Jengkol Renyah & Gurih</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Pastikan elemen di dalam tidak keluar dari sudut membulat */
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul yang cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 2px solid #80cbc4; /* Garis pemisah yang lembut */
+            padding-bottom: 5px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #004d40; /* Warna teks tebal yang lebih gelap */
+        }
+        .highlight {
+            background-color: #b2ebf2; /* Warna sorotan cerah */
+            padding: 5px 8px;
+            border-radius: 5px;
+            display: inline-block; /* Agar padding berfungsi dengan baik */
+        }
+        .recipe-steps {
+            background-color: #f0f9fa; /* Latar resep yang sedikit berbeda */
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .recipe-steps ol li {
+            margin-bottom: 15px;
+        }
+        .recipe-steps ol li strong {
+            display: block; /* Agar deskripsi langkah terpisah dari nomor */
+            margin-top: 5px;
+        }
+        .tips {
+            background-color: #fff9c4; /* Warna tips yang cerah */
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .tips p {
+            margin-bottom: 5px;
+        }
+        .tips strong {
+            color: #f57f17; /* Warna aksen untuk tips */
+        }
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- SVG Gambar Bakwan Jengkol -->
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakwanTitle">
+                <title id="bakwanTitle">Ilustrasi bakwan jengkol renyah berwarna keemasan</title>
+                <defs>
+                    <linearGradient id="bakwanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f5deb3;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e6a742;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Lingkaran luar sebagai bentuk dasar bakwan -->
+                <circle cx="100" cy="100" r="80" fill="url(#bakwanGradient)" />
+                <circle cx="250" cy="100" r="80" fill="url(#bakwanGradient)" />
+                <circle cx="175" cy="170" r="60" fill="url(#bakwanGradient)" />
+
+                <!-- Detail tekstur dan bentuk -->
+                <path d="M80 80 Q 70 90 75 100 T 85 120 Q 90 110 95 100 T 90 80 Z" fill="#deb887" />
+                <path d="M120 80 Q 110 90 115 100 T 125 120 Q 130 110 135 100 T 130 80 Z" fill="#deb887" />
+                <path d="M230 80 Q 220 90 225 100 T 235 120 Q 240 110 245 100 T 240 80 Z" fill="#deb887" />
+                <path d="M270 80 Q 260 90 265 100 T 275 120 Q 280 110 285 100 T 280 80 Z" fill="#deb887" />
+                <path d="M160 150 Q 150 160 155 170 T 165 180 Q 170 170 175 160 T 170 150 Z" fill="#deb887" />
+                <path d="M190 150 Q 180 160 185 170 T 195 180 Q 200 170 205 160 T 200 150 Z" fill="#deb887" />
+
+                <!-- Efek sedikit renyah -->
+                <circle cx="90" cy="70" r="5" fill="#f5deb3" opacity="0.7" />
+                <circle cx="110" cy="130" r="4" fill="#f5deb3" opacity="0.7" />
+                <circle cx="240" cy="70" r="5" fill="#f5deb3" opacity="0.7" />
+                <circle cx="260" cy="130" r="4" fill="#f5deb3" opacity="0.7" />
+                <circle cx="160" cy="140" r="3" fill="#f5deb3" opacity="0.7" />
+                <circle cx="190" cy="190" r="3" fill="#f5deb3" opacity="0.7" />
+            </svg>
+        </header>
+
+        <h1>Resep Bakwan Jengkol Renyah dan Gurih, Dijamin Bikin Ketagihan!</h1>
+
+        <p>Siapa yang tidak suka bakwan? Camilan renyah dan gurih ini selalu menjadi favorit di setiap kesempatan. Kali ini, kita akan menghadirkan variasi bakwan yang unik dan lezat, yaitu bakwan jengkol. Mungkin terdengar asing bagi sebagian orang, namun perpaduan tekstur renyah bakwan dengan cita rasa khas jengkol yang gurih akan memberikan pengalaman kuliner yang berbeda dan tak terlupakan. Resep ini dirancang agar menghasilkan bakwan jengkol yang renyah di luar dan lembut di dalam, dengan bumbu yang meresap sempurna.</p>
+
+        <p>Jengkol, yang seringkali dihindari karena aromanya, sebenarnya memiliki potensi rasa yang luar biasa jika diolah dengan benar. Dalam resep bakwan ini, kita akan mengolah jengkol agar aromanya lebih bersahabat namun tetap mempertahankan kelezatannya. Dijamin, setelah mencoba resep ini, Anda akan melihat jengkol dari sudut pandang yang baru.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <ul>
+            <li>200 gram jengkol tua, rebus hingga empuk (sekitar 2-3 jam atau lebih, sesuai usia jengkol)</li>
+            <li>150 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+            <li>1 batang daun bawang, iris tipis</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh ketumbar bubuk</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>Garam secukupnya</li>
+            <li>Air dingin secukupnya (untuk adonan)</li>
+            <li>Minyak goreng secukupnya (untuk menggoreng)</li>
+        </ul>
+
+        <h2>Bahan Bumbu Halus (Opsional, untuk rasa lebih kaya)</h2>
+        <ul>
+            <li>2 siung bawang merah</li>
+            <li>1 cm kencur</li>
+            <li>Sedikit terasi (jika suka)</li>
+        </ul>
+
+        <div class="recipe-steps">
+            <h2>Cara Membuat Bakwan Jengkol Renyah</h2>
+            <ol>
+                <li>
+                    <strong>Persiapan Jengkol:</strong> Setelah direbus hingga empuk, buang kulit jengkol. Iris tipis-tipis jengkol sesuai selera. Usahakan irisan seragam agar matang merata. Jika ingin mengurangi aroma jengkol, Anda bisa merendam irisan jengkol dalam air garam selama beberapa jam atau merebusnya kembali dengan daun salam dan sedikit garam sebelum diolah.
+                </li>
+                <li>
+                    <strong>Membuat Adonan Bakwan:</strong> Dalam wadah, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan bumbu halus (jika menggunakan). Aduk rata.
+                </li>
+                <li>
+                    <strong>Menambahkan Air:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer agar bakwan bisa menempel pada jengkol dan tidak terlalu kental agar tidak membosankan saat digoreng. Masukkan irisan daun bawang, aduk rata.
+                </li>
+                <li>
+                    <strong>Mencampur Jengkol:</strong> Masukkan irisan jengkol ke dalam adonan tepung. Aduk perlahan hingga seluruh irisan jengkol terbalut rata oleh adonan. Pastikan setiap potongan jengkol terlapisi adonan.
+                </li>
+                <li>
+                    <strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang cenderung kecil. Pastikan minyak benar-benar panas sebelum memasukkan adonan bakwan.
+                </li>
+                <li>
+                    <strong>Proses Menggoreng:</strong> Ambil satu sendok adonan jengkol, lalu goreng perlahan ke dalam minyak panas. Goreng hingga bakwan berwarna kuning keemasan dan terlihat renyah. Balik sesekali agar matang merata di kedua sisi.
+                </li>
+                <li>
+                    <strong>Tiriskan:</strong> Setelah matang dan renyah, angkat bakwan jengkol dan tiriskan minyaknya menggunakan saringan atau letakkan di atas tisu dapur untuk menyerap sisa minyak.
+                </li>
+                <li>
+                    <strong>Sajikan:</strong> Bakwan jengkol siap disajikan selagi hangat. Nikmati dengan sambal favorit Anda, cabai rawit, atau lontong.
+                </li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h2>Tips Mendapatkan Bakwan Jengkol Renyah Maksimal</h2>
+            <p><span class="highlight">Gunakan Jengkol Tua:</span> Jengkol yang lebih tua cenderung lebih empuk saat direbus dan memiliki tekstur yang lebih enak untuk digoreng.</p>
+            <p><span class="highlight">Jangan Terlalu Banyak Air:</span> Adonan yang terlalu encer akan membuat bakwan mudah lembek.</p>
+            <p><span class="highlight">Api Sedang Saat Menggoreng:</span> Api yang terlalu besar bisa membuat bakwan gosong di luar namun belum matang di dalam. Api kecil cenderung membuat bakwan lebih renyah.</p>
+            <p><span class="highlight">Tiriskan Dengan Benar:</span> Pastikan minyak benar-benar tiris agar bakwan tidak cepat melempem.</p>
+            <p><span class="highlight">Sajikan Segera:</span> Bakwan paling nikmat disantap saat masih hangat dan renyah.</p>
+        </div>
+
+        <p>Mengolah jengkol menjadi bakwan adalah cara kreatif untuk menikmati camilan tradisional dengan sentuhan modern. Dengan resep dan tips di atas, Anda bisa menciptakan bakwan jengkol yang super renyah dan gurih, yang akan menjadi primadona baru di meja makan Anda. Selamat mencoba dan berkreasi!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-gepuk-daging-sapi-khas-sunda">Cara Membuat Gepuk Daging Sapi Khas Sunda</a></li>
+<li><a href="/bakpia-25-keju">Bakpia 25 Keju</a></li>
+<li><a href="/bakpia-mami-terdekat">Bakpia Mami Terdekat</a></li>
+<li><a href="/cara-menggoreng-dadar-jagung">Cara Menggoreng Dadar Jagung</a></li>
+<li><a href="/bakwan-jagung-spesial">Bakwan Jagung Spesial</a></li>
+<li><a href="/bahan2-membuat-bakwan">Bahan2 Membuat Bakwan</a></li>
+<li><a href="/bakwan-tauge">Bakwan Tauge</a></li>
+<li><a href="/cara-membuat-ati-kentang-balado">Cara Membuat Ati Kentang Balado</a></li>
+<li><a href="/resep-bakwan-tahu-wortel">Resep Bakwan Tahu Wortel</a></li>
+<li><a href="/bala-bala-renyah-gurih">Bala Bala Renyah Gurih</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

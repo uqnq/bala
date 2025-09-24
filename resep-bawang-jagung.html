@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bawang Jagung Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Warna sejuk cerah */
+        :root {
+            --bg-color: #e0f7fa; /* Biru muda cerah */
+            --text-color: #004d40; /* Hijau tua kebiruan */
+            --accent-color: #80deea; /* Biru langit cerah */
+            --card-bg: #ffffff;
+            --shadow-color: rgba(0, 77, 64, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--text-color);
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Ukuran gambar agar proporsional */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ingredients, .instructions {
+            background-color: #f8f8f8; /* Sedikit lebih gelap dari background utama */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients h3, .instructions h3 {
+            margin-top: 0;
+            color: var(--text-color);
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            width: 100%;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .recipe-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bawang Jagung Manis Gurih</h1>
+
+        <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-labelledby="recipeTitle">
+            <title id="recipeTitle">Ilustrasi jagung manis yang lezat dengan bumbu bawang</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00bcd4;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#ffcc80;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ffa000;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grad1)" />
+            <!-- Jagung -->
+            <g transform="translate(100, 100)">
+                <path d="M 0 0 Q 50 -20 100 0 T 200 0 V 150 Q 150 130 100 150 T 0 150 Z" fill="#ffe082"/>
+                <circle cx="50" cy="30" r="5" fill="#f57f17"/>
+                <circle cx="100" cy="30" r="5" fill="#f57f17"/>
+                <circle cx="150" cy="30" r="5" fill="#f57f17"/>
+                <circle cx="25" cy="50" r="5" fill="#f57f17"/>
+                <circle cx="75" cy="50" r="5" fill="#f57f17"/>
+                <circle cx="125" cy="50" r="5" fill="#f57f17"/>
+                <circle cx="175" cy="50" r="5" fill="#f57f17"/>
+                <circle cx="0" cy="70" r="5" fill="#f57f17"/>
+                <circle cx="50" cy="70" r="5" fill="#f57f17"/>
+                <circle cx="100" cy="70" r="5" fill="#f57f17"/>
+                <circle cx="150" cy="70" r="5" fill="#f57f17"/>
+                <circle cx="200" cy="70" r="5" fill="#f57f17"/>
+                <circle cx="25" cy="90" r="5" fill="#f57f17"/>
+                <circle cx="75" cy="90" r="5" fill="#f57f17"/>
+                <circle cx="125" cy="90" r="5" fill="#f57f17"/>
+                <circle cx="175" cy="90" r="5" fill="#f57f17"/>
+                <circle cx="0" cy="110" r="5" fill="#f57f17"/>
+                <circle cx="50" cy="110" r="5" fill="#f57f17"/>
+                <circle cx="100" cy="110" r="5" fill="#f57f17"/>
+                <circle cx="150" cy="110" r="5" fill="#f57f17"/>
+                <circle cx="200" cy="110" r="5" fill="#f57f17"/>
+                <circle cx="25" cy="130" r="5" fill="#f57f17"/>
+                <circle cx="75" cy="130" r="5" fill="#f57f17"/>
+                <circle cx="125" cy="130" r="5" fill="#f57f17"/>
+                <circle cx="175" cy="130" r="5" fill="#f57f17"/>
+            </g>
+            <!-- Bawang -->
+            <g transform="translate(350, 120) rotate(15)">
+                <ellipse cx="0" cy="0" rx="30" ry="20" fill="#ffab91" />
+                <ellipse cx="15" cy="-10" rx="25" ry="18" fill="#ffab91" />
+                <ellipse cx="-15" cy="-10" rx="25" ry="18" fill="#ffab91" />
+                <path d="M -15 -30 Q 0 -45 15 -30" stroke="#757575" stroke-width="2" fill="none"/>
+                <circle cx="0" cy="-35" r="4" fill="#757575"/>
+            </g>
+            <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="white" font-weight="bold">Jagung & Bawang Nikmat!</text>
+        </svg>
+
+        <p>
+            Mencari ide masakan praktis namun tetap menggugah selera? Resep bawang jagung manis ini bisa menjadi pilihan tepat. Perpaduan manisnya jagung pipil yang segar dengan aroma harum bawang putih yang ditumis bersama sedikit rempah menghasilkan hidangan sampingan atau lauk yang sangat disukai. Sangat cocok untuk disantap bersama nasi hangat atau bahkan sebagai isian roti tawar.
+        </p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan</h2>
+            <ul>
+                <li>2 buah jagung manis segar, pipil atau potong kecil</li>
+                <li>4 siung bawang putih, cincang halus</li>
+                <li>2 sendok makan margarin atau minyak goreng</li>
+                <li>1/2 sendok teh garam (sesuai selera)</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Opsional: 1/4 sendok teh kaldu bubuk</li>
+                <li>Opsional: irisan cabai rawit untuk rasa pedas</li>
+                <li>Opsional: sedikit daun bawang iris untuk taburan</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li>Siapkan semua bahan. Pipil jagung manis hingga terkumpul sekitar 2 cangkir jagung pipil. Cincang halus bawang putih.</li>
+                <li>Panaskan margarin atau minyak goreng dalam wajan dengan api sedang.</li>
+                <li>Tumis bawang putih hingga harum dan sedikit kecoklatan. Jangan sampai gosong agar rasanya tidak pahit. Jika menggunakan irisan cabai rawit, masukkan bersama bawang putih.</li>
+                <li>Masukkan jagung pipil ke dalam wajan. Aduk rata bersama tumisan bawang.</li>
+                <li>Tambahkan garam, merica bubuk, dan kaldu bubuk (jika menggunakan). Aduk kembali hingga semua bumbu tercampur merata.</li>
+                <li>Masak jagung sambil sesekali diaduk hingga jagung matang dan empuk, namun tetap renyah. Waktu memasak biasanya sekitar 5-7 menit tergantung ukuran pipil jagung.</li>
+                <li>Cicipi dan koreksi rasa jika diperlukan.</li>
+                <li>Angkat dan sajikan selagi hangat. Taburi dengan irisan daun bawang jika suka.</li>
+            </ol>
+        </div>
+
+        <p>
+            Resep bawang jagung ini sangat fleksibel. Anda bisa menambahkan variasi lain seperti sedikit saus tiram untuk rasa yang lebih kaya, atau bahkan potongan sosis/udang untuk menjadikannya hidangan utama yang lebih substansial. Kelembutan jagung yang berpadu dengan gurihnya bawang putih adalah kombinasi klasik yang tak pernah gagal memanjakan lidah.
+        </p>
+        <p>
+            Membuat hidangan ini sangat cepat, ideal bagi Anda yang memiliki kesibukan namun tetap ingin menyajikan makanan rumahan yang lezat. Jagung manis kaya akan serat dan vitamin, sementara bawang putih dikenal memiliki manfaat kesehatan. Jadi, resep bawang jagung ini tidak hanya lezat tetapi juga bernutrisi. Selamat mencoba resep sederhana namun istimewa ini di dapur Anda!
+        </p>
+    </div>
+
+    <footer>
+        Terima kasih telah berkunjung!
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/jagung-kriuk">Jagung Kriuk</a></li>
+<li><a href="/bakpia-rizky-gentan">Bakpia Rizky Gentan</a></li>
+<li><a href="/cara-membuat-bakpao-goreng">Cara Membuat Bakpao Goreng</a></li>
+<li><a href="/bakpia-pathok-kering">Bakpia Pathok Kering</a></li>
+<li><a href="/bumbu-bakwan-yang-enak">Bumbu Bakwan Yang Enak</a></li>
+<li><a href="/cara-membuat-isian-kacang-tanah-untuk-bakpao">Cara Membuat Isian Kacang Tanah Untuk Bakpao</a></li>
+<li><a href="/harga-bakpiaku-2022">Harga Bakpiaku 2022</a></li>
+<li><a href="/bakpia-kurnia-sari-jalan-godean">Bakpia Kurnia Sari Jalan Godean</a></li>
+<li><a href="/bakwan-renyah-gurih">Bakwan Renyah Gurih</a></li>
+<li><a href="/resep-bakwan-indomie">Resep Bakwan Indomie</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

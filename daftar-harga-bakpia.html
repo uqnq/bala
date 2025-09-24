@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga Bakpia & Varian Terlaris</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna biru muda yang sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna hijau toska cerah */
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #00796b;
+            border-bottom: 2px solid #80deea; /* Garis bawah warna biru muda cerah */
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .price-list {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .price-list th, .price-list td {
+            border: 1px solid #b2ebf2; /* Border warna biru muda */
+            padding: 12px;
+            text-align: left;
+        }
+        .price-list th {
+            background-color: #80deea; /* Header warna biru muda cerah */
+            color: #004d40; /* Teks header warna hijau tua */
+            font-weight: bold;
+        }
+        .price-list td {
+            background-color: #e0f7fa; /* Latar sel warna biru muda */
+        }
+        .price-list tbody tr:nth-child(even) td {
+            background-color: #f0f8ff; /* Latar sel genap sedikit berbeda */
+        }
+        .highlight {
+            color: #f57c00; /* Warna oranye cerah untuk penekanan harga */
+            font-weight: bold;
+        }
+        .description {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-container">
+            <svg class="main-image" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakpiaTitle">
+                <title id="bakpiaTitle">Ilustrasi Bakpia Aneka Rasa</title>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00bcd4;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="400" height="200" rx="20" fill="url(#grad1)" />
+                <text x="50" y="120" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#ffffff" font-weight="bold">Bakpia</text>
+                <text x="170" y="120" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#f57c00" font-weight="bold">Lezat</text>
+                <circle cx="300" cy="100" r="30" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+                <circle cx="300" cy="100" r="20" fill="#f57c00"/>
+                <text x="290" y="115" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#ffffff">Rp</text>
+            </svg>
+            <p class="description">Jelajahi cita rasa otentik bakpia dengan pilihan harga menarik.</p>
+        </div>
+
+        <h1>Daftar Harga Bakpia</h1>
+
+        <h2>Bakpia Premium "Manis Legit"</h2>
+        <p>Nikmati kelembutan adonan bakpia kami yang dibuat dengan resep tradisional. Pilihan rasa klasik yang selalu digemari, cocok untuk menemani secangkir teh hangat atau kopi.</p>
+
+        <table class="price-list">
+            <thead>
+                <tr>
+                    <th>Varian Rasa</th>
+                    <th>Isi Per Dus</th>
+                    <th>Harga (Rp)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kacang Hijau</td>
+                    <td>10 buah</td>
+                    <td class="highlight">35.000</td>
+                </tr>
+                <tr>
+                    <td>Cokelat</td>
+                    <td>10 buah</td>
+                    <td class="highlight">40.000</td>
+                </tr>
+                <tr>
+                    <td>Keju</td>
+                    <td>10 buah</td>
+                    <td class="highlight">45.000</td>
+                </tr>
+                <tr>
+                    <td>Durian</td>
+                    <td>10 buah</td>
+                    <td class="highlight">50.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Bakpia Spesial "Rasa Khas"</h2>
+        <p>Terbuat dari bahan-bahan pilihan terbaik, bakpia varian ini menawarkan tekstur dan rasa yang lebih kaya. Ideal sebagai oleh-oleh istimewa atau kudapan keluarga.</p>
+
+        <table class="price-list">
+            <thead>
+                <tr>
+                    <th>Varian Rasa</th>
+                    <th>Isi Per Dus</th>
+                    <th>Harga (Rp)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kumbu Merah</td>
+                    <td>12 buah</td>
+                    <td class="highlight">48.000</td>
+                </tr>
+                <tr>
+                    <td>Talas Ungu</td>
+                    <td>12 buah</td>
+                    <td class="highlight">52.000</td>
+                </tr>
+                <tr>
+                    <td>Nangka Madu</td>
+                    <td>12 buah</td>
+                    <td class="highlight">55.000</td>
+                </tr>
+                <tr>
+                    <td>Mix Rasa (Kacang Hijau, Cokelat, Keju)</td>
+                    <td>15 buah</td>
+                    <td class="highlight">75.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Tips Memilih Bakpia</h2>
+        <p>Saat memilih bakpia, perhatikan kemasan yang masih tersegel rapi untuk menjaga kesegarannya. Cek juga tanggal kadaluwarsa untuk memastikan kualitas terbaik. Varian kacang hijau dan cokelat adalah pilihan paling umum dan aman bagi mereka yang baru pertama kali mencoba.</p>
+        <p>Untuk pengalaman rasa yang lebih unik, cobalah varian talas ungu atau durian yang memiliki aroma dan cita rasa khas. Bakpia dengan isian kumbu merah juga menawarkan sensasi manis legit yang berbeda.</p>
+        <p>Harga dapat bervariasi tergantung ukuran dus dan varian rasa. Kami menyarankan untuk membeli dalam jumlah lebih banyak jika untuk oleh-oleh keluarga besar, karena seringkali ada promo menarik untuk pembelian grosir.</p>
+
+        <footer>
+            Semua harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya.
+        </footer>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bahan-bikin-bakwan-jagung">Bahan Bikin Bakwan Jagung</a></li>
+<li><a href="/cara-membuat-perkedel-jagung-renyah">Cara Membuat Perkedel Jagung Renyah</a></li>
+<li><a href="/cara-buat-bakwan-renyah-tahan-lama">Cara Buat Bakwan Renyah Tahan Lama</a></li>
+<li><a href="/bakpia-kukus-original-coklat">Bakpia Kukus Original Coklat</a></li>
+<li><a href="/cara-membentuk-bakpao-bunga">Cara Membentuk Bakpao Bunga</a></li>
+<li><a href="/harga-bunga-bakung-putih">Harga Bunga Bakung Putih</a></li>
+<li><a href="/bakpao-wiki">Bakpao Wiki</a></li>
+<li><a href="/bumbu-perkedel-udang">Bumbu Perkedel Udang</a></li>
+<li><a href="/bakpao-tausa">Bakpao Tausa</a></li>
+<li><a href="/resep-dadar-jagung-crispy">Resep Dadar Jagung Crispy</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

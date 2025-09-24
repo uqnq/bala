@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Jagung Enak & Gurih: Resep Sederhana</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #00796b; /* Warna aksen yang sejuk */
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            text-align: left;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        .highlight {
+            font-weight: bold;
+            color: #004d40; /* Warna aksen lebih gelap */
+        }
+        .recipe-steps {
+            background-color: #f0f8ff; /* Warna latar resep yang sedikit berbeda */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+        .recipe-steps ol {
+            padding-left: 25px;
+        }
+        .recipe-steps li {
+            margin-bottom: 12px;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #777;
+            text-align: center;
+        }
+
+        /* Media query untuk tampilan mobile yang lebih optimal */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakwan jagung keemasan">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#ffd54f;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffc107;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                        <feOffset dx="0" dy="0" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <rect width="600" height="300" rx="15" fill="#fffaf0"/>
+                <g transform="translate(50, 50)">
+                    <!-- Jagung -->
+                    <path fill="#ffcc80" d="M10,10 L10,50 L50,50 L50,10 Z" filter="url(#shadow)"/>
+                    <circle cx="30" cy="30" r="20" fill="#f9a825"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, -10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 5)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 15)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 25)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 35)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 45)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 20)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 20)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 30)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 30)"/>
+                </g>
+
+                <g transform="translate(150, 50)">
+                    <path fill="#ffcc80" d="M10,10 L10,50 L50,50 L50,10 Z" filter="url(#shadow)"/>
+                    <circle cx="30" cy="30" r="20" fill="#f9a825"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, -10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 5)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 15)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 25)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 35)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 45)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 20)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 20)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 30)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 30)"/>
+                </g>
+
+                <g transform="translate(250, 50)">
+                    <path fill="#ffcc80" d="M10,10 L10,50 L50,50 L50,10 Z" filter="url(#shadow)"/>
+                    <circle cx="30" cy="30" r="20" fill="#f9a825"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, -10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 5)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 15)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 25)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 35)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 45)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 20)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 20)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 30)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 30)"/>
+                </g>
+
+                <g transform="translate(350, 50)">
+                    <path fill="#ffcc80" d="M10,10 L10,50 L50,50 L50,10 Z" filter="url(#shadow)"/>
+                    <circle cx="30" cy="30" r="20" fill="#f9a825"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, -10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 5)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 15)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 25)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 35)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(0, 45)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 10)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 20)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 20)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(5, 30)"/>
+                    <path fill="#f57f17" d="M30,10 C25,15 25,25 30,30 C35,25 35,15 30,10 Z" transform="translate(-5, 30)"/>
+                </g>
+            </svg>
+        </div>
+        <h1>Resep Bakwan Jagung Enak dan Gurih yang Bikin Ketagihan</h1>
+        <p>Siapa yang bisa menolak kelezatan bakwan jagung? Camilan renyah di luar, lembut di dalam, dengan rasa manis jagung yang khas, dan aroma gurih yang menggugah selera. Bakwan jagung menjadi favorit banyak orang, mulai dari anak-anak hingga orang dewasa. Menikmatinya saat hangat sambil menyeruput teh manis atau kopi adalah kenikmatan tersendiri. Ternyata, membuat bakwan jagung yang enak dan gurih ini tidaklah sulit, lho!</p>
+
+        <p>Kunci dari bakwan jagung yang lezat terletak pada kesegaran bahan baku, keseimbangan bumbu, dan tentu saja, teknik menggoreng yang tepat. Dengan resep sederhana ini, Anda bisa menyajikan hidangan rumahan yang tak kalah lezat dari jajanan pinggir jalan. Rasanya yang dominan manis dari jagung segar berpadu dengan gurihnya tepung dan bumbu rempah lainnya, menciptakan harmoni rasa yang memanjakan lidah. Tekstur luarnya yang renyah saat baru diangkat dari penggorengan, perlahan berubah menjadi sedikit lunak saat mendingin, namun tetap meninggalkan sensasi gurih yang menyenangkan di setiap gigitan.</p>
+
+        <p>Variasi dalam membuat bakwan jagung pun bisa disesuaikan dengan selera. Anda bisa menambahkan irisan daun bawang atau seledri untuk aroma yang lebih segar, atau sedikit irisan cabai jika menyukai sensasi pedas. Beberapa orang bahkan menambahkan udang cincang atau daging ayam untuk rasa yang lebih kaya. Namun, resep dasar bakwan jagung tanpa tambahan protein lain pun sudah sangat memuaskan.</p>
+
+        <h2>Cara Membuat Bakwan Jagung Enak dan Gurih</h2>
+        <p>Berikut adalah resep dasar yang bisa Anda coba untuk membuat bakwan jagung yang anti gagal:</p>
+
+        <h3>Bahan-bahan:</h3>
+        <ul>
+            <li>2-3 buah jagung manis segar, pipil</li>
+            <li>100 gram tepung terigu protein sedang</li>
+            <li>50 gram tepung beras (untuk hasil lebih renyah)</li>
+            <li>1 butir telur ayam</li>
+            <li>1/4 sendok teh ketumbar bubuk</li>
+            <li>1/4 sendok teh kunyit bubuk (opsional, untuk warna)</li>
+            <li>Garam secukupnya</li>
+            <li>Merica bubuk secukupnya</li>
+            <li>Penyedap rasa (opsional, sesuai selera)</li>
+            <li>Daun bawang atau seledri iris tipis (opsional)</li>
+            <li>Minyak goreng secukupnya</li>
+        </ul>
+
+        <h3>Bumbu Halus:</h3>
+        <ul>
+            <li>2 siung bawang putih</li>
+            <li>1/2 sendok teh merica butiran (jika tidak menggunakan merica bubuk)</li>
+        </ul>
+
+        <div class="recipe-steps">
+            <h2>Langkah-langkah Pembuatan:</h2>
+            <ol>
+                <li>Siapkan wadah, masukkan jagung manis yang sudah dipipil. Anda bisa menghaluskan sebagian jagung dengan ulekan atau blender sebentar untuk mendapatkan tekstur yang berbeda, namun sebagian tetap biarkan utuh agar ada sensasi kriuknya.</li>
+                <li>Ulek atau blender bumbu halus: bawang putih dan merica.</li>
+                <li>Masukkan bumbu halus ke dalam wadah berisi jagung. Tambahkan telur, tepung terigu, tepung beras, ketumbar bubuk, kunyit bubuk (jika pakai), garam, merica bubuk, penyedap rasa (jika pakai), dan irisan daun bawang/seledri (jika pakai).</li>
+                <li>Aduk semua bahan hingga tercampur rata. Adonan jangan terlalu encer atau terlalu kental. Jika terlalu kental, tambahkan sedikit air, jika terlalu encer, tambahkan sedikit tepung.</li>
+                <li>Panaskan minyak goreng dalam jumlah yang cukup banyak di wajan dengan api sedang.</li>
+                <li>Setelah minyak panas, ambil satu sendok makan adonan dan masukkan ke dalam wajan. Goreng hingga bakwan berwarna kuning keemasan dan matang di kedua sisinya.</li>
+                <li>Angkat dan tiriskan bakwan jagung. Sajikan selagi hangat agar mendapatkan tekstur yang maksimal.</li>
+            </ol>
+        </div>
+
+        <p>Bakwan jagung ini sangat cocok dinikmati sebagai teman makan nasi, lauk pendamping, atau sekadar camilan di sore hari. Kelezatan <span class="highlight">bakwan jagung enak dan gurih</span> ini pasti akan membuat semua anggota keluarga ketagihan dan meminta untuk dibuat lagi.</p>
+
+        <footer>
+            Artikel ini dipersembahkan untuk pecinta kuliner rumahan.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/harga-bakpiaku-2022">Harga Bakpiaku 2022</a></li>
+<li><a href="/bakpao-kura-kura">Bakpao Kura Kura</a></li>
+<li><a href="/bakwan-kelapa">Bakwan Kelapa</a></li>
+<li><a href="/azotobacter-adalah">Azotobacter Adalah</a></li>
+<li><a href="/dadar-jagung-bumbu-kunci">Dadar Jagung Bumbu Kunci</a></li>
+<li><a href="/cara-buat-bakwan-jagung-enak">Cara Buat Bakwan Jagung Enak</a></li>
+<li><a href="/penjual-bakso-beranak">Penjual Bakso Beranak</a></li>
+<li><a href="/bakso-nangka">Bakso Nangka</a></li>
+<li><a href="/resep-masak-dadar-jagung-manis">Resep Masak Dadar Jagung Manis</a></li>
+<li><a href="/membuat-bakwan">Membuat Bakwan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

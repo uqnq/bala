@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Adonan Bala Bala Sederhana & Nikmat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --warna-utama: #64B5F6; /* Biru cerah */
+            --warna-sekunder: #81C784; /* Hijau muda */
+            --warna-aksen: #FFB74D; /* Oranye muda */
+            --warna-teks-gelap: #333;
+            --warna-teks-terang: #fff;
+            --warna-latar: #E3F2FD; /* Biru sangat muda */
+            --jarak-standar: 16px;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: var(--jarak-standar);
+            background-color: var(--warna-latar);
+            color: var(--warna-teks-gelap);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--warna-teks-terang);
+            padding: var(--jarak-standar);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: var(--warna-utama);
+            text-align: center;
+            margin-bottom: var(--jarak-standar);
+        }
+
+        h2 {
+            color: var(--warna-sekunder);
+            border-bottom: 2px solid var(--warna-sekunder);
+            padding-bottom: 8px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: var(--jarak-standar) 0;
+        }
+
+        .resep-detail {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: var(--jarak-standar);
+            margin-bottom: var(--jarak-standar);
+        }
+
+        .detail-item {
+            background-color: var(--warna-aksen);
+            color: var(--warna-teks-gelap);
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .bahan, .langkah {
+            margin-bottom: var(--jarak-standar);
+            padding-left: var(--jarak-standar);
+        }
+
+        .bahan ul, .langkah ol {
+            padding-left: 25px;
+        }
+
+        .bahan li, .langkah li {
+            margin-bottom: 8px;
+        }
+
+        .catatan {
+            font-style: italic;
+            color: #555;
+            background-color: #FFF9C4; /* Kuning sangat muda */
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: var(--jarak-standar);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .resep-detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .detail-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Adonan Bala Bala Sederhana & Nikmat</h1>
+
+        <svg width="100%" height="150" viewBox="0 0 800 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--warna-utama);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:var(--warna-sekunder);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="800" height="150" rx="12" fill="url(#grad1)" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="var(--warna-teks-terang)" font-size="40" font-weight="bold">Bala Bala Lezat</text>
+        </svg>
+
+        <p>Siapa yang tidak suka bala-bala alias bakwan sayur? Camilan renyah yang cocok dinikmati kapan saja ini selalu jadi favorit banyak orang. Membuatnya pun ternyata sangat mudah, terutama jika Anda menguasai resep adonan bala bala yang pas. Adonan yang tepat akan menghasilkan bala-bala yang renyah di luar, lembut di dalam, dan tentu saja lezat.</p>
+
+        <p>Artikel ini akan membagikan resep dasar adonan bala bala yang bisa Anda kreasikan dengan berbagai macam sayuran sesuai selera. Dijamin, setelah mencoba resep ini, Anda akan sering membuat bala-bala sendiri di rumah.</p>
+
+        <div class="resep-detail">
+            <div class="detail-item">Porsi: 4-6 Orang</div>
+            <div class="detail-item">Waktu Persiapan: 15 Menit</div>
+            <div class="detail-item">Waktu Memasak: 20 Menit</div>
+        </div>
+
+        <h2>Bahan Utama Adonan</h2>
+        <div class="bahan">
+            <ul>
+                <li>250 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 sendok teh garam</li>
+                <li>½ sendok teh merica bubuk</li>
+                <li>½ sendok teh kaldu bubuk (opsional, sesuai selera)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>100 ml air es (atau secukupnya hingga adonan pas)</li>
+            </ul>
+        </div>
+
+        <h2>Sayuran Pelengkap (Pilih Sesuai Selera)</h2>
+        <div class="bahan">
+            <ul>
+                <li>100 gram wortel, iris korek api tipis</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>50 gram tauge</li>
+                <li>1 buah labu siam kecil, parut kasar atau iris tipis</li>
+                <li>Beberapa lembar buncis, iris tipis</li>
+            </ul>
+        </div>
+
+        <h2>Bumbu Halus (Untuk Adonan)</h2>
+        <div class="bahan">
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>½ sendok teh ketumbar bubuk</li>
+                <li>Sejumput kunyit bubuk (opsional, untuk warna cerah)</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Adonan Bala Bala</h2>
+        <div class="langkah">
+            <ol>
+                <li><strong>Persiapan Bumbu Halus:</strong> Ulek atau blender bawang putih, ketumbar bubuk, dan kunyit bubuk (jika pakai) hingga halus.</li>
+                <li><strong>Campurkan Tepung:</strong> Dalam wadah besar, campurkan tepung terigu dan tepung beras.</li>
+                <li><strong>Masukkan Bumbu dan Garam:</strong> Tambahkan garam, merica bubuk, kaldu bubuk (jika pakai), dan bumbu halus ke dalam campuran tepung. Aduk rata.</li>
+                <li><strong>Tambahkan Daun Bawang:</strong> Masukkan irisan daun bawang ke dalam adonan kering, aduk sebentar.</li>
+                <li><strong>Tuang Air Es:</strong> Tuangkan air es sedikit demi sedikit sambil terus diaduk menggunakan whisk atau sendok hingga terbentuk adonan yang kental tapi tidak terlalu encer. Konsistensinya harus bisa menempel pada sayuran. Hindari mengaduk berlebihan agar bala-bala tidak alot.</li>
+                <li><strong>Pilih Sayuran:</strong> Siapkan sayuran pelengkap yang sudah diiris atau diparut.</li>
+                <li><strong>Campurkan Sayuran:</strong> Masukkan sayuran pilihan ke dalam adonan. Aduk perlahan hingga semua sayuran terbalut rata oleh adonan. Jangan terlalu banyak mengaduk.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Agar Bala Bala Renyah Tahan Lama</h2>
+        <div class="langkah">
+            <ol start="8">
+                <li><strong>Gunakan Air Es:</strong> Air es membantu membuat adonan lebih renyah saat digoreng.</li>
+                <li><strong>Jangan Terlalu Banyak Mengaduk:</strong> Mengaduk adonan terlalu lama dapat mengaktifkan gluten berlebih, membuat bala-bala menjadi alot.</li>
+                <li><strong>Tepung Beras:</strong> Penambahan tepung beras sangat krusial untuk mendapatkan tekstur yang lebih renyah.</li>
+                <li><strong>Goreng dengan Minyak Panas:</strong> Pastikan minyak goreng sudah benar-benar panas sebelum memasukkan adonan. Gunakan api sedang agar matang merata hingga ke dalam.</li>
+                <li><strong>Tiriskan dengan Baik:</strong> Angkat bala-bala yang sudah matang dan tiriskan di atas rak kawat agar uap panas bisa keluar, menjaga kerenyahannya.</li>
+            </ol>
+        </div>
+
+        <div class="catatan">
+            Adonan bala bala ini adalah dasar yang fleksibel. Anda bisa menambahkan sedikit parutan wortel langsung ke dalam adonan kering sebelum menambahkan air untuk rasa dan warna yang lebih merata. Jika suka pedas, tambahkan irisan cabai rawit ke dalam adonan.
+        </div>
+
+        <p>Menikmati bala-bala hangat ditemani sambal atau cabai rawit segar memang tiada duanya. Dengan resep adonan bala bala yang sederhana ini, Anda bisa menyajikan camilan lezat kapan saja. Selamat mencoba dan berkreasi!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-bakwan-kentang-sederhana">Cara Membuat Bakwan Kentang Sederhana</a></li>
+<li><a href="/bakpia-coklat-lumer">Bakpia Coklat Lumer</a></li>
+<li><a href="/bumbu-telo-goreng">Bumbu Telo Goreng</a></li>
+<li><a href="/jenis-bakung">Jenis Bakung</a></li>
+<li><a href="/cara-membuat-perkedel-jagung-campur-tahu">Cara Membuat Perkedel Jagung Campur Tahu</a></li>
+<li><a href="/bakso-beranak-urat">Bakso Beranak Urat</a></li>
+<li><a href="/bakpia-juwara-satoe-stasiun-tugu">Bakpia Juwara Satoe Stasiun Tugu</a></li>
+<li><a href="/cara-menyimpan-bakpia-basah">Cara Menyimpan Bakpia Basah</a></li>
+<li><a href="/bakpia-52">Bakpia 52</a></li>
+<li><a href="/bakpia-pathok-24-jam">Bakpia Pathok 24 Jam</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

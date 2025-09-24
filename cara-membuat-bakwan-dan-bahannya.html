@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan & Bahannya Lengkap</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna biru muda cerah */
+            color: #004d40; /* Warna hijau tua untuk teks */
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1, h2 {
+            color: #00796b; /* Warna hijau kebiruan untuk judul */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .ingredients-list {
+            list-style: disc inside;
+            padding-left: 20px;
+        }
+        .ingredients-list li {
+            margin-bottom: 10px;
+        }
+        .step-list {
+            list-style: decimal inside;
+            padding-left: 20px;
+        }
+        .step-list li {
+            margin-bottom: 15px;
+        }
+        strong {
+            color: #00796b;
+        }
+        a {
+            color: #00796b;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #004d40;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Cara Membuat Bakwan yang Lezat dan Renyah</h1>
+
+        <p>Siapa yang tidak suka bakwan? Camilan gurih yang renyah di luar dan lembut di dalam ini selalu menjadi favorit. Cocok dinikmati kapan saja, baik saat santai di rumah, menemani secangkir kopi, atau sebagai teman makan nasi. Membuat bakwan sendiri di rumah ternyata tidak sesulit yang dibayangkan, lho! Dengan bahan-bahan yang mudah ditemukan dan langkah yang sederhana, Anda bisa menciptakan bakwan yang tak kalah lezat dari yang dijual di luar.</p>
+
+        <!-- Gambar SVG Bakwan -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="auto">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#26a69a;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <!-- Latar Belakang Cokelat Kecoklatan -->
+            <rect width="100%" height="100%" fill="#f5deb3" />
+
+            <!-- Dasar Adonan Bakwan -->
+            <path d="M 50 200 Q 100 180 150 200 T 250 200 T 350 200 T 450 200 L 450 290 L 50 290 Z" fill="#d2b48c"/>
+
+            <!-- Potongan Sayuran -->
+            <g fill="#a5d6a7"> <!-- Hijau muda -->
+                <ellipse cx="100" cy="170" rx="25" ry="10"/>
+                <ellipse cx="200" cy="160" rx="20" ry="12"/>
+                <ellipse cx="300" cy="175" rx="30" ry="15"/>
+                <ellipse cx="400" cy="165" rx="25" ry="10"/>
+            </g>
+            <g fill="#80cbc4"> <!-- Biru kehijauan -->
+                <circle cx="130" cy="180" r="15"/>
+                <circle cx="230" cy="190" r="18"/>
+                <circle cx="330" cy="185" r="20"/>
+            </g>
+            <g fill="#ffe082"> <!-- Kuning Muda (Jagung/Wortel) -->
+                <path d="M 80 150 L 90 140 L 100 150 Z" transform="rotate(10 80 150)"/>
+                <path d="M 180 155 L 195 145 L 210 155 Z" transform="rotate(-5 180 155)"/>
+                <path d="M 280 150 L 295 140 L 310 150 Z" transform="rotate(20 280 150)"/>
+            </g>
+
+            <!-- Percikan Minyak -->
+            <g fill="#ffcc80" opacity="0.5">
+                <circle cx="70" cy="130" r="5"/>
+                <circle cx="150" cy="140" r="4"/>
+                <circle cx="250" cy="135" r="6"/>
+                <circle cx="350" cy="125" r="5"/>
+                <circle cx="420" cy="145" r="4"/>
+            </g>
+
+            <!-- Teks "Bakwan" -->
+            <text x="50%" y="45%" font-family="Verdana" font-size="40" fill="url(#grad1)" text-anchor="middle" alignment-baseline="middle" font-weight="bold">Bakwan</text>
+            <text x="50%" y="65%" font-family="Verdana" font-size="25" fill="#004d40" text-anchor="middle" alignment-baseline="middle">Lezat & Renyah</text>
+        </svg>
+        <p style="text-align: center; font-size: 0.9em; color: #555;">Ilustrasi bakwan yang menggugah selera.</p>
+
+
+        <h2>Bahan-Bahan Utama Bakwan</h2>
+
+        <ul class="ingredients-list">
+            <li><strong>Sayuran segar:</strong> Pilih sayuran favorit Anda seperti wortel, kol, tauge, buncis, labu siam, atau daun bawang. Potong sayuran sesuai selera, bisa diiris tipis atau dipotong-potong kecil.</li>
+            <li><strong>Tepung terigu:</strong> Merupakan bahan dasar adonan bakwan.</li>
+            <li><strong>Tepung beras:</strong> Memberikan tekstur yang lebih renyah pada bakwan.</li>
+            <li><strong>Telur:</strong> (Opsional) Boleh ditambahkan untuk membuat adonan lebih menyatu dan menambah kekayaan rasa.</li>
+            <li><strong>Air:</strong> Untuk membuat adonan tidak terlalu kental maupun terlalu encer.</li>
+            <li><strong>Bumbu halus:</strong> Bawang putih, bawang merah, merica bubuk, garam, dan kaldu bubuk (jika suka).</li>
+            <li><strong>Minyak goreng:</strong> Gunakan minyak yang cukup banyak agar bakwan terendam sempurna saat digoreng.</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bakwan</h2>
+
+        <ol class="step-list">
+            <li><strong>Persiapan Sayuran:</strong> Cuci bersih semua sayuran yang akan digunakan. Potong-potong atau iris tipis sesuai selera. Untuk sayuran seperti tauge, pastikan sudah ditiriskan dengan baik agar tidak terlalu banyak air.</li>
+            <li><strong>Membuat Adonan Tepung:</strong> Dalam sebuah wadah, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+            <li><strong>Menambahkan Bumbu:</strong> Masukkan bumbu halus (bawang putih, bawang merah, merica, garam, kaldu bubuk) ke dalam campuran tepung. Jika menggunakan telur, pecahkan telur ke dalam wadah dan aduk hingga tercampur rata dengan bumbu dan tepung.</li>
+            <li><strong>Mengentalkan Adonan:</strong> Tuang air sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer agar sayuran menempel sempurna, tetapi juga tidak terlalu kental agar bakwan tidak terasa seperti tepung.</li>
+            <li><strong>Mencampur Sayuran:</strong> Masukkan semua sayuran yang sudah dipotong ke dalam adonan tepung. Aduk perlahan hingga semua sayuran terbalut rata dengan adonan. Pastikan semua bagian sayuran terkena adonan.</li>
+            <li><strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum memasukkan adonan bakwan. Ambil adonan menggunakan sendok atau tangan, lalu masukkan ke dalam minyak panas. Goreng bakwan hingga berwarna kuning keemasan dan matang merata. Balik sesekali agar matangnya sempurna.</li>
+            <li><strong>Meniriskan Bakwan:</strong> Setelah matang, angkat bakwan dan tiriskan minyaknya menggunakan saringan atau tisu dapur. Lakukan proses ini hingga semua adonan habis digoreng.</li>
+            <li><strong>Sajikan:</strong> Bakwan siap disajikan selagi hangat. Nikmati dengan cabai rawit, sambal, atau saus favorit Anda.</li>
+        </ol>
+
+        <p>Membuat bakwan sendiri memang memberikan kepuasan tersendiri. Anda bisa berkreasi dengan berbagai macam sayuran dan bumbu sesuai selera keluarga. Dengan panduan ini, semoga Anda berhasil membuat bakwan yang lezat, renyah, dan disukai semua orang.</p>
+
+        <div class="footer">
+            Artikel ini memberikan panduan lengkap tentang cara membuat bakwan yang nikmat.
+        </div>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-sayur-diah-didi">Resep Bakwan Sayur Diah Didi</a></li>
+<li><a href="/daftar-harga-bakpia-kenes">Daftar Harga Bakpia Kenes</a></li>
+<li><a href="/bakwan-jantung-pisang">Bakwan Jantung Pisang</a></li>
+<li><a href="/cara-buat-perkedel-udang">Cara Buat Perkedel Udang</a></li>
+<li><a href="/bumbu-bakwan-gurih">Bumbu Bakwan Gurih</a></li>
+<li><a href="/cara-membuat-bakwan-mie-indomie">Cara Membuat Bakwan Mie Indomie</a></li>
+<li><a href="/resep-bakwan-jembak">Resep Bakwan Jembak</a></li>
+<li><a href="/cara-membuat-bala-bala-enak">Cara Membuat Bala Bala Enak</a></li>
+<li><a href="/bakpia-pathok-26">Bakpia Pathok 26</a></li>
+<li><a href="/cara-membuat-bakwan-singkong">Cara Membuat Bakwan Singkong</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

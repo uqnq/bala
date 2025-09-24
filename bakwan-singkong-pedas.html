@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Singkong Pedas Praktis</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna biru muda sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna hijau toska cerah */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #80deea; /* Garis bawah biru muda */
+            padding-bottom: 10px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        .recipe-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+        .ingredients, .steps {
+            background-color: #f0f8ff; /* Warna biru very light */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .ingredients ul li, .steps ol li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #e64a19; /* Warna oranye cerah untuk penekanan */
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #b0bec5; /* Garis pemisah footer */
+            color: #78909c; /* Warna abu-abu sejuk */
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-image {
+                margin: 15px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakwan Singkong Pedas: Cemilan Gurih yang Menggugah Selera</h1>
+
+        <!-- SVG Gambar -->
+        <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f44336;stop-opacity:1" /> <!-- Merah cabai -->
+                    <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" /> <!-- Oranye cerah -->
+                </linearGradient>
+            </defs>
+            <rect width="600" height="400" rx="20" ry="20" fill="#e8f5e9"/> <!-- Latar belakang hijau pucat -->
+
+            <!-- Singkong parut -->
+            <path d="M 100 200 Q 150 180 200 200 T 300 200 T 400 200 T 500 200 Q 450 250 400 250 T 300 250 T 200 250 T 100 250 Z" fill="#ffe082"/> <!-- Kuning pucat untuk singkong -->
+            <path d="M 120 220 Q 170 200 220 220 T 320 220 T 420 220 T 520 220 Q 470 270 420 270 T 320 270 T 220 270 T 120 270 Z" fill="#fff9c4"/> <!-- Lebih terang -->
+
+            <!-- Potongan cabai -->
+            <g transform="translate(250, 180) rotate(20)">
+                <path d="M 0 0 L 20 0 L 10 30 Z" fill="url(#grad1)" />
+                <circle cx="10" cy="10" r="3" fill="#f44336"/>
+            </g>
+            <g transform="translate(280, 190) rotate(-15)">
+                <path d="M 0 0 L 20 0 L 10 30 Z" fill="url(#grad1)" />
+                <circle cx="10" cy="10" r="3" fill="#f44336"/>
+            </g>
+            <g transform="translate(310, 170) rotate(30)">
+                <path d="M 0 0 L 20 0 L 10 30 Z" fill="url(#grad1)" />
+                <circle cx="10" cy="10" r="3" fill="#f44336"/>
+            </g>
+
+            <!-- Potongan daun bawang/seledri -->
+            <path d="M 150 160 L 160 140 L 170 160 Z" fill="#81c784"/> <!-- Hijau muda -->
+            <path d="M 180 170 L 190 150 L 200 170 Z" fill="#81c784"/>
+            <path d="M 220 150 L 230 130 L 240 150 Z" fill="#81c784"/>
+
+            <!-- Teks judul -->
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#1565c0" font-size="30" font-weight="bold">Bakwan Singkong Pedas</text>
+        </svg>
+
+        <p>Siapa yang tidak suka cemilan renyah, gurih, dan sedikit pedas? Bakwan, atau yang sering disebut bala-bala, adalah salah satu jajanan pasar favorit banyak orang. Kali ini, kita akan berkreasi dengan singkong, bahan pangan lokal yang kaya serat dan mudah didapat, untuk menciptakan <span class="highlight">bakwan singkong pedas</span> yang unik dan lezat. Resep ini sangat praktis, cocok untuk dijadikan ide camilan di sore hari atau hidangan pelengkap saat berkumpul bersama keluarga.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan Utama</h2>
+            <ul>
+                <li>500 gram singkong, kupas dan parut halus</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+                <li>2 batang daun bawang, iris halus</li>
+                <li>1 genggam daun seledri, iris halus (opsional, untuk aroma segar)</li>
+                <li>15-20 buah cabai rawit merah (sesuaikan selera pedas Anda), iris halus</li>
+                <li>5 siung bawang putih, haluskan</li>
+                <li>1 sendok teh ketumbar bubuk</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya (sedikit saja untuk menyeimbangkan rasa)</li>
+                <li>Air secukupnya untuk adonan</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Cara Membuat yang Mudah</h2>
+            <ol>
+                <li>Peras singkong parut menggunakan tangan atau kain bersih untuk mengurangi kadar airnya. Ini penting agar bakwan tidak lembek saat digoreng.</li>
+                <li>Dalam wadah besar, campurkan singkong parut yang sudah diperas dengan tepung terigu, tepung beras, daun bawang, daun seledri (jika pakai), irisan cabai rawit, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan sedikit gula pasir.</li>
+                <li>Aduk rata semua bahan. Tambahkan air sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan bisa dibentuk. Adonan tidak boleh terlalu encer maupun terlalu kering. Konsistensinya harus pas agar bakwan tidak mudah hancur.</li>
+                <li>Panaskan minyak goreng dalam jumlah cukup banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+                <li>Ambil satu sendok sayur adonan, lalu bentuk pipih atau sesuai selera Anda. Masukkan perlahan ke dalam minyak panas.</li>
+                <li>Goreng bakwan singkong hingga berwarna kuning keemasan dan matang sempurna di kedua sisinya. Balik sesekali agar matangnya merata.</li>
+                <li>Angkat bakwan singkong pedas yang sudah matang, tiriskan minyaknya menggunakan tisu dapur agar tidak terlalu berminyak.</li>
+                <li>Sajikan bakwan singkong pedas selagi hangat. Nikmati bersama cabai rawit utuh, sambal kecap, atau saus favorit Anda.</li>
+            </ol>
+        </div>
+
+        <p>Kerenyahan di luar dan tekstur singkong yang lembut di dalam berpadu sempurna dengan rasa pedas yang menggigit. <span class="highlight">Bakwan singkong pedas</span> ini adalah bukti bahwa bahan sederhana pun bisa diolah menjadi hidangan istimewa. Rasanya yang khas akan membuat Anda ketagihan. Cobalah resep ini di rumah dan rasakan sensasi ngemil yang berbeda!</p>
+
+        <p>Membuat bakwan singkong pedas tidak memerlukan waktu lama dan alat yang rumit. Singkong yang diparut akan memberikan cita rasa sedikit manis alami, yang berpadu harmonis dengan pedasnya cabai rawit dan gurihnya bumbu. Kunci kelezatan bakwan singkong terletak pada kesegaran bahan, keseimbangan bumbu, dan teknik menggoreng yang tepat. Dengan sedikit trik memeras air dari singkong, Anda bisa mendapatkan bakwan yang renyah di luar dan empuk di dalam.</p>
+
+        <p>Variasi bisa ditambahkan, misalnya mencampurkan sedikit parutan wortel atau jagung manis ke dalam adonan untuk menambah warna dan tekstur. Namun, cita rasa otentik dari singkong tetap menjadi primadona. Bakwan ini sangat cocok dinikmati kapan saja, baik sebagai teman minum teh di sore hari, bekal anak sekolah, atau hidangan tambahan saat makan nasi. Dijamin, semua anggota keluarga akan menyukai <span class="highlight">bakwan singkong pedas</span> buatan Anda!</p>
+
+        <div class="footer">
+            <p>Selamat mencoba dan menikmati!</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-sayur-kol">Bakwan Sayur Kol</a></li>
+<li><a href="/bumbu-dadar-jagung-sederhana">Bumbu Dadar Jagung Sederhana</a></li>
+<li><a href="/bumbu-dadar-jagung-manis">Bumbu Dadar Jagung Manis</a></li>
+<li><a href="/bale-tr">Bale Tr</a></li>
+<li><a href="/bakwan-jagung-sederhana">Bakwan Jagung Sederhana</a></li>
+<li><a href="/resep-bakwan-kawi-goreng-tanpa-daging">Resep Bakwan Kawi Goreng Tanpa Daging</a></li>
+<li><a href="/balasan-bagi-orang-yg-tidak-puasa-ramadhan">Balasan Bagi Orang Yg Tidak Puasa Ramadhan</a></li>
+<li><a href="/bahan-bikin-perkedel-jagung">Bahan Bikin Perkedel Jagung</a></li>
+<li><a href="/bahan-bahan-bikin-bakso-mercon">Bahan Bahan Bikin Bakso Mercon</a></li>
+<li><a href="/perbedaan-jamur-dan-bakteri">Perbedaan Jamur Dan Bakteri</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkedel Jagung Sajiku: Krispi, Lezat, Mudah!</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        /* Warna dasar sejuk dan cerah */
+        :root {
+            --color-primary: #e0f7fa; /* Biru muda */
+            --color-secondary: #b2ebf2; /* Biru toska muda */
+            --color-accent: #4dd0e1; /* Biru cerah */
+            --color-text-dark: #333;
+            --color-text-light: #fff;
+            --color-background: #ffffff;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            background-color: var(--color-background);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px; /* Batas lebar untuk desktop, tapi di mobile akan responsif */
+            margin: 0 auto;
+            background-color: var(--color-text-light);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h1, h2 {
+            color: var(--color-accent);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .responsive-svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .keyword {
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+
+        .recipe-steps ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        .recipe-steps li {
+            margin-bottom: 15px;
+        }
+
+        .recipe-steps strong {
+            color: var(--color-accent);
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .responsive-svg {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Nikmati Perkedel Jagung Krispi dan Lezat dengan Tepung Bumbu Sajiku!</h1>
+
+        <div class="image-container">
+            <!-- SVG Image: represents a plate of golden fried corn fritters -->
+            <svg class="responsive-svg" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svgTitle" role="img">
+                <title id="svgTitle">Sepiring Perkedel Jagung yang Keemasan</title>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--color-secondary);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--color-accent);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="500" height="300" fill="var(--color-primary)" />
+                <ellipse cx="250" cy="200" rx="180" ry="100" fill="var(--color-background)" transform="rotate(-10 250 200)"/>
+                <!-- Fritters -->
+                <path d="M100 150 Q 120 120, 150 130 T 180 160 Q 160 180, 130 170 T 100 150 Z" fill="#fbc02d"/>
+                <path d="M160 130 Q 180 100, 210 110 T 240 140 Q 220 160, 190 150 T 160 130 Z" fill="#fbc02d"/>
+                <path d="M220 110 Q 240 80, 270 90 T 300 120 Q 280 140, 250 130 T 220 110 Z" fill="#fbc02d"/>
+                <path d="M280 90 Q 300 60, 330 70 T 360 100 Q 340 120, 310 110 T 280 90 Z" fill="#fbc02d"/>
+                <path d="M140 170 Q 160 150, 190 160 T 220 190 Q 200 210, 170 200 T 140 170 Z" fill="#fbc02d"/>
+                <path d="M200 150 Q 220 130, 250 140 T 280 170 Q 260 190, 230 180 T 200 150 Z" fill="#fbc02d"/>
+                <path d="M260 130 Q 280 110, 310 120 T 340 150 Q 320 170, 290 160 T 260 130 Z" fill="#fbc02d"/>
+
+                <!-- Text overlay -->
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="var(--color-text-dark)" font-size="30" font-weight="bold">Perkedel Jagung</text>
+                <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" fill="var(--color-text-dark)" font-size="20">Ala Rumahan</text>
+            </svg>
+        </div>
+
+        <p>Siapa yang bisa menolak kelezatan perkedel jagung yang renyah di luar dan lembut di dalam? Makanan ringan favorit keluarga ini kini semakin mudah dibuat berkat kehadiran <span class="keyword">tepung bumbu sajiku</span>. Kombinasi sempurna antara jagung manis segar dan bumbu pilihan dalam tepung Sajiku akan menghadirkan cita rasa autentik yang disukai semua orang.</p>
+
+        <p>Membuat <span class="keyword">perkedel jagung dengan tepung bumbu sajiku</span> tidak membutuhkan keahlian khusus layaknya koki profesional. Cukup dengan beberapa langkah sederhana, Anda bisa menyajikan hidangan istimewa yang cocok untuk teman ngopi, camilan keluarga, atau bahkan lauk pendamping nasi hangat.</p>
+
+        <h2>Mengapa Memilih Tepung Bumbu Sajiku?</h2>
+        <p>Tepung bumbu serbaguna seperti Sajiku memang menjadi solusi cerdas bagi para ibu rumah tangga yang ingin menyajikan masakan lezat tanpa repot. Keunggulannya antara lain:</p>
+        <ul>
+            <li><strong>Praktis:</strong> Tidak perlu lagi mencampur aneka bumbu dapur secara terpisah.</li>
+            <li><strong>Rasa Konsisten:</strong> Kualitas bumbu terjamin, menghasilkan rasa yang pas di setiap gigitan.</li>
+            <li><strong>Tekstur Renyah:</strong> Hasil gorengan menjadi lebih garing dan tahan lama.</li>
+            <li><strong>Fleksibel:</strong> Cocok tidak hanya untuk perkedel jagung, tetapi juga aneka gorengan lainnya.</li>
+        </ul>
+
+        <h2>Resep Sederhana Perkedel Jagung Sajiku</h2>
+        <div class="recipe-steps">
+            <p>Siapkan bahan-bahan berikut:</p>
+            <ul>
+                <li>2 buah jagung manis, pipil halus</li>
+                <li>100 gram <span class="keyword">tepung bumbu sajiku</span> (sesuai petunjuk kemasan)</li>
+                <li>1 butir telur ayam</li>
+                <li>2-3 sendok makan air (jika adonan terlalu kental)</li>
+                <li>Minyak goreng secukupnya</li>
+                <li>Opsional: daun bawang iris halus, cabai rawit iris (jika suka pedas)</li>
+            </ul>
+
+            <p>Langkah membuat:</p>
+            <ol>
+                <li>Dalam wadah, campurkan pipilan jagung manis, telur, dan <span class="keyword">tepung bumbu sajiku</span>. Aduk rata.</li>
+                <li>Jika Anda menggunakan daun bawang dan cabai rawit, masukkan pada tahap ini dan aduk kembali.</li>
+                <li>Jika adonan terasa terlalu kental dan sulit dibentuk, tambahkan air sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan yang pas untuk digoreng.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang.</li>
+                <li>Ambil satu sendok makan adonan, bentuk agak pipih, lalu masukkan ke dalam minyak panas. Goreng hingga kedua sisinya berwarna kuning keemasan dan matang.</li>
+                <li>Angkat perkedel jagung, tiriskan minyaknya, dan sajikan selagi hangat.</li>
+            </ol>
+        </div>
+
+        <p>Perkedel jagung yang dibuat dengan <span class="keyword">tepung bumbu sajiku</span> ini akan menghasilkan tekstur yang sangat menggugah selera. Krispi di luar, lembut manis di dalam, dengan aroma bumbu yang meresap sempurna. Hidangan ini sangat cocok dinikmati bersama keluarga tercinta di sore hari sambil bersantai.</p>
+
+        <p>Jangan ragu untuk mencoba resep <span class="keyword">perkedel jagung dengan tepung bumbu sajiku</span> ini di rumah. Dijamin, Anda akan ketagihan dengan kemudahan dan kelezatannya. Selamat mencoba dan selamat menikmati!</p>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-pathok-enak">Bakpia Pathok Enak</a></li>
+<li><a href="/cara-membuat-bakso-pentol-pedas">Cara Membuat Bakso Pentol Pedas</a></li>
+<li><a href="/resep-kue-bakwan">Resep Kue Bakwan</a></li>
+<li><a href="/bakpao-sederhana">Bakpao Sederhana</a></li>
+<li><a href="/bakwan-ketela">Bakwan Ketela</a></li>
+<li><a href="/cara-membuat-bakwan-jamur-tiram">Cara Membuat Bakwan Jamur Tiram</a></li>
+<li><a href="/resep-membuat-bakwan-kawi">Resep Membuat Bakwan Kawi</a></li>
+<li><a href="/bakwan-tahu-goreng">Bakwan Tahu Goreng</a></li>
+<li><a href="/bumbu-goreng-bakwan-jagung">Bumbu Goreng Bakwan Jagung</a></li>
+<li><a href="/resep-perkedel-jagung-tumbuk">Resep Perkedel Jagung Tumbuk</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

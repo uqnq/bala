@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Dadar Udang: Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Warna sejuk cerah */
+        :root {
+            --primary-color: #66BB6A; /* Hijau cerah */
+            --secondary-color: #FFD54F; /* Kuning cerah */
+            --background-color: #E8F5E9; /* Hijau sangat muda */
+            --text-color: #333;
+            --accent-color: #FF8A65; /* Oranye muda */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .recipe-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+        }
+
+        .detail-item {
+            text-align: center;
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .detail-item span {
+            display: block;
+            font-size: 1.1em;
+            color: var(--primary-color);
+        }
+
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+
+        .ingredients li, .instructions li {
+            margin-bottom: 12px;
+        }
+
+        .ingredients h3, .instructions h3 {
+            text-align: left;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .instructions li strong {
+            color: var(--accent-color);
+        }
+
+        .tips {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: var(--accent-color);
+            color: #fff;
+            border-radius: 10px;
+        }
+
+        .tips h3 {
+            color: #fff;
+            text-align: left;
+        }
+
+        .tips p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 20px;
+            }
+            .recipe-details {
+                flex-direction: column;
+                align-items: center;
+            }
+            .detail-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Dadar Udang: Lezat, Bergizi, dan Mudah Dibuat</h1>
+
+        <div class="hero-image">
+            <!-- SVG Gambar Dadar Udang -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-labelledby="dadarUdangTitle">
+                <title id="dadarUdangTitle">Ilustrasi Dadar Udang yang Menggugah Selera</title>
+                <defs>
+                    <linearGradient id="gradientYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFECB3;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFD54F;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="gradientOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFAB91;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FF8A65;stop-opacity:1" />
+                    </linearGradient>
+                    <radialGradient id="gradientShrimp" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:#FFCDD2;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#EF9A9A;stop-opacity:1" />
+                    </radialGradient>
+                </defs>
+
+                <!-- Latar Belakang Mangkuk -->
+                <path d="M 50 250 C 150 200, 350 200, 550 250 L 570 280 C 580 290, 590 300, 590 310 L 10 310 C 10 300, 20 290, 30 280 Z" fill="#F5F5F5" opacity="0.8"/>
+                <path d="M 50 250 Q 300 220 550 250 L 530 270 Q 300 240 70 270 Z" fill="#ECEFF1"/>
+
+                <!-- Dadar Udang (semi-abstract) -->
+                <ellipse cx="300" cy="170" rx="180" ry="110" fill="url(#gradientYellow)" transform="rotate(-10 300 170)" />
+                <ellipse cx="310" cy="160" rx="175" ry="105" fill="url(#gradientOrange)" transform="rotate(-12 310 160)" />
+
+                <!-- Udang-udang -->
+                <g transform="translate(180, 120) rotate(-20)">
+                    <path d="M 0 0 C 10 -5, 20 -5, 30 0 C 40 5, 30 15, 20 15 C 10 15, 0 10, 0 0 Z" fill="url(#gradientShrimp)" />
+                    <circle cx="5" cy="0" r="3" fill="#FFF" opacity="0.8"/>
+                    <circle cx="25" cy="0" r="3" fill="#FFF" opacity="0.8"/>
+                </g>
+                 <g transform="translate(250, 100) rotate(15)">
+                    <path d="M 0 0 C 8 -4, 16 -4, 24 0 C 32 4, 24 12, 16 12 C 8 12, 0 8, 0 0 Z" fill="url(#gradientShrimp)" />
+                    <circle cx="4" cy="0" r="2.5" fill="#FFF" opacity="0.7"/>
+                    <circle cx="20" cy="0" r="2.5" fill="#FFF" opacity="0.7"/>
+                </g>
+                 <g transform="translate(380, 130) rotate(-5)">
+                    <path d="M 0 0 C 12 -6, 24 -6, 36 0 C 48 6, 36 18, 24 18 C 12 18, 0 12, 0 0 Z" fill="url(#gradientShrimp)" />
+                    <circle cx="6" cy="0" r="3.5" fill="#FFF" opacity="0.85"/>
+                    <circle cx="30" cy="0" r="3.5" fill="#FFF" opacity="0.85"/>
+                </g>
+                 <g transform="translate(220, 180) rotate(30)">
+                    <path d="M 0 0 C 10 -5, 20 -5, 30 0 C 40 5, 30 15, 20 15 C 10 15, 0 10, 0 0 Z" fill="url(#gradientShrimp)" />
+                    <circle cx="5" cy="0" r="3" fill="#FFF" opacity="0.8"/>
+                    <circle cx="25" cy="0" r="3" fill="#FFF" opacity="0.8"/>
+                </g>
+
+                <!-- Bumbu / Sedikit Taburan -->
+                <circle cx="150" cy="170" r="2" fill="#8BC34A" opacity="0.6"/>
+                <circle cx="450" cy="180" r="2" fill="#8BC34A" opacity="0.6"/>
+                <circle cx="300" cy="150" r="1.5" fill="#8BC34A" opacity="0.5"/>
+            </svg>
+        </div>
+
+        <p>Dadar udang merupakan salah satu hidangan favorit banyak orang, menawarkan kombinasi rasa gurih dari udang segar dengan kelembutan telur yang matang sempurna. Bukan hanya lezat, hidangan ini juga kaya akan protein dan nutrisi penting yang baik untuk tubuh. Keistimewaan dadar udang terletak pada kesederhanaannya dalam proses pembuatan, menjadikannya pilihan tepat untuk sarapan, makan siang, atau bahkan lauk pendamping saat makan malam.</p>
+
+        <div class="recipe-details">
+            <div class="detail-item">
+                Waktu Persiapan: <span>15 Menit</span>
+            </div>
+            <div class="detail-item">
+                Waktu Memasak: <span>20 Menit</span>
+            </div>
+            <div class="detail-item">
+                Porsi: <span>2-3 Orang</span>
+            </div>
+            <div class="detail-item">
+                Tingkat Kesulitan: <span>Mudah</span>
+            </div>
+        </div>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <ul>
+                <li>250 gram udang segar, kupas, bersihkan, dan cincang kasar</li>
+                <li>4 butir telur ayam</li>
+                <li>2 siung bawang putih, cincang halus</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>2 sendok makan minyak goreng atau margarin</li>
+                <li>Irisan cabai rawit (sesuai selera, jika suka pedas)</li>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat Dadar Udang</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Persiapan Udang:</strong> Pastikan udang sudah bersih dan dicincang kasar. Ukuran cincangan bisa disesuaikan dengan selera, ada yang suka sedikit kasar agar terasa tekstur udangnya, ada juga yang lebih halus.</li>
+                <li><strong>Campurkan Bahan:</strong> Dalam sebuah wadah, kocok lepas telur ayam. Masukkan udang cincang, bawang putih cincang, irisan daun bawang, garam, merica bubuk, dan kaldu bubuk (jika menggunakan). Aduk rata hingga semua bahan tercampur sempurna.</li>
+                <li><strong>Panaskan Wajan:</strong> Siapkan wajan anti lengket. Panaskan minyak goreng atau margarin dengan api sedang. Pastikan wajan sudah cukup panas sebelum adonan dadar dituangkan.</li>
+                <li><strong>Tuang Adonan:</strong> Tuang setengah atau seluruh adonan dadar ke dalam wajan panas. Ratakan adonan agar ketebalannya merata. Jika menggunakan irisan cabai rawit, bisa ditaburkan di atas adonan saat masih setengah matang.</li>
+                <li><strong>Masak Hingga Matang:</strong> Masak dadar hingga satu sisi matang dan berwarna kecoklatan. Balik dadar dengan hati-hati menggunakan spatula. Masak sisi satunya lagi hingga matang sempurna.</li>
+                <li><strong>Sajikan:</strong> Angkat dadar udang dari wajan. Potong-potong sesuai selera dan sajikan selagi hangat. Dadar udang sangat nikmat disantap dengan nasi putih hangat, sambal, atau saus favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h3>Tips Tambahan untuk Dadar Udang Sempurna</h3>
+            <p>Untuk hasil yang lebih menggugah selera, Anda bisa menambahkan bahan lain seperti sedikit parutan wortel untuk warna dan nutrisi tambahan, atau irisan seledri untuk aroma yang lebih segar. Pastikan api tidak terlalu besar saat memasak agar dadar matang merata hingga ke dalam dan tidak gosong di luar.</p>
+            <p>Jika Anda ingin dadar yang lebih tebal, gunakan wajan yang lebih kecil atau gunakan lebih banyak telur. Sebaliknya, untuk dadar yang lebih tipis dan renyah, gunakan wajan yang lebih lebar.</p>
+        </div>
+
+        <p>Dadar udang adalah bukti bahwa hidangan sederhana bisa menjadi luar biasa. Dengan sedikit sentuhan kreatif dan bahan-bahan segar, Anda bisa menciptakan kelezatan yang disukai seluruh keluarga. Selamat mencoba resep dadar udang ini di rumah!</p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-chik-yen">Bakpao Chik Yen</a></li>
+<li><a href="/pemeriksaan-bakteri">Pemeriksaan Bakteri</a></li>
+<li><a href="/resep-bakwan-jagung-sayur">Resep Bakwan Jagung Sayur</a></li>
+<li><a href="/resep-balado-bakso-mercon">Resep Balado Bakso Mercon</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-empuk-renyah">Cara Membuat Bakwan Jagung Empuk Renyah</a></li>
+<li><a href="/cara-membuat-bakpao-1-kg">Cara Membuat Bakpao 1 Kg</a></li>
+<li><a href="/bakso-mercon-cak-kar-foto">Bakso Mercon Cak Kar Foto</a></li>
+<li><a href="/resep-membuat-weci-renyah">Resep Membuat Weci Renyah</a></li>
+<li><a href="/tutorial-membuat-bakwan-jagung">Tutorial Membuat Bakwan Jagung</a></li>
+<li><a href="/bakteri-tahan-panas">Bakteri Tahan Panas</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

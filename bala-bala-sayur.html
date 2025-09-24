@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala Bala Sayur: Camilan Renyah Penuh Gizi</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Warna sejuk cerah */
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #FFC107; /* Kuning cerah */
+            --background-color: #E8F5E9; /* Hijau pastel */
+            --text-color: #333;
+            --heading-color: #1B5E20;
+            --card-background: #FFFFFF;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px; /* Lebar maksimum untuk tampilan desktop */
+            background-color: var(--card-background);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify; /* Rata kiri-kanan untuk paragraf */
+        }
+
+        .intro-image {
+            width: 100%;
+            max-width: 400px; /* Sesuaikan ukuran gambar */
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--shadow-color);
+        }
+
+        .ingredients, .steps {
+            text-align: left; /* Rata kiri untuk daftar bahan dan langkah */
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+
+        .ingredients ul, .steps ol {
+            padding-left: 20px;
+        }
+
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        /* Responsif untuk mobile */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            .intro-image {
+                max-width: 100%; /* Gambar mengisi lebar layar */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="intro-image">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm1-11h-2v4h2V9zm0 6h-2v2h2v-2z" fill="#4CAF50"/>
+            <title>Simbol Sayuran</title>
+        </svg>
+
+        <h1>Bala Bala Sayur: Camilan Renyah Penuh Gizi</h1>
+
+        <p>
+            Siapa yang tidak suka dengan camilan yang renyah di luar, lembut di dalam, dan tentu saja, menggugah selera? Bala bala sayur, atau yang juga dikenal sebagai bakwan sayur, adalah salah satu jajanan tradisional Indonesia yang selalu punya tempat istimewa di hati banyak orang. Camilan ini sangat populer karena kesederhanaannya, kelezatannya, serta kemampuannya untuk diisi dengan berbagai macam sayuran yang kaya akan nutrisi. Membuat bala bala sayur sendiri di rumah ternyata tidaklah sulit, dan Anda bisa menyesuaikannya dengan preferensi rasa dan sayuran favorit keluarga. Artikel ini akan memandu Anda untuk menciptakan bala bala sayur yang sempurna, lezat, dan sehat.
+        </p>
+
+        <p>
+            Keunggulan utama dari bala bala sayur terletak pada fleksibilitasnya. Anda bisa menggunakan sayuran apa saja yang ada di kulkas. Wortel yang diparut halus, kol yang diiris tipis, tauge yang menambah tekstur kriuk, daun bawang yang harum, atau bahkan buncis yang dipotong kecil-kecil, semuanya bisa berpadu indah dalam adonan. Kombinasi sayuran ini tidak hanya memperkaya rasa dan aroma, tetapi juga menambah asupan serat, vitamin, dan mineral yang baik untuk tubuh. Jadi, bala bala sayur bukan sekadar camilan biasa, melainkan bisa menjadi alternatif makanan yang cukup bernutrisi, terutama jika diimbangi dengan pola makan yang seimbang.
+        </p>
+
+        <h2>Rahasia Kelezatan dan Kerenyahan Bala Bala Sayur</h2>
+
+        <p>
+            Mendapatkan tekstur bala bala sayur yang sempurna memang membutuhkan sedikit trik. Kunci utamanya ada pada adonan tepung dan cara menggorengnya. Adonan yang terlalu encer akan membuat bala bala menjadi lembek dan menyerap banyak minyak, sedangkan adonan yang terlalu kental bisa membuat bagian luarnya cepat gosong sementara dalamnya belum matang. Perbandingan tepung terigu dan air yang pas adalah kunci. Beberapa orang juga menambahkan sedikit tepung beras atau tepung tapioka untuk mendapatkan kerenyahan ekstra yang tahan lama. Jangan lupa untuk membumbui adonan dengan garam, merica, dan kadang-kadang sedikit kaldu bubuk atau bawang putih halus untuk memperkaya cita rasa.
+        </p>
+
+        <p>
+            Untuk mendapatkan kerenyahan yang maksimal, gunakan minyak goreng dalam jumlah yang cukup banyak dan pastikan minyak sudah benar-benar panas sebelum Anda memasukkan adonan sayuran. Menggoreng dengan api sedang cenderung besar juga membantu agar bagian luar cepat matang dan renyah sebelum bagian dalam terlalu matang. Tiriskan bala bala sayur yang sudah matang di atas rak kawat atau kertas tisu dapur untuk menyerap kelebihan minyak. Hasilnya, Anda akan mendapatkan bala bala sayur yang sempurna: luarnya garing memikat, dalamnya lembut berisi sayuran segar, dan rasa gurihnya bikin nagih.
+        </p>
+
+        <h2>Bahan-bahan Utama untuk Membuat Bala Bala Sayur</h2>
+
+        <p>
+            Untuk membuat sekitar 15-20 buah bala bala sayur, Anda akan memerlukan bahan-bahan dasar berikut:
+        </p>
+
+        <div class="ingredients">
+            <ul>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk kerenyahan ekstra)</li>
+                <li>Sekitar 200-250 ml air dingin (sesuaikan konsistensi)</li>
+                <li>1 buah wortel ukuran sedang, parut kasar</li>
+                <li>50 gram kol, iris tipis</li>
+                <li>50 gram tauge</li>
+                <li>2 batang daun bawang, iris halus</li>
+                <li>1 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>1 sendok teh garam (sesuai selera)</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-langkah Membuat Bala Bala Sayur yang Renyah</h2>
+
+        <p>
+            Ikuti langkah-langkah mudah berikut untuk menghasilkan bala bala sayur yang lezat:
+        </p>
+
+        <div class="steps">
+            <ol>
+                <li>Campurkan tepung terigu, tepung beras (jika menggunakan), bawang putih halus, merica, garam, dan kaldu bubuk dalam sebuah wadah. Aduk rata.</li>
+                <li>Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang licin, tidak terlalu kental dan tidak terlalu encer. Konsistensinya mirip adonan pisang goreng.</li>
+                <li>Masukkan semua sayuran yang sudah disiapkan (wortel, kol, tauge, daun bawang) ke dalam adonan tepung. Aduk kembali hingga semua sayuran terbalut rata oleh adonan.</li>
+                <li>Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</li>
+                <li>Setelah minyak benar-benar panas, ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Anda bisa membentuknya sesuai selera, bulat pipih atau sedikit memanjang.</li>
+                <li>Goreng bala bala sayur hingga berwarna kuning keemasan dan matang sempurna di kedua sisinya. Balik sesekali agar matang merata.</li>
+                <li>Angkat bala bala sayur yang sudah matang, tiriskan minyaknya, dan sajikan selagi hangat.</li>
+            </ol>
+        </div>
+
+        <p>
+            Bala bala sayur ini paling nikmat disantap saat masih hangat dengan tambahan cabai rawit hijau segar atau saus sambal. Selamat mencoba membuat camilan lezat ini di rumah dan nikmati sensasi renyahnya!
+        </p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-gorengan-bala-bala">Cara Membuat Gorengan Bala Bala</a></li>
+<li><a href="/jenis-bakteri-anaerob">Jenis Bakteri Anaerob</a></li>
+<li><a href="/cara-membuat-bakwan-agar-tidak-berminyak">Cara Membuat Bakwan Agar Tidak Berminyak</a></li>
+<li><a href="/cara-membuat-bakso-beranak">Cara Membuat Bakso Beranak</a></li>
+<li><a href="/harga-bunga-bakung">Harga Bunga Bakung</a></li>
+<li><a href="/uji-urease-bakteri">Uji Urease Bakteri</a></li>
+<li><a href="/bumbu-pecel-santan">Bumbu Pecel Santan</a></li>
+<li><a href="/bakwan-jagung-sajiku">Bakwan Jagung Sajiku</a></li>
+<li><a href="/cara-membuat-bala-bala-agar-tidak-lembek">Cara Membuat Bala Bala Agar Tidak Lembek</a></li>
+<li><a href="/gambar-bakteri-staphylococcus-aureus">Gambar Bakteri Staphylococcus Aureus</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

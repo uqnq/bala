@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Bikin Bakso Mercon Super Pedas</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0077cc; /* Warna cerah yang menenangkan */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-step {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .recipe-step::before {
+            content: counter(step) ". ";
+            counter-increment: step;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #0077cc;
+        }
+        .ingredients-list, .steps-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .ingredients-list li, .steps-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .ingredients-list li::before, .steps-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #28a745; /* Warna hijau cerah */
+            font-weight: bold;
+        }
+        strong {
+            color: #dc3545; /* Merah cerah untuk penekanan rasa pedas */
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Bikin Bakso Mercon Super Pedas</h1>
+
+        <svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 20px auto;">
+            <path d="M100 10C155.228 10 200 54.7715 200 110C200 165.228 155.228 210 100 210C44.7715 210 0 165.228 0 110C0 54.7715 44.7715 10 100 10Z" fill="#FF5722" fill-opacity="0.8"/>
+            <path d="M100 35C130.314 35 155 59.6863 155 90C155 120.314 130.314 145 100 145C69.6863 145 45 120.314 45 90C45 59.6863 69.6863 35 100 35Z" fill="#FFC107"/>
+            <path d="M100 55C111.046 55 120 63.9543 120 75C120 86.0457 111.046 95 100 95C88.9543 95 80 86.0457 80 75C80 63.9543 88.9543 55 100 55Z" fill="#F44336"/>
+            <circle cx="100" cy="75" r="5" fill="#FFFFFF"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="20" font-weight="bold" dy=".3em">🔥</text>
+        </svg>
+
+        <p>Siapa yang tidak suka bakso? Makanan sejuta umat ini memang selalu menggoda selera. Namun, kali ini kita akan membawa pengalaman makan bakso ke level yang berbeda dengan resep bakso mercon super pedas yang dijamin bikin nagih dan berkeringat!</p>
+
+        <p>Resep ini bukan untuk orang yang lemah jantung rasa pedasnya. Bakso mercon ini menggabungkan kelezatan bakso kenyal dengan letupan rasa pedas dari racikan cabai yang melimpah. Cocok disantap saat cuaca dingin atau kapan saja Anda butuh "tendangan" rasa yang spesial.</p>
+
+        <h2>Bahan-bahan Utama</h2>
+        <ul class="ingredients-list">
+            <li>500 gram daging sapi giling (pilih yang sedikit berlemak untuk tekstur lebih juicy)</li>
+            <li>100 gram tepung tapioka atau sagu</li>
+            <li>50 gram tepung terigu</li>
+            <li>1 butir telur ayam</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh garam</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>1/4 sendok teh kaldu bubuk sapi (opsional)</li>
+            <li>Es batu secukupnya (untuk menjaga adonan tetap dingin)</li>
+        </ul>
+
+        <h2>Bahan Bumbu Mercon (Isian)</h2>
+        <ul class="ingredients-list">
+            <li>20-30 buah cabai rawit merah (sesuaikan tingkat kepedasan Anda!)</li>
+            <li>5 buah cabai merah keriting</li>
+            <li>3 siung bawang merah</li>
+            <li>2 siung bawang putih</li>
+            <li>1 ruas jari kencur (opsional, untuk aroma khas)</li>
+            <li>Garam secukupnya</li>
+            <li>Sedikit gula pasir untuk menyeimbangkan rasa</li>
+            <li>Minyak goreng secukupnya untuk menumis</li>
+        </ul>
+
+        <h2>Cara Membuat Bakso Mercon Super Pedas</h2>
+        <p>Membuat bakso mercon memang membutuhkan sedikit usaha, namun hasilnya akan sangat memuaskan. Ikuti langkah-langkah berikut:</p>
+
+        <h3 style="color: #0077cc;">Langkah 1: Membuat Adonan Bakso</h3>
+        <ul class="steps-list">
+            <li>Dalam wadah besar, campurkan daging sapi giling, tepung tapioka, tepung terigu, telur, bawang putih halus, garam, merica, dan kaldu bubuk.</li>
+            <li>Aduk rata semua bahan hingga tercampur sempurna.</li>
+            <li>Masukkan es batu sedikit demi sedikit sambil terus diaduk atau diuleni. Proses ini penting untuk menghasilkan bakso yang kenyal dan padat. Uleni hingga adonan terasa kalis dan lengket.</li>
+            <li>Jika Anda memiliki food processor, Anda bisa menghaluskan semua bahan bakso di dalamnya hingga mendapatkan tekstur yang diinginkan.</li>
+        </ul>
+
+        <h3 style="color: #0077cc;">Langkah 2: Menyiapkan Bumbu Mercon</h3>
+        <ul class="steps-list">
+            <li>Haluskan cabai rawit merah, cabai merah keriting, bawang merah, bawang putih, dan kencur (jika menggunakan). Anda bisa menggunakan cobek atau blender.</li>
+            <li>Panaskan sedikit minyak goreng dalam wajan. Tumis bumbu yang sudah dihaluskan hingga harum dan matang.</li>
+            <li>Bumbui dengan garam dan sedikit gula pasir. Aduk rata. Angkat dan biarkan agak dingin. Ini akan menjadi isian pedas Anda.</li>
+        </ul>
+
+        <h3 style="color: #0077cc;">Langkah 3: Membentuk Bakso Mercon</h3>
+        <ul class="steps-list">
+            <li>Siapkan panci berisi air, didihkan.</li>
+            <li>Ambil sedikit adonan bakso dengan tangan, pipihkan. Beri isian bumbu mercon secukupnya di tengahnya.</li>
+            <li>Bungkus adonan bakso hingga isian tertutup rapat. Bentuk menjadi bola-bola bakso.</li>
+            <li>Masukkan bakso yang sudah dibentuk ke dalam air mendidih. Masak hingga bakso mengapung.</li>
+            <li>Jika Anda ingin membuat bakso goreng, Anda bisa menggoreng bakso yang sudah direbus hingga kuning keemasan.</li>
+        </ul>
+
+        <h3 style="color: #0077cc;">Langkah 4: Penyajian Bakso Mercon</h3>
+        <p>Bakso mercon siap disajikan dalam berbagai cara:</p>
+        <ul class="ingredients-list">
+            <li><strong>Kuah Pedas:</strong> Rebus bakso dalam kaldu sapi yang sudah dibumbui dengan sedikit cabai halus, bawang putih, dan merica untuk kuah yang lebih nendang.</li>
+            <li><strong>Goreng Kering:</strong> Goreng bakso yang sudah direbus hingga renyah. Sajikan dengan sambal kacang atau sambal kecap.</li>
+            <li><strong>Bakso Kuah Bening:</strong> Nikmati bakso mercon original dengan kuah bening, rasakan sensasi pedasnya yang meledak di setiap gigitan.</li>
+        </ul>
+
+        <p>Pastikan untuk menikmati bakso mercon ini selagi hangat untuk sensasi rasa yang maksimal. Siapkan juga minuman dingin untuk meredakan "kobaran api" di mulut Anda!</p>
+        <p>Selamat mencoba menciptakan bakso mercon super pedas kreasi Anda sendiri!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/balasan-doa-untuk-orang-yang-mendoakan-kita">Balasan Doa Untuk Orang Yang Mendoakan Kita</a></li>
+<li><a href="/daftar-harga-bakpia-wong">Daftar Harga Bakpia Wong</a></li>
+<li><a href="/bakso-ayam-beranak">Bakso Ayam Beranak</a></li>
+<li><a href="/bakpia-juwara-satoe-stasiun-lempuyangan">Bakpia Juwara Satoe Stasiun Lempuyangan</a></li>
+<li><a href="/cara-masak-bakwan-tahu">Cara Masak Bakwan Tahu</a></li>
+<li><a href="/jenis-bakteri-anaerob">Jenis Bakteri Anaerob</a></li>
+<li><a href="/bakwan-pak-cipto">Bakwan Pak Cipto</a></li>
+<li><a href="/cara-buat-bakso-pentol-pedas">Cara Buat Bakso Pentol Pedas</a></li>
+<li><a href="/balasan-kata-masyaallah-tabarakallah">Balasan Kata Masyaallah Tabarakallah</a></li>
+<li><a href="/perbedaan-gatal-karena-jamur-dan-bakteri">Perbedaan Gatal Karena Jamur Dan Bakteri</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

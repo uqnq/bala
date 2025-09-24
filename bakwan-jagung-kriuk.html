@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Jagung Kriuk: Resep & Rahasia Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #66BB6A; /* Hijau cerah */
+            --secondary-color: #81C784; /* Hijau lebih muda */
+            --text-color: #333333;
+            --background-color: #E8F5E9; /* Hijau pastel sangat muda */
+            --accent-color: #FFD54F; /* Kuning cerah untuk aksen */
+            --card-background: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            font-size: 1.1em;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-steps {
+            background-color: var(--accent-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .recipe-steps h3 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .recipe-steps ol {
+            padding-left: 30px;
+            font-weight: bold;
+        }
+
+        .recipe-steps li {
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--secondary-color);
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Media query untuk layar yang lebih kecil (mobile first approach) */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p, ul, ol {
+                font-size: 1em;
+            }
+
+            .recipe-steps {
+                padding: 15px;
+            }
+
+            .recipe-steps h3 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakwan Jagung Kriuk: Lezatnya Cemilan Favorit Keluarga</h1>
+
+        <div class="image-container">
+            <svg width="500" height="300" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="500" height="300" rx="10" fill="#E8F5E9"/>
+                <circle cx="100" cy="150" r="20" fill="#FFD54F"/>
+                <circle cx="200" cy="120" r="25" fill="#FFC107"/>
+                <circle cx="300" cy="180" r="18" fill="#FFD54F"/>
+                <circle cx="400" cy="100" r="22" fill="#FFC107"/>
+                <path d="M50 250 L150 200 L250 250 L200 280 L100 280 L50 250 Z" fill="#66BB6A" stroke="#FFD54F" stroke-width="3"/>
+                <path d="M150 200 L250 150 L350 200 L300 230 L200 230 L150 200 Z" fill="#81C784" stroke="#FFD54F" stroke-width="3"/>
+                <text x="250" y="280" font-family="Arial, sans-serif" font-size="18" fill="#333333" text-anchor="middle">Jagung</text>
+                <text x="200" y="100" font-family="Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Kriuk</text>
+                <text x="350" y="80" font-family="Arial, sans-serif" font-size="14" fill="#333333" text-anchor="middle">Gurih</text>
+            </svg>
+            <p><em>Cemilan renyah dan manis yang selalu dinanti.</em></p>
+        </div>
+
+        <p>Siapa yang tidak suka dengan sensasi <span class="highlight">bakwan jagung kriuk</span>? Gigitan pertama yang renyah di luar, berpadu dengan tekstur jagung manis yang lembut di dalam, ditambah aroma gurih yang menggoda selera. Cemilan ini bukan hanya sekadar gorengan biasa, tetapi sebuah suguhan yang mampu menghadirkan kehangatan dan kebahagiaan di setiap gigitannya. Cocok dinikmati kapan saja, baik sebagai teman minum teh di sore hari, camilan saat bersantai, atau bahkan lauk pendamping nasi hangat.</p>
+
+        <p>Membuat bakwan jagung yang sempurna memang memiliki beberapa rahasia, terutama agar hasilnya benar-benar kriuk dan tidak lembek. Kuncinya terletak pada pemilihan bahan, kesegaran jagung, serta cara menggorengnya. Jangan khawatir, resep dan tips berikut akan membantu Anda menciptakan bakwan jagung terenak yang pernah ada.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <ul>
+            <li>2 buah jagung manis segar, pipil bijinya</li>
+            <li>100 gram tepung terigu protein sedang</li>
+            <li>50 gram tepung beras (ini kunci untuk keripik!)</li>
+            <li>1 butir telur ayam</li>
+            <li>1 batang daun bawang, iris halus</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh garam</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>1/4 sendok teh ketumbar bubuk (opsional, untuk aroma lebih kaya)</li>
+            <li>Air secukupnya (sekitar 50-75 ml)</li>
+            <li>Minyak goreng secukupnya, untuk menggoreng</li>
+        </ul>
+
+        <h2>Rahasia Bakwan Jagung Kriuk Tahan Lama</h2>
+        <p>Agar bakwan jagung Anda memiliki tekstur yang diinginkan, perhatikan beberapa poin penting:</p>
+        <ul>
+            <li><strong>Tepung Beras:</strong> Penggunaan tepung beras adalah elemen krusial untuk mendapatkan kerenyahan maksimal. Tepung beras membuat adonan lebih renyah saat digoreng dan tahan lebih lama.</li>
+            <li><strong>Jagung yang Tepat:</strong> Gunakan jagung manis yang masih segar. Jagung yang sudah tua cenderung keras dan kurang manis. Anda bisa memipil biji jagung secara kasar agar teksturnya tetap terasa.</li>
+            <li><strong>Konsistensi Adonan:</strong> Adonan jangan terlalu cair dan jangan terlalu kental. Kentalnya sedang, sehingga bisa menempel pada jagung tetapi tidak terlalu tebal. Jika terlalu kental, bakwan akan keras, jika terlalu cair akan lembek.</li>
+            <li><strong>Jangan Terlalu Banyak Jagung:</strong> Pastikan perbandingan tepung dan jagung seimbang. Terlalu banyak jagung tanpa adonan yang cukup bisa membuat bakwan sulit menyatu dan kurang kriuk.</li>
+            <li><strong>Suhu Minyak:</strong> Goreng bakwan dengan minyak yang sudah benar-benar panas namun tidak berasap. Suhu yang tepat memastikan bakwan matang merata dan kriuk di luar tanpa menyerap terlalu banyak minyak.</li>
+            <li><strong>Jangan Tumpuk Saat Menggoreng:</strong> Goreng bakwan dalam beberapa tahap agar tidak saling menempel dan suhu minyak tetap stabil. Ini membantu setiap bakwan terekspos panas secara merata.</li>
+        </ul>
+
+        <div class="recipe-steps">
+            <h3>Cara Membuat Bakwan Jagung Kriuk</h3>
+            <ol>
+                <li>Dalam wadah, campurkan jagung pipil, daun bawang iris, bawang putih halus, garam, merica, dan ketumbar bubuk (jika pakai). Aduk rata.</li>
+                <li>Masukkan telur, aduk kembali.</li>
+                <li>Tambahkan tepung terigu dan tepung beras. Aduk perlahan hingga tercampur rata.</li>
+                <li>Tuang air sedikit demi sedikit sambil terus diaduk hingga adonan mengental sedang.</li>
+                <li>Panaskan minyak goreng yang cukup banyak dalam wajan.</li>
+                <li>Ambil satu sendok sayur adonan, tuang perlahan ke dalam minyak panas. Goreng hingga satu sisi berwarna kuning keemasan.</li>
+                <li>Balik bakwan dan goreng sisi lainnya hingga matang dan berwarna cokelat keemasan.</li>
+                <li>Angkat bakwan dan tiriskan menggunakan tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li>Sajikan bakwan jagung kriuk selagi hangat.</li>
+            </ol>
+        </div>
+
+        <p>Dengan mengikuti panduan ini, Anda bisa menyajikan <span class="highlight">bakwan jagung kriuk</span> yang lezat dan pastinya disukai seluruh anggota keluarga. Selamat mencoba dan menikmati kelezatan cemilan tradisional yang tak lekang oleh waktu!</p>
+
+        <div class="footer">
+            <p>Dibuat dengan cinta untuk pencinta kuliner Indonesia.</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-buat-pentol-beranak">Cara Buat Pentol Beranak</a></li>
+<li><a href="/bakwan-sayur-enak-dan-renyah">Bakwan Sayur Enak Dan Renyah</a></li>
+<li><a href="/resep-membuat-bala-bala">Resep Membuat Bala Bala</a></li>
+<li><a href="/bumbu-bakwan-sayur-enak-dan-gurih">Bumbu Bakwan Sayur Enak Dan Gurih</a></li>
+<li><a href="/bahan-buat-bakwan-jagung-crispy">Bahan Buat Bakwan Jagung Crispy</a></li>
+<li><a href="/pangsit-bawang">Pangsit Bawang</a></li>
+<li><a href="/resep-gimbal-jagung-sederhana">Resep Gimbal Jagung Sederhana</a></li>
+<li><a href="/resep-bakwan-tahu-putih">Resep Bakwan Tahu Putih</a></li>
+<li><a href="/resep-bakwan-sayur-lembut">Resep Bakwan Sayur Lembut</a></li>
+<li><a href="/bakteri-pemakan-daging">Bakteri Pemakan Daging</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

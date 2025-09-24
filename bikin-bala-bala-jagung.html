@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikin Bala Bala Jagung Renyah Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna dasar sejuk */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Pusatkan konten ke atas */
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff; /* Latar belakang konten putih */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-top: 20px; /* Jarak dari atas */
+            margin-bottom: 20px; /* Jarak dari bawah */
+        }
+        h1 {
+            color: #00796b; /* Warna judul cerah */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #009688; /* Warna sub-judul cerah */
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .ingredients-list, .instructions-list {
+            background-color: #f8f9fa; /* Warna latar belakang daftar lebih terang */
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .ingredients-list ul, .instructions-list ol {
+            padding-left: 25px;
+            margin: 0;
+        }
+        .ingredients-list li, .instructions-list li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .highlight {
+            color: #00695c; /* Warna teks yang ditonjolkan */
+            font-weight: bold;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px auto;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .recipe-image svg {
+            width: 80%;
+            max-width: 400px;
+            height: auto;
+            fill: #00897b; /* Warna SVG cerah */
+        }
+        .tip {
+            background-color: #ffe082; /* Warna kuning cerah untuk tips */
+            color: #f57f17; /* Warna teks tips gelap */
+            padding: 12px 15px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-style: italic;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .container {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p, .ingredients-list li, .instructions-list li {
+                font-size: 15px;
+            }
+            .recipe-image svg {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-image">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.7,12.9C22.5,12.5,22,12.1,21.4,12C20.7,11.9,19.8,12,19,12c-1.7,0-3.3,0.8-4.7,2.1C12.4,14,10.7,14,9,14C7.3,14,5.6,12,3.9,12C3.2,12,2.3,11.9,1.6,12C1,12.1,0.5,12.5,0.3,12.9c-0.2,0.4,0,0.8,0.3,1.1c0.4,0.4,1,0.5,1.5,0.5C3.4,14.7,5.2,16,7,16c1.8,0,3.6-1.3,5.4-1.3s3.6,1.3,5.4,1.3c1.8,0,3.6-1.3,5.4-1.3c1.8,0,3.6-1.3,5.4-1.3c0.5,0,1.1-0.1,1.5-0.5c0.3-0.3,0.5-0.7,0.3-1.1z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M11,15H9V9h2V15z M15,15h-2V9h2V15z"/>
+                <path d="M8,17h8V15H8V17z"/>
+                <path d="M10,10h4v4h-4z"/>
+            </svg>
+        </div>
+
+        <h1>Bikin Bala Bala Jagung Renyah dan Lezat</h1>
+
+        <p>Siapa yang tidak suka camilan renyah, gurih, dan sedikit manis? Bala bala jagung, atau bakwan jagung, adalah salah satu camilan klasik Indonesia yang selalu berhasil menggugah selera. Cocok dinikmati kapan saja, baik saat santai sore hari ditemani teh hangat, atau sebagai lauk pendamping nasi. Membuatnya pun ternyata tidak sesulit yang dibayangkan, bahkan bagi pemula sekalipun. Artikel ini akan memandu Anda langkah demi langkah untuk bikin bala bala jagung yang sempurna.</p>
+
+        <p>Kunci dari bala bala jagung yang enak terletak pada kesegaran bahan utamanya, yaitu jagung manis. Pilih jagung yang masih muda dan manis agar rasa manis alaminya keluar tanpa perlu tambahan gula berlebih. Selain itu, adonan tepung yang tepat juga berperan penting dalam menciptakan tekstur renyah yang tahan lama.</p>
+
+        <h2>Bahan-Bahan yang Diperlukan:</h2>
+        <div class="ingredients-list">
+            <ul>
+                <li>3 buah jagung manis ukuran sedang, pipil bijinya</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk ekstra renyah)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air secukupnya untuk membuat adonan</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Cara Bikin Bala Bala Jagung yang Mantap:</h2>
+        <div class="instructions-list">
+            <ol>
+                <li><strong>Persiapan Jagung:</strong> Pipil biji jagung dari bonggolnya. Anda bisa menggunakan pisau tajam atau memipilnya langsung dengan tangan. Sisihkan.</li>
+                <li><strong>Membuat Adonan Kering:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras (jika menggunakan), ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li><strong>Menambahkan Jagung dan Daun Bawang:</strong> Masukkan biji jagung pipil dan irisan daun bawang ke dalam campuran tepung. Aduk hingga semua bahan tercampur rata.</li>
+                <li><strong>Membuat Adonan Basah:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan mengental, namun tidak terlalu encer. Konsistensi adonan harus pas agar jagung terbalut sempurna dan saat digoreng tidak mudah lepas. Hindari membuat adonan terlalu encer agar bala bala tidak lembek.</li>
+                <li><strong>Menggoreng Bala Bala:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum memasukkan adonan.</li>
+                <li><strong>Membentuk dan Menggoreng:</strong> Ambil satu sendok adonan, lalu masukkan ke dalam minyak panas. Goreng beberapa sendok adonan sekaligus, jangan terlalu banyak agar tidak saling menempel dan matang merata.</li>
+                <li><strong>Membalik dan Menggoreng Hingga Matang:</strong> Goreng hingga satu sisi berwarna kuning keemasan, lalu balik. Lanjutkan menggoreng hingga kedua sisi matang sempurna dan renyah.</li>
+                <li><strong>Meniriskan:</strong> Angkat bala bala jagung yang sudah matang, tiriskan minyaknya menggunakan saringan atau alasi dengan tisu dapur agar tidak terlalu berminyak.</li>
+                <li><strong>Sajikan:</strong> Bala bala jagung siap disajikan selagi hangat. Nikmati dengan sambal kecap, cabai rawit, atau saus favorit Anda.</li>
+            </ol>
+        </div>
+
+        <p>Ada beberapa tips tambahan untuk membuat bala bala jagung Anda semakin istimewa. Anda bisa menambahkan irisan cabai rawit ke dalam adonan jika suka rasa pedas. Untuk menambah aroma, sedikit parutan kencur juga bisa memberikan sentuhan khas. Pastikan juga minyak goreng dalam keadaan benar-benar panas saat mulai menggoreng. Ini akan membuat bala bala menjadi renyah di luar dan lembut di dalam, serta tidak menyerap terlalu banyak minyak.</p>
+
+        <div class="tip">
+            <p><strong>Tips Renyah Tahan Lama:</strong> Penggunaan tepung beras sedikit saja akan membantu memberikan tekstur yang lebih renyah dan tahan lebih lama. Pastikan juga untuk menggoreng dengan api sedang cenderung kecil setelah minyak panas agar bagian dalam matang sempurna tanpa gosong di luar.</p>
+        </div>
+
+        <p>Membuat bala bala jagung sendiri di rumah memberikan kepuasan tersendiri. Anda bisa mengontrol kualitas bahan dan menyesuaikan rasa sesuai selera keluarga. Selamat mencoba resep bikin bala bala jagung ini dan nikmati kelezatannya!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-buat-bakwan-enak">Cara Buat Bakwan Enak</a></li>
+<li><a href="/bakpia-145-sri-astuti">Bakpia 145 Sri Astuti</a></li>
+<li><a href="/bumbu-kuah-bakwan">Bumbu Kuah Bakwan</a></li>
+<li><a href="/orang-yang-menghafal-asmaul-husna-mendapat-balasan">Orang Yang Menghafal Asmaul Husna Mendapat Balasan</a></li>
+<li><a href="/cara-membuat-dadar-gulung-pelangi">Cara Membuat Dadar Gulung Pelangi</a></li>
+<li><a href="/bakpao-ayam">Bakpao Ayam</a></li>
+<li><a href="/bakpao-teck-kee-tang-lin-pau">Bakpao Teck Kee Tang Lin Pau</a></li>
+<li><a href="/bakpia-kurnia-sari-bonbin">Bakpia Kurnia Sari Bonbin</a></li>
+<li><a href="/pangsit-bawang">Pangsit Bawang</a></li>
+<li><a href="/cara-membuat-dadar-jagung-yang-enak">Cara Membuat Dadar Jagung Yang Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

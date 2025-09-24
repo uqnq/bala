@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakpao Takaran Sendok & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #87CEEB; /* Sky Blue */
+            --secondary-color: #98FB98; /* Pale Green */
+            --accent-color: #FFD700; /* Gold */
+            --text-color: #333;
+            --bg-color: #F0FFF0; /* Honeydew */
+            --card-bg: #FFFFFF;
+            --border-radius: 12px;
+            --shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 16px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 22px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--accent-color);
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .step-number {
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-description {
+            flex-grow: 1;
+        }
+
+        .ingredients, .tools {
+            background-color: var(--bg-color);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+        }
+
+        .ingredients h3, .tools h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .notes {
+            font-style: italic;
+            color: #666;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cara Membuat Bakpao Lezat dengan Takaran Sendok</h1>
+
+        <div class="image-container">
+            <!-- SVG Image: Bakpao yang sedang dikukus -->
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="steamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ADD8E6;stop-opacity:0.5" />
+                        <stop offset="100%" style="stop-color:#F0FFFF;stop-opacity:0" />
+                    </linearGradient>
+                    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Background: Soft light blue -->
+                <rect width="100%" height="100%" fill="#E0FFFF" />
+
+                <!-- Steam -->
+                <g fill="url(#steamGradient)" filter="url(#softBlur)">
+                    <ellipse cx="100" cy="50" rx="30" ry="15" opacity="0.7"/>
+                    <ellipse cx="150" cy="40" rx="25" ry="12" opacity="0.6"/>
+                    <ellipse cx="200" cy="60" rx="35" ry="18" opacity="0.5"/>
+                </g>
+
+                <!-- Bakpao -->
+                <g transform="translate(100, 100)">
+                    <ellipse cx="50" cy="50" rx="45" ry="40" fill="#FFE4E1" /> <!-- Base -->
+                    <path d="M 50 10 Q 40 5, 30 10 T 50 20 T 70 10 Q 60 5, 50 10 Z" fill="#E57373" /> <!-- Top seam -->
+                    <circle cx="50" cy="40" r="10" fill="#F5DEB3" /> <!-- Filling peek -->
+                </g>
+                 <g transform="translate(190, 120)">
+                    <ellipse cx="50" cy="50" rx="45" ry="40" fill="#FFE4E1" /> <!-- Base -->
+                    <path d="M 50 10 Q 40 5, 30 10 T 50 20 T 70 10 Q 60 5, 50 10 Z" fill="#E57373" /> <!-- Top seam -->
+                    <circle cx="50" cy="40" r="10" fill="#F5DEB3" /> <!-- Filling peek -->
+                </g>
+                 <g transform="translate(270, 80)">
+                    <ellipse cx="50" cy="50" rx="45" ry="40" fill="#FFE4E1" /> <!-- Base -->
+                    <path d="M 50 10 Q 40 5, 30 10 T 50 20 T 70 10 Q 60 5, 50 10 Z" fill="#E57373" /> <!-- Top seam -->
+                    <circle cx="50" cy="40" r="10" fill="#F5DEB3" /> <!-- Filling peek -->
+                </g>
+
+                <!-- Text Overlay -->
+                <text x="50%" y="80%" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Bakpao Hangat</text>
+            </svg>
+            <!-- Alt text for the SVG image -->
+            <p style="font-size: 14px; color: #666;">Ilustrasi bakpao lembut yang siap disantap.</p>
+        </div>
+
+        <p>Siapa yang tidak suka bakpao? Kue kukus yang lembut dengan isian manis atau gurih ini selalu menjadi camilan favorit. Membuat bakpao di rumah seringkali terasa merepotkan, terutama soal takaran bahan. Namun, jangan khawatir! Kali ini kita akan membahas <strong>cara membuat bakpao dengan takaran sendok</strong> yang sangat mudah diikuti, bahkan untuk pemula sekalipun.</p>
+
+        <p>Dengan menggunakan sendok sebagai alat ukur, Anda tidak perlu repot mencari timbangan dapur. Semua bahan dasar bakpao yang empuk dan mengembang bisa disesuaikan dengan mudah. Mari kita mulai petualangan membuat bakpao ini!</p>
+
+        <div class="ingredients">
+            <h3>Bahan-bahan Utama (Takaran Sendok)</h3>
+            <ul>
+                <li>Tepung terigu protein sedang: 10 sendok makan munjung</li>
+                <li>Gula pasir: 3 sendok makan</li>
+                <li>Ragi instan: 1 sendok teh rata</li>
+                <li>Susu bubuk (opsional): 1 sendok makan</li>
+                <li>Garam: ½ sendok teh</li>
+                <li>Air hangat: Sekitar 5-6 sendok makan (sesuaikan)</li>
+                <li>Minyak sayur / margarin cair: 2 sendok makan</li>
+            </ul>
+        </div>
+
+        <div class="ingredients">
+            <h3>Bahan Isian (Contoh Isian Cokelat/Kacang Merah)</h3>
+            <ul>
+                <li>Cokelat batang, potong kecil-kecil atau selai cokelat</li>
+                <li>Selai kacang merah siap pakai</li>
+                <li>Atau isian favorit lainnya sesuai selera</li>
+            </ul>
+        </div>
+
+        <div class="tools">
+            <h3>Alat yang Dibutuhkan</h3>
+            <ul>
+                <li>Mangkuk besar</li>
+                <li>Sendok takar (standar)</li>
+                <li>Spatula/pengaduk</li>
+                <li>Kain bersih</li>
+                <li>Loyang atau alas kukus</li>
+                <li>Panci kukusan</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Bakpao Takaran Sendok</h2>
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-description">
+                <strong>Campur Bahan Kering:</strong> Dalam mangkuk besar, campurkan tepung terigu, gula pasir, ragi instan, susu bubuk (jika pakai), dan garam. Aduk rata menggunakan spatula atau sendok. Pastikan ragi tercampur merata dengan bahan kering lainnya.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-description">
+                <strong>Tambahkan Cairan:</strong> Tuang air hangat sedikit demi sedikit sambil terus diaduk. Jumlah air bisa sedikit bervariasi tergantung kelembaban tepung. Uleni adonan hingga kalis dan tidak lengket di tangan. Jika terlalu kering, tambahkan sedikit air. Jika terlalu lembek, tambahkan sedikit tepung.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-description">
+                <strong>Tambahkan Minyak/Margarin:</strong> Setelah adonan kalis, masukkan minyak sayur atau margarin cair. Uleni kembali hingga adonan tercampur rata dan menjadi lebih elastis.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-description">
+                <strong>Fermentasi (Proofing Pertama):</strong> Tutup mangkuk adonan dengan kain bersih yang lembab atau plastik wrap. Diamkan di tempat hangat selama kurang lebih 30-45 menit, atau hingga adonan mengembang dua kali lipat.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-description">
+                <strong>Kempiskan dan Bagi Adonan:</strong> Setelah mengembang, kempiskan adonan dengan cara memukulnya perlahan untuk mengeluarkan udara. Bagi adonan menjadi beberapa bagian sesuai selera (misalnya 5-7 bagian). Bulatkan masing-masing bagian.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-description">
+                <strong>Isi Bakpao:</strong> Ambil satu bagian adonan, pipihkan hingga agak lebar. Beri isian di tengahnya. Lipat adonan hingga menutupi isian dan cubit-cubit bagian pinggirnya hingga rapat agar isian tidak bocor saat dikukus. Bentuk menyerupai bakpao.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">7</div>
+            <div class="step-description">
+                <strong>Fermentasi (Proofing Kedua):</strong> Letakkan bakpao yang sudah diisi di atas kertas roti atau alas kukusan yang sudah diolesi sedikit minyak. Beri jarak antar bakpao. Tutup kembali dengan kain bersih dan diamkan lagi selama sekitar 15-20 menit.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">8</div>
+            <div class="step-description">
+                <strong>Kukus Bakpao:</strong> Panaskan panci kukusan hingga air mendidih. Pastikan uapnya banyak. Kukus bakpao dengan api sedang selama kurang lebih 10-15 menit. Jangan membuka tutup kukusan terlalu sering agar bakpao tidak kempes.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">9</div>
+            <div class="step-description">
+                <strong>Sajikan:</strong> Angkat bakpao yang sudah matang. Sajikan selagi hangat. Bakpao buatan sendiri ini pasti akan terasa lebih spesial!
+            </div>
+        </div>
+
+        <p class="notes">Tips: Jika Anda ingin bakpao memiliki warna yang lebih menarik, Anda bisa menambahkan sedikit pewarna makanan alami pada adonan, seperti sari pandan untuk warna hijau atau sari bit untuk warna merah muda.</p>
+
+        <p>Membuat bakpao dengan takaran sendok ini membuktikan bahwa membuat kue favorit tidak harus selalu rumit. Dengan sedikit kesabaran dan mengikuti langkah-langkah di atas, Anda bisa menikmati bakpao homemade yang lembut dan lezat kapan saja.</p>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-abang-gorengan">Bakwan Abang Gorengan</a></li>
+<li><a href="/bakso-ikan-tuna-mercon">Bakso Ikan Tuna Mercon</a></li>
+<li><a href="/bakteri-penambat-nitrogen">Bakteri Penambat Nitrogen</a></li>
+<li><a href="/cara-membuat-bakwan-yang-kriuk">Cara Membuat Bakwan Yang Kriuk</a></li>
+<li><a href="/bakpia-karunia">Bakpia Karunia</a></li>
+<li><a href="/bakpao-takaran-gelas">Bakpao Takaran Gelas</a></li>
+<li><a href="/bakpia-aristi">Bakpia Aristi</a></li>
+<li><a href="/cara-membuat-bakwan-kangkung">Cara Membuat Bakwan Kangkung</a></li>
+<li><a href="/doa-balasan-kebaikan">Doa Balasan Kebaikan</a></li>
+<li><a href="/cara-buat-bakwan-jagung-enak">Cara Buat Bakwan Jagung Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

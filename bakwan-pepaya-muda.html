@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Pepaya Muda: Lezat & Sehat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna biru muda cerah */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #00796b; /* Warna hijau toska gelap */
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #004d40; /* Warna hijau toska sangat gelap */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-bottom: 2px solid #80cbc4; /* Garis bawah warna hijau muda */
+            padding-bottom: 5px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            display: block; /* Agar margin auto bekerja */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .recipe-section {
+            text-align: left;
+        }
+        .ingredients-list, .steps-list {
+            margin-left: 20px;
+        }
+        strong {
+            color: #00796b;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #4db6ac; /* Warna hijau toska medium */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 25px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #26a69a; /* Warna hijau toska lebih gelap saat hover */
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+            .hero-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bakwan Pepaya Muda: Lezat, Renyah, dan Penuh Gizi</h1>
+        </header>
+
+        <div class="hero-image-container">
+            <!-- SVG Gambar Bakwan Pepaya Muda -->
+            <svg class="hero-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakwanPepayaTitle">
+                <title id="bakwanPepayaTitle">Ilustrasi Bakwan Pepaya Muda yang Menggugah Selera</title>
+                <defs>
+                    <linearGradient id="gradientGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81C784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="gradientBrown" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#BCAAA4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#5D4037;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Latar Belakang -->
+                <rect width="100%" height="100%" fill="#F0FFF0"/>
+
+                <!-- Pepaya Parut -->
+                <g transform="translate(100, 150) rotate(-15 100 100)">
+                    <path d="M 50 100 Q 150 50, 250 100 T 450 100 L 400 150 Q 250 200, 100 150 Z" fill="#FFE0B2" stroke="#FFC107" stroke-width="2"/>
+                    <path d="M 100 110 Q 180 70, 260 110 T 420 110 L 380 140 Q 250 170, 140 140 Z" fill="#FFCC80" opacity="0.7"/>
+                </g>
+
+                <!-- Adonan Bakwan -->
+                <g transform="translate(250, 180) rotate(10 50 50)">
+                    <path d="M 0 50 C 50 0, 150 0, 200 50 S 150 100, 100 100 S 0 50, 0 50 Z" fill="#E0E0E0" stroke="#BDBDBD" stroke-width="1"/>
+                    <path d="M 20 60 C 60 10, 160 10, 200 60 S 160 110, 100 110 S 40 60, 20 60 Z" fill="#F5F5F5" opacity="0.8"/>
+                </g>
+
+                <!-- Detail Tepung dan Bumbu -->
+                <circle cx="150" cy="130" r="5" fill="#F5F5F5" opacity="0.6"/>
+                <circle cx="180" cy="140" r="3" fill="#F5F5F5" opacity="0.6"/>
+                <circle cx="210" cy="120" r="4" fill="#F5F5F5" opacity="0.6"/>
+                <text x="280" y="160" font-family="Arial, sans-serif" font-size="12" fill="#555" transform="rotate(5 280 160)">Daun Bawang</text>
+                <text x="350" y="150" font-family="Arial, sans-serif" font-size="12" fill="#555" transform="rotate(-5 350 150)">Bumbu</text>
+
+                <!-- Permukaan Minyak Menggoreng (implied) -->
+                <path d="M 50 300 Q 300 280, 550 300 L 550 380 Q 300 360, 50 380 Z" fill="rgba(255, 165, 0, 0.1)"/>
+
+                <!-- Bakwan yang sudah matang -->
+                <g transform="translate(400, 250) rotate(20)">
+                    <path d="M 0 0 L 50 10 L 70 60 L 20 50 Z" fill="url(#gradientBrown)" stroke="#795548" stroke-width="2"/>
+                    <circle cx="25" cy="30" r="15" fill="#D7CCC8" opacity="0.4"/>
+                    <circle cx="40" cy="10" r="10" fill="#D7CCC8" opacity="0.3"/>
+                </g>
+                 <g transform="translate(380, 270) rotate(-15)">
+                    <path d="M 0 0 L 40 15 L 55 50 L 15 40 Z" fill="url(#gradientBrown)" stroke="#795548" stroke-width="2"/>
+                    <circle cx="20" cy="25" r="12" fill="#D7CCC8" opacity="0.4"/>
+                </g>
+                 <g transform="translate(430, 230) rotate(5)">
+                    <path d="M 0 0 L 35 10 L 50 45 L 15 35 Z" fill="url(#gradientBrown)" stroke="#795548" stroke-width="2"/>
+                    <circle cx="15" cy="20" r="10" fill="#D7CCC8" opacity="0.4"/>
+                </g>
+
+            </svg>
+        </div>
+
+        <div class="recipe-section">
+            <p>Bakwan, siapa yang tidak kenal camilan gurih dan renyah ini? Biasanya kita mengenal bakwan sayuran seperti wortel, kol, atau jagung. Namun, pernahkah Anda mencoba inovasi baru yang tak kalah lezatnya, yaitu <strong>bakwan pepaya muda</strong>? Selain unik, bakwan ini juga menawarkan sensasi rasa yang berbeda dan tekstur yang menarik, menjadikannya pilihan camilan sehat dan menyegarkan.</p>
+
+            <p>Pepaya muda memiliki tekstur yang renyah dan rasa yang cenderung netral, sehingga sangat cocok dipadukan dengan bumbu-bumbu yang kuat. Proses pengolahannya pun cukup sederhana, mirip dengan membuat bakwan pada umumnya. Hasilnya adalah gorengan yang renyah di luar, sedikit kenyal namun lembut di dalam, dengan aroma khas yang menggugah selera. Cocok dinikmati kapan saja, baik saat santai bersama keluarga maupun sebagai lauk pelengkap.</p>
+
+            <h2>Mengapa Memilih Bakwan Pepaya Muda?</h2>
+            <ul>
+                <li><strong>Unik dan Inovatif:</strong> Menawarkan variasi baru dari camilan bakwan yang sudah familiar.</li>
+                <li><strong>Sumber Nutrisi:</strong> Pepaya muda mengandung serat, vitamin A, C, dan enzim papain yang baik untuk pencernaan.</li>
+                <li><strong>Tekstur Menarik:</strong> Perpaduan renyah dari adonan tepung dan sedikit kenyal dari pepaya muda parut.</li>
+                <li><strong>Serbaguna:</strong> Nikmat disantap hangat sebagai camilan atau lauk pendamping.</li>
+                <li><strong>Mudah Dibuat:</strong> Resepnya tidak rumit dan bahan-bahannya mudah ditemukan.</li>
+            </ul>
+
+            <h2>Bahan-Bahan Utama</h2>
+            <p>Untuk membuat bakwan pepaya muda yang lezat, Anda memerlukan bahan-bahan sebagai berikut:</p>
+            <ol class="ingredients-list">
+                <li>1 buah pepaya muda ukuran sedang (sekitar 300-400 gram), kupas, buang bijinya, parut kasar</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya (opsional, untuk menyeimbangkan rasa)</li>
+                <li>Air secukupnya (sekitar 100-150 ml, atau hingga kekentalan pas)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ol>
+
+            <h2>Langkah-Langkah Pembuatan</h2>
+            <p>Ikuti panduan langkah demi langkah berikut untuk menciptakan bakwan pepaya muda yang sempurna:</p>
+            <ol class="steps-list">
+                <li><strong>Persiapan Pepaya:</strong> Pastikan pepaya muda sudah diparut kasar. Jika suka, Anda bisa sedikit memeras air dari pepaya parut untuk mendapatkan hasil yang lebih renyah, namun jangan terlalu banyak agar tidak kehilangan sari pati.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam wadah besar, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan gula pasir (jika menggunakan). Aduk rata.</li>
+                <li><strong>Tambahkan Pepaya dan Daun Bawang:</strong> Masukkan pepaya muda parut dan irisan daun bawang ke dalam campuran tepung. Aduk perlahan hingga semua bahan tercampur rata.</li>
+                <li><strong>Mengentalkan Adonan:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan memiliki kekentalan yang pas. Adonan tidak boleh terlalu encer agar tidak menyebar saat digoreng, namun juga tidak terlalu kental.</li>
+                <li><strong>Pemanasan Minyak:</strong> Panaskan minyak goreng dalam jumlah yang cukup banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum mulai menggoreng.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Ambil satu sendok makan adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga beberapa buah sekaligus, jangan terlalu penuh agar matang merata.</li>
+                <li><strong>Proses Penggorengan:</strong> Goreng bakwan hingga berwarna kuning keemasan dan renyah. Balik sesekali agar matangnya merata di kedua sisi.</li>
+                <li><strong>Meniriskan:</strong> Angkat bakwan yang sudah matang dan tiriskan di atas kertas tisu atau rak kawat untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan pepaya muda siap disajikan selagi hangat. Nikmati dengan saus sambal, cabai rawit, atau sebagai pelengkap hidangan utama.</li>
+            </ol>
+
+            <p>Bakwan pepaya muda adalah bukti bahwa kreativitas di dapur dapat menghasilkan hidangan yang tidak hanya lezat tetapi juga menyehatkan. Dengan sedikit sentuhan berbeda, Anda bisa menikmati camilan favorit dengan cara yang baru dan menarik. Selamat mencoba resep bakwan pepaya muda ini di rumah!</p>
+
+            <a href="#" class="cta-button">Coba Resepnya Sekarang!</a>
+        </div>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-mix">Bakpia Mix</a></li>
+<li><a href="/buat-bakwan-sayur-enak">Buat Bakwan Sayur Enak</a></li>
+<li><a href="/bakpia-kacang">Bakpia Kacang</a></li>
+<li><a href="/resep-dadar-jagung-manis-renyah">Resep Dadar Jagung Manis Renyah</a></li>
+<li><a href="/bakpia-pathok-25-coklat">Bakpia Pathok 25 Coklat</a></li>
+<li><a href="/cara-membuat-perkedel-jagung-rumahan">Cara Membuat Perkedel Jagung Rumahan</a></li>
+<li><a href="/harga-bakpia-25-pathok">Harga Bakpia 25 Pathok</a></li>
+<li><a href="/pangsit-mie-bakwan">Pangsit Mie Bakwan</a></li>
+<li><a href="/bakpao-kacang">Bakpao Kacang</a></li>
+<li><a href="/resep-sambal-isian-bakso-mercon">Resep Sambal Isian Bakso Mercon</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

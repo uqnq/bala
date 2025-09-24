@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Bakwan Sayur Wortel Lezat & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #8BC34A; /* Hijau muda */
+            --accent-color: #FFEB3B; /* Kuning cerah */
+            --text-color: #333;
+            --bg-color: #f8f8f8;
+            --card-bg: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px var(--shadow-color);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            padding: 30px 20px;
+        }
+
+        .content h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content p, .content ul {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .content ul {
+            list-style: disc inside;
+            padding-left: 0;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        .recipe-section {
+            margin-top: 30px;
+            border-top: 1px dashed var(--secondary-color);
+            padding-top: 20px;
+        }
+
+        .recipe-section h3 {
+            color: var(--primary-color);
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .recipe-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .recipe-item-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: var(--primary-color);
+            box-shadow: 0 2px 5px var(--shadow-color);
+        }
+
+        .recipe-item-text {
+            font-size: 1.1em;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px var(--shadow-color);
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            .content h2 {
+                font-size: 1.6em;
+            }
+            .content p, .content ul {
+                font-size: 1em;
+            }
+            .recipe-item-text {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Buat Bakwan Sayur Wortel Lezat & Renyah</h1>
+        </header>
+        <div class="content">
+            <div class="image-container">
+                <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#8BC34A;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="300" height="200" rx="15" fill="url(#grad1)" />
+                    <path d="M50,100 Q70,70 100,100 T150,100 T200,100 T250,100" stroke="#FFEB3B" stroke-width="8" fill="none" stroke-linecap="round"/>
+                    <circle cx="50" cy="100" r="15" fill="#FFC107"/>
+                    <circle cx="100" cy="100" r="15" fill="#FFC107"/>
+                    <circle cx="150" cy="100" r="15" fill="#FFC107"/>
+                    <circle cx="200" cy="100" r="15" fill="#FFC107"/>
+                    <circle cx="250" cy="100" r="15" fill="#FFC107"/>
+                    <text x="150" y="60" font-family="Verdana" font-size="18" fill="white" text-anchor="middle">Bakwan</text>
+                    <text x="150" y="85" font-family="Verdana" font-size="18" fill="white" text-anchor="middle">Wortel</text>
+                </svg>
+                <p style="font-size: 0.9em; color: #666;">Ilustrasi Bakwan Wortel Lezat</p>
+            </div>
+
+            <h2>Kenikmatan Sederhana Bakwan Wortel</h2>
+            <p>Siapa yang tidak suka bakwan? Camilan renyah dan gurih ini selalu jadi favorit, baik dinikmati saat santai, ditemani teh hangat, atau sebagai lauk pelengkap. Salah satu varian yang paling digemari adalah bakwan sayur wortel. Kelezatan manis alami dari wortel berpadu sempurna dengan adonan tepung yang renyah, menciptakan sensasi rasa yang tak terlupakan.</p>
+            <p>Membuat bakwan sayur wortel di rumah ternyata tidak sulit, lho! Dengan bahan-bahan sederhana dan langkah-langkah yang mudah diikuti, Anda bisa menyajikan camilan istimewa untuk keluarga tercinta. Artikel ini akan memandu Anda untuk membuat bakwan wortel yang tidak hanya lezat, tetapi juga memiliki tekstur yang renyah tahan lama.</p>
+
+            <h2>Mengapa Memilih Bakwan Wortel?</h2>
+            <p>Wortel kaya akan vitamin A yang baik untuk kesehatan mata, serat yang membantu pencernaan, serta antioksidan. Menambahkan wortel ke dalam bakwan menjadikannya pilihan camilan yang sedikit lebih sehat tanpa mengurangi kenikmatannya. Potongan wortel yang tipis dan halus juga memberikan tekstur unik pada setiap gigitan bakwan.</p>
+
+            <div class="recipe-section">
+                <h3>Bahan-Bahan untuk Membuat Bakwan Wortel</h3>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">1</div>
+                    <div class="recipe-item-text">250 gram tepung terigu serbaguna</div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">2</div>
+                    <div class="recipe-item-text">50 gram tepung beras (opsional, untuk keremhahan ekstra)</div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">3</div>
+                    <div class="recipe-item-text">2 buah wortel ukuran sedang, parut kasar atau iris korek api tipis</div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">4</div>
+                    <div class="recipe-item-text">50 gram kol, iris tipis (opsional, jika ingin variasi sayuran lain)</div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">5</div>
+                    <div class="recipe-item-text">1 batang daun bawang, iris halus</div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">6</div>
+                    <div class="recipe-item-text">2 siung bawang putih, haluskan</div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">7</div>
+                    <div class="recipe-item-text">1/2 sendok teh merica bubuk</div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">8</div>
+                    <div class="recipe-item-text">1 sendok teh garam (sesuai selera)</div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">9</div>
+                    <div class="recipe-item-text">1/2 sendok teh kaldu bubuk (opsional)</div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">10</div>
+                    <div class="recipe-item-text">200-250 ml air (sesuaikan kekentalan adonan)</div>
+                </div>
+                <div class="recipe-item">
+                    <div class="recipe-item-icon">11</div>
+                    <div class="recipe-item-text">Minyak goreng secukupnya</div>
+                </div>
+            </div>
+
+            <div class="recipe-section">
+                <h3>Langkah-Langkah Membuat Bakwan Wortel Renyah</h3>
+                <ol>
+                    <li><strong>Persiapan Adonan:</strong> Dalam wadah, campurkan tepung terigu, tepung beras (jika pakai), bawang putih halus, merica, garam, dan kaldu bubuk. Aduk rata.</li>
+                    <li><strong>Tambahkan Sayuran:</strong> Masukkan parutan wortel, irisan kol (jika pakai), dan irisan daun bawang ke dalam campuran tepung. Aduk rata agar semua sayuran terbalut tepung.</li>
+                    <li><strong>Tuang Air:</strong> Perlahan-lahan tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan memiliki kekentalan yang pas. Jangan terlalu encer agar bakwan tidak lembek, tapi juga jangan terlalu kental agar bumbu meresap.</li>
+                    <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum menggoreng.</li>
+                    <li><strong>Goreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga bakwan berwarna kuning keemasan dan matang merata di kedua sisinya. Lakukan hingga adonan habis.</li>
+                    <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang dan tiriskan minyaknya di atas rak kawat atau tisu dapur agar tetap renyah.</li>
+                    <li><strong>Sajikan:</strong> Bakwan sayur wortel siap disajikan selagi hangat. Cocok dinikmati dengan sambal cocolan atau cabai rawit.</li>
+                </ol>
+            </div>
+
+            <h2>Tips Tambahan untuk Bakwan Super Renyah</h2>
+            <ul>
+                <li>Pastikan minyak benar-benar panas saat menggoreng. Ini kunci utama agar bakwan renyah di luar dan matang sempurna.</li>
+                <li>Jangan terlalu banyak memasukkan adonan ke dalam wajan sekaligus, agar suhu minyak tidak turun drastis.</li>
+                <li>Jika ingin lebih renyah, Anda bisa menambahkan sedikit soda kue (sekitar 1/4 sendok teh) ke dalam adonan tepung.</li>
+                <li>Menggunakan campuran tepung terigu dan tepung beras juga sangat membantu menciptakan tekstur yang lebih garing.</li>
+                <li>Sajikan bakwan segera setelah digoreng untuk menikmati kerenyahannya.</li>
+            </ul>
+
+            <p>Dengan resep sederhana ini, Anda bisa membuat bakwan sayur wortel yang lezat, gurih, dan super renyah. Selamat mencoba dan menikmati camilan favorit keluarga!</p>
+        </div>
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-juwara-satoe-basah">Bakpia Juwara Satoe Basah</a></li>
+<li><a href="/resep-dan-cara-membuat-bakso-mercon">Resep Dan Cara Membuat Bakso Mercon</a></li>
+<li><a href="/bunga-lily-bakung">Bunga Lily Bakung</a></li>
+<li><a href="/bakpia-khas">Bakpia Khas</a></li>
+<li><a href="/bakpao-siubie">Bakpao Siubie</a></li>
+<li><a href="/promo-bakpia-juwara-satoe">Promo Bakpia Juwara Satoe</a></li>
+<li><a href="/gareth-bale-dijual">Gareth Bale Dijual</a></li>
+<li><a href="/uji-salmonella">Uji Salmonella</a></li>
+<li><a href="/harga-bunga-bakung-putih">Harga Bunga Bakung Putih</a></li>
+<li><a href="/resep-masak-dadar-jagung">Resep Masak Dadar Jagung</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

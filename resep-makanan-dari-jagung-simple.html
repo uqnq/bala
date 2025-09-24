@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Jagung Simple & Lezat untuk Anda</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue - warna sejuk cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #add8e6; /* LightBlue - aksen sejuk */
+            padding-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .recipe-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #e0ffff; /* LightCyan - latar resep */
+            border-radius: 8px;
+        }
+        .recipe-section h3 {
+            color: #008080; /* Teal - warna judul resep */
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .recipe-section ul, .recipe-section ol {
+            padding-left: 25px;
+        }
+        .recipe-section li {
+            margin-bottom: 10px;
+        }
+        .recipe-section strong {
+            color: #006666; /* Darker Teal - penekanan bahan */
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0ffff;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        /* Responsif untuk mobile */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .recipe-section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="image-container">
+            <!-- SVG Gambar Jagung yang Ceria -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="jagung-ceria-title">
+                <title id="jagung-ceria-title">Ilustrasi Jagung Manis Ceria</title>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" /> <!-- Emas cerah -->
+                        <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:1" /> <!-- Oranye kekuningan -->
+                    </linearGradient>
+                </defs>
+                <ellipse cx="50" cy="50" rx="35" ry="40" fill="url(#grad1)" /> <!-- Bentuk dasar jagung -->
+
+                <!-- Biji-bijian jagung -->
+                <circle cx="30" cy="30" r="5" fill="#ffec8b" />
+                <circle cx="45" cy="25" r="5" fill="#ffec8b" />
+                <circle cx="60" cy="30" r="5" fill="#ffec8b" />
+                <circle cx="25" cy="45" r="5" fill="#ffec8b" />
+                <circle cx="40" cy="40" r="5" fill="#ffec8b" />
+                <circle cx="55" cy="35" r="5" fill="#ffec8b" />
+                <circle cx="70" cy="45" r="5" fill="#ffec8b" />
+                <circle cx="20" cy="60" r="5" fill="#ffec8b" />
+                <circle cx="35" cy="55" r="5" fill="#ffec8b" />
+                <circle cx="50" cy="50" r="5" fill="#ffec8b" />
+                <circle cx="65" cy="55" r="5" fill="#ffec8b" />
+                <circle cx="80" cy="60" r="5" fill="#ffec8b" />
+                <circle cx="30" cy="70" r="5" fill="#ffec8b" />
+                <circle cx="45" cy="65" r="5" fill="#ffec8b" />
+                <circle cx="60" cy="70" r="5" fill="#ffec8b" />
+                <circle cx="75" cy="75" r="5" fill="#ffec8b" />
+                <circle cx="40" cy="80" r="5" fill="#ffec8b" />
+                <circle cx="55" cy="75" r="5" fill="#ffec8b" />
+
+                <!-- Daun jagung -->
+                <path d="M20 40 Q 10 50, 20 70 L 30 65 Q 25 50, 20 40 Z" fill="#90ee90" opacity="0.8"/> <!-- Kiri atas -->
+                <path d="M80 40 Q 90 50, 80 70 L 70 65 Q 75 50, 80 40 Z" fill="#90ee90" opacity="0.8"/> <!-- Kanan atas -->
+                <path d="M30 80 Q 40 90, 50 85 L 45 75 Q 35 80, 30 80 Z" fill="#90ee90" opacity="0.8"/> <!-- Kiri bawah -->
+                <path d="M70 80 Q 60 90, 50 85 L 55 75 Q 65 80, 70 80 Z" fill="#90ee90" opacity="0.8"/> <!-- Kanan bawah -->
+
+                <!-- Senyuman sederhana -->
+                <path d="M40 60 Q 50 65, 60 60" stroke="#ff4500" stroke-width="3" fill="none" /> <!-- OrangeRed - senyuman -->
+            </svg>
+        </div>
+
+        <h1>Resep Makanan dari Jagung Simple & Lezat</h1>
+
+        <p>Jagung, si kuning ceria yang sering kita temui di pasar atau bahkan tumbuh di pekarangan, ternyata adalah sumber kelezatan yang tak terbatas. Mudah diolah, kaya nutrisi, dan disukai berbagai kalangan usia, jagung menjadi bintang utama dalam berbagai hidangan. Terlebih lagi, jika Anda mencari inspirasi resep makanan dari jagung yang simple, artikel ini akan menjadi sahabat dapur Anda!</p>
+
+        <p>Memasak dengan bahan dasar jagung tidak selalu memerlukan keahlian tinggi atau bahan-bahan yang sulit ditemukan. Kunci utamanya adalah kesegaran jagung itu sendiri dan sedikit kreativitas. Baik itu jagung manis pipil, jagung rebus, maupun jagung serut, semuanya bisa diubah menjadi sajian yang menggugah selera dalam waktu singkat. Mari kita jelajahi beberapa ide resep simpel yang bisa langsung Anda coba.</p>
+
+        <div class="recipe-section">
+            <h2>1. Jagung Susu Keju (Jagung Manis Pipil)</h2>
+            <p>Camilan manis dan gurih ini sangat populer dan cara membuatnya pun sangat mudah. Cocok dinikmati saat santai atau sebagai hidangan pembuka.</p>
+            <h3>Bahan:</h3>
+            <ul>
+                <li>2 buah jagung manis, pipil bijinya</li>
+                <li>3-4 sdm susu kental manis (sesuai selera)</li>
+                <li>2-3 sdm keju cheddar parut</li>
+                <li>1 sdm mentega/margarin</li>
+            </ul>
+            <h3>Cara Membuat:</h3>
+            <ol>
+                <li>Lelehkan mentega di atas teflon anti lengket dengan api kecil.</li>
+                <li>Masukkan jagung pipil, masak sambil diaduk hingga sedikit layu.</li>
+                <li>Tambahkan susu kental manis, aduk rata. Masak sebentar hingga susu meresap.</li>
+                <li>Angkat jagung dari teflon, tata di wadah.</li>
+                <li>Taburi dengan keju parut di atasnya. Jagung Susu Keju siap dinikmati selagi hangat.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>2. Bakwan Jagung Renyah</h2>
+            <p>Siapa yang tidak suka bakwan? Versi jagungnya tentu saja memberikan sensasi rasa manis alami yang khas dan tekstur renyah yang memikat.</p>
+            <h3>Bahan:</h3>
+            <ul>
+                <li>2 buah jagung manis, serut kasar atau pipil</li>
+                <li>100 gram tepung terigu</li>
+                <li>50 gram tepung beras</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sdt ketumbar bubuk</li>
+                <li>1/4 sdt merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>1 batang daun bawang, iris halus (opsional)</li>
+                <li>Air secukupnya</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+            <h3>Cara Membuat:</h3>
+            <ol>
+                <li>Campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar, merica, dan garam dalam wadah.</li>
+                <li>Masukkan jagung yang sudah diserut/dipipil dan irisan daun bawang (jika pakai). Aduk rata.</li>
+                <li>Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan mengental dan bisa disendok. Jangan terlalu encer.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang.</li>
+                <li>Ambil satu sendok sayur adonan, goreng hingga kecoklatan dan matang di kedua sisinya. Angkat dan tiriskan.</li>
+                <li>Sajikan bakwan jagung selagi hangat bersama cabai rawit atau saus sambal.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>3. Salad Jagung Segar</h2>
+            <p>Jika Anda mencari alternatif yang lebih sehat dan menyegarkan, salad jagung adalah pilihan yang tepat. Perpaduan rasa manis jagung dengan sayuran lain menciptakan hidangan yang ringan dan kaya serat.</p>
+            <h3>Bahan:</h3>
+            <ul>
+                <li>1 kaleng jagung manis (atau 2 buah jagung segar, rebus lalu pipil)</li>
+                <li>1/2 buah paprika merah, potong dadu kecil</li>
+                <li>1/2 buah paprika hijau, potong dadu kecil</li>
+                <li>1/4 buah bawang bombay merah, potong dadu kecil</li>
+                <li>Seikat daun seledri, cincang halus</li>
+                <li>Saus Salad (Campuran: 3 sdm minyak zaitun, 1 sdm air jeruk lemon, 1 sdt madu, garam, dan lada hitam secukupnya)</li>
+            </ul>
+            <h3>Cara Membuat:</h3>
+            <ol>
+                <li>Siapkan mangkuk besar.</li>
+                <li>Masukkan jagung manis, paprika merah, paprika hijau, bawang bombay merah, dan daun seledri cincang ke dalam mangkuk.</li>
+                <li>Dalam wadah terpisah, campurkan semua bahan saus salad. Aduk hingga tercampur rata dan sedikit mengental.</li>
+                <li>Tuangkan saus salad ke atas campuran jagung dan sayuran.</li>
+                <li>Aduk perlahan hingga semua bahan tercampur rata dengan saus.</li>
+                <li>Salad jagung segar siap disajikan sebagai pendamping hidangan utama atau camilan sehat.</li>
+            </ol>
+        </div>
+
+        <p>Resep-resep di atas hanyalah sebagian kecil dari kekayaan kuliner yang bisa diciptakan dari jagung. Dengan sedikit improvisasi dan memanfaatkan bahan-bahan yang ada di dapur Anda, Anda bisa menciptakan kreasi jagung yang tak kalah lezat dan unik. Selamat mencoba dan nikmati kelezatan alami jagung dalam setiap gigitan!</p>
+
+        <div class="footer">
+            <p>&copy; Inspirasi Dapur</p>
+        </div>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membungkus-bakpao">Cara Membungkus Bakpao</a></li>
+<li><a href="/cara-membuat-dadar-jagung-sederhana">Cara Membuat Dadar Jagung Sederhana</a></li>
+<li><a href="/bakpao-51">Bakpao 51</a></li>
+<li><a href="/aneka-jenis-bunga-bakung">Aneka Jenis Bunga Bakung</a></li>
+<li><a href="/cara-menyimpan-bakpao-agar-awet">Cara Menyimpan Bakpao Agar Awet</a></li>
+<li><a href="/bakpia-kukus-pandan-coklat">Bakpia Kukus Pandan Coklat</a></li>
+<li><a href="/balik-papan">Balik Papan</a></li>
+<li><a href="/jagung-goreng-renyah">Jagung Goreng Renyah</a></li>
+<li><a href="/bakpia-di-indomaret">Bakpia Di Indomaret</a></li>
+<li><a href="/bakso-beranak-paling-besar">Bakso Beranak Paling Besar</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

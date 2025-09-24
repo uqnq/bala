@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Weci Empuk Sederhana & Gurih</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 95%;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue - warna cerah */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 2px dashed #87ceeb; /* SkyBlue - sentuhan cerah */
+            padding-bottom: 8px;
+        }
+        img.hero-image {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .intro {
+            font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .ingredients, .instructions {
+            margin-bottom: 20px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #20b2aa; /* LightSeaGreen - warna cerah */
+        }
+        .tips {
+            background-color: #e0ffff; /* LightCyan - latar belakang tips */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 5px solid #87ceeb; /* SkyBlue */
+        }
+        .tips h3 {
+            margin-top: 0;
+            color: #008b8b; /* DarkCyan */
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .intro {
+                font-size: 1em;
+            }
+            .ingredients li, .instructions li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Resep Weci Empuk Sederhana & Gurih</h1>
+
+        <svg class="hero-image" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi weci renyah dan empuk berwarna keemasan">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f0e68c;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#daa520;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="300" fill="#fff0f5" /> <!-- LavenderBlush -->
+            <circle cx="150" cy="150" r="70" fill="url(#grad1)" stroke="#d4ac0d" stroke-width="4"/>
+            <circle cx="230" cy="100" r="60" fill="url(#grad1)" stroke="#d4ac0d" stroke-width="4"/>
+            <circle cx="300" cy="180" r="50" fill="url(#grad1)" stroke="#d4ac0d" stroke-width="4"/>
+            <circle cx="380" cy="130" r="65" fill="url(#grad1)" stroke="#d4ac0d" stroke-width="4"/>
+            <circle cx="450" cy="200" r="55" fill="url(#grad1)" stroke="#d4ac0d" stroke-width="4"/>
+
+            <path d="M 100 150 Q 120 130 150 150 T 200 170 L 180 150 Z" fill="#f5deb3" stroke="#8b4513" stroke-width="1"/> <!-- Kulit crispy -->
+            <path d="M 170 100 Q 190 80 230 100 T 290 120 L 270 100 Z" fill="#f5deb3" stroke="#8b4513" stroke-width="1"/>
+            <path d="M 250 180 Q 270 160 300 180 T 350 200 L 330 180 Z" fill="#f5deb3" stroke="#8b4513" stroke-width="1"/>
+            <path d="M 330 130 Q 350 110 380 130 T 430 150 L 410 130 Z" fill="#f5deb3" stroke="#8b4513" stroke-width="1"/>
+            <path d="M 400 200 Q 420 180 450 200 T 500 220 L 480 200 Z" fill="#f5deb3" stroke="#8b4513" stroke-width="1"/>
+
+            <text x="50%" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#2c3e50">Weci Crispy & Empuk!</text>
+        </svg>
+
+        <p class="intro">
+            Siapa yang tidak suka weci? Gorengan khas Indonesia ini selalu jadi favorit, terutama saat sore hari ditemani secangkir teh hangat. Kunci dari weci yang nikmat adalah teksturnya yang empuk di dalam namun tetap renyah di luar. Terkadang, membuat weci yang empuk bisa jadi tantangan tersendiri. Jangan khawatir! Dengan resep sederhana dan beberapa trik rahasia, Anda bisa menciptakan weci yang empuk, gurih, dan anti bantat di rumah. Mari kita mulai petualangan kuliner ini!
+        </p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <ul>
+                <li><span class="highlight">250 gram</span> tepung terigu protein sedang</li>
+                <li><span class="highlight">50 gram</span> tepung beras</li>
+                <li><span class="highlight">1 sendok teh</span> garam</li>
+                <li><span class="highlight">1/2 sendok teh</span> kaldu bubuk (opsional, untuk rasa lebih gurih)</li>
+                <li><span class="highlight">1/4 sendok teh</span> merica bubuk</li>
+                <li><span class="highlight">1/2 sendok teh</span> baking powder (ini kunci empuknya!)</li>
+                <li><span class="highlight">250-300 ml</span> air dingin (atau air es)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+                <li>Sayuran pelengkap sesuai selera (contoh: irisan kol, tauge, wortel, buncis)</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Weci Empuk</h2>
+        <div class="instructions">
+            <ol>
+                <li>
+                    <span class="highlight">Persiapan Adonan Kering:</span>
+                    Dalam sebuah wadah, campurkan tepung terigu, tepung beras, garam, kaldu bubuk (jika pakai), dan merica bubuk. Aduk rata.
+                </li>
+                <li>
+                    <span class="highlight">Penambahan Baking Powder:</span>
+                    Masukkan baking powder ke dalam campuran tepung kering. Aduk kembali hingga merata. Pastikan baking powder tercampur sempurna agar bereaksi baik saat digoreng.
+                </li>
+                <li>
+                    <span class="highlight">Membuat Adonan Basah:</span>
+                    Tuangkan air dingin atau air es sedikit demi sedikit ke dalam adonan kering sambil terus diaduk menggunakan whisk atau sendok hingga mendapatkan kekentalan yang pas. Adonan tidak boleh terlalu kental atau terlalu encer. Kekentalan yang diinginkan seperti adonan martabak tipis.
+                </li>
+                <li>
+                    <span class="highlight">Menambahkan Sayuran:</span>
+                    Jika menggunakan sayuran, masukkan irisan sayuran ke dalam adonan. Aduk perlahan hingga sayuran terlapisi rata oleh adonan.
+                </li>
+                <li>
+                    <span class="highlight">Pemanasan Minyak:</span>
+                    Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang cenderung kecil. Minyak yang cukup banyak akan membantu weci matang merata dan tidak menyerap banyak minyak.
+                </li>
+                <li>
+                    <span class="highlight">Menggoreng Weci:</span>
+                    Ambil sesendok adonan (beserta sayuran jika ada) lalu tuangkan perlahan ke dalam minyak panas. Goreng beberapa buah sekaligus, jangan terlalu penuh agar matang sempurna. Biarkan satu sisi agak kecoklatan, lalu balik.</li>
+                <li>
+                    <span class="highlight">Memastikan Kematangan & Ke-empukan:</span>
+                    Goreng hingga berwarna keemasan dan terlihat renyah. Angkat weci dan tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak. Ini penting agar weci tetap renyah.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h3>Tips Agar Weci Makin Empuk dan Enak</h3>
+            <ul>
+                <li><span class="highlight">Gunakan Air Dingin/Es:</span> Air dingin atau air es sangat membantu menciptakan tekstur weci yang renyah di luar dan empuk di dalam.</li>
+                <li><span class="highlight">Jangan Terlalu Lama Mengaduk:</span> Setelah tepung dan air tercampur, jangan mengaduk adonan terlalu lama. Cukup sampai tercampur rata saja.</li>
+                <li><span class="highlight">Baking Powder Segar:</span> Pastikan baking powder yang Anda gunakan masih aktif dan belum kedaluwarsa. Baking powder yang sudah tidak aktif tidak akan memberikan efek mengembang yang baik.</li>
+                <li><span class="highlight">Api Sedang:</span> Menggoreng dengan api sedang cenderung kecil membuat bagian dalam weci matang sempurna tanpa membuat luarnya cepat gosong.</li>
+                <li><span class="highlight">Minyak yang Cukup:</span> Menggoreng dengan minyak yang cukup akan memastikan weci matang merata dan tidak terlalu berminyak.</li>
+            </ul>
+        </div>
+
+        <p>
+            Menikmati weci buatan sendiri yang empuk dan gurih adalah kepuasan tersendiri. Sajikan selagi hangat bersama cabai rawit hijau atau saus sambal kesukaan Anda. Resep ini sangat mudah diikuti bahkan oleh pemula sekalipun. Selamat mencoba dan semoga sukses menghasilkan weci yang sempurna!
+        </p>
+
+        <footer>
+            Artikel ini dibuat untuk memberikan panduan resep yang mudah dan lezat.
+        </footer>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/perbedaan-bakpia-basah-dan-kering">Perbedaan Bakpia Basah Dan Kering</a></li>
+<li><a href="/bakso-beranak-mas-rahmat">Bakso Beranak Mas Rahmat</a></li>
+<li><a href="/bakpia-25-harga">Bakpia 25 Harga</a></li>
+<li><a href="/bakso-raksasa-beranak-setia-budi">Bakso Raksasa Beranak Setia Budi</a></li>
+<li><a href="/resep-bakwan-yang-enak-dan-kriuk">Resep Bakwan Yang Enak Dan Kriuk</a></li>
+<li><a href="/balasan-ucapan-duka-cita-islami">Balasan Ucapan Duka Cita Islami</a></li>
+<li><a href="/bakso-mercon-mak-emeh">Bakso Mercon Mak Emeh</a></li>
+<li><a href="/bakwan-oven">Bakwan Oven</a></li>
+<li><a href="/bakwan-batu">Bakwan Batu</a></li>
+<li><a href="/resep-makanan-dari-jagung-simple">Resep Makanan Dari Jagung Simple</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

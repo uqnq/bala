@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Goreng Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna biru muda sejuk */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 95%;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            overflow-x: hidden; /* Mencegah scroll horizontal */
+        }
+        h1, h2, h3 {
+            color: #00796b; /* Warna hijau toska cerah */
+            margin-bottom: 15px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #004d40; /* Hijau toska lebih gelap untuk penekanan */
+        }
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .recipe-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        .ingredients, .instructions {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f9ff; /* Warna biru sangat muda */
+            border-radius: 10px;
+        }
+        .ingredients h3, .instructions h3 {
+            margin-top: 0;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 5px;
+        }
+        .instructions ol li {
+            margin-bottom: 15px;
+        }
+        .tips {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff9c4; /* Warna kuning muda cerah */
+            border-radius: 10px;
+            border-left: 5px solid #fbc02d; /* Garis kuning tebal */
+        }
+        .tips h3 {
+            margin-top: 0;
+            color: #f57f17; /* Warna oranye gelap */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2, h3 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#4db6ac;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="100" height="100" rx="15" fill="url(#grad1)"/>
+                <path d="M25,75 L50,50 L75,75 L50,100 L25,75 Z M75,25 L50,50 L25,25 L50,0 L75,25 Z" fill="#fff" stroke="#fff" stroke-width="2"/>
+                <circle cx="50" cy="50" r="15" fill="#ffeb3b" stroke="#fff" stroke-width="2"/>
+                <text x="50" y="55" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="bold">Bakwan</text>
+            </svg>
+            <p><small>Ilustrasi Bakwan Goreng</small></p>
+        </div>
+
+        <h1>Resep Bakwan Goreng Renyah & Lezat</h1>
+
+        <p>Siapa yang tidak suka bakwan goreng? Camilan renyah yang cocok dinikmati kapan saja, baik saat santai maupun berkumpul bersama keluarga. Bakwan goreng, atau juga dikenal sebagai bala-bala, adalah kudapan yang sangat populer di Indonesia. Kelezatannya terletak pada teksturnya yang garing di luar dan lembut di dalam, berpadu dengan rasa gurih dari adonan dan sayuran segar. Membuat bakwan goreng sendiri di rumah ternyata tidak sulit, lho! Dengan resep yang tepat dan sedikit sentuhan rahasia, Anda bisa menghasilkan bakwan goreng yang lebih enak dari yang dijual di warung.</p>
+
+        <div class="ingredients">
+            <h3>Bahan Utama</h3>
+            <ul>
+                <li>1 buah wortel ukuran sedang, parut kasar atau iris korek api</li>
+                <li>1/4 buah kol ukuran kecil, iris tipis</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>100 gram tauge (opsional, untuk variasi)</li>
+                <li>150 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 butir telur ayam</li>
+                <li>150-200 ml air es (sesuaikan kekentalan adonan)</li>
+            </ul>
+            <h3>Bumbu Halus</h3>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir sejumput (opsional, untuk penyeimbang rasa)</li>
+            </ul>
+            <h3>Untuk Menggoreng</h3>
+            <ul>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h3>Cara Membuat</h3>
+            <ol>
+                <li><strong>Persiapan Sayuran:</strong> Cuci bersih semua sayuran. Wortel diparut kasar atau diiris korek api tipis. Kol diiris halus. Daun bawang diiris tipis. Tauge jika menggunakan, buang akarnya. Sisihkan.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam wadah, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+                <li><strong>Bumbu Halus:</strong> Haluskan bawang putih, ketumbar bubuk, merica bubuk, garam, dan sejumput gula (jika pakai). Anda bisa menggunakan ulekan atau blender.</li>
+                <li><strong>Campurkan Semua:</strong> Masukkan bumbu halus ke dalam campuran tepung. Tambahkan telur ayam, aduk rata.</li>
+                <li><strong>Tambahkan Sayuran:</strong> Masukkan irisan wortel, kol, dan daun bawang (serta tauge jika pakai) ke dalam adonan. Aduk kembali hingga semua tercampur.</li>
+                <li><strong>Tuang Air Es:</strong> Tuangkan air es sedikit demi sedikit sambil terus diaduk hingga adonan memiliki kekentalan yang pas. Adonan tidak boleh terlalu kental agar bakwan renyah, namun juga tidak terlalu encer agar tidak menyebar saat digoreng. Kekentalannya seperti adonan untuk martabak manis yang belum diberi topping.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang cenderung besar. Minyak harus benar-benar panas agar bakwan bisa mengembang sempurna dan tidak menyerap banyak minyak.</li>
+                <li><strong>Menggoreng:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Goreng beberapa buah bakwan sekaligus, jangan terlalu penuh agar matang merata dan tidak saling menempel.</li>
+                <li><strong>Balik dan Tiriskan:</strong> Goreng hingga satu sisi berwarna kuning keemasan, lalu balik. Goreng sisi satunya lagi hingga matang sempurna dan berwarna kecoklatan. Angkat bakwan goreng menggunakan saringan minyak dan tiriskan di atas kertas tisu untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan goreng siap disajikan selagi hangat. Cocok dinikmati dengan cabai rawit hijau, saus sambal, atau lontong.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h3>Tips Mendapatkan Bakwan Renyah Sempurna</h3>
+            <ul>
+                <li><strong>Air Es:</strong> Penggunaan air es sangat penting untuk menghasilkan bakwan yang renyah. Air dingin membantu tepung tetap kokoh saat digoreng.</li>
+                <li><strong>Jangan Terlalu Banyak Mengaduk:</strong> Setelah sayuran masuk, aduk secukupnya saja. Terlalu sering mengaduk bisa membuat gluten pada tepung berkembang, yang membuat bakwan jadi alot.</li>
+                <li><strong>Api Sedang-Besar:</strong> Goreng dengan api yang cukup besar di awal agar bakwan mengembang. Setelah itu, kecilkan api sedikit agar matang merata hingga ke dalam.</li>
+                <li><strong>Minyak Panas:</strong> Pastikan minyak benar-benar panas sebelum menggoreng. Ini mencegah bakwan menyerap minyak terlalu banyak dan menjadi lembek.</li>
+                <li><strong>Adonan Segar:</strong> Usahakan adonan bakwan digoreng segera setelah dibuat. Jika adonan didiamkan terlalu lama, sayuran akan mengeluarkan air dan membuat adonan menjadi lembek.</li>
+            </ul>
+        </div>
+
+        <p>Dengan mengikuti langkah-langkah di atas, Anda tidak hanya akan membuat bakwan goreng yang lezat, tetapi juga menciptakan momen kebersamaan yang hangat bersama orang-orang tersayang. Selamat mencoba resep bakwan goreng ini!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-aeng-cemara-asri">Bakpao Aeng Cemara Asri</a></li>
+<li><a href="/bakwan-sayur-krispi">Bakwan Sayur Krispi</a></li>
+<li><a href="/resep-bakwan-teri-nasi">Resep Bakwan Teri Nasi</a></li>
+<li><a href="/bakpao-chik-yen-harga">Bakpao Chik Yen Harga</a></li>
+<li><a href="/bakpia-jalan-kaliurang">Bakpia Jalan Kaliurang</a></li>
+<li><a href="/resep-heci-ayam">Resep Heci Ayam</a></li>
+<li><a href="/bakwan-simple-enak">Bakwan Simple Enak</a></li>
+<li><a href="/bumbu-heci">Bumbu Heci</a></li>
+<li><a href="/cara-membuat-bakwan-mie-kuning">Cara Membuat Bakwan Mie Kuning</a></li>
+<li><a href="/bakpia-happy">Bakpia Happy</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakso Ceker Mercon Pedas Mantap</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #004d40; /* Warna teks gelap sejuk */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 77, 64, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul lebih pekat */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+            border-bottom: 2px solid #80cbc4;
+            padding-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            color: #f44336; /* Warna merah untuk penekanan pedas */
+            font-weight: bold;
+        }
+        .ingredients li, .steps li {
+            background-color: #b2ebf2; /* Latar belakang list item sejuk */
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: block; /* Agar terlihat seperti blok terpisah */
+        }
+        .ingredients li strong, .steps li strong {
+            color: #006064;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 77, 64, 0.2);
+        }
+        .notes {
+            font-style: italic;
+            color: #006064;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e0f2f1;
+            border-left: 5px solid #00796b;
+            border-radius: 0 5px 5px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #757575;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .ingredients li, .steps li {
+                padding: 6px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <!-- SVG Gambar Bakso Ceker Mercon -->
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background: Subtle wavy pattern -->
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#e0f2f1;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#b2ebf2;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="300" height="200" fill="url(#grad1)" />
+
+                <!-- Ceker (Chicken Feet) - Simplified representation -->
+                <path d="M 50,120 c 5,-10 15,-15 25,-10 c 10,5 15,15 10,25 c -5,10 -15,15 -25,10 c -10,-5 -15,-15 -10,-25 Z" fill="#fff" stroke="#00796b" stroke-width="2"/>
+                <circle cx="60" cy="130" r="5" fill="#e65100" />
+                <circle cx="70" cy="140" r="5" fill="#e65100" />
+                <circle cx="80" cy="135" r="5" fill="#e65100" />
+
+                <path d="M 90,110 c 5,-10 15,-15 25,-10 c 10,5 15,15 10,25 c -5,10 -15,15 -25,10 c -10,-5 -15,-15 -10,-25 Z" fill="#fff" stroke="#00796b" stroke-width="2"/>
+                <circle cx="100" cy="120" r="5" fill="#e65100" />
+                <circle cx="110" cy="130" r="5" fill="#e65100" />
+                <circle cx="120" cy="125" r="5" fill="#e65100" />
+
+                <!-- Bakso (Meatball) -->
+                <circle cx="150" cy="100" r="30" fill="#f44336" stroke="#bf360c" stroke-width="3"/>
+                <circle cx="150" cy="100" r="25" fill="#ff8a65" />
+
+                <!-- Mercon (Spicy Element) - Chili shapes -->
+                <path d="M 160,80 l 10,-20 l 10,20 Z" fill="#d32f2f" transform="rotate(10 160 80)"/>
+                <path d="M 170,70 l 10,-20 l 10,20 Z" fill="#d32f2f" transform="rotate(-10 170 70)"/>
+                <circle cx="175" cy="60" r="4" fill="#e53935" />
+
+                <!-- Sauce/Gravy - Wavy lines -->
+                <path d="M 130,120 Q 150,140 170,120" stroke="#d32f2f" stroke-width="4" fill="none" opacity="0.7"/>
+                <path d="M 135,130 Q 150,150 165,130" stroke="#e57373" stroke-width="3" fill="none" opacity="0.7"/>
+
+                <!-- Text Label -->
+                <text x="150" y="180" font-family="Segoe UI, sans-serif" font-size="14" fill="#006064" text-anchor="middle" font-weight="bold">Bakso Ceker Mercon</text>
+            </svg>
+        </div>
+
+        <h1>Cara Membuat Bakso Ceker Mercon yang Pedasnya Menggugah Selera</h1>
+
+        <p>Siapa yang tidak tergoda dengan hidangan pedas yang kaya rasa? Bakso ceker mercon adalah salah satu pilihan kuliner yang semakin populer, menawarkan kombinasi unik antara kenyalnya bakso, lembutnya ceker ayam, dan bumbu mercon yang super pedas. Cocok dinikmati saat cuaca dingin atau kapan pun Anda menginginkan sensasi berbeda di lidah.</p>
+
+        <p>Membuat bakso ceker mercon di rumah ternyata tidak sesulit yang dibayangkan, lho! Dengan sedikit persiapan dan mengikuti langkah-langkah yang tepat, Anda bisa menyajikan hidangan lezat ini untuk keluarga tercinta atau bahkan sebagai ide jualan yang menjanjikan.</p>
+
+        <h2>Bahan-Bahan yang Dibutuhkan</h2>
+        <ul class="ingredients">
+            <li><strong>Bakso Sapi/Ayam:</strong> 250 gram, pilih kualitas terbaik agar kenyal dan gurih.</li>
+            <li><strong>Ceker Ayam:</strong> 500 gram, bersihkan dengan baik, buang kulit ari dan kukunya.</li>
+            <li><strong>Air:</strong> 1.5 liter, untuk merebus ceker dan kuah.</li>
+            <li><strong>Minyak Goreng:</strong> Secukupnya, untuk menumis bumbu.</li>
+        </ul>
+
+        <h2>Bumbu Halus Mercon</h2>
+        <ul class="ingredients">
+            <li><strong>Cabai Rawit Merah:</strong> 15-25 buah (sesuai selera pedas Anda!).</li>
+            <li><strong>Cabai Merah Besar:</strong> 5 buah, buang bijinya.</li>
+            <li><strong>Bawang Merah:</strong> 8 siung.</li>
+            <li><strong>Bawang Putih:</strong> 4 siung.</li>
+            <li><strong>Kemiri:</strong> 3 butir, sangrai.</li>
+            <li><strong>Kunyit:</strong> 1 cm, bakar sebentar.</li>
+            <li><strong>Jahe:</strong> 1 cm.</li>
+            <li><strong>Garam:</strong> 1 sendok teh (atau sesuai selera).</li>
+            <li><strong>Gula Pasir:</strong> 1/2 sendok teh (untuk menyeimbangkan rasa).</li>
+        </ul>
+
+        <h2>Bumbu Pelengkap</h2>
+        <ul class="ingredients">
+            <li><strong>Serai:</strong> 2 batang, memarkan.</li>
+            <li><strong>Daun Salam:</strong> 3 lembar.</li>
+            <li><strong>Lengkuas:</strong> 2 cm, memarkan.</li>
+            <li><strong>Daun Jeruk:</strong> 4 lembar, buang tulang daunnya.</li>
+            <li><strong>Kaldu Bubuk:</strong> 1 sendok teh (opsional).</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bakso Ceker Mercon</h2>
+        <ol class="steps">
+            <li>
+                <strong>Persiapan Ceker:</strong> Rebus ceker ayam dengan sedikit garam dan daun salam selama kurang lebih 30-45 menit hingga empuk. Tiriskan. Anda bisa membuang sebagian air rebusan jika dirasa terlalu keruh.
+            </li>
+            <li>
+                <strong>Membuat Bumbu Halus:</strong> Haluskan semua bahan bumbu halus menggunakan blender atau ulekan. Jika menggunakan blender, tambahkan sedikit minyak agar lebih mudah halus.
+            </li>
+            <li>
+                <strong>Menumis Bumbu:</strong> Panaskan secukupnya minyak goreng di wajan. Tumis bumbu halus bersama serai, daun salam, lengkuas, dan daun jeruk hingga harum dan matang sempurna. Pastikan bumbu benar-benar tanak agar tidak langu.
+            </li>
+            <li>
+                <strong>Memasak Ceker dan Bakso:</strong> Masukkan ceker ayam yang sudah direbus dan bakso sapi/ayam ke dalam tumisan bumbu. Aduk rata.
+            </li>
+            <li>
+                <strong>Menambahkan Air dan Bumbu:</strong> Tuangkan sisa air rebusan ceker (atau air baru jika perlu) ke dalam wajan. Masukkan garam, gula pasir, dan kaldu bubuk jika menggunakan. Aduk rata.
+            </li>
+            <li>
+                <strong>Proses Mercon:</strong> Masak hingga kuah mendidih dan sedikit mengental. Cicipi rasa, tambahkan garam atau gula jika perlu. Biarkan bumbu meresap ke dalam ceker dan bakso. Proses ini memakan waktu sekitar 15-20 menit agar rasa pedas dan gurihnya maksimal.
+            </li>
+            <li>
+                <strong>Penyajian:</strong> Angkat bakso ceker mercon dan sajikan selagi hangat. Nikmati dengan nasi putih hangat, taburan bawang goreng, dan sedikit irisan daun bawang untuk menambah aroma.</li>
+        </ol>
+
+        <div class="notes">
+            <p><strong>Tips Tambahan:</strong></p>
+            <ul>
+                <li>Untuk tingkat kepedasan ekstra, Anda bisa menambahkan irisan cabai rawit utuh saat menumis bumbu atau saat penyajian.</li>
+                <li>Jika ingin kuah lebih kental, Anda bisa menghaluskan beberapa butir kemiri tambahan dan menumisnya bersama bumbu halus.</li>
+                <li>Pastikan ceker benar-benar bersih sebelum direbus agar tidak amis.</li>
+                <li>Bakso ceker mercon ini juga nikmat jika ditambahkan sedikit kecap manis untuk sentuhan rasa manis gurih yang lebih kompleks.</li>
+            </ul>
+        </div>
+
+        <p>Dengan resep ini, Anda bisa menciptakan bakso ceker mercon yang tidak hanya <span class="highlight">super pedas</span>, tetapi juga kaya akan rempah dan bumbu yang meresap sempurna. Selamat mencoba dan rasakan sensasi pedasnya yang bikin nagih!</p>
+
+        <div class="footer">
+            Artikel ini hadir untuk memandu Anda menciptakan hidangan lezat di rumah.
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-buat-bakwan-jagung-krispi">Cara Buat Bakwan Jagung Krispi</a></li>
+<li><a href="/doa-balasan-untuk-orang-jahat">Doa Balasan Untuk Orang Jahat</a></li>
+<li><a href="/bumbu-bakwan-kol">Bumbu Bakwan Kol</a></li>
+<li><a href="/cara-membuat-bakwan-kubis">Cara Membuat Bakwan Kubis</a></li>
+<li><a href="/resep-kakiage-marugame">Resep Kakiage Marugame</a></li>
+<li><a href="/balasan-orang-munafik-adalah">Balasan Orang Munafik Adalah</a></li>
+<li><a href="/cara-membuat-bakwan-jamur-sawit">Cara Membuat Bakwan Jamur Sawit</a></li>
+<li><a href="/baba-baklava">Baba Baklava</a></li>
+<li><a href="/cara-membuat-bakwan-goreng-renyah">Cara Membuat Bakwan Goreng Renyah</a></li>
+<li><a href="/resep-bakwan-kawi-pinggir-jalan">Resep Bakwan Kawi Pinggir Jalan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

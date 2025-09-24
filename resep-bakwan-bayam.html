@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Bayam: Lezat & Sehat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4682b4; /* SteelBlue - warna sejuk cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #5f9ea0; /* CadetBlue - warna sejuk cerah */
+            margin-top: 30px;
+            border-bottom: 2px solid #e0ffff; /* LightCyan - sentuhan cerah */
+            padding-bottom: 5px;
+        }
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .recipe-section {
+            margin-bottom: 25px;
+        }
+        .recipe-section p, .recipe-section ul, .recipe-section ol {
+            margin-bottom: 15px;
+        }
+        .recipe-section ul, .recipe-section ol {
+            padding-left: 20px;
+        }
+        .recipe-section li {
+            margin-bottom: 8px;
+        }
+        .ingredients li::before {
+            content: "• ";
+            color: #20b2aa; /* LightSeaGreen - warna cerah */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .instructions li::before {
+            content: counter(list-item) ". ";
+            color: #20b2aa; /* LightSeaGreen - warna cerah */
+            font-weight: bold;
+        }
+        .tips li::before {
+            content: "💡 ";
+            color: #ffd700; /* Gold - sentuhan cerah */
+        }
+        strong {
+            color: #008080; /* Teal - warna sejuk */
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Resep Bakwan Bayam Lezat dan Bergizi</h1>
+
+        <div class="hero-image">
+            <svg width="600" height="350" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="350" rx="10" fill="#e0ffff"/> <!-- LightCyan background -->
+                <path d="M50 50 L150 50 L150 150 L50 150 Z" fill="#98fb98" stroke="#32cd32" stroke-width="2"/> <!-- LightGreen for leaves -->
+                <path d="M100 100 L200 100 L200 200 L100 200 Z" fill="#90ee90" stroke="#2e8b57" stroke-width="2"/> <!-- PaleGreen for leaves -->
+                <path d="M200 50 L300 50 L300 150 L200 150 Z" fill="#98fb98" stroke="#32cd32" stroke-width="2"/>
+                <path d="M250 100 L350 100 L350 200 L250 200 Z" fill="#90ee90" stroke="#2e8b57" stroke-width="2"/>
+                <path d="M350 50 L450 50 L450 150 L350 150 Z" fill="#98fb98" stroke="#32cd32" stroke-width="2"/>
+                <path d="M400 100 L500 100 L500 200 L400 200 Z" fill="#90ee90" stroke="#2e8b57" stroke-width="2"/>
+
+                <!-- Abstract representation of bakwan -->
+                <ellipse cx="300" cy="280" rx="70" ry="40" fill="#ffdab9" stroke="#cd853f" stroke-width="3"/> <!-- PeachPuff with Brown stroke -->
+                <ellipse cx="180" cy="260" rx="60" ry="35" fill="#ffdab9" stroke="#cd853f" stroke-width="3"/>
+                <ellipse cx="420" cy="260" rx="60" ry="35" fill="#ffdab9" stroke="#cd853f" stroke-width="3"/>
+
+                <text x="300" y="250" font-family="Arial, sans-serif" font-size="18" fill="#333" text-anchor="middle">Bakwan Bayam</text>
+            </svg>
+            <p style="font-style: italic; color: #666;">Ilustrasi Bakwan Bayam yang Menggugah Selera</p>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Pendahuluan</h2>
+            <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan bayam adalah salah satu jajanan tradisional Indonesia yang selalu berhasil memikat lidah banyak orang. Dibuat dari bahan-bahan sederhana, bakwan bayam tidak hanya lezat, tetapi juga menyajikan kebaikan nutrisi dari bayam yang kaya akan vitamin dan mineral. Membuatnya sendiri di rumah ternyata tidaklah sulit, bahkan bisa menjadi kegiatan yang menyenangkan bersama keluarga. Dengan resep ini, Anda bisa menciptakan bakwan bayam yang renyah di luar dan lembut di dalam, cocok dinikmati kapan saja.</p>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Bahan-bahan</h2>
+            <ul class="ingredients">
+                <li>250 gram daun bayam segar, siangi, cuci bersih, dan tiriskan</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh garam (sesuai selera)</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional, jika suka)</li>
+                <li>150-200 ml air dingin (sesuaikan kekentalan adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Cara Membuat</h2>
+            <ol class="instructions">
+                <li><strong>Persiapan Bayam:</strong> Potong-potong kasar daun bayam yang sudah bersih. Sisihkan.</li>
+                <li><strong>Membuat Adonan Tepung:</strong> Dalam wadah besar, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika pakai). Aduk rata.</li>
+                <li><strong>Menambahkan Air:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan licin dan tidak bergerindil. Kekentalan adonan sebaiknya pas, tidak terlalu encer dan tidak terlalu kental.</li>
+                <li><strong>Memasukkan Bayam dan Daun Bawang:</strong> Masukkan potongan bayam dan irisan daun bawang ke dalam adonan tepung. Aduk perlahan hingga semua bahan tercampur rata dengan adonan.</li>
+                <li><strong>Menggoreng:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+                <li><strong>Membentuk Bakwan:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Bentuk pipih atau sesuai selera. Goreng hingga semua sisi berwarna kuning keemasan dan matang merata. Anda bisa menggoreng beberapa buah sekaligus, namun jangan terlalu penuh agar matang sempurna.</li>
+                <li><strong>Meniriskan:</strong> Angkat bakwan yang sudah matang, tiriskan di atas kertas tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan bayam siap disajikan selagi hangat sebagai camilan atau teman makan nasi.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips untuk Bakwan Bayam Sempurna</h2>
+            <ul class="tips">
+                <li>Gunakan air dingin untuk membuat adonan agar bakwan lebih renyah.</li>
+                <li>Jangan terlalu banyak mengaduk adonan setelah bayam masuk, agar bayam tidak terlalu lembek.</li>
+                <li>Pastikan minyak benar-benar panas sebelum menggoreng. Ini kunci agar bakwan tidak menyerap banyak minyak dan menjadi garing.</li>
+                <li>Goreng dengan api sedang agar matang merata hingga ke dalam.</li>
+                <li>Jika suka, Anda bisa menambahkan sedikit parutan wortel atau jagung pipil ke dalam adonan untuk variasi rasa dan tekstur.</li>
+                <li>Sajikan bakwan bayam dengan sambal favorit Anda, seperti sambal kecap atau saus sambal.</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Manfaat Bayam</h2>
+            <p>Selain kelezatannya, bakwan bayam juga menawarkan manfaat kesehatan berkat kandungan nutrisi dalam bayam. Bayam dikenal sebagai sumber zat besi yang baik untuk mencegah anemia, kaya akan vitamin A yang bermanfaat bagi kesehatan mata, serta mengandung vitamin K untuk kesehatan tulang. Serat dalam bayam juga membantu melancarkan pencernaan. Dengan mengolah bayam menjadi bakwan, kita bisa menikmati sayuran hijau dengan cara yang lebih menyenangkan.</p>
+        </div>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-nasi">Resep Bakwan Nasi</a></li>
+<li><a href="/bakpia-pathok-25-kering">Bakpia Pathok 25 Kering</a></li>
+<li><a href="/balasan-wa-bismillah">Balasan Wa Bismillah</a></li>
+<li><a href="/bakpao-frozen-food">Bakpao Frozen Food</a></li>
+<li><a href="/bakpia-babi">Bakpia Babi</a></li>
+<li><a href="/bumbu-bala">Bumbu Bala</a></li>
+<li><a href="/bumbu-isian-bakso-mercon">Bumbu Isian Bakso Mercon</a></li>
+<li><a href="/bakpia-jogkem">Bakpia Jogkem</a></li>
+<li><a href="/cara-membuat-bakso-mercon-untuk-dijual">Cara Membuat Bakso Mercon Untuk Dijual</a></li>
+<li><a href="/brownies-bakpia-tugu">Brownies Bakpia Tugu</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

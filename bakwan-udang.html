@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Udang: Camilan Gurih Renyah nan Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4ECDC4; /* Warna sejuk cerah */
+            --secondary-color: #FF6B6B; /* Aksen cerah */
+            --text-color: #333;
+            --background-color: #F7FFF7; /* Latar belakang sedikit cerah */
+            --card-background: #FFFFFF;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-background);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            text-align: left;
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 10px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .recipe-section {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .recipe-section ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+
+        .recipe-section li {
+            margin-bottom: 10px;
+        }
+
+        .call-to-action {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+            padding: 15px 30px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-to-action:hover {
+            background-color: #e65c5c;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            width: 100%;
+            background-color: #e9ecef; /* Sedikit lebih gelap dari latar belakang */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .call-to-action {
+                width: 80%;
+                padding: 12px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bakwan Udang: Kelezatan Renyah yang Menggoda Selera</h1>
+
+        <svg class="hero-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#4ECDC4;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#FF6B6B;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+                    <feOffset dx="0" dy="0" result="offsetblur"/>
+                    <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grad1)" filter="url(#shadow)"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="40" font-weight="bold" filter="url(#shadow)">
+                Bakwan Udang Gurih
+            </text>
+            <circle cx="150" cy="200" r="40" fill="white" opacity="0.7"/>
+            <circle cx="650" cy="200" r="40" fill="white" opacity="0.7"/>
+            <path d="M 250 150 Q 300 100 350 150 T 450 150" stroke="white" stroke-width="5" fill="none" opacity="0.8"/>
+            <path d="M 350 250 Q 400 300 450 250 T 550 250" stroke="white" stroke-width="5" fill="none" opacity="0.8"/>
+        </svg>
+
+        <p>
+            Siapa yang bisa menolak kelezatan bakwan? Camilan renyah yang satu ini memang selalu punya tempat istimewa di hati para pecinta kuliner. Berbagai macam jenis bakwan pun telah akrab di lidah masyarakat Indonesia, mulai dari bakwan sayur, bakwan jagung, hingga bakwan tahu. Namun, kali ini kita akan mengulas lebih dalam mengenai salah satu varian yang tak kalah menggoda: <span class="highlight">bakwan udang</span>.
+        </p>
+
+        <p>
+            Bakwan udang menawarkan kombinasi rasa yang unik dan tekstur yang memanjakan. Kerenyahan adonan luarnya berpadu sempurna dengan rasa gurih dan sedikit manis dari udang segar di dalamnya. Setiap gigitan akan memberikan sensasi renyah di awal, diikuti dengan isian udang yang lembut dan kaya rasa. Kehadiran udang membuat bakwan ini terasa lebih spesial dan premium dibandingkan dengan bakwan pada umumnya.
+        </p>
+
+        <p>
+            Menciptakan bakwan udang yang sempurna bukanlah hal yang sulit. Kunci utamanya terletak pada pemilihan bahan-bahan yang segar dan berkualitas. Udang yang digunakan sebaiknya berukuran sedang dan masih segar agar aroma serta rasanya tetap terjaga optimal. Selain itu, adonan tepung yang pas juga sangat krusial. Perbandingan tepung terigu dan tepung beras yang tepat akan menghasilkan tekstur bakwan yang renyah tahan lama, tidak mudah lembek, dan tidak terlalu keras. Penambahan bumbu-bumbu seperti bawang putih, merica, dan garam akan semakin memperkaya cita rasanya.
+        </p>
+
+        <div class="recipe-section">
+            <h2>Tips Menikmati Bakwan Udang</h2>
+            <p>
+                Bakwan udang paling nikmat disantap selagi hangat. Aroma gurihnya akan semakin menggugah selera. Sajikan bersama saus sambal favorit Anda, cabai rawit utuh, atau acar timun wortel untuk menambah kesegaran. Bakwan udang sangat cocok dinikmati sebagai teman minum teh atau kopi di sore hari, sebagai lauk pendamping nasi hangat, atau sekadar menjadi camilan pengganjal perut kapan saja.
+            </p>
+            <p>
+                Proses menggoreng juga perlu diperhatikan. Gunakan minyak yang cukup banyak dan pastikan minyak sudah benar-benar panas sebelum memasukkan adonan bakwan. Goreng dengan api sedang hingga bakwan berwarna kuning keemasan dan matang sempurna. Tiriskan dengan baik agar tidak terlalu berminyak.
+            </p>
+            <h2>Variasi Bakwan Udang</h2>
+            <p>
+                Selain versi klasik, Anda juga bisa bereksperimen dengan berbagai variasi bakwan udang. Menambahkan sedikit irisan daun bawang atau seledri ke dalam adonan dapat memberikan aroma yang lebih segar. Beberapa orang juga suka menambahkan sedikit parutan wortel atau kol untuk variasi tekstur dan nutrisi. Bagi Anda penyuka rasa pedas, sedikit irisan cabai rawit di dalam adonan juga bisa menjadi pilihan menarik.
+            </p>
+        </div>
+
+        <a href="#" class="call-to-action">Coba Resep Bakwan Udang Sekarang!</a>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-pelas-jagung-kukus">Resep Pelas Jagung Kukus</a></li>
+<li><a href="/cara-buat-bala-bala-jagung">Cara Buat Bala Bala Jagung</a></li>
+<li><a href="/bahan-perkedel-jagung-manis">Bahan Perkedel Jagung Manis</a></li>
+<li><a href="/membuat-bakpao-takaran-sendok">Membuat Bakpao Takaran Sendok</a></li>
+<li><a href="/penyembuhan-balanitis">Penyembuhan Balanitis</a></li>
+<li><a href="/resep-adonan-bala-bala">Resep Adonan Bala Bala</a></li>
+<li><a href="/bikang-doang">Bikang Doang</a></li>
+<li><a href="/uji-staphylococcus-aureus-pada-makanan">Uji Staphylococcus Aureus Pada Makanan</a></li>
+<li><a href="/resep-ketan-durian-lumer">Resep Ketan Durian Lumer</a></li>
+<li><a href="/cara-membuat-ampal-jagung-yang-enak">Cara Membuat Ampal Jagung Yang Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasa Bakwan Jagung: Resep Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul sejuk */
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .ingredients, .instructions {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            color: #004d40; /* Warna teks penekanan yang lebih gelap */
+            font-weight: bold;
+        }
+        .recipe-tip {
+            background-color: #b2ebf2; /* Warna latar belakang tips cerah */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 25px;
+            border-left: 5px solid #00796b;
+        }
+        .recipe-tip p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="image-container">
+            <!-- SVG untuk gambar bakwan jagung -->
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="gradient-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffeb3b;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#fbc02d;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="gradient-green" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#8bc34a;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#689f38;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                        <feOffset dx="0" dy="0"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Latar belakang -->
+                <rect width="100%" height="100%" fill="#fff9c4" />
+
+                <!-- Jagung -->
+                <g transform="translate(50, 80)">
+                    <ellipse cx="70" cy="50" rx="40" ry="20" fill="url(#gradient-yellow)" filter="url(#shadow)" transform="rotate(-10 70 50)"/>
+                    <ellipse cx="100" cy="60" rx="40" ry="20" fill="url(#gradient-yellow)" filter="url(#shadow)" transform="rotate(5 100 60)"/>
+                    <ellipse cx="130" cy="45" rx="40" ry="20" fill="url(#gradient-yellow)" filter="url(#shadow)" transform="rotate(-15 130 45)"/>
+                    <ellipse cx="160" cy="65" rx="40" ry="20" fill="url(#gradient-yellow)" filter="url(#shadow)" transform="rotate(10 160 65)"/>
+                </g>
+
+                <!-- Adonan Bakwan -->
+                <g transform="translate(150, 100)">
+                    <path d="M 0 0 Q 50 -30 100 0 T 200 0 L 150 70 Q 100 100 50 70 Z" fill="#e0e0e0" filter="url(#shadow)"/>
+                    <path d="M 20 10 Q 30 -10 40 10 T 60 10 L 50 40 Q 30 50 20 40 Z" fill="#ffe082" transform="translate(20, 15)"/>
+                    <path d="M 80 10 Q 90 -10 100 10 T 120 10 L 110 40 Q 90 50 80 40 Z" fill="#ffe082" transform="translate(50, 5)"/>
+                    <path d="M 40 50 Q 50 30 60 50 T 80 50 L 70 70 Q 50 80 40 70 Z" fill="#ffe082" transform="translate(30, 10)"/>
+                </g>
+
+                <!-- Sasa -->
+                <text x="280" y="150" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#f44336" transform="rotate(5 280 150)">Sasa</text>
+                <text x="280" y="190" font-family="Arial, sans-serif" font-size="25" fill="#f44336" transform="rotate(-3 280 190)">Bakwan Jagung</text>
+            </svg>
+        </div>
+
+        <h1>Nikmati Sasa Bakwan Jagung: Renyah di Luar, Lembut di Dalam!</h1>
+
+        <p>Siapa yang bisa menolak kelezatan <span class="highlight">sasa bakwan jagung</span>? Kudapan gurih ini selalu menjadi favorit di berbagai suasana, mulai dari teman ngopi di sore hari hingga pendamping makan nasi yang nikmat. Dengan kombinasi rasa manis jagung yang segar dan tekstur renyah di luar serta lembut di dalam, sasa bakwan jagung memang selalu menggugah selera.</p>
+
+        <p>Membuat bakwan jagung yang sempurna ternyata tidaklah sulit. Kuncinya terletak pada pemilihan bahan yang tepat dan sedikit sentuhan bumbu rahasia agar rasa dan teksturnya semakin istimewa. Artikel ini akan memandu Anda langkah demi langkah untuk menciptakan sasa bakwan jagung yang lezat, bahkan bagi Anda yang baru pertama kali mencoba.</p>
+
+        <h2>Bahan-Bahan Sasa Bakwan Jagung yang Menggoda</h2>
+
+        <div class="ingredients">
+            <p>Untuk menciptakan sasa bakwan jagung yang nikmat, siapkanlah bahan-bahan berikut:</p>
+            <ul>
+                <li>2 buah jagung manis, pipil atau iris tipis</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 butir telur</li>
+                <li>50 ml air (sesuaikan kekentalan adonan)</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya (opsional, untuk menyeimbangkan rasa)</li>
+                <li>Daun bawang secukupnya, iris halus (opsional, untuk aroma dan warna)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Sasa Bakwan Jagung Sempurna</h2>
+
+        <div class="instructions">
+            <p>Mari kita mulai petualangan kuliner Anda:</p>
+            <ol>
+                <li>Dalam sebuah wadah, campurkan pipilan jagung, tepung terigu, tepung beras, telur, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan gula (jika menggunakan). Aduk rata.</li>
+                <li>Tambahkan air sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan memiliki kekentalan yang pas. Adonan tidak boleh terlalu encer agar tidak mudah buyar saat digoreng, namun juga tidak terlalu kental agar tidak keras.</li>
+                <li>Jika menggunakan daun bawang, masukkan irisan daun bawang ke dalam adonan dan aduk kembali hingga rata.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak sudah cukup panas sebelum mulai menggoreng.</li>
+                <li>Ambil satu sendok adonan, bentuk pipih, lalu masukkan ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan matang di kedua sisinya.</li>
+                <li>Angkat bakwan jagung yang sudah matang dan tiriskan minyaknya.</li>
+                <li>Sajikan sasa bakwan jagung selagi hangat. Cocok dinikmati bersama cabai rawit, saus sambal, atau cocolan favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-tip">
+            <p><strong>Tips Renyah Tahan Lama:</strong> Untuk hasil bakwan jagung yang lebih renyah, Anda bisa menambahkan sedikit air es ke dalam adonan atau menggunakan kombinasi tepung terigu dan tepung beras dengan perbandingan yang pas. Pastikan juga untuk menggoreng dalam minyak yang benar-benar panas.</p>
+        </div>
+
+        <p>Sasa bakwan jagung adalah bukti nyata bahwa hidangan sederhana bisa menghadirkan kebahagiaan luar biasa. Dengan resep ini, Anda bisa menciptakan sendiri kelezatan sasa bakwan jagung di rumah kapan pun Anda inginkan. Selamat mencoba dan nikmati setiap gigitannya!</p>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/omah-bakso-mercon">Omah Bakso Mercon</a></li>
+<li><a href="/bakpao-1000an">Bakpao 1000An</a></li>
+<li><a href="/bakteri-yang-menguntungkan">Bakteri Yang Menguntungkan</a></li>
+<li><a href="/bumbu-bakwan-jagung-pedas">Bumbu Bakwan Jagung Pedas</a></li>
+<li><a href="/resep-bumbu-bala-bala">Resep Bumbu Bala Bala</a></li>
+<li><a href="/harga-pia-kacang-hijau">Harga Pia Kacang Hijau</a></li>
+<li><a href="/bakpia-murah-terdekat">Bakpia Murah Terdekat</a></li>
+<li><a href="/bakso-jumbo-mercon">Bakso Jumbo Mercon</a></li>
+<li><a href="/bakwan-lembut">Bakwan Lembut</a></li>
+<li><a href="/cara-membuat-bakwan-udang">Cara Membuat Bakwan Udang</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

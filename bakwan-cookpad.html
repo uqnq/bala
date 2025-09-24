@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Cookpad: Renyah, Gurih & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul yang menenangkan */
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-bottom: 2px solid #80cbc4; /* Garis bawah warna sejuk */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .article-content {
+            text-align: left;
+        }
+        img.main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            display: block; /* Agar margin auto bekerja */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .recipe-section {
+            background-color: #f1f8e9; /* Warna latar belakang resep yang lembut */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 1px dashed #a5d6a7; /* Border resep yang halus */
+        }
+        .recipe-section h3 {
+            color: #388e3c;
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        .recipe-section ul, .recipe-section ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        .recipe-section li {
+            margin-bottom: 10px;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #00796b;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-section h3 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="main-image" width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Bakwan SVG -->
+            <style>
+                .bakwan-body { fill: #f5e9d2; stroke: #d4a87c; stroke-width: 2; }
+                .bakwan-outline { fill: none; stroke: #d4a87c; stroke-width: 3; }
+                .vegetable-green { fill: #7cb342; }
+                .vegetable-orange { fill: #ffb74d; }
+                .vegetable-purple { fill: #ab47bc; }
+                .oil-drop { fill: #b2ebf2; opacity: 0.6; }
+            </style>
+            <defs>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feFlood flood-color="#000" flood-opacity="0.2"/>
+                    <feComposite in2="offsetblur" operator="in"/>
+                    <feMerge>
+                        <feMergeNode in="shadow"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+
+            <!-- Tetesan Minyak -->
+            <circle cx="50" cy="80" r="8" class="oil-drop" filter="url(#shadow)"/>
+            <circle cx="80" cy="60" r="6" class="oil-drop" filter="url(#shadow)"/>
+            <circle cx="120" cy="90" r="7" class="oil-drop" filter="url(#shadow)"/>
+            <circle cx="160" cy="70" r="9" class="oil-drop" filter="url(#shadow)"/>
+            <circle cx="200" cy="100" r="7" class="oil-drop" filter="url(#shadow)"/>
+            <circle cx="240" cy="80" r="8" class="oil-drop" filter="url(#shadow)"/>
+            <circle cx="280" cy="60" r="5" class="oil-drop" filter="url(#shadow)"/>
+            <circle cx="320" cy="90" r="6" class="oil-drop" filter="url(#shadow)"/>
+            <circle cx="360" cy="70" r="7" class="oil-drop" filter="url(#shadow)"/>
+
+            <!-- Bakwan 1 -->
+            <g transform="translate(50, 120) scale(0.8)" filter="url(#shadow)">
+                <path d="M0,0 C30,-20,60,-20,90,0 L90,70 C60,90,30,90,0,70 Z" class="bakwan-body"/>
+                <path d="M0,0 C30,-20,60,-20,90,0 M90,0 L90,70 M90,70 C60,90,30,90,0,70 M0,70 L0,0" class="bakwan-outline"/>
+                <rect x="25" y="10" width="15" height="20" class="vegetable-green"/>
+                <rect x="50" y="15" width="15" height="15" class="vegetable-orange"/>
+                <rect x="70" y="5" width="10" height="25" class="vegetable-purple"/>
+            </g>
+
+            <!-- Bakwan 2 -->
+            <g transform="translate(180, 110) scale(0.7)" filter="url(#shadow)">
+                <path d="M0,0 C25,-15,50,-15,75,0 L75,60 C50,80,25,80,0,60 Z" class="bakwan-body"/>
+                <path d="M0,0 C25,-15,50,-15,75,0 M75,0 L75,60 M75,60 C50,80,25,80,0,60 M0,60 L0,0" class="bakwan-outline"/>
+                <rect x="15" y="5" width="12" height="18" class="vegetable-green"/>
+                <rect x="35" y="10" width="12" height="12" class="vegetable-orange"/>
+                <rect x="55" y="3" width="8" height="20" class="vegetable-purple"/>
+            </g>
+
+            <!-- Bakwan 3 -->
+            <g transform="translate(280, 130) scale(0.9)" filter="url(#shadow)">
+                <path d="M0,0 C35,-25,70,-25,105,0 L105,75 C70,95,35,95,0,75 Z" class="bakwan-body"/>
+                <path d="M0,0 C35,-25,70,-25,105,0 M105,0 L105,75 M105,75 C70,95,35,95,0,75 M0,75 L0,0" class="bakwan-outline"/>
+                <rect x="30" y="15" width="18" height="22" class="vegetable-green"/>
+                <rect x="60" y="20" width="18" height="18" class="vegetable-orange"/>
+                <rect x="85" y="10" width="12" height="30" class="vegetable-purple"/>
+            </g>
+        </svg>
+
+        <h1>Nikmatnya Bakwan: Resep Rahasia Renyah dan Gurih di Cookpad</h1>
+        <div class="article-content">
+            <p>
+                Siapa yang tak kenal bakwan? Jajanan gorengan renyah ini selalu menjadi primadona di setiap kesempatan, mulai dari teman minum teh di sore hari hingga pelengkap santapan keluarga. Kelezatan bakwan terletak pada perpaduan rasa gurih adonan tepung yang dibalut sayuran segar, lalu digoreng hingga keemasan dan sangat renyah. Di era digital ini, mencari inspirasi resep bakwan menjadi semakin mudah, salah satunya melalui platform <span class="keyword">Cookpad</span>.
+            </p>
+            <p>
+                <span class="keyword">Cookpad</span> adalah surga bagi para pecinta kuliner. Ribuan resep dibagikan setiap hari oleh para pengguna, termasuk berbagai varian bakwan yang menggugah selera. Mulai dari bakwan sayur klasik, bakwan udang, bakwan tahu, hingga kreasi bakwan kekinian yang lebih unik. Masing-masing memiliki keunggulan tersendiri, namun tujuan utamanya tetap sama: menghasilkan bakwan yang sempurna.
+            </p>
+            <p>
+                Mencari resep bakwan di <span class="keyword">Cookpad</span> sangatlah intuitif. Anda cukup mengetikkan kata kunci "bakwan" di kolom pencarian, dan seketika akan muncul ratusan, bahkan ribuan, pilihan resep. Filter pencarian juga memungkinkan Anda untuk menemukan resep berdasarkan bahan utama, tingkat kesulitan, atau bahkan ulasan dari pengguna lain. Kemudahan ini menjadikan <span class="keyword">Cookpad</span> sebagai sumber referensi kuliner yang tak ternilai harganya bagi siapa saja, baik pemula maupun juru masak berpengalaman.
+            </p>
+
+            <h2>Rahasia Bakwan Renyah dan Gurih Ala Pengguna Cookpad</h2>
+            <p>
+                Keberhasilan membuat bakwan yang renyah di luar dan lembut di dalam ternyata memiliki beberapa kunci utama yang sering dibagikan para pengguna <span class="keyword">Cookpad</span>. Salah satunya adalah penggunaan tepung yang tepat. Kombinasi tepung terigu dan tepung beras sering menjadi pilihan untuk mendapatkan tekstur yang lebih renyah. Perbandingan yang pas sangat penting, biasanya satu banding satu atau satu banding dua antara tepung terigu dan tepung beras.
+            </p>
+            <p>
+                Selain itu, penggunaan air es saat membuat adonan juga menjadi trik jitu. Air dingin membantu menjaga adonan tetap dingin, sehingga saat digoreng, menghasilkan tekstur yang lebih garing. Jangan lupa, jangan terlalu banyak mengaduk adonan setelah tepung tercampur agar gluten tidak terbentuk berlebihan, yang bisa membuat bakwan jadi keras.
+            </p>
+            <p>
+                Untuk rasa gurih, penggunaan bumbu dasar seperti bawang putih halus, garam, merica, dan kaldu bubuk adalah hal yang wajib. Beberapa pengguna <span class="keyword">Cookpad</span> juga menambahkan sedikit ketumbar bubuk untuk aroma yang lebih khas. Kunci lainnya adalah memastikan minyak goreng benar-benar panas sebelum memasukkan adonan bakwan. Minyak yang kurang panas akan membuat bakwan menyerap banyak minyak dan menjadi lembek. Menggoreng bakwan dalam jumlah yang tidak terlalu banyak sekaligus juga membantu menjaga suhu minyak tetap stabil.
+            </p>
+
+            <div class="recipe-section">
+                <h3>Contoh Resep Bakwan Sayur Sederhana (Terinspirasi dari Cookpad)</h3>
+                <p>Berikut adalah panduan dasar membuat bakwan sayur yang bisa Anda kembangkan lebih lanjut dengan inspirasi dari <span class="keyword">Cookpad</span>:</p>
+                <h4>Bahan-bahan:</h4>
+                <ul>
+                    <li>150 gr tepung terigu</li>
+                    <li>50 gr tepung beras</li>
+                    <li>1 buah wortel, serut kasar</li>
+                    <li>100 gr kol, iris tipis</li>
+                    <li>50 gr tauge (opsional)</li>
+                    <li>2 batang daun bawang, iris tipis</li>
+                    <li>1 batang seledri, iris tipis (opsional)</li>
+                    <li>Air es secukupnya</li>
+                </ul>
+                <h4>Bumbu Halus:</h4>
+                <ul>
+                    <li>3 siung bawang putih</li>
+                    <li>1/2 sendok teh merica</li>
+                    <li>1 sendok teh garam</li>
+                    <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+                </ul>
+                <h4>Cara Membuat:</h4>
+                <ol>
+                    <li>Campurkan tepung terigu dan tepung beras dalam wadah.</li>
+                    <li>Masukkan bumbu halus, aduk rata.</li>
+                    <li>Tambahkan sayuran yang sudah disiapkan (wortel, kol, tauge, daun bawang, seledri).</li>
+                    <li>Tuang air es sedikit demi sedikit sambil diaduk hingga adonan kental dan semua bahan tercampur rata. Jangan terlalu encer agar sayuran menempel.</li>
+                    <li>Panaskan minyak goreng dalam jumlah banyak dengan api sedang.</li>
+                    <li>Ambil satu sendok sayur adonan, lalu goreng ke dalam minyak panas hingga berwarna keemasan dan renyah. Balik sesekali agar matang merata.</li>
+                    <li>Angkat bakwan dan tiriskan. Sajikan selagi hangat dengan cabai rawit atau saus sambal.</li>
+                </ol>
+            </div>
+
+            <p>
+                Melalui <span class="keyword">Cookpad</span>, Anda bisa menemukan resep bakwan yang paling sesuai dengan selera keluarga. Fleksibilitas dalam menambahkan berbagai jenis sayuran, protein seperti udang atau ayam, bahkan keju atau bahan unik lainnya, membuat bakwan tak pernah membosankan. Jangan ragu untuk bereksperimen dan bagikan juga kreasi bakwan Anda di <span class="keyword">Cookpad</span> agar bisa menginspirasi lebih banyak orang. Selamat mencoba dan nikmati kelezatan bakwan buatan sendiri!
+            </p>
+        </div>
+        <div class="footer">
+            Konten ini adalah kumpulan inspirasi dari resep bakwan yang populer di Cookpad.
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/buat-bakwan-sayur-renyah">Buat Bakwan Sayur Renyah</a></li>
+<li><a href="/bakpia-5555-jambon">Bakpia 5555 Jambon</a></li>
+<li><a href="/bakpia-pelangi">Bakpia Pelangi</a></li>
+<li><a href="/dadar-jagung-simple">Dadar Jagung Simple</a></li>
+<li><a href="/bakpia-101-murni">Bakpia 101 Murni</a></li>
+<li><a href="/bale-messi">Bale Messi</a></li>
+<li><a href="/bakpia-jogkem-terdekat">Bakpia Jogkem Terdekat</a></li>
+<li><a href="/bakso-beranak-terdekat">Bakso Beranak Terdekat</a></li>
+<li><a href="/bakpao-viral-99">Bakpao Viral 99</a></li>
+<li><a href="/bakteri-yang-digunakan-dalam-pembuatan-susu-fermentasi-adalah">Bakteri Yang Digunakan Dalam Pembuatan Susu Fermentasi Adalah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

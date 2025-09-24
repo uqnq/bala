@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakpia Tugu Jogja: Oleh-Oleh Khas Nan Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #e0f7fa; /* Biru muda cerah */
+            --text-color: #00796b; /* Hijau toska gelap */
+            --accent-color: #80deea; /* Biru muda yang lebih cerah */
+            --heading-color: #004d40; /* Hijau toska sangat gelap */
+            --card-bg: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px var(--shadow);
+        }
+
+        h1, h2, h3 {
+            color: var(--heading-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0 auto;
+            padding: 12px 25px;
+            background-color: var(--accent-color);
+            color: var(--heading-color);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--text-color);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding: 20px;
+            background-color: var(--accent-color);
+            color: var(--heading-color);
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+                <!-- Latar Belakang dengan gradien lembut -->
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e0f7fa;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" fill="url(#grad1)" />
+
+                <!-- Tugu Jogja yang disederhanakan -->
+                <g transform="translate(250, 150) scale(0.5)">
+                    <path d="M 0 -150 L 50 -50 L 0 50 L -50 50 L 0 -150 Z" fill="#004d40" />
+                    <rect x="-25" y="50" width="50" height="100" fill="#004d40" />
+                    <circle cx="0" cy="-150" r="30" fill="#004d40" />
+                    <circle cx="0" cy="-180" r="15" fill="#004d40" />
+                </g>
+
+                <!-- Teks "Bakpia Tugu" -->
+                <text x="300" y="80" font-family="Verdana, Geneva, sans-serif" font-size="35" fill="#00796b" text-anchor="middle" font-weight="bold">Bakpia Tugu</text>
+
+                <!-- Ikon bakpia sederhana -->
+                <g transform="translate(150, 180) scale(0.7)">
+                    <ellipse cx="0" cy="0" rx="25" ry="15" fill="#f5a25a" />
+                    <ellipse cx="0" cy="0" rx="22" ry="12" fill="#fbc02d" />
+                    <circle cx="0" cy="0" r="10" fill="#fbc02d" />
+                    <circle cx="0" cy="0" r="5" fill="#f5a25a" />
+                </g>
+                 <g transform="translate(450, 180) scale(0.7)">
+                    <ellipse cx="0" cy="0" rx="25" ry="15" fill="#f5a25a" />
+                    <ellipse cx="0" cy="0" rx="22" ry="12" fill="#fbc02d" />
+                    <circle cx="0" cy="0" r="10" fill="#fbc02d" />
+                    <circle cx="0" cy="0" r="5" fill="#f5a25a" />
+                </g>
+            </svg>
+            <p style="font-style: italic; font-size: 0.9em; color: var(--text-color);">Ikon Bakpia Tugu Jogja yang khas.</p>
+        </div>
+
+        <h1>Bakpia Tugu Jogja: Jejak Rasa Warisan Budaya</h1>
+
+        <div class="section">
+            <p>
+                Yogyakarta, kota yang kaya akan budaya dan sejarah, tidak hanya menawarkan keindahan candi dan keraton, tetapi juga kekayaan kuliner yang menggugah selera. Di antara sekian banyak oleh-oleh khas yang bisa dibawa pulang, <strong>bakpia Tugu Jogja</strong> menempati posisi istimewa. Kelezatannya telah menjadi legenda dan buruan para wisatawan yang berkunjung ke kota pelajar ini. Bakpia Tugu Jogja bukan sekadar kue kering biasa, ia adalah perpaduan sempurna antara tradisi, resep turun-temurun, dan cita rasa autentik yang tak lekang oleh waktu.
+            </p>
+            <p>
+                Dinamakan "Tugu" karena lokasinya yang berdekatan dengan ikon Kota Yogyakarta, Tugu Pal Putih, atau yang lebih dikenal sebagai Tugu Jogja. Pengambilan nama ini memberikan identitas yang kuat dan mudah diingat, sekaligus menautkan produk ini dengan citra keistimewaan Yogyakarta. Setiap gigitan bakpia Tugu Jogja seolah membawa Anda pada perjalanan rasa yang mengingatkan pada atmosfer kota yang selalu dirindukan.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Mengungkap Kelezatan Bakpia Tugu Jogja</h2>
+            <p>
+                Rahasia kelezatan bakpia Tugu Jogja terletak pada kualitas bahan baku pilihan dan proses pembuatannya yang teliti. Adonan kulitnya dibuat hingga mencapai tekstur yang renyah di luar namun tetap lembut di dalam. Isiannya pun menjadi primadona, yang paling populer adalah isian kacang hijau. Kacang hijau yang diolah secara tradisional, dibumbui dengan gula dan rempah-rempah pilihan, menghasilkan rasa manis gurih yang pas, tanpa terasa langu.
+            </p>
+            <p>
+                Selain rasa kacang hijau klasik, kini bakpia Tugu Jogja juga hadir dalam berbagai varian rasa yang inovatif, seperti keju, cokelat, pandan, ubi, bahkan durian, untuk memanjakan lidah para penikmatnya. Namun, otentisitas rasa kacang hijau tetap menjadi daya tarik utama yang membedakan bakpia ini dari yang lain. Kesederhanaan rasa inilah yang seringkali menjadi kenangan manis bagi para pelancong.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Lebih dari Sekadar Oleh-Oleh</h2>
+            <p>
+                Memilih bakpia Tugu Jogja sebagai oleh-oleh bukan hanya tentang memberikan sesuatu yang lezat, tetapi juga tentang berbagi cerita dan pengalaman berharga dari Yogyakarta. Kue mungil ini menjadi jembatan emosional, mengundang penerima untuk merasakan sedikit kehangatan dan keistimewaan kota gudeg. Cocok disajikan saat berkumpul bersama keluarga atau teman, bakpia Tugu Jogja selalu berhasil menciptakan momen kebersamaan yang hangat.
+            </p>
+            <p>
+                Proses pemilihan dan pengemasan yang cermat juga menjadi prioritas. Bakpia Tugu Jogja biasanya dikemas dalam kotak-kotak yang menarik, menjadikannya hadiah yang sempurna untuk segala usia. Kemasan yang higienis dan aman memastikan kualitas terbaik hingga sampai ke tangan Anda. Daya tahan bakpia yang cukup lama juga memudahkan Anda untuk membawanya sebagai bekal perjalanan pulang, atau menyimpannya untuk dinikmati di kemudian hari.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Tips Memilih Bakpia Tugu Jogja</h2>
+            <p>
+                Saat berburu bakpia Tugu Jogja, ada baiknya memperhatikan beberapa hal. Pastikan Anda membelinya dari toko atau produsen yang terpercaya untuk menjamin keaslian dan kualitasnya. Perhatikan tanggal kedaluwarsa yang tertera pada kemasan. Dan jangan ragu untuk mencoba berbagai varian rasa jika Anda baru pertama kali berkunjung.
+            </p>
+            <p>
+                Menikmati bakpia Tugu Jogja paling nikmat adalah saat hangat, ditemani secangkir teh atau kopi. Rasakan kelembutan kulitnya yang lumer di mulut, berpadu dengan isian yang manis dan gurih. Ini adalah pengalaman rasa yang sederhana namun begitu memuaskan, sebuah representasi sempurna dari keramahtamahan dan kelezatan Yogyakarta. Bakpia Tugu Jogja, sebuah kenangan manis yang bisa Anda bawa pulang.
+            </p>
+        </div>
+
+        <a href="#" class="cta-button">Cari Tahu Lebih Lanjut</a>
+
+    </div>
+
+    <footer>
+        &copy; 2023 Hak Cipta Dilindungi.
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-bayam-jagung">Bakwan Bayam Jagung</a></li>
+<li><a href="/kemasan-pia-kering">Kemasan Pia Kering</a></li>
+<li><a href="/bakwan-jagung-wortel">Bakwan Jagung Wortel</a></li>
+<li><a href="/cara-buat-bakwan-sederhana">Cara Buat Bakwan Sederhana</a></li>
+<li><a href="/resep-masakan-bakwan-jagung-renyah">Resep Masakan Bakwan Jagung Renyah</a></li>
+<li><a href="/agam-baklava">Agam Baklava</a></li>
+<li><a href="/bakpiaku-malioboro">Bakpiaku Malioboro</a></li>
+<li><a href="/cara-buat-ote2-sederhana">Cara Buat Ote2 Sederhana</a></li>
+<li><a href="/resep-bakwan-jawa">Resep Bakwan Jawa</a></li>
+<li><a href="/buat-bakwan-yang-enak">Buat Bakwan Yang Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bumbu Bakwan Gurih & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Warna hijau muda cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2e7d32; /* Hijau tua yang menenangkan */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #4caf50; /* Hijau cerah */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #c8e6c9; /* Garis bawah hijau muda */
+            padding-bottom: 5px;
+            font-size: 1.5em;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            color: #1b5e20; /* Hijau tua pekat */
+            font-weight: bold;
+        }
+        .recipe-image {
+            display: block;
+            margin: 25px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients ul, .steps ol {
+            padding-left: 25px;
+        }
+        .steps li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .steps li::before {
+            content: counter(list-item) ". ";
+            font-weight: bold;
+            color: #4caf50;
+            position: absolute;
+            left: 0;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #c8e6c9;
+        }
+        .cta a {
+            display: inline-block;
+            background-color: #66bb6a; /* Hijau sedang cerah */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta a:hover {
+            background-color: #388e3c; /* Hijau lebih gelap saat hover */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.7em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .steps li::before {
+                content: counter(list-item) ". "; /* Tetap nomor */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bumbu Bakwan Gurih & Renyah Sempurna</h1>
+
+        <!-- SVG Image -->
+        <svg class="recipe-image" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakwan yang renyah dan lezat">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="800" height="450" rx="15" ry="15" fill="#ffffff"/>
+            <!-- Bakwan element 1 -->
+            <path d="M 150 200 C 120 220, 120 260, 150 280 S 200 320, 230 280 S 220 240, 150 200 Z" fill="#f9a825" stroke="#fbc02d" stroke-width="3"/>
+            <ellipse cx="170" cy="230" rx="15" ry="5" fill="#fff9c4"/>
+            <ellipse cx="190" cy="260" rx="12" ry="4" fill="#fff9c4"/>
+            <!-- Bakwan element 2 -->
+            <path d="M 300 180 C 270 200, 270 240, 300 260 S 350 300, 380 260 S 370 220, 300 180 Z" fill="#f57f17" stroke="#ffa000" stroke-width="3"/>
+            <ellipse cx="320" cy="210" rx="14" ry="5" fill="#fff9c4"/>
+            <ellipse cx="340" cy="240" rx="11" ry="4" fill="#fff9c4"/>
+            <!-- Bakwan element 3 -->
+            <path d="M 450 220 C 420 240, 420 280, 450 300 S 500 340, 530 300 S 520 260, 450 220 Z" fill="#ffab00" stroke="#f57f17" stroke-width="3"/>
+            <ellipse cx="470" cy="250" rx="13" ry="5" fill="#fff9c4"/>
+            <ellipse cx="490" cy="280" rx="10" ry="4" fill="#fff9c4"/>
+            <!-- Bakwan element 4 -->
+            <path d="M 600 190 C 570 210, 570 250, 600 270 S 650 310, 680 270 S 670 230, 600 190 Z" fill="#ffc107" stroke="#fbc02d" stroke-width="3"/>
+            <ellipse cx="620" cy="220" rx="16" ry="6" fill="#fff9c4"/>
+            <ellipse cx="640" cy="250" rx="13" ry="5" fill="#fff9c4"/>
+
+            <!-- Background elements -->
+            <circle cx="100" cy="100" r="30" fill="#c8e6c9" opacity="0.7"/>
+            <circle cx="700" cy="150" r="25" fill="#a5d6a7" opacity="0.7"/>
+            <circle cx="400" cy="80" r="20" fill="#81c784" opacity="0.7"/>
+
+            <!-- Text/Title overlay -->
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#1b5e20" font-size="40" font-weight="bold" opacity="0.8">Bakwan!</text>
+        </svg>
+
+        <p>Siapa yang tidak suka bakwan? Camilan renyah dengan isian sayuran segar ini selalu jadi favorit. Rahasia kelezatan bakwan terletak pada bumbu yang tepat dan adonan yang pas. Kini, Anda bisa membuat bakwan yang gurih, renyah, dan tiada duanya di rumah dengan resep bumbu bakwan istimewa ini!</p>
+
+        <h2>Mengapa Bumbu Bakwan Ini Spesial?</h2>
+        <p>Bumbu bakwan yang kami bagikan ini dirancang untuk memberikan rasa umami yang mendalam, aroma yang menggugah selera, dan tentunya tekstur renyah yang tahan lama. Kombinasi rempah-rempah pilihan dan sentuhan rahasia akan membuat bakwan Anda berbeda dari yang lain. Dijamin membuat keluarga ketagihan!</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <p>Untuk adonan dasar bakwan yang lezat, siapkan bahan-bahan berikut:</p>
+            <ul>
+                <li><span class="highlight">Tepung Terigu Protein Sedang:</span> 200 gram</li>
+                <li><span class="highlight">Tepung Beras:</span> 50 gram (untuk kerenyahan ekstra)</li>
+                <li><span class="highlight">Sayuran:</span> Wortel (iris korek api), Kol (iris tipis), Tauge, Daun bawang (iris halus) - sekitar 300-400 gram total.</li>
+                <li><span class="highlight">Air Es:</span> Sekitar 250-300 ml (sesuaikan kekentalan)</li>
+                <li><span class="highlight">Minyak Goreng:</span> Secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Resep Bumbu Bakwan Rahasia (untuk Kelezatan Maksimal)</h2>
+        <div class="ingredients">
+            <p>Ini dia bumbu rahasia yang akan membuat bakwan Anda istimewa:</p>
+            <ul>
+                <li><span class="highlight">Bawang Putih:</span> 4 siung, haluskan</li>
+                <li><span class="highlight">Bawang Merah:</span> 2 siung, haluskan (opsional, untuk aroma lebih kuat)</li>
+                <li><span class="highlight">Ketumbar Bubuk:</span> 1 sendok teh</li>
+                <li><span class="highlight">Merica Bubuk:</span> ½ sendok teh</li>
+                <li><span class="highlight">Garam:</span> 1 - 1.5 sendok teh (sesuai selera)</li>
+                <li><span class="highlight">Kaldu Bubuk (ayam/sapi):</span> 1 sendok teh (penting untuk rasa umami)</li>
+                <li><span class="highlight">Sedikit Kunyit Bubuk:</span> ¼ sendok teh (untuk warna yang lebih menarik dan aroma)</li>
+                <li><span class="highlight">Sejumput Gula Pasir:</span> (opsional, menyeimbangkan rasa)</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Bakwan Renyah</h2>
+        <div class="steps">
+            <ol>
+                <li><span class="highlight">Persiapan Sayuran:</span> Cuci bersih semua sayuran. Potong wortel memanjang seperti korek api, iris tipis kol, siapkan tauge, dan iris halus daun bawang. Sisihkan.</li>
+                <li><span class="highlight">Membuat Adonan Bumbu:</span> Dalam wadah besar, campurkan tepung terigu dan tepung beras. Masukkan semua bahan bumbu halus (bawang putih, bawang merah jika pakai), ketumbar bubuk, merica bubuk, garam, kaldu bubuk, kunyit bubuk, dan gula pasir. Aduk rata bumbu kering.</li>
+                <li><span class="highlight">Menambahkan Air Es:</span> Tuangkan air es sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang kental namun masih bisa mengalir. Konsistensi adonan sangat penting untuk kerenyahan. Jangan terlalu encer agar bakwan tidak lembek, jangan terlalu kental agar tidak keras.</li>
+                <li><span class="highlight">Memasukkan Sayuran:</span> Masukkan irisan wortel, kol, dan daun bawang ke dalam adonan. Aduk rata hingga semua sayuran terbalut adonan bumbu. Terakhir, masukkan tauge dan aduk perlahan agar tauge tidak terlalu hancur.</li>
+                <li><span class="highlight">Menggoreng Bakwan:</span> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang cenderung besar. Pastikan minyak benar-benar panas. Ambil satu sendok sayur adonan, masukkan ke dalam minyak panas. Jangan terlalu banyak dalam satu penggorengan agar bakwan matang merata dan renyah.</li>
+                <li><span class="highlight">Balik dan Tiriskan:</span> Goreng bakwan hingga berwarna kuning keemasan dan matang di kedua sisinya. Angkat bakwan menggunakan saringan minyak dan tiriskan di atas rak kawat atau tisu dapur agar minyak berlebih terserap.</li>
+                <li><span class="highlight">Sajikan:</span> Bakwan siap disajikan selagi hangat bersama saus sambal, cabai rawit, atau lontong sebagai pelengkap.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan untuk Bakwan Sempurna</h2>
+        <ul>
+            <li>Gunakan <span class="highlight">air es</span> untuk adonan agar menghasilkan bakwan yang lebih renyah.</li>
+            <li>Pastikan <span class="highlight">minyak benar-benar panas</span> saat menggoreng.</li>
+            <li><span class="highlight">Jangan terlalu banyak memasukkan sayuran</span> dalam satu adonan agar matang sempurna.</li>
+            <li>Tambahkan <span class="highlight">sedikit tepung beras</span> pada adonan untuk menambah kerenyahan.</li>
+            <li>Adonan sebaiknya <span class="highlight">tidak didiamkan terlalu lama</span> sebelum digoreng agar kerenyahannya terjaga.</li>
+        </ul>
+
+        <div class="cta">
+            <p>Sudah siap mencoba resep bumbu bakwan ini? Selamat berkreasi di dapur!</p>
+            <a href="#">Coba Resepnya Sekarang!</a>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-subur">Bakwan Subur</a></li>
+<li><a href="/tepung-bumbu-bakwan-jagung">Tepung Bumbu Bakwan Jagung</a></li>
+<li><a href="/bakso-beranak-ala-chef">Bakso Beranak Ala Chef</a></li>
+<li><a href="/nastar-juwara-satoe">Nastar Juwara Satoe</a></li>
+<li><a href="/bakso-jumbo-mercon">Bakso Jumbo Mercon</a></li>
+<li><a href="/cara-membuat-bakpao-empuk-dan-lembut">Cara Membuat Bakpao Empuk Dan Lembut</a></li>
+<li><a href="/mardin-baklava-cipinang">Mardin Baklava Cipinang</a></li>
+<li><a href="/lactobacillus-casei-adalah">Lactobacillus Casei Adalah</a></li>
+<li><a href="/bakpao-langgeng-sari">Bakpao Langgeng Sari</a></li>
+<li><a href="/bakpia-djoe">Bakpia Djoe</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

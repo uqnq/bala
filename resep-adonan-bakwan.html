@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Adonan Bakwan Renyah dan Gurih</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk */
+            color: #333;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna judul cerah */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #009688;
+            margin-top: 25px;
+            border-bottom: 2px solid #b2dfdb;
+            padding-bottom: 5px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+        .ingredients li {
+            background-color: #e0f2f1; /* Latar belakang item bahan sejuk */
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-bottom: 6px;
+        }
+        .instructions li {
+            background-color: #e0f2f1; /* Latar belakang item instruksi sejuk */
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-bottom: 6px;
+        }
+        .highlight {
+            color: #00796b;
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tips {
+            background-color: #f0f8ff; /* Warna latar belakang tips sejuk */
+            padding: 15px;
+            border-left: 5px solid #4dd0e1;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .tips p {
+            margin-bottom: 5px;
+        }
+        .tips strong {
+            color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakwan sayuran berwarna cerah">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4db6ac;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#80cbc4;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffb74d;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffcc80;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Background -->
+                <rect width="600" height="300" rx="15" fill="#e0f7fa" />
+
+                <!-- Sayuran (Wortel, Kol, Tauge) -->
+                <path d="M150,180 Q160,150 190,160 Q180,190 150,180 Z" fill="#ffcc80" /> <!-- Wortel -->
+                <path d="M220,190 Q230,160 260,170 Q250,200 220,190 Z" fill="#ffcc80" /> <!-- Wortel -->
+                <path d="M180,200 Q190,170 220,180 Q210,210 180,200 Z" fill="#ffcc80" /> <!-- Wortel -->
+
+                <path d="M250,150 C270,140 310,145 320,160 C330,175 310,185 290,175 C270,165 250,150 Z" fill="#80cbc4" /> <!-- Kol -->
+                <path d="M280,160 C300,150 340,155 350,170 C360,185 340,195 320,185 C300,175 280,160 Z" fill="#80cbc4" /> <!-- Kol -->
+
+                <path d="M330,170 L340,160 L355,175 L345,185 Z" fill="#fff9c4" /> <!-- Tauge -->
+                <path d="M350,175 L360,165 L375,180 L365,190 Z" fill="#fff9c4" /> <!-- Tauge -->
+                <path d="M360,180 L370,170 L385,185 L375,195 Z" fill="#fff9c4" /> <!-- Tauge -->
+
+                <!-- Adonan Bakwan (sebagai lingkaran besar yang sedikit tidak beraturan) -->
+                <circle cx="300" cy="180" r="100" fill="url(#grad1)" opacity="0.8" />
+                <circle cx="280" cy="190" r="80" fill="url(#grad2)" opacity="0.7" />
+
+                <!-- Tambahkan sedikit sentuhan seperti minyak goreng -->
+                <g fill="#ffe082" opacity="0.3">
+                    <circle cx="50" cy="50" r="5" />
+                    <circle cx="150" cy="100" r="7" />
+                    <circle cx="400" cy="80" r="6" />
+                    <circle cx="500" cy="200" r="8" />
+                </g>
+            </svg>
+        </div>
+
+        <h1>Resep Adonan Bakwan Renyah dan Gurih</h1>
+
+        <p>Siapa yang tidak suka bakwan? Camilan renyah dan gurih ini selalu menjadi favorit di berbagai suasana, mulai dari teman minum teh hingga pendamping nasi hangat. Kunci kelezatan bakwan terletak pada adonannya yang pas. Dengan sedikit sentuhan dan resep yang tepat, Anda bisa membuat adonan bakwan yang sempurna, renyah di luar, lembut di dalam, dan kaya rasa.</p>
+
+        <p>Artikel ini akan memandu Anda membuat <span class="highlight">resep adonan bakwan</span> yang mudah diikuti, bahkan bagi pemula. Kami juga akan memberikan beberapa tips agar bakwan Anda semakin istimewa.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <ul class="ingredients">
+            <li>250 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+            <li>1 sendok teh garam</li>
+            <li>1/2 sendok teh merica bubuk</li>
+            <li>1/4 sendok teh ketumbar bubuk</li>
+            <li>1/4 sendok teh kunyit bubuk (opsional, untuk warna dan aroma)</li>
+            <li>1 batang daun bawang, iris tipis</li>
+            <li>1 batang seledri, iris tipis</li>
+            <li>1-2 siung bawang putih, haluskan (opsional, untuk aroma lebih kuat)</li>
+            <li>± 250-300 ml air es (atau secukupnya hingga mencapai kekentalan yang diinginkan)</li>
+        </ul>
+
+        <h2>Cara Membuat Adonan Bakwan</h2>
+        <ol class="instructions">
+            <li>Dalam sebuah wadah besar, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+            <li>Masukkan garam, merica bubuk, ketumbar bubuk, dan kunyit bubuk (jika menggunakan). Aduk kembali hingga bumbu tercampur merata dengan tepung.</li>
+            <li>Tambahkan irisan daun bawang dan seledri. Jika menggunakan bawang putih halus, masukkan juga pada tahap ini. Aduk rata dengan tepung.</li>
+            <li>Secara bertahap, tuangkan air es sambil terus diaduk menggunakan whisk atau sendok. Penting untuk menggunakan air es agar bakwan lebih renyah.</li>
+            <li>Aduk hingga adonan tercampur rata dan tidak ada gumpalan tepung. Kekentalan adonan sebaiknya pas, tidak terlalu encer dan tidak terlalu kental. Adonan yang pas akan menempel pada sayuran ketika dicampur nanti, namun tidak sampai menutupi seluruhnya.</li>
+            <li>Jika Anda ingin menambahkan sayuran seperti kol, wortel, atau tauge, tambahkan sayuran tersebut ke dalam adonan ini tepat sebelum menggoreng. Aduk hingga sayuran terbalut rata oleh adonan.</li>
+            <li>Adonan bakwan siap digunakan untuk menggoreng.</li>
+        </ol>
+
+        <div class="tips">
+            <h2>Tips Membuat Bakwan Makin Renyah dan Lezat</h2>
+            <p><strong>1. Gunakan Air Es:</strong> Rahasia utama kerenyahan bakwan adalah penggunaan air es. Dinginnya air membantu tepung terigu membentuk lapisan renyah saat digoreng.</p>
+            <p><strong>2. Jangan Terlalu Banyak Mengaduk:</strong> Setelah tepung dan air tercampur, jangan mengaduk adonan terlalu lama. Mengaduk berlebihan akan mengaktifkan gluten dalam tepung terigu, membuat bakwan menjadi keras.</p>
+            <p><strong>3. Tambahkan Tepung Beras:</strong> Tepung beras memberikan tekstur yang lebih renyah dibandingkan hanya menggunakan tepung terigu.</p>
+            <p><strong>4. Goreng dengan Minyak Panas:</strong> Pastikan minyak goreng benar-benar panas sebelum memasukkan adonan bakwan. Minyak yang kurang panas akan membuat bakwan menyerap banyak minyak dan menjadi lembek.</p>
+            <p><strong>5. Jangan Menggoreng Terlalu Penuh:</strong> Masukkan adonan bakwan secukupnya saja ke dalam wajan. Menggoreng terlalu banyak sekaligus akan menurunkan suhu minyak dan membuat bakwan matang tidak merata serta kurang renyah.</p>
+            <p><strong>6. Tiriskan dengan Baik:</strong> Setelah matang, angkat bakwan dan tiriskan di atas rak kawat atau tisu dapur untuk menghilangkan kelebihan minyak.</p>
+        </div>
+
+        <p>Dengan mengikuti <span class="highlight">resep adonan bakwan</span> sederhana ini dan menerapkan tips-tips di atas, Anda akan dapat menyajikan bakwan buatan sendiri yang lezat, renyah, dan disukai seluruh keluarga. Selamat mencoba!</p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-trunojoyo">Bakwan Trunojoyo</a></li>
+<li><a href="/dadar-jagung-jawa">Dadar Jagung Jawa</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-yang-empuk">Cara Membuat Bakwan Jagung Yang Empuk</a></li>
+<li><a href="/resep-bakwan-tahu-jagung">Resep Bakwan Tahu Jagung</a></li>
+<li><a href="/bakso-beranak-panam">Bakso Beranak Panam</a></li>
+<li><a href="/bakteri-pada-tanah">Bakteri Pada Tanah</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-bulat">Cara Membuat Bakwan Sayur Bulat</a></li>
+<li><a href="/resep-bakwan-udang-kecil-basah">Resep Bakwan Udang Kecil Basah</a></li>
+<li><a href="/pestil-tatlisi">Pestil Tatlisi</a></li>
+<li><a href="/cara-buat-isian-bakso-mercon">Cara Buat Isian Bakso Mercon</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

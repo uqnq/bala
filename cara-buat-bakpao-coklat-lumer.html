@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakpao Coklat Lumer Super Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #8EC9D9; /* Biru muda sejuk */
+            --color-secondary: #F3D48E; /* Kuning cerah hangat */
+            --color-accent: #FF6B6B; /* Merah muda ceria */
+            --color-background: #F8F9FA; /* Putih bersih */
+            --color-text: #343A40; /* Abu-abu gelap untuk teks */
+            --color-border: #CED4DA; /* Abu-abu terang untuk garis */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: white;
+        }
+
+        .content {
+            padding: 20px 0;
+        }
+
+        article {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--color-accent);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: var(--color-secondary);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .recipe-section {
+            background-color: var(--color-background);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 5px solid var(--color-primary);
+            margin-bottom: 20px;
+        }
+
+        .recipe-section h3 {
+            margin-top: 0;
+            color: var(--color-primary);
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FF4545;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+            background-color: var(--color-primary);
+            color: white;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            article {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nikmati Bakpao Coklat Lumer Sempurna di Rumah!</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <article>
+                <div class="image-container">
+                    <!-- Gambar SVG Bakpao Coklat Lumer -->
+                    <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="grad-filling" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#4E342E; stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3E2723; stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad-dough" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFECB3; stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFE082; stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Latar Belakang -->
+                        <rect width="300" height="200" fill="var(--color-background)"/>
+
+                        <!-- Bakpao 1 (Sedikit Terbuka) -->
+                        <path d="M 50,120
+                                 Q 60,80 90,70
+                                 T 130,70
+                                 Q 150,80 160,120
+                                 Z" fill="url(#grad-dough)" stroke="var(--color-border)" stroke-width="2"/>
+                        <path d="M 90,70
+                                 Q 110,80 130,70
+                                 L 110,75 Z" fill="url(#grad-filling)" stroke="var(--color-border)" stroke-width="1"/>
+
+                        <!-- Bakpao 2 (Tertutup) -->
+                        <ellipse cx="200" cy="110" rx="50" ry="40" fill="url(#grad-dough)" stroke="var(--color-border)" stroke-width="2"/>
+
+                        <!-- Pipi Merah Muda (opsional) -->
+                        <circle cx="75" cy="85" r="5" fill="var(--color-accent)" opacity="0.6"/>
+                        <circle cx="125" cy="85" r="5" fill="var(--color-accent)" opacity="0.6"/>
+
+                        <!-- Teks Dekoratif -->
+                        <text x="150" y="30" font-family="Arial, sans-serif" font-size="12" fill="var(--color-secondary)" text-anchor="middle" transform="rotate(-10 150 30)">Yummy!</text>
+                    </svg>
+                    <p><small>Bakpao coklat lumer siap menggoda selera.</small></p>
+                </div>
+
+                <p>Siapa yang bisa menolak kelembutan bakpao yang hangat berpadu dengan isian coklat lumer yang manis meleleh di mulut? Membuat bakpao coklat lumer sendiri di rumah ternyata tidak sesulit yang dibayangkan, lho! Dengan panduan langkah demi langkah yang tepat, Anda bisa menyajikan camilan lezat ini untuk keluarga atau sebagai hidangan spesial saat berkumpul.</p>
+
+                <p>Bakpao coklat lumer menjadi favorit banyak orang karena kombinasi tekstur dan rasa yang sempurna. Adonan bakpao yang empuk dan sedikit kenyal berpadu mesra dengan lelehan coklat pekat yang memberikan sensasi manis dan sedikit pahit yang menggugah selera. Aroma coklat yang tercium saat bakpao masih hangat sungguh tak tertahankan.</p>
+
+                <h2>Rahasia Kelezatan Bakpao Coklat Lumer</h2>
+                <p>Kunci utama bakpao coklat lumer yang sukses terletak pada dua hal: kualitas adonan dan isian coklat yang tepat. Adonan yang lembut dan mengembang sempurna akan menghasilkan bakpao yang empuk. Sementara itu, isian coklat yang benar-benar lumer saat matang akan memberikan pengalaman makan yang tak terlupakan.</p>
+
+                <div class="recipe-section">
+                    <h3>Bahan-Bahan yang Anda Perlukan:</h3>
+                    <h4>Untuk Adonan Bakpao:</h4>
+                    <ul>
+                        <li>250 gram tepung terigu protein tinggi</li>
+                        <li>50 gram gula pasir</li>
+                        <li>1 sendok teh ragi instan</li>
+                        <li>1/2 sendok teh baking powder</li>
+                        <li>1/4 sendok teh garam</li>
+                        <li>120 ml susu cair hangat</li>
+                        <li>2 sendok makan minyak sayur atau margarin cair</li>
+                    </ul>
+                    <h4>Untuk Isian Coklat Lumer:</h4>
+                    <ul>
+                        <li>100 gram dark chocolate compound, cincang kasar</li>
+                        <li>1-2 sendok makan susu kental manis (sesuai selera manis)</li>
+                        <li>1 sendok makan margarin</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-section">
+                    <h3>Langkah-Langkah Membuat Bakpao Coklat Lumer:</h3>
+                    <ol>
+                        <li><strong>Persiapan Adonan:</strong> Dalam wadah besar, campurkan tepung terigu, gula pasir, ragi instan, baking powder, dan garam. Aduk rata.</li>
+                        <li>Tuang susu cair hangat sedikit demi sedikit sambil terus diuleni hingga adonan setengah kalis.</li>
+                        <li>Masukkan minyak sayur atau margarin cair, uleni kembali hingga adonan kalis, elastis, dan tidak lengket di tangan.</li>
+                        <li>Bulatkan adonan, letakkan dalam wadah yang sudah diolesi sedikit minyak, tutup dengan kain lembab, dan diamkan selama kurang lebih 30-45 menit hingga mengembang dua kali lipat.</li>
+                        <li><strong>Persiapan Isian:</strong> Campurkan dark chocolate cincang, susu kental manis, dan margarin dalam mangkuk tahan panas. Lelehkan dengan cara ditim (di atas panci berisi air panas yang mendidih perlahan) atau menggunakan microwave dengan interval pendek hingga semua bahan meleleh dan tercampur rata. Aduk hingga lembut dan homogen. Biarkan sedikit mendingin.</li>
+                        <li><strong>Membentuk Bakpao:</strong> Kempiskan adonan yang sudah mengembang, uleni sebentar. Bagi adonan menjadi beberapa bagian sama rata (sekitar 8-10 bagian).</li>
+                        <li>Ambil satu bagian adonan, pipihkan hingga agak lebar. Beri isian coklat lumer secukupnya di tengahnya.</li>
+                        <li>Lipat adonan hingga menutupi isian, rapatkan pinggirannya dengan baik agar isian tidak bocor saat dikukus. Bentuk bulat sempurna.</li>
+                        <li><strong>Proses Mengukus:</strong> Siapkan kukusan yang sudah panas dan air mendidih. Alasi dasar kukusan dengan kertas roti atau kain agar bakpao tidak lengket.</li>
+                        <li>Tata bakpao yang sudah dibentuk di dalam kukusan, beri jarak antar bakpao.</li>
+                        <li>Kukus dengan api sedang selama kurang lebih 10-15 menit hingga bakpao matang dan mengembang.</li>
+                        <li><strong>Sajikan:</strong> Angkat bakpao coklat lumer dengan hati-hati dan sajikan selagi hangat untuk menikmati sensasi coklat lumer di dalamnya.</li>
+                    </ol>
+                </div>
+
+                <p>Membuat bakpao coklat lumer sendiri memang memberikan kepuasan tersendiri. Selain bisa menyesuaikan tingkat kemanisan isiannya, Anda juga bisa bereksperimen dengan variasi topping atau bahkan menambahkan sedikit bubuk kopi instan ke dalam adonan untuk aroma yang lebih kaya. Selamat mencoba dan selamat menikmati bakpao coklat lumer buatan Anda!</p>
+
+                <div class="image-container">
+                    <a href="#" class="cta-button">Coba Resep Lainnya!</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/pathok">Pathok</a></li>
+<li><a href="/bakpia-istu">Bakpia Istu</a></li>
+<li><a href="/ceker-bakso-mercon">Ceker Bakso Mercon</a></li>
+<li><a href="/bale-dijual">Bale Dijual</a></li>
+<li><a href="/bakwan-goreng">Bakwan Goreng</a></li>
+<li><a href="/jagung-kriuk">Jagung Kriuk</a></li>
+<li><a href="/lokasi-bakso-mercon">Lokasi Bakso Mercon</a></li>
+<li><a href="/bakpia-rinjani">Bakpia Rinjani</a></li>
+<li><a href="/bakpia-kenes-terdekat">Bakpia Kenes Terdekat</a></li>
+<li><a href="/membuat-isian-bakpao-kacang-hijau">Membuat Isian Bakpao Kacang Hijau</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

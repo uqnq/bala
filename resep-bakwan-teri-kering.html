@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Teri Kering Renyah & Gurih</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            color: #004d40; /* Warna teks dasar gelap */
+        }
+        .container {
+            max-width: 768px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 77, 64, 0.1); /* Bayangan lembut */
+        }
+        h1, h2, h3 {
+            color: #00796b; /* Warna judul lebih cerah */
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #80cbc4; /* Garis bawah cerah */
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 77, 64, 0.15);
+        }
+        .intro-text {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        .ingredients, .instructions {
+            margin-bottom: 25px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #00796b;
+            font-weight: bold;
+        }
+        .tip {
+            background-color: #e0f2f1; /* Latar belakang sedikit berbeda untuk tips */
+            padding: 15px;
+            border-left: 5px solid #4db6ac; /* Garis penanda tips */
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .tip p {
+            margin: 0;
+            font-style: italic;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #4f5b62;
+        }
+
+        /* Media Queries untuk Responsif */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .recipe-image {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .intro-text {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Teri Kering Renyah dan Gurih</h1>
+
+        <svg class="recipe-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakwan teri kering yang renyah">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#80cbc4;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00796b;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <!-- Latar belakang lembut -->
+            <rect width="400" height="250" fill="#e0f2f1" />
+
+            <!-- Bentuk bakwan -->
+            <path d="M50 100 Q 70 50, 100 70 T 150 90 Q 170 140, 140 160 T 100 180 Q 70 150, 50 100 Z" fill="#fff9c4" stroke="#fbc02d" stroke-width="3"/>
+            <path d="M100 70 Q 120 30, 150 50 T 180 80 Q 200 130, 170 150 T 140 170 Q 110 140, 100 70 Z" fill="#fff9c4" stroke="#fbc02d" stroke-width="3"/>
+            <path d="M150 90 Q 170 70, 190 90 T 210 130 Q 220 180, 190 200 T 150 210 Q 120 180, 150 90 Z" fill="#fff9c4" stroke="#fbc02d" stroke-width="3"/>
+            <path d="M200 130 Q 220 110, 230 130 T 240 170 Q 245 210, 220 220 T 190 210 Q 180 180, 200 130 Z" fill="#fff9c4" stroke="#fbc02d" stroke-width="3"/>
+
+            <!-- Detil teri kering (simbol sederhana) -->
+            <circle cx="80" cy="90" r="3" fill="#e65100" />
+            <circle cx="120" cy="100" r="3" fill="#e65100" />
+            <circle cx="160" cy="110" r="3" fill="#e65100" />
+            <circle cx="100" cy="140" r="3" fill="#e65100" />
+            <circle cx="130" cy="150" r="3" fill="#e65100" />
+            <circle cx="170" cy="160" r="3" fill="#e65100" />
+            <circle cx="200" cy="150" r="3" fill="#e65100" />
+
+            <!-- Efek renyah/garing (garis-garis kecil) -->
+            <line x1="70" y1="60" x2="80" y2="50" stroke="#fbc02d" stroke-width="1.5" />
+            <line x1="110" y1="40" x2="120" y2="35" stroke="#fbc02d" stroke-width="1.5" />
+            <line x1="160" y1="60" x2="170" y2="55" stroke="#fbc02d" stroke-width="1.5" />
+            <line x1="190" y1="80" x2="200" y2="75" stroke="#fbc02d" stroke-width="1.5" />
+            <line x1="150" y1="170" x2="160" y2="175" stroke="#fbc02d" stroke-width="1.5" />
+
+            <!-- Teks sederhana untuk menunjukkan nama -->
+            <text x="50%" y="230" text-anchor="middle" fill="#00796b" font-size="18" font-weight="bold">Bakwan Teri</text>
+        </svg>
+
+        <p class="intro-text">
+            Siapa yang tidak suka camilan gurih dan renyah? Bakwan selalu menjadi primadona di setiap kesempatan, mulai dari teman minum teh sore hingga pendamping nasi hangat. Kali ini, kita akan menghadirkan varian yang tak kalah menggugah selera: <span class="highlight">Bakwan Teri Kering</span>. Perpaduan adonan bakwan yang renyah dengan rasa asin gurih khas teri kering menciptakan sensasi rasa yang unik dan bikin nagih. Dijamin, sekali coba, Anda akan ketagihan membuat kudapan ini di rumah.
+        </p>
+
+        <h2>Mengapa Bakwan Teri Kering Spesial?</h2>
+        <p>
+            Teri kering bukan hanya kaya akan protein dan kalsium, tetapi juga memiliki rasa umami yang kuat. Saat digoreng bersama adonan bakwan, teri kering akan memberikan dimensi rasa yang lebih kompleks. Teksturnya yang sedikit kenyal namun renyah saat digigit menjadi kontras yang menyenangkan dengan kerenyahan bakwan itu sendiri. Varian ini sangat cocok bagi Anda yang menginginkan rasa yang lebih intens dan berbeda dari bakwan sayur pada umumnya.
+        </p>
+
+        <h2>Bahan-Bahan untuk Bakwan Teri Kering</h2>
+        <div class="ingredients">
+            <ul>
+                <li>150 gram <span class="highlight">teri kering</span> (pilih yang berkualitas baik, rendam air panas sebentar lalu tiriskan untuk mengurangi garam jika perlu)</li>
+                <li>150 gram tepung terigu</li>
+                <li>50 gram tepung beras (opsional, untuk menambah kerenyahan)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>1 buah wortel ukuran sedang, parut kasar atau potong korek api tipis</li>
+                <li>50 gram kol, iris tipis</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh kaldu bubuk (jika suka)</li>
+                <li>Air secukupnya (sekitar 150-200 ml)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Bumbu Halus</h2>
+        <div class="ingredients">
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>2 siung bawang merah</li>
+                <li>1 cm kunyit (opsional, untuk warna cantik)</li>
+                <li>1 butir kemiri</li>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat Bakwan Teri Kering</h2>
+        <div class="instructions">
+            <ol>
+                <li>Haluskan semua bahan bumbu halus menggunakan cobek atau blender.</li>
+                <li>Dalam sebuah wadah, campurkan tepung terigu, tepung beras (jika pakai), garam, merica bubuk, dan kaldu bubuk. Aduk rata.</li>
+                <li>Masukkan bumbu halus ke dalam campuran tepung. Aduk kembali hingga tercampur merata.</li>
+                <li>Masukkan irisan daun bawang, parutan wortel, dan irisan kol ke dalam adonan.</li>
+                <li>Masukkan teri kering yang sudah ditiriskan.</li>
+                <li>Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kental dan semua bahan tercampur rata. Jangan terlalu encer agar bakwan tidak lembek. Konsistensi adonan harus bisa dibentuk saat digoreng.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam.</li>
+                <li>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Anda juga bisa membentuknya dengan tangan atau dua sendok.</li>
+                <li>Goreng bakwan hingga berwarna kuning keemasan dan matang sempurna di kedua sisinya. Balik sesekali agar matang merata.</li>
+                <li>Angkat bakwan teri kering dan tiriskan di atas kertas tisu atau rak kawat agar minyak berlebih terserap.</li>
+                <li>Sajikan bakwan teri kering selagi hangat sebagai camilan atau lauk pendamping.</li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <h3>Tips Tambahan:</h3>
+            <p>
+                Untuk kerenyahan ekstra, pastikan teri kering benar-benar kering sebelum dimasukkan ke adonan. Jika menggunakan teri yang masih sedikit lembap, Anda bisa menggorengnya sebentar hingga kering sebelum dicampurkan. Gunakan api yang pas saat menggoreng; api terlalu besar akan membuat bagian luar gosong sebelum matang, sementara api terlalu kecil akan membuat bakwan menyerap banyak minyak.
+            </p>
+        </div>
+
+        <p>
+            Bakwan teri kering ini sangat nikmat disantap langsung dengan sambal terasi atau saus sambal favorit Anda. Kerenyahannya akan terjaga lebih lama jika disimpan dalam wadah kedap udara setelah benar-benar dingin. Selamat mencoba resep ini dan nikmati sensasi gurihnya yang berbeda!
+        </p>
+
+        <div class="footer">
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/mengobati-balanitis">Mengobati Balanitis</a></li>
+<li><a href="/resep-perkedel-jagung-renyah">Resep Perkedel Jagung Renyah</a></li>
+<li><a href="/bakwan-kubis">Bakwan Kubis</a></li>
+<li><a href="/bakpia-kurnia-sari-stasiun-tugu">Bakpia Kurnia Sari Stasiun Tugu</a></li>
+<li><a href="/resep-putu-ayu-ketan-hitam">Resep Putu Ayu Ketan Hitam</a></li>
+<li><a href="/masak-perkedel-jagung">Masak Perkedel Jagung</a></li>
+<li><a href="/bunga-bakung-merah">Bunga Bakung Merah</a></li>
+<li><a href="/bakpia-sonder">Bakpia Sonder</a></li>
+<li><a href="/cara-membuat-bakwan-ubi-jalar">Cara Membuat Bakwan Ubi Jalar</a></li>
+<li><a href="/resep-isian-bakso-mercon">Resep Isian Bakso Mercon</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

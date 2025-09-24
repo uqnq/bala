@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Kubis Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #66D2D6; /* Biru muda sejuk */
+            --color-secondary: #F9A825; /* Kuning cerah */
+            --color-background: #F0F8FF; /* Alice blue, latar belakang cerah */
+            --color-text: #333;
+            --color-accent: #FF6B6B; /* Merah muda cerah untuk aksen */
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --container-max-width: 90%;
+            --spacing-unit: 16px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-background);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            padding-top: var(--spacing-unit);
+            padding-bottom: var(--spacing-unit);
+        }
+
+        .container {
+            max-width: calc(var(--container-max-width) + 2 * var(--spacing-unit));
+            width: 100%;
+            background-color: #fff;
+            padding: var(--spacing-unit);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; /* Tambahkan sedikit jarak di bagian bawah */
+        }
+
+        h1 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: var(--spacing-unit);
+            font-size: 1.8em;
+        }
+
+        h2 {
+            color: var(--color-secondary);
+            margin-top: calc(var(--spacing-unit) * 1.5);
+            margin-bottom: var(--spacing-unit);
+            font-size: 1.4em;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 5px;
+        }
+
+        p, li {
+            margin-bottom: var(--spacing-unit);
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: calc(var(--spacing-unit) * 2);
+        }
+
+        strong {
+            color: var(--color-accent);
+        }
+
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Sesuaikan lebar maksimum gambar */
+            height: auto;
+            margin: 0 auto var(--spacing-unit);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ingredients li::before {
+            content: "✓ ";
+            color: var(--color-secondary);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .instructions li::before {
+            content: counter(list-item) ". ";
+            color: var(--color-primary);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            :root {
+                --container-max-width: 70%;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rahasia Bakwan Kubis Renyah yang Menggoda Selera</h1>
+
+        <svg class="recipe-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#66D2D6;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#F9A825;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grad1)" />
+            <path d="M100,50 Q200,20 300,50 T400,50 V200 Q300,230 200,200 T100,200 Z" fill="#FFF" opacity="0.7"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#333" font-size="24" font-weight="bold">
+                Bakwan Kubis Renyah
+            </text>
+            <circle cx="100" cy="150" r="20" fill="#FF6B6B" opacity="0.8"/>
+            <circle cx="300" cy="150" r="20" fill="#FF6B6B" opacity="0.8"/>
+        </svg>
+        <p>Siapa yang tidak suka bakwan? Camilan renyah yang cocok dinikmati kapan saja ini selalu menjadi favorit. Khususnya bakwan kubis, dengan teksturnya yang unik dan rasa gurihnya, membuat ketagihan. Namun, seringkali bakwan yang kita buat jadi lembek dan kurang renyah. Jangan khawatir! Kali ini kita akan membagikan resep rahasia agar bakwan kubis Anda selalu renyah sempurna.</p>
+
+        <h2>Mengapa Bakwan Kubis Begitu Istimewa?</h2>
+        <p>Kubis atau kol adalah sayuran yang kaya serat dan vitamin. Saat diolah menjadi bakwan, tekstur renyah dari sayuran ini berpadu sempurna dengan adonan tepung yang gurih. Bakwan kubis tidak hanya lezat, tetapi juga bisa menjadi alternatif camilan yang lebih sehat jika diolah dengan benar. Keunggulan utamanya adalah kemampuannya menyerap bumbu dengan baik dan menghasilkan tekstur yang renyah jika teknik menggorengnya tepat.</p>
+
+        <h2>Bahan-Bahan untuk Bakwan Kubis Renyah</h2>
+        <p>Menyiapkan bahan yang tepat adalah kunci utama. Pastikan semua bahan dalam keadaan segar untuk hasil terbaik.</p>
+        <ul class="ingredients">
+            <li>1 buah kubis ukuran sedang, iris tipis memanjang</li>
+            <li>100 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (ini penting untuk kerenyahan ekstra!)</li>
+            <li>1 batang daun bawang, iris halus</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh ketumbar bubuk</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>1/2 sendok teh garam (sesuaikan selera)</li>
+            <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            <li>Air secukupnya (sekitar 100-150 ml)</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Cara Membuat Bakwan Kubis Renyah yang Sempurna</h2>
+        <p>Ikuti langkah-langkah berikut dengan cermat untuk mendapatkan hasil yang maksimal:</p>
+        <ol class="instructions">
+            <li>Dalam wadah besar, campurkan irisan kubis, daun bawang, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk. Aduk rata.</li>
+            <li>Masukkan tepung terigu dan tepung beras. Aduk kembali hingga semua bahan tercampur rata.</li>
+            <li>Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kental dan pas. Jangan terlalu encer agar bakwan tidak lembek, tapi juga jangan terlalu kental agar tidak keras. Konsistensi seperti adonan pecel lebih baik.</li>
+            <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+            <li>Ambil satu sendok sayur adonan, lalu masukkan ke dalam minyak panas. Anda bisa meratakannya sedikit agar tidak terlalu tebal, atau biarkan bentuknya sedikit menggumpal untuk tekstur yang lebih beragam.</li>
+            <li>Goreng bakwan hingga berwarna cokelat keemasan di kedua sisinya. Pastikan sisi dalam matang sempurna.</li>
+            <li>Angkat bakwan dan tiriskan minyaknya di atas kertas tisu agar tidak terlalu berminyak.</li>
+            <li>Sajikan bakwan kubis renyah selagi hangat bersama cabai rawit atau saus sambal favorit Anda.</li>
+        </ol>
+
+        <h2>Tips Tambahan untuk Kerenyahan Maksimal</h2>
+        <p>Beberapa trik sederhana dapat meningkatkan kerenyahan bakwan kubis Anda:</p>
+        <ul>
+            <li><strong>Gunakan Tepung Beras:</strong> Kombinasi tepung terigu dan tepung beras adalah rahasia utama kerenyahan. Tepung beras memberikan tekstur yang lebih garing.</li>
+            <li><strong>Jangan Terlalu Banyak Air:</strong> Adonan yang terlalu cair akan membuat bakwan menyerap banyak minyak dan menjadi lembek.</li>
+            <li><strong>Minyak Panas:</strong> Pastikan minyak goreng sudah benar-benar panas sebelum memasukkan adonan. Ini akan membuat bakwan segera mengeras di luar dan renyah.</li>
+            <li><strong>API SEDANG:</strong> Setelah bakwan masuk, kecilkan api sedikit ke arah sedang. Api terlalu besar bisa membuat bagian luar gosong sebelum matang sempurna di dalam.</li>
+            <li><strong>Goreng Hingga Matang Sempurna:</strong> Jangan terburu-buru mengangkat bakwan. Pastikan warnanya sudah cokelat keemasan merata.</li>
+            <li><strong>Tiriskan dengan Baik:</strong> Tiriskan di atas kertas tisu untuk menyerap kelebihan minyak.</li>
+        </ul>
+        <p>Dengan mengikuti resep dan tips ini, Anda bisa menikmati bakwan kubis renyah setiap saat. Selamat mencoba dan nikmati kelezatannya!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-elfin-di-bsd">Bakpao Elfin Di Bsd</a></li>
+<li><a href="/bumbu-bakwan-jamur">Bumbu Bakwan Jamur</a></li>
+<li><a href="/bakpia-ubi-ungu">Bakpia Ubi Ungu</a></li>
+<li><a href="/bakpia-76">Bakpia 76</a></li>
+<li><a href="/bakpia-88">Bakpia 88</a></li>
+<li><a href="/bakwan-jamur-sawit">Bakwan Jamur Sawit</a></li>
+<li><a href="/bakwan-jagung-spongebob">Bakwan Jagung Spongebob</a></li>
+<li><a href="/cara-buat-perkedel-jagung">Cara Buat Perkedel Jagung</a></li>
+<li><a href="/bakwan-udang-kecil-kecil">Bakwan Udang Kecil Kecil</a></li>
+<li><a href="/jawaban-untuk-ucapan-barakallah-fii-umrik">Jawaban Untuk Ucapan Barakallah Fii Umrik</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

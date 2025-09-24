@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Buat Bakwan Udang Kecil Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #50E3C2; /* Warna sejuk cerah */
+            --secondary-color: #4A90E2;
+            --background-color: #F7FFF9; /* Latar belakang sedikit hijau */
+            --text-color: #333;
+            --heading-color: #2A6D5F;
+            --card-background: #FFFFFF;
+            --border-color: #D1F2EB;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h1, h2, h3 {
+            color: var(--heading-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--heading-color);
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .ingredients, .steps {
+            background-color: var(--border-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients ul, .steps ol {
+            padding-left: 25px;
+        }
+
+        .tips {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .tips p {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 15px auto;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakwan udang kecil yang menggugah selera">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--secondary-color);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" fill="var(--background-color)"/>
+                <!-- Bakwan -->
+                <circle cx="150" cy="150" r="40" fill="var(--primary-color)" stroke="#FFC107" stroke-width="4"/>
+                <circle cx="220" cy="130" r="35" fill="var(--primary-color)" stroke="#FFC107" stroke-width="4"/>
+                <circle cx="280" cy="170" r="45" fill="var(--primary-color)" stroke="#FFC107" stroke-width="4"/>
+                <circle cx="190" cy="200" r="38" fill="var(--primary-color)" stroke="#FFC107" stroke-width="4"/>
+                <!-- Udang -->
+                <path d="M200 150 Q210 140 220 150 T200 150 Z" fill="#FF8A65" stroke="#E65100" stroke-width="2"/>
+                <path d="M160 170 Q170 160 180 170 T160 170 Z" fill="#FF8A65" stroke="#E65100" stroke-width="2"/>
+                <path d="M250 160 Q260 150 270 160 T250 160 Z" fill="#FF8A65" stroke="#E65100" stroke-width="2"/>
+                <path d="M180 130 Q190 120 200 130 T180 130 Z" fill="#FF8A65" stroke="#E65100" stroke-width="2"/>
+                <!-- Daun Bawang/Pelengkap -->
+                <line x1="140" y1="110" x2="150" y2="90" stroke="var(--heading-color)" stroke-width="3"/>
+                <line x1="170" y1="180" x2="180" y2="165" stroke="var(--heading-color)" stroke-width="3"/>
+                <line x1="260" y1="190" x2="270" y2="175" stroke="var(--heading-color)" stroke-width="3"/>
+                <!-- Latar Belakang -->
+                <rect x="0" y="0" width="600" height="300" fill="url(#grad1)" opacity="0.1" shape-rendering="crispEdges"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="var(--heading-color)" font-size="30" opacity="0.5">Bakwan Udang Kecil</text>
+            </svg>
+        </div>
+
+        <h1>Cara Buat Bakwan Udang Kecil Renyah dan Lezat</h1>
+        <p>Bakwan udang kecil merupakan salah satu camilan favorit yang disukai banyak orang. Perpaduan rasa gurih dari adonan tepung, renyahnya kulit luar, dan manisnya udang di dalamnya menjadikan camilan ini tak pernah gagal memanjakan lidah. Membuatnya sendiri di rumah ternyata tidak sesulit yang dibayangkan, lho! Dengan beberapa langkah sederhana, Anda bisa menyajikan bakwan udang kecil yang tak kalah enak dengan yang dijual di pasaran.</p>
+
+        <p>Artikel ini akan memandu Anda langkah demi langkah untuk membuat bakwan udang kecil yang renyah di luar dan lembut di dalam. Cocok dinikmati saat santai bersama keluarga, ditemani secangkir teh hangat atau kopi.</p>
+
+        <h2>Bahan-Bahan yang Dibutuhkan</h2>
+        <div class="ingredients">
+            <ul>
+                <li>150 gram udang kecil, kupas kulit dan sisakan ekornya (opsional)</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk tambahan kerenyahan)</li>
+                <li>1 butir telur ayam</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>1 batang seledri, iris halus (opsional)</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>1 sendok teh garam (sesuai selera)</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional, jika suka)</li>
+                <li>Air secukupnya (sekitar 150-200 ml, jangan terlalu kental atau terlalu encer)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Bakwan Udang Kecil</h2>
+        <div class="steps">
+            <ol>
+                <li><strong>Persiapan Udang:</strong> Cuci bersih udang kecil yang sudah dikupas. Jika Anda memilih untuk menyisakan ekornya, pastikan untuk membersihkan bagian punggungnya untuk menghilangkan kotoran. Tiriskan.</li>
+                <li><strong>Membuat Adonan Tepung:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras, bawang putih halus, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li><strong>Menambahkan Telur dan Sayuran:</strong> Pecahkan telur ke dalam campuran tepung, lalu aduk rata. Masukkan irisan daun bawang dan seledri (jika pakai), aduk kembali hingga tercampur.</li>
+                <li><strong>Mengatur Kekentalan Adonan:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan tercapai kekentalan yang diinginkan. Adonan sebaiknya tidak terlalu kental agar tidak keras, namun juga tidak terlalu encer agar tidak mudah hancur saat digoreng. Kekentalan yang pas adalah seperti adonan untuk martabak manis.</li>
+                <li><strong>Memasukkan Udang:</strong> Masukkan udang kecil ke dalam adonan. Aduk perlahan hingga semua udang terbalut rata dengan adonan.</li>
+                <li><strong>Proses Menggoreng:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum adonan dimasukkan.</li>
+                <li><strong>Membentuk dan Menggoreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Goreng hingga bakwan berwarna coklat keemasan dan matang sempurna di kedua sisinya. Jangan terlalu banyak memasukkan adonan dalam satu kali penggorengan agar suhu minyak tetap stabil dan bakwan matang merata.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang menggunakan saringan dan tiriskan minyaknya di atas tisu dapur atau rak kawat.</li>
+                <li><strong>Sajikan:</strong> Bakwan udang kecil siap disajikan selagi hangat. Nikmati bersama saus sambal, saus tomat, atau cabai rawit hijau untuk sensasi yang lebih lezat.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <p><strong>Tips Tambahan untuk Bakwan yang Super Renyah:</strong></p>
+            <ul>
+                <li>Gunakan campuran tepung terigu dan tepung beras untuk hasil yang lebih renyah.</li>
+                <li>Pastikan minyak benar-benar panas saat menggoreng.</li>
+                <li>Tambahkan sedikit air soda atau baking powder ke dalam adonan untuk hasil yang lebih ringan dan renyah.</li>
+                <li>Jangan terlalu sering mengaduk adonan setelah udang masuk agar udang tidak hancur.</li>
+                <li>Goreng dengan api sedang agar matang merata hingga ke dalam.</li>
+            </ul>
+        </div>
+
+        <p>Membuat bakwan udang kecil sendiri di rumah adalah cara yang menyenangkan untuk menikmati camilan lezat kapan saja. Dengan mengikuti panduan di atas, Anda pasti berhasil membuat bakwan yang disukai seluruh anggota keluarga. Selamat mencoba!</p>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-murah-di-malioboro">Bakpia Murah Di Malioboro</a></li>
+<li><a href="/cara-membuat-bakso-lava-mercon">Cara Membuat Bakso Lava Mercon</a></li>
+<li><a href="/bakung-amarilis">Bakung Amarilis</a></li>
+<li><a href="/bakwan-kukus-untuk-diet">Bakwan Kukus Untuk Diet</a></li>
+<li><a href="/tou-luk-pia">Tou Luk Pia</a></li>
+<li><a href="/cara-membuat-isian-bakpia-coklat">Cara Membuat Isian Bakpia Coklat</a></li>
+<li><a href="/bakpia-mutiara-di-solo">Bakpia Mutiara Di Solo</a></li>
+<li><a href="/bakpia-solo-09">Bakpia Solo 09</a></li>
+<li><a href="/resep-bakso-mercon-pedas">Resep Bakso Mercon Pedas</a></li>
+<li><a href="/resep-membuat-bakwan-sederhana">Resep Membuat Bakwan Sederhana</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

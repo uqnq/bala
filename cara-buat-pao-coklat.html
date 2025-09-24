@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Buat Pao Coklat Lembut dan Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-bg: #e0f7fa; /* Warna latar belakang biru muda */
+            --color-text: #004d40; /* Warna teks hijau tua */
+            --color-accent-light: #80deea; /* Aksen biru muda terang */
+            --color-accent-dark: #00838f; /* Aksen biru tua */
+            --color-shadow: rgba(0, 77, 64, 0.2); /* Bayangan tipis */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px var(--color-shadow);
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        h1, h2, h3 {
+            color: var(--color-accent-dark);
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.7em;
+            border-bottom: 2px solid var(--color-accent-light);
+            padding-bottom: 10px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px var(--color-shadow);
+        }
+
+        .steps-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .steps-list li {
+            background-color: var(--color-accent-light);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-left: 5px solid var(--color-accent-dark);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .steps-list li:hover {
+            transform: translateX(5px);
+        }
+
+        .step-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--color-accent-dark);
+            background-color: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .step-text {
+            flex-grow: 1;
+        }
+
+        .ingredients-list {
+            list-style-type: disc;
+            padding-left: 25px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .ingredients-list li {
+            margin-bottom: 8px;
+        }
+
+        .note {
+            font-style: italic;
+            color: var(--color-accent-dark);
+            background-color: var(--color-accent-light);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta a {
+            display: inline-block;
+            background-color: var(--color-accent-dark);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: var(--color-accent-light);
+            color: var(--color-text);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .steps-list li {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: center;
+            }
+            .step-number {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cara Buat Pao Coklat Super Lembut</h1>
+            <svg width="150" height="150" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svgTitle">
+                <title id="svgTitle">Ilustrasi pao coklat</title>
+                <path d="M21 5L12 2L3 5V10.5C3 17.25 7.37 21.88 12 23.5C16.63 21.88 21 17.25 21 10.5V5Z" fill="#00838F" stroke="#004D40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 17.5C9.79086 17.5 8 15.7091 8 13.5C8 11.2909 9.79086 9.5 12 9.5C14.2091 9.5 16 11.2909 16 13.5C16 15.7091 14.2091 17.5 12 17.5Z" fill="#80DEEA"/>
+                <path d="M10 13.5H14V14.5H10V13.5Z" fill="#004D40"/>
+                <path d="M12 11.5H12V12.5H12V11.5Z" fill="#004D40"/>
+                <path d="M9.5 15.5H14.5V16.5H9.5V15.5Z" fill="#004D40"/>
+                <path d="M12 7.5L12 8.5L12 7.5Z" fill="#004D40"/>
+                <path d="M16.5 15.5H17.5V16.5H16.5V15.5Z" fill="#004D40"/>
+                <path d="M12 10.5H13V11.5H12V10.5Z" fill="#004D40"/>
+                <path d="M16 13.5H17V14.5H16V13.5Z" fill="#004D40"/>
+                <path d="M10 11.5H11V12.5H10V11.5Z" fill="#004D40"/>
+                <path d="M14 11.5H15V12.5H14V11.5Z" fill="#004D40"/>
+                <path d="M15.5 15.5H16.5V16.5H15.5V15.5Z" fill="#004D40"/>
+                <path d="M9 13.5H10V14.5H9V13.5Z" fill="#004D40"/>
+                <path d="M7 15.5H8V16.5H7V15.5Z" fill="#004D40"/>
+                <path d="M16 15.5H17V16.5H16V15.5Z" fill="#004D40"/>
+                <circle cx="12" cy="13.5" r="1.5" fill="#E0F7FA"/>
+                <path d="M11.2727 12.7273L12.7273 11.2727" stroke="#004D40" stroke-width="1" stroke-linecap="round"/>
+                <path d="M11.2727 11.2727L12.7273 12.7273" stroke="#004D40" stroke-width="1" stroke-linecap="round"/>
+                <path d="M11 11L13 11V12L11 12V11Z" fill="#004D40"/>
+                <path d="M10 10L14 10V11L10 11V10Z" fill="#004D40"/>
+            </svg>
+        </header>
+
+        <div class="content">
+            <p>Siapa yang bisa menolak kelembutan pao dengan isian coklat yang meleleh di mulut? Pao coklat adalah camilan favorit banyak orang, mulai dari anak-anak hingga dewasa. Membuat pao coklat sendiri di rumah ternyata tidak sesulit yang dibayangkan, lho! Dengan resep yang tepat dan sedikit kesabaran, Anda bisa menghasilkan pao coklat yang lembut, empuk, dan pastinya lezat untuk dinikmati bersama keluarga.</p>
+
+            <p>Keistimewaan pao coklat terletak pada teksturnya yang super lembut seperti awan dan isian coklatnya yang manis. Bahan-bahannya pun mudah ditemukan di dapur Anda. Mari kita siapkan bahan-bahan dan ikuti langkah demi langkah untuk menciptakan keajaiban pao coklat ini.</p>
+
+            <h2>Bahan-bahan Utama</h2>
+            <ul class="ingredients-list">
+                <li>Tepung terigu protein rendah (sekitar 250 gram)</li>
+                <li>Ragi instan (1 sendok teh)</li>
+                <li>Gula pasir (30 gram)</li>
+                <li>Garam (sejumput)</li>
+                <li>Air hangat (sekitar 120-150 ml)</li>
+                <li>Minyak sayur atau margarin cair (2 sendok makan)</li>
+                <li>Coklat batang, potong dadu kecil atau meses coklat untuk isian</li>
+            </ul>
+
+            <h2>Langkah-langkah Membuat Pao Coklat</h2>
+            <ol class="steps-list">
+                <li>
+                    <div class="step-number">1</div>
+                    <div class="step-text">
+                        <strong>Aktifkan Ragi:</strong> Campurkan ragi instan dan gula pasir dalam mangkuk kecil. Tuang sedikit air hangat (sekitar 50 ml) dan aduk rata. Diamkan selama 5-10 menit hingga berbusa. Ini menandakan ragi masih aktif.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-number">2</div>
+                    <div class="step-text">
+                        <strong>Membuat Adonan:</strong> Dalam wadah besar, campurkan tepung terigu, garam, dan adonan ragi yang sudah berbusa. Tambahkan sisa air hangat sedikit demi sedikit sambil diuleni hingga adonan kalis dan tidak lengket di tangan. Jika menggunakan margarin, masukkan margarin cair pada tahap ini dan uleni kembali hingga tercampur rata.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-number">3</div>
+                    <div class="step-text">
+                        <strong>Proses Fermentasi:</strong> Bulatkan adonan, lalu masukkan kembali ke dalam wadah yang sudah diolesi sedikit minyak. Tutup wadah dengan plastic wrap atau kain bersih. Diamkan di tempat hangat selama kurang lebih 1 jam atau hingga adonan mengembang dua kali lipat.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-number">4</div>
+                    <div class="step-text">
+                        <strong>Membagi dan Mengisi Adonan:</strong> Setelah mengembang, kempiskan adonan dengan cara ditekan perlahan. Bagi adonan menjadi beberapa bagian sesuai ukuran yang diinginkan. Pipihkan setiap bagian adonan, isi dengan potongan coklat batang atau meses, lalu rapatkan pinggirannya hingga isian tidak keluar. Bentuk bulat kembali.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-number">5</div>
+                    <div class="step-text">
+                        <strong>Proses Pengukusan:</strong> Siapkan kukusan yang sudah dipanaskan dengan air mendidih. Alasi setiap pao dengan kertas roti agar tidak menempel. Susun pao dalam kukusan dengan diberi jarak karena akan mengembang lagi. Kukus dengan api sedang selama sekitar 10-15 menit.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-number">6</div>
+                    <div class="step-text">
+                        <strong>Penyajian:</strong> Setelah matang, angkat pao coklat dan sajikan selagi hangat. Nikmati kelembutan dan lelehan coklatnya yang istimewa!
+                    </div>
+                </li>
+            </ol>
+
+            <div class="note">
+                Pastikan air kukusan benar-benar mendidih sebelum memasukkan pao agar hasilnya lembut dan tidak bantat.
+            </div>
+
+            <p>Membuat pao coklat sendiri di rumah memang memberikan kepuasan tersendiri. Hasilnya yang lembut dan lezat bisa menjadi ide bekal sekolah anak, camilan saat kumpul keluarga, atau sekadar menemani waktu santai Anda. Jangan ragu untuk bereksperimen dengan berbagai jenis coklat untuk isian agar rasa pao semakin bervariasi.</p>
+
+            <div class="cta">
+                <a href="#inspirasi">Temukan Ide Camilan Lainnya!</a>
+            </div>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-renyah-tanpa-telur">Resep Bakwan Renyah Tanpa Telur</a></li>
+<li><a href="/udang-bakwan">Udang Bakwan</a></li>
+<li><a href="/cara-buat-bak-pao">Cara Buat Bak Pao</a></li>
+<li><a href="/resep-bakwan-jagung-tanpa-daun-bawang">Resep Bakwan Jagung Tanpa Daun Bawang</a></li>
+<li><a href="/di-balikpapan">Di Balikpapan</a></li>
+<li><a href="/goreng-bala-bala-renyah">Goreng Bala Bala Renyah</a></li>
+<li><a href="/bikin-bakwan-jagung-pakai-tepung-serbaguna">Bikin Bakwan Jagung Pakai Tepung Serbaguna</a></li>
+<li><a href="/cara-membuat-bola-bola-ubi-ungu-coklat-lumer">Cara Membuat Bola Bola Ubi Ungu Coklat Lumer</a></li>
+<li><a href="/bakpao-telo-harga">Bakpao Telo Harga</a></li>
+<li><a href="/bakso-beranak-murah">Bakso Beranak Murah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

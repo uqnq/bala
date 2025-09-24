@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakpao Daging Ayam Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #85c1e9; /* Biru muda cerah */
+            --color-secondary: #a9d08e; /* Hijau lembut */
+            --color-accent: #fce5cd; /* Oranye lembut */
+            --color-text: #333;
+            --color-background: #f8f9fa; /* Putih gading */
+            --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+
+        h1 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            color: var(--color-secondary);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed var(--color-secondary);
+            padding-bottom: 5px;
+            font-size: 1.7em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .step {
+            background-color: var(--color-accent);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .step h3 {
+            color: var(--color-primary);
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .step p {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: var(--color-primary);
+            color: #fff;
+            font-size: 0.9em;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            p, li {
+                font-size: 1em;
+            }
+
+            .hero-image {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cara Membuat Bakpao Daging Ayam Lezat dan Empuk</h1>
+        </header>
+
+        <div class="hero-image-container">
+            <!-- SVG Image: Bakpao dan Ayam dengan elemen cerah -->
+            <svg class="hero-image" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--color-primary);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--color-secondary);stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <!-- Background shape -->
+                <rect width="400" height="200" rx="15" ry="15" fill="var(--color-accent)" filter="url(#shadow)"/>
+
+                <!-- Bakpao -->
+                <ellipse cx="100" cy="120" rx="50" ry="35" fill="#f9f9f9" stroke="#ccc" stroke-width="2"/>
+                <ellipse cx="100" cy="115" rx="45" ry="30" fill="#f0f0f0" stroke="none"/>
+                <path d="M 80 90 Q 100 70 120 90" fill="none" stroke="#e0e0e0" stroke-width="3"/>
+
+                <!-- Bakpao 2 -->
+                <ellipse cx="220" cy="130" rx="40" ry="30" fill="#f9f9f9" stroke="#ccc" stroke-width="2"/>
+                <ellipse cx="220" cy="128" rx="35" ry="25" fill="#f0f0f0" stroke="none"/>
+                <path d="M 200 105 Q 220 85 240 105" fill="none" stroke="#e0e0e0" stroke-width="3"/>
+
+                <!-- Ayam filling (stylized) -->
+                <path d="M 100 120 m -20 0 a 20 20 0 0 1 40 0 a 20 20 0 0 1 -40 0" fill="var(--color-secondary)" opacity="0.7"/>
+                <path d="M 220 130 m -15 0 a 15 15 0 0 1 30 0 a 15 15 0 0 1 -30 0" fill="var(--color-secondary)" opacity="0.7"/>
+
+                <!-- Simple chicken silhouette -->
+                <g transform="translate(300, 80) scale(0.5)">
+                    <path d="M10 10 L20 20 L30 10 L20 0 Z" fill="var(--color-primary)" stroke="var(--color-primary)" stroke-width="3"/>
+                    <circle cx="25" cy="15" r="4" fill="var(--color-primary)"/>
+                    <path d="M22 18 L28 24" stroke="var(--color-primary)" stroke-width="2"/>
+                </g>
+
+                <!-- Text hint -->
+                <text x="150" y="40" font-size="16" fill="#555" text-anchor="middle">Bakpao Daging Ayam</text>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak suka bakpao? Camilan klasik yang empuk dengan isian lezat ini selalu menjadi favorit banyak orang. Kali ini, kita akan membahas <span class="highlight">cara membuat bakpao daging ayam</span> yang tidak hanya lezat tapi juga mudah dipraktikkan di rumah. Dengan panduan ini, Anda bisa menyajikan bakpao hangat dengan isian ayam yang gurih dan beraroma menggoda.</p>
+
+        <h2>Mengapa Bakpao Daging Ayam?</h2>
+        <p>Bakpao daging ayam adalah pilihan isian yang sangat populer karena rasa ayam yang familiar dan disukai oleh hampir semua kalangan. Kelembutan daging ayam yang dimasak dengan bumbu rempah khas menjadikannya isian yang sempurna untuk bakpao yang lembut dan kenyal. Resep ini akan memandu Anda membuat adonan bakpao yang mengembang sempurna dan isian yang kaya rasa.</p>
+
+        <h2>Bahan-Bahan yang Dibutuhkan</h2>
+        <p>Sebelum memulai, pastikan Anda telah menyiapkan semua bahan berikut:</p>
+        <h3>Untuk Adonan Bakpao:</h3>
+        <ul>
+            <li>300 gram tepung terigu protein tinggi</li>
+            <li>50 gram gula pasir</li>
+            <li>1 sendok teh ragi instan</li>
+            <li>1/2 sendok teh garam</li>
+            <li>120 ml air hangat</li>
+            <li>2 sendok makan minyak sayur</li>
+        </ul>
+        <h3>Untuk Isian Daging Ayam:</h3>
+        <ul>
+            <li>250 gram daging ayam cincang</li>
+            <li>2 siung bawang putih, cincang halus</li>
+            <li>1/2 buah bawang bombay kecil, cincang halus</li>
+            <li>1 sendok makan kecap manis</li>
+            <li>1 sendok teh saus tiram</li>
+            <li>1/2 sendok teh garam</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            <li>1 sendok makan minyak untuk menumis</li>
+            <li>Sedikit air (jika perlu)</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bakpao Daging Ayam</h2>
+
+        <div class="step">
+            <h3>Langkah 1: Membuat Isian Daging Ayam</h3>
+            <p>Panaskan minyak dalam wajan. Tumis bawang putih dan bawang bombay hingga harum. Masukkan daging ayam cincang, masak sambil diaduk hingga berubah warna. Tambahkan kecap manis, saus tiram, garam, merica bubuk, dan kaldu bubuk (jika pakai). Aduk rata. Jika isian terlihat terlalu kering, tambahkan sedikit air. Masak hingga bumbu meresap dan isian matang. Angkat dan dinginkan.</p>
+        </div>
+
+        <div class="step">
+            <h3>Langkah 2: Membuat Adonan Bakpao</h3>
+            <p>Dalam wadah besar, campurkan tepung terigu, gula pasir, ragi instan, dan garam. Aduk rata. Tuang air hangat sedikit demi sedikit sambil diuleni hingga adonan kalis dan elastis. Tambahkan minyak sayur, uleni kembali hingga tercampur rata dan adonan tidak lengket di tangan. Anda bisa menggunakan mixer dengan pengait adonan jika ada.</p>
+        </div>
+
+        <div class="step">
+            <h3>Langkah 3: Proses Proofing (Pengembangan Adonan)</h3>
+            <p>Bulatkan adonan, lalu letakkan dalam wadah yang sudah diolesi sedikit minyak. Tutup wadah dengan serbet bersih atau plastik wrap. Diamkan di tempat hangat selama kurang lebih 1 jam, atau hingga adonan mengembang dua kali lipat.</p>
+        </div>
+
+        <div class="step">
+            <h3>Langkah 4: Membentuk Bakpao</h3>
+            <p>Kempiskan adonan yang sudah mengembang, lalu uleni sebentar. Bagi adonan menjadi beberapa bagian (sekitar 8-10 bagian, tergantung ukuran yang diinginkan). Ambil satu bagian adonan, pipihkan hingga membentuk lingkaran. Beri isian daging ayam secukupnya di tengahnya. Lipat pinggiran adonan hingga menutupi isian dan bentuk bulat atau sesuai selera Anda. Pastikan lipatan tertutup rapat agar isian tidak keluar saat dikukus.</p>
+        </div>
+
+        <div class="step">
+            <h3>Langkah 5: Proses Proofing Kedua dan Mengukus</h3>
+            <p>Letakkan bakpao yang sudah dibentuk di atas kertas roti atau daun pisang yang sudah diolesi minyak. Beri jarak antar bakpao. Tutup kembali dengan serbet dan diamkan lagi selama sekitar 15-20 menit hingga mengembang.</p>
+            <p>Panaskan panci pengukus hingga air mendidih. Kukus bakpao dengan api sedang selama kurang lebih 10-15 menit, atau hingga matang dan mengembang sempurna. Hindari membuka tutup panci terlalu sering agar bakpao tidak kempes.</p>
+        </div>
+
+        <h2>Tips Tambahan</h2>
+        <ul>
+            <li>Gunakan tepung terigu protein tinggi untuk hasil bakpao yang lebih lembut dan kenyal.</li>
+            <li>Pastikan ragi instan masih aktif. Anda bisa mengujinya dengan mencampurnya dengan sedikit air hangat dan gula. Jika berbuih, ragi masih bagus.</li>
+            <li>Isian daging ayam bisa divariasikan dengan menambahkan sedikit wortel parut atau jamur untuk tekstur yang lebih menarik.</li>
+            <li>Untuk warna yang lebih cerah pada bakpao, Anda bisa menambahkan sedikit pewarna makanan alami seperti jus pandan atau ekstrak stroberi ke dalam adonan.</li>
+        </ul>
+
+        <p>Menikmati <span class="highlight">bakpao daging ayam</span> buatan sendiri tentu memberikan kepuasan tersendiri. Aroma harumnya saat dikukus akan menggoda selera. Sajikan bakpao selagi hangat untuk menikmati kelembutan dan kelezatan isiannya. Selamat mencoba!</p>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-kuah-cabe-bakwan">Resep Kuah Cabe Bakwan</a></li>
+<li><a href="/bakpia-maulana">Bakpia Maulana</a></li>
+<li><a href="/contoh-bakteri-bacillus">Contoh Bakteri Bacillus</a></li>
+<li><a href="/cara-dan-bahan-membuat-bakso-mercon">Cara Dan Bahan Membuat Bakso Mercon</a></li>
+<li><a href="/jagung-bakwan-resep">Jagung Bakwan Resep</a></li>
+<li><a href="/bakpao-bsd">Bakpao Bsd</a></li>
+<li><a href="/bakpao-ilufa">Bakpao Ilufa</a></li>
+<li><a href="/bahan-bakwan-jagung">Bahan Bakwan Jagung</a></li>
+<li><a href="/bakwan-goreng-kopong">Bakwan Goreng Kopong</a></li>
+<li><a href="/cara-buat-bakwan-jagung-simple">Cara Buat Bakwan Jagung Simple</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

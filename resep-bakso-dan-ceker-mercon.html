@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakso & Ceker Mercon Super Pedas</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 15px;
+            background-color: #e0f7fa; /* Warna dasar sejuk cerah */
+            color: #333;
+            max-width: 800px; /* Batas lebar untuk tampilan desktop yang tetap rapi */
+            margin: 0 auto; /* Tengahkan di desktop */
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #80deea; /* Warna header cerah */
+            padding: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #006064; /* Warna judul lebih gelap */
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-style: italic;
+            color: #00838f;
+            font-size: 0.9em;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #006064;
+            border-bottom: 2px solid #80deea;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #00838f;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            color: #ef6c00; /* Warna aksen cerah */
+            font-weight: bold;
+        }
+        .recipe-section {
+            margin-bottom: 25px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .ingredient-list {
+            background-color: #e0f2f1; /* Latar belakang daftar bahan yang sejuk */
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #00838f;
+        }
+        .instruction-list {
+            background-color: #fff9c4; /* Latar belakang daftar instruksi yang sedikit berbeda */
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #ef6c00;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px dashed #b2ebf2;
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        /* Media Query untuk memastikan tampilan bagus di berbagai ukuran layar */
+        @media (min-width: 768px) {
+            body {
+                padding: 20px 30px;
+            }
+            header {
+                padding: 20px 0;
+            }
+            .container {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Resep Bakso dan Ceker Mercon Menggugah Selera</h1>
+        <p class="subtitle">Perpaduan Gurih Pedas yang Bikin Nagih!</p>
+    </header>
+
+    <div class="container">
+
+        <div class="image-container">
+            <svg class="main-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                <!-- Latar belakang gradien cerah -->
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e0f7fa;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grad1)" />
+
+                <!-- Simbol bakso dan ceker sederhana -->
+                <!-- Bakso -->
+                <circle cx="100" cy="150" r="30" fill="#e57373" />
+                <circle cx="100" cy="150" r="25" fill="#f8bbd0" />
+
+                <!-- Ceker -->
+                <g transform="translate(200, 150) rotate(-30)">
+                    <path d="M 0 0 L 20 10 L 15 30 L 0 25 Z" fill="#ef9a9a" />
+                    <path d="M 0 0 L -15 20 L -10 35 L 0 30 Z" fill="#ef9a9a" />
+                    <path d="M 0 0 L -20 -10 L -25 -25 L 0 -20 Z" fill="#ef9a9a" />
+                </g>
+
+                <!-- Teks sederhana "Mercon" -->
+                <text x="280" y="100" font-family="Verdana" font-size="24" fill="#d32f2f" transform="rotate(15 280 100)">Mercon</text>
+            </svg>
+            <p style="font-size: 0.8em; color: #666; margin-top: 5px;">Perpaduan Bakso Gurih dan Ceker Pedas.</p>
+        </div>
+
+        <div class="recipe-section">
+            <p>Siapa yang bisa menolak kelezatan bakso yang kenyal berpadu dengan ceker ayam yang lembut, disiram bumbu mercon pedas membara? Hidangan ini adalah favorit banyak orang, terutama bagi pecinta rasa pedas. Membuatnya sendiri di rumah ternyata tidak sesulit yang dibayangkan. Dengan resep yang tepat, Anda bisa menyajikan bakso dan ceker mercon yang nikmat untuk keluarga atau teman.</p>
+
+            <h2>Bahan-Bahan Utama</h2>
+            <div class="ingredient-list">
+                <h3>Untuk Bakso dan Ceker:</h3>
+                <ul>
+                    <li>250 gram bakso sapi berkualitas baik, belah dua jika besar</li>
+                    <li>15-20 buah ceker ayam, bersihkan, rebus sebentar hingga empuk</li>
+                    <li>2 lembar daun salam</li>
+                    <li>3 cm lengkuas, memarkan</li>
+                    <li>1 batang serai, memarkan</li>
+                    <li>500 ml air kaldu ayam atau air biasa</li>
+                    <li>Garam secukupnya</li>
+                    <li>Gula pasir secukupnya (opsional, untuk menyeimbangkan rasa)</li>
+                    <li>Minyak goreng secukupnya untuk menumis</li>
+                </ul>
+            </div>
+
+            <div class="ingredient-list" style="margin-top: 15px;">
+                <h3>Bumbu Halus Mercon:</h3>
+                <ul>
+                    <li>10-15 buah cabai rawit merah (sesuaikan tingkat kepedasan)</li>
+                    <li>5 buah cabai merah keriting</li>
+                    <li>5 siung bawang merah</li>
+                    <li>3 siung bawang putih</li>
+                    <li>2 cm jahe</li>
+                    <li>1/2 sendok teh terasi bakar (opsional)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Cara Membuat Bakso dan Ceker Mercon</h2>
+            <div class="instruction-list">
+                <ol>
+                    <li>
+                        <strong>Rebus Ceker:</strong> Siapkan panci, masukkan ceker ayam, daun salam, lengkuas, dan serai. Tuang air secukupnya hingga ceker terendam. Rebus hingga ceker benar-benar empuk. Tiriskan dan buang air rebusan pertama.
+                    </li>
+                    <li>
+                        <strong>Haluskan Bumbu:</strong> Siapkan blender atau ulekan. Masukkan semua bahan bumbu halus (cabai, bawang merah, bawang putih, jahe, terasi jika pakai). Haluskan hingga benar-benar rata. Anda bisa menambahkan sedikit minyak agar lebih mudah halus.
+                    </li>
+                    <li>
+                        <strong>Tumis Bumbu:</strong> Panaskan sedikit minyak goreng di wajan. Tumis bumbu halus hingga harum dan matang. Pastikan bumbu benar-benar tanak agar tidak langu.
+                    </li>
+                    <li>
+                        <strong>Masukkan Bakso dan Ceker:</strong> Masukkan bakso sapi dan ceker ayam yang sudah direbus ke dalam tumisan bumbu. Aduk rata hingga semua bahan terbalut bumbu.
+                    </li>
+                    <li>
+                        <strong>Tambahkan Kaldu dan Bumbui:</strong> Tuang air kaldu ayam atau air biasa. Masak hingga mendidih. Bumbui dengan garam secukupnya dan sedikit gula pasir jika suka. Koreksi rasa. Biarkan bumbu meresap dengan api sedang hingga kuah sedikit mengental.
+                    </li>
+                    <li>
+                        <strong>Sajikan:</strong> Angkat bakso dan ceker mercon yang sudah matang. Sajikan selagi hangat. Hidangan ini sangat cocok dinikmati bersama nasi putih hangat. Rasakan sensasi <span class="highlight">gurih, kenyal, dan pedas</span> yang luar biasa!
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Tambahan</h2>
+            <ul>
+                <li>Untuk rasa yang lebih kaya, Anda bisa menambahkan sedikit kecap manis atau saus sambal saat menumis bumbu.</li>
+                <li>Jika suka, taburkan bawang goreng di atasnya saat disajikan untuk menambah aroma.</li>
+                <li>Tingkat kepedasan bisa disesuaikan dengan jumlah cabai yang digunakan. Gunakan sarung tangan saat mengolah cabai untuk menghindari iritasi.</li>
+                <li>Pastikan ceker benar-benar empuk agar nyaman saat dinikmati.</li>
+            </ul>
+            <p>Selamat mencoba resep bakso dan ceker mercon ini. Dijamin membuat Anda ketagihan dengan setiap suapan pedasnya yang lezat!</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; Resep Lezat</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-pao">Cara Membuat Pao</a></li>
+<li><a href="/pembiakan-bakteri">Pembiakan Bakteri</a></li>
+<li><a href="/cara-masak-bakwan-jagung-sederhana">Cara Masak Bakwan Jagung Sederhana</a></li>
+<li><a href="/jenis-bakteri-aerob-dan-anaerob">Jenis Bakteri Aerob Dan Anaerob</a></li>
+<li><a href="/dadar-jagung-udang">Dadar Jagung Udang</a></li>
+<li><a href="/bakwan-kelapa-parut">Bakwan Kelapa Parut</a></li>
+<li><a href="/cara-membuat-bakpao-ubi-kuning">Cara Membuat Bakpao Ubi Kuning</a></li>
+<li><a href="/resep-tahu-bakso-mercon">Resep Tahu Bakso Mercon</a></li>
+<li><a href="/bakso-beranak-7-rasa">Bakso Beranak 7 Rasa</a></li>
+<li><a href="/bakwan-jagung-mamasuka">Bakwan Jagung Mamasuka</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

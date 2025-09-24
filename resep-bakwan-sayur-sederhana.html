@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Sayur Sederhana & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* Warna latar sejuk */
+            color: #333;
+        }
+        .container {
+            width: 95%;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50; /* Warna judul lebih gelap */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50; /* Garis bawah hijau cerah */
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .ingredients-list li, .steps-list li {
+            background-color: #e8f5e9; /* Latar sejuk untuk item daftar */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            border-left: 5px solid #4CAF50; /* Border hijau cerah */
+        }
+        .ingredients-list li strong, .steps-list li strong {
+            color: #1b5e20; /* Warna teks lebih gelap untuk penekanan */
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .recipe-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+        .callout {
+            background-color: #c8e6c9; /* Warna cerah untuk saran */
+            color: #1b5e20;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 7px solid #4CAF50;
+            font-style: italic;
+        }
+        strong {
+            color: #1b5e20;
+        }
+
+        /* Responsivitas untuk tampilan mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                margin: 10px auto;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .image-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Sayur Sederhana yang Lezat</h1>
+
+        <div class="image-container">
+            <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81C784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#A5D6A7;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="400" fill="url(#grad1)" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="40" font-weight="bold" font-family="'Arial', sans-serif">
+                    Bakwan Sayur
+                </text>
+                <circle cx="100" cy="100" r="30" fill="#FFD54F" /> <!-- Wortel -->
+                <circle cx="150" cy="120" r="35" fill="#E57373" /> <!-- Tomat -->
+                <path d="M 250 100 Q 300 50 350 100 T 400 100" stroke="#81C784" stroke-width="15" fill="none" /> <!-- Daun bawang/Seledri -->
+                <rect x="450" y="80" width="50" height="50" fill="#B0BEC5" rx="5" /> <!-- Jagung pipil -->
+                <path d="M 100 250 h 100 v 50 h -100 z" fill="#FFAB91" /> <!-- Adonan -->
+                <path d="M 200 250 h 100 v 50 h -100 z" fill="#FFAB91" /> <!-- Adonan -->
+                <path d="M 300 250 h 100 v 50 h -100 z" fill="#FFAB91" /> <!-- Adonan -->
+            </svg>
+            <p style="font-size: 0.9em; color: #777;">Ilustrasi lezatnya bakwan sayur renyah.</p>
+        </div>
+
+        <p>Siapa yang tidak suka bakwan sayur? Kudapan gurih ini selalu menjadi primadona, baik sebagai teman makan nasi hangat maupun camilan sore hari. Rasanya yang renyah di luar dan lembut di dalam, berpadu dengan aroma sayuran yang menggugah selera, membuatnya digemari oleh semua kalangan. Membuat bakwan sayur sendiri di rumah ternyata sangat mudah, bahkan bagi Anda yang masih pemula di dapur. Dengan bahan-bahan sederhana yang mudah didapat, Anda bisa menyajikan hidangan istimewa ini kapan saja.</p>
+
+        <h2>Bahan-bahan Utama</h2>
+        <ul class="ingredients-list">
+            <li><strong>1 buah wortel ukuran sedang:</strong> kupas, iris tipis memanjang atau parut kasar.</li>
+            <li><strong>1/2 bonggol kol kecil:</strong> iris tipis.</li>
+            <li><strong>50 gram tauge:</strong> siangi, cuci bersih.</li>
+            <li><strong>2 batang daun bawang:</strong> iris tipis.</li>
+            <li><strong>50 gram buncis (opsional):</strong> potong-potong pendek.</li>
+        </ul>
+
+        <h2>Bahan Adonan Tepung</h2>
+        <ul class="ingredients-list">
+            <li><strong>150 gram tepung terigu protein sedang.</strong></li>
+            <li><strong>30 gram tepung beras:</strong> untuk hasil yang lebih renyah.</li>
+            <li><strong>1 butir telur ayam:</strong> kocok lepas (opsional, untuk mengikat adonan).</li>
+            <li><strong>150-200 ml air dingin:</strong> sesuaikan kekentalan adonan.</li>
+            <li><strong>1 sendok teh garam.</strong></li>
+            <li><strong>1/2 sendok teh kaldu bubuk (opsional).</strong></li>
+            <li><strong>1/4 sendok teh merica bubuk.</strong></li>
+            <li><strong>Bumbu halus:</strong>
+                <ul>
+                    <li>3 siung bawang putih</li>
+                    <li>1/2 sendok teh ketumbar bubuk</li>
+                    <li>Sejumput kunyit bubuk (untuk warna lebih menarik)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Langkah-langkah Pembuatan</h2>
+        <ol class="steps-list">
+            <li><strong>Persiapan Sayuran:</strong> Cuci bersih semua sayuran. Iris wortel, kol, dan daun bawang sesuai selera. Jika menggunakan buncis, potong-potong pendek. Tauge cukup disiangi dan dicuci bersih.</li>
+            <li><strong>Membuat Adonan Tepung:</strong> Dalam mangkuk besar, campurkan tepung terigu dan tepung beras. Tambahkan garam, kaldu bubuk, merica bubuk, serta bumbu halus (bawang putih, ketumbar, kunyit). Aduk rata.</li>
+            <li><strong>Menambahkan Cairan:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan tidak ada gumpalan. Adonan sebaiknya tidak terlalu kental dan tidak terlalu encer. Jika menggunakan telur, masukkan telur yang sudah dikocok lepas ke dalam adonan.</li>
+            <li><strong>Memasukkan Sayuran:</strong> Masukkan semua sayuran yang sudah diiris ke dalam adonan tepung. Aduk rata hingga semua sayuran terbalut adonan. Pastikan sayuran tidak terlalu banyak agar bakwan tetap renyah.</li>
+            <li><strong>Menggoreng:</strong> Panaskan minyak goreng dalam jumlah cukup banyak di wajan. Pastikan minyak benar-benar panas sebelum adonan dimasukkan. Ambil satu sendok sayur adonan, lalu goreng hingga matang dan berwarna kuning keemasan. Balik sesekali agar matang merata.</li>
+            <li><strong>Tiriskan:</strong> Setelah bakwan matang dan renyah, angkat dan tiriskan minyaknya menggunakan saringan atau letakkan di atas tisu dapur agar minyak berlebih terserap.</li>
+            <li><strong>Sajikan:</strong> Bakwan sayur siap disajikan selagi hangat bersama cabai rawit, sambal, atau saus favorit Anda.</li>
+        </ol>
+
+        <div class="callout">
+            <strong>Tips Tambahan:</strong> Untuk hasil bakwan yang lebih renyah tahan lama, gunakan air es untuk membuat adonan. Penambahan sedikit tepung beras juga sangat membantu menciptakan tekstur kriuk yang diinginkan. Pastikan minyak benar-benar panas saat menggoreng agar bakwan tidak menyerap banyak minyak dan tetap renyah.
+        </div>
+
+        <p>Membuat bakwan sayur sederhana ini adalah cara yang menyenangkan untuk menikmati sayuran dengan cara yang berbeda. Cocok untuk bekal, camilan keluarga, atau hidangan pendamping. Selamat mencoba dan nikmati kelezatan bakwan buatan sendiri!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-jumbo-beranak">Bakso Jumbo Beranak</a></li>
+<li><a href="/bakso-mercon-putra-betawi">Bakso Mercon Putra Betawi</a></li>
+<li><a href="/bakpia-pathok-yang-enak">Bakpia Pathok Yang Enak</a></li>
+<li><a href="/bakpao-selat-panjang">Bakpao Selat Panjang</a></li>
+<li><a href="/bakpia-pathok-oom-tan">Bakpia Pathok Oom Tan</a></li>
+<li><a href="/nasi-lodho">Nasi Lodho</a></li>
+<li><a href="/bakpia25">Bakpia25</a></li>
+<li><a href="/harga-bakpia-pathok-25-bandara-jaya">Harga Bakpia Pathok 25 Bandara Jaya</a></li>
+<li><a href="/cara-membuat-sayur-ayam">Cara Membuat Sayur Ayam</a></li>
+<li><a href="/bale-gareth">Bale Gareth</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

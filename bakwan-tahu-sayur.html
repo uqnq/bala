@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Tahu Sayur: Resep Mudah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Untuk memastikan border-radius diterapkan */
+        }
+        h1, h2 {
+            color: #00838f; /* Warna cerah yang menenangkan */
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .hero-image {
+            display: block;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 0 10px; /* Sedikit padding di sisi konten */
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        strong {
+            color: #006064;
+        }
+        .recipe-section {
+            background-color: #f0f8ff; /* Latar belakang sedikit berbeda untuk bagian resep */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 5px solid #00838f;
+        }
+        .recipe-section h2 {
+            margin-top: 0;
+            color: #006064;
+            text-align: left;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .instructions li {
+            display: flex;
+            align-items: flex-start; /* Menyelaraskan teks dengan nomor */
+        }
+        .instructions li:before {
+            content: counter(list-item) ". "; /* Menampilkan nomor */
+            font-weight: bold;
+            color: #00838f;
+            margin-right: 10px;
+            display: inline-block;
+            min-width: 30px; /* Agar nomor sejajar */
+            text-align: right;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            .hero-image {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDcwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjcwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlMGZmYmYiLz48cGF0aCBkPSJNIDUwIDUwIEwgNTUwIDE1MCBMIDUwIDI1MCBaIiBmaWxsPSIjMDA4M2JmIi8+PHBhdGggZD0iTSA1NTAgMTUwIEwgNjUwIDUwIEwgNjUwIDI1MCBaIiBmaWxsPSIjMDA4M2JmIi8+PHRleHQgeD0iMTUwIiB5PSIyMTgiIGZpbGw9IiNlMGZmYmYiIGZvbnQtc2l6ZT0iNzUiIGZvbnQtZmFtaWx5PSJzZWdvZSB1aSIsIHdpZHRoPSIxMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjM8L3RleHQ+PHRleHQgeD0iMjkwIiB5PSIxMDkiIGZpbGw9IiNlMGZmYmYiIGZvbnQtc2l6ZT0iNjUiIGZvbnQtZmFtaWx5PSJzZWdvZSB1aSIsIHdpZHRoPSIxMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjY8L3RleHQ+PHRleHQgeD0iNDcwIiB5PSIxNTkiIGZpbGw9IiNlMGZmYmYiIGZvbnQtc2l6ZT0iNTUiIGZvbnQtZmFtaWx5PSJzZWdvZSB1aSIsIHdpZHRoPSIxMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjA8L3RleHQ+PHRleHQgeD0iNjAwIiB5PSIxMTEiIGZpbGw9IiNlMGZmYmYiIGZvbnQtc2l6ZT0iNDUiIGZvbnQtZmFtaWx5PSJzZWdvZSB1aSIsIHdpZHRoPSIxMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjY8L3RleHQ+PHRleHQgeD0iNjAwIiB5PSIyMjQiIGZpbGw9IiNlMGZmYmYiIGZvbnQtc2l6ZT0iNDUiIGZvbnQtZmFtaWx5PSJzZWdvZSB1aSIsIHdpZHRoPSIxMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjA8L3RleHQ+PHRleHQgeD0iNjAwIiB5PSIxNjguNSIgZmlsbD0iI2UwZmZiZiIgdG9vbHRpZD0iI3RleHQ2IiBmb250LXNpemU9IjM1IiBmb250LWZhbWlseT0ic2Vnb2UgdWkiIHdpZHRoPSIxMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjY8L3RleHQ+PHRleHQgeD0iNjAwIiB5PSIyNTEuNSIgZmlsbD0iI2UwZmZiZiIgdG9vbHRpZD0iI3RleHQ3IiBmb250LXNpemU9IjM1IiBmb250LWZhbWlseT0ic2Vnb2UgdWkiIHdpZHRoPSIxMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjA8L3RleHQ+PC9zdmc+
+        alt="Ilustrasi bakwan tahu sayur dengan warna cerah" class="hero-image">
+        <div class="content">
+            <h1>Bakwan Tahu Sayur: Camilan Sehat dan Menggugah Selera</h1>
+            <p>
+                Siapa yang bisa menolak kelezatan bakwan? Camilan gurih ini selalu menjadi favorit banyak orang, baik sebagai teman minum teh di sore hari maupun pendamping nasi saat makan. Kali ini, kita akan mencoba variasi bakwan yang lebih sehat dan bergizi: bakwan tahu sayur. Kombinasi tahu yang lembut dengan aneka sayuran segar menciptakan tekstur yang unik dan rasa yang tak kalah nikmat dari bakwan biasa. Resep ini sangat cocok untuk Anda yang ingin menikmati hidangan lezat tanpa merasa bersalah, serta bisa menjadi pilihan ideal untuk bekal anak atau sajian saat berkumpul bersama keluarga.
+            </p>
+
+            <p>
+                Bakwan tahu sayur bukan hanya sekadar camilan, tetapi juga sumber protein dari tahu dan serat serta vitamin dari beragam sayuran yang digunakan. Proses pembuatannya pun tergolong mudah dan cepat, sehingga Anda bisa menyajikannya kapan saja. Penambahan tahu dalam adonan bakwan membuatnya menjadi lebih padat namun tetap renyah di luar dan lembut di dalam. Ditambah lagi dengan pilihan sayuran yang bisa disesuaikan dengan selera dan ketersediaan di dapur Anda, membuat resep ini semakin fleksibel.
+            </p>
+
+            <div class="recipe-section">
+                <h2>Bahan-bahan Bakwan Tahu Sayur</h2>
+                <ul class="ingredients">
+                    <li>2 buah tahu putih ukuran sedang, haluskan (sekitar 200 gram)</li>
+                    <li>100 gram tepung terigu</li>
+                    <li>50 gram tepung beras</li>
+                    <li>1 butir telur ayam</li>
+                    <li>1 batang wortel, serut kasar atau potong korek api tipis</li>
+                    <li>50 gram kol, iris tipis</li>
+                    <li>50 gram buncis, iris tipis</li>
+                    <li>2 batang daun bawang, iris halus</li>
+                    <li>2 siung bawang putih, haluskan</li>
+                    <li>1/2 sendok teh merica bubuk</li>
+                    <li>1 sendok teh garam (sesuaikan selera)</li>
+                    <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+                    <li>Minyak goreng secukupnya</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h2>Cara Membuat Bakwan Tahu Sayur</h2>
+                <ol class="instructions">
+                    <li>
+                        Dalam wadah besar, campurkan tahu halus, tepung terigu, tepung beras, telur, wortel, kol, buncis, dan daun bawang. Aduk rata.
+                    </li>
+                    <li>
+                        Masukkan bumbu halus: bawang putih, merica, garam, dan kaldu bubuk (jika menggunakan). Aduk kembali hingga semua bahan tercampur merata dan membentuk adonan yang kental. Jika adonan terlalu kering, tambahkan sedikit air, namun jangan sampai terlalu encer agar bakwan tidak lembek.
+                    </li>
+                    <li>
+                        Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam saat digoreng.
+                    </li>
+                    <li>
+                        Ambil satu sendok makan adonan, bentuk agak pipih, lalu masukkan ke dalam minyak panas. Goreng bakwan hingga berwarna cokelat keemasan dan matang merata di kedua sisinya. Jangan terlalu banyak mengisi wajan agar bakwan matang sempurna dan renyah.
+                    </li>
+                    <li>
+                        Angkat bakwan tahu sayur yang sudah matang, tiriskan minyaknya menggunakan tisu dapur agar tidak terlalu berminyak.
+                    </li>
+                    <li>
+                        Sajikan bakwan tahu sayur selagi hangat bersama saus sambal, cabai rawit, atau cocolan kesukaan Anda.
+                    </li>
+                </ol>
+            </div>
+
+            <p>
+                Nikmati bakwan tahu sayur buatan sendiri yang renyah di luar, lembut di dalam, dan kaya akan nutrisi. Camilan ini adalah bukti bahwa makanan sehat bisa tetap terasa lezat dan memuaskan. Selamat mencoba dan selamat menikmati!
+            </p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-tek-ling-pao">Bakpao Tek Ling Pao</a></li>
+<li><a href="/bakwan-jagung-cetak">Bakwan Jagung Cetak</a></li>
+<li><a href="/bakwan-keju">Bakwan Keju</a></li>
+<li><a href="/cara-buat-bakwan-tempe">Cara Buat Bakwan Tempe</a></li>
+<li><a href="/bakwan-udang-jagung">Bakwan Udang Jagung</a></li>
+<li><a href="/bakwan-mie-jagung">Bakwan Mie Jagung</a></li>
+<li><a href="/bocah-gunung-bakso-beranak">Bocah Gunung Bakso Beranak</a></li>
+<li><a href="/bakpia-kumbu-hitam-kencana">Bakpia Kumbu Hitam Kencana</a></li>
+<li><a href="/bakpao-menul">Bakpao Menul</a></li>
+<li><a href="/isian-bakpia-keju">Isian Bakpia Keju</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

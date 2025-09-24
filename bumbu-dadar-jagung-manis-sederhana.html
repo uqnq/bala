@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumbu Dadar Jagung Manis Sederhana</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #34D399; /* Hijau sejuk */
+            --secondary-color: #FFEDD5; /* Oranye cerah */
+            --background-color: #F0FFF4; /* Hijau muda pucat */
+            --text-color: #1A202C; /* Teks gelap */
+            --heading-color: #2C5282; /* Biru gelap untuk judul */
+            --card-bg: #FFFFFF; /* Latar belakang putih untuk kartu */
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif; /* Font yang ramah di mata */
+            margin: 0;
+            padding: 15px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alignment ke atas */
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px var(--shadow);
+            overflow: hidden;
+            margin-top: 20px; /* Jarak dari atas */
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            position: relative; /* Untuk menempatkan SVG */
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header .svg-icon {
+            position: absolute;
+            bottom: -25px; /* Menempatkan SVG sedikit di bawah header */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: auto;
+            opacity: 0.8;
+        }
+
+        .content {
+            padding: 30px 20px;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 15px;
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Responsiveness for small screens */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p, ul {
+                font-size: 1em;
+            }
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+            .header .svg-icon {
+                width: 80px;
+                bottom: -20px;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Resep Bumbu Dadar Jagung Manis Sederhana</h1>
+            <svg class="svg-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 0C77.6142 0 100 22.3858 100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50C0 22.3858 22.3858 0 50 0ZM63.9555 46.3525L50 32.3969L36.0445 46.3525C34.0435 48.3535 34.0435 51.6465 36.0445 53.6475L50 67.6031L63.9555 53.6475C65.9565 51.6465 65.9565 48.3535 63.9555 46.3525Z" fill="white"/>
+                <circle cx="50" cy="50" r="15" fill="var(--secondary-color)"/>
+            </svg>
+        </div>
+        <div class="content">
+            <h2>Sensasi Manis Gurih dalam Satu Gigitan!</h2>
+            <p>Siapa yang tidak suka dadar jagung manis? Camilan renyah, manis, dan gurih ini selalu jadi favorit, baik dinikmati saat santai maupun sebagai teman makan. Membuatnya pun sangat mudah, bahkan bagi pemula sekalipun. Kunci kelezatan dadar jagung terletak pada bumbunya yang pas dan sederhana. Tidak perlu bahan yang rumit, beberapa bumbu dapur umum sudah cukup untuk menciptakan rasa yang istimewa.</p>
+
+            <p>Artikel ini akan memandu Anda membuat bumbu dadar jagung manis yang sederhana namun menghasilkan rasa yang kaya dan menggugah selera. Dengan resep ini, dadar jagung Anda tidak hanya sekadar camilan, tapi sebuah hidangan kecil yang membangkitkan kenangan manis.</p>
+
+            <h2>Bahan-Bahan Bumbu Dadar Jagung Sederhana:</h2>
+            <ul>
+                <li>1-2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk (opsional, untuk aroma lebih kaya)</li>
+                <li>Garam secukupnya (sesuaikan selera manis jagung Anda)</li>
+                <li>Sedikit gula pasir (opsional, jika jagung kurang manis)</li>
+                <li>Merica bubuk secukupnya</li>
+                <li>1 butir telur ayam</li>
+                <li>2-3 sendok makan tepung terigu</li>
+                <li>1 batang daun bawang, iris tipis (untuk warna dan aroma segar)</li>
+            </ul>
+
+            <h2>Cara Meracik Bumbu yang Menggugah Selera:</h2>
+            <p>Membuat bumbu dadar jagung ini semudah membalik telapak tangan. Campurkan semua bahan bumbu di atas dalam sebuah wadah. Pastikan jagung manis sudah diserut atau dipotong kecil-kecil terlebih dahulu.</p>
+            <ol>
+                <li>Dalam mangkuk, campurkan bawang putih halus, ketumbar bubuk (jika menggunakan), garam, gula pasir (jika menggunakan), dan merica bubuk.</li>
+                <li>Masukkan telur ayam ke dalam campuran bumbu, kocok lepas hingga tercampur rata.</li>
+                <li>Tambahkan tepung terigu sedikit demi sedikit sambil diaduk hingga membentuk adonan kental yang bisa melapisi jagung. Jangan terlalu encer agar dadar tidak mudah hancur saat digoreng.</li>
+                <li>Masukkan irisan daun bawang, aduk rata.</li>
+                <li>Terakhir, masukkan jagung manis yang sudah disiapkan ke dalam adonan bumbu. Aduk hingga semua butiran jagung terbalut rata oleh adonan.</li>
+            </ol>
+
+            <h2>Tips Agar Dadar Jagung Makin Sempurna:</h2>
+            <ul>
+                <li><span class="highlight">Kualitas Jagung:</span> Gunakan jagung manis segar yang masih muda. Rasanya lebih manis alami dan teksturnya lebih lembut.</li>
+                <li><span class="highlight">Konsistensi Adonan:</span> Jika adonan terasa terlalu kental, tambahkan sedikit air atau sedikit tepung lagi jika terlalu encer. Adonan yang pas akan melapisi jagung tanpa menetes berlebihan.</li>
+                <li><span class="highlight">Minyak Panas:</span> Goreng dadar jagung dalam minyak panas yang cukup banyak. Ini akan membuat dadar matang merata, renyah di luar, dan lembut di dalam.</li>
+                <li><span class="highlight">Variasi:</span> Anda bisa menambahkan sedikit irisan cabai rawit jika suka rasa pedas.</li>
+            </ul>
+
+            <p>Dengan bumbu dadar jagung manis sederhana ini, Anda bisa menciptakan camilan lezat kapan saja. Cocok dinikmati selagi hangat, apalagi saat cuaca mendung. Aroma harum dan rasa manis gurihnya pasti akan membuat semua orang ketagihan.</p>
+
+            <a href="#explore-more" class="cta-button">Coba Resepnya Sekarang!</a>
+        </div>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/tepung-perkedel-sasa">Tepung Perkedel Sasa</a></li>
+<li><a href="/isian-bakpao-kacang-merah">Isian Bakpao Kacang Merah</a></li>
+<li><a href="/bakteri-coliform-pada-air">Bakteri Coliform Pada Air</a></li>
+<li><a href="/memasak-bakwan">Memasak Bakwan</a></li>
+<li><a href="/mamasuka-tepung-bakwan">Mamasuka Tepung Bakwan</a></li>
+<li><a href="/lokasi-bakso-mercon">Lokasi Bakso Mercon</a></li>
+<li><a href="/bakwan-jagung-tanpa-daun-bawang">Bakwan Jagung Tanpa Daun Bawang</a></li>
+<li><a href="/bakpia-731-dewa">Bakpia 731 Dewa</a></li>
+<li><a href="/resep-bakwan-kawi-goreng-tanpa-daging">Resep Bakwan Kawi Goreng Tanpa Daging</a></li>
+<li><a href="/cara-membuat-bumbu-dadar-jagung">Cara Membuat Bumbu Dadar Jagung</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

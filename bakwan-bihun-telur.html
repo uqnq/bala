@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Bihun Telur: Resep Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #80CBC4; /* Biru kehijauan sejuk */
+            --secondary-color: #FFF59D; /* Kuning lembut cerah */
+            --text-color: #333;
+            --bg-color: #E0F7FA; /* Latar belakang biru muda */
+            --card-bg: #FFFFFF;
+            --accent-color: #FFAB91; /* Oranye kemerahan untuk aksen */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+        }
+
+        .content-section {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .content-section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .content-section ul, .content-section ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .recipe-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            .content-section h2 {
+                font-size: 1.5em;
+            }
+            .content-section p, .content-section li {
+                font-size: 1em;
+            }
+            .container {
+                margin: 10px auto;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bakwan Bihun Telur: Kelezatan Sederhana di Meja Anda</h1>
+        </header>
+
+        <div class="recipe-image">
+            <!-- SVG Gambar Bakwan Bihun Telur -->
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakwanTitle">
+                <title id="bakwanTitle">Ilustrasi bakwan bihun telur yang lezat</title>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--secondary-color);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--accent-color);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Latar belakang kecoklatan untuk bakwan -->
+                <rect x="20" y="20" width="360" height="210" rx="15" ry="15" fill="#D2B48C" />
+                <!-- Bihun yang kusut -->
+                <path d="M 50 40 Q 70 50 60 70 T 90 80 T 110 90 T 130 80 T 150 100 T 170 90 T 190 110" fill="none" stroke="#EEE8AA" stroke-width="3" />
+                <path d="M 200 50 Q 220 60 210 80 T 240 90 T 260 100 T 280 90 T 300 110 T 320 100 T 340 120" fill="none" stroke="#EEE8AA" stroke-width="3" />
+                <!-- Gumpalan Telur -->
+                <ellipse cx="100" cy="70" rx="30" ry="25" fill="#FFF9C4" />
+                <ellipse cx="230" cy="80" rx="35" ry="30" fill="#FFF9C4" />
+                <ellipse cx="170" cy="100" rx="28" ry="22" fill="#FFF9C4" />
+                <!-- Garis halus untuk tekstur -->
+                <line x1="60" y1="50" x2="80" y2="60" stroke="#FFF5EE" stroke-width="1" />
+                <line x1="100" y1="70" x2="120" y2="80" stroke="#FFF5EE" stroke-width="1" />
+                <line x1="210" y1="60" x2="230" y2="70" stroke="#FFF5EE" stroke-width="1" />
+                <line x1="250" y1="90" x2="270" y2="100" stroke="#FFF5EE" stroke-width="1" />
+                <!-- Aksen Bumbu (opsional, sedikit hijau) -->
+                <circle cx="40" cy="60" r="3" fill="#C8E6C9" />
+                <circle cx="280" cy="40" r="3" fill="#C8E6C9" />
+            </svg>
+        </div>
+
+        <div class="content-section">
+            <h2>Mengenal Bakwan Bihun Telur</h2>
+            <p>
+                Bakwan bihun telur adalah salah satu camilan atau lauk pendamping yang sangat digemari di Indonesia.
+                Perpaduan gurihnya adonan bakwan, tekstur kenyal dari bihun, dan lezatnya telur menjadikannya favorit banyak orang.
+                Seringkali, hidangan ini hadir saat acara kumpul keluarga, sebagai teman ngopi di sore hari, atau bahkan disantap sebagai menu sarapan ringan.
+                Keistimewaannya terletak pada kesederhanaan bahan namun menghasilkan cita rasa yang luar biasa.
+                Proses pembuatannya pun relatif cepat dan mudah, membuatnya menjadi pilihan ideal ketika Anda ingin menyajikan hidangan yang lezat tanpa repot.
+                Dengan sentuhan bumbu yang pas, bakwan bihun telur bisa menjadi bintang di meja makan Anda.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>Kenapa Bakwan Bihun Telur Begitu Spesial?</h2>
+            <p>
+                Keunggulan utama dari bakwan bihun telur adalah kemampuannya untuk memuaskan selera siapa saja.
+                Tekstur renyah di luar berpadu dengan isian yang lembut dan kenyal di dalam memberikan pengalaman makan yang menyenangkan.
+                Bihun yang digunakan akan menyerap bumbu dan memberikan sensasi unik yang berbeda dari bakwan biasa yang hanya menggunakan sayuran.
+                Penambahan telur tidak hanya memperkaya rasa tetapi juga membuat adonan lebih padat dan gurih.
+                Selain itu, bakwan bihun telur juga sangat fleksibel. Anda bisa menambahkan berbagai jenis sayuran seperti wortel parut, kol iris tipis, atau daun bawang cincang untuk menambah nutrisi dan variasi warna.
+                Kreativitas dalam bumbu juga menjadi kunci; Anda bisa menyesuaikan tingkat kepedasan, keasaman, atau menambahkan rempah-rempah aromatik sesuai selera keluarga.
+                Ini adalah hidangan yang benar-benar bisa Anda personalisasi.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>Tips Membuat Bakwan Bihun Telur Sempurna</h2>
+            <p>
+                Membuat bakwan bihun telur yang lezat memerlukan beberapa trik sederhana. Berikut adalah beberapa tips agar hasil Anda maksimal:
+            </p>
+            <ol>
+                <li>
+                    <strong>Rendam Bihun dengan Benar:</strong> Rendam bihun kering dalam air panas hingga cukup lunak, lalu tiriskan. Pastikan tidak terlalu lembek agar teksturnya tetap terasa saat digoreng.
+                </li>
+                <li>
+                    <strong>Gunakan Tepung yang Tepat:</strong> Campuran tepung terigu dan tepung beras biasanya memberikan hasil yang lebih renyah. Perbandingan 2:1 atau 3:1 (terigu:beras) seringkali menjadi pilihan yang baik.
+                </li>
+                <li>
+                    <strong>Bumbu Halus yang Segar:</strong> Haluskan bawang putih, merica, dan ketumbar secukupnya. Bumbu yang segar akan memberikan aroma dan rasa yang lebih kuat. Jangan lupa garam secukupnya.
+                </li>
+                <li>
+                    <strong>Kocok Telur dengan Sempurna:</strong> Kocok telur lepas sebelum dicampurkan ke adonan. Ini membantu agar telur merata dan mengikat bahan-bahan lainnya dengan baik.
+                </li>
+                <li>
+                    <strong>Adonan Jangan Terlalu Kental/Cair:</strong> Adonan harus cukup kental untuk membalut bihun dan sayuran, tetapi tidak terlalu pekat agar tidak bantat. Tambahkan sedikit air jika perlu.
+                </li>
+                <li>
+                    <strong>Goreng dengan Minyak Panas:</strong> Pastikan minyak goreng benar-benar panas sebelum memasukkan adonan. Gunakan api sedang agar bakwan matang merata hingga ke dalam dan renyah di luar. Goreng hingga berwarna kuning keemasan.
+                </li>
+                <li>
+                    <strong>Tiriskan dengan Baik:</strong> Setelah digoreng, tiriskan bakwan di atas rak kawat atau tisu dapur untuk menghilangkan sisa minyak.
+                </li>
+            </ol>
+            <p>
+                Dengan mengikuti panduan ini, Anda akan dapat menciptakan <span class="highlight">bakwan bihun telur</span> yang renyah di luar, lembut di dalam, dan penuh cita rasa. Selamat mencoba!
+            </p>
+        </div>
+
+        <footer>
+            Artikel ini berbagi resep sederhana untuk bakwan bihun telur.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-gorengan-jagung-manis">Cara Membuat Gorengan Jagung Manis</a></li>
+<li><a href="/resep-bakso-mercon-sederhana">Resep Bakso Mercon Sederhana</a></li>
+<li><a href="/resep-masakan-dari-pentol">Resep Masakan Dari Pentol</a></li>
+<li><a href="/bumbu-bakwan-biar-renyah">Bumbu Bakwan Biar Renyah</a></li>
+<li><a href="/bakwan-jagung-ayam">Bakwan Jagung Ayam</a></li>
+<li><a href="/bakpia-pathok-24">Bakpia Pathok 24</a></li>
+<li><a href="/bakwan-sosis">Bakwan Sosis</a></li>
+<li><a href="/aneka-bakpao-kukus">Aneka Bakpao Kukus</a></li>
+<li><a href="/bakpia-mumboel">Bakpia Mumboel</a></li>
+<li><a href="/bumbu-ikan-goreng-bawal">Bumbu Ikan Goreng Bawal</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

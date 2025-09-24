@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Bikin Perkedel Jagung Lezat & Crispy</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #77DD77; /* Hijau cerah */
+            --color-secondary: #ADD8E6; /* Biru muda */
+            --color-accent: #FFB347; /* Oranye lembut */
+            --color-text-dark: #333;
+            --color-text-light: #fff;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 20px;
+            background-color: #f0fff0; /* Warna latar belakang hijau pucat */
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--color-text-light);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img.main-image {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .step {
+            background-color: var(--color-secondary);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .step-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--color-primary);
+            background-color: var(--color-text-light);
+            padding: 10px 15px;
+            border-radius: 50%;
+            min-width: 50px;
+            text-align: center;
+            flex-shrink: 0; /* Mencegah angka mengecil */
+        }
+
+        .step-content {
+            flex-grow: 1;
+        }
+
+        .ingredient-list li, .step-content li {
+            color: var(--color-text-dark);
+        }
+
+        .highlight {
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+            .step-number {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Bikin Perkedel Jagung Lezat dan Crispy</h1>
+
+        <svg width="150" height="150" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="main-image" aria-label="Ilustrasi perkedel jagung renyah">
+            <path d="M50 0C77.6142 0 100 22.3858 100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50C0 22.3858 22.3858 0 50 0ZM82.5 36.875C81.1473 36.3019 79.7447 36.0196 78.3077 36.0308C76.8707 36.042 75.4443 36.3467 74.0717 36.9333C72.6992 37.5199 71.4071 38.375 70.25 39.4375L50 59.6875L29.75 39.4375C28.5929 38.375 27.3008 37.5199 25.9283 36.9333C24.5557 36.3467 23.1293 36.042 21.6923 36.0308C20.2553 36.0196 18.8527 36.3019 17.5 36.875C18.8527 37.4481 20.2553 37.7304 21.6923 37.7416C23.1293 37.7528 24.5557 38.0575 25.9283 38.6441C27.3008 39.2308 28.5929 40.0858 29.75 41.1473C30.9071 42.2088 31.8383 43.5312 32.4375 45C32.8596 44.2875 33.4723 43.6681 34.2052 43.1818C34.9381 42.6954 35.7766 42.3506 36.6719 42.1719C37.5672 41.9931 38.4922 41.9931 39.375 42.1719C40.2578 42.3506 41.0963 42.6954 41.8292 43.1818C42.5621 43.6681 43.1748 44.2875 43.5969 45C44.019 44.2875 44.6317 43.6681 45.3646 43.1818C46.0975 42.6954 46.936 42.3506 47.8313 42.1719C48.7266 41.9931 49.6516 41.9931 50.5344 42.1719C51.4172 42.3506 52.2557 42.6954 52.9886 43.1818C53.7215 43.6681 54.3342 44.2875 54.7563 45C55.1784 44.2875 55.7911 43.6681 56.524 43.1818C57.2569 42.6954 58.0954 42.3506 58.9907 42.1719C59.886 41.9931 60.811 41.9931 61.6938 42.1719C62.5766 42.3506 63.4151 42.6954 64.148 43.1818C64.8809 43.6681 65.4936 44.2875 65.9157 45C66.3378 43.5312 67.269 42.2088 68.4261 41.1473C69.5832 40.0858 70.8753 39.2308 72.2479 38.6441C73.6204 38.0575 75.0468 37.7528 76.4838 37.7416C77.9208 37.7304 79.3234 37.4481 80.6761 36.875C79.3234 36.3019 77.9208 36.0196 76.4838 36.0308C75.0468 36.042 73.6204 36.3467 72.2479 36.9333C70.8753 37.5199 69.5832 38.375 68.4261 39.4375L50 59.6875L31.574 39.4375C30.4169 38.375 29.1248 37.5199 27.7523 36.9333C26.3797 36.3467 24.9533 36.042 23.5163 36.0308C22.0793 36.0196 20.6767 36.3019 19.3239 36.875C20.6767 37.4481 22.0793 37.7304 23.5163 37.7416C24.9533 37.7528 26.3797 38.0575 27.7523 38.6441C29.1248 39.2308 30.4169 40.0858 31.574 41.1473L50 59.6875L68.4261 39.4375C69.5832 38.375 70.8753 37.5199 72.2479 36.9333C73.6204 36.3467 75.0468 36.042 76.4838 36.0308C77.9208 36.0196 79.3234 36.3019 80.6761 36.875C79.3234 37.4481 77.9208 37.7304 76.4838 37.7416C75.0468 37.7528 73.6204 38.0575 72.2479 38.6441C70.8753 39.2308 69.5832 40.0858 68.4261 41.1473L50 59.6875L31.574 41.1473C30.4169 40.0858 29.1248 39.2308 27.7523 38.6441C26.3797 38.0575 24.9533 37.7528 23.5163 37.7416C22.0793 37.7304 20.6767 37.4481 19.3239 36.875C20.6767 36.3019 22.0793 36.0196 23.5163 36.0308C24.9533 36.042 26.3797 36.3467 27.7523 36.9333C29.1248 37.5199 30.4169 38.375 31.574 39.4375L50 59.6875L68.4261 41.1473C69.5832 40.0858 70.8753 39.2308 72.2479 38.6441C73.6204 38.0575 75.0468 37.7528 76.4838 37.7416C77.9208 37.7304 79.3234 37.4481 80.6761 36.875Z" fill="#FFB347"/>
+            <circle cx="50" cy="50" r="10" fill="#77DD77"/>
+            <path d="M70 30L80 40L70 50L60 40L70 30Z" fill="#ADD8E6"/>
+            <path d="M30 30L40 40L30 50L20 40L30 30Z" fill="#ADD8E6"/>
+            <path d="M50 70L60 80L50 90L40 80L50 70Z" fill="#FFB347"/>
+        </svg>
+
+        <p>Perkedel jagung adalah camilan gurih yang sangat digemari, terutama di Indonesia. Sensasi manis dari jagung berpadu dengan tekstur yang renyah di luar dan lembut di dalam membuatnya jadi favorit keluarga. Membuat perkedel jagung sendiri di rumah ternyata tidak sulit, lho! Dengan beberapa langkah sederhana, Anda bisa menyajikan hidangan lezat ini kapan saja.</p>
+
+        <p>Artikel ini akan memandu Anda <strong class="highlight">cara bikin perkedel jagung</strong> yang enak, mulai dari pemilihan bahan hingga tips menggoreng agar hasilnya sempurna.</p>
+
+        <h2>Bahan-bahan</h2>
+        <ul class="ingredient-list">
+            <li>2 buah jagung manis, pipil</li>
+            <li>5 sendok makan tepung terigu</li>
+            <li>2 sendok makan tepung beras</li>
+            <li>1 butir telur</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh ketumbar bubuk</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>Garam secukupnya</li>
+            <li>Gula pasir secukupnya (opsional, untuk menambah rasa manis)</li>
+            <li>Daun bawang, iris tipis (opsional, untuk aroma)</li>
+            <li>Cabai rawit, iris tipis (opsional, jika suka pedas)</li>
+            <li>Minyak goreng secukupnya</li>
+        </ul>
+
+        <h2>Langkah-langkah Membuat Perkedel Jagung</h2>
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h3>Siapkan Jagung</h3>
+                <p>Pipil jagung manis. Anda bisa memipilnya langsung dengan pisau atau menggunakan alat khusus pemipil jagung. Sisihkan.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h3>Buat Adonan Dasar</h3>
+                <p>Dalam sebuah wadah, campurkan tepung terigu dan tepung beras. Tambahkan telur, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan gula pasir (jika pakai). Aduk rata hingga semua bahan tercampur.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h3>Masukkan Jagung dan Bahan Lain</h3>
+                <p>Masukkan jagung yang sudah dipipil ke dalam adonan. Jika menggunakan daun bawang dan irisan cabai rawit, masukkan juga pada tahap ini. Aduk kembali hingga adonan dan jagung tercampur sempurna. Adonan tidak perlu terlalu kental, sedikit encer justru akan membuat perkedel lebih renyah.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h3>Panaskan Minyak</h3>
+                <p>Siapkan wajan dan panaskan minyak goreng secukupnya dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum menggoreng agar perkedel tidak menyerap banyak minyak dan hasilnya renyah.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <h3>Goreng Perkedel Jagung</h3>
+                <p>Ambil satu sendok makan adonan, lalu goreng perlahan ke dalam minyak panas. Anda bisa membentuknya sedikit pipih agar matang merata. Goreng hingga berwarna cokelat keemasan dan matang di kedua sisinya.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">
+                <h3>Tiriskan dan Sajikan</h3>
+                <p>Angkat perkedel jagung yang sudah matang, lalu tiriskan di atas tisu dapur untuk menyerap kelebihan minyak. Sajikan perkedel jagung selagi hangat sebagai camilan atau lauk pendamping.</p>
+            </div>
+        </div>
+
+        <h2>Tips Agar Perkedel Jagung Makin Mantap</h2>
+        <ul>
+            <li>Gunakan jagung manis yang masih segar agar rasa manisnya optimal.</li>
+            <li>Jangan terlalu banyak menambahkan air atau telur ke dalam adonan. Adonan yang terlalu encer akan mudah hancur saat digoreng.</li>
+            <li>Goreng dengan api sedang cenderung kecil agar perkedel matang merata hingga ke dalam. Jika api terlalu besar, bagian luar akan cepat gosong sementara bagian dalam masih mentah.</li>
+            <li>Untuk hasil yang lebih crispy, tambahkan sedikit tepung beras ke dalam adonan.</li>
+            <li>Jika ingin aroma yang lebih sedap, Anda bisa menambahkan sedikit parutan kencur pada adonan.</li>
+        </ul>
+
+        <p>Membuat perkedel jagung memang menyenangkan. Anda bisa bereksperimen dengan menambahkan bahan lain seperti udang cincang, wortel parut halus, atau bumbu rempah lainnya sesuai selera. Selamat mencoba <strong class="highlight">cara bikin perkedel jagung</strong> ini di rumah!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-nutrient-broth">Cara Membuat Nutrient Broth</a></li>
+<li><a href="/bakso-mercon-goyang-lidah">Bakso Mercon Goyang Lidah</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-kriuk">Cara Membuat Bakwan Sayur Kriuk</a></li>
+<li><a href="/bakpia-pathok-39">Bakpia Pathok 39</a></li>
+<li><a href="/cara-memanaskan-bakpao-frozen">Cara Memanaskan Bakpao Frozen</a></li>
+<li><a href="/bakteri-mtb">Bakteri Mtb</a></li>
+<li><a href="/cara-membuat-kue-bawang-jagung">Cara Membuat Kue Bawang Jagung</a></li>
+<li><a href="/bakso-beranak-tegalega">Bakso Beranak Tegalega</a></li>
+<li><a href="/bakwan-sayur-bulat">Bakwan Sayur Bulat</a></li>
+<li><a href="/resep-ote-ote-tauge">Resep Ote Ote Tauge</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

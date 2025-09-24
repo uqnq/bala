@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Dadar Jagung Lezat & Praktis</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang biru muda cerah */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1, h2 {
+            color: #00838f; /* Warna judul biru kehijauan sejuk */
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        img.main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .recipe-section {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #b2ebf2; /* Garis pemisah biru sangat muda */
+        }
+        .recipe-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .ingredients li, .instructions li {
+            position: relative;
+            padding-left: 25px;
+        }
+        .ingredients li::before, .instructions li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #00bcd4; /* Warna titik oranye cerah */
+        }
+        .ingredients li::before {
+            background-color: #ffb74d; /* Warna titik oranye */
+        }
+        .instructions li::before {
+            background-color: #00bcd4; /* Warna titik cyan */
+        }
+        strong {
+            color: #00796b; /* Warna teks tebal biru kehijauan gelap */
+        }
+        .tip {
+            background-color: #fff9c4; /* Latar belakang kuning muda cerah */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #fbc02d; /* Garis batas kuning cerah */
+        }
+        .tip p {
+            margin: 0;
+            color: #5d4037; /* Warna teks coklat tua */
+        }
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #78909c; /* Warna abu-abu kebiruan */
+        }
+
+        /* SVG Styles */
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .jagung-icon {
+            width: 100px;
+            height: 100px;
+            fill: #fbc02d; /* Warna kuning jagung */
+        }
+        .leaf-left {
+            fill: #8bc34a; /* Warna hijau daun */
+            transform-origin: center;
+            animation: sway 2s infinite ease-in-out alternate;
+        }
+        .leaf-right {
+            fill: #8bc34a;
+            transform-origin: center;
+            animation: sway 2s infinite ease-in-out alternate reverse;
+        }
+
+        @keyframes sway {
+            0% { transform: rotate(-5deg); }
+            100% { transform: rotate(5deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-container">
+            <svg class="jagung-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Batang Jagung -->
+                <path d="M50 0 L45 90 L55 90 Z" fill="#8bc34a"/>
+                <!-- Biji Jagung (representasi sederhana) -->
+                <circle cx="30" cy="30" r="5" fill="#fbc02d"/>
+                <circle cx="40" cy="35" r="5" fill="#fbc02d"/>
+                <circle cx="50" cy="40" r="5" fill="#fbc02d"/>
+                <circle cx="60" cy="35" r="5" fill="#fbc02d"/>
+                <circle cx="70" cy="30" r="5" fill="#fbc02d"/>
+
+                <circle cx="25" cy="45" r="5" fill="#fbc02d"/>
+                <circle cx="35" cy="50" r="5" fill="#fbc02d"/>
+                <circle cx="45" cy="55" r="5" fill="#fbc02d"/>
+                <circle cx="55" cy="50" r="5" fill="#fbc02d"/>
+                <circle cx="65" cy="45" r="5" fill="#fbc02d"/>
+                <circle cx="75" cy="40" r="5" fill="#fbc02d"/>
+
+                <circle cx="20" cy="60" r="5" fill="#fbc02d"/>
+                <circle cx="30" cy="65" r="5" fill="#fbc02d"/>
+                <circle cx="40" cy="70" r="5" fill="#fbc02d"/>
+                <circle cx="50" cy="65" r="5" fill="#fbc02d"/>
+                <circle cx="60" cy="60" r="5" fill="#fbc02d"/>
+                <circle cx="70" cy="55" r="5" fill="#fbc02d"/>
+                <circle cx="80" cy="50" r="5" fill="#fbc02d"/>
+
+                <!-- Daun -->
+                <path class="leaf-left" d="M40 10 Q 20 30 35 50 Z"/>
+                <path class="leaf-right" d="M60 10 Q 80 30 65 50 Z"/>
+            </svg>
+        </div>
+
+        <h1>Resep Bakwan Dadar Jagung Lezat & Praktis</h1>
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan dadar jagung adalah salah satu jajanan pasar favorit yang tak pernah lekang oleh waktu. Perpaduan manisnya jagung, gurihnya adonan tepung, dan tekstur yang renyah di luar lembut di dalam menjadikannya pilihan sempurna untuk teman ngopi atau sekadar menemani santai.</p>
+        <p>Membuat bakwan dadar jagung sendiri di rumah ternyata sangat mudah dan tidak memerlukan bahan-bahan yang sulit ditemukan. Dengan sedikit sentuhan kreativitas, Anda bisa menciptakan bakwan dadar jagung yang tak kalah lezat dari yang dijual di pasaran. Yuk, simak resep lengkapnya!</p>
+
+        <div class="recipe-section">
+            <h2>Bahan-Bahan Utama</h2>
+            <ul class="ingredients">
+                <li>2 buah jagung manis, pipil atau serut kasar</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras</li>
+                <li>1 butir telur</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk (opsional, sesuai selera)</li>
+                <li>Air secukupnya (sekitar 100-150 ml, sesuaikan adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Langkah-Langkah Membuat</h2>
+            <ol class="instructions">
+                <li><strong>Persiapan Jagung:</strong> Pipil atau serut kasar dua buah jagung manis. Jika menggunakan jagung pipil, Anda bisa sedikit menumbuknya agar teksturnya lebih keluar.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam wadah, campurkan tepung terigu dan tepung beras. Masukkan telur, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika pakai). Aduk rata.</li>
+                <li><strong>Menambahkan Jagung dan Daun Bawang:</strong> Masukkan jagung pipil/serut dan irisan daun bawang ke dalam adonan tepung.</li>
+                <li><strong>Mengatur Kekentalan:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer agar tidak mudah pecah saat digoreng, namun juga tidak terlalu kental agar bakwan tidak keras. Kekentalannya mirip adonan untuk bakwan sayur pada umumnya.</li>
+                <li><strong>Proses Menggoreng:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum mulai menggoreng.</li>
+                <li><strong>Mendadar Bakwan:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Ratakan sedikit dengan punggung sendok agar bentuknya melebar seperti dadar. Goreng hingga satu sisi berwarna kuning keemasan dan matang.</li>
+                <li><strong>Membalik dan Menyelesaikan:</strong> Balik bakwan, goreng sisi satunya hingga matang dan berwarna serupa. Angkat dan tiriskan bakwan yang sudah matang.</li>
+                <li><strong>Sajikan:</strong> Bakwan dadar jagung siap disajikan selagi hangat. Nikmati bersama cabai rawit hijau, saus sambal, atau lontong.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips untuk Bakwan Dadar Jagung Sempurna</h2>
+            <div class="tip">
+                <p><strong>Tips 1:</strong> Gunakan jagung manis segar untuk rasa terbaik. Jika ingin sensasi rasa yang lebih unik, Anda bisa menambahkan sedikit irisan cabai rawit merah ke dalam adonan.</p>
+                <p><strong>Tips 2:</strong> Pastikan minyak goreng sudah benar-benar panas sebelum memasukkan adonan. Ini kunci agar bakwan renyah dan tidak menyerap banyak minyak.</p>
+                <p><strong>Tips 3:</strong> Jangan menggoreng terlalu banyak bakwan dalam satu waktu agar suhu minyak tidak turun drastis dan bakwan matang merata serta renyah.</p>
+            </div>
+        </div>
+
+        <p class="footer-note">Selamat mencoba resep bakwan dadar jagung ini di rumah! Semoga menjadi camilan favorit keluarga Anda.</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/korean-bakwan">Korean Bakwan</a></li>
+<li><a href="/cara-membuat-bakpao-enak">Cara Membuat Bakpao Enak</a></li>
+<li><a href="/resep-membuat-ote-ote-renyah">Resep Membuat Ote Ote Renyah</a></li>
+<li><a href="/cara-membuat-bumbu-bakwan-yang-enak">Cara Membuat Bumbu Bakwan Yang Enak</a></li>
+<li><a href="/cara-membuat-kuah-cabe-gorengan">Cara Membuat Kuah Cabe Gorengan</a></li>
+<li><a href="/gorengan-pia-pia">Gorengan Pia Pia</a></li>
+<li><a href="/harga-bakpia-145-gambiran">Harga Bakpia 145 Gambiran</a></li>
+<li><a href="/bumbu-dadar-jagung-manis-sederhana">Bumbu Dadar Jagung Manis Sederhana</a></li>
+<li><a href="/bakpao-koko">Bakpao Koko</a></li>
+<li><a href="/bakpao-karakter-buah">Bakpao Karakter Buah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

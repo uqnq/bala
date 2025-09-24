@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakso Mercon: Harga dan Kenikmatan Pedas</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Biru langit cerah */
+            color: #00796b; /* Hijau toska gelap */
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #004d40; /* Hijau tua */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            border-bottom: 2px solid #80cbc4; /* Hijau muda */
+            padding-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d32f2f; /* Merah cabai */
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .price-table th, .price-table td {
+            border: 1px solid #80cbc4; /* Hijau muda */
+            padding: 12px;
+            text-align: left;
+        }
+        .price-table th {
+            background-color: #26a69a; /* Biru kehijauan cerah */
+            color: white;
+            font-size: 1.2em;
+        }
+        .price-table td {
+            background-color: #e0f2f1; /* Hijau pucat */
+            font-size: 1.1em;
+        }
+        .price-table tr:nth-child(even) td {
+            background-color: #b2dfdb; /* Hijau lebih muda */
+        }
+        .call-to-action {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .call-to-action a {
+            display: inline-block;
+            background-color: #ff8a65; /* Oranye cerah */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.3em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .call-to-action a:hover {
+            background-color: #f4511e; /* Oranye lebih gelap */
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #424242; /* Abu-abu gelap */
+        }
+
+        /* Media Queries untuk tampilan mobile */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .call-to-action a {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+            .price-table th, .price-table td {
+                padding: 10px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sensasi Pedas Menggugah Selera: Mengenal Bakso Mercon</h1>
+
+        <div class="image-container">
+            <svg width="600" height="300" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Latar belakang gradien cerah -->
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#26c6da;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" fill="url(#grad1)" />
+
+                <!-- Siluet bakso dan cabai -->
+                <circle cx="300" cy="150" r="80" fill="#f44336" /> <!-- Bakso merah -->
+                <circle cx="300" cy="150" r="60" fill="#ffffff" /> <!-- Isi bakso -->
+                <circle cx="300" cy="150" r="40" fill="#d32f2f" /> <!-- Pedas di dalam -->
+
+                <path d="M 280 100 L 320 100 L 300 50 Z" fill="#e57373" /> <!-- Cabe atas 1 -->
+                <path d="M 270 90 L 330 90 L 300 30 Z" fill="#f44336" /> <!-- Cabe atas 2 -->
+
+                <path d="M 280 200 L 320 200 L 300 250 Z" fill="#e57373" /> <!-- Cabe bawah 1 -->
+                <path d="M 270 210 L 330 210 L 300 270 Z" fill="#f44336" /> <!-- Cabe bawah 2 -->
+
+                <!-- Efek percikan pedas -->
+                <circle cx="250" cy="120" r="5" fill="#f44336" opacity="0.7" />
+                <circle cx="350" cy="130" r="4" fill="#f44336" opacity="0.6" />
+                <circle cx="270" cy="180" r="6" fill="#f44336" opacity="0.7" />
+                <circle cx="330" cy="170" r="5" fill="#f44336" opacity="0.6" />
+
+                <!-- Teks sederhana -->
+                <text x="300" y="50" font-family="Verdana" font-size="20" fill="white" text-anchor="middle" font-weight="bold">PEDAS!</text>
+            </svg>
+            <p><em>Perpaduan sempurna rasa gurih bakso dengan sensasi pedas membakar.</em></p>
+        </div>
+
+        <h2>Apa Itu Bakso Mercon?</h2>
+        <p>
+            Bakso mercon adalah sebuah varian bakso yang menawarkan pengalaman rasa yang berbeda dari bakso pada umumnya. Jika bakso biasa identik dengan kuah kaldu yang gurih dan sedikit rasa pedas, bakso mercon justru menonjolkan tingkat kepedasan yang luar biasa. Dibuat dari daging sapi pilihan, bakso ini diisi dengan adonan cabai rawit yang dihaluskan, bahkan terkadang dicampur dengan bumbu-bumbu pedas lainnya seperti sambal.
+        </p>
+        <p>
+            Tujuan utama dari bakso mercon adalah memberikan sensasi "meledak" di mulut, sesuai dengan namanya "mercon" yang merujuk pada petasan. Gigitan pertama pada bakso ini akan disambut oleh rasa gurih daging sapi yang berpadu harmonis dengan sengatan pedas dari isiannya. Tingkat kepedasan ini bisa bervariasi tergantung resep dan selera penjual, mulai dari pedas yang masih bisa dinikmati hingga pedas yang benar-benar menantang.
+        </p>
+
+        <h2>Variasi dan Kombinasi</h2>
+        <p>
+            Meskipun isian cabai adalah ciri khas utamanya, bakso mercon seringkali disajikan dengan berbagai pelengkap untuk menyeimbangkan rasa dan menambah kenikmatan. Kuah bakso mercon biasanya tetap mempertahankan keaslian rasa kaldu sapi yang gurih, namun terkadang sedikit diperkaya dengan rasa pedas yang lebih ringan dari bumbu kuah.
+        </p>
+        <p>
+            Beberapa penjual kreatif juga menawarkan variasi isian lain selain cabai rawit murni, seperti campuran tetelan sapi yang pedas, atau bahkan kombinasi dengan keju untuk sedikit meredam rasa pedas dan memberikan sentuhan creamy. Pelengkap umum seperti mie kuning, bihun, sawi, tauge, dan taburan bawang goreng serta seledri tetap hadir untuk melengkapi sajian ini. Bagi Anda yang menyukai tantangan rasa, bakso mercon adalah pilihan yang tepat.
+        </p>
+
+        <h2>Bakso Mercon: Harga yang Menggoda</h2>
+        <p>
+            Salah satu pertanyaan yang sering muncul adalah mengenai <span class="highlight">bakso mercon harga</span>. Tentu saja, harga bakso mercon sangat bervariasi tergantung pada lokasi, kualitas bahan, serta popularitas tempat penjualnya. Namun, secara umum, harga bakso mercon cenderung sedikit lebih tinggi dibandingkan bakso biasa, mengingat proses pembuatan isiannya yang memerlukan penanganan khusus dan bahan tambahan berupa cabai yang cukup banyak.
+        </p>
+
+        <h3>Kisaran Harga Bakso Mercon (Perkiraan)</h3>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Jenis Sajian</th>
+                    <th>Kisaran Harga (Rp)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bakso Mercon Biasa (Porsi Standar)</td>
+                    <td>15.000 - 25.000</td>
+                </tr>
+                <tr>
+                    <td>Bakso Mercon Spesial (Isian Lebih Banyak/Daging Premium)</td>
+                    <td>20.000 - 35.000</td>
+                </tr>
+                <tr>
+                    <td>Paket Bakso Mercon Komplit (Bakso, Mie, Sayuran)</td>
+                    <td>25.000 - 40.000</td>
+                </tr>
+                <tr>
+                    <td>Tambahan Bakso Mercon</td>
+                    <td>5.000 - 10.000</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 0.9em; text-align: center; margin-top: 10px;">
+            <em>Harga di atas adalah perkiraan dan dapat berbeda di setiap daerah atau kedai.</em>
+        </p>
+
+        <h2>Tips Menikmati Bakso Mercon</h2>
+        <p>
+            Bagi penikmat kuliner pedas, menikmati bakso mercon adalah sebuah kenikmatan tersendiri. Untuk sensasi terbaik, nikmati selagi hangat bersama kuah kaldunya yang gurih. Jika Anda tidak terbiasa dengan makanan yang sangat pedas, disarankan untuk memesan tingkat kepedasan yang lebih ringan atau makan perlahan sambil menikmati sensasi uniknya. Jangan lupa sediakan minuman dingin untuk meredakan rasa panas di lidah.
+        </p>
+        <p>
+            <span class="highlight">Bakso mercon harga</span> yang ditawarkan sebanding dengan sensasi rasa pedas yang ditawarkannya. Ini adalah pengalaman kuliner yang patut dicoba bagi para pecinta pedas di Indonesia.
+        </p>
+
+        <div class="call-to-action">
+            <a href="#find-bakso-mercon">Cari Kedai Bakso Mercon Terdekat!</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Informasi Kuliner Lezat.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-beranak-tembung">Bakso Beranak Tembung</a></li>
+<li><a href="/cara-membuat-bakpao-warna-warni">Cara Membuat Bakpao Warna Warni</a></li>
+<li><a href="/cara-mudah-membuat-bakpao">Cara Mudah Membuat Bakpao</a></li>
+<li><a href="/olahan-bakwan-sayur">Olahan Bakwan Sayur</a></li>
+<li><a href="/dimsum-bakpao">Dimsum Bakpao</a></li>
+<li><a href="/mentega-untuk-bakpao">Mentega Untuk Bakpao</a></li>
+<li><a href="/bakpia-juwara-satoe-borobudur">Bakpia Juwara Satoe Borobudur</a></li>
+<li><a href="/lactobacillus-adalah">Lactobacillus Adalah</a></li>
+<li><a href="/resep-masakan-dari-pentol">Resep Masakan Dari Pentol</a></li>
+<li><a href="/bumbu-bakwan-jamur">Bumbu Bakwan Jamur</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

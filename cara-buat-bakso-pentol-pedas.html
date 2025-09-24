@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Buat Bakso Pentol Pedas Nikmat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #FF6B6B; /* Merah muda cerah */
+            --secondary-color: #4ECDC4; /* Tosca cerah */
+            --background-color: #F7FFF7; /* Hijau mint sangat pucat */
+            --text-color: #333;
+            --heading-color: #4A4A4A;
+            --accent-color: #FFD166; /* Kuning cerah */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+            max-width: 768px;
+            margin: 0 auto;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--heading-color);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            font-size: 1.6em;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .steps ol {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+
+        .steps li {
+            margin-bottom: 20px;
+        }
+
+        .recipe-card {
+            background-color: var(--background-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .recipe-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.3em;
+        }
+
+        .recipe-card ul {
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="hero-image">
+            <!-- SVG Gambar Bakso Pentol Pedas -->
+            <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc">
+                <title id="title">Ilustrasi Bakso Pentol Pedas yang Menggugah Selera</title>
+                <desc id="desc">Gambar ilustrasi bakso pentol merah pedas disajikan dalam mangkuk dengan taburan cabai dan sayuran hijau.</desc>
+                <!-- Latar Belakang Mangkuk -->
+                <ellipse cx="250" cy="250" rx="180" ry="80" fill="#E0E0E0" opacity="0.7"/>
+                <ellipse cx="250" cy="240" rx="170" ry="70" fill="#FFFFFF"/>
+
+                <!-- Bakso Pentol -->
+                <circle cx="180" cy="180" r="30" fill="#FF6B6B"/>
+                <circle cx="250" cy="150" r="35" fill="#FF6B6B"/>
+                <circle cx="320" cy="190" r="28" fill="#FF6B6B"/>
+                <circle cx="220" cy="210" r="32" fill="#FF6B6B"/>
+                <circle cx="280" cy="220" r="30" fill="#FF6B6B"/>
+
+                <!-- Cabai rawit sebagai aksen pedas -->
+                <path d="M 190 160 Q 200 140 210 160 Z" fill="#E74C3C"/>
+                <path d="M 260 120 Q 270 100 280 120 Z" fill="#E74C3C"/>
+                <path d="M 330 160 Q 340 140 350 160 Z" fill="#E74C3C"/>
+
+                <!-- Aksen Saus/Kuah (opsional) -->
+                <path d="M 170 200 C 180 220 210 230 250 220 C 290 210 330 190 340 170 Z" fill="rgba(255, 107, 107, 0.4)" opacity="0.6"/>
+
+                <!-- Daun Bawang/Seledri -->
+                <circle cx="250" cy="100" r="3" fill="#2ECC71"/>
+                <path d="M 250 100 L 245 90 L 255 90 Z" fill="#2ECC71"/>
+                <circle cx="240" cy="110" r="2" fill="#2ECC71"/>
+                <path d="M 240 110 L 235 100 L 245 100 Z" fill="#2ECC71"/>
+                <circle cx="260" cy="115" r="2" fill="#2ECC71"/>
+                <path d="M 260 115 L 255 105 L 265 105 Z" fill="#2ECC71"/>
+
+            </svg>
+        </div>
+
+        <h1>Cara Buat Bakso Pentol Pedas yang Bikin Nagih</h1>
+
+        <p>Siapa yang bisa menolak kelezatan bakso pentol? Apalagi jika disajikan dengan sentuhan pedas yang menggugah selera. Bakso pentol pedas menjadi camilan favorit banyak orang, mulai dari anak muda hingga dewasa. Sensasi kenyal bakso berpadu dengan rasa pedas yang merangsang, ditemani kuah hangat dan taburan bumbu, sungguh kombinasi yang sempurna.</p>
+
+        <p>Membuat bakso pentol pedas di rumah ternyata tidak sesulit yang dibayangkan. Dengan beberapa langkah sederhana dan bahan yang mudah didapat, Anda bisa menyajikan hidangan lezat ini kapan saja. Artikel ini akan memandu Anda langkah demi langkah untuk menciptakan bakso pentol pedas rumahan yang tak kalah enak dari kedai favorit Anda.</p>
+
+        <h2>Bahan-Bahan Penting</h2>
+
+        <p>Untuk membuat bakso pentol pedas yang sempurna, pastikan Anda menyiapkan bahan-bahan berikut:</p>
+
+        <div class="recipe-card">
+            <h3>Bahan Utama Bakso:</h3>
+            <ul>
+                <li>500 gram daging sapi giling (pilih yang sedikit berlemak untuk tekstur lebih baik)</li>
+                <li>100 gram tepung tapioka/sagu</li>
+                <li>50 gram tepung terigu (opsional, untuk tekstur lebih padat)</li>
+                <li>1 butir telur ayam</li>
+                <li>5 siung bawang putih, haluskan</li>
+                <li>2 siung bawang merah, haluskan</li>
+                <li>1 sendok teh garam</li>
+                <li>½ sendok teh merica bubuk</li>
+                <li>1 sendok teh kaldu bubuk sapi</li>
+                <li>½ sendok teh baking powder (agar bakso kenyal dan mengembang)</li>
+                <li>Es batu secukupnya (untuk menjaga adonan tetap dingin)</li>
+            </ul>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Bahan Sambal Pentol Pedas:</h3>
+            <ul>
+                <li>15-20 buah cabai rawit merah (sesuaikan tingkat kepedasan)</li>
+                <li>5 buah cabai merah keriting</li>
+                <li>3 siung bawang putih</li>
+                <li>1 sendok teh garam</li>
+                <li>½ sendok teh gula pasir</li>
+                <li>100 ml air kaldu sapi (opsional, untuk kuah lebih kaya rasa)</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Bakso Pentol Pedas</h2>
+
+        <ol class="steps">
+            <li>
+                <strong>Persiapan Adonan Bakso:</strong>
+                Campurkan daging sapi giling, tepung tapioka, tepung terigu (jika menggunakan), telur, bawang putih halus, bawang merah halus, garam, merica, kaldu bubuk, dan baking powder dalam wadah besar.
+            </li>
+            <li>
+                <strong>Uleni Hingga Kalis:</strong>
+                Uleni adonan menggunakan tangan hingga benar-benar kalis dan tercampur rata. Jika adonan terasa lengket, tambahkan sedikit demi sedikit tepung tapioka. Masukkan es batu sedikit demi sedikit sambil terus diuleni agar adonan tetap dingin dan menghasilkan bakso yang kenyal.
+            </li>
+            <li>
+                <strong>Bentuk Pentol:</strong>
+                Ambil sedikit adonan, lalu bentuk bulat-bulat menggunakan tangan. Ukuran bisa disesuaikan selera.
+            </li>
+            <li>
+                <strong>Rebus Bakso:</strong>
+                Didihkan air dalam panci besar. Masukkan pentol yang sudah dibentuk ke dalam air mendidih. Rebus hingga bakso mengapung, menandakan sudah matang. Angkat dan tiriskan.
+            </li>
+            <li>
+                <strong>Membuat Saus Pedas:</strong>
+                Haluskan cabai rawit merah, cabai merah keriting, dan bawang putih.
+            </li>
+            <li>
+                <strong>Masak Saus Pedas:</strong>
+                Tumis bumbu halus hingga harum. Masukkan garam, gula pasir, dan air kaldu sapi (jika pakai). Aduk rata dan masak hingga saus mengental.
+            </li>
+            <li>
+                <strong>Sajikan:</strong>
+                Masukkan bakso pentol yang sudah direbus ke dalam saus pedas. Aduk rata hingga semua pentol terbalut saus. Sajikan selagi hangat. Anda bisa menambahkan irisan cabai rawit, daun bawang, atau seledri sebagai pelengkap.
+            </li>
+        </ol>
+
+        <p>Untuk variasi, Anda bisa menambahkan sedikit kecap manis pada saus pedas untuk rasa manis gurih. Pastikan juga untuk mengaduk pentol sesekali saat direbus agar tidak menempel satu sama lain. Kualitas daging sapi juga sangat berpengaruh pada hasil akhir bakso Anda. Pilih daging segar berkualitas.</p>
+
+        <p>Menyantap bakso pentol pedas buatan sendiri akan memberikan kepuasan tersendiri. Aromanya yang menggoda dan rasanya yang nikmat pasti akan membuat Anda ingin membuatnya lagi dan lagi. Selamat mencoba resep sederhana ini di rumah!</p>
+    </main>
+
+    <footer>
+        <p>&copy; Resep Rumahan Lezat</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/membuat-bala-bala">Membuat Bala Bala</a></li>
+<li><a href="/cara-membuat-bakpao-takaran-sendok">Cara Membuat Bakpao Takaran Sendok</a></li>
+<li><a href="/tepung-bakwan-jagung-mamasuka">Tepung Bakwan Jagung Mamasuka</a></li>
+<li><a href="/resep-bakwan-panggang">Resep Bakwan Panggang</a></li>
+<li><a href="/cara-membuat-dadar-jagung-manis">Cara Membuat Dadar Jagung Manis</a></li>
+<li><a href="/resep-adonan-bakwan">Resep Adonan Bakwan</a></li>
+<li><a href="/bumbu-membuat-dadar-jagung">Bumbu Membuat Dadar Jagung</a></li>
+<li><a href="/resep-bakwan-istimewa">Resep Bakwan Istimewa</a></li>
+<li><a href="/bakpao-karakter-buah">Bakpao Karakter Buah</a></li>
+<li><a href="/balasan-sesuai-dengan-perbuatan">Balasan Sesuai Dengan Perbuatan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

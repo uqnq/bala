@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Singkong Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Font Google yang cerah dan sejuk */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            --color-primary: #81C784; /* Hijau muda cerah */
+            --color-secondary: #4CAF50; /* Hijau sedikit lebih tua */
+            --color-text: #333;
+            --color-bg: #E8F5E9; /* Latar belakang hijau sangat muda */
+            --color-accent: #FFD54F; /* Kuning cerah untuk aksen */
+            --color-border: #AED581; /* Hijau muda dengan sedikit keemasan */
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-secondary);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--color-secondary);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 500px; /* Batasi lebar gambar di desktop */
+            margin: 0 auto 25px auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ingredients, .steps {
+            background-color: var(--color-bg);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--color-primary);
+        }
+
+        .ingredients ul li, .steps ol li {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .ingredients ul li:hover, .steps ol li:hover {
+            transform: translateX(5px);
+            background-color: #f0f9f0;
+        }
+
+        .highlight {
+            color: var(--color-secondary);
+            font-weight: 600;
+        }
+
+        .cta {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px 25px;
+            background-color: var(--color-accent);
+            color: var(--color-text);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta:hover {
+            background-color: #fbc02d; /* Kuning lebih tua saat hover */
+            transform: translateY(-2px);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .hero-image {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Membuat Bakwan Singkong Renyah dan Menggugah Selera</h1>
+
+        <!-- Gambar SVG Bakwan Singkong -->
+        <svg class="hero-image" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi bakwan singkong yang renyah">
+            <defs>
+                <linearGradient id="grad-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#E8F5E9;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#C8E6C9;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="0" dy="4" result="offsetblur"/>
+                    <feMerge>
+                        <feMergeNode in="offsetblur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+
+            <rect width="100%" height="100%" fill="url(#grad-bg)" rx="15"/>
+
+            <!-- Bakwan 1 -->
+            <path d="M 100,150 Q 120,120 150,130 T 180,150 Q 150,180 100,150 Z" fill="#FFCC80" filter="url(#shadow)"/>
+            <path d="M 110,140 Q 130,115 155,125 T 180,145 Q 150,170 110,140 Z" fill="#FFE0B2"/>
+            <line x1="150" y1="130" x2="160" y2="120" stroke="#FFAB91" stroke-width="3"/>
+            <line x1="150" y1="130" x2="140" y2="115" stroke="#FFAB91" stroke-width="3"/>
+
+            <!-- Bakwan 2 -->
+            <path d="M 220,160 Q 240,130 270,140 T 300,160 Q 270,190 220,160 Z" fill="#FFCC80" filter="url(#shadow)"/>
+            <path d="M 230,150 Q 250,125 275,135 T 300,155 Q 270,180 230,150 Z" fill="#FFE0B2"/>
+            <line x1="270" y1="140" x2="280" y2="130" stroke="#FFAB91" stroke-width="3"/>
+            <line x1="270" y1="140" x2="260" y2="125" stroke="#FFAB91" stroke-width="3"/>
+
+            <!-- Bakwan 3 -->
+            <path d="M 350,140 Q 370,110 400,120 T 430,140 Q 400,170 350,140 Z" fill="#FFCC80" filter="url(#shadow)"/>
+            <path d="M 360,130 Q 380,105 405,115 T 430,135 Q 400,160 360,130 Z" fill="#FFE0B2"/>
+            <line x1="400" y1="120" x2="410" y2="110" stroke="#FFAB91" stroke-width="3"/>
+            <line x1="400" y1="120" x2="390" y2="105" stroke="#FFAB91" stroke-width="3"/>
+
+            <!-- Aksen Lidi -->
+            <line x1="130" y1="170" x2="120" y2="190" stroke="#A1887F" stroke-width="2" stroke-linecap="round"/>
+            <line x1="160" y1="175" x2="150" y2="195" stroke="#A1887F" stroke-width="2" stroke-linecap="round"/>
+            <line x1="250" y1="180" x2="240" y2="200" stroke="#A1887F" stroke-width="2" stroke-linecap="round"/>
+            <line x1="280" y1="185" x2="270" y2="205" stroke="#A1887F" stroke-width="2" stroke-linecap="round"/>
+            <line x1="380" y1="160" x2="370" y2="180" stroke="#A1887F" stroke-width="2" stroke-linecap="round"/>
+            <line x1="410" y1="165" x2="400" y2="185" stroke="#A1887F" stroke-width="2" stroke-linecap="round"/>
+
+             <!-- Aksen renyah (garis-garis halus) -->
+            <g stroke="#FFEB3B" stroke-width="1" opacity="0.6">
+                <line x1="105" y1="140" x2="145" y2="140" />
+                <line x1="120" y1="150" x2="160" y2="150" />
+                <line x1="225" y1="150" x2="265" y2="150" />
+                <line x1="240" y1="160" x2="280" y2="160" />
+                <line x1="355" y1="140" x2="395" y2="140" />
+                <line x1="370" y1="150" x2="410" y2="150" />
+            </g>
+        </svg>
+
+        <p>Siapa yang bisa menolak kerenyahan dan kelezatan bakwan? Camilan gurih ini sangat populer di Indonesia. Biasanya kita mengenal bakwan sayuran, namun kali ini mari kita coba berkreasi dengan bahan yang tak kalah lezat, yaitu singkong. Bakwan singkong menawarkan tekstur yang unik, sedikit kenyal di dalam namun tetap renyah di luar. Selain itu, singkong yang melimpah dan harganya terjangkau menjadikannya pilihan yang ekonomis untuk camilan keluarga.</p>
+
+        <p>Membuat bakwan singkong di rumah ternyata tidak sulit, lho. Dengan beberapa langkah sederhana dan bahan-bahan yang mudah didapat, Anda bisa menyajikan camilan istimewa ini kapan saja. Rasanya yang gurih dan sedikit manis dari singkong yang matang sangat cocok dinikmati saat hangat, ditemani secangkir teh atau kopi.</p>
+
+        <h2>Bahan-bahan untuk Membuat Bakwan Singkong</h2>
+
+        <div class="ingredients">
+            <ul>
+                <li><span class="highlight">Singkong:</span> 500 gram, pilih yang berkualitas baik, kupas, cuci bersih, dan parut kasar.</li>
+                <li><span class="highlight">Tepung terigu:</span> 150 gram (bisa ditambah atau dikurangi sesuai kekentalan adonan).</li>
+                <li><span class="highlight">Tepung beras:</span> 50 gram (untuk menambah kerenyahan).</li>
+                <li><span class="highlight">Bawang putih:</span> 3 siung, haluskan.</li>
+                <li><span class="highlight">Bawang merah:</span> 2 siung, haluskan.</li>
+                <li><span class="highlight">Ketumbar bubuk:</span> 1 sendok teh.</li>
+                <li><span class="highlight">Garam:</span> secukupnya, sesuai selera.</li>
+                <li><span class="highlight">Gula pasir:</span> ½ sendok teh (opsional, untuk menyeimbangkan rasa).</li>
+                <li><span class="highlight">Kaldu bubuk (ayam/sapi/jamur):</span> 1 sendok teh (opsional, untuk menambah gurih).</li>
+                <li><span class="highlight">Daun bawang:</span> 1 batang, iris tipis (opsional, untuk aroma dan warna).</li>
+                <li><span class="highlight">Air:</span> secukupnya, jangan terlalu banyak agar adonan tidak encer.</li>
+                <li><span class="highlight">Minyak goreng:</span> secukupnya, untuk menggoreng.</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-langkah Membuat Bakwan Singkong yang Renyah</h2>
+
+        <div class="steps">
+            <ol>
+                <li><span class="highlight">Persiapan Singkong:</span> Setelah singkong dikupas dan dicuci bersih, parut kasar. Peras sedikit airnya jika terlalu basah, namun jangan sampai kering agar tidak kehilangan sari patinya. Biarkan sedikit lembap.</li>
+                <li><span class="highlight">Membuat Adonan Tepung:</span> Dalam wadah besar, campurkan tepung terigu, tepung beras, bawang putih halus, bawang merah halus, ketumbar bubuk, garam, gula pasir (jika pakai), dan kaldu bubuk (jika pakai). Aduk rata.</li>
+                <li><span class="highlight">Menambahkan Singkong:</span> Masukkan parutan singkong ke dalam campuran tepung. Tambahkan irisan daun bawang (jika pakai). Aduk rata hingga singkong terbalut tepung.</li>
+                <li><span class="highlight">Menambahkan Air:</span> Tuangkan air sedikit demi sedikit sambil terus diaduk. Adonan tidak boleh terlalu encer seperti adonan bakwan sayur pada umumnya, cukup hingga semua bahan tercampur rata dan singkong terlapisi dengan baik. Kekentalan yang pas akan membantu bakwan tidak mudah hancur saat digoreng.</li>
+                <li><span class="highlight">Menggoreng Bakwan:</span> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+                <li><span class="highlight">Membentuk dan Menggoreng:</span> Ambil satu sendok adonan, lalu bentuk pipih atau bulat sesuai selera. Goreng bakwan singkong hingga berwarna kuning keemasan dan matang sempurna di kedua sisinya. Balik sesekali agar matangnya merata.</li>
+                <li><span class="highlight">Meniriskan:</span> Angkat bakwan singkong yang sudah matang, tiriskan di atas kertas tisu atau rak kawat agar minyak berlebih terserap. Hal ini penting untuk menjaga kerenyahannya.</li>
+                <li><span class="highlight">Sajikan:</span> Bakwan singkong siap disajikan selagi hangat. Nikmati sebagai camilan pendamping atau lauk.</li>
+            </ol>
+        </div>
+
+        <p>Ada beberapa tips tambahan agar bakwan singkong Anda semakin lezat. Gunakan singkong yang masih segar agar hasilnya tidak keras. Anda juga bisa menambahkan sedikit parutan kelapa muda untuk aroma yang lebih khas dan tekstur yang lebih unik. Jangan menggoreng terlalu banyak bakwan dalam satu waktu agar suhu minyak tetap stabil dan bakwan matang merata serta renyah.</p>
+
+        <p>Bakwan singkong ini adalah alternatif camilan yang sehat dan bergizi, kaya akan karbohidrat kompleks dari singkong. Selamat mencoba resep sederhana ini di rumah dan bagikan kelezatannya bersama keluarga tercinta!</p>
+
+        <a href="#" class="cta">Temukan Resep Camilan Enak Lainnya!</a>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-jagung-yang-enak">Bakwan Jagung Yang Enak</a></li>
+<li><a href="/dadar-jagung-diah-didi">Dadar Jagung Diah Didi</a></li>
+<li><a href="/balasan-bagi-orang-munafik">Balasan Bagi Orang Munafik</a></li>
+<li><a href="/cara-membuat-bakpao-china">Cara Membuat Bakpao China</a></li>
+<li><a href="/aneka-kue-singkong">Aneka Kue Singkong</a></li>
+<li><a href="/bakpia-kacang-hijau">Bakpia Kacang Hijau</a></li>
+<li><a href="/cara-menghilangkan-bakteri-salmonella-dalam-tubuh">Cara Menghilangkan Bakteri Salmonella Dalam Tubuh</a></li>
+<li><a href="/bakpia-pathok-yessica">Bakpia Pathok Yessica</a></li>
+<li><a href="/resep-membuat-bakwan-renyah-dan-tidak-berminyak">Resep Membuat Bakwan Renyah Dan Tidak Berminyak</a></li>
+<li><a href="/resep-perkedel-jagung-biasa">Resep Perkedel Jagung Biasa</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

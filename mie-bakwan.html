@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mie Bakwan: Kenikmatan Kriuk & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #87CEEB; /* Warna biru langit cerah */
+            --secondary-color: #FFDAB9; /* Warna persik lembut */
+            --text-color: #333;
+            --bg-color: #F0FFF0; /* Warna hijau daun muda */
+            --accent-color: #FFA07A; /* Warna salmon */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Ratakan ke atas */
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.7em;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin-top: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mie Bakwan: Perpaduan Sempurna Lezat & Kriuk</h1>
+
+        <div class="image-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-labelledby="title">
+                <title id="title">Ilustrasi semangkuk mie bakwan yang menggugah selera</title>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--accent-color);stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--secondary-color);stop-opacity:0.8" />
+                        <stop offset="100%" style="stop-color:var(--primary-color);stop-opacity:0.5" />
+                    </linearGradient>
+                </defs>
+                <!-- Mangkuk -->
+                <path d="M 50 250 Q 150 220 250 250 T 450 250 Q 550 220 550 250 L 550 270 L 50 270 Z" fill="url(#grad2)"/>
+                <path d="M 50 250 C 50 260 60 270 70 270 L 530 270 C 540 270 550 260 550 250 Z" fill="var(--secondary-color)" stroke="var(--primary-color)" stroke-width="3"/>
+
+                <!-- Mie -->
+                <g fill="none" stroke="var(--text-color)" stroke-width="2">
+                    <path d="M 100 200 C 110 190 120 180 130 170 S 150 150 160 160 S 180 170 190 160" />
+                    <path d="M 130 200 C 140 190 150 180 160 170 S 180 150 190 160 S 210 170 220 160" />
+                    <path d="M 160 200 C 170 190 180 180 190 170 S 210 150 220 160 S 240 170 250 160" />
+                    <path d="M 190 200 C 200 190 210 180 220 170 S 240 150 250 160 S 270 170 280 160" />
+                    <path d="M 220 200 C 230 190 240 180 250 170 S 270 150 280 160 S 300 170 310 160" />
+                    <path d="M 250 200 C 260 190 270 180 280 170 S 300 150 310 160 S 330 170 340 160" />
+                    <path d="M 280 200 C 290 190 300 180 310 170 S 330 150 340 160 S 360 170 370 160" />
+                    <path d="M 310 200 C 320 190 330 180 340 170 S 360 150 370 160 S 390 170 400 160" />
+                </g>
+
+                <!-- Bakwan -->
+                <ellipse cx="170" cy="180" rx="25" ry="18" fill="var(--accent-color)" stroke="var(--primary-color)" stroke-width="2"/>
+                <ellipse cx="230" cy="190" rx="28" ry="20" fill="var(--accent-color)" stroke="var(--primary-color)" stroke-width="2"/>
+                <ellipse cx="300" cy="175" rx="23" ry="16" fill="var(--accent-color)" stroke="var(--primary-color)" stroke-width="2"/>
+                <ellipse cx="360" cy="185" rx="26" ry="19" fill="var(--accent-color)" stroke="var(--primary-color)" stroke-width="2"/>
+
+                <!-- Garnish -->
+                <circle cx="270" cy="160" r="8" fill="var(--primary-color)" />
+                <circle cx="330" cy="160" r="8" fill="var(--primary-color)" />
+                <path d="M 150 160 L 145 170 L 155 170 Z" fill="var(--accent-color)" />
+                <path d="M 390 170 L 385 180 L 395 180 Z" fill="var(--accent-color)" />
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak tergoda dengan sajian mie yang gurih, kenyal, dipadukan dengan kekhasan bakwan yang renyah? Ya, <span class="highlight">mie bakwan</span> adalah salah satu kuliner yang mampu membangkitkan selera makan siapa saja. Hidangan ini bukan sekadar perpaduan dua elemen utama, melainkan sebuah simfoni rasa dan tekstur yang memanjakan lidah. Dari aroma kuahnya yang menggugah selera hingga gigitan pertama bakwan yang renyah, semuanya menciptakan pengalaman kuliner yang tak terlupakan.</p>
+
+        <h2>Menyingkap Kelezatan Mie Bakwan</h2>
+
+        <p>Mie bakwan pada dasarnya adalah hidangan mie yang disajikan dengan topping bakwan. Namun, kesederhanaan konsep ini justru menjadi kekuatan utamanya. Kunci dari kelezatan mie bakwan terletak pada beberapa elemen penting:</p>
+
+        <ul>
+            <li><span class="highlight">Mie yang Berkualitas:</span> Jenis mie yang digunakan bisa bervariasi, mulai dari mie telur yang kenyal, mie basah yang lembut, hingga mie keriting yang unik. Yang terpenting adalah teksturnya yang pas, tidak terlalu lembek dan tidak terlalu keras, sehingga menyerap bumbu dengan sempurna.</li>
+            <li><span class="highlight">Bakwan yang Kriuk Sempurna:</span> Bakwan adalah bintangnya! Terbuat dari adonan tepung yang dicampur dengan berbagai macam sayuran seperti irisan kol, wortel, tauge, dan terkadang udang atau cumi, bakwan harus digoreng hingga berwarna coklat keemasan dan memiliki tekstur yang sangat renyah di luar namun tetap lembut di dalam.</li>
+            <li><span class="highlight">Kuah yang Kaya Rasa:</span> Kuah adalah jiwa dari semangkuk mie. Kuah mie bakwan biasanya dibuat dari kaldu ayam atau sapi yang gurih, diperkaya dengan bumbu-bumbu rempah pilihan seperti bawang putih, merica, dan pala. Kadang ditambahkan sedikit kecap manis untuk memberikan kedalaman rasa.</li>
+            <li><span class="highlight">Pelengkap Sempurna:</span> Taburan bawang goreng, daun bawang cincang, seledri, dan terkadang sambal akan semakin melengkapi kenikmatan seporsi mie bakwan.</li>
+        </ul>
+
+        <h2>Variasi Mie Bakwan yang Menggoda</h2>
+
+        <p>Meskipun konsep dasarnya sama, ada banyak variasi mie bakwan yang bisa Anda temukan, tergantung daerah atau selera. Ada yang menyajikannya dengan kuah bening yang segar, ada pula yang lebih suka kuah kental yang kaya rasa. Beberapa tempat bahkan menawarkan pilihan bakwan yang beragam, seperti bakwan udang, bakwan sayur saja, atau bahkan bakwan goreng yang direbus sebentar untuk sedikit melunakkan teksturnya sebelum disajikan dengan mie.</p>
+
+        <p>Menikmati <span class="highlight">mie bakwan</span> paling nikmat saat cuaca sedang dingin atau saat perut keroncongan meminta asupan yang hangat dan mengenyangkan. Sensasi menyeruput kuah panas, menggigit bakwan yang renyah, lalu mengaduk mie yang kenyal dengan bumbu di dalamnya adalah sebuah kepuasan tersendiri. Hidangan ini seringkali menjadi pilihan favorit di warung makan pinggir jalan hingga restoran sederhana.</p>
+
+        <p>Bagi para pecinta kuliner, <span class="highlight">mie bakwan</span> menawarkan pengalaman makan yang memuaskan. Kombinasi antara tekstur yang beragam dan rasa yang gurih menjadi daya tarik utamanya. Tak heran jika hidangan sederhana ini selalu punya tempat spesial di hati masyarakat.</p>
+
+        <footer>
+            Semoga artikel ini memberikan gambaran lezat tentang mie bakwan!
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpau-a-1-muara-karang">Bakpau A 1 Muara Karang</a></li>
+<li><a href="/bakwan-bulat">Bakwan Bulat</a></li>
+<li><a href="/penyebab-penyakit-balanitis">Penyebab Penyakit Balanitis</a></li>
+<li><a href="/pia-coklat">Pia Coklat</a></li>
+<li><a href="/resep-bakwan-jagung-enak-dan-gurih">Resep Bakwan Jagung Enak Dan Gurih</a></li>
+<li><a href="/bakpia-mangkok-terdekat">Bakpia Mangkok Terdekat</a></li>
+<li><a href="/bakwan-goreng-udang">Bakwan Goreng Udang</a></li>
+<li><a href="/bakpia-pathuk">Bakpia Pathuk</a></li>
+<li><a href="/bakwan-jepang">Bakwan Jepang</a></li>
+<li><a href="/bakso-mercon-untuk-jualan">Bakso Mercon Untuk Jualan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

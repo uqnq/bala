@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Kol Sederhana & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - Warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px; /* Lebar maksimal untuk tampilan yang rapi */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px; /* Jarak dari atas */
+            margin-bottom: 20px; /* Jarak dari bawah */
+        }
+        h1 {
+            color: #007bff; /* Biru cerah */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #28a745; /* Hijau cerah */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+        .highlight {
+            color: #dc3545; /* Merah agak cerah untuk penekanan */
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Cara Membuat Bakwan Kol Sederhana dan Lezat</h1>
+
+        <div class="image-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#8BC34A;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                        <feOffset dx="0" dy="0" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <rect width="600" height="300" rx="15" fill="#e0f2f7" /> <!-- Latar belakang biru muda sejuk -->
+
+                <!-- Bakwan shapes -->
+                <ellipse cx="150" cy="150" rx="60" ry="40" fill="#ffcc80" filter="url(#shadow)" transform="rotate(-10 150 150)" /> <!-- Bakwan coklat muda -->
+                <ellipse cx="250" cy="160" rx="55" ry="35" fill="#ffdab9" filter="url(#shadow)" transform="rotate(5 250 160)" /> <!-- Bakwan coklat krem -->
+                <ellipse cx="350" cy="140" rx="65" ry="45" fill="#ffcc80" filter="url(#shadow)" transform="rotate(-15 350 140)" /> <!-- Bakwan coklat muda -->
+                <ellipse cx="450" cy="170" rx="50" ry="30" fill="#ffdab9" filter="url(#shadow)" transform="rotate(10 450 170)" /> <!-- Bakwan coklat krem -->
+
+                <!-- Kol leaves -->
+                <path d="M100 80 Q 120 50 150 60 T 200 80 L 100 80 Z" fill="#66bb6a" transform="translate(50, -20)" opacity="0.8"/> <!-- Daun kol hijau terang -->
+                <path d="M120 120 Q 150 90 180 100 T 230 120 L 120 120 Z" fill="#81c784" transform="translate(70, 0)" opacity="0.8"/>
+                <path d="M200 100 Q 230 70 260 80 T 310 100 L 200 100 Z" fill="#66bb6a" transform="translate(100, -10)" opacity="0.8"/>
+                <path d="M220 140 Q 250 110 280 120 T 330 140 L 220 140 Z" fill="#81c784" transform="translate(120, 10)" opacity="0.8"/>
+                <path d="M300 90 Q 330 60 360 70 T 410 90 L 300 90 Z" fill="#66bb6a" transform="translate(150, -5)" opacity="0.8"/>
+                <path d="M320 130 Q 350 100 380 110 T 430 130 L 320 130 Z" fill="#81c784" transform="translate(170, 15)" opacity="0.8"/>
+
+                <!-- Text Title -->
+                <text x="50%" y="280" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="bold" filter="url(#shadow)">Bakwan Kol</text>
+            </svg>
+        </div>
+
+        <p>Bakwan kol, siapa yang tidak kenal jajanan gorengan favorit ini? Dengan tekstur renyah di luar dan lembut di dalam, bakwan kol menjadi camilan pelepas dahaga atau teman makan nasi yang sempurna. Membuat bakwan kol sendiri di rumah ternyata sangat mudah dan tidak membutuhkan bahan yang sulit ditemukan. Mari kita simak cara membuat bakwan kol sederhana yang lezat!</p>
+
+        <h2>Mengapa Bakwan Kol Populer?</h2>
+        <p>Kepopuleran bakwan kol tidak terlepas dari kesederhanaannya. Kol yang melimpah, mudah didapat, dan harganya terjangkau menjadi daya tarik utama. Ditambah lagi, cara pembuatannya yang tidak rumit membuatnya cocok untuk dicoba oleh siapa saja, bahkan bagi Anda yang baru belajar memasak. Kelezatannya yang gurih dan sedikit manis berpadu sempurna dengan sensasi renyah saat digigit. Camilan ini sangat cocok disajikan hangat-hangat bersama saus sambal atau cabai rawit.</p>
+
+        <h2>Bahan-Bahan yang Anda Butuhkan</h2>
+        <p>Untuk membuat bakwan kol yang lezat, Anda hanya memerlukan beberapa bahan dasar:</p>
+        <ul>
+            <li>1 buah kol ukuran sedang, iris tipis memanjang</li>
+            <li>100 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (agar lebih renyah)</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh ketumbar bubuk</li>
+            <li>Garam secukupnya</li>
+            <li>Gula pasir secukupnya (opsional, untuk sedikit rasa manis)</li>
+            <li>Merica bubuk secukupnya</li>
+            <li>Air secukupnya untuk adonan</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bakwan Kol Sederhana</h2>
+        <p>Ikuti langkah-langkah berikut ini untuk menghasilkan bakwan kol yang sempurna:</p>
+        <ol>
+            <li><strong>Persiapan Kol:</strong> Cuci bersih kol yang sudah diiris tipis. Tiriskan hingga benar-benar kering. Memastikan kol kering akan membantu adonan menempel lebih baik dan hasil gorengan lebih renyah.</li>
+            <li><strong>Buat Adonan Tepung:</strong> Dalam wadah terpisah, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, garam, gula pasir (jika menggunakan), dan merica bubuk. Aduk rata bumbu kering.</li>
+            <li><strong>Campurkan Kol dengan Adonan:</strong> Masukkan irisan kol ke dalam campuran tepung. Tuangkan air sedikit demi sedikit sambil terus diaduk hingga semua irisan kol terbalut rata dengan adonan tepung. Adonan sebaiknya tidak terlalu encer agar bakwan tidak lembek, namun juga tidak terlalu kental.</li>
+            <li><strong>Panaskan Minyak:</strong> Siapkan wajan dan tuang minyak goreng secukupnya. Panaskan minyak dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum menggoreng untuk mendapatkan hasil yang renyah.</li>
+            <li><strong>Goreng Bakwan:</strong> Ambil sesendok adonan kol, bentuk agak pipih, lalu masukkan ke dalam minyak panas. Goreng beberapa buah sekaligus, jangan terlalu penuh agar matangnya merata.</li>
+            <li><strong>Balik dan Angkat:</strong> Goreng hingga sisi bawah berwarna kuning keemasan, lalu balik. Lanjutkan menggoreng hingga kedua sisi matang dan berwarna cokelat keemasan. Angkat bakwan dan tiriskan di atas kertas tisu atau rak kawat untuk menyerap kelebihan minyak.</li>
+            <li><strong>Sajikan:</strong> Bakwan kol siap disajikan selagi hangat. Nikmati dengan saus sambal favorit Anda atau cabai rawit utuh.</li>
+        </ol>
+
+        <h2>Tips Tambahan untuk Bakwan yang Lebih Renyah</h2>
+        <p>Untuk mendapatkan hasil bakwan kol yang ekstra renyah, perhatikan beberapa tips berikut:</p>
+        <ul>
+            <li>Gunakan campuran tepung terigu dan tepung beras. Perbandingan 2:1 (terigu:beras) biasanya sudah cukup baik.</li>
+            <li>Pastikan minyak goreng benar-benar panas sebelum memasukkan adonan.</li>
+            <li>Jangan terlalu banyak memasukkan adonan ke dalam wajan sekaligus, agar suhu minyak tidak turun drastis.</li>
+            <li>Menambahkan sedikit air soda ke dalam adonan (jika ada) juga bisa membantu membuat bakwan lebih renyah. Gunakan secukupnya saja.</li>
+            <li>Pastikan kol benar-benar kering sebelum dicampur dengan adonan. Kelembaban berlebih akan membuat bakwan lembek.</li>
+        </ul>
+
+        <p>Membuat bakwan kol sederhana ini adalah kegiatan yang menyenangkan dan hasilnya pasti akan disukai oleh seluruh keluarga. Selamat mencoba!</p>
+
+        <div class="footer">
+            Artikel ini berisi panduan membuat bakwan kol.
+        </div>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-sayur-resep">Bakwan Sayur Resep</a></li>
+<li><a href="/bumbu-bikin-bakwan-jagung">Bumbu Bikin Bakwan Jagung</a></li>
+<li><a href="/bakpia-kukus-kacang-hijau">Bakpia Kukus Kacang Hijau</a></li>
+<li><a href="/bakwan-jagung-oven">Bakwan Jagung Oven</a></li>
+<li><a href="/bakpia-kukus-tugu-lempuyangan">Bakpia Kukus Tugu Lempuyangan</a></li>
+<li><a href="/uji-gula-gula-bakteri">Uji Gula Gula Bakteri</a></li>
+<li><a href="/bakso-mercon-terpedas">Bakso Mercon Terpedas</a></li>
+<li><a href="/cara-membuat-bumbu-bakwan-sayur">Cara Membuat Bumbu Bakwan Sayur</a></li>
+<li><a href="/cara-membuat-jagung-bakwan">Cara Membuat Jagung Bakwan</a></li>
+<li><a href="/cara-membuat-bakpia-coklat">Cara Membuat Bakpia Coklat</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

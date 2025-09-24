@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Bale: Kemewahan Ramah Lingkungan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f2f7; /* Warna sejuk cerah */
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            color: #0077cc; /* Biru cerah */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #0099cc; /* Biru sedikit lebih gelap */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #e0f2f7;
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        img {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Sesuaikan lebar gambar */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: #00cc99; /* Hijau cerah */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #009966; /* Hijau lebih gelap saat hover */
+            transform: translateY(-2px);
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .feature-list li::before {
+            content: '✔'; /* Simbol centang */
+            color: #00cc99; /* Warna hijau cerah */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="150" height="150" style="display: block; margin: 20px auto;">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#00cc99;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#0077cc;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="400" height="200" rx="20" fill="url(#grad1)" />
+            <text x="50" y="120" font-family="Arial, sans-serif" font-size="40" fill="white" font-weight="bold">Grand Bale</text>
+        </svg>
+
+        <h1>Grand Bale: Perpaduan Harmoni Alam dan Kemewahan Modern</h1>
+
+        <p>Di tengah hiruk pikuk kehidupan perkotaan, hadir sebuah oase ketenangan yang menawarkan pengalaman tak terlupakan. <strong>Grand Bale</strong> hadir bukan sekadar sebagai sebuah destinasi, melainkan sebuah filosofi hidup yang memadukan kemewahan kontemporer dengan keindahan alam yang lestari. Kami percaya bahwa pengalaman berkualitas tinggi tidak harus mengorbankan lingkungan, dan Grand Bale adalah manifestasi dari keyakinan tersebut.</p>
+
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMDBjYzk5O3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDc3Y2M7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjMwMCIgcng9IjMwIiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxNTAiIHI9IjgwIiBmaWxsPSJ3aGl0ZSIgLz4KICA8cGF0aCBkPSJNIDI1MCAxMTUgTCAyMTUgMTUwIEwgMjUwIDE4NSBMIDE5MCAxNTAiIHN0cm9rZT0iIzAwY2M5OSIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiAvPgogIDxwYXRoIGQ9Ik0gMjUwIDExNSBMIDE5MCAxNTcgTCAyNTAgMTk1IEwgMzEwIDE1NyIgZmlsbD0iI2ZmZiIgLz4KICA8cGF0aCBkPSJNIDI1MCAxMTUgTCAyOTAgMTU3IEwgMjUwIDE5NSBMIDIxMCAxNTcgWiIgZmlsbD0iI2ZmZiIgLz4KICA8cGF0aCBkPSJNIDI1MCAxMTUgTCAyMzAgMTUyIEwgMjUwIDE4MCBMIDI3MCAxNTIgWiIgZmlsbD0iIzAwY2M5OSIgLz4KPC9zdmc+Cg==" alt="Ilustrasi Grand Bale dengan elemen alam dan modern">
+
+        <div class="section">
+            <h2>Filosofi di Balik Grand Bale</h2>
+            <p>Kami percaya bahwa keindahan sejati terletak pada keselarasan. Grand Bale diciptakan dengan prinsip utama keberlanjutan dan integrasi harmonis dengan lingkungan sekitar. Desain arsitektur kami memanfaatkan material lokal yang ramah lingkungan dan teknik pembangunan yang meminimalkan dampak ekologis. Setiap sudut dirancang untuk memaksimalkan pencahayaan alami dan aliran udara, mengurangi ketergantungan pada energi buatan.</p>
+            <p>Lebih dari sekadar bangunan, Grand Bale adalah sebuah ekosistem yang hidup. Kami mengintegrasikan elemen-elemen hijau seperti taman vertikal, atap hijau, dan area resapan air hujan untuk menjaga keseimbangan alam. Pendekatan ini tidak hanya mempercantik lingkungan tetapi juga berkontribusi pada kualitas udara yang lebih baik dan keanekaragaman hayati lokal. Pengunjung dapat merasakan kedekatan dengan alam tanpa meninggalkan kenyamanan dan kemewahan.</p>
+        </div>
+
+        <div class="section">
+            <h2>Fasilitas dan Pengalaman</h2>
+            <p>Grand Bale menawarkan serangkaian fasilitas yang dirancang untuk relaksasi, inspirasi, dan koneksi. Baik Anda mencari tempat untuk berlibur bersama keluarga, merayakan momen spesial, atau sekadar mencari ketenangan dari rutinitas, kami siap melayani.</p>
+            <ul class="feature-list">
+                <li>Akomodasi mewah dengan pemandangan alam yang menakjubkan.</li>
+                <li>Restoran yang menyajikan hidangan organik segar dari kebun sendiri.</li>
+                <li>Area spa dan wellness yang menenangkan untuk meremajakan diri.</li>
+                <li>Ruang serbaguna yang ideal untuk acara pribadi maupun korporat.</li>
+                <li>Aktivitas luar ruangan yang terintegrasi dengan alam, seperti jalur hiking dan kebun edukasi.</li>
+                <li>Fokus pada penggunaan energi terbarukan dan pengelolaan limbah yang bertanggung jawab.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Bergabunglah dengan Gerakan Keindahan Berkelanjutan</h2>
+            <p>Grand Bale bukan hanya tentang menikmati kemewahan, tetapi juga tentang menjadi bagian dari solusi. Kami mengundang Anda untuk merasakan pengalaman yang berbeda, di mana kenyamanan dan kesadaran lingkungan berjalan beriringan. Biarkan diri Anda terhanyut dalam ketenangan, diresapi oleh keindahan alam, dan dilayani dengan standar tertinggi.</p>
+            <p>Kami berkomitmen untuk terus berinovasi dalam praktik keberlanjutan dan memberikan pengalaman terbaik bagi setiap tamu. Grand Bale adalah bukti bahwa kemewahan dan tanggung jawab lingkungan dapat bersatu menciptakan masa depan yang lebih baik.</p>
+        </div>
+
+        <a href="#booking" class="cta-button">Jelajahi Pengalaman Grand Bale</a>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cetakan-gorengan-bakwan">Cetakan Gorengan Bakwan</a></li>
+<li><a href="/bakwan-yang-enak-dan-gurih">Bakwan Yang Enak Dan Gurih</a></li>
+<li><a href="/bakpia-legong">Bakpia Legong</a></li>
+<li><a href="/juara-satu-bakpia">Juara Satu Bakpia</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-gurih-dan-renyah">Cara Membuat Bakwan Jagung Gurih Dan Renyah</a></li>
+<li><a href="/resep-bakwan-awet-renyah">Resep Bakwan Awet Renyah</a></li>
+<li><a href="/penjual-bakso-beranak-terdekat">Penjual Bakso Beranak Terdekat</a></li>
+<li><a href="/harga-bakpia-tugu-kukus">Harga Bakpia Tugu Kukus</a></li>
+<li><a href="/cara-bikin-isian-bakso-mercon">Cara Bikin Isian Bakso Mercon</a></li>
+<li><a href="/harga-bakpia-mandiri-214">Harga Bakpia Mandiri 214</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

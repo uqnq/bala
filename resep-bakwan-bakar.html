@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Bakar Enak & Sehat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0097a7; /* Warna cerah untuk judul */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 {
+            font-size: 1.7em;
+            margin-top: 30px;
+            border-bottom: 2px solid #b2ebf2;
+            padding-bottom: 10px;
+        }
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 0 auto 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+        .recipe-section {
+            margin-bottom: 30px;
+        }
+        .recipe-section p {
+            margin-bottom: 15px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #00796b;
+        }
+        .note {
+            font-style: italic;
+            color: #555;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f8ff;
+            border-left: 4px solid #4dd0e1;
+            border-radius: 5px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .hero-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nikmati Kelezatan Bakwan Bakar: Alternatif Sehat & Lezat</h1>
+
+        <!-- SVG Gambar Bakwan Bakar -->
+        <svg class="hero-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" aria-label="Ilustrasi bakwan yang sedang dibakar di atas panggangan">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FFB300;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#FF8F00;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81C784;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#388E3C;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <!-- Panggangan -->
+            <rect x="50" y="200" width="500" height="20" fill="#4E342E" rx="5"/>
+            <rect x="50" y="220" width="500" height="50" fill="#795548" rx="5"/>
+            <line x1="70" y1="220" x2="70" y2="270" stroke="#4E342E" stroke-width="3"/>
+            <line x1="150" y1="220" x2="150" y2="270" stroke="#4E342E" stroke-width="3"/>
+            <line x1="230" y1="220" x2="230" y2="270" stroke="#4E342E" stroke-width="3"/>
+            <line x1="310" y1="220" x2="310" y2="270" stroke="#4E342E" stroke-width="3"/>
+            <line x1="390" y1="220" x2="390" y2="270" stroke="#4E342E" stroke-width="3"/>
+            <line x1="470" y1="220" x2="470" y2="270" stroke="#4E342E" stroke-width="3"/>
+            <line x1="550" y1="220" x2="550" y2="270" stroke="#4E342E" stroke-width="3"/>
+
+            <!-- Bakwan 1 -->
+            <ellipse cx="150" cy="245" rx="40" ry="30" fill="url(#grad1)"/>
+            <path d="M 130 230 Q 150 210 170 230 Q 150 250 130 230 Z" fill="orange" opacity="0.6"/>
+            <circle cx="140" cy="240" r="5" fill="darkgoldenrod"/>
+            <circle cx="160" cy="250" r="4" fill="darkgoldenrod"/>
+
+            <!-- Bakwan 2 -->
+            <ellipse cx="310" cy="250" rx="45" ry="35" fill="url(#grad1)"/>
+            <path d="M 280 235 Q 310 215 340 235 Q 310 265 280 235 Z" fill="orange" opacity="0.6"/>
+            <circle cx="295" cy="245" r="6" fill="darkgoldenrod"/>
+            <circle cx="320" cy="255" r="5" fill="darkgoldenrod"/>
+            <circle cx="310" cy="230" r="4" fill="darkgoldenrod"/>
+
+            <!-- Bakwan 3 -->
+            <ellipse cx="470" cy="240" rx="38" ry="28" fill="url(#grad1)"/>
+            <path d="M 450 225 Q 470 205 490 225 Q 470 245 450 225 Z" fill="orange" opacity="0.6"/>
+            <circle cx="460" cy="235" r="5" fill="darkgoldenrod"/>
+            <circle cx="480" cy="242" r="3" fill="darkgoldenrod"/>
+
+            <!-- Efek bara api -->
+            <circle cx="150" cy="255" r="10" fill="rgba(255, 140, 0, 0.7)" opacity="0.7"/>
+            <circle cx="310" cy="265" r="12" fill="rgba(255, 140, 0, 0.6)" opacity="0.6"/>
+            <circle cx="470" cy="252" r="8" fill="rgba(255, 140, 0, 0.7)" opacity="0.7"/>
+            <circle cx="160" cy="260" r="8" fill="rgba(255, 100, 0, 0.5)" opacity="0.5"/>
+            <circle cx="325" cy="270" r="10" fill="rgba(255, 100, 0, 0.4)" opacity="0.4"/>
+            <circle cx="485" cy="258" r="6" fill="rgba(255, 100, 0, 0.5)" opacity="0.5"/>
+        </svg>
+
+        <div class="recipe-section">
+            <p>Bakwan, camilan favorit banyak orang Indonesia, biasanya digoreng hingga renyah. Namun, ada cara lain yang lebih sehat namun tetap nikmat, yaitu dengan dibakar. Resep bakwan bakar ini menawarkan tekstur yang sedikit berbeda, lebih kenyal di dalam dan garing di luar tanpa terlalu banyak minyak. Sangat cocok dinikmati saat santai, sebagai lauk pendamping, atau bahkan saat acara kumpul keluarga.</p>
+            <p>Proses membakar bakwan tidaklah sulit dan membutuhkan alat yang minimalis. Anda bisa menggunakan teflon anti lengket, grill pan, atau bahkan alat pemanggang elektrik. Kunci kelezatan bakwan bakar terletak pada kualitas bahan dan bumbu yang meresap sempurna. Mari kita simak resep sederhana namun istimewa ini.</p>
+        </div>
+
+        <div class="recipe-section ingredients">
+            <h2>Bahan-Bahan</h2>
+            <ul>
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 buah wortel ukuran sedang, parut kasar atau iris tipis</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>50 gram tauge</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>1 sendok teh garam (sesuai selera)</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+                <li>150-200 ml air (sesuaikan kekentalan adonan)</li>
+                <li>Minyak secukupnya untuk olesan</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section instructions">
+            <h2>Cara Membuat Bakwan Bakar</h2>
+            <ol>
+                <li>Dalam wadah, campurkan tepung terigu, tepung beras, bawang putih halus, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li>Masukkan parutan wortel, irisan kol, tauge, dan irisan daun bawang ke dalam campuran tepung.</li>
+                <li>Tuang air sedikit demi sedikit sambil terus diaduk hingga membentuk adonan yang kental namun tidak terlalu encer. Pastikan semua sayuran terbalut adonan dengan baik.</li>
+                <li>Siapkan teflon atau grill pan anti lengket. Panaskan dengan api sedang.</li>
+                <li>Olesi permukaan teflon dengan sedikit minyak.</li>
+                <li>Ambil satu sendok sayur adonan bakwan, letakkan di atas teflon yang sudah panas. Ratakan sedikit agar bentuknya tidak terlalu tebal. Lakukan hingga teflon terisi secukupnya, beri jarak antar bakwan.</li>
+                <li>Bakar setiap sisi selama kurang lebih 3-5 menit, atau hingga berwarna coklat keemasan dan matang sempurna. Balik bakwan dengan hati-hati menggunakan spatula.</li>
+                <li>Jika perlu, olesi sedikit minyak lagi saat membalik bakwan agar tidak lengket dan warnanya merata.</li>
+                <li>Angkat bakwan bakar yang sudah matang dan sajikan selagi hangat.</li>
+            </ol>
+        </div>
+
+        <div class="note">
+            <p><strong>Tips Tambahan:</strong></p>
+            <ul>
+                <li>Anda bisa menambahkan udang cincang atau ayam suwir ke dalam adonan untuk variasi rasa.</li>
+                <li>Untuk tekstur yang lebih garing, gunakan api yang sedikit lebih besar saat membakar, namun tetap awasi agar tidak gosong.</li>
+                <li>Sajikan bakwan bakar dengan saus sambal, kecap manis, atau sambal kacang favorit Anda.</li>
+                <li>Pastikan sayuran dalam keadaan segar agar rasa bakwan semakin nikmat.</li>
+            </ul>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-bikin-isian-bakso-mercon">Cara Bikin Isian Bakso Mercon</a></li>
+<li><a href="/resep-peyek-jagung-renyah-dan-gurih">Resep Peyek Jagung Renyah Dan Gurih</a></li>
+<li><a href="/cara-membuat-bakwan-yang">Cara Membuat Bakwan Yang</a></li>
+<li><a href="/bakso-beranak-jumbo">Bakso Beranak Jumbo</a></li>
+<li><a href="/bakpia-145-malioboro">Bakpia 145 Malioboro</a></li>
+<li><a href="/cara-buat-kuah-bakwan-enak">Cara Buat Kuah Bakwan Enak</a></li>
+<li><a href="/bakpao-karakter-minion">Bakpao Karakter Minion</a></li>
+<li><a href="/resep-telur-dadar-jagung">Resep Telur Dadar Jagung</a></li>
+<li><a href="/cara-membuat-bakso-bakar-mercon">Cara Membuat Bakso Bakar Mercon</a></li>
+<li><a href="/aerob-bakteri">Aerob Bakteri</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

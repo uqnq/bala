@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakpao Hello Kitty Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #4DD0E1; /* Cyan terang */
+            --color-secondary: #81C784; /* Hijau muda cerah */
+            --color-text: #333;
+            --color-background: #F0F8FF; /* AliceBlue */
+            --color-accent: #FF8A65; /* Orange muda */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--color-secondary);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 5px;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Batasi ukuran gambar agar tidak terlalu besar di mobile */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .step-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .step-number {
+            background-color: var(--color-accent);
+            color: white;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0; /* Mencegah nomor langkah mengecil */
+        }
+
+        .ingredients ul, .instructions ol {
+            padding-left: 20px;
+        }
+
+        .ingredients ul li::before {
+            content: "• ";
+            color: var(--color-secondary);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .instructions ol li::before {
+            content: counter(list-item, decimal) ". ";
+            color: var(--color-accent);
+            font-weight: bold;
+            display: inline-block;
+            width: 2em;
+            margin-left: -2em;
+        }
+
+        strong {
+            color: var(--color-accent);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p, li {
+                font-size: 1em;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto 20px auto;">
+        <path d="M50 1.66675C23.1333 1.66675 1.66667 23.1334 1.66667 50.0001C1.66667 76.8668 23.1333 98.3334 50 98.3334C76.8667 98.3334 98.3333 76.8668 98.3333 50.0001C98.3333 23.1334 76.8667 1.66675 50 1.66675ZM27.0833 41.6668C27.0833 37.0834 30.8333 33.3334 35.4167 33.3334H64.5833C69.1667 33.3334 72.9167 37.0834 72.9167 41.6668V58.3334C72.9167 62.9168 69.1667 66.6668 64.5833 66.6668H35.4167C30.8333 66.6668 27.0833 62.9168 27.0833 58.3334V41.6668ZM41.6667 50.0001C41.6667 47.2499 43.9167 45.0001 46.6667 45.0001H53.3333C56.0833 45.0001 58.3333 47.2499 58.3333 50.0001V52.5001C58.3333 55.2501 56.0833 57.5001 53.3333 57.5001H46.6667C43.9167 57.5001 41.6667 55.2501 41.6667 52.5001V50.0001ZM37.5 75.0001C37.5 72.2499 39.75 70.0001 42.5 70.0001H57.5C60.25 70.0001 62.5 72.2499 62.5 75.0001V81.6668C62.5 84.4168 60.25 86.6668 57.5 86.6668H42.5C39.75 86.6668 37.5 84.4168 37.5 81.6668V75.0001Z" fill="#FFB300"/>
+        <path d="M50 1.66675C23.1333 1.66675 1.66667 23.1334 1.66667 50.0001C1.66667 76.8668 23.1333 98.3334 50 98.3334C76.8667 98.3334 98.3333 76.8668 98.3333 50.0001C98.3333 23.1334 76.8667 1.66675 50 1.66675Z" stroke="#FFA000" stroke-width="4"/>
+        <circle cx="35" cy="40" r="5" fill="white"/>
+        <circle cx="65" cy="40" r="5" fill="white"/>
+        <path d="M42.5 53.3333C42.5 50.5831 44.75 48.3333 47.5 48.3333H52.5C55.25 48.3333 57.5 50.5831 57.5 53.3333V57.5C57.5 60.25 55.25 62.5 52.5 62.5H47.5C44.75 62.5 42.5 60.25 42.5 57.5V53.3333Z" fill="white"/>
+    </svg>
+
+    <h1>Cara Membuat Bakpao Karakter Hello Kitty yang Menggemaskan</h1>
+
+    <p>Siapa yang tidak gemas dengan Hello Kitty? Karakter kucing putih yang imut ini selalu berhasil mencuri hati banyak orang, terutama anak-anak. Nah, kali ini kita akan belajar bagaimana membuat bakpao karakter Hello Kitty yang tidak hanya cantik dipandang, tetapi juga lezat disantap. Resep ini cocok untuk camilan di rumah atau bahkan untuk ide jualan yang unik.</p>
+
+    <p>Membuat bakpao karakter memang membutuhkan sedikit kreativitas dan kesabaran, terutama saat membentuk detail wajahnya. Namun, jangan khawatir, dengan panduan yang tepat, Anda pasti bisa menghasilkan bakpao Hello Kitty yang sempurna. Mari kita mulai petualangan kuliner yang menyenangkan ini!</p>
+
+    <div class="ingredients">
+        <h2>Bahan-bahan Adonan Bakpao</h2>
+        <ul>
+            <li>300 gram tepung terigu protein tinggi</li>
+            <li>50 gram gula pasir</li>
+            <li>1 sendok teh ragi instan</li>
+            <li>1/4 sendok teh garam</li>
+            <li>150 ml air dingin</li>
+            <li>30 gram margarin/mentega</li>
+            <li>Pewarna makanan merah muda secukupnya (opsional, untuk pita)</li>
+            <li>Margarin secukupnya untuk olesan</li>
+        </ul>
+    </div>
+
+    <div class="ingredients">
+        <h2>Bahan Isian (Pilih salah satu atau kombinasi)</h2>
+        <ul>
+            <li>Cokelat meses</li>
+            <li>Kacang hijau kupas, rebus, haluskan, dan beri gula</li>
+            <li>Selai buah (stroberi, blueberry)</li>
+            <li>Daging ayam cincang berbumbu</li>
+        </ul>
+    </div>
+
+    <div class="instructions">
+        <h2>Langkah-langkah Membuat Bakpao Hello Kitty</h2>
+        <ol class="step-list">
+            <li>
+                <span class="step-number">1</span>
+                <p><strong>Persiapan Adonan:</strong> Dalam wadah, campurkan tepung terigu, gula pasir, ragi instan, dan garam. Aduk rata.</p>
+            </li>
+            <li>
+                <span class="step-number">2</span>
+                <p>Masukkan air dingin sedikit demi sedikit sambil terus diuleni hingga adonan setengah kalis. Jika menggunakan mixer, gunakan kecepatan rendah.</p>
+            </li>
+            <li>
+                <span class="step-number">3</span>
+                <p>Tambahkan margarin/mentega, kemudian uleni kembali hingga adonan benar-benar kalis elastis. Jika adonan terasa lengket, Anda bisa menambahkan sedikit tepung, namun jangan berlebihan.</p>
+            </li>
+            <li>
+                <span class="step-number">4</span>
+                <p>Bulatkan adonan, lalu letakkan dalam wadah yang sudah diolesi sedikit minyak. Tutup wadah dengan kain lembab atau plastic wrap, dan diamkan selama kurang lebih 30-45 menit hingga adonan mengembang dua kali lipat.</p>
+            </li>
+            <li>
+                <span class="step-number">5</span>
+                <p><strong>Membentuk Karakter Hello Kitty:</strong> Setelah adonan mengembang, kempiskan adonan dan bagi menjadi beberapa bagian sesuai ukuran bakpao yang diinginkan. Untuk bagian kepala Hello Kitty, ambil adonan secukupnya, bulatkan, lalu pipihkan sedikit di bagian bawah.</p>
+            </li>
+            <li>
+                <span class="step-number">6</span>
+                <p>Isi bagian tengah adonan dengan isian favorit Anda, lalu tutup kembali adonan dengan rapi dan bulatkan kembali. Pastikan tidak ada celah agar isian tidak bocor saat dikukus.</p>
+            </li>
+            <li>
+                <span class="step-number">7</span>
+                <p><strong>Detail Wajah:</strong> Ambil sedikit adonan, campurkan dengan pewarna merah muda, lalu bentuk menjadi pita kecil untuk diletakkan di samping kepala Hello Kitty. Gunakan tusuk gigi atau alat kecil untuk menempelkan pita pada kepala bakpao.</p>
+            </li>
+            <li>
+                <span class="step-number">8</span>
+                <p>Untuk mata dan hidung, Anda bisa menggunakan sedikit adonan hitam (bisa dari cokelat bubuk yang dicampur sedikit adonan) atau bahkan biji wijen hitam yang disusun rapi. Untuk kumis, Anda bisa menggunakan helai pasta yang tipis atau bahkan tidak perlu jika ingin lebih simpel.</p>
+            </li>
+            <li>
+                <span class="step-number">9</span>
+                <p><strong>Mengukus Bakpao:</strong> Siapkan kukusan yang sudah dipanaskan. Alasi sisi bawah bakpao dengan kertas roti agar tidak lengket.</p>
+            </li>
+            <li>
+                <span class="step-number">10</span>
+                <p>Kukus bakpao dengan api sedang selama kurang lebih 10-15 menit atau hingga matang. Jangan terlalu lama agar bakpao tidak kempes.</p>
+            </li>
+            <li>
+                <span class="step-number">11</span>
+                <p>Setelah matang, angkat bakpao, olesi permukaannya dengan sedikit margarin agar mengkilap, dan biarkan sedikit dingin sebelum disajikan.</p>
+            </li>
+        </ol>
+    </div>
+
+    <p>Voila! Bakpao Hello Kitty Anda siap dinikmati. Kelembutan adonan bakpao berpadu dengan isian manis atau gurih akan menciptakan sensasi rasa yang menyenangkan. Membuat bakpao karakter seperti ini bisa menjadi kegiatan seru bersama keluarga, terutama jika ada anak-anak di rumah. Mereka pasti akan antusias membantu menghias wajah si kucing putih kesayangan.</p>
+
+    <p>Jangan ragu untuk bereksperimen dengan isian atau bahkan warna adonan. Anda bisa mencoba warna pastel lainnya untuk variasi. Kunci utama dari bakpao yang lembut adalah penggunaan tepung protein tinggi dan proses pengulenan yang benar hingga adonan kalis elastis. Selamat mencoba!</p>
+
+</div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakteri-selulolitik">Bakteri Selulolitik</a></li>
+<li><a href="/gambar-fermentasi-asam-laktat">Gambar Fermentasi Asam Laktat</a></li>
+<li><a href="/pemilik-bakpia-kurnia-sari">Pemilik Bakpia Kurnia Sari</a></li>
+<li><a href="/bakpao-ny-liem">Bakpao Ny Liem</a></li>
+<li><a href="/gareth-bale-dijual">Gareth Bale Dijual</a></li>
+<li><a href="/bakpia-pathok-ayu">Bakpia Pathok Ayu</a></li>
+<li><a href="/bakpia-murah-dan-enak">Bakpia Murah Dan Enak</a></li>
+<li><a href="/bumbu-ulek-bakwan-sayur">Bumbu Ulek Bakwan Sayur</a></li>
+<li><a href="/resep-ote-ote-untuk-jualan">Resep Ote Ote Untuk Jualan</a></li>
+<li><a href="/resep-bakso-tahu-mercon">Resep Bakso Tahu Mercon</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

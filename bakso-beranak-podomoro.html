@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakso Beranak Podomoro: Sensasi Pedas Nikmat!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #e0f7fa; /* Biru muda sejuk */
+            --text-color: #004d40; /* Hijau tua pekat */
+            --primary-color: #00bcd4; /* Cyan cerah */
+            --secondary-color: #80deea; /* Cyan muda */
+            --accent-color: #ff8f00; /* Oranye terang */
+            --card-bg: #ffffff;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .cta-button:hover {
+            background-color: #e65100; /* Oranye lebih gelap */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #455a64;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <!-- SVG Image: Bakso beranak dengan percikan bumbu -->
+            <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakso beranak dengan kuah pedas">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#ffab40;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e65100;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <!-- Bakso utama -->
+                <circle cx="100" cy="80" r="40" fill="#f57c00" filter="url(#shadow)" />
+                <circle cx="100" cy="80" r="35" fill="#e65100" />
+                <!-- Bakso anak di dalam -->
+                <circle cx="100" cy="80" r="15" fill="#fbc02d" />
+                <circle cx="100" cy="80" r="12" fill="#ffee58" />
+                <!-- Kuah dan bumbu -->
+                <path d="M 50 130 Q 100 140 150 130" fill="url(#grad1)" opacity="0.7" />
+                <circle cx="95" cy="75" r="3" fill="#d32f2f" opacity="0.8"/>
+                <circle cx="105" cy="85" r="3" fill="#d32f2f" opacity="0.8"/>
+                <circle cx="115" cy="70" r="2" fill="#fbc02d" opacity="0.6"/>
+                <circle cx="85" cy="90" r="2" fill="#fbc02d" opacity="0.6"/>
+                <!-- Garis tipis mengindikasikan uap -->
+                <line x1="90" y1="50" x2="95" y2="40" stroke="#f0f0f0" stroke-width="1" opacity="0.5"/>
+                <line x1="100" y1="45" x2="105" y2="35" stroke="#f0f0f0" stroke-width="1" opacity="0.5"/>
+                <line x1="110" y1="55" x2="115" y2="45" stroke="#f0f0f0" stroke-width="1" opacity="0.5"/>
+            </svg>
+        </div>
+
+        <h1>Sensasi Autentik Bakso Beranak Podomoro</h1>
+        <p>Siapa yang tidak tergiur dengan kelezatan seporsi bakso hangat? Terlebih lagi jika bakso tersebut memiliki sensasi unik dan rasa yang mendalam. Inilah yang ditawarkan oleh <span class="highlight">Bakso Beranak Podomoro</span>, sebuah inovasi kuliner yang siap menggoyang lidah Anda.</p>
+
+        <p>Bakso beranak, seperti namanya, menawarkan kejutan di setiap gigitannya. Berbeda dengan bakso biasa, bakso beranak memiliki ukuran yang lebih besar di bagian luarnya, dan di dalamnya tersimpan sejumlah bakso-bakso kecil. Konsep inilah yang kemudian dikembangkan dengan sentuhan khas Podomoro, menciptakan sebuah pengalaman makan yang tak terlupakan. Bayangkan membelah bakso jumbo ini dan menemukan 'anak-anak' bakso yang siap disantap, disiram dengan kuah kaldu yang gurih dan beraroma rempah.</p>
+
+        <h2>Keistimewaan Bakso Beranak Podomoro</h2>
+        <p>Yang membuat <span class="highlight">Bakso Beranak Podomoro</span> begitu istimewa adalah kombinasi sempurna antara kualitas bahan baku, racikan bumbu yang khas, dan tentu saja, konsep 'beranak' yang inovatif. Daging sapi pilihan diolah menjadi adonan bakso yang kenyal dan padat, tanpa tambahan bahan pengawet yang berlebihan. Proses pembuatannya yang teliti memastikan setiap butir bakso memiliki tekstur yang pas, tidak terlalu keras namun juga tidak lembek.</p>
+
+        <p>Kuah kaldu adalah elemen krusial lain yang tidak bisa dilewatkan. Kuah <span class="highlight">Bakso Beranak Podomoro</span> diracik dari tulang sapi pilihan yang direbus berjam-jam, menghasilkan kuah yang bening namun kaya rasa. Ditambah dengan racikan bumbu rempah rahasia yang memberikan aroma menggugah selera dan sedikit sentuhan pedas yang membuat ketagihan, kuah ini menjadi pendamping sempurna untuk bakso beranak.</p>
+
+        <h2>Lebih dari Sekadar Bakso Biasa</h2>
+        <p>Mengonsumsi <span class="highlight">Bakso Beranak Podomoro</span> bukan sekadar makan, melainkan sebuah petualangan rasa. Sensasi memotong bakso besar dan melihat 'anak-anaknya' bermunculan memberikan elemen kejutan yang menyenangkan. Setiap gigitan bakso kecil yang lumer di mulut, berpadu dengan kuah hangat yang kaya rempah, menciptakan harmoni rasa yang sulit ditolak. Bagi para pecinta pedas, Anda bisa menyesuaikan tingkat kepedasan kuah sesuai selera, menambahkan sambal khas Podomoro yang semakin membangkitkan selera.</p>
+
+        <p>Tempat ini juga menjadi destinasi kuliner yang menarik bagi keluarga maupun teman-teman. Suasana yang nyaman dan pelayanan yang ramah akan melengkapi pengalaman bersantap Anda. Anda bisa menikmati seporsi bakso beranak sambil berbincang santai, berbagi cerita, dan menciptakan momen-momen indah bersama orang terkasih.</p>
+
+        <p>Jadi, jika Anda sedang mencari kuliner yang unik, lezat, dan mengenyangkan, jangan ragu untuk mencoba <span class="highlight">Bakso Beranak Podomoro</span>. Rasakan sendiri sensasi autentiik dan kelezatan yang akan membuat Anda ingin kembali lagi dan lagi. Sebuah kenikmatan sejati yang tersembunyi dalam setiap porsinya!</p>
+
+        <a href="#" class="cta-button">Cari Tahu Lokasi Terdekat!</a>
+
+        <footer>
+            &copy; Hak Cipta Dilindungi.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-kumbu-ubi">Cara Membuat Kumbu Ubi</a></li>
+<li><a href="/membuat-bakpao-coklat">Membuat Bakpao Coklat</a></li>
+<li><a href="/cara-membuat-bakpao-mudah">Cara Membuat Bakpao Mudah</a></li>
+<li><a href="/bakpia-kukus-25">Bakpia Kukus 25</a></li>
+<li><a href="/balasan-orang-yang-melaksanakan-shalat-wajib">Balasan Orang Yang Melaksanakan Shalat Wajib</a></li>
+<li><a href="/bakpia-asin">Bakpia Asin</a></li>
+<li><a href="/cara-membuat-bakwan-teri-basah">Cara Membuat Bakwan Teri Basah</a></li>
+<li><a href="/cara-masak-bala-bala-jagung">Cara Masak Bala Bala Jagung</a></li>
+<li><a href="/masak-gimbal-jagung">Masak Gimbal Jagung</a></li>
+<li><a href="/bumbu-sayur-kepala-kakap">Bumbu Sayur Kepala Kakap</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

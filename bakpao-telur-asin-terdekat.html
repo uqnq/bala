@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Bakpao Telur Asin Terdekat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #87CEEB; /* Warna biru langit sejuk */
+            --secondary-color: #FFD700; /* Warna kuning cerah seperti telur asin */
+            --background-color: #F0FFFF; /* Warna latar belakang biru sangat muda */
+            --text-color: #333;
+            --heading-color: #000080; /* Warna biru tua untuk judul */
+            --card-bg: #FFFFFF;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            padding: 30px 0;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 15px 20px;
+            width: 70%;
+            border: 2px solid var(--primary-color);
+            border-radius: 30px;
+            font-size: 1.1em;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-bar input[type="text"]:focus {
+            border-color: var(--secondary-color);
+        }
+
+        .search-bar button {
+            padding: 15px 25px;
+            background-color: var(--secondary-color);
+            color: var(--heading-color);
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .search-bar button:hover {
+            background-color: #e6c300; /* Warna kuning lebih gelap saat hover */
+            transform: translateY(-2px);
+        }
+
+        .results-section {
+            margin-top: 40px;
+        }
+
+        .results-section h2 {
+            color: var(--heading-color);
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .results-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+        }
+
+        .bakpao-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 12px var(--shadow-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bakpao-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .bakpao-image {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .bakpao-card h3 {
+            color: var(--heading-color);
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .bakpao-card p {
+            margin-bottom: 5px;
+            font-size: 1.05em;
+        }
+
+        .bakpao-card .location {
+            font-weight: bold;
+            color: var(--secondary-color);
+            font-size: 1.1em;
+        }
+
+        .bakpao-card .rating {
+            color: #f39c12; /* Warna oranye untuk rating */
+            font-size: 1.0em;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .search-bar input[type="text"] {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+
+            .search-bar button {
+                margin-left: 0;
+            }
+
+            .bakpao-card {
+                padding: 20px;
+            }
+
+            .bakpao-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .bakpao-card h3 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Temukan Bakpao Telur Asin Lezat</h1>
+        <p>Cari lokasi terdekat yang menyajikan bakpao telur asin favorit Anda!</p>
+    </header>
+
+    <div class="container">
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="Masukkan lokasi Anda (misal: Jakarta Selatan)">
+            <button id="search-button">Cari</button>
+        </section>
+
+        <section class="results-section">
+            <h2>Bakpao Telur Asin Dekat Sini</h2>
+
+            <div class="bakpao-card">
+                <img src="/bakpao-telur-asin-lezat.svg" alt="Ilustrasi bakpao telur asin yang menggiurkan dengan isian lumer" class="bakpao-image">
+                <h3>Bakpao Mekar Jaya</h3>
+                <p>Bakpao super lembut dengan isian lumer.</p>
+                <p class="location">Jl. Melati No. 12, Bunga Indah</p>
+                <p class="rating">★★★★☆ (4.5)</p>
+            </div>
+
+            <div class="bakpao-card">
+                <img src="/bakpao-telur-asin-lezat.svg" alt="Ilustrasi bakpao telur asin yang menggiurkan dengan isian lumer" class="bakpao-image">
+                <h3>Raja Bakpao Gurih</h3>
+                <p>Cita rasa otentik telur asin berpadu sempurna.</p>
+                <p class="location">Kios Taman Kota, Pusat Kota</p>
+                <p class="rating">★★★★★ (4.8)</p>
+            </div>
+
+            <div class="bakpao-card">
+                <img src="/bakpao-telur-asin-lezat.svg" alt="Ilustrasi bakpao telur asin yang menggiurkan dengan isian lumer" class="bakpao-image">
+                <h3>Si Kuning Manis</h3>
+                <p>Sensasi manis gurih yang bikin nagih.</p>
+                <p class="location">Area Kuliner Sudirman, Lantai 1</p>
+                <p class="rating">★★★★☆ (4.3)</p>
+            </div>
+
+            <div class="bakpao-card">
+                <img src="/bakpao-telur-asin-lezat.svg" alt="Ilustrasi bakpao telur asin yang menggiurkan dengan isian lumer" class="bakpao-image">
+                <h3>Bakpao Bahagia</h3>
+                <p>Setiap gigitan adalah kebahagiaan.</p>
+                <p class="location">Gang Damai No. 5, Kampung Makmur</p>
+                <p class="rating">★★★★ (4.0)</p>
+            </div>
+
+            <p style="text-align: center; color: #555; margin-top: 30px;">Masih mencari? Coba masukkan lokasi yang lebih spesifik!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; Temukan Bakpao Telur Asin Anda.</p>
+    </footer>
+
+    <script>
+        // Script sederhana untuk simulasi pencarian jika diperlukan,
+        // namun untuk tampilan saja, ini tidak wajib.
+        const searchButton = document.getElementById('search-button');
+        const searchInput = document.getElementById('search-input');
+
+        searchButton.addEventListener('click', () => {
+            const location = searchInput.value.trim();
+            if (location) {
+                alert(`Mencari bakpao telur asin terdekat di "${location}"... (simulasi)`);
+                // Di sini Anda bisa menambahkan logika untuk memfilter hasil
+                // atau memuat data baru berdasarkan lokasi.
+            } else {
+                alert('Mohon masukkan lokasi Anda terlebih dahulu.');
+            }
+        });
+
+        searchInput.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                searchButton.click();
+            }
+        });
+    </script>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-buat-bakso-ceker-mercon">Cara Buat Bakso Ceker Mercon</a></li>
+<li><a href="/resep-bakwan-solo">Resep Bakwan Solo</a></li>
+<li><a href="/bakso-dan-otak-otak-mercon">Bakso Dan Otak Otak Mercon</a></li>
+<li><a href="/baklava-yazdi">Baklava Yazdi</a></li>
+<li><a href="/bunga-bakung-bunga-bakung">Bunga Bakung Bunga Bakung</a></li>
+<li><a href="/resep-bikin-dadar-jagung-manis">Resep Bikin Dadar Jagung Manis</a></li>
+<li><a href="/bumbu-pelas-jagung-jawa">Bumbu Pelas Jagung Jawa</a></li>
+<li><a href="/bakpao-gapit">Bakpao Gapit</a></li>
+<li><a href="/bakwan-kungkung">Bakwan Kungkung</a></li>
+<li><a href="/bakpia-yang-enak">Bakpia Yang Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

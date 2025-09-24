@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakpiaku Online: Kue Lezat & Mudah Dipesan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #73e9fe; /* Biru cerah sejuk */
+            --color-secondary: #d5f4fe; /* Biru muda cerah */
+            --color-accent: #ff9f80; /* Oranye lembut cerah */
+            --color-text-dark: #333;
+            --color-text-light: #fff;
+            --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --spacing-unit: 1rem;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-secondary);
+            color: var(--color-text-dark);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-unit);
+            flex-grow: 1;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: var(--color-text-dark);
+        }
+
+        .hero-image {
+            text-align: center;
+            margin: calc(var(--spacing-unit) * 2) 0;
+        }
+
+        .hero-image svg {
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .content {
+            background-color: var(--color-text-light);
+            padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: var(--spacing-unit);
+            font-size: 2em;
+        }
+
+        p {
+            margin-bottom: var(--spacing-unit);
+        }
+
+        strong {
+            color: var(--color-accent);
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: var(--spacing-unit) auto;
+            padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
+            background-color: var(--color-accent);
+            color: var(--color-text-light);
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #ff7f60; /* Warna oranye sedikit lebih gelap saat hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: var(--spacing-unit) 0;
+            background-color: var(--color-primary);
+            color: var(--color-text-dark);
+            margin-top: auto;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+            .cta-button {
+                font-size: 1em;
+                padding: var(--spacing-unit) var(--spacing-unit);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bakpiaku Online</h1>
+    </header>
+
+    <div class="container">
+        <div class="hero-image">
+            <!-- SVG Gambar yang cocok dengan tema cerah, sejuk, dan menggambarkan bakpia -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#73e9fe;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#d5f4fe;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff9f80;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffc9b3;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path d="M350 100 C 350 141.4 317.4 180 275 180 L 125 180 C 82.6 180 50 141.4 50 100 L 50 50 C 50 8.6 82.6 0 125 0 L 275 0 C 317.4 0 350 8.6 350 50 Z" fill="url(#grad1)"/>
+                <!-- Bentuk bakpia sederhana -->
+                <ellipse cx="100" cy="100" rx="40" ry="30" fill="#ffffff" stroke="#ff9f80" stroke-width="5"/>
+                <ellipse cx="200" cy="100" rx="40" ry="30" fill="#ffffff" stroke="#ff9f80" stroke-width="5"/>
+                <ellipse cx="300" cy="100" rx="40" ry="30" fill="#ffffff" stroke="#ff9f80" stroke-width="5"/>
+                <!-- Garis-garis pada bakpia -->
+                <path d="M100 75 V 125" stroke="#ff9f80" stroke-width="3"/>
+                <path d="M60 100 H 140" stroke="#ff9f80" stroke-width="3"/>
+                <path d="M200 75 V 125" stroke="#ff9f80" stroke-width="3"/>
+                <path d="M160 100 H 240" stroke="#ff9f80" stroke-width="3"/>
+                <path d="M300 75 V 125" stroke="#ff9f80" stroke-width="3"/>
+                <path d="M260 100 H 340" stroke="#ff9f80" stroke-width="3"/>
+            </svg>
+            <p><em>Ilustrasi Bakpiaku yang Lezat & Segar</em></p>
+        </div>
+
+        <div class="content">
+            <h2>Nikmati Kelezatan Bakpiaku Dimanapun Anda Berada</h2>
+            <p>
+                Selamat datang di era kemudahan memesan kudapan favorit Anda! <strong>Bakpiaku online</strong> kini hadir untuk membawa kelezatan legendaris langsung ke genggaman Anda. Lupakan antrean panjang dan perjalanan jauh, karena kini Anda bisa menikmati bakpia berkualitas tinggi dengan sentuhan modern. Kami memahami betapa berharganya waktu Anda, oleh karena itu, platform online kami dirancang agar Anda dapat memesan bakpia impian dengan cepat, mudah, dan menyenangkan.
+            </p>
+            <p>
+                Kami menawarkan berbagai varian rasa yang menggugah selera, mulai dari rasa klasik seperti kacang hijau, cokelat, keju, hingga kreasi rasa inovatif yang akan membuat lidah Anda bergoyang. Setiap bakpia dibuat dengan bahan-bahan pilihan terbaik, diproses secara higienis, dan dikemas dengan cinta untuk memastikan kesegaran serta cita rasa autentik yang tak tertandingi. Rasakan tekstur kulitnya yang renyah di luar dan isiannya yang lembut serta melimpah di dalam.
+            </p>
+            <p>
+                Memesan melalui <strong>bakpiaku online</strong> sangatlah praktis. Cukup kunjungi situs kami, pilih varian rasa dan jumlah yang Anda inginkan, masukkan detail pengiriman, dan selesaikan pembayaran. Kami bekerja sama dengan jasa pengiriman terpercaya untuk memastikan pesanan Anda sampai di tujuan dengan aman dan tepat waktu. Baik untuk camilan pribadi, buah tangan untuk keluarga dan kerabat, atau suguhan untuk acara spesial, bakpia kami siap menjadi bagian dari momen berharga Anda.
+            </p>
+            <p>
+                Kami percaya bahwa setiap gigitan bakpia seharusnya membawa kebahagiaan. Dengan layanan <strong>bakpiaku online</strong>, kami berusaha mewujudkan hal tersebut. Pengalaman berbelanja yang mulus, pilihan rasa yang beragam, serta kualitas produk yang terjamin adalah janji kami untuk Anda. Jangan lewatkan kesempatan untuk merasakan sensasi lezat yang selalu dirindukan, kini lebih mudah diakses dari mana saja.
+            </p>
+            <p>
+                Tunggu apa lagi? Jelajahi koleksi rasa kami dan segera lakukan pemesanan. Rasakan perbedaan kualitas dan kemudahan yang hanya bisa Anda dapatkan melalui <strong>bakpiaku online</strong>. Kami hadir untuk memenuhi hasrat kuliner Anda dengan cara yang paling cerah dan menyenangkan.
+            </p>
+
+            <a href="#" class="cta-button">Pesan Bakpiaku Sekarang!</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/pewarnaan-gram-staphylococcus-aureus">Pewarnaan Gram Staphylococcus Aureus</a></li>
+<li><a href="/cara-buat-bakso-mercon-goreng">Cara Buat Bakso Mercon Goreng</a></li>
+<li><a href="/cara-mengukus-bakpao-supaya-tidak-mengkerut">Cara Mengukus Bakpao Supaya Tidak Mengkerut</a></li>
+<li><a href="/resep-bakwan-sayur-takaran-sendok">Resep Bakwan Sayur Takaran Sendok</a></li>
+<li><a href="/harga-bakpao-mini">Harga Bakpao Mini</a></li>
+<li><a href="/bakpia-99-harga">Bakpia 99 Harga</a></li>
+<li><a href="/cara-membuat-bala-bala">Cara Membuat Bala Bala</a></li>
+<li><a href="/bumbu-bakwan-udang-jagung">Bumbu Bakwan Udang Jagung</a></li>
+<li><a href="/resep-bakwan-pinggir-jalan">Resep Bakwan Pinggir Jalan</a></li>
+<li><a href="/bakwan-brokoli">Bakwan Brokoli</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resep bakwan jagung dan wortel, camilan renyah dan sehat yang mudah dibuat di rumah. Cocok untuk segala suasana.">
+    <title>Resep Bakwan Jagung Wortel Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #66c2a5; /* Warna sejuk cerah */
+            --secondary-color: #87d3b7;
+            --background-color: #e8f5e9; /* Latar belakang hijau muda */
+            --text-color: #333;
+            --heading-color: #2c8c86;
+            --card-background: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        h1 {
+            color: var(--heading-color);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .content-section {
+            margin-bottom: 25px;
+        }
+
+        .recipe-section {
+            margin-top: 20px;
+            padding-left: 15px;
+        }
+
+        .recipe-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .recipe-section li {
+            margin-bottom: 10px;
+        }
+
+        .instructions-section ol {
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        .instructions-section li {
+            margin-bottom: 15px;
+        }
+
+        .tip-box {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .tip-box strong {
+            color: var(--text-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: var(--text-color);
+            font-size: 0.9em;
+            width: 100%;
+            background-color: var(--primary-color);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.4em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .container {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakwan jagung dan wortel yang lezat">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:rgba(255,215,0,0.8);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgba(255,165,0,0.8);stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:rgba(255,99,71,0.8);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgba(255,140,0,0.8);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Background element -->
+                <rect width="600" height="300" fill="var(--secondary-color)" rx="15"/>
+
+                <!-- Jagung -->
+                <ellipse cx="180" cy="150" rx="40" ry="15" fill="#FFD700" transform="rotate(15 180 150)" />
+                <ellipse cx="210" cy="160" rx="35" ry="13" fill="#FFEA00" transform="rotate(-10 210 160)" />
+                <ellipse cx="150" cy="140" rx="38" ry="14" fill="#FFD700" transform="rotate(25 150 140)" />
+
+                <!-- Wortel -->
+                <path d="M 350 100 L 380 50 L 410 100 Z" fill="#FF6347" transform="rotate(10 380 75)"/>
+                <path d="M 370 120 L 400 70 L 430 120 Z" fill="#FFA07A" transform="rotate(-5 400 95)"/>
+                <path d="M 330 110 L 360 60 L 390 110 Z" fill="#FF6347" transform="rotate(20 360 85)"/>
+
+                <!-- Sisa adonan (bakwan) -->
+                <path d="M 280 180 C 290 160 330 150 350 170 C 370 190 350 220 320 230 C 290 240 270 220 280 180 Z" fill="#ffe0b2" />
+                <ellipse cx="300" cy="200" rx="30" ry="20" fill="#ffe0b2" />
+                <ellipse cx="330" cy="190" rx="25" ry="15" fill="#fff3e0" />
+
+                <!-- Tetesan minyak -->
+                <circle cx="450" cy="150" r="5" fill="rgba(255,255,255,0.5)" opacity="0.7"/>
+                <circle cx="470" cy="165" r="4" fill="rgba(255,255,255,0.4)" opacity="0.6"/>
+                <circle cx="430" cy="180" r="3" fill="rgba(255,255,255,0.3)" opacity="0.5"/>
+            </svg>
+        </div>
+
+        <h1>Resep Bakwan Jagung dan Wortel Renyah & Lezat</h1>
+
+        <div class="content-section">
+            <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan jagung dan wortel adalah salah satu jajanan tradisional Indonesia yang selalu digemari. Perpaduan manisnya jagung pipil, renyahnya wortel parut, dan bumbu rempah yang pas membuat bakwan ini menjadi favorit untuk teman ngopi atau sekadar santapan ringan di sore hari. Kelebihan dari resep bakwan jagung dan wortel ini adalah kemudahannya dalam pembuatan, bahan yang mudah didapat, serta rasa yang konsisten lezat!</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Bahan-bahan Utama</h2>
+            <div class="recipe-section">
+                <ul>
+                    <li>2 buah jagung manis, pipil atau serut kasar</li>
+                    <li>1 buah wortel ukuran sedang, parut kasar</li>
+                    <li>100 gram tepung terigu serbaguna</li>
+                    <li>50 gram tepung beras (agar lebih renyah)</li>
+                    <li>1 batang daun bawang, iris tipis</li>
+                    <li>2 siung bawang putih, haluskan</li>
+                    <li>1/2 sendok teh ketumbar bubuk</li>
+                    <li>1/4 sendok teh merica bubuk</li>
+                    <li>1 butir telur, kocok lepas</li>
+                    <li>Garam secukupnya</li>
+                    <li>Gula pasir sejumput (opsional, untuk menyeimbangkan rasa)</li>
+                    <li>Air secukupnya (untuk adonan)</li>
+                    <li>Minyak goreng secukupnya</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Cara Membuat Bakwan Jagung Wortel</h2>
+            <div class="instructions-section">
+                <ol>
+                    <li><strong>Persiapan Bahan:</strong> Dalam sebuah wadah besar, campurkan jagung pipil/serut dan wortel parut.</li>
+                    <li><strong>Membuat Adonan:</strong> Masukkan tepung terigu, tepung beras, irisan daun bawang, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan sejumput gula (jika menggunakan). Aduk rata semua bahan kering.</li>
+                    <li><strong>Menambahkan Bahan Basah:</strong> Tuangkan telur yang sudah dikocok lepas ke dalam campuran bahan kering. Aduk kembali hingga tercampur rata.</li>
+                    <li><strong>Mengatur Kekentalan:</strong> Tambahkan air sedikit demi sedikit sambil terus diaduk hingga adonan memiliki kekentalan yang pas. Adonan tidak boleh terlalu encer agar tidak menyebar saat digoreng, namun juga tidak terlalu kental agar bakwan tidak keras. Kekentalannya kira-kira seperti adonan bakwan pada umumnya yang bisa menempel pada sayuran.</li>
+                    <li><strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng dalam jumlah yang cukup banyak di wajan. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                    <li><strong>Membentuk dan Menggoreng:</strong> Ambil satu sendok adonan, ratakan sedikit agar tidak terlalu tebal, lalu masukkan ke dalam minyak panas. Goreng hingga kedua sisinya berwarna kuning keemasan dan matang sempurna. Lakukan hingga adonan habis.</li>
+                    <li><strong>Tiriskan dan Sajikan:</strong> Angkat bakwan yang sudah matang, tiriskan minyaknya dengan baik. Sajikan selagi hangat.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="tip-box">
+                <strong>Tips Tambahan:</strong>
+                <ul>
+                    <li>Untuk hasil yang lebih renyah, gunakan kombinasi tepung terigu dan tepung beras. Jangan terlalu banyak menggunakan air agar bakwan tidak lembek.</li>
+                    <li>Pastikan minyak benar-benar panas sebelum menggoreng. Ini kunci agar bakwan matang merata dan renyah di luar, namun tetap lembut di dalam.</li>
+                    <li>Anda bisa menambahkan irisan cabai rawit jika suka pedas.</li>
+                    <li>Untuk rasa yang lebih kaya, sedikit parutan kencur bisa ditambahkan bersama bawang putih.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <p>Bakwan jagung dan wortel ini sangat nikmat disantap dengan sambal kecap, cabai rawit utuh, atau saus sambal favorit Anda. Kelezatannya tidak hanya karena teksturnya yang renyah, tetapi juga karena kesegaran rasa jagung dan manisnya wortel yang berpadu harmonis. Membuatnya sendiri di rumah tentu lebih higienis dan bisa disesuaikan dengan selera keluarga. Selamat mencoba dan menikmati kelezatan bakwan jagung wortel!</p>
+        </div>
+    </div>
+
+    <footer>
+        © Hak Cipta Dilindungi
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/harga-bakpiaku-2022">Harga Bakpiaku 2022</a></li>
+<li><a href="/bakso-seafood-mercon">Bakso Seafood Mercon</a></li>
+<li><a href="/bakwan-jagung-manis-crispy">Bakwan Jagung Manis Crispy</a></li>
+<li><a href="/bakwan-singkong-kriuk">Bakwan Singkong Kriuk</a></li>
+<li><a href="/cara-membuat-bakwan-kangkung">Cara Membuat Bakwan Kangkung</a></li>
+<li><a href="/balasan-ucapan-isra-mi-raj">Balasan Ucapan Isra Mi Raj</a></li>
+<li><a href="/resep-dadar-jagung-jawa">Resep Dadar Jagung Jawa</a></li>
+<li><a href="/alat-dan-bahan-untuk-membuat-bakwan-jagung">Alat Dan Bahan Untuk Membuat Bakwan Jagung</a></li>
+<li><a href="/cara-membuat-sambal-mercon-untuk-bakso">Cara Membuat Sambal Mercon Untuk Bakso</a></li>
+<li><a href="/resep-bakwan-ubi-jalar">Resep Bakwan Ubi Jalar</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

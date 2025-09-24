@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Sayur & Sambal Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna dasar sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna judul yang cerah */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #00695c; /* Warna subjudul yang sedikit lebih gelap */
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-section {
+            background-color: #f0f9fa; /* Latar sedikit berbeda untuk bagian resep */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .ingredient-list {
+            list-style-type: disc;
+        }
+        .instruction-list {
+            list-style-type: decimal;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .food-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            color: #004d40; /* Warna penekanan */
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p, li {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Sayur Kerenyahan Sempurna dan Sambal Pelengkapnya</h1>
+
+        <div class="image-container">
+            <!-- SVG Gambar Bakwan Sayur -->
+            <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakwanTitle">
+                <title id="bakwanTitle">Ilustrasi Bakwan Sayur Crispy</title>
+                <rect width="300" height="200" rx="15" fill="#fff"/>
+                <g stroke="#e0f7fa" stroke-width="2" fill="none">
+                    <!-- Lingkaran luar bakwan -->
+                    <circle cx="150" cy="100" r="70"/>
+                    <circle cx="150" cy="100" r="72"/>
+                    <circle cx="150" cy="100" r="75"/>
+                </g>
+                <!-- Potongan sayuran (jagung, wortel, kol) -->
+                <g fill="#ffcc80"> <!-- Jagung -->
+                    <path d="M130 80 L140 70 L150 80 L140 90 Z"/>
+                    <path d="M120 90 L130 80 L140 90 L130 100 Z"/>
+                    <path d="M110 100 L120 90 L130 100 L120 110 Z"/>
+                </g>
+                <g fill="#ff8a65"> <!-- Wortel -->
+                    <path d="M160 75 L165 80 L160 85 L155 80 Z"/>
+                    <path d="M170 85 L175 90 L170 95 L165 90 Z"/>
+                </g>
+                <g fill="#90ee90"> <!-- Kol -->
+                    <path d="M140 60 L145 65 L140 70 L135 65 Z"/>
+                    <path d="M170 110 L175 115 L170 120 L165 115 Z"/>
+                </g>
+                <!-- Tetesan minyak -->
+                <g fill="#fbc02d" opacity="0.7">
+                    <circle cx="110" cy="120" r="5"/>
+                    <circle cx="180" cy="90" r="4"/>
+                    <circle cx="150" cy="140" r="6"/>
+                </g>
+                <text x="150" y="25" font-family="Arial" font-size="14" fill="#00796b" text-anchor="middle">Bakwan</text>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak suka <span class="highlight">bakwan sayur</span>? Camilan gorengan renyah ini adalah favorit banyak orang, apalagi jika disajikan dengan sambal yang pedas dan nikmat. Mengolah bakwan sayur di rumah ternyata tidak sesulit yang dibayangkan, dan hasilnya bisa jauh lebih memuaskan. Artikel ini akan memandu Anda membuat bakwan sayur yang kriuk tahan lama dan sambal cocolannya yang mantap.</p>
+
+        <div class="recipe-section">
+            <h2>Resep Bakwan Sayur Renyah</h2>
+            <p>Kunci utama bakwan sayur yang renyah terletak pada adonan dan cara menggorengnya. Mari kita siapkan bahan-bahannya:</p>
+
+            <h3 class="sub-heading">Bahan Utama:</h3>
+            <ul class="ingredient-list">
+                <li>150 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (untuk ekstra renyah)</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+                <li>1 buah wortel ukuran sedang, iris tipis atau parut kasar</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>50 gram tauge (opsional, untuk variasi)</li>
+                <li>2 batang daun bawang, iris tipis</li>
+                <li>1 liter minyak goreng secukupnya</li>
+            </ul>
+
+            <h3 class="sub-heading">Bumbu Halus:</h3>
+            <ul class="ingredient-list">
+                <li>2 siung bawang putih</li>
+                <li>1 butir kemiri sangrai</li>
+                <li>Sedikit kunyit bubuk (opsional, untuk warna)</li>
+            </ul>
+
+            <h3 class="sub-heading">Cara Membuat Bakwan:</h3>
+            <ol class="instruction-list">
+                <li>Dalam wadah, campurkan tepung terigu, tepung beras, garam, merica bubuk, dan kaldu bubuk.</li>
+                <li>Tambahkan bumbu halus, aduk rata.</li>
+                <li>Masukkan sayuran (wortel, kol, tauge, daun bawang) ke dalam campuran tepung.</li>
+                <li>Tuang air sedikit demi sedikit sambil diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer agar tidak lembek, namun juga tidak terlalu kental.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li>Ambil satu sendok sayur adonan, lalu masukkan ke dalam minyak panas. Pipihkan sedikit agar matang merata.</li>
+                <li>Goreng hingga bakwan berwarna kuning keemasan dan renyah. Balik sekali saja agar tidak menyerap banyak minyak.</li>
+                <li>Angkat bakwan dan tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak. Lakukan hingga adonan habis.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Sambal Cocol Bakwan yang Menggugah Selera</h2>
+            <p>Bakwan sayur kurang lengkap tanpa pendamping sambal. Berikut resep sambal sederhana namun lezat:</p>
+
+            <h3 class="sub-heading">Bahan Sambal:</h3>
+            <ul class="ingredient-list">
+                <li>5 buah cabai rawit merah (sesuai selera pedas)</li>
+                <li>2 buah cabai merah keriting</li>
+                <li>2 siung bawang merah</li>
+                <li>1 siung bawang putih</li>
+                <li>1/4 sendok teh terasi bakar (opsional)</li>
+                <li>Sejumput gula merah</li>
+                <li>Garam secukupnya</li>
+                <li>Sedikit air jeruk nipis atau limau (opsional)</li>
+            </ul>
+
+            <h3 class="sub-heading">Cara Membuat Sambal:</h3>
+            <ol class="instruction-list">
+                <li>Haluskan semua bahan sambal (cabai, bawang merah, bawang putih, terasi) menggunakan ulekan atau blender.</li>
+                <li>Tambahkan gula merah, garam, dan sedikit air jika menggunakan blender.</li>
+                <li>Koreksi rasa. Tambahkan air jeruk nipis jika suka aroma segar.</li>
+                <li>Sajikan sambal di mangkuk kecil sebagai cocolan bakwan.</li>
+            </ol>
+        </div>
+
+        <p>Menikmati <span class="highlight">bakwan sayur</span> hangat yang renyah dengan sambal pedas di sisi adalah kenikmatan tersendiri. Sajikan bakwan selagi panas agar kerenyahannya maksimal. Anda juga bisa berkreasi dengan menambahkan udang cincang atau potongan ayam ke dalam adonan bakwan untuk variasi rasa.</p>
+
+        <p>Membuat camilan favorit keluarga di rumah memberikan kepuasan tersendiri. Dengan resep ini, Anda bisa menyajikan bakwan sayur yang lezat dan sambal yang pas di lidah. Selamat mencoba dan nikmati kelezatannya!</p>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi. Konten ini dibuat untuk inspirasi kuliner.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-kulit-lumpia">Bakwan Kulit Lumpia</a></li>
+<li><a href="/mustafa-hafiz-baklava">Mustafa Hafiz Baklava</a></li>
+<li><a href="/bakwan-kawi">Bakwan Kawi</a></li>
+<li><a href="/resep-bakwan-tahu-pedas">Resep Bakwan Tahu Pedas</a></li>
+<li><a href="/cetakan-ote-ote">Cetakan Ote Ote</a></li>
+<li><a href="/bakpia-kurnia-sari-stasiun-tugu">Bakpia Kurnia Sari Stasiun Tugu</a></li>
+<li><a href="/bakpia-pathok-23">Bakpia Pathok 23</a></li>
+<li><a href="/bakpia-karunia-sari">Bakpia Karunia Sari</a></li>
+<li><a href="/bakpao-viral-99">Bakpao Viral 99</a></li>
+<li><a href="/bakwan-marugame-udon">Bakwan Marugame Udon</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

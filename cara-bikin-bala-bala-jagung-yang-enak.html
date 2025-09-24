@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Bikin Bala Bala Jagung Enak & Renyah</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang biru muda cerah */
+            color: #004d40; /* Warna teks hijau laut gelap */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul hijau toska */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #00695c; /* Warna teks tebal hijau gelap */
+        }
+        .highlight {
+            background-color: #80cbc4; /* Warna sorot hijau muda */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .recipe-step {
+            background-color: #f0f8ff; /* Latar belakang biru langit untuk langkah resep */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 5px solid #00796b;
+        }
+        .recipe-step h3 {
+            margin-top: 0;
+            color: #00796b;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #004d40;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- SVG Gambar Bala Bala Jagung -->
+            <svg width="100%" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi lezatnya bala bala jagung renyah">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffb300;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffa000;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode />
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <!-- Latar Belakang Cokelat Muda -->
+                <rect width="100%" height="100%" fill="#ffe0b2"/>
+
+                <!-- Jagung -->
+                <g transform="translate(50, 50)">
+                    <path d="M0,10 C0,25 10,40 25,40 C40,40 50,25 50,10 C50,10 40,0 25,0 C10,0 0,10 0,10 Z" fill="#ffca28" filter="url(#shadow)"/>
+                    <text x="25" y="25" font-family="Arial, sans-serif" font-size="20" fill="#f57f17" text-anchor="middle" font-weight="bold">Jagung</text>
+                </g>
+
+                <!-- Bulir-bulir Jagung -->
+                <circle cx="150" cy="80" r="5" fill="#ffc107"/>
+                <circle cx="170" cy="70" r="5" fill="#ffc107"/>
+                <circle cx="190" cy="80" r="5" fill="#ffc107"/>
+                <circle cx="140" cy="100" r="5" fill="#ffc107"/>
+                <circle cx="160" cy="90" r="5" fill="#ffc107"/>
+                <circle cx="180" cy="100" r="5" fill="#ffc107"/>
+                <circle cx="200" cy="90" r="5" fill="#ffc107"/>
+
+                <!-- Adonan -->
+                <path d="M250,50 Q280,70 270,100 T230,120 Q200,100 250,50 Z" fill="#f5deb3" filter="url(#shadow)"/>
+                <text x="250" y="85" font-family="Arial, sans-serif" font-size="18" fill="#8d6e63" text-anchor="middle">Adonan</text>
+
+                <!-- Tepung (sentuhan halus) -->
+                <circle cx="260" cy="60" r="2" fill="#ffffff" opacity="0.7"/>
+                <circle cx="245" cy="70" r="2" fill="#ffffff" opacity="0.7"/>
+                <circle cx="270" cy="80" r="2" fill="#ffffff" opacity="0.7"/>
+
+                <!-- Gorengan Renyah (sentuhan gradasi) -->
+                <path d="M350,50 L450,50 L430,150 L370,150 Z" fill="url(#grad1)" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/>
+                <text x="400" y="100" font-family="Arial, sans-serif" font-size="22" fill="white" text-anchor="middle" font-weight="bold">Bala Bala</text>
+                <text x="400" y="125" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Renyah</text>
+
+                <!-- Daun Seledri (sentuhan hijau) -->
+                <path d="M480,70 Q500,60 510,75 T490,90 Z" fill="#4caf50"/>
+                <path d="M500,90 Q520,80 530,95 T510,110 Z" fill="#66bb6a"/>
+            </svg>
+        </header>
+
+        <h1>Cara Bikin Bala Bala Jagung yang Enak dan Renyah</h1>
+
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Bala bala jagung adalah salah satu jajanan tradisional Indonesia yang selalu jadi favorit. Rasanya yang manis dari jagung berpadu dengan gurihnya adonan tepung, ditambah kerenyahannya, sungguh menggugah selera. Membuatnya di rumah ternyata tidak sesulit yang dibayangkan, lho! Dengan beberapa langkah mudah, Anda bisa menyajikan bala bala jagung lezat untuk keluarga.</p>
+
+        <p>Kunci utama dari bala bala jagung yang enak terletak pada kualitas bahan dan teknik penggorengan yang tepat. Jangan khawatir, artikel ini akan memandu Anda langkah demi langkah agar berhasil membuat bala bala jagung yang sempurna. Siap untuk berkreasi di dapur?</p>
+
+        <h2>Bahan-Bahan yang Dibutuhkan</h2>
+        <ul>
+            <li><strong>2 buah jagung manis</strong>, pipil atau serut kasar</li>
+            <li><strong>150 gram tepung terigu serbaguna</strong></li>
+            <li><strong>50 gram tepung beras</strong> (untuk ekstra renyah)</li>
+            <li><strong>1 batang daun bawang</strong>, iris tipis</li>
+            <li><strong>2 siung bawang putih</strong>, haluskan</li>
+            <li><strong>1 cm kunyit</strong> (opsional, untuk warna lebih cantik), haluskan</li>
+            <li><strong>1/2 sendok teh ketumbar bubuk</strong></li>
+            <li><strong>Garam secukupnya</strong></li>
+            <li><strong>Gula pasir secukupnya</strong> (sedikit saja untuk menyeimbangkan rasa)</li>
+            <li><strong>Merica bubuk secukupnya</strong></li>
+            <li><strong>Air secukupnya</strong> untuk adonan</li>
+            <li><strong>Minyak goreng secukupnya</strong></li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bala Bala Jagung</h2>
+
+        <div class="recipe-step">
+            <h3>Langkah 1: Persiapan Jagung dan Bumbu</h3>
+            <p>Pipil atau serut kasar jagung manis. Jika menggunakan kunyit, haluskan bersama bawang putih. Iris tipis daun bawang.</p>
+        </div>
+
+        <div class="recipe-step">
+            <h3>Langkah 2: Membuat Adonan</h3>
+            <p>Dalam sebuah wadah, campurkan tepung terigu, tepung beras, irisan daun bawang, bawang putih halus (dan kunyit jika pakai), ketumbar bubuk, garam, gula pasir, dan merica bubuk. Aduk rata.</p>
+            <p>Kemudian, masukkan jagung pipil ke dalam campuran tepung. Tuang air sedikit demi sedikit sambil terus diaduk hingga membentuk adonan yang kental dan tidak terlalu encer. Pastikan semua bahan tercampur rata dan jagung terbalut adonan dengan baik.</p>
+        </div>
+
+        <div class="recipe-step">
+            <h3>Langkah 3: Menggoreng Bala Bala</h3>
+            <p>Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Minyak harus benar-benar panas sebelum adonan dimasukkan agar bala bala tidak menyerap banyak minyak dan menjadi renyah.</p>
+            <p>Ambil satu sendok sayur adonan jagung, lalu masukkan perlahan ke dalam minyak panas. Goreng beberapa sendok adonan sekaligus, jangan terlalu penuh agar matang merata. Balik bala bala ketika satu sisinya sudah berwarna keemasan.</p>
+            <p>Goreng hingga semua sisi berwarna kuning keemasan dan terlihat renyah. Angkat dan tiriskan minyaknya menggunakan saringan atau alas tisu dapur.</p>
+        </div>
+
+        <div class="recipe-step">
+            <h3>Langkah 4: Sajikan dan Nikmati</h3>
+            <p>Bala bala jagung siap disajikan selagi hangat. Hidangkan dengan cabai rawit hijau atau sambal cocol favorit Anda untuk menambah kenikmatan. Rasa manis jagung, gurih adonan, dan sensasi renyah di setiap gigitan pasti akan membuat ketagihan.</p>
+        </div>
+
+        <h2>Tips Agar Bala Bala Jagung Renyah Tahan Lama</h2>
+        <ul>
+            <li><strong>Gunakan tepung beras:</strong> Pencampuran tepung beras dengan tepung terigu memberikan tekstur yang lebih renyah.</li>
+            <li><strong>Adonan jangan terlalu encer:</strong> Adonan yang terlalu encer akan membuat bala bala menyerap banyak minyak dan mudah lembek.</li>
+            <li><strong>Minyak panas sempurna:</strong> Pastikan minyak benar-benar panas sebelum menggoreng. Anda bisa tes dengan mencelupkan sedikit adonan; jika langsung berbuih dan naik ke permukaan, berarti minyak sudah siap.</li>
+            <li><strong>Jangan terlalu sering dibolak-balik:</strong> Biarkan satu sisi cukup matang sebelum dibalik agar tidak mudah hancur.</li>
+            <li><strong>Tiriskan dengan baik:</strong> Setelah diangkat dari minyak, tiriskan bala bala dengan benar agar sisa minyaknya berkurang dan kerenyahannya terjaga.</li>
+        </ul>
+
+        <p>Dengan mengikuti cara bikin bala bala jagung ini, Anda tidak hanya mendapatkan camilan yang lezat, tetapi juga pengalaman menyenangkan saat memasak. Selamat mencoba dan semoga berhasil menciptakan bala bala jagung terenak!</p>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-kukus-tugu-lempuyangan">Bakpia Kukus Tugu Lempuyangan</a></li>
+<li><a href="/aneka-bakwan">Aneka Bakwan</a></li>
+<li><a href="/bakso-beranak-cabe">Bakso Beranak Cabe</a></li>
+<li><a href="/heci-udang">Heci Udang</a></li>
+<li><a href="/bakpia-kacang-hijau-basah">Bakpia Kacang Hijau Basah</a></li>
+<li><a href="/bakwan-jagung-tepung-bakwan">Bakwan Jagung Tepung Bakwan</a></li>
+<li><a href="/balasan-dari-assalamualaikum">Balasan Dari Assalamualaikum</a></li>
+<li><a href="/bumbu-kacang-bakwan-sayur">Bumbu Kacang Bakwan Sayur</a></li>
+<li><a href="/bakpia-kemasan-kecil">Bakpia Kemasan Kecil</a></li>
+<li><a href="/sayur-yang-cocok-untuk-pasangan-bakwan-jagung">Sayur Yang Cocok Untuk Pasangan Bakwan Jagung</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

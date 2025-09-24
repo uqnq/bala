@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakteri Gram Positif & Negatif: Perbedaan Utama</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna biru muda sejuk */
+            color: #004d40; /* Warna hijau tua gelap untuk teks */
+            line-height: 1.6;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* Latar belakang konten putih cerah */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna hijau toska cerah untuk judul */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .highlight {
+            color: #00695c; /* Warna hijau tua sedikit lebih cerah */
+            font-weight: bold;
+        }
+        .svg-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #f0f9f9; /* Warna latar tabel sedikit lebih lembut */
+            border-radius: 8px;
+            overflow: hidden; /* Untuk menerapkan border-radius pada sel */
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #b2dfdb; /* Garis pemisah sel yang lembut */
+        }
+        th {
+            background-color: #00796b; /* Warna hijau toska cerah untuk header tabel */
+            color: white;
+            font-weight: bold;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:hover {
+            background-color: #e0f2f1; /* Efek hover pada baris tabel */
+        }
+
+        /* Responsif untuk mobile */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            th, td {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Memahami Perbedaan Krusial: Bakteri Gram Positif dan Gram Negatif</h1>
+
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi perbandingan dinding sel bakteri gram positif dan negatif">
+                <!-- Latar belakang lembut -->
+                <rect width="600" height="300" fill="#e0f2f1" rx="10"/>
+
+                <!-- Bakteri Gram Positif -->
+                <g transform="translate(100, 150)">
+                    <circle cx="0" cy="0" r="50" fill="#26a69a" stroke="#00796b" stroke-width="3"/>
+                    <text x="0" y="-65" text-anchor="middle" font-size="14" fill="#004d40">Gram Positif</text>
+                    <!-- Dinding sel tebal -->
+                    <path d="M -50 -50 A 50 50 0 1 1 50 -50 L 50 50 A 50 50 0 1 1 -50 50 Z" fill="none" stroke="#00796b" stroke-width="8"/>
+                    <!-- Peptidoglikan (tebal) -->
+                    <path d="M -45 -45 A 45 45 0 1 1 45 -45 L 45 45 A 45 45 0 1 1 -45 45 Z" fill="#4db6ac" opacity="0.8"/>
+                </g>
+
+                <!-- Bakteri Gram Negatif -->
+                <g transform="translate(400, 150)">
+                    <circle cx="0" cy="0" r="50" fill="#80cbc4" stroke="#00796b" stroke-width="3"/>
+                    <text x="0" y="-65" text-anchor="middle" font-size="14" fill="#004d40">Gram Negatif</text>
+                    <!-- Dinding sel tipis -->
+                    <path d="M -50 -50 A 50 50 0 1 1 50 -50 L 50 50 A 50 50 0 1 1 -50 50 Z" fill="none" stroke="#00796b" stroke-width="3"/>
+                    <!-- Peptidoglikan (tipis) -->
+                    <path d="M -45 -45 A 45 45 0 1 1 45 -45 L 45 45 A 45 45 0 1 1 -45 45 Z" fill="#a7ffeb" opacity="0.8"/>
+                    <!-- Membran luar -->
+                    <path d="M -50 -50 A 50 50 0 1 1 50 -50 L 50 50 A 50 50 0 1 1 -50 50 Z" fill="none" stroke="#00796b" stroke-width="1"/>
+                    <rect x="-50" y="-50" width="100" height="100" fill="#4db6ac" opacity="0.3" rx="8"/>
+                </g>
+
+                <!-- Panah pembanding -->
+                <line x1="200" y1="150" x2="300" y2="150" stroke="#00796b" stroke-width="2" marker-end="url(#arrow)"/>
+                <text x="250" y="140" text-anchor="middle" font-size="14" fill="#004d40">Perbedaan Struktur</text>
+                <defs>
+                    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="5" orient="auto">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#00796b"/>
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+
+        <p>Dalam dunia mikrobiologi, klasifikasi bakteri sering kali didasarkan pada responsnya terhadap pewarnaan Gram. Metode ini, yang dikembangkan oleh Hans Christian Gram, membedakan bakteri menjadi dua kelompok utama: <span class="highlight">bakteri Gram positif</span> dan <span class="highlight">bakteri Gram negatif</span>. Perbedaan mendasar antara kedua kelompok ini terletak pada struktur dinding sel mereka, yang memengaruhi cara mereka menyerap dan mempertahankan pewarna. Memahami perbedaan ini penting tidak hanya untuk identifikasi bakteri tetapi juga untuk pemilihan pengobatan antibiotik yang tepat, karena dinding sel yang berbeda memberikan kerentanan yang berbeda terhadap antibiotik tertentu.</p>
+
+        <h2>Struktur Dinding Sel: Kunci Perbedaan</h2>
+
+        <p>Perbedaan utama antara bakteri Gram positif dan negatif adalah komposisi dan ketebalan dinding sel mereka. Dinding sel bakteri memiliki fungsi vital dalam melindungi sel dari lingkungan eksternal, menjaga bentuk sel, dan mencegah pecahnya sel akibat tekanan osmotik.</p>
+
+        <h3>Bakteri Gram Positif</h3>
+        <p>Bakteri Gram positif memiliki dinding sel yang relatif tebal dan terdiri dari lapisan peptidoglikan yang kaya. Peptidoglikan adalah polimer kompleks yang memberikan kekuatan struktural pada dinding sel. Lapisan peptidoglikan ini sangat tebal, seringkali mencapai 20-80 nanometer. Selain peptidoglikan, dinding sel Gram positif juga mengandung asam teikoat dan asam lipoteikoat, yang tertanam di dalam lapisan peptidoglikan. Struktur yang kaya peptidoglikan ini memungkinkan bakteri Gram positif untuk mempertahankan kompleks kristal violet-iodin selama proses pewarnaan Gram, sehingga sel tampak berwarna ungu di bawah mikroskop. Contoh bakteri Gram positif termasuk *Staphylococcus aureus* dan *Streptococcus pyogenes*.</p>
+
+        <h3>Bakteri Gram Negatif</h3>
+        <p>Sebaliknya, bakteri Gram negatif memiliki dinding sel yang lebih tipis dan kompleks. Dinding sel mereka hanya mengandung satu atau beberapa lapisan tipis peptidoglikan, dengan ketebalan sekitar 2-10 nanometer. Namun, yang membedakan mereka secara signifikan adalah keberadaan membran luar (outer membrane) yang mengelilingi lapisan peptidoglikan. Membran luar ini tersusun dari lapisan fosfolipid dan lipopolisakarida (LPS). LPS adalah molekul besar yang memiliki sifat toksik dan berperan dalam respons imun tubuh terhadap infeksi bakteri Gram negatif. Karena dinding sel Gram negatif memiliki lapisan peptidoglikan yang tipis dan tidak memiliki asam teikoat, kompleks kristal violet-iodin mudah terlepas saat dicuci dengan alkohol atau aseton selama pewarnaan Gram. Akibatnya, sel ini kemudian menyerap pewarna penampakan (counterstain), seperti safranin, sehingga tampak berwarna merah muda atau merah di bawah mikroskop. Contoh umum bakteri Gram negatif adalah *Escherichia coli* dan *Salmonella* spp.</p>
+
+        <h2>Tabel Perbandingan Singkat</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Karakteristik</th>
+                    <th>Bakteri Gram Positif</th>
+                    <th>Bakteri Gram Negatif</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lapisan Peptidoglikan</td>
+                    <td>Tebal (20-80 nm)</td>
+                    <td>Tipis (2-10 nm)</td>
+                </tr>
+                <tr>
+                    <td>Membran Luar</td>
+                    <td>Tidak ada</td>
+                    <td>Ada</td>
+                </tr>
+                <tr>
+                    <td>Asam Teikoat/Lipoteikoat</td>
+                    <td>Ada</td>
+                    <td>Tidak ada</td>
+                </tr>
+                <tr>
+                    <td>Lipopolisakarida (LPS)</td>
+                    <td>Tidak ada</td>
+                    <td>Ada (dalam membran luar)</td>
+                </tr>
+                <tr>
+                    <td>Warna setelah Pewarnaan Gram</td>
+                    <td>Ungu</td>
+                    <td>Merah muda/Merah</td>
+                </tr>
+                <tr>
+                    <td>Contoh</td>
+                    <td>*Staphylococcus*, *Streptococcus*</td>
+                    <td>*Escherichia coli*, *Salmonella*</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Perbedaan struktural ini memiliki implikasi penting. Bakteri Gram negatif, dengan membran luarnya, seringkali lebih resisten terhadap beberapa antibiotik dibandingkan dengan bakteri Gram positif. Selain itu, komponen LPS pada bakteri Gram negatif dapat memicu respons inflamasi yang kuat pada inang, yang berkontribusi pada keparahan penyakit. Dengan memahami karakteristik dinding sel bakteri, para ilmuwan dan tenaga medis dapat lebih efektif dalam mengidentifikasi patogen dan merancang strategi pengobatan.</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-mercon-terenak">Bakso Mercon Terenak</a></li>
+<li><a href="/bakpao-kalipah-apo">Bakpao Kalipah Apo</a></li>
+<li><a href="/bakwan-rebon-kering">Bakwan Rebon Kering</a></li>
+<li><a href="/cara-buat-gorengan-tempe">Cara Buat Gorengan Tempe</a></li>
+<li><a href="/bakpao-ncc">Bakpao Ncc</a></li>
+<li><a href="/bakpao-panda">Bakpao Panda</a></li>
+<li><a href="/cara-masak-perkedel-jagung">Cara Masak Perkedel Jagung</a></li>
+<li><a href="/resep-bakwan-empuk-dan-renyah">Resep Bakwan Empuk Dan Renyah</a></li>
+<li><a href="/bumbu-kacang-untuk-bakwan">Bumbu Kacang Untuk Bakwan</a></li>
+<li><a href="/harga-bakpia-mami">Harga Bakpia Mami</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

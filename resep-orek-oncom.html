@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Orek Oncom Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0fff0; /* Warna sejuk cerah seperti hijau pucat */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #2e8b57; /* Hijau laut yang cerah */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #98fb98; /* Hijau muda untuk garis bawah */
+            padding-bottom: 5px;
+            font-size: 1.8em;
+        }
+        h3 {
+            margin-top: 25px;
+            color: #006400; /* Hijau tua yang elegan */
+            font-size: 1.4em;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-image {
+            display: block;
+            margin: 30px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients-list li, .instructions-list li {
+            position: relative;
+            padding-left: 25px;
+        }
+        .ingredients-list li::before, .instructions-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px; /* Sesuaikan posisi titik */
+            width: 6px;
+            height: 6px;
+            background-color: #32cd32; /* Hijau limau cerah */
+            border-radius: 50%;
+        }
+        .instructions-list li::before {
+            background-color: #008000; /* Hijau tua untuk instruksi */
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #90ee90; /* Hijau muda cerah untuk ajakan */
+            border-radius: 8px;
+            font-size: 1.2em;
+            color: #006400;
+            font-weight: bold;
+        }
+        .cta a {
+            color: #006400;
+            text-decoration: none;
+            border-bottom: 2px dashed #008000;
+        }
+        .cta a:hover {
+            color: #000000;
+            border-bottom-style: solid;
+        }
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .recipe-image {
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Orek Oncom Lezat: Khas Sunda yang Menggugah Selera</h1>
+
+        <!-- SVG Gambar Orek Oncom -->
+        <svg class="recipe-image" width="600" height="350" viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svgTitle">
+            <title id="svgTitle">Sajian orek oncom yang lezat dengan taburan daun bawang</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#e0ffe0;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#a0ffa0;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="350" rx="15" fill="url(#grad1)" />
+            <!-- Wajan atau piring -->
+            <circle cx="300" cy="220" r="130" fill="#f5f5dc" stroke="#d2b48c" stroke-width="5"/>
+            <!-- Isian Oncom (tekstur kasar) -->
+            <path d="M 180 190 Q 220 160 260 190 T 300 230 T 340 190 Q 380 160 420 190 L 400 210 Q 350 240 300 210 Q 250 240 200 210 Z" fill="#8b4513" opacity="0.8"/>
+            <path d="M 190 210 Q 230 180 270 210 T 310 250 T 350 210 Q 390 180 430 210 L 410 230 Q 360 260 310 230 Q 260 260 210 230 Z" fill="#a0522d" opacity="0.7"/>
+            <!-- Bumbu dan Cabai -->
+            <circle cx="250" cy="160" r="8" fill="#ff4500"/> <!-- Cabai -->
+            <circle cx="350" cy="150" r="7" fill="#ff4500"/> <!-- Cabai -->
+            <circle cx="280" cy="190" r="5" fill="#da70d6"/> <!-- Bawang Merah -->
+            <circle cx="320" cy="185" r="5" fill="#da70d6"/> <!-- Bawang Merah -->
+            <circle cx="260" cy="175" r="4" fill="#add8e6"/> <!-- Bawang Putih -->
+            <circle cx="340" cy="170" r="4" fill="#add8e6"/> <!-- Bawang Putih -->
+            <!-- Daun Bawang -->
+            <path d="M 200 120 L 210 100 L 205 120 Z" fill="#32cd32"/>
+            <path d="M 390 130 L 400 110 L 395 130 Z" fill="#32cd32"/>
+            <path d="M 230 110 L 240 90 L 235 110 Z" fill="#32cd32"/>
+        </svg>
+
+        <p>Orek oncom merupakan salah satu kuliner khas Sunda yang kaya akan rasa dan aroma. Hidangan sederhana ini berbahan dasar oncom, makanan fermentasi dari kacang kedelai, yang diolah dengan bumbu-bumbu rempah pilihan. Rasanya gurih, sedikit pedas, dan memiliki tekstur yang khas, menjadikannya lauk favorit bagi banyak orang.</p>
+
+        <p>Membuat orek oncom di rumah ternyata tidaklah sulit. Dengan bahan-bahan yang mudah didapatkan dan langkah-langkah yang ringkas, Anda bisa menyajikan hidangan lezat ini kapan saja. Cocok disantap bersama nasi hangat, lalapan segar, atau bahkan dijadikan isian nasi uduk.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <ul class="ingredients-list">
+            <li>2 papan oncom, hancurkan kasar</li>
+            <li>3-5 buah cabai merah keriting, iris tipis (sesuai selera pedas)</li>
+            <li>2-3 buah cabai rawit merah, iris tipis (jika suka lebih pedas)</li>
+            <li>3 siung bawang merah, iris tipis</li>
+            <li>2 siung bawang putih, iris tipis</li>
+            <li>1 batang daun bawang, iris halus</li>
+            <li>1 lembar daun salam</li>
+            <li>1 ruas lengkuas, memarkan</li>
+            <li>1 sendok teh gula merah sisir</li>
+            <li>Garam secukupnya</li>
+            <li>Kaldu bubuk (opsional)</li>
+            <li>Minyak goreng secukupnya untuk menumis</li>
+            <li>Air secukupnya</li>
+        </ul>
+
+        <h2>Cara Membuat Orek Oncom</h2>
+        <ol class="instructions-list">
+            <li><strong>Persiapan Oncom:</strong> Siapkan oncom, kukus sebentar jika ingin mengurangi bau langu atau langsung hancurkan kasar menggunakan tangan atau garpu. Sisihkan.</li>
+            <li><strong>Tumis Bumbu:</strong> Panaskan sedikit minyak goreng dalam wajan. Tumis irisan bawang merah, bawang putih, cabai merah keriting, dan cabai rawit hingga harum dan layu.</li>
+            <li><strong>Masukkan Daun Salam dan Lengkuas:</strong> Masukkan daun salam dan lengkuas yang sudah dimemarkan. Aduk rata hingga aroma rempah tercium.</li>
+            <li><strong>Masukkan Oncom:</strong> Masukkan oncom yang sudah dihancurkan ke dalam wajan. Aduk rata dengan bumbu tumis.</li>
+            <li><strong>Bumbui:</strong> Tambahkan garam, gula merah sisir, dan kaldu bubuk (jika menggunakan). Aduk kembali hingga semua bumbu tercampur sempurna.</li>
+            <li><strong>Tambahkan Air:</strong> Tuangkan sedikit air (sekitar 50-75 ml) agar bumbu meresap dan oncom tidak terlalu kering. Masak sambil terus diaduk hingga air menyusut dan bumbu meresap.</li>
+            <li><strong>Koreksi Rasa:</strong> Cicipi dan koreksi rasa sesuai selera. Jika kurang asin, tambahkan garam. Jika kurang manis, tambahkan gula.</li>
+            <li><strong>Sentuhan Akhir:</strong> Masukkan irisan daun bawang sesaat sebelum diangkat. Aduk sebentar hingga daun bawang sedikit layu.</li>
+            <li><strong>Sajikan:</strong> Angkat orek oncom dan sajikan selagi hangat bersama nasi putih.</li>
+        </ol>
+
+        <h3>Tips Tambahan untuk Orek Oncom Sempurna</h3>
+        <ul>
+            <li><strong>Pilih Oncom Berkualitas:</strong> Gunakan oncom yang segar dan tidak berbau menyengat.</li>
+            <li><strong>Tingkat Kepedasan:</strong> Sesuaikan jumlah cabai dengan tingkat kepedasan yang diinginkan. Anda bisa menambahkan cabai hijau besar untuk aroma yang berbeda.</li>
+            <li><strong>Variasi Rasa:</strong> Beberapa orang suka menambahkan sedikit kecap manis untuk sentuhan rasa manis gurih yang lebih kuat.</li>
+            <li><strong>Tekstur:</strong> Jangan terlalu lama memasak oncom agar teksturnya tidak lembek dan tetap ada sedikit sensasi "kriuk" dari oncom yang belum sepenuhnya hancur.</li>
+        </ul>
+
+        <p>Orek oncom bukan hanya sekadar lauk, tetapi juga pengingat akan kekayaan kuliner Indonesia yang sederhana namun penuh cita rasa. Selamat mencoba resep orek oncom ini di dapur Anda!</p>
+
+        <div class="cta">
+            <p>Punya tips lain membuat orek oncom? Bagikan di kolom komentar!</p>
+            <p><a href="#comments">Tinggalkan Komentar Anda</a></p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/komposisi-bakso-mercon">Komposisi Bakso Mercon</a></li>
+<li><a href="/resep-bakwan-jagung-manis">Resep Bakwan Jagung Manis</a></li>
+<li><a href="/gambar-lactobacillus-bulgaricus">Gambar Lactobacillus Bulgaricus</a></li>
+<li><a href="/cara-bikin-dadar-jagung-renyah">Cara Bikin Dadar Jagung Renyah</a></li>
+<li><a href="/resep-heci-udang">Resep Heci Udang</a></li>
+<li><a href="/bakwan-kecambah">Bakwan Kecambah</a></li>
+<li><a href="/membuat-bakwan-sayur">Membuat Bakwan Sayur</a></li>
+<li><a href="/balasan-assalamualaikum-yang-benar">Balasan Assalamualaikum Yang Benar</a></li>
+<li><a href="/tepung-terigu-untuk-bakwan-jagung">Tepung Terigu Untuk Bakwan Jagung</a></li>
+<li><a href="/bakpao-ketan-hitam">Bakpao Ketan Hitam</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

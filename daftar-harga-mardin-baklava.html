@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga Mardin Baklava Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #64B5F6; /* Biru muda cerah */
+            --secondary-color: #81C784; /* Hijau muda cerah */
+            --accent-color: #FFD54F; /* Kuning cerah */
+            --text-color: #333;
+            --background-color: #F0F8FF; /* AliceBlue, latar belakang sejuk */
+            --card-background: #FFFFFF;
+            --border-color: #E0E0E0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 15px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            background-color: var(--card-background);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+
+        .price-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .price-card {
+            background-color: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .price-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .price-card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .price-card p {
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-top: 15px;
+        }
+
+        .description {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+            flex-grow: 1; /* Memastikan deskripsi bisa memanjang */
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #fbc02d; /* Warna kuning lebih gelap saat hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+            width: 100%;
+        }
+
+        /* SVG Styles */
+        .baklava-icon {
+            fill: var(--secondary-color);
+        }
+        .nut-icon {
+            fill: var(--accent-color);
+        }
+        .honey-icon {
+            fill: var(--primary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .price-card {
+                padding: 15px;
+            }
+            .price-card h3 {
+                font-size: 1.2em;
+            }
+            .price {
+                font-size: 1.3em;
+            }
+            .cta-button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mardin Baklava: Kelezatan Otentik</h1>
+    </header>
+
+    <div class="container">
+        <div class="hero-image">
+            <!-- SVG Gambar Baklava dengan Nuansa Sejuk Ceria -->
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="baklavaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81C784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#64B5F6;stop-opacity:1" />
+                    </linearGradient>
+                    <pattern id="nutPattern" patternUnits="userSpaceOnUse" width="10" height="10">
+                        <circle cx="5" cy="5" r="2" fill="#FFD54F" />
+                    </pattern>
+                </defs>
+                <!-- Lapisan Baklava 1 -->
+                <rect x="10" y="10" width="180" height="30" rx="5" fill="url(#baklavaGradient)" />
+                <!-- Lapisan Baklava 2 -->
+                <rect x="15" y="40" width="170" height="30" rx="4" fill="#FFD54F" />
+                <!-- Lapisan Baklava 3 -->
+                <rect x="20" y="70" width="160" height="30" rx="3" fill="url(#baklavaGradient)" />
+                <!-- Potongan Kadayif (tekstur) -->
+                <path d="M10 10 Q 30 25 50 10 T 90 10 Q 110 25 130 10 T 170 10 Q 190 25 200 10" stroke="#f0e68c" stroke-width="1" fill="none" />
+                <path d="M15 40 Q 35 55 55 40 T 95 40 Q 115 55 135 40 T 175 40 Q 195 55 200 40" stroke="#f0e68c" stroke-width="1" fill="none" />
+                <path d="M20 70 Q 40 85 60 70 T 100 70 Q 120 85 140 70 T 180 70 Q 200 85 200 70" stroke="#f0e68c" stroke-width="1" fill="none" />
+                <!-- Efek Madu Menetes -->
+                <path d="M50 10 Q 55 20 53 30" stroke="#FFA000" stroke-width="2" fill="none" opacity="0.7" />
+                <path d="M120 40 Q 125 50 123 60" stroke="#FFA000" stroke-width="2" fill="none" opacity="0.7" />
+                <path d="M80 70 Q 85 80 83 90" stroke="#FFA000" stroke-width="2" fill="none" opacity="0.7" />
+                <!-- Taburan Kacang -->
+                <circle cx="30" cy="20" r="3" fill="url(#nutPattern)" />
+                <circle cx="70" cy="25" r="3" fill="url(#nutPattern)" />
+                <circle cx="110" cy="15" r="3" fill="url(#nutPattern)" />
+                <circle cx="150" cy="20" r="3" fill="url(#nutPattern)" />
+                <circle cx="40" cy="50" r="3" fill="url(#nutPattern)" />
+                <circle cx="90" cy="55" r="3" fill="url(#nutPattern)" />
+                <circle cx="140" cy="45" r="3" fill="url(#nutPattern)" />
+                <circle cx="60" cy="80" r="3" fill="url(#nutPattern)" />
+                <circle cx="100" cy="85" r="3" fill="url(#nutPattern)" />
+                <circle cx="160" cy="75" r="3" fill="url(#nutPattern)" />
+            </svg>
+            <p><em>Keindahan dan kelezatan dalam setiap gigitan.</em></p>
+        </div>
+
+        <div class="content">
+            <h2>Daftar Harga Mardin Baklava</h2>
+            <p>Nikmati kelezatan otentik Mardin Baklava, hidangan penutup warisan budaya yang terbuat dari lapisan adonan filo renyah, kacang pilihan, dan sirup manis yang menggoda selera. Kami menyajikan berbagai varian baklava untuk memenuhi setiap keinginan Anda, mulai dari yang klasik hingga kreasi modern. Setiap potongan dibuat dengan cinta dan bahan-bahan berkualitas tinggi untuk memberikan pengalaman kuliner tak terlupakan.</p>
+
+            <div class="price-list">
+                <div class="price-card">
+                    <h3>Classic Pistachio Baklava</h3>
+                    <div class="description">
+                        <p>Perpaduan adonan filo renyah dengan isian kacang pistachio segar yang melimpah, disiram sirup madu ringan.</p>
+                    </div>
+                    <p class="price">Rp 35.000</p>
+                    <p>/ Potong</p>
+                </div>
+
+                <div class="price-card">
+                    <h3>Walnut Honey Baklava</h3>
+                    <div class="description">
+                        <p>Cita rasa gurih kacang walnut berpadu sempurna dengan manisnya sirup madu tradisional, dilapisi adonan filo.</p>
+                    </div>
+                    <p class="price">Rp 32.000</p>
+                    <p>/ Potong</p>
+                </div>
+
+                <div class="price-card">
+                    <h3>Mixed Nuts Delight</h3>
+                    <div class="description">
+                        <p>Kombinasi istimewa dari kacang pistachio, walnut, dan almond cincang, memberikan tekstur dan rasa yang kaya.</p>
+                    </div>
+                    <p class="price">Rp 38.000</p>
+                    <p>/ Potong</p>
+                </div>
+
+                <div class="price-card">
+                    <h3>Chocolate Drizzle Baklava</h3>
+                    <div class="description">
+                        <p>Sentuhan modern pada baklava klasik, dihiasi dengan lelehan cokelat berkualitas tinggi yang menambah kenikmatan.</p>
+                    </div>
+                    <p class="price">Rp 40.000</p>
+                    <p>/ Potong</p>
+                </div>
+
+                <div class="price-card">
+                    <h3>Mini Baklava Box (6 pcs)</h3>
+                    <div class="description">
+                        <p>Pilihan mini dari varian favorit kami, cocok untuk hadiah atau dinikmati bersama orang terkasih.</p>
+                    </div>
+                    <p class="price">Rp 200.000</p>
+                    <p>/ Kotak</p>
+                </div>
+
+                <div class="price-card">
+                    <h3>Family Size Baklava Tray (12 pcs)</h3>
+                    <div class="description">
+                        <p>Sajian lengkap untuk perayaan atau kumpul keluarga, berisi 12 potong baklava pilihan.</p>
+                    </div>
+                    <p class="price">Rp 380.000</p>
+                    <p>/ Loyang</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 30px;">
+                Semua baklava kami dibuat segar setiap hari dengan menggunakan resep turun-temurun. Rasakan perpaduan sempurna antara kerenyahan adonan filo, kekayaan kacang, dan manisnya sirup yang akan membawa Anda merasakan keajaiban Timur Tengah. Kunjungi toko kami atau pesan secara online untuk menikmati Mardin Baklava otentik ini.
+            </p>
+
+            <div style="text-align: center; margin-top: 25px;">
+                <a href="#" class="cta-button">Pesan Sekarang</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Mardin Baklava - Kelezatan Otentik untuk Setiap Momen.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-lena-65">Bakpao Lena 65</a></li>
+<li><a href="/isian-keju-untuk-bakpao">Isian Keju Untuk Bakpao</a></li>
+<li><a href="/harga-bakpiaku">Harga Bakpiaku</a></li>
+<li><a href="/balasan-ucapan-assalamualaikum">Balasan Ucapan Assalamualaikum</a></li>
+<li><a href="/bumbu-bakwan-sayur-enak-dan-gurih">Bumbu Bakwan Sayur Enak Dan Gurih</a></li>
+<li><a href="/resep-pentol-mercon">Resep Pentol Mercon</a></li>
+<li><a href="/harga-bakpia-martha">Harga Bakpia Martha</a></li>
+<li><a href="/bakwan-sayur-jepang">Bakwan Sayur Jepang</a></li>
+<li><a href="/bakpia-kenes-harga">Bakpia Kenes Harga</a></li>
+<li><a href="/cara-bikin-bakwan-jagung-sederhana">Cara Bikin Bakwan Jagung Sederhana</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

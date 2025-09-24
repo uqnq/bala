@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Kubis Gurih & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #FFC107; /* Kuning cerah */
+            --background-color: #E8F5E9; /* Hijau sangat muda */
+            --text-color: #333;
+            --heading-color: #1B5E20;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: var(--heading-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+        }
+
+        .intro-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .recipe-section {
+            margin-bottom: 30px;
+        }
+
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+
+        .ingredients strong, .instructions strong {
+            color: var(--primary-color);
+        }
+
+        .tips li {
+            margin-bottom: 8px;
+            font-style: italic;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="intro-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" aria-label="Ilustrasi bakwan kubis yang lezat dan renyah">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #4CAF50; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #8BC34A; stop-opacity: 1" />
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #FFEB3B; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #FFC107; stop-opacity: 1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="400" fill="#E8F5E9"/>
+            <g transform="translate(50, 50)">
+                <path d="M 200,100 C 250,50 350,50 400,100 C 450,150 400,200 400,200 C 350,250 250,250 200,200 C 150,200 100,150 100,100 C 100,50 150,50 200,100 Z" fill="url(#grad1)" stroke="#388E3C" stroke-width="4"/>
+                <path d="M 200,100 Q 250,150 300,100 T 400,100 Q 350,50 300,50 T 200,100 Z" fill="url(#grad2)" stroke="#F57F17" stroke-width="2"/>
+                <circle cx="200" cy="100" r="30" fill="#fff" opacity="0.7"/>
+                <circle cx="300" cy="100" r="30" fill="#fff" opacity="0.7"/>
+                <circle cx="250" cy="150" r="20" fill="#fff" opacity="0.7"/>
+                <text x="250" y="110" font-size="20" text-anchor="middle" fill="#1B5E20" font-weight="bold">Bakwan</text>
+                <text x="250" y="135" font-size="20" text-anchor="middle" fill="#1B5E20" font-weight="bold">Kubis</text>
+            </g>
+        </svg>
+
+        <h1>Resep Bakwan Kubis Gurih dan Renyah</h1>
+
+        <div class="recipe-section">
+            <p>Siapa yang tidak suka camilan renyah dan gurih seperti bakwan? Salah satu varian yang paling populer dan mudah dibuat adalah bakwan kubis. Dengan bahan-bahan sederhana yang mudah didapat di dapur Anda, bakwan kubis bisa menjadi teman ngopi sore yang sempurna atau hidangan pembuka saat berkumpul bersama keluarga.</p>
+            <p>Kunci dari bakwan kubis yang lezat terletak pada keseimbangan bumbu dan teknik menggoreng yang tepat agar hasilnya tidak lembek dan memiliki tekstur yang menggoda. Mari kita simak resep sederhana namun istimewa ini.</p>
+        </div>
+
+        <div class="recipe-section ingredients">
+            <h2>Bahan-Bahan</h2>
+            <ul>
+                <li><strong>Kubis:</strong> 1/2 bonggol kubis ukuran sedang, iris tipis memanjang</li>
+                <li><strong>Tepung Terigu:</strong> 150 gram (sekitar 15 sendok makan)</li>
+                <li><strong>Tepung Beras:</strong> 50 gram (sekitar 5 sendok makan) - untuk kerenyahan ekstra</li>
+                <li><strong>Air Dingin:</strong> Sekitar 200-250 ml (sesuaikan kekentalan adonan)</li>
+                <li><strong>Telur:</strong> 1 butir (opsional, untuk adonan lebih padat dan gurih)</li>
+                <li><strong>Bumbu Halus:</strong>
+                    <ul>
+                        <li>Bawang Putih: 3 siung</li>
+                        <li>Ketumbar Bubuk: 1 sendok teh</li>
+                        <li>Garam: 1 sendok teh (atau sesuai selera)</li>
+                        <li>Merica Bubuk: 1/2 sendok teh</li>
+                        <li>Kaldu Bubuk: 1/2 sendok teh (opsional, untuk rasa lebih kaya)</li>
+                    </ul>
+                </li>
+                <li><strong>Daun Bawang:</strong> 1 batang, iris tipis (opsional, untuk aroma dan warna)</li>
+                <li><strong>Minyak Goreng:</strong> Secukupnya, untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li><strong>Siapkan Kubis:</strong> Cuci bersih kubis, tiriskan, lalu iris tipis memanjang. Anda bisa memotongnya sedikit lebih pendek agar lebih mudah saat menggoreng.</li>
+                <li><strong>Buat Adonan Tepung:</strong> Dalam wadah, campurkan tepung terigu dan tepung beras. Masukkan bumbu halus (bawang putih, ketumbar, garam, merica, kaldu bubuk jika pakai). Aduk rata.</li>
+                <li><strong>Tambahkan Cairan:</strong> Tuang air dingin sedikit demi sedikit sambil diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan sebaiknya tidak terlalu kental agar tidak bantat, namun juga tidak terlalu encer agar bisa melapisi kubis dengan baik. Jika menggunakan telur, kocok lepas telur terlebih dahulu lalu masukkan ke dalam adonan.</li>
+                <li><strong>Campurkan Kubis:</strong> Masukkan irisan kubis dan irisan daun bawang (jika pakai) ke dalam adonan. Aduk perlahan hingga seluruh irisan kubis terlumuri adonan secara merata.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas agar bakwan langsung renyah saat digoreng.</li>
+                <li><strong>Goreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Jangan terlalu banyak memasukkan adonan dalam satu waktu agar bakwan matang merata dan tidak saling menempel. Anda juga bisa membentuknya dengan cara mengambil kubis yang sudah terbalut adonan, lalu memipihkannya sedikit dengan jari sebelum dimasukkan ke wajan.</li>
+                <li><strong>Balik dan Tiriskan:</strong> Goreng hingga satu sisi berwarna kuning keemasan, lalu balik. Goreng sisi satunya lagi hingga matang dan berwarna serupa. Angkat bakwan menggunakan saringan minyak dan tiriskan di atas tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan kubis siap disajikan selagi hangat bersama cabai rawit, saus sambal, atau cocolan favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section tips">
+            <h2>Tips untuk Bakwan Kubis Sempurna</h2>
+            <ul>
+                <li>Gunakan air es atau air dingin untuk membuat adonan lebih renyah.</li>
+                <li>Jangan terlalu banyak mengaduk adonan setelah kubis masuk agar kubis tidak mengeluarkan terlalu banyak air.</li>
+                <li>Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li>Jangan terlalu memenuhi wajan saat menggoreng agar panas merata.</li>
+                <li>Tambahkan sedikit irisan wortel atau tauge jika ingin variasi isian.</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Selamat mencoba resep bakwan kubis ini! Sajikan kehangatan dan kerenyahan di setiap gigitan.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-indomie">Resep Bakwan Indomie</a></li>
+<li><a href="/bakwan-sayur-bumbu-kacang">Bakwan Sayur Bumbu Kacang</a></li>
+<li><a href="/bakso-mercon-mas-karyo">Bakso Mercon Mas Karyo</a></li>
+<li><a href="/gorengan-bakwan-sayur">Gorengan Bakwan Sayur</a></li>
+<li><a href="/atom-kocir">Atom Kocir</a></li>
+<li><a href="/cara-membuat-bakwan-kubis-dan-wortel">Cara Membuat Bakwan Kubis Dan Wortel</a></li>
+<li><a href="/bakso-beranak-enak-terdekat">Bakso Beranak Enak Terdekat</a></li>
+<li><a href="/bakwan-daun-kelor">Bakwan Daun Kelor</a></li>
+<li><a href="/resep-bakwan-tahu-crispy">Resep Bakwan Tahu Crispy</a></li>
+<li><a href="/bakpia-pisang">Bakpia Pisang</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

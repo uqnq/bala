@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Buat Bakwan Sayur Renyah Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #87CEEB; /* Sky Blue */
+            --secondary-color: #90EE90; /* Light Green */
+            --text-color: #333;
+            --background-color: #F0FFF0; /* Honeydew */
+            --accent-color: #FFD700; /* Gold */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background-color: #FFFFFF;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            font-size: 1.5em;
+        }
+
+        p, ul, ol {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .recipe-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .step-list {
+            counter-reset: step;
+        }
+
+        .step-list li {
+            position: relative;
+            padding-left: 35px; /* Space for the number */
+        }
+
+        .step-list li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .tips {
+            background-color: var(--secondary-color);
+            padding: 15px;
+            border-radius: 8px;
+            color: #1a2c1a;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .tips strong {
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-image">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#90EE90;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="400" height="200" rx="15" ry="15" fill="url(#grad)" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="25" font-weight="bold">Bakwan Sayur Renyah</text>
+                <path d="M100 150 Q 150 120 200 150 T 300 150" stroke="white" stroke-width="5" fill="none"/>
+                <circle cx="100" cy="150" r="8" fill="white"/>
+                <circle cx="200" cy="150" r="8" fill="white"/>
+                <circle cx="300" cy="150" r="8" fill="white"/>
+            </svg>
+            <p><small>Ilustrasi Bakwan Sayur Lezat</small></p>
+        </div>
+
+        <h1>Cara Buat Bakwan Sayur Renyah yang Pasti Berhasil</h1>
+
+        <p>Siapa yang tidak suka dengan camilan renyah dan gurih? Bakwan sayur adalah salah satu jajanan pasar favorit yang selalu berhasil menggugah selera. Teksturnya yang renyah di luar dan lembut di dalam, berpadu dengan manisnya sayuran segar, menjadikannya pilihan sempurna untuk teman minum teh atau kopi di sore hari. Banyak orang mencoba membuatnya di rumah, namun terkadang hasilnya kurang renyah atau malah terlalu berminyak. Jangan khawatir! Dengan beberapa trik sederhana, Anda bisa membuat bakwan sayur yang renyah tahan lama, mirip seperti buatan pedagang kaki lima yang terkenal.</p>
+
+        <p>Membuat bakwan sayur renyah sebenarnya tidak sulit, kuncinya ada pada komposisi adonan dan teknik menggorengnya. Bahan-bahan yang mudah didapatkan pun menjadi nilai tambah. Mari kita siapkan bahan-bahannya dan ikuti langkah-langkah berikut untuk menghasilkan bakwan sayur yang sempurna.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <ul>
+            <li>200 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (ini kunci kerenyahannya!)</li>
+            <li>1/2 sendok teh garam</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            <li>1 batang daun bawang, iris halus</li>
+            <li>1 buah wortel ukuran sedang, iris korek api tipis</li>
+            <li>100 gram kol, iris tipis</li>
+            <li>50 gram tauge (opsional, tapi menambah tekstur)</li>
+            <li>Air secukupnya (sekitar 200-250 ml, sesuaikan konsistensi)</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Cara Membuat Bakwan Sayur Renyah</h2>
+        <ol class="step-list">
+            <li>
+                <strong>Persiapan Adonan Kering:</strong> Dalam sebuah wadah besar, campurkan tepung terigu, tepung beras, garam, merica bubuk, dan kaldu bubuk (jika menggunakan). Aduk rata hingga semua bahan tercampur sempurna.
+            </li>
+            <li>
+                <strong>Masukkan Sayuran:</strong> Masukkan irisan daun bawang, wortel, kol, dan tauge ke dalam campuran tepung kering. Aduk kembali hingga sayuran terbalut rata dengan tepung. Langkah ini membantu mencegah sayuran mengeluarkan terlalu banyak air.
+            </li>
+            <li>
+                <strong>Buat Adonan Basah:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk. Pastikan adonan tidak terlalu encer atau terlalu kental. Konsistensi yang pas adalah adonan yang bisa melapisi sayuran dengan baik namun tidak terlalu tebal. Jika terlalu encer, bakwan akan lembek dan berminyak. Jika terlalu kental, bakwan akan keras.
+            </li>
+            <li>
+                <strong>Pemanasan Minyak:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang cenderung besar. Pastikan minyak benar-benar panas sebelum menggoreng bakwan. Minyak yang kurang panas akan membuat bakwan menyerap banyak minyak dan menjadi lembek.
+            </li>
+            <li>
+                <strong>Menggoreng Bakwan:</strong> Ambil satu sendok sayur adonan bakwan, lalu masukkan perlahan ke dalam minyak panas. Jangan terlalu memenuhi wajan agar bakwan matang merata dan tidak saling menempel. Goreng hingga satu sisi berwarna keemasan dan renyah, lalu balik dan goreng sisi satunya hingga matang sempurna.
+            </li>
+            <li>
+                <strong>Tiriskan dan Sajikan:</strong> Angkat bakwan yang sudah matang dan tiriskan di atas tisu dapur untuk menyerap kelebihan minyak. Ulangi proses ini hingga semua adonan habis. Sajikan bakwan sayur selagi hangat dengan sambal favorit Anda.
+            </li>
+        </ol>
+
+        <div class="tips">
+            <h3>Tips Tambahan untuk Bakwan Super Renyah</h3>
+            <ul>
+                <li><strong>Tepung Beras Sangat Penting:</strong> Jangan pernah mengganti tepung beras dengan tepung lain jika Anda ingin hasil yang renyah. Perbandingannya bisa Anda sesuaikan, namun kombinasi tepung terigu dan tepung beras adalah kunci utama.</li>
+                <li><strong>Jangan Terlalu Banyak Air:</strong> Adonan yang sedikit lebih kental dari adonan pencelup biasa akan menghasilkan bakwan yang lebih renyah.</li>
+                <li><strong>Gunakan Minyak Panas:</strong> Pastikan minyak sudah benar-benar panas sebelum memasukkan adonan. Anda bisa tes dengan sedikit adonan, jika langsung mendesis dan mengapung berarti minyak sudah siap.</li>
+                <li><strong>Goreng dalam Porsi Kecil:</strong> Menggoreng terlalu banyak bakwan sekaligus akan menurunkan suhu minyak, sehingga bakwan menjadi lembek dan berminyak.</li>
+                <li><strong>Tiriskan dengan Baik:</strong> Menggunakan tisu dapur atau saringan kawat akan membantu menghilangkan minyak berlebih.</li>
+                <li><strong>Sajikan Segera:</strong> Bakwan paling nikmat disajikan selagi hangat agar kerenyahannya terjaga.</li>
+            </ul>
+        </div>
+
+        <p>Dengan mengikuti panduan cara buat bakwan sayur renyah ini, Anda tidak perlu lagi membeli di luar. Bakwan buatan sendiri dijamin lebih sehat, higienis, dan yang pasti, <span class="highlight">lezat luar biasa</span> serta <span class="highlight">renyah tahan lama</span>. Selamat mencoba dan nikmati camilan renyah buatan tangan Anda!</p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bale-pindah">Bale Pindah</a></li>
+<li><a href="/bakpia-besar">Bakpia Besar</a></li>
+<li><a href="/masak-soto-ayam-santan">Masak Soto Ayam Santan</a></li>
+<li><a href="/cara-membuat-rendang">Cara Membuat Rendang</a></li>
+<li><a href="/bakteri-tahan-panas">Bakteri Tahan Panas</a></li>
+<li><a href="/resep-bakwan-sapi-kenyal">Resep Bakwan Sapi Kenyal</a></li>
+<li><a href="/bakwan-jagung-campur-wortel">Bakwan Jagung Campur Wortel</a></li>
+<li><a href="/bakpia-145-jalan-kusumanegara">Bakpia 145 Jalan Kusumanegara</a></li>
+<li><a href="/cara-buat-bakwan-udang-kecil">Cara Buat Bakwan Udang Kecil</a></li>
+<li><a href="/bakpia-basah-kacang-hijau">Bakpia Basah Kacang Hijau</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

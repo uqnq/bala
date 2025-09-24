@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juwara Satoe Cafe: Kopi Nikmat & Suasana Nyaman</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #8EC5FC; /* Biru langit cerah */
+            --color-secondary: #E0C3FC; /* Ungu lembut */
+            --color-accent: #F7D7B5; /* Kuning pastel hangat */
+            --color-text-dark: #333;
+            --color-text-light: #fff;
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-primary);
+            color: var(--color-text-dark);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: var(--color-text-light);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Agar border-radius bekerja pada gambar */
+        }
+
+        header {
+            background-color: var(--color-secondary);
+            color: var(--color-text-dark);
+            padding: 30px 20px;
+            text-align: center;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: var(--color-text-dark);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block; /* Menghilangkan spasi ekstra di bawah gambar */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: var(--color-secondary);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--color-accent);
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: var(--color-secondary);
+            font-weight: bold;
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: var(--color-accent);
+            border-radius: 10px;
+        }
+
+        .call-to-action h3 {
+            margin-top: 0;
+            color: var(--color-text-dark);
+        }
+
+        .call-to-action a {
+            display: inline-block;
+            background-color: var(--color-secondary);
+            color: var(--color-text-light);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-to-action a:hover {
+            background-color: var(--color-primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: var(--color-text-light);
+            background-color: var(--color-secondary);
+            width: 100%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            .hero-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Juwara Satoe Cafe</h1>
+        </header>
+
+        <!-- SVG Image -->
+        <svg class="hero-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--color-primary);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:var(--color-secondary);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="1000" height="500" fill="url(#grad1)" />
+            <circle cx="500" cy="250" r="150" fill="var(--color-accent)" opacity="0.7"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="var(--color-text-light)" font-size="50" font-weight="bold" stroke="var(--color-text-dark)" stroke-width="2">
+                Juwara Satoe Cafe
+            </text>
+            <path d="M100 350 Q 250 200 400 350 T 700 350" stroke="var(--color-text-light)" stroke-width="10" fill="none" opacity="0.8"/>
+            <circle cx="200" cy="380" r="20" fill="var(--color-accent)"/>
+            <circle cx="500" cy="380" r="20" fill="var(--color-accent)"/>
+            <circle cx="800" cy="380" r="20" fill="var(--color-accent)"/>
+        </svg>
+
+        <main>
+            <p>Selamat datang di <span class="highlight">Juwara Satoe Cafe</span>, surga kecil bagi para penikmat kopi dan pencari suasana nyaman. Kami percaya bahwa secangkir kopi berkualitas dapat menjadi awal dari percakapan yang hangat, inspirasi yang mengalir, atau sekadar momen relaksasi yang Anda butuhkan di tengah kesibukan hari.</p>
+
+            <h2>Keistimewaan Juwara Satoe Cafe</h2>
+            <p>Di <span class="highlight">Juwara Satoe Cafe</span>, kami tidak hanya menyajikan kopi, tetapi sebuah pengalaman. Setiap biji kopi yang kami pilih melalui proses seleksi ketat untuk memastikan rasa terbaik tersaji di setiap tegukan. Mulai dari espresso yang kaya rasa, cappuccino dengan busa lembut yang sempurna, hingga berbagai racikan kopi spesial yang unik, kami hadirkan untuk memanjakan lidah Anda.</p>
+
+            <p>Suasana adalah elemen penting yang kami hadirkan. Dengan desain interior yang modern namun tetap hangat, pencahayaan yang lembut, dan sentuhan dekorasi yang artistik, <span class="highlight">Juwara Satoe Cafe</span> menjadi tempat yang ideal untuk berbagai kegiatan. Anda bisa datang sendiri untuk menikmati ketenangan sambil membaca buku, bertemu dengan teman untuk bertukar cerita, atau bahkan mengadakan pertemuan santai bersama rekan kerja.</p>
+
+            <h2>Lebih dari Sekadar Kopi</h2>
+            <p>Selain aneka kopi yang menggoda, kami juga menyediakan berbagai pilihan makanan ringan dan hidangan penutup yang lezat. Mulai dari kue-kue manis yang cocok menemani kopi Anda, hingga camilan gurih yang siap mengganjal perut. Menu kami diracik dengan bahan-bahan segar dan penuh cinta, memastikan setiap gigitan memberikan kepuasan.</p>
+
+            <p>Kami juga sangat memperhatikan kenyamanan Anda. Fasilitas Wi-Fi gratis yang stabil, colokan listrik yang mudah dijangkau di berbagai area, serta staf yang ramah dan siap melayani dengan sepenuh hati, menjadikan <span class="highlight">Juwara Satoe Cafe</span> tempat yang sempurna untuk menyelesaikan pekerjaan, belajar, atau sekadar menghabiskan waktu berkualitas.</p>
+
+            <p><span class="highlight">Juwara Satoe Cafe</span> bukan hanya sekadar tempat nongkrong, namun sebuah komunitas. Kami ingin menciptakan ruang di mana setiap orang merasa diterima, dihargai, dan mendapatkan pengalaman yang tak terlupakan. Datanglah dan rasakan sendiri kehangatan serta kenikmatan yang kami tawarkan.</p>
+
+            <div class="call-to-action">
+                <h3>Kunjungi Kami Hari Ini!</h3>
+                <p>Temukan kopi favoritmu dan nikmati suasana yang menyegarkan.</p>
+                <a href="#">Lihat Peta Lokasi</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Juwara Satoe Cafe. Temukan kebahagiaan dalam setiap cangkir.</p>
+        </footer>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bumbu-ulek-bakwan">Bumbu Ulek Bakwan</a></li>
+<li><a href="/mie-ayam-bakwan">Mie Ayam Bakwan</a></li>
+<li><a href="/balasan-orang-yang-menutup-rezeki-orang-lain">Balasan Orang Yang Menutup Rezeki Orang Lain</a></li>
+<li><a href="/bakso-beranak-tegalega">Bakso Beranak Tegalega</a></li>
+<li><a href="/balikpapan-kota">Balikpapan Kota</a></li>
+<li><a href="/makanan-weci">Makanan Weci</a></li>
+<li><a href="/bumbu-bakwan-sayur-renyah">Bumbu Bakwan Sayur Renyah</a></li>
+<li><a href="/fistik-sarma-baklava">Fistik Sarma Baklava</a></li>
+<li><a href="/bakpia-panggang">Bakpia Panggang</a></li>
+<li><a href="/bakteri-dan-jamur">Bakteri Dan Jamur</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

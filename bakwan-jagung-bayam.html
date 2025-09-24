@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Jagung Bayam: Resep Lezat & Sehat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --warna-primer: #a8dadc; /* Biru muda cerah */
+            --warna-sekunder: #f1faee; /* Putih krem hangat */
+            --warna-aksen: #457b9d; /* Biru laut yang tenang */
+            --warna-teks: #1d3557; /* Biru tua elegan */
+            --warna-garis: #e0e0e0; /* Abu-abu muda */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--warna-sekunder);
+            color: var(--warna-teks);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h1, h2 {
+            color: var(--warna-aksen);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            border-bottom: 2px solid var(--warna-garis);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .ingredients, .instructions {
+            background-color: var(--warna-sekunder);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .ingredients ul li::before, .instructions ol li::before {
+            content: '✓ '; /* Simbol centang */
+            color: var(--warna-aksen);
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        strong {
+            color: var(--warna-aksen);
+        }
+
+        /* Responsif untuk mobile */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            .hero-image svg {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Bakwan Jagung Bayam: Perpaduan Lezat dan Bergizi</h1>
+
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:var(--warna-primer);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--warna-aksen);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="400" rx="15" fill="url(#grad1)" />
+                <circle cx="150" cy="200" r="50" fill="#f1faee" />
+                <circle cx="650" cy="200" r="50" fill="#f1faee" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="40" font-weight="bold">Bakwan Jagung Bayam</text>
+                <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="20">Nikmati kelezatan sehatnya!</text>
+            </svg>
+            <p style="font-size: 0.9em; color: #666;">Ilustrasi visual yang cerah dan menarik</p>
+        </div>
+
+        <p>Bakwan jagung bayam adalah salah satu camilan favorit di Indonesia yang menawarkan kombinasi rasa manis dari jagung, gurih dari adonan tepung, dan sentuhan segar dari bayam. Tidak hanya lezat, camilan ini juga kaya akan serat, vitamin, dan mineral berkat kehadiran dua bahan utamanya. Sangat cocok dinikmati saat santai bersama keluarga, ditemani secangkir teh hangat atau kopi. Kehadiran bayam memberikan nilai gizi tambahan yang membuatnya menjadi pilihan yang lebih sehat dibandingkan bakwan tradisional.</p>
+
+        <p>Resep bakwan jagung bayam ini sangat mudah dibuat di rumah, bahkan bagi pemula sekalipun. Bahan-bahannya pun mudah ditemukan di pasar tradisional maupun supermarket terdekat. Proses pembuatannya pun tidak memakan waktu lama, sehingga Anda bisa segera menyajikannya sebagai hidangan pembuka atau camilan pengganjal lapar. Mari kita intip bagaimana membuat kudapan yang menggugah selera ini.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan Utama</h2>
+            <ul>
+                <li>2 buah jagung manis, pipil atau serut</li>
+                <li>1 ikat bayam segar, petik daunnya, cuci bersih, dan iris kasar</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk hasil lebih renyah)</li>
+                <li>2 butir telur</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1 cm kunyit, haluskan (opsional, untuk warna lebih menarik)</li>
+                <li>Garam secukupnya</li>
+                <li>Merica bubuk secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air secukupnya (sekitar 100-150 ml)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li>Dalam sebuah wadah besar, campurkan pipilan/serutan jagung manis, irisan bayam, dan irisan daun bawang.</li>
+                <li>Masukkan telur, bawang putih halus, kunyit halus (jika menggunakan), garam, merica bubuk, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li>Masukkan tepung terigu dan tepung beras (jika menggunakan). Aduk rata hingga semua bahan tercampur.</li>
+                <li>Tuang air sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kental namun tidak terlalu padat. Konsistensi adonan harus pas agar bakwan tidak mudah hancur saat digoreng dan tidak terlalu lembek.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum mulai menggoreng.</li>
+                <li>Ambil satu sendok sayur adonan bakwan, lalu masukkan ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan matang di kedua sisinya.</li>
+                <li>Angkat bakwan jagung bayam yang sudah matang, tiriskan minyaknya di atas tisu dapur agar tidak terlalu berminyak.</li>
+                <li>Sajikan bakwan jagung bayam selagi hangat. Nikmati bersama sambal favorit Anda atau cabai rawit utuh untuk sensasi pedas yang lebih mantap.</li>
+            </ol>
+        </div>
+
+        <p>Bakwan jagung bayam yang renyah di luar dan lembut di dalam ini memang selalu menggoda. Keunikan rasa dan teksturnya menjadikan camilan ini tak lekang oleh waktu. Selain itu, fakta bahwa kita bisa menambahkan sayuran hijau seperti bayam ke dalam adonan bakwan, membuatnya menjadi cara cerdas untuk meningkatkan asupan nutrisi, terutama bagi anak-anak yang mungkin agak pilih-pilih makanan. Kombinasi warna hijau dari bayam dan kuning cerah dari jagung juga membuat tampilan bakwan semakin menarik.</p>
+
+        <p>Variasi lain yang bisa Anda coba adalah menambahkan sedikit parutan wortel untuk menambah tekstur dan vitamin A, atau sedikit irisan cabai merah jika Anda menyukai rasa pedas. Penggunaan tepung beras memang sangat direkomendasikan jika Anda menginginkan hasil yang super renyah, namun tanpa tepung beras pun bakwan ini tetap lezat. Kuncinya ada pada kekentalan adonan dan suhu minyak yang pas saat menggoreng. Selamat mencoba dan menikmati kelezatan bakwan jagung bayam buatan sendiri!</p>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-jagung-goreng">Bakwan Jagung Goreng</a></li>
+<li><a href="/balasan-bagi-istri-yang-mencari-nafkah">Balasan Bagi Istri Yang Mencari Nafkah</a></li>
+<li><a href="/bakpao-kacang">Bakpao Kacang</a></li>
+<li><a href="/bakpao-koko-alam-sutera">Bakpao Koko Alam Sutera</a></li>
+<li><a href="/bakpao-karakter-imlek">Bakpao Karakter Imlek</a></li>
+<li><a href="/resep-bakwan-sowan">Resep Bakwan Sowan</a></li>
+<li><a href="/bakpia-rahayu">Bakpia Rahayu</a></li>
+<li><a href="/sambal-bakso-mercon">Sambal Bakso Mercon</a></li>
+<li><a href="/resep-bakwan-day">Resep Bakwan Day</a></li>
+<li><a href="/bakpao-devina-hermawan">Bakpao Devina Hermawan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

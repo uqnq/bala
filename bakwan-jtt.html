@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan JTT: Renyah, Lezat, Anti Gagal</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* White - kontras cerah */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue - warna sejuk dan cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            color: #20b2aa; /* LightSeaGreen - warna cerah */
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .instructions {
+            background-color: #e0ffff; /* LightCyan - warna sejuk */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #4682b4;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; /* Agar footer selalu di bawah */
+            background-color: #d0e0f0; /* Lavender - warna sejuk */
+            color: #333;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <!-- SVG Gambar Bakwan JTT -->
+            <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi Bakwan JTT yang renyah dan lezat">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFA07A;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="500" height="300" rx="15" ry="15" fill="#FFFACD" /> <!-- LemonChiffon background -->
+
+                <!-- Bakwan 1 -->
+                <path d="M100,100 C120,80 150,80 170,100 C190,120 190,150 170,170 C150,190 120,190 100,170 C80,150 80,120 100,100 Z" fill="url(#grad1)" stroke="#DAA520" stroke-width="3"/>
+                <circle cx="120" cy="110" r="8" fill="#DAA520" opacity="0.6"/>
+                <circle cx="140" cy="130" r="5" fill="#DAA520" opacity="0.4"/>
+
+                <!-- Bakwan 2 -->
+                <path d="M200,120 C220,100 250,100 270,120 C290,140 290,170 270,190 C250,210 220,210 200,190 C180,170 180,140 200,120 Z" fill="url(#grad1)" stroke="#DAA520" stroke-width="3"/>
+                <circle cx="220" cy="130" r="7" fill="#DAA520" opacity="0.6"/>
+                <circle cx="245" cy="155" r="6" fill="#DAA520" opacity="0.4"/>
+
+                <!-- Bakwan 3 -->
+                <path d="M300,80 C320,60 350,60 370,80 C390,100 390,130 370,150 C350,170 320,170 300,150 C280,130 280,100 300,80 Z" fill="url(#grad1)" stroke="#DAA520" stroke-width="3"/>
+                <circle cx="330" cy="90" r="6" fill="#DAA520" opacity="0.6"/>
+                <circle cx="350" cy="110" r="4" fill="#DAA520" opacity="0.4"/>
+                <circle cx="320" cy="120" r="3" fill="#DAA520" opacity="0.3"/>
+
+                <!-- Teks Bakwan JTT -->
+                <text x="50%" y="270" dominant-baseline="middle" text-anchor="middle" fill="#FF6347" font-size="40" font-weight="bold" font-family="Arial, sans-serif">Bakwan JTT</text>
+
+                <!-- Detail Renyah (garis-garis) -->
+                <line x1="100" y1="90" x2="170" y2="100" stroke="#FFDEAD" stroke-width="2" opacity="0.5"/>
+                <line x1="100" y1="110" x2="170" y2="120" stroke="#FFDEAD" stroke-width="2" opacity="0.5"/>
+                <line x1="200" y1="110" x2="270" y2="120" stroke="#FFDEAD" stroke-width="2" opacity="0.5"/>
+                <line x1="300" y1="70" x2="370" y2="80" stroke="#FFDEAD" stroke-width="2" opacity="0.5"/>
+            </svg>
+        </div>
+
+        <h1>Resep Bakwan JTT: Kenikmatan Sederhana yang Menggugah Selera</h1>
+
+        <p>Siapa yang tidak suka bakwan? Camilan gorengan yang renyah di luar dan lembut di dalam ini selalu menjadi favorit banyak orang. Kali ini, kita akan membahas resep bakwan JTT yang tidak hanya mudah dibuat, tetapi juga dijamin menghasilkan bakwan yang <span class="highlight">renyah, lezat, dan anti gagal</span>. Bakwan JTT menjadi pilihan sempurna untuk teman ngopi, camilan sore, atau bahkan lauk pendamping nasi. Resep ini cocok bagi Anda yang ingin mencoba membuat bakwan sendiri di rumah dengan hasil yang memuaskan.</p>
+
+        <h2>Mengapa Bakwan JTT Begitu Spesial?</h2>
+        <p>Kunci dari bakwan yang sempurna terletak pada adonan dan cara menggorengnya. Bakwan JTT menggunakan racikan bumbu yang pas sehingga rasa gurihnya meresap sempurna. Penggunaan bahan-bahan segar dan teknik yang tepat akan menghasilkan tekstur yang diinginkan. Anda tidak perlu khawatir jika sebelumnya sering gagal membuat bakwan. Dengan panduan ini, Anda akan menemukan <span class="highlight">cara membuat bakwan yang renyah tahan lama</span> dan tidak lembek saat dingin.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <p>Untuk membuat bakwan JTT yang lezat, Anda akan membutuhkan bahan-bahan berikut:</p>
+        <ul>
+            <li>Sayuran segar pilihan: Wortel, kol, tauge, buncis, atau sayuran lain sesuai selera.</li>
+            <li>Tepung terigu sebagai bahan dasar adonan.</li>
+            <li>Tepung beras untuk menambah kerenyahan.</li>
+            <li>Bumbu halus: Bawang putih, bawang merah, ketumbar, merica.</li>
+            <li>Garam dan penyedap rasa secukupnya.</li>
+            <li>Air secukupnya untuk membuat adonan.</li>
+            <li>Minyak goreng yang cukup banyak untuk menggoreng.</li>
+        </ul>
+
+        <h2>Langkah-Langkah Pembuatan Bakwan JTT</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Persiapan Sayuran:</strong> Cuci bersih semua sayuran. Iris tipis wortel, kol, dan buncis. Tauge bisa dibiarkan utuh atau dipotong sedikit jika terlalu panjang.</li>
+                <li><strong>Membuat Adonan Tepung:</strong> Dalam wadah, campurkan tepung terigu dan tepung beras. Tambahkan bumbu halus (bawang putih, bawang merah, ketumbar, merica yang sudah dihaluskan), garam, dan penyedap rasa. Aduk rata.</li>
+                <li><strong>Menambahkan Air:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kental dan tidak terlalu encer. Konsistensi adonan sangat penting untuk hasil bakwan yang sempurna.</li>
+                <li><strong>Mencampurkan Sayuran:</strong> Masukkan semua sayuran yang sudah disiapkan ke dalam adonan tepung. Aduk rata hingga semua sayuran terbalut sempurna oleh adonan.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+                <li><strong>Membentuk Bakwan:</strong> Ambil satu sendok sayur adonan, lalu masukkan ke dalam minyak panas. Goreng hingga salah satu sisi berwarna coklat keemasan. Balikkan dan goreng sisi lainnya hingga matang sempurna. Usahakan menggoreng dalam jumlah yang tidak terlalu banyak sekaligus agar suhu minyak tetap stabil.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang dan tiriskan menggunakan kertas tisu dapur untuk menyerap kelebihan minyak.</li>
+            </ol>
+            <p><span class="highlight">Tips Tambahan:</span> Untuk kerenyahan ekstra, Anda bisa menambahkan sedikit air es atau soda kue ke dalam adonan. Pastikan minyak benar-benar panas sebelum menggoreng adalah kunci utama agar bakwan tidak menyerap banyak minyak dan menjadi renyah.</p>
+        </div>
+
+        <h2>Penyajian Bakwan JTT</h2>
+        <p>Bakwan JTT paling nikmat disajikan selagi hangat. Anda bisa menyajikannya dengan cocolan saus sambal, sambal kacang, atau cabai rawit hijau. Kehadirannya akan membuat momen bersantai Anda semakin istimewa. Nikmati <span class="highlight">sensasi renyah dan gurih</span> setiap gigitannya.</p>
+
+        <p>Dengan resep bakwan JTT ini, Anda kini bisa membuat camilan favorit keluarga kapan saja. Selamat mencoba dan semoga berhasil menciptakan bakwan yang lezat!</p>
+    </div>
+
+    <footer>
+        <p>&copy; Semua hak dilindungi.</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-jagung-frozen">Bakwan Jagung Frozen</a></li>
+<li><a href="/cara-bikin-dadar-jagung-yang-enak">Cara Bikin Dadar Jagung Yang Enak</a></li>
+<li><a href="/atom-kocir-bakpia-cirebon">Atom Kocir Bakpia Cirebon</a></li>
+<li><a href="/bakpia-pathok-jogkem">Bakpia Pathok Jogkem</a></li>
+<li><a href="/bakpao-karakter-sapi">Bakpao Karakter Sapi</a></li>
+<li><a href="/bakso-utama-spesial-bakso-beranak">Bakso Utama Spesial Bakso Beranak</a></li>
+<li><a href="/menyimpan-adonan-bakwan-di-kulkas">Menyimpan Adonan Bakwan Di Kulkas</a></li>
+<li><a href="/membuat-isian-bakpao">Membuat Isian Bakpao</a></li>
+<li><a href="/cara-masak-dadar-jagung">Cara Masak Dadar Jagung</a></li>
+<li><a href="/cara-buat-bakwan-keladi">Cara Buat Bakwan Keladi</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

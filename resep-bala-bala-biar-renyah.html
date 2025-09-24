@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bala Bala Renyah & Gurih Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2 {
+            color: #007bff; /* Bright Blue */
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1.7em;
+            border-bottom: 2px solid #87ceeb; /* SkyBlue */
+            padding-bottom: 8px;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        p, li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 20px;
+        }
+        ul li::before {
+            content: "✓";
+            color: #28a745; /* Green */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .ingredients li::before {
+            content: "•";
+            color: #17a2b8; /* Teal */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .steps li::before {
+            content: "➤";
+            color: #ffc107; /* Yellow */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .tips {
+            background-color: #e0ffff; /* Light Cyan */
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-style: italic;
+            color: #0056b3; /* Darker Blue */
+        }
+        .tips strong {
+            color: #dc3545; /* Red */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            background-color: #f8f9fa; /* Light Gray */
+            color: #6c757d; /* Gray */
+            font-size: 0.9em;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p, li {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Ikon Bala Bala">
+            <circle cx="50" cy="50" r="45" fill="#ffeb3b" stroke="#fbc02d" stroke-width="3"/>
+            <path d="M25 60 Q 35 40 50 40 T 75 60 L 75 70 Q 65 75 50 75 T 25 70 Z" fill="#c62828"/>
+            <path d="M35 55 Q 40 45 50 45 T 65 55 L 65 65 Q 57 70 50 70 T 35 65 Z" fill="#f9a825"/>
+            <text x="50" y="50" font-size="16" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-weight="bold">BG</text>
+        </svg>
+
+        <h1>Rahasia Resep Bala Bala Biar Renyah Sempurna</h1>
+        <p>Siapa yang tidak suka bala bala? Gorengan renyah dari adonan tepung dan sayuran ini selalu jadi favorit. Namun, tak jarang kita menghadapi masalah bala bala yang cepat lembek atau tidak garing. Jangan khawatir! Artikel ini akan membongkar rahasia membuat bala bala yang super renyah dan tahan lama, cocok dinikmati kapan saja.</p>
+
+        <h2>Bahan-Bahan Sederhana untuk Bala Bala Renyah</h2>
+        <p>Kunci utama bala bala renyah ada pada pemilihan bahan dan takaran yang tepat. Berikut adalah bahan-bahan yang Anda perlukan:</p>
+        <ul class="ingredients">
+            <li>200 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (ini penting untuk kerenyahan ekstra!)</li>
+            <li>1/2 sendok teh garam</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>1/4 sendok teh kaldu bubuk (opsional, untuk rasa lebih gurih)</li>
+            <li>1 butir telur ayam (untuk mengikat adonan)</li>
+            <li>200-250 ml air es (gunakan air yang sangat dingin)</li>
+            <li>1 buah wortel ukuran sedang, iris tipis korek api</li>
+            <li>1/4 bonggol kol ukuran kecil, iris tipis</li>
+            <li>1 batang daun bawang, iris halus</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bala Bala Renyah Sempurna</h2>
+        <p>Ikuti panduan ini untuk hasil maksimal:</p>
+        <ul class="steps">
+            <li><strong>Persiapan Sayuran:</strong> Cuci bersih semua sayuran. Iris tipis wortel dan kol. Cincang halus daun bawang. Sisihkan.</li>
+            <li><strong>Membuat Adonan Kering:</strong> Dalam wadah besar, campurkan tepung terigu, tepung beras, garam, merica bubuk, dan kaldu bubuk (jika pakai). Aduk rata.</li>
+            <li><strong>Menambahkan Telur dan Air Es:</strong> Pecahkan telur ke dalam campuran tepung, lalu tuangkan air es sedikit demi sedikit sambil terus diaduk. Gunakan <em>whisk</em> atau garpu agar adonan tidak menggumpal. Aduk hingga mendapatkan kekentalan yang pas, tidak terlalu encer dan tidak terlalu kental. Adonan harus bisa melapisi sayuran dengan baik.</li>
+            <li><strong>Mencampur Sayuran:</strong> Masukkan irisan wortel, kol, dan daun bawang ke dalam adonan tepung. Aduk rata hingga semua sayuran terlapisi adonan.</li>
+            <li><strong>Pemanasan Minyak:</strong> Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang-besar. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+            <li><strong>Menggoreng Bala Bala:</strong> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan terlihat garing. Balik sesekali agar matang merata.</li>
+            <li><strong>Tiriskan:</strong> Angkat bala bala yang sudah matang, tiriskan menggunakan saringan kawat atau alas tisu dapur untuk menyerap kelebihan minyak.</li>
+            <li><strong>Sajikan:</strong> Bala bala renyah siap disajikan selagi hangat bersama cabai rawit atau saus sambal.</li>
+        </ul>
+
+        <div class="tips">
+            <h2>Tips Jitu Agar Bala Bala Makin Renyah</h2>
+            <ul>
+                <li><strong>Gunakan Tepung Beras:</strong> Kombinasi tepung terigu dan tepung beras adalah kunci utama kerenyahan. Tepung beras memberikan tekstur yang lebih garing.</li>
+                <li><strong>Air Es:</strong> Air yang sangat dingin membantu menciptakan tekstur renyah pada gorengan. Pastikan air benar-benar dingin atau bahkan menggunakan es batu dalam adonan.</li>
+                <li><strong>Jangan Terlalu Banyak Sayuran:</strong> Proporsi adonan dan sayuran harus seimbang. Terlalu banyak sayuran bisa membuat adonan sulit menempel dan akhirnya lembek.</li>
+                <li><strong>Minyak Panas:</strong> Goreng bala bala dalam minyak yang sudah benar-benar panas. Ini akan membantu lapisan luar cepat matang dan garing, sementara bagian dalam matang perlahan.</li>
+                <li><strong>Api Sedang-Besar:</strong> Saat menggoreng, gunakan api sedang-besar. Api yang terlalu kecil akan membuat bala bala menyerap banyak minyak dan menjadi lembek.</li>
+                <li><strong>Jangan Menumpuk Saat Digoreng:</strong> Goreng bala bala secukupnya saja agar suhu minyak tidak turun drastis. Goreng dalam beberapa tahap jika perlu.</li>
+                <li><strong>Adonan Siap Pakai:</strong> Segera goreng adonan setelah tercampur rata dengan sayuran. Jangan mendiamkan adonan terlalu lama karena akan membuat sayuran mengeluarkan air dan adonan menjadi encer.</li>
+            </ul>
+        </div>
+
+        <p>Dengan mengikuti resep dan tips di atas, Anda bisa membuat bala bala yang renyah di luar dan lembut di dalam. Cocok untuk camilan santai keluarga atau teman berkumpul. Selamat mencoba dan nikmati kelezatan bala bala renyah buatan sendiri!</p>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi.</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-mercon-sasa">Bakso Mercon Sasa</a></li>
+<li><a href="/cara-membuat-bakwan-sosis-kanzler">Cara Membuat Bakwan Sosis Kanzler</a></li>
+<li><a href="/bakpia-latief">Bakpia Latief</a></li>
+<li><a href="/bakwan-kucai">Bakwan Kucai</a></li>
+<li><a href="/bakso-mercon-mas-karyo">Bakso Mercon Mas Karyo</a></li>
+<li><a href="/klub-baru-gareth-bale">Klub Baru Gareth Bale</a></li>
+<li><a href="/resep-bakwan-tempe-pedas">Resep Bakwan Tempe Pedas</a></li>
+<li><a href="/bumbu-bikin-perkedel-jagung">Bumbu Bikin Perkedel Jagung</a></li>
+<li><a href="/penjual-bakso-beranak-terdekat">Penjual Bakso Beranak Terdekat</a></li>
+<li><a href="/cara-membuat-bakpao-sederhana">Cara Membuat Bakpao Sederhana</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

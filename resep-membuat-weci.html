@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Weci Renyah dan Gurih Ala Rumahan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #00796b; /* Warna teks sejuk */
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 20px 20px 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #004d40;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #00695c;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-image {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients, .instructions {
+            background-color: #f0f8ff; /* Warna latar belakang sedikit berbeda */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .ingredients ul {
+            list-style-type: disc;
+        }
+        .instructions ol {
+            list-style-type: decimal;
+        }
+        .tip {
+            background-color: #fff9c4; /* Warna kuning cerah untuk tips */
+            padding: 12px;
+            border-radius: 8px;
+            font-style: italic;
+            color: #333;
+            margin-top: 20px;
+        }
+        .tip strong {
+            color: #f57f17; /* Warna aksen untuk penekanan */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #004d40;
+            opacity: 0.7;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 15px 15px 25px 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Weci Renyah dan Gurih Ala Rumahan</h1>
+
+        <svg class="recipe-image" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="recipeTitle">
+            <title id="recipeTitle">Ilustrasi weci atau bakwan goreng</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#4db6ac;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="300" height="200" rx="10" ry="10" fill="url(#grad1)" />
+            <path d="M 50 60 Q 80 40 100 60 T 150 60 T 200 60 T 250 60 L 250 140 Q 200 160 150 140 T 100 140 T 50 140 Z" fill="#fff" stroke="#00796b" stroke-width="3" />
+            <circle cx="75" cy="80" r="8" fill="#ffdd80" />
+            <circle cx="125" cy="85" r="7" fill="#ffdd80" />
+            <circle cx="175" cy="80" r="8" fill="#ffdd80" />
+            <circle cx="225" cy="85" r="7" fill="#ffdd80" />
+            <circle cx="75" cy="110" r="7" fill="#ffdd80" />
+            <circle cx="125" cy="115" r="8" fill="#ffdd80" />
+            <circle cx="175" cy="110" r="7" fill="#ffdd80" />
+            <circle cx="225" cy="115" r="8" fill="#ffdd80" />
+            <text x="150" y="30" font-family="Verdana" font-size="16" fill="#004d40" text-anchor="middle">Weci</text>
+        </svg>
+
+        <p>Siapa yang tidak kenal dengan camilan satu ini? Weci, atau yang lebih dikenal dengan nama bakwan goreng di banyak daerah, adalah jajanan favorit banyak orang. Cocok dinikmati saat santai, berkumpul bersama keluarga, atau bahkan sebagai teman saat ngopi dan ngeteh. Membuat weci sendiri di rumah ternyata tidaklah sulit, bahkan hasilnya bisa lebih renyah, gurih, dan tentu saja, lebih sehat karena kita mengontrol bahan-bahannya.</p>
+
+        <p>Artikel ini akan memandu Anda langkah demi langkah untuk membuat weci yang sempurna. Mulai dari pemilihan sayuran, adonan yang pas, hingga teknik menggoreng agar hasilnya maksimal.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan Weci Renyah</h2>
+            <ul>
+                <li>250 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+                <li>1 sendok teh garam</li>
+                <li>½ sendok teh merica bubuk</li>
+                <li>½ sendok teh kaldu bubuk (opsional, untuk rasa lebih gurih)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>1 buah wortel ukuran sedang, serut kasar atau iris korek api tipis</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>1 buah tahu putih, potong dadu kecil (opsional, jika suka)</li>
+                <li>Air secukupnya (sekitar 200-250 ml, sesuaikan kekentalan)</li>
+                <li>Minyak goreng secukupnya, untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="ingredients">
+            <h2>Bumbu Halus (untuk Adonan)</h2>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>2 siung bawang merah</li>
+                <li>½ sendok teh ketumbar bubuk</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat Weci Gurih</h2>
+            <ol>
+                <li><strong>Persiapan Sayuran:</strong> Cuci bersih semua sayuran. Potong dan iris sesuai ukuran yang disebutkan di atas. Pastikan wortel dan kol diiris cukup tipis agar matang merata saat digoreng.</li>
+                <li><strong>Campur Bahan Kering:</strong> Dalam wadah besar, campurkan tepung terigu, tepung beras, garam, merica bubuk, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li><strong>Haluskan Bumbu:</strong> Ulek atau blender bumbu halus hingga benar-benar halus.</li>
+                <li><strong>Buat Adonan:</strong> Masukkan bumbu halus ke dalam campuran tepung. Tambahkan irisan daun bawang, wortel, kol, dan potongan tahu (jika pakai). Aduk sebentar.</li>
+                <li><strong>Tambahkan Air:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang kental namun masih bisa dituang. Jangan terlalu encer agar weci tidak lembek, dan jangan terlalu kental agar tidak keras. Adonan yang baik akan sedikit menempel pada sayuran.</li>
+                <li><strong>Panaskan Minyak:</strong> Siapkan wajan dan panaskan minyak goreng yang cukup banyak dengan api sedang. Minyak harus benar-benar panas agar weci bisa mekar dan renyah.</li>
+                <li><strong>Goreng Weci:</strong> Ambil satu sendok sayur adonan, ratakan sedikit di atas sendok, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga sisi bawahnya agak kokoh, lalu balik. Goreng hingga kedua sisinya berwarna kuning keemasan dan matang merata.</li>
+                <li><strong>Tiriskan:</strong> Angkat weci yang sudah matang dan tiriskan minyaknya menggunakan saringan atau letakkan di atas tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Sajikan weci selagi hangat dengan cabai rawit hijau, sambal kecap, atau saus favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <p><strong>Tips Tambahan:</strong>
+            <ul>
+                <li>Untuk hasil yang lebih renyah, pastikan minyak benar-benar panas sebelum menggoreng dan jangan terlalu banyak memasukkan adonan ke dalam wajan agar suhu minyak tidak turun drastis.</li>
+                <li>Hindari mengaduk weci terlalu sering saat menggoreng, biarkan satu sisi agak kokoh sebelum dibalik.</li>
+                <li>Jika ingin membuat dalam jumlah banyak, adonan bisa dibuat tanpa sayuran terlebih dahulu, baru kemudian sayuran dimasukkan sesaat sebelum digoreng agar tidak terlalu layu.</li>
+            </ul>
+            </p>
+        </div>
+
+        <p>Membuat weci sendiri di rumah memang memberikan kepuasan tersendiri. Dengan sedikit usaha dan mengikuti langkah-langkah di atas, Anda bisa menyajikan camilan lezat yang disukai seluruh anggota keluarga. Selamat mencoba dan semoga berhasil!</p>
+
+        <div class="footer">
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-dadar-jagung-kunci">Resep Dadar Jagung Kunci</a></li>
+<li><a href="/bakpia-pathok-25-info-terbaru">Bakpia Pathok 25 Info Terbaru</a></li>
+<li><a href="/bumbu-dadar-jagung-manis">Bumbu Dadar Jagung Manis</a></li>
+<li><a href="/pili-berfungsi">Pili Berfungsi</a></li>
+<li><a href="/resep-jagung-goreng-tepung">Resep Jagung Goreng Tepung</a></li>
+<li><a href="/harga-bakwan-sowan">Harga Bakwan Sowan</a></li>
+<li><a href="/bakso-pedas-beranak">Bakso Pedas Beranak</a></li>
+<li><a href="/bakteri-lactobacillus-adalah">Bakteri Lactobacillus Adalah</a></li>
+<li><a href="/harga-bakpia-raminten">Harga Bakpia Raminten</a></li>
+<li><a href="/bakpao-rasa">Bakpao Rasa</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

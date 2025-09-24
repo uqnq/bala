@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahan Perkedel Jagung: Siap-siap Nagih!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --warna-utama: #87CEEB; /* Biru langit cerah */
+            --warna-sekunder: #90EE90; /* Hijau muda */
+            --warna-aksen: #FFD700; /* Emas cerah */
+            --warna-teks-gelap: #333;
+            --warna-teks-terang: #fff;
+            --padding-umum: 15px;
+            --margin-umum: 15px;
+            --radius-kartu: 10px;
+            --shadow-kartu: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Latar belakang sedikit kelabu */
+            color: var(--warna-teks-gelap);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: var(--margin-umum) auto;
+            padding: var(--padding-umum);
+        }
+
+        header {
+            background-color: var(--warna-utama);
+            color: var(--warna-teks-terang);
+            text-align: center;
+            padding: var(--padding-umum) 0;
+            margin-bottom: var(--margin-umum);
+            box-shadow: var(--shadow-kartu);
+            border-radius: 0 0 var(--radius-kartu) var(--radius-kartu);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: var(--warna-teks-terang);
+        }
+
+        .content {
+            background-color: var(--warna-teks-terang);
+            padding: var(--padding-umum);
+            border-radius: var(--radius-kartu);
+            box-shadow: var(--shadow-kartu);
+            margin-bottom: var(--margin-umum);
+        }
+
+        h2 {
+            color: var(--warna-utama);
+            margin-top: 0;
+            border-bottom: 2px solid var(--warna-sekunder);
+            padding-bottom: 5px;
+            margin-bottom: var(--margin-umum);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: var(--margin-umum) auto;
+            border-radius: var(--radius-kartu);
+            box-shadow: var(--shadow-kartu);
+        }
+
+        .bahan-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bahan-list li {
+            background-color: var(--warna-sekunder);
+            color: var(--warna-teks-gelap);
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: var(--radius-kartu);
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .bahan-list li:hover {
+            background-color: var(--warna-utama);
+            color: var(--warna-teks-terang);
+        }
+
+        .bahan-list li::before {
+            content: '🌽 '; /* Emoji jagung */
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .tips-box {
+            background-color: var(--warna-aksen);
+            color: var(--warna-teks-gelap);
+            padding: var(--padding-umum);
+            border-radius: var(--radius-kartu);
+            box-shadow: var(--shadow-kartu);
+            margin-top: var(--margin-umum);
+        }
+
+        .tips-box h3 {
+            margin-top: 0;
+            color: var(--warna-teks-gelap);
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: var(--padding-umum);
+            margin-top: var(--margin-umum);
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .container {
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                border-radius: 0;
+            }
+            .content, .tips-box {
+                margin: var(--margin-umum) auto;
+                max-width: calc(100% - 2 * var(--margin-umum));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bahan Perkedel Jagung: Kunci Kelezatan yang Menggugah Selera</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <p>Perkedel jagung, camilan renyah di luar dan lembut di dalam, selalu menjadi primadona di meja makan keluarga. Siapa yang bisa menolak aroma manis jagung yang berpadu dengan gurihnya adonan? Membuat perkedel jagung yang sempurna ternyata tidak serumit yang dibayangkan. Kuncinya terletak pada pemilihan bahan-bahan yang tepat dan sedikit sentuhan kreatif.</p>
+
+            <svg width="100%" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <style>
+                    .jagung-outline { stroke: var(--warna-utama); stroke-width: 3; fill: none; }
+                    .jagung-isi { fill: var(--warna-aksen); }
+                    .daun { fill: var(--warna-sekunder); }
+                </style>
+                <!-- Tangkai Jagung -->
+                <path d="M280 130 Q 270 100 290 70 L 310 70 Q 330 100 320 130 Z" class="jagung-outline" />
+                <!-- Isi Jagung (bijian) -->
+                <circle cx="295" cy="85" r="5" class="jagung-isi"/>
+                <circle cx="305" cy="85" r="5" class="jagung-isi"/>
+                <circle cx="285" cy="95" r="5" class="jagung-isi"/>
+                <circle cx="295" cy="95" r="5" class="jagung-isi"/>
+                <circle cx="305" cy="95" r="5" class="jagung-isi"/>
+                <circle cx="315" cy="95" r="5" class="jagung-isi"/>
+                <circle cx="275" cy="105" r="5" class="jagung-isi"/>
+                <circle cx="285" cy="105" r="5" class="jagung-isi"/>
+                <circle cx="295" cy="105" r="5" class="jagung-isi"/>
+                <circle cx="305" cy="105" r="5" class="jagung-isi"/>
+                <circle cx="315" cy="105" r="5" class="jagung-isi"/>
+                <circle cx="325" cy="105" r="5" class="jagung-isi"/>
+                <!-- Daun Jagung -->
+                <path d="M250 120 Q 240 90 260 60 L 280 60 Q 270 90 250 120 Z" class="daun" />
+                <path d="M330 120 Q 340 90 320 60 L 300 60 Q 310 90 330 120 Z" class="daun" />
+            </svg>
+
+            <h2>Bahan Utama yang Wajib Ada:</h2>
+            <ul class="bahan-list">
+                <li><strong>Jagung Manis:</strong> Ini adalah bintang utamanya. Pilih jagung yang masih segar, bijinya montok dan berwarna cerah. Anda bisa menggunakan jagung pipil yang sudah dipipil atau memipilnya sendiri dari bonggolnya. Sekitar 2-3 bonggol jagung ukuran sedang biasanya cukup untuk satu porsi. Jagung manis akan memberikan rasa manis alami yang khas.</li>
+                <li><strong>Tepung Terigu:</strong> Bertindak sebagai pengikat adonan. Gunakan tepung terigu serbaguna. Takarannya penting agar perkedel tidak terlalu lembek atau terlalu keras. Sekitar 4-5 sendok makan biasanya cukup untuk 2-3 bonggol jagung.</li>
+                <li><strong>Telur Ayam:</strong> Merupakan pengikat lain yang krusial dan menambah kelembutan serta kekayaan rasa. Satu butir telur untuk takaran jagung di atas sudah memadai.</li>
+                <li><strong>Bawang Merah dan Bawang Putih:</strong> Memberikan aroma dan cita rasa gurih yang mendalam. Cincang halus bawang merah dan bawang putih secukupnya, kira-kira 2 siung bawang putih dan 3-4 siung bawang merah.</li>
+            </ul>
+
+            <h2>Bahan Pendukung untuk Kelezatan Ekstra:</h2>
+            <p>Selain bahan utama, beberapa tambahan akan membuat perkedel jagung Anda semakin istimewa:</p>
+            <ul class="bahan-list">
+                <li><strong>Daun Bawang:</strong> Iris tipis daun bawang untuk menambah aroma segar dan sedikit tekstur. Sekitar 1-2 batang sudah cukup.</li>
+                <li><strong>Cabai Rawit (Opsional):</strong> Bagi penyuka pedas, tambahkan irisan cabai rawit halus sesuai selera. Ini akan memberikan sentuhan pedas yang menggigit.</li>
+                <li><strong>Tepung Beras atau Maizena (Opsional):</strong> Sedikit tepung beras atau maizena (sekitar 1-2 sendok makan) bisa ditambahkan untuk menghasilkan tekstur yang lebih renyah di bagian luar.</li>
+                <li><strong>Garam dan Lada:</strong> Untuk menyeimbangkan rasa manis jagung dan gurih bumbu. Jangan lupa sejumput gula jika Anda ingin rasa manisnya lebih menonjol.</li>
+                <li><strong>Kaldu Bubuk (Opsional):</strong> Untuk menambah gurihnya rasa, sedikit kaldu bubuk sapi atau ayam bisa menjadi tambahan yang lezat.</li>
+            </ul>
+
+            <div class="tips-box">
+                <h3>Tips Tambahan untuk Perkedel Sempurna:</h3>
+                <p><strong>Jangan Terlalu Halus:</strong> Saat memipil jagung atau menghaluskan sebagian bijinya, jangan sampai terlalu halus. Sisakan sedikit tekstur biji jagung akan membuat perkedel lebih nikmat saat digigit.</p>
+                <p><strong>Konsistensi Adonan:</strong> Adonan jangan terlalu encer agar mudah dibentuk dan tidak pecah saat digoreng. Jika terlalu lembek, tambahkan sedikit terigu.</p>
+                <p><strong>Minyak Panas:</strong> Pastikan minyak goreng dalam keadaan panas sebelum memasukkan adonan perkedel agar hasilnya renyah dan tidak menyerap banyak minyak.</p>
+            </div>
+
+            <p>Dengan bahan-bahan dasar yang mudah ditemukan dan sedikit trik, Anda bisa menciptakan perkedel jagung yang lezat dan disukai semua orang. Selamat mencoba dan nikmati kehangatan camilan buatan sendiri!</p>
+        </div>
+    </div>
+
+    <footer>
+        Semua bahan dibuat dengan cinta untuk camilan yang sempurna.
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/membuat-pia-kacang-hijau">Membuat Pia Kacang Hijau</a></li>
+<li><a href="/bakso-mercon-tebing-tinggi">Bakso Mercon Tebing Tinggi</a></li>
+<li><a href="/bakpao-1000an">Bakpao 1000An</a></li>
+<li><a href="/cara-membuat-perkedel-jagung-yang-lembut">Cara Membuat Perkedel Jagung Yang Lembut</a></li>
+<li><a href="/bakso-mercon-mas-har">Bakso Mercon Mas Har</a></li>
+<li><a href="/gareth-bale-pindah">Gareth Bale Pindah</a></li>
+<li><a href="/depot-mini-pangsit-mie-bakwan">Depot Mini Pangsit Mie Bakwan</a></li>
+<li><a href="/resep-bakwan-agar-tidak-lembek">Resep Bakwan Agar Tidak Lembek</a></li>
+<li><a href="/cara-bikin-bakwan-jagung-tanpa-telur">Cara Bikin Bakwan Jagung Tanpa Telur</a></li>
+<li><a href="/resep-bakwan-talas-goreng">Resep Bakwan Talas Goreng</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Jagung Manis, Renyah, & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .recipe-details {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #e0ffff; /* LightCyan */
+            border-radius: 8px;
+            border: 1px solid #b0e0e6; /* PowderBlue */
+        }
+        .recipe-details div {
+            text-align: center;
+            margin: 5px 10px;
+            color: #008080; /* Teal */
+        }
+        .recipe-details span {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .ingredients ul, .instructions ol {
+            background-color: #f5f5dc; /* Beige */
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px dashed #deb887; /* BurlyWood */
+        }
+        .ingredients li::before, .instructions li::before {
+            content: '✔ ';
+            color: #2e8b57; /* SeaGreen */
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #778899; /* LightSlateGray */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .recipe-details {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 20px auto;">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ff8c00;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="45" fill="url(#grad1)" stroke="#fff" stroke-width="4"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold" dy=".3em">
+                BJ
+            </text>
+            <path d="M 30 70 Q 50 55 70 70" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+
+        <h1>Resep Bakwan Jagung Manis dan Renyah</h1>
+        <p>Siapa yang tidak suka camilan gurih dan renyah seperti bakwan jagung? Sajian ini sangat cocok dinikmati kapan saja, baik sebagai teman minum teh di sore hari, lauk pelengkap nasi hangat, atau sekadar camilan pengganjal perut. Bakwan jagung yang lezat identik dengan rasa manis alami dari jagung, tekstur yang renyah di luar dan lembut di dalam, serta aroma yang menggugah selera. Mari kita buat bakwan jagung yang sempurna di rumah dengan resep yang mudah diikuti ini.</p>
+
+        <div class="recipe-details">
+            <div>
+                <span>Waktu Persiapan</span>
+                15 Menit
+            </div>
+            <div>
+                <span>Waktu Memasak</span>
+                20 Menit
+            </div>
+            <div>
+                <span>Porsi</span>
+                4-6 orang
+            </div>
+            <div>
+                <span>Tingkat Kesulitan</span>
+                Mudah
+            </div>
+        </div>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <ul>
+                <li>2 buah jagung manis, pipil atau serut kasar</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk ekstra renyah)</li>
+                <li>1 butir telur ayam</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air secukupnya (sekitar 50-75 ml, sesuaikan adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat Bakwan Jagung</h2>
+        <div class="instructions">
+            <ol>
+                <li>Siapkan wadah, masukkan jagung manis yang sudah dipipil atau diserut.</li>
+                <li>Tambahkan tepung terigu, tepung beras (jika menggunakan), telur, irisan daun bawang, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan).</li>
+                <li>Aduk rata semua bahan kering. Kemudian, tuangkan air sedikit demi sedikit sambil terus diaduk hingga mendapatkan adonan yang kental namun tidak terlalu padat. Pastikan tidak ada gumpalan tepung. Adonan yang terlalu encer akan membuat bakwan lembek, sedangkan yang terlalu kental akan membuat bakwan keras.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum mulai menggoreng.</li>
+                <li>Ambil satu sendok makan adonan, lalu goreng ke dalam minyak panas. Lakukan hingga wajan terisi secukupnya, jangan terlalu penuh agar bakwan matang merata dan tidak saling menempel.</li>
+                <li>Goreng bakwan hingga berwarna kuning keemasan dan matang di kedua sisinya. Balik sesekali agar matang sempurna.</li>
+                <li>Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan saringan atau letakkan di atas tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li>Sajikan bakwan jagung selagi hangat. Nikmati dengan cabai rawit hijau, sambal kecap, atau saus sambal favorit Anda.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Agar Bakwan Jagung Makin Mantap</h2>
+        <ul>
+            <li><strong>Pilih Jagung yang Tepat:</strong> Gunakan jagung manis yang masih segar agar rasa manisnya optimal. Jika ingin tekstur lebih kasar, Anda bisa memotong-motong beberapa biji jagung setelah diserut.</li>
+            <li><strong>Adonan Jangan Terlalu Lama:</strong> Campurkan adonan sesaat sebelum digoreng agar tepung tidak menyerap terlalu banyak air dan bakwan menjadi lembek.</li>
+            <li><strong>Minyak Panas Sempurna:</strong> Pastikan minyak goreng benar-benar panas saat akan menggoreng. Ini kunci agar bakwan renyah di luar dan tidak menyerap banyak minyak. Gunakan api sedang agar bagian dalam matang merata tanpa gosong di luar.</li>
+            <li><strong>Tepung Beras untuk Renyah Ekstra:</strong> Menambahkan sedikit tepung beras akan memberikan sensasi renyah yang lebih tahan lama pada bakwan jagung Anda.</li>
+            <li><strong>Variasi Tambahan:</strong> Anda bisa menambahkan sedikit irisan cabai rawit jika suka rasa pedas, atau parutan wortel untuk warna dan nutrisi tambahan.</li>
+        </ul>
+
+        <p>Membuat bakwan jagung ternyata sangat mudah bukan? Dengan bahan-bahan sederhana dan langkah yang jelas, Anda bisa menyajikan camilan lezat ini untuk keluarga tercinta. Selamat mencoba dan menikmati kelezatan bakwan jagung buatan sendiri!</p>
+
+        <div class="footer">
+            © Resep Lezat. Hak cipta dilindungi.
+        </div>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/daerah-balikpapan">Daerah Balikpapan</a></li>
+<li><a href="/cara-buat-pentol-bakso-mercon">Cara Buat Pentol Bakso Mercon</a></li>
+<li><a href="/bumbu-bakwan-sayur-renyah">Bumbu Bakwan Sayur Renyah</a></li>
+<li><a href="/resep-buat-bakwan-jagung">Resep Buat Bakwan Jagung</a></li>
+<li><a href="/bakso-mercon-teh-amah">Bakso Mercon Teh Amah</a></li>
+<li><a href="/bakpia-tugu-malioboro-mall">Bakpia Tugu Malioboro Mall</a></li>
+<li><a href="/bakwan-kotak">Bakwan Kotak</a></li>
+<li><a href="/bakpia-keju">Bakpia Keju</a></li>
+<li><a href="/resep-bakwan-sayur-kunyit">Resep Bakwan Sayur Kunyit</a></li>
+<li><a href="/bakwan-sederhana">Bakwan Sederhana</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

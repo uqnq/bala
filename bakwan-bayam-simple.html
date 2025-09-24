@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Bayam Simple: Resep Cepat & Enak</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 15px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 20px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul yang cerah */
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #80cbc4;
+            padding-bottom: 5px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            color: #009688;
+            font-weight: bold;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .caption {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            font-size: 0.9em;
+            margin-top: -15px;
+            margin-bottom: 20px;
+        }
+        .recipe-section {
+            background-color: #e0f2f1; /* Warna latar belakang bagian resep yang sejuk */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .steps ol li {
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakwan Bayam Simple: Cepat, Sehat, dan Gurih!</h1>
+
+        <svg width="150" height="150" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 20px auto;">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#00796b" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 22C14.7614 22 17 19.7614 17 17" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 2C9.23858 2 7 4.23858 7 7" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 12L22 12" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L8 12" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 16L12 22" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 2L12 8" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.07 4.93L19.77 4.23" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.23 19.77L4.93 19.07" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.77 19.77L19.07 19.07" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.93 4.93L4.23 4.23" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="caption">Ilustrasi Bakwan Bayam Hijau Segar</p>
+
+        <p>Siapa yang tidak suka gorengan renyah dan gurih? Bakwan, atau sering disebut juga perkedel sayur, adalah salah satu camilan favorit banyak orang di Indonesia. Kali ini, kita akan membuat versi paling simpel namun tetap lezat, yaitu <span class="highlight">bakwan bayam simple</span>. Menggunakan bayam sebagai sayuran utamanya, bakwan ini tidak hanya enak tapi juga kaya akan nutrisi. Proses pembuatannya pun sangat mudah, cocok bagi Anda yang sedang belajar memasak atau memiliki waktu terbatas.</p>
+
+        <p>Bayangkan saja, di sore hari yang cerah, ditemani secangkir teh hangat, menikmati bakwan bayam yang masih hangat, renyah di luar, dan lembut di dalam. Resep ini dirancang untuk kesederhanaan tanpa mengorbankan rasa. Anda hanya memerlukan beberapa bahan dasar yang mudah ditemukan di dapur Anda.</p>
+
+        <div class="recipe-section">
+            <h2>Bahan-Bahan Bakwan Bayam Simple</h2>
+            <ul>
+                <li>1 ikat bayam segar (sekitar 10-15 lembar), siangi, cuci bersih, dan iris kasar</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk tekstur lebih renyah)</li>
+                <li>1/4 sendok teh bubuk kunyit (opsional, untuk warna lebih cantik)</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1 siung bawang putih, haluskan</li>
+                <li>1 batang daun bawang, iris tipis (opsional)</li>
+                <li>Air secukupnya (sekitar 100-150 ml)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Cara Membuat Bakwan Bayam Simple</h2>
+            <ol class="steps">
+                <li>Dalam sebuah wadah, campurkan tepung terigu dan tepung beras.</li>
+                <li>Tambahkan garam, merica bubuk, bubuk kunyit (jika pakai), dan bawang putih halus. Aduk rata.</li>
+                <li>Masukkan irisan bayam dan daun bawang (jika pakai) ke dalam adonan tepung.</li>
+                <li>Tuang air sedikit demi sedikit sambil terus diaduk hingga membentuk adonan yang kental tapi masih bisa diaduk rata. Jangan terlalu encer agar bakwan tidak lembek saat digoreng.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang.</li>
+                <li>Ambil satu sendok sayur adonan, masukkan ke dalam minyak panas. Bentuk agak pipih. Lakukan hingga wajan terisi secukupnya, jangan terlalu penuh.</li>
+                <li>Goreng bakwan hingga berwarna kuning keemasan dan matang di kedua sisinya.</li>
+                <li>Angkat bakwan dan tiriskan minyaknya di atas rak kawat atau tisu dapur.</li>
+                <li>Sajikan bakwan bayam selagi hangat. Nikmati bersama saus sambal, cabai rawit, atau lontong.</li>
+            </ol>
+        </div>
+
+        <p>Membuat <span class="highlight">bakwan bayam simple</span> ini adalah cara yang fantastis untuk menambah asupan sayuran dalam menu harian Anda. Bayam dikenal sebagai sumber zat besi, vitamin A, C, dan K yang sangat baik. Mengolahnya menjadi bakwan membuat sayuran ini jadi lebih menarik, terutama bagi anak-anak yang mungkin rewel makan sayur.</p>
+
+        <p>Kunci dari bakwan yang renyah adalah penggunaan campuran tepung terigu dan tepung beras, serta menggorengnya dengan minyak yang cukup panas. Jangan lupa untuk meniriskan minyaknya dengan baik agar bakwan tidak berminyak dan tetap terasa ringan saat disantap. Variasi lain bisa ditambahkan seperti sedikit parutan wortel untuk warna dan rasa manis alami, atau sedikit udang cincang untuk rasa yang lebih kaya.</p>
+
+        <p>Selamat mencoba resep bakwan bayam simple ini. Semoga sajian ini menjadi tambahan menu favorit di rumah Anda!</p>
+
+    </div>
+    <footer>
+        <p>&copy; Resep Kuliner Nusantara</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-pabean">Bakwan Pabean</a></li>
+<li><a href="/bakwan-jagung-untuk-jualan">Bakwan Jagung Untuk Jualan</a></li>
+<li><a href="/cara-membuat-bakpia-pathok-basah">Cara Membuat Bakpia Pathok Basah</a></li>
+<li><a href="/kumbu-hitam-bakpia">Kumbu Hitam Bakpia</a></li>
+<li><a href="/timnas-wales-piala-dunia-2022">Timnas Wales Piala Dunia 2022</a></li>
+<li><a href="/cara-membuat-perkedel-jagung-yang-lembut">Cara Membuat Perkedel Jagung Yang Lembut</a></li>
+<li><a href="/membuat-bakso-mercon">Membuat Bakso Mercon</a></li>
+<li><a href="/resep-bakwan-gurih-dan-renyah">Resep Bakwan Gurih Dan Renyah</a></li>
+<li><a href="/bakteri-aerob-obligat">Bakteri Aerob Obligat</a></li>
+<li><a href="/resep-bakwan-kelor">Resep Bakwan Kelor</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

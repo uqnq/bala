@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Sayur Kangkung Nikmat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e8f5e9; /* Hijau muda cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2e7d32; /* Hijau tua yang menenangkan */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #388e3c; /* Hijau sedikit lebih terang */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-bottom: 2px solid #a5d6a7; /* Garis hijau muda */
+            padding-bottom: 5px;
+        }
+        p, li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .ingredients ul li::before {
+            content: "✔ ";
+            color: #4caf50; /* Warna centang hijau */
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .instructions ol li::before {
+            content: counter(list-item) ". ";
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 25px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-summary {
+            background-color: #f1f8e9; /* Hijau sangat muda */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 5px solid #66bb6a; /* Garis hijau */
+        }
+        .recipe-summary p {
+            margin-bottom: 5px;
+        }
+        .recipe-summary strong {
+            color: #388e3c;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p, li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjMxOCIgdmlld0JveD0iMCAwIDUwMCAzMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xNjEuNDYyIDExNC4yMzZDNzkuNjIxIDExNC4yMzYgMTMuMDYzIDE3OC44NTQgMTMuMDYzIDI2MS42OTJDMzkuNDUyIDI2MS42OTIgNzUuNjY1IDI2MS42OTIgMTEyLjAzOCAyNjEuNjkzQzE5NC44OTYgMjYxLjY5MyAyNjguMjgxIDE4OC4yODMgMzA1LjU3NSAxNTQuMDA2QzMyNC43ODIgMTM1LjQwNSAzNDcuMzU0IDExNC4yMzYgMzcyLjcwOCAxMTQuMjM2QzQzOC44ODcgMTE0LjIzNiA0OTkuOTk5IDE1NS41MDggNDk5Ljk5OSAyMTguMDY2QzQ5OS45OTkgMzE4LjA2NiAzMTguMDY2IDM1MC43MTcgMjM4LjA2NiAzNTMuMzY1QzE0Mi42OTggMzU1Ljk1MyA3My4wNjMgMjcxLjM1NSAzMS4zMDcgMTgwLjM2N0M3LjAyMyAxNjQuMDI3IDQyLjAwNCAxMTQuMjM2IDE2MS40NjIgMTE0LjIzNloiIGZpbGw9IiM0Q0Q4NUQiLz4KPHBhdGggZD0iTTQ0LjQwMjIgMTg3LjA4NkM2Mi4zOTE0IDE4Ny4wODYgNzUuMjAzIDE3MC40NjQgNzUuMjAzIDE1Mi40NzJDNzUuMjAzIDEzNC40OC4yMDk5IDEzNC40OC4yMDk5IDE1Mi40NzJDMTY2LjAwMSAxNTAuNDc0IDIwOC4wMDEgMTQ2LjQ3NCAyNDMuMDAxIDE0Ni40NzRDMjU3LjAwMSA2Ny4wMDIgMjQxLjAwMSAxMDguMDAxIDIyMi4wMDEgMTI1LjAwMUMxODAuMDAxIDE1OC4wMTEgMTQ1LjAwMSAxNjEuMDAxIDEwMC4wMDEgMTU1LjAwMUM1NS4wMDEgMTQwLjAwMSAzMy4wMDEgMTY1LjAwMSA0NC40MDIyIDE4Ny4wODZ6IiBmaWxsPSIjOEZFNkU2Ii8+CjxwYXRoIGQ9Ik0xMTMuNDUzIDg4LjI3OUMxMjEuNTQgODguMjc5IDEyOC43NiA4MS4wNjIgMTI4Ljc2IDcyLjk1MUMxMjguNzYgNjQuODQxIDExNS41NjIgNTcuNzEgMTExLjQ1MyA1Ny43MUMxMDcuMzQ0IDU3LjcxIDk5LjY1NiA2NC44NCA5OS42NTYgNzIuOTUxQzk5LjY1NiA4MS4wNjIgMTA1LjU2MiA4OC4yNzkgMTEzLjQ1MyA4OC4yNzlaIiBmaWxsPSIjMzJBNjNCIi8+CjxwYXRoIGQ9Ik0yNjcuNTU0IDk5LjY1NkMyNzUuNjY0IDk5LjY1NiAyODIuODY0IDg4LjI3OSA3OS45OTIgODguMjc5QzE5OC40NTMgOTkuNjU2IDIyNC40NTMgOTIuMjgyIDI2Ny41NTQgOTkuNjU2WiIgZmlsbD0iI0ZFRkUyRSIvPgo8cGF0aCBkPSJNMTgwLjE1NSAxMjcuODQyQzE5OC4xNDcgMTI3Ljg0MiAyMTMuMzY0IDE0OC4xNTUgMjEzLjM2NCAxNjYuMTQ3QzIxMy4zNjQgMTg0LjEzOCAxOTguMTQ3IDIwNC42MzggMTgwLjE1NSAyMDQuNjM4QzE2Mi4xNjMgMjA0LjYzOCAxNDcuMzQ3IDE4NC4xMzggMTQ3LjM0NyAxNjYuMTQ3QzE0Ny4zNDcgMTQ4LjE1NSAxNjIuMTYzIDEyNy44NDIgMTgwLjE1NSAxMjcuODQyWiIgc3Ryb2tlPSIjMzJBNjNCIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0xODEuNzEgMjI1LjMxNkMxODkuODI5IDIyNS4zMTYgMTk3LjAxOSAzNDMuMTE2IDE5Ny4wMTkgMjQwLjIzNkMxOTcuMDE5IDI1Ni4zMTYgMTc2LjAxOSAyNTYuMzE2IDE3Ni4wMTkgMjQwLjIzNkMxNzYuMDE5IDIyNS4zMTYgMTgxLjcxIDIyNS4zMTYgMTgxLjcxIDIyNS4zMTZ6IiBmaWxsPSIjMzJBNjNCIi8+CjxwYXRoIGQ9Ik0xNzQuNjE4IDIzMS44MjFDMTgwLjI1OSAyMzEuODI1IDE4Ni43MTkgMjM3LjkwMSAxODYuNzE5IDI0My42MjJDMTg2LjcxOSAyNDkuMzQ1IDE3OS40NTkgMjU0LjMxNiAxNzEuMDc4IDI1NC4zMTZDMTE0LjMzOSAyNTQuMzE2IDU1LjAxNiAyMTMuODEzIDUxLjAwOCAxNjcuOTU0QzQ2LjkwMSAxMjIuMDk0IDg5LjAxMSAxMTEuMjQ3IDE0Ni4wMTEgMTExLjI0N0MxNTEuNjExIDExMS4yNDcgMTU1LjY4OSAxMjEuMzI0IDE0OC44ODEgMTI5LjUxNkMxNDMuMzEgMTM2LjE1NiAxNjQuOTgyIDE1OC4zMjMgMTk1LjY0MyAxODcuOTkzQzIxOC42OTcgMjExLjA1MSAyMjQuMjEgMjI0LjAxMiAyMTkuNzU5IDI0OS42NjdDMjE1LjMwNiAyNzUuMzIzIDE2OS4zMDYgMjUwLjY1NiAxNDQuNjA4IDI0Ni42NTZDMTE5LjkwOCAyNDIuNjU2IDEzMC42NTYgMjI3LjY1NiAxNDQuNjA4IDIyMy42NTZDMTE5LjkwOCAyMjMuNjU2IDE1OC4xNTYgMjI2LjY1NiAxNzQuNjE4IDIzMS44MjFaIiBmaWxsPSIjNjZCRjU1Ii8+Cjwvc3ZnPgo=" alt="Ilustrasi bakwan sayur kangkung yang renyah">
+
+        <h1>Cara Membuat Bakwan Sayur Kangkung Renyah dan Lezat</h1>
+
+        <div class="recipe-summary">
+            <p>Bakwan sayur kangkung adalah camilan favorit banyak orang Indonesia. Kombinasi tekstur renyah dari adonan tepung dan sensasi gurih dari kangkung segar menjadikannya hidangan yang sulit ditolak. Artikel ini akan memandu Anda langkah demi langkah untuk membuat bakwan sayur kangkung yang sempurna.</p>
+        </div>
+
+        <h2>Mengapa Bakwan Kangkung Begitu Istimewa?</h2>
+        <p>Kangkung, dengan daunnya yang hijau segar dan batangnya yang renyah, memberikan dimensi rasa dan tekstur unik pada bakwan. Berbeda dengan bakwan sayur lainnya, kangkung memiliki karakter tersendiri yang membuatnya menjadi pilihan favorit. Proses penggorengan yang tepat akan menghasilkan bakwan yang garing di luar namun tetap lembut di dalam, dengan aroma kangkung yang khas.</p>
+
+        <h2>Bahan-Bahan yang Anda Butuhkan</h2>
+        <div class="ingredients">
+            <ul>
+                <li>2 ikat kangkung segar, petik daun dan batang mudanya, cuci bersih</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk menambah kerenyahan)</li>
+                <li>1 butir telur ayam</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air dingin secukupnya (sekitar 150-200 ml)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Bakwan Kangkung</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Persiapan Kangkung:</strong> Setelah kangkung dicuci bersih, tiriskan airnya. Jika daunnya terlalu besar, Anda bisa memotongnya sedikit agar lebih mudah digoreng. Pastikan kangkung benar-benar kering sebelum dicampur dengan adonan agar tidak meletup saat digoreng.</li>
+                <li><strong>Membuat Adonan Tepung:</strong> Dalam wadah, campurkan tepung terigu, tepung beras (jika menggunakan), telur, daun bawang iris, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk.</li>
+                <li><strong>Menambahkan Air:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan tidak menggumpal. Kekentalan adonan sebaiknya tidak terlalu encer agar bakwan tidak lembek, namun juga tidak terlalu kental agar tidak keras.</li>
+                <li><strong>Memasukkan Kangkung:</strong> Masukkan kangkung yang sudah ditiriskan ke dalam adonan tepung. Aduk rata hingga seluruh kangkung terbalut adonan. Pastikan setiap helai kangkung terlapisi tepung agar hasil gorengannya renyah.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan matang di kedua sisinya.</li>
+                <li><strong>Meniriskan:</strong> Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan saringan atau letakkan di atas tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan sayur kangkung siap disajikan selagi hangat. Hidangan ini sangat nikmat disantap bersama cabai rawit, saus sambal, atau lontong.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan untuk Bakwan yang Sempurna</h2>
+        <ul>
+            <li>Gunakan air dingin atau es batu saat membuat adonan tepung. Air dingin membantu adonan menjadi lebih renyah saat digoreng.</li>
+            <li>Pastikan minyak benar-benar panas sebelum memasukkan adonan. Ini akan membantu bakwan menjadi garing seketika.</li>
+            <li>Jangan terlalu banyak memasukkan adonan ke dalam wajan sekaligus, agar suhu minyak tidak turun drastis dan bakwan matang merata.</li>
+            <li>Jika ingin variasi rasa, Anda bisa menambahkan sedikit udang rebon yang sudah dihaluskan atau irisan cabai rawit ke dalam adonan.</li>
+        </ul>
+
+        <p>Membuat bakwan sayur kangkung ternyata sangat mudah, bukan? Dengan mengikuti panduan ini, Anda bisa menyajikan camilan lezat dan sehat untuk keluarga tercinta. Selamat mencoba!</p>
+
+        <footer>
+            Terima kasih telah mengunjungi halaman ini.
+        </footer>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-mercon-mama-yuni">Bakso Mercon Mama Yuni</a></li>
+<li><a href="/bakpia-kereta-api">Bakpia Kereta Api</a></li>
+<li><a href="/resep-bakwan-sayur-xanderskitchen">Resep Bakwan Sayur Xanderskitchen</a></li>
+<li><a href="/resep-bakwan-sayur-tanpa-telur">Resep Bakwan Sayur Tanpa Telur</a></li>
+<li><a href="/pentol-ceker-mercon">Pentol Ceker Mercon</a></li>
+<li><a href="/cara-membuat-bakpao-mini-kukus">Cara Membuat Bakpao Mini Kukus</a></li>
+<li><a href="/harga-bakso-mercon-per-cup">Harga Bakso Mercon Per Cup</a></li>
+<li><a href="/basma-baklava">Basma Baklava</a></li>
+<li><a href="/bumbu-ote2">Bumbu Ote2</a></li>
+<li><a href="/cara-buat-bakwan-krispi">Cara Buat Bakwan Krispi</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

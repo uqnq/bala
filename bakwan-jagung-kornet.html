@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Jagung Kornet: Resep Mudah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #4CAF50; /* Hijau cerah */
+            --color-secondary: #FFC107; /* Kuning cerah */
+            --color-background: #E8F5E9; /* Hijau sangat muda */
+            --color-text: #333;
+            --color-light-text: #666;
+            --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            margin: 0;
+            padding: 20px;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+
+        .hero-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .recipe-section {
+            margin-bottom: 30px;
+        }
+
+        .recipe-section h3 {
+            color: var(--color-secondary);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 5px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .ingredients li, .steps li {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .ingredients li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: var(--color-primary);
+            font-weight: bold;
+        }
+
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            color: var(--color-secondary);
+            font-weight: bold;
+            background-color: var(--color-primary);
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8em;
+            top: 2px;
+        }
+
+        ol {
+            counter-reset: step-counter;
+        }
+
+        ol li {
+            counter-increment: step-counter;
+        }
+
+        .tip {
+            background-color: var(--color-secondary);
+            color: var(--color-text);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .tip p {
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: var(--color-light-text);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 15px;
+            }
+            .hero-image {
+                margin: 15px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <svg class="hero-image" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svgTitle">
+            <title id="svgTitle">Ilustrasi Bakwan Jagung Kornet yang Lezat</title>
+            <defs>
+                <linearGradient id="grad-yellow-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FFEB3B;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#FF9800;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad-green-light" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#8BC34A;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#CDDC39;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <!-- Jagung -->
+            <g transform="translate(50, 50)">
+                <rect x="0" y="0" width="60" height="80" fill="url(#grad-yellow-orange)" rx="5"/>
+                <text x="30" y="45" font-size="14" fill="white" text-anchor="middle" font-weight="bold">JAGUNG</text>
+            </g>
+            <!-- Kornet -->
+            <g transform="translate(130, 50)">
+                <rect x="0" y="0" width="60" height="80" fill="#E57373" rx="5"/>
+                <text x="30" y="45" font-size="14" fill="white" text-anchor="middle" font-weight="bold">KORNET</text>
+            </g>
+            <!-- Adonan Bakwan -->
+            <g transform="translate(210, 50)">
+                <rect x="0" y="0" width="80" height="80" fill="#AED581" rx="5"/>
+                <text x="40" y="45" font-size="12" fill="white" text-anchor="middle" font-weight="bold">ADONAN</text>
+            </g>
+            <!-- Tetesan Minyak (simbolis) -->
+            <circle cx="320" cy="70" r="8" fill="#FFCC80" opacity="0.8"/>
+            <circle cx="340" cy="90" r="6" fill="#FFCC80" opacity="0.7"/>
+            <circle cx="330" cy="110" r="7" fill="#FFCC80" opacity="0.6"/>
+            <!-- Garis Pembatas -->
+            <line x1="0" y1="150" x2="400" y2="150" stroke="#ddd" stroke-dasharray="5,5"/>
+            <!-- Judul SVG -->
+            <text x="200" y="20" font-size="18" fill="#4CAF50" text-anchor="middle" font-weight="bold">Bakwan Jagung Kornet</text>
+        </svg>
+
+        <h1>Bakwan Jagung Kornet: Kombinasi Gurih Nan Menggugah Selera</h1>
+
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan jagung adalah salah satu jajanan pasar yang paling digemari di Indonesia. Dengan tekstur renyah di luar dan lembut di dalam, serta rasa manis alami dari jagung, bakwan ini selalu menjadi favorit. Namun, bagaimana jika kita menambahkan sentuhan istimewa dengan kornet sapi? Hasilnya adalah <strong>Bakwan Jagung Kornet</strong>, sebuah variasi yang lebih kaya rasa dan tentu saja, lebih menggugah selera.</p>
+
+        <p>Resep ini dirancang agar mudah diikuti, bahkan oleh pemula. Cocok dinikmati sebagai camilan saat santai, hidangan pendamping nasi hangat, atau bahkan sebagai bekal. Perpaduan manisnya jagung, gurihnya kornet, dan aroma bawang serta seledri yang segar akan membuat Anda ketagihan.</p>
+
+        <div class="recipe-section">
+            <h2>Siapkan Bahan-Bahan Anda</h2>
+            <ul class="ingredients">
+                <li>2 buah jagung manis, pipil atau serut kasar</li>
+                <li>100 gram kornet sapi, tiriskan minyaknya</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras</li>
+                <li>1 butir telur ayam</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>3 siung bawang merah, iris tipis</li>
+                <li>2 batang daun bawang, iris tipis</li>
+                <li>1 batang seledri, iris tipis</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh lada bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Langkah demi Langkah Membuat Bakwan Jagung Kornet</h2>
+            <ol class="steps">
+                <li>Campurkan jagung pipil, kornet sapi, telur, bawang putih halus, bawang merah iris, daun bawang, dan seledri dalam sebuah wadah besar. Aduk rata.</li>
+                <li>Masukkan tepung terigu, tepung beras, garam, lada bubuk, dan kaldu bubuk (jika pakai). Aduk kembali hingga semua bahan tercampur rata dan membentuk adonan yang kental. Jika adonan terlalu kental, bisa ditambahkan sedikit air, namun jangan terlalu encer agar bakwan tidak lembek.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam saat digoreng.</li>
+                <li>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng beberapa buah bakwan sekaligus, jangan terlalu penuh agar matangnya merata.</li>
+                <li>Goreng bakwan hingga berwarna kuning keemasan dan matang di kedua sisinya. Balikkan sesekali agar warnanya merata.</li>
+                <li>Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan tisu dapur atau saringan.</li>
+                <li>Sajikan bakwan jagung kornet selagi hangat. Nikmati dengan sambal favorit Anda atau cabai rawit untuk sensasi pedas yang semakin nikmat.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Sempurna Bakwan Jagung Kornet Anda</h2>
+            <div class="tip">
+                <p><strong>Pilih Jagung yang Tepat:</strong> Gunakan jagung manis yang masih segar untuk mendapatkan rasa manis alami terbaik.</p>
+                <p><strong>Konsistensi Adonan:</strong> Adonan yang pas adalah kunci. Jika terlalu encer, bakwan akan menyerap banyak minyak dan lembek. Jika terlalu kental, bakwan bisa jadi keras.</p>
+                <p><strong>Suhu Minyak:</strong> Pastikan minyak benar-benar panas sebelum menggoreng. Ini akan membuat bakwan renyah di luar dan matang sempurna di dalam.</p>
+                <p><strong>Kornet Berkualitas:</strong> Gunakan kornet sapi berkualitas baik untuk rasa yang lebih otentik dan gurih.</p>
+            </div>
+        </div>
+
+        <p>Bakwan jagung kornet bukan hanya sekadar makanan, tetapi sebuah perayaan rasa. Kesederhanaan bahan berpadu dengan kelezatan yang tak terduga. Sajikan sebagai bintang utama di meja makan Anda atau sebagai pelengkap sempurna saat berkumpul dengan keluarga dan teman. Selamat mencoba dan nikmati setiap gigitannya!</p>
+
+        <footer>
+            <p>Temukan lebih banyak resep lezat lainnya.</p>
+        </footer>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-wortel-kol">Bakwan Wortel Kol</a></li>
+<li><a href="/resep-bakwan-jagung-jawa">Resep Bakwan Jagung Jawa</a></li>
+<li><a href="/cara-membuat-pentol-goreng-telur">Cara Membuat Pentol Goreng Telur</a></li>
+<li><a href="/cara-membuat-bakpao-yang-lembut">Cara Membuat Bakpao Yang Lembut</a></li>
+<li><a href="/bakpia-25-di-malioboro">Bakpia 25 Di Malioboro</a></li>
+<li><a href="/bakpao-viral">Bakpao Viral</a></li>
+<li><a href="/cara-membuat-pelas-jagung">Cara Membuat Pelas Jagung</a></li>
+<li><a href="/cara-membuat-tacupiang">Cara Membuat Tacupiang</a></li>
+<li><a href="/contoh-bakteri-asam-laktat">Contoh Bakteri Asam Laktat</a></li>
+<li><a href="/bakpia-potret">Bakpia Potret</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

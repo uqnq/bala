@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Kuah Kacang: Lezat & Menyegarkan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007bff; /* Biru cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        img.main-image {
+            display: block;
+            width: 100%;
+            max-width: 600px; /* Batasi lebar gambar agar proporsional di mobile */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content-block {
+            background-color: #e0f2f7; /* Biru muda sejuk */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .recipe-list {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+        .recipe-list li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #28a745; /* Hijau cerah */
+            font-weight: bold;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .main-image {
+                max-width: 95%;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p, .recipe-list li {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- Gambar SVG yang dibuat khusus -->
+            <svg class="main-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakwan kuah kacang yang menggugah selera">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#8FBC8F;stop-opacity:1" /> <!-- DarkSeaGreen -->
+                        <stop offset="100%" style="stop-color:#90EE90;stop-opacity:1" /> <!-- LightGreen -->
+                    </linearGradient>
+                </defs>
+                <!-- Latar Belakang -->
+                <rect width="600" height="300" rx="10" fill="#f0f8ff"/>
+
+                <!-- Mangkuk Bakwan Kuah Kacang -->
+                <path d="M 150 250 Q 200 220 250 250 T 350 250 Q 400 220 450 250 L 450 280 Q 350 295 250 280 Q 150 295 150 280 Z" fill="#fff" stroke="#ccc" stroke-width="2"/>
+
+                <!-- Bakwan -->
+                <circle cx="220" cy="210" r="20" fill="#FFD700" stroke="#DAA520" stroke-width="1"/>
+                <circle cx="270" cy="190" r="22" fill="#FFD700" stroke="#DAA520" stroke-width="1"/>
+                <circle cx="330" cy="215" r="23" fill="#FFD700" stroke="#DAA520" stroke-width="1"/>
+                <circle cx="380" cy="200" r="19" fill="#FFD700" stroke="#DAA520" stroke-width="1"/>
+
+                <!-- Kuah Kacang -->
+                <path d="M 150 250 Q 200 260 250 250 Q 300 260 350 250 Q 400 260 450 250 L 450 270 Q 350 285 250 270 Q 150 285 150 270 Z" fill="url(#grad1)" opacity="0.7"/>
+
+                <!-- Taburan -->
+                <text x="230" y="225" font-size="10" fill="#778899" transform="rotate(-15 230 225)">seledri</text>
+                <text x="300" y="205" font-size="8" fill="#778899" transform="rotate(10 300 205)">bawang</text>
+                <text x="360" y="230" font-size="12" fill="#DC143C" transform="rotate(-5 360 230)">cabai</text>
+
+                <!-- Teks Sederhana -->
+                <text x="300" y="50" font-size="25" font-weight="bold" fill="#007bff" text-anchor="middle">Bakwan Kuah Kacang</text>
+                <text x="300" y="90" font-size="15" fill="#555" text-anchor="middle">Lezat & Menyegarkan</text>
+            </svg>
+        </header>
+
+        <h1>Nikmati Sensasi Bakwan Kuah Kacang yang Menggugah Selera</h1>
+
+        <p>
+            Siapa yang tidak suka dengan hidangan yang hangat, gurih, dan sedikit pedas? Bakwan kuah kacang adalah jawabannya. Perpaduan antara kriuknya bakwan yang digoreng sempurna dengan kuah kental beraroma kacang yang kaya rempah, menjadikan hidangan ini favorit banyak orang, terutama saat cuaca dingin atau saat menginginkan sesuatu yang berbeda dari hidangan sehari-hari. Lezatnya bakwan yang direndam dalam kuah kacang yang kaya rasa ini, menciptakan pengalaman kuliner yang tak terlupakan. Aroma kacang yang khas berpadu dengan bumbu rempah pilihan akan membuat Anda ketagihan di setiap suapan.
+        </p>
+
+        <div class="content-block">
+            <h2>Keunikan Bakwan Kuah Kacang</h2>
+            <p>
+                Yang membuat bakwan kuah kacang begitu istimewa adalah tekstur dan rasanya yang saling melengkapi. Bakwan sayur atau bakwan udang yang renyah di luar dan lembut di dalam, disajikan dalam kuah santan yang gurih, ditambahkan bumbu kacang halus yang dihaluskan bersama bawang merah, bawang putih, cabai, dan sedikit gula merah. Kuahnya yang kental dan beraroma kuat ini mampu meresap sempurna ke dalam setiap gigitan bakwan. Keberadaan taburan seperti irisan seledri, bawang goreng, dan irisan cabai rawit (opsional) menambah kesegaran dan sensasi pedas yang bisa disesuaikan dengan selera. Ini adalah contoh sempurna bagaimana kesederhanaan bahan dapat menghasilkan hidangan yang kompleks dan memuaskan.
+            </p>
+        </div>
+
+        <h2>Cara Menikmati Bakwan Kuah Kacang</h2>
+        <p>
+            Bakwan kuah kacang paling nikmat disantap selagi hangat. Sajikan sebagai hidangan pembuka atau bahkan sebagai makan siang ringan. Untuk variasi, Anda bisa menambahkan mi kuning atau bihun yang direbus terpisah, kemudian disiram dengan kuah kacang dan bakwan. Beberapa orang juga menyukai tambahan lontong atau nasi putih hangat sebagai pendamping. Kebebasan untuk menyesuaikan tingkat kepedasan dan kekentalan kuah juga menjadi nilai tambah dari hidangan ini, membuatnya cocok untuk segala usia dan preferensi rasa. Hidangan ini menawarkan fleksibilitas yang luar biasa, memungkinkan setiap orang untuk menciptakan versi favoritnya sendiri.
+        </p>
+
+        <div class="content-block">
+            <h2>Membuat Bakwan Kuah Kacang di Rumah</h2>
+            <p>
+                Tertarik mencoba membuatnya sendiri? Resep bakwan kuah kacang relatif mudah diikuti. Bahan utamanya tentu saja adalah bakwan yang bisa Anda buat dari adonan sayuran seperti kol, wortel, dan daun bawang, atau menggunakan udang untuk rasa yang lebih kaya. Untuk kuahnya, haluskan kacang tanah goreng, bawang merah, bawang putih, cabai (sesuai selera), lalu tumis hingga harum. Tambahkan santan, air, garam, gula, dan sedikit kaldu bubuk. Masak hingga mendidih dan mengental. Terakhir, masukkan bakwan yang sudah digoreng ke dalam kuah. Pastikan untuk tidak memasak bakwan terlalu lama di dalam kuah agar tidak menjadi terlalu lembek. Hasilnya adalah hidangan <span class="highlight">bakwan kuah kacang</span> rumahan yang sama lezatnya dengan yang dijual di warung makan favorit Anda.
+            </p>
+            <p>
+                Menyajikan hidangan ini saat berkumpul bersama keluarga atau teman akan menambah kehangatan suasana. Kelezatan bakwan kuah kacang yang kaya rasa, dipadukan dengan keseruan membuat dan berbagi, menjadikan momen tersebut semakin spesial. Jangan ragu untuk bereksperimen dengan bumbu dan bahan tambahan untuk menemukan resep bakwan kuah kacang yang paling pas di lidah Anda.
+            </p>
+        </div>
+
+        <p>
+            Jadi, jika Anda sedang mencari ide kuliner yang unik, lezat, dan menghangatkan, cobalah resep bakwan kuah kacang ini. Dijamin, hidangan ini akan menjadi favorit baru di meja makan Anda. Selamat mencoba dan menikmati kelezatan yang tiada tara!
+        </p>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/pohon-bakung-bunga-putih">Pohon Bakung Bunga Putih</a></li>
+<li><a href="/cara-membuat-bakwan-bihun-jagung">Cara Membuat Bakwan Bihun Jagung</a></li>
+<li><a href="/resep-bakwan-day">Resep Bakwan Day</a></li>
+<li><a href="/bakwan-besar">Bakwan Besar</a></li>
+<li><a href="/10-bakteri-yang-menguntungkan">10 Bakteri Yang Menguntungkan</a></li>
+<li><a href="/bakpia-pathok-024">Bakpia Pathok 024</a></li>
+<li><a href="/bakpao-cia-pao">Bakpao Cia Pao</a></li>
+<li><a href="/cara-membuat-kuah-bakwan-kampung">Cara Membuat Kuah Bakwan Kampung</a></li>
+<li><a href="/bumbu-bala-bala-sayur">Bumbu Bala Bala Sayur</a></li>
+<li><a href="/dadar-jagung-manis">Dadar Jagung Manis</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

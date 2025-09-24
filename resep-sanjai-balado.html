@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Sanjai Balado Terenak & Praktis</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50; /* MidnightBlue - warna cerah yang elegan */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #1e8449; /* ForestGreen - warna cerah yang alami */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 22px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+        .recipe-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            display: block; /* Agar gambar tidak punya spasi di bawah */
+        }
+        .ingredients-list li, .instructions-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+        .ingredients-list li::before, .instructions-list li::before {
+            content: '✓'; /* Simbol centang */
+            position: absolute;
+            left: 0;
+            color: #1e8449; /* ForestGreen */
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .highlight {
+            color: #e74c3c; /* TomatoRed - untuk penekanan */
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #7f8c8d; /* Asbestos - abu-abu lembut */
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p, ul, ol {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto 20px auto;">
+                <path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12Z" fill="#1e8449"/>
+                <path d="M11 14C11 14.5523 11.4477 15 12 15C12.5523 15 13 14.5523 13 14C13 13.4477 12.5523 13 12 13C11.4477 13 11 13.4477 11 14Z" fill="#1e8449"/>
+                <path d="M9 14C9 14.5523 9.44771 15 10 15C10.5523 15 11 14.5523 11 14C11 13.4477 10.5523 13 10 13C9.44771 13 9 13.4477 9 14Z" fill="#1e8449"/>
+                <path d="M15 14C15 14.5523 15.4477 15 16 15C16.5523 15 17 14.5523 17 14C17 13.4477 16.5523 13 16 13C15.4477 13 15 13.4477 15 14Z" fill="#1e8449"/>
+                <path d="M12 16C12 16.5523 12.4477 17 13 17C13.5523 17 14 16.5523 14 16C14 15.4477 13.5523 15 13 15C12.4477 15 12 15.4477 12 16Z" fill="#1e8449"/>
+                <path d="M10 16C10 16.5523 10.4477 17 11 17C11.5523 17 12 16.5523 12 16C12 15.4477 11.5523 15 11 15C10.4477 15 10 15.4477 10 16Z" fill="#1e8449"/>
+                <path d="M14 16C14 16.5523 14.4477 17 15 17C15.5523 17 16 16.5523 16 16C16 15.4477 15.5523 15 15 15C14.4477 15 14 15.4477 14 16Z" fill="#1e8449"/>
+            </svg>
+            <h1>Resep Sanjai Balado Terenak & Praktis</h1>
+        </header>
+
+        <img src="placeholder_sanjai_balado.svg" alt="Ilustrasi Sanjai Balado" class="recipe-image">
+
+        <p>Sanjai balado, camilan khas Minangkabau yang renyah dan pedas menggugah selera, kini bisa Anda buat sendiri di rumah dengan mudah. Kerenyahan keripik singkong yang berpadu dengan bumbu balado yang kaya rasa adalah kombinasi sempurna untuk menemani waktu santai atau hidangan pendamping. Jangan khawatir jika Anda belum pernah membuatnya, resep ini akan memandu Anda langkah demi langkah agar hasilnya memuaskan.</p>
+
+        <h2>Mengapa Anda Perlu Mencoba Resep Ini?</h2>
+        <p>Resep sanjai balado yang akan kita bahas ini terbilang <span class="highlight">praktis</span> dan hasilnya <span class="highlight">renyah tahan lama</span>. Kuncinya terletak pada pemilihan bahan, teknik menggoreng, dan racikan bumbu yang pas. Siapapun bisa membuatnya, bahkan pemula sekalipun!</p>
+
+        <h2>Bahan-Bahan yang Anda Butuhkan:</h2>
+        <ul class="ingredients-list">
+            <li>1 kg singkong, pilih yang segar dan berkualitas baik</li>
+            <li>Minyak goreng secukupnya, untuk menggoreng singkong dan bumbu</li>
+            <li>Garam secukupnya</li>
+            <li>Gula pasir secukupnya (opsional, untuk sedikit menyeimbangkan rasa pedas)</li>
+        </ul>
+
+        <h2>Bumbu Halus Balado:</h2>
+        <ul class="ingredients-list">
+            <li>150 gram cabai merah keriting (sesuaikan tingkat kepedasan)</li>
+            <li>50 gram cabai rawit merah (opsional, jika suka sangat pedas)</li>
+            <li>10 siung bawang merah</li>
+            <li>5 siung bawang putih</li>
+            <li>1 buah tomat ukuran sedang</li>
+            <li>1 sendok teh terasi bakar (opsional, untuk aroma lebih kaya)</li>
+            <li>Sedikit air untuk mempermudah blender</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Sanjai Balado:</h2>
+        <ol class="instructions-list">
+            <li><strong>Persiapan Singkong:</strong> Kupas singkong, cuci bersih, lalu iris tipis-tipis menggunakan alat pengiris keripik atau pisau tajam. Semakin tipis irisannya, semakin renyah hasilnya. Rendam irisan singkong dalam air yang diberi sedikit garam selama kurang lebih 1 jam untuk menghilangkan getahnya. Tiriskan hingga benar-benar kering.</li>
+            <li><strong>Menggoreng Singkong:</strong> Panaskan minyak goreng dalam jumlah banyak. Goreng irisan singkong dalam minyak panas hingga berwarna kuning keemasan dan renyah. Angkat dan tiriskan. Lakukan hingga semua singkong habis digoreng.</li>
+            <li><strong>Membuat Bumbu Balado:</strong> Haluskan semua bahan bumbu halus menggunakan blender atau ulekan. Jika menggunakan blender, tambahkan sedikit air agar lebih mudah halus.</li>
+            <li><strong>Menumis Bumbu:</strong> Panaskan sekitar 5-7 sendok makan minyak goreng dalam wajan. Tumis bumbu halus hingga harum dan matang. Pastikan bumbu benar-benar matang agar tidak langu. Tambahkan garam dan gula pasir secukupnya, aduk rata. Cicipi dan koreksi rasa.</li>
+            <li><strong>Mencampur Sanjai dan Bumbu:</strong> Masukkan keripik singkong yang sudah digoreng ke dalam wajan berisi bumbu balado. Aduk cepat hingga seluruh keripik terbalut rata dengan bumbu. Pastikan api kecil agar bumbu meresap namun tidak gosong.</li>
+            <li><strong>Mengeringkan Bumbu:</strong> Masak sebentar lagi dengan api kecil sambil terus diaduk agar bumbu kering dan menempel sempurna pada keripik. Proses ini penting agar sanjai balado tidak mudah lembek.</li>
+            <li><strong>Penyajian:</strong> Angkat sanjai balado, dinginkan sepenuhnya di atas loyang atau nampan sebelum disimpan dalam wadah kedap udara.</li>
+        </ol>
+
+        <h2>Tips Tambahan untuk Sanjai Balado Sempurna:</h2>
+        <p>Untuk hasil yang lebih maksimal, pastikan singkong benar-benar kering sebelum digoreng dan juga setelah dibumbui. Anda bisa menjemurnya sebentar di bawah sinar matahari atau mengeringkannya dengan tisu dapur. Rasa pedas bisa Anda sesuaikan dengan jumlah cabai yang digunakan. Jika ingin rasa yang sedikit manis, tambahkan sedikit gula atau madu pada bumbu balado.</p>
+
+        <p>Sajikan sanjai balado ini sebagai camilan favorit keluarga. Rasanya yang pedas, gurih, dan renyah pasti akan membuat ketagihan. Selamat mencoba resep sanjai balado ini dan nikmati kelezatannya!</p>
+
+        <div class="footer">
+            &copy; 2023 Resep Tradisional Indonesia. Hak Cipta Dilindungi.
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/pentol-mercon-untuk-jualan">Pentol Mercon Untuk Jualan</a></li>
+<li><a href="/cara-membuat-pentol-sosis-mercon">Cara Membuat Pentol Sosis Mercon</a></li>
+<li><a href="/cara-membuat-bakwan-yang-lembut-dan-enak">Cara Membuat Bakwan Yang Lembut Dan Enak</a></li>
+<li><a href="/bakso-mercon-mas-gilang">Bakso Mercon Mas Gilang</a></li>
+<li><a href="/diare-disebabkan-oleh-bakteri">Diare Disebabkan Oleh Bakteri</a></li>
+<li><a href="/bakwan-duta">Bakwan Duta</a></li>
+<li><a href="/cara-membuat-bakpia-kacang-ijo">Cara Membuat Bakpia Kacang Ijo</a></li>
+<li><a href="/bakwan-goreng-sayur">Bakwan Goreng Sayur</a></li>
+<li><a href="/jenis-bakteri-patogen">Jenis Bakteri Patogen</a></li>
+<li><a href="/perkedel-jagung-manis">Perkedel Jagung Manis</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

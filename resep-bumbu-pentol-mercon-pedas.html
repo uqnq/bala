@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resep bumbu pentol mercon pedas mantap, mudah dibuat di rumah. Nikmati sensasi pedas nampol dengan panduan lengkap ini.">
+    <title>Resep Pentol Mercon Pedas Mantap</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna sejuk cerah */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #00796b;
+            border-bottom: 2px solid #b2dfdb;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .ingredient-list, .step-list {
+            background-color: #f0f8ff; /* Warna latar belakang daftar */
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .step-list li {
+            background-color: #e0f2f1; /* Warna latar belakang langkah */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .step-list li::before {
+            content: attr(data-step); /* Menampilkan nomor langkah */
+            font-weight: bold;
+            margin-right: 10px;
+            color: #004d40;
+            font-size: 1.2em;
+            background-color: #4db6ac; /* Warna aksen nomor langkah */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+        }
+        .highlight {
+            color: #004d40;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .step-list li::before {
+                font-size: 1em;
+                padding: 3px 7px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Pentol Mercon Pedas Nampol</h1>
+
+        <div class="image-container">
+            <!-- SVG Gambar Pentol Mercon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi pentol mercon pedas dengan warna-warni cerah dan cabai di sekelilingnya">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff5722;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f44336;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fdd835;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffb300;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" rx="15" ry="15" fill="#fff9c4" /> <!-- Latar belakang cerah -->
+                
+                <!-- Pentol -->
+                <circle cx="150" cy="150" r="50" fill="#e57373" />
+                <circle cx="250" cy="120" r="40" fill="#f06292" />
+                <circle cx="350" cy="180" r="60" fill="#ef5350" />
+                <circle cx="450" cy="140" r="50" fill="#d32f2f" />
+
+                <!-- Bumbu Mercon (simbolis) -->
+                <g transform="translate(50, 50) rotate(10)">
+                    <path d="M10 20 L30 10 L50 20 L40 40 L20 40 Z" fill="url(#grad1)" /> <!-- Cabai merah -->
+                    <circle cx="30" cy="25" r="5" fill="#f44336" />
+                </g>
+                 <g transform="translate(100, 100) rotate(-5)">
+                    <path d="M10 20 L30 10 L50 20 L40 40 L20 40 Z" fill="url(#grad1)" /> <!-- Cabai merah -->
+                    <circle cx="30" cy="25" r="5" fill="#f44336" />
+                </g>
+                <g transform="translate(200, 220) rotate(20)">
+                    <path d="M10 20 L30 10 L50 20 L40 40 L20 40 Z" fill="url(#grad1)" /> <!-- Cabai merah -->
+                    <circle cx="30" cy="25" r="5" fill="#f44336" />
+                </g>
+                <g transform="translate(300, 80) rotate(-15)">
+                    <path d="M10 20 L30 10 L50 20 L40 40 Z" fill="#ff9800" /> <!-- Cabai oranye -->
+                     <circle cx="30" cy="25" r="4" fill="#ff9800" />
+                </g>
+                 <g transform="translate(400, 180) rotate(15)">
+                    <path d="M10 20 L30 10 L50 20 L40 40 Z" fill="#ff9800" /> <!-- Cabai oranye -->
+                     <circle cx="30" cy="25" r="4" fill="#ff9800" />
+                </g>
+                 <g transform="translate(500, 100) rotate(-10)">
+                    <path d="M10 20 L30 10 L50 20 L40 40 Z" fill="url(#grad2)" /> <!-- Cabai kuning -->
+                     <circle cx="30" cy="25" r="4" fill="#fdd835" />
+                </g>
+            </svg>
+        </div>
+
+        <p>Siapa yang bisa menolak kelezatan pentol? Terlebih lagi jika dipadukan dengan bumbu mercon yang pedas menggigit! Resep bumbu pentol mercon pedas ini akan membawa sensasi rasa yang tak terlupakan ke meja makan Anda. Cocok disantap saat kumpul keluarga, teman, atau sekadar memanjakan lidah setelah seharian beraktivitas. Jangan khawatir, membuat bumbu pentol mercon pedas ini tidak serumit kelihatannya, kok. Dengan bahan-bahan yang mudah ditemukan dan langkah yang jelas, Anda pasti bisa membuat hidangan spesial ini di rumah.</p>
+
+        <h2>Mengapa Pentol Mercon Begitu Menggugah Selera?</h2>
+        <p>Kombinasi tekstur kenyal pentol yang gurih dengan ledakan rasa pedas, manis, dan gurih dari bumbu mercon adalah daya tarik utamanya. Tingkat kepedasan bisa disesuaikan dengan selera Anda. Bumbu mercon yang kaya rempah juga menambah aroma yang menggugah selera. Sensasi pedasnya yang nendang ini dipercaya dapat meningkatkan mood dan membuat makan jadi lebih menyenangkan.</p>
+
+        <h2>Bahan-Bahan Bumbu Pentol Mercon Pedas</h2>
+        <div class="ingredient-list">
+            <p>Untuk pentol:</p>
+            <ul>
+                <li>500 gram pentol siap pakai (sapi/ayam), bisa direbus atau digoreng sebentar</li>
+            </ul>
+            <p>Untuk bumbu halus:</p>
+            <ul>
+                <li>10-15 buah cabai merah keriting (sesuaikan selera pedas)</li>
+                <li>5-7 buah cabai rawit merah (untuk menambah pedas)</li>
+                <li>5 siung bawang merah</li>
+                <li>3 siung bawang putih</li>
+                <li>2 cm jahe</li>
+                <li>1 sdt terasi bakar (opsional, untuk aroma lebih kuat)</li>
+            </ul>
+            <p>Bahan pelengkap:</p>
+            <ul>
+                <li>2 lembar daun salam</li>
+                <li>1 batang serai, memarkan</li>
+                <li>2 cm lengkuas, memarkan</li>
+                <li>2 sdm gula merah, sisir halus</li>
+                <li>1 sdm saus sambal</li>
+                <li>1 sdm kecap manis</li>
+                <li>1/2 sdt garam (sesuaikan rasa)</li>
+                <li>1/4 sdt merica bubuk</li>
+                <li>150 ml air</li>
+                <li>Minyak goreng secukupnya untuk menumis</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Pentol Mercon Pedas</h2>
+        <div class="step-list">
+            <li data-step="1">
+                <p>Haluskan semua bahan bumbu halus menggunakan blender atau ulekan hingga benar-benar halus.</p>
+            </li>
+            <li data-step="2">
+                <p>Panaskan sedikit minyak goreng di wajan. Tumis bumbu halus bersama daun salam, serai, dan lengkuas hingga harum dan matang. Pastikan bumbu benar-benar matang agar tidak langu.</p>
+            </li>
+            <li data-step="3">
+                <p>Masukkan gula merah, saus sambal, kecap manis, garam, dan merica bubuk. Aduk rata.</p>
+            </li>
+            <li data-step="4">
+                <p>Tuangkan air, aduk kembali. Masak hingga bumbu mendidih dan sedikit mengental.</p>
+            </li>
+            <li data-step="5">
+                <p>Masukkan pentol yang sudah disiapkan. Aduk rata dengan bumbu, pastikan semua pentol terbalut sempurna.</p>
+            </li>
+            <li data-step="6">
+                <p>Masak terus sambil diaduk sesekali hingga bumbu meresap sempurna ke dalam pentol dan kuah mengental sesuai selera. Cicipi dan koreksi rasa jika perlu.</p>
+            </li>
+            <li data-step="7">
+                <p>Angkat dan sajikan pentol mercon pedas selagi hangat. Cocok dinikmati bersama nasi putih hangat atau sebagai camilan.</p>
+            </li>
+        </div>
+
+        <h2>Tips Agar Pentol Mercon Semakin Menggugah Selera</h2>
+        <p>Untuk mendapatkan hasil yang maksimal, perhatikan beberapa tips berikut:</p>
+        <ul>
+            <li><strong>Pilihan Pentol:</strong> Gunakan pentol berkualitas baik agar tekstur dan rasanya optimal. Anda bisa merebusnya terlebih dahulu atau menggorengnya sebentar untuk tekstur yang sedikit lebih kenyal.</li>
+            <li><strong>Tingkat Kepedasan:</strong> Jangan takut untuk menyesuaikan jumlah cabai sesuai dengan batas toleransi pedas Anda. Penggunaan cabai rawit merah akan memberikan sensasi pedas yang lebih 'mercon'.</li>
+            <li><strong>Proses Menumis Bumbu:</strong> Pastikan bumbu halus ditumis hingga benar-benar matang dan tanak. Ini akan menghilangkan bau langu dan mengeluarkan aroma rempah yang lebih sedap.</li>
+            <li><strong>Keseimbangan Rasa:</strong> Kunci dari bumbu pentol mercon yang enak adalah keseimbangan rasa pedas, manis, dan gurih. Jangan ragu mencicipi dan menyesuaikan jumlah gula, garam, serta kecap.</li>
+            <li><strong>Variasi:</strong> Anda bisa menambahkan irisan cabai rawit utuh atau potongan tomat saat menumis untuk memberikan variasi warna dan rasa.</li>
+        </ul>
+
+        <p>Membuat bumbu pentol mercon pedas sendiri di rumah adalah cara terbaik untuk memastikan kebersihan dan menyesuaikan rasa sesuai selera keluarga. Selamat mencoba resep ini dan nikmati kelezatan serta sensasi pedasnya yang bikin nagih!</p>
+
+        <div class="footer">
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-syahrini">Bakpia Syahrini</a></li>
+<li><a href="/bakpia-kencana-keju">Bakpia Kencana Keju</a></li>
+<li><a href="/bakwan-sayur-dan-jagung">Bakwan Sayur Dan Jagung</a></li>
+<li><a href="/bakpia-kukus-prj">Bakpia Kukus Prj</a></li>
+<li><a href="/bakpia-pia-kinanthi">Bakpia Pia Kinanthi</a></li>
+<li><a href="/resep-bakwan-sayur-tidak-berminyak">Resep Bakwan Sayur Tidak Berminyak</a></li>
+<li><a href="/bakpia-pathok-vista">Bakpia Pathok Vista</a></li>
+<li><a href="/bakpia-kering-coklat">Bakpia Kering Coklat</a></li>
+<li><a href="/cara-membuat-gimbal-jagung">Cara Membuat Gimbal Jagung</a></li>
+<li><a href="/resep-bakwan-mie-instan">Resep Bakwan Mie Instan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

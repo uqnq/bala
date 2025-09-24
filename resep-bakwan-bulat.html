@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Bulat Sederhana dan Enak</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk biru muda */
+            color: #263238; /* Warna teks gelap */
+            line-height: 1.6;
+            scroll-behavior: smooth; /* Animasi scroll halus */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* Latar belakang konten putih bersih */
+            border-radius: 15px; /* Sudut membulat */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul biru kehijauan */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #004d40; /* Warna subjudul lebih gelap */
+            border-bottom: 2px solid #b2dfdb; /* Garis pemisah subjudul */
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .resep-detail {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f8ff; /* Latar belakang bagian detail */
+            border-radius: 10px;
+        }
+        .resep-detail div {
+            margin: 10px 0;
+            text-align: center;
+            padding: 10px 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        }
+        .resep-detail span {
+            display: block;
+            font-weight: bold;
+            color: #00695c;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+            margin-top: 15px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.9em;
+            color: #757575;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            .resep-detail {
+                flex-direction: column;
+                align-items: center;
+            }
+            .resep-detail div {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resep Bakwan Bulat Sederhana dan Enak</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="150" height="150" aria-label="Ilustrasi bakwan bulat">
+                <circle cx="50" cy="50" r="45" fill="#ffc107" stroke="#f57f17" stroke-width="3"/>
+                <path d="M50 15 L 60 30 L 75 30 L 65 45 L 75 60 L 60 60 L 50 75 L 40 60 L 25 60 L 35 45 L 25 30 L 40 30 Z" fill="#fff"/>
+                <circle cx="45" cy="40" r="4" fill="#f57f17"/>
+                <circle cx="55" cy="40" r="4" fill="#f57f17"/>
+                <circle cx="50" cy="50" r="10" fill="#e65100"/>
+                <path d="M48 52 L 45 58 L 52 55 Z" fill="#fff"/>
+                <path d="M52 52 L 55 58 L 48 55 Z" fill="#fff"/>
+            </svg>
+        </header>
+
+        <div class="resep-detail">
+            <div>
+                <span>Waktu Persiapan</span>
+                <span>15 Menit</span>
+            </div>
+            <div>
+                <span>Waktu Memasak</span>
+                <span>20 Menit</span>
+            </div>
+            <div>
+                <span>Porsi</span>
+                <span>4-6 Orang</span>
+            </div>
+        </div>
+
+        <section>
+            <h2>Deskripsi Singkat</h2>
+            <p>
+                Siapa yang tidak suka bakwan? Camilan renyah yang cocok disantap kapan saja ini memang selalu menggoda selera. Berbeda dari bakwan pada umumnya yang cenderung pipih, kali ini kita akan membuat bakwan bulat yang lebih unik dan tentu saja tetap lezat. Proses pembuatannya sangat sederhana, cocok untuk Anda yang ingin mencoba hidangan praktis namun memuaskan. Dengan sedikit sentuhan kreativitas, bakwan bulat ini bisa menjadi bintang baru di meja makan Anda, baik sebagai teman ngopi sore atau pendamping hidangan utama. Keindahan bentuknya yang bulat juga membuatnya lebih menarik, terutama bagi anak-anak.
+            </p>
+
+            <h2>Bahan-Bahan</h2>
+            <div class="ingredients">
+                <ul>
+                    <li>200 gram tepung terigu serbaguna</li>
+                    <li>50 gram tepung beras (agar lebih renyah)</li>
+                    <li>1 buah wortel ukuran sedang, parut kasar atau iris korek api halus</li>
+                    <li>100 gram kol, iris tipis</li>
+                    <li>50 gram tauge (opsional, jika suka)</li>
+                    <li>2 batang daun bawang, iris halus</li>
+                    <li>1 batang seledri, iris halus (opsional)</li>
+                    <li>1 butir telur ayam</li>
+                    <li>150-200 ml air dingin (sesuaikan kekentalan adonan)</li>
+                    <li>Minyak goreng secukupnya untuk menggoreng</li>
+                </ul>
+            </div>
+
+            <h2>Bumbu Halus</h2>
+            <div class="ingredients">
+                <ul>
+                    <li>3 siung bawang putih</li>
+                    <li>1/2 sendok teh merica butiran (atau 1/4 sdt bubuk merica)</li>
+                    <li>1 sendok teh garam (sesuai selera)</li>
+                    <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                </ul>
+            </div>
+
+            <h2>Cara Membuat</h2>
+            <div class="instructions">
+                <ol>
+                    <li><strong>Persiapan Bumbu:</strong> Haluskan bawang putih, merica, garam, dan kaldu bubuk (jika menggunakan).</li>
+                    <li><strong>Membuat Adonan:</strong> Dalam wadah, campurkan tepung terigu dan tepung beras. Masukkan bumbu halus, aduk rata.</li>
+                    <li>Tambahkan parutan wortel, irisan kol, tauge (jika pakai), daun bawang, dan seledri. Aduk hingga semua sayuran tercampur rata dengan tepung.</li>
+                    <li>Masukkan telur, aduk kembali.</li>
+                    <li>Tuang air dingin sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kental, tidak terlalu cair namun juga tidak terlalu padat. Adonan yang tepat akan membuat bakwan mudah dibentuk bulat dan tetap renyah. Jika adonan terlalu kental, tambahkan sedikit air. Jika terlalu cair, tambahkan sedikit tepung.</li>
+                    <li><strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</li>
+                    <li>Ambil satu sendok sayur adonan, lalu bentuk menjadi bulatan dengan tangan atau menggunakan dua sendok. Pastikan adonan tertutup sayuran agar bentuknya bagus.</li>
+                    <li>Masukkan adonan bakwan bulat secara bertahap ke dalam minyak panas. Jangan terlalu banyak agar bakwan matang merata dan tidak saling menempel.</li>
+                    <li>Goreng bakwan hingga berwarna kuning keemasan dan matang sempurna. Balik sesekali agar kedua sisinya matang merata.</li>
+                    <li>Angkat bakwan bulat yang sudah matang, tiriskan minyaknya di atas kertas tisu atau rak kawat.</li>
+                    <li>Sajikan bakwan bulat selagi hangat bersama cabai rawit hijau, sambal kecap, atau saus favorit Anda. Nikmati kerenyahannya!</li>
+                </ol>
+            </div>
+
+            <h2>Tips Tambahan</h2>
+            <p>
+                Untuk hasil bakwan yang lebih renyah, gunakan air es atau air dingin saat membuat adonan. Tepung beras juga berperan penting dalam menciptakan tekstur renyah. Pastikan minyak benar-benar panas saat mulai menggoreng agar bakwan tidak menyerap banyak minyak. Anda juga bisa menambahkan udang cincang atau udang rebon ke dalam adonan untuk variasi rasa yang lebih kaya.
+            </p>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2023 - Resep Bakwan Bulat - Semua Hak Dilindungi.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-membuat-bakwan-sayur-empuk">Resep Membuat Bakwan Sayur Empuk</a></li>
+<li><a href="/bakteri-streptococcus-sp">Bakteri Streptococcus Sp</a></li>
+<li><a href="/cara-membuat-ote-ote-sederhana">Cara Membuat Ote Ote Sederhana</a></li>
+<li><a href="/tidak-ada-balasan-untuk-kebaikan-selain-kebaikan-pula">Tidak Ada Balasan Untuk Kebaikan Selain Kebaikan Pula</a></li>
+<li><a href="/bakpia-telur-asin">Bakpia Telur Asin</a></li>
+<li><a href="/cara-membuat-bakwan-mengembang">Cara Membuat Bakwan Mengembang</a></li>
+<li><a href="/cara-membuat-bakwan-bola">Cara Membuat Bakwan Bola</a></li>
+<li><a href="/bakpia-pathok-30">Bakpia Pathok 30</a></li>
+<li><a href="/cara-membuat-lobak-asin">Cara Membuat Lobak Asin</a></li>
+<li><a href="/harga-bakpia-pathok-75">Harga Bakpia Pathok 75</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Jagung Wortel - Lezat & Sehat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --main-bg-color: #f0f8ff; /* AliceBlue */
+            --header-footer-bg-color: #add8e6; /* LightBlue */
+            --text-color: #333;
+            --accent-color: #ffb347; /* LightOrange */
+            --card-bg-color: #ffffff;
+            --border-color: #e0ffff; /* LightCyan */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--header-footer-bg-color);
+            color: white;
+            padding: 1.5em 1em;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #fff;
+        }
+
+        main {
+            flex: 1;
+            padding: 1.5em 1em;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        article {
+            background-color: var(--card-bg-color);
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            font-size: 1.6em;
+        }
+
+        h3 {
+            color: var(--accent-color);
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        ul, ol {
+            margin-bottom: 1em;
+            padding-left: 1.5em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .recipe-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 1.5em auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .ingredients, .instructions {
+            margin-top: 1.5em;
+        }
+
+        .ingredients ul li, .instructions ol li {
+            background-color: var(--border-color);
+            padding: 0.8em;
+            border-radius: 4px;
+            margin-bottom: 0.6em;
+            transition: background-color 0.3s ease;
+        }
+
+        .ingredients ul li:hover, .instructions ol li:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        footer {
+            background-color: var(--header-footer-bg-color);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: auto;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            article {
+                padding: 1em;
+            }
+            main {
+                padding: 1em 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Resep Bakwan Jagung Wortel Lezat</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Nikmati Sensasi Gurih Manis Bakwan Jagung Wortel</h2>
+
+            <!-- SVG Gambar Bakwan Jagung Wortel -->
+            <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakwanTitle">
+                <title id="bakwanTitle">Ilustrasi bakwan jagung wortel yang renyah dan menggugah selera</title>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFDDC1;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFC2A6;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FAD7A1;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#F5B041;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <!-- Background -->
+                <rect width="100%" height="100%" fill="var(--card-bg-color)" rx="15"/>
+
+                <!-- Jagung Kernels -->
+                <g fill="url(#grad2)" filter="url(#shadow)">
+                    <circle cx="150" cy="150" r="12"/>
+                    <circle cx="180" cy="160" r="12"/>
+                    <circle cx="210" cy="150" r="12"/>
+                    <circle cx="165" cy="180" r="12"/>
+                    <circle cx="195" cy="190" r="12"/>
+                    <circle cx="225" cy="180" r="12"/>
+                    <circle cx="135" cy="170" r="12"/>
+                    <circle cx="240" cy="160" r="12"/>
+                    <circle cx="120" cy="190" r="12"/>
+                    <circle cx="105" cy="210" r="12"/>
+                </g>
+
+                <!-- Wortel Shredded -->
+                <g fill="url(#grad1)" filter="url(#shadow)">
+                    <path d="M 280 120 Q 300 130 320 140 T 340 160 L 330 170 Q 310 160 290 150 T 270 130 Z"/>
+                    <path d="M 300 150 Q 320 160 340 170 T 360 190 L 350 200 Q 330 190 310 180 T 290 160 Z"/>
+                    <path d="M 320 180 Q 340 190 360 200 T 380 220 L 370 230 Q 350 220 330 210 T 310 190 Z"/>
+                </g>
+
+                <!-- Adonan Tepung -->
+                <g fill="#E8DAEF" filter="url(#shadow)">
+                    <path d="M 100 250 Q 150 280 200 250 T 250 220 L 240 230 Q 190 260 140 230 T 90 200 Z"/>
+                    <path d="M 220 230 Q 270 260 320 230 T 370 200 L 360 210 Q 310 240 260 210 T 210 180 Z"/>
+                </g>
+
+                <!-- Garis Tepung -->
+                <g stroke="#D7DBDD" stroke-width="2" fill="none">
+                    <path d="M 100 250 Q 150 280 200 250" />
+                    <path d="M 150 280 Q 200 310 250 280" />
+                    <path d="M 200 250 Q 250 280 300 250" />
+                    <path d="M 220 230 Q 270 260 320 230" />
+                    <path d="M 270 260 Q 320 290 370 260" />
+                    <path d="M 320 230 Q 370 260 420 230" />
+                </g>
+
+                <!-- Kemerahan hasil goreng -->
+                <g fill="rgba(255,165,0,0.2)" opacity="0.6">
+                    <path d="M 100 250 Q 150 280 200 250 T 250 220 Z" transform="translate(5, 5)"/>
+                    <path d="M 220 230 Q 270 260 320 230 T 370 200 Z" transform="translate(5, 5)"/>
+                </g>
+            </svg>
+
+            <p>Bakwan, siapa yang tidak kenal jajanan renyah dan gurih ini? Umumnya terbuat dari adonan tepung yang dicampur dengan aneka sayuran seperti wortel, kol, atau tauge, bakwan selalu menjadi pilihan camilan yang digemari. Namun, ada varian bakwan yang tak kalah lezat dan seringkali menjadi favorit banyak orang: bakwan jagung. Ditambah dengan parutan wortel, hidangan ini tidak hanya kaya rasa tapi juga memberikan tambahan nutrisi.</p>
+
+            <p>Membuat bakwan jagung wortel sendiri di rumah ternyata sangat mudah dan tidak memerlukan bahan-bahan yang sulit dicari. Anda bisa menyajikannya sebagai pendamping hidangan utama, teman ngopi sore, atau sekadar dinikmati kapan saja. Teksturnya yang renyah di luar dan lembut di dalam, berpadu dengan manisnya jagung serta sedikit rasa gurih dari bumbu, menjadikan bakwan ini camilan yang sempurna.</p>
+
+            <div class="ingredients">
+                <h3>Bahan-Bahan:</h3>
+                <ul>
+                    <li>2 buah jagung manis, pipil dan haluskan kasar (bisa diblender sebentar tanpa air)</li>
+                    <li>1 buah wortel ukuran sedang, parut kasar</li>
+                    <li>100 gram tepung terigu protein sedang</li>
+                    <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+                    <li>2 batang daun bawang, iris halus</li>
+                    <li>1 siung bawang putih, haluskan</li>
+                    <li>1/2 sendok teh ketumbar bubuk</li>
+                    <li>1/4 sendok teh merica bubuk</li>
+                    <li>Garam secukupnya</li>
+                    <li>Kaldu bubuk secukupnya (opsional)</li>
+                    <li>Air secukupnya (sekitar 50-75 ml, sesuaikan adonan)</li>
+                    <li>Minyak goreng secukupnya</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h3>Cara Membuat:</h3>
+                <ol>
+                    <li>Dalam sebuah wadah, campurkan jagung manis yang sudah dihaluskan kasar, parutan wortel, dan irisan daun bawang.</li>
+                    <li>Masukkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                    <li>Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan memiliki kekentalan yang pas. Adonan tidak boleh terlalu encer agar tidak pecah saat digoreng.</li>
+                    <li>Panaskan minyak goreng dalam wajan dengan api sedang.</li>
+                    <li>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Ratakan sedikit agar bentuknya tidak terlalu tebal. Goreng beberapa buah bakwan sekaligus, jangan terlalu banyak agar matang merata.</li>
+                    <li>Goreng hingga bakwan berwarna kuning keemasan dan matang di kedua sisinya.</li>
+                    <li>Angkat bakwan dan tiriskan minyaknya di atas kertas tisu agar tidak terlalu berminyak.</li>
+                    <li>Sajikan bakwan jagung wortel selagi hangat. Nikmati bersama sambal kecap atau cabai rawit hijau untuk sensasi rasa yang lebih mantap.</li>
+                </ol>
+            </div>
+
+            <p>Tips tambahan untuk mendapatkan bakwan yang super renyah adalah dengan memastikan adonan tidak terlalu banyak air, serta menggunakan kombinasi tepung terigu dan tepung beras. Menggoreng dengan minyak yang cukup panas juga penting, namun jangan sampai gosong. Bakwan jagung wortel ini bisa menjadi pilihan lauk yang unik atau camilan sehat yang disukai seluruh keluarga. Selamat mencoba!</p>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Hak Cipta Konten Artikel</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/isian-pia-coklat">Isian Pia Coklat</a></li>
+<li><a href="/resep-bakwan-jagung-yang-enak-dan-gurih">Resep Bakwan Jagung Yang Enak Dan Gurih</a></li>
+<li><a href="/membuat-bakwan-kawi">Membuat Bakwan Kawi</a></li>
+<li><a href="/bakwan-jagung-campur-tahu">Bakwan Jagung Campur Tahu</a></li>
+<li><a href="/bakpao-fuh-yen">Bakpao Fuh Yen</a></li>
+<li><a href="/bakpia-juwara-satu">Bakpia Juwara Satu</a></li>
+<li><a href="/bakwan-jagung-pakai-tepung-sajiku">Bakwan Jagung Pakai Tepung Sajiku</a></li>
+<li><a href="/cara-agar-cetakan-bakwan-tidak-lengket">Cara Agar Cetakan Bakwan Tidak Lengket</a></li>
+<li><a href="/jenis-jenis-bunga-bakung">Jenis Jenis Bunga Bakung</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-enak-dan-gurih">Cara Membuat Bakwan Sayur Enak Dan Gurih</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

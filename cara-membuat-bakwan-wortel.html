@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Wortel Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #4682b4; /* SteelBlue - warna cerah dan menenangkan */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #5f9ea0; /* CadetBlue - warna sejuk lain */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0ffff; /* LightCyan - sentuhan cerah */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            padding-left: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .ingredients, .steps {
+            width: 100%;
+        }
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .step-number {
+            background-color: #87ceeb; /* SkyBlue - warna cerah */
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-description {
+            flex-grow: 1;
+        }
+        .highlight {
+            color: #20b2aa; /* LightSeaGreen - aksen cerah */
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Media Query untuk tampilan mobile */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Membuat Bakwan Wortel Renyah dan Lezat</h1>
+
+        <svg class="recipe-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bakwan-wortel-image-title">
+            <title id="bakwan-wortel-image-title">Ilustrasi bakwan wortel yang renyah</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffddaa;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#f0c499;stop-opacity:1" />
+                </linearGradient>
+                <clipPath id="clip-circle">
+                    <circle cx="200" cy="125" r="100"/>
+                </clipPath>
+            </defs>
+            <rect width="400" height="250" rx="15" fill="#fff"/>
+            <g transform="translate(0, 50)">
+                <!-- Bulir wortel -->
+                <circle cx="120" cy="100" r="10" fill="#ff7f50" />
+                <circle cx="140" cy="115" r="10" fill="#ff7f50" />
+                <circle cx="100" cy="120" r="10" fill="#ff7f50" />
+                <circle cx="160" cy="95" r="10" fill="#ff7f50" />
+
+                <!-- Adonan bakwan -->
+                <ellipse cx="200" cy="150" rx="80" ry="50" fill="url(#grad1)" transform="rotate(-10 200 150)"/>
+                <ellipse cx="180" cy="140" rx="70" ry="45" fill="#f8e7d0" transform="rotate(5 180 140)"/>
+                <ellipse cx="220" cy="160" rx="60" ry="40" fill="#fcf4e8" transform="rotate(-5 220 160)"/>
+
+                <!-- Garis renyah -->
+                <path d="M 150 130 Q 170 110 190 130 T 230 140 T 250 120" stroke="#f0a36c" stroke-width="3" fill="none" />
+                <path d="M 160 150 Q 180 130 200 150 T 240 160 T 260 140" stroke="#f0a36c" stroke-width="2" fill="none" />
+
+                <!-- Teks sederhana -->
+                <text x="200" y="70" font-family="Verdana" font-size="20" fill="#4682b4" text-anchor="middle" font-weight="bold">Bakwan</text>
+                <text x="200" y="95" font-family="Verdana" font-size="20" fill="#5f9ea0" text-anchor="middle" font-weight="bold">Wortel</text>
+            </g>
+        </svg>
+
+        <p>Siapa yang tidak suka camilan renyah nan gurih seperti bakwan? Makanan tradisional Indonesia ini selalu menjadi primadona di setiap kesempatan. Salah satu varian yang paling digemari adalah bakwan wortel. Manisnya wortel berpadu dengan gurihnya adonan tepung, menciptakan cita rasa yang tak terlupakan. Membuat bakwan wortel sendiri di rumah ternyata sangat mudah, lho! Dengan resep sederhana ini, Anda bisa menyajikan hidangan lezat kapan saja.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <ul>
+                <li>2 buah wortel ukuran sedang, parut kasar atau iris tipis memanjang</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk menambah kerenyahan)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air dingin secukupnya (sekitar 100-120 ml)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Bakwan Wortel</h2>
+        <div class="steps">
+            <div class="step-item">
+                <div class="step-number">1</div>
+                <div class="step-description">
+                    <p>Campurkan <span class="highlight">tepung terigu</span> dan <span class="highlight">tepung beras</span> (jika menggunakan) dalam sebuah wadah. Tambahkan <span class="highlight">bawang putih halus</span>, <span class="highlight">ketumbar bubuk</span>, <span class="highlight">merica bubuk</span>, <span class="highlight">garam</span>, dan <span class="highlight">kaldu bubuk</span> jika suka. Aduk rata bahan kering.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-description">
+                    <p>Masukkan <span class="highlight">parutan wortel</span> dan <span class="highlight">irisan daun bawang</span> ke dalam campuran tepung. Aduk sebentar hingga semua bahan tercampur rata.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-description">
+                    <p>Tuangkan <span class="highlight">air dingin</span> sedikit demi sedikit sambil terus diaduk. Adonan jangan terlalu encer dan jangan terlalu kental, pastikan semua bahan terlapisi tepung dengan baik. Konsistensi adonan yang tepat sangat penting untuk hasil bakwan yang renyah.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">4</div>
+                <div class="step-description">
+                    <p>Panaskan <span class="highlight">minyak goreng</span> dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum adonan dimasukkan agar bakwan tidak menyerap banyak minyak dan hasilnya renyah.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">5</div>
+                <div class="step-description">
+                    <p>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng bakwan hingga berwarna kuning keemasan dan matang sempurna di kedua sisinya. Balik sesekali agar matangnya merata.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">6</div>
+                <div class="step-description">
+                    <p>Angkat bakwan yang sudah matang, tiriskan minyaknya. Sajikan bakwan wortel selagi hangat sebagai camilan atau teman makan nasi.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Tips Agar Bakwan Wortel Makin Renyah</h2>
+        <p>Untuk mendapatkan bakwan wortel yang super renyah, ada beberapa tips tambahan yang bisa Anda terapkan:</p>
+        <ul>
+            <li>Gunakan <span class="highlight">air es atau air dingin</span> saat membuat adonan. Suhu dingin akan membantu meminimalkan pembentukan gluten, sehingga menghasilkan tekstur yang lebih renyah.</li>
+            <li>Tambahkan <span class="highlight">sedikit tepung beras</span> ke dalam adonan. Tepung beras dikenal mampu memberikan kerenyahan ekstra pada gorengan.</li>
+            <li>Pastikan <span class="highlight">minyak goreng benar-benar panas</span> sebelum adonan dimasukkan. Minyak yang kurang panas akan membuat bakwan menjadi lembek dan menyerap banyak minyak.</li>
+            <li>Jangan menggoreng bakwan terlalu banyak sekaligus dalam satu wajan. Hal ini dapat menurunkan suhu minyak dan membuat bakwan menjadi tidak renyah.</li>
+            <li>Setelah matang, tiriskan bakwan di atas rak kawat agar uap panas bisa keluar dan menjaga kerenyahannya. Hindari meniriskan di atas kertas tisu terlalu lama.</li>
+        </ul>
+
+        <p>Menikmati bakwan wortel yang renyah di luar dan lembut di dalam memang selalu menyenangkan. Dengan sedikit usaha dan mengikuti langkah-langkah di atas, Anda bisa menciptakan kelezatan ini di dapur rumah Anda. Selamat mencoba!</p>
+
+        <footer>
+            Terima kasih telah berkunjung.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakteri-pada-daging-sapi">Bakteri Pada Daging Sapi</a></li>
+<li><a href="/cara-kukus-bakpao">Cara Kukus Bakpao</a></li>
+<li><a href="/resep-buat-bakwan-enak">Resep Buat Bakwan Enak</a></li>
+<li><a href="/cara-membuat-bakwan-udang">Cara Membuat Bakwan Udang</a></li>
+<li><a href="/bikin-bakwan-jagung-renyah">Bikin Bakwan Jagung Renyah</a></li>
+<li><a href="/bakpao-langgeng-sari">Bakpao Langgeng Sari</a></li>
+<li><a href="/bakwan-telur">Bakwan Telur</a></li>
+<li><a href="/resep-bakwan-sayur-udang">Resep Bakwan Sayur Udang</a></li>
+<li><a href="/bakso-ayam-beranak">Bakso Ayam Beranak</a></li>
+<li><a href="/streptococcus-bakteri-gram">Streptococcus Bakteri Gram</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

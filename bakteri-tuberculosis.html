@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakteri Tuberculosis: Ancaman Tersembunyi</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #e0f7fa; /* Biru muda cerah */
+            --text-color: #004d40; /* Hijau tua, kontras sejuk */
+            --accent-color: #00bcd4; /* Cyan cerah untuk penekanan */
+            --card-bg: #ffffff; /* Putih bersih untuk kartu */
+            --shadow-color: rgba(0, 77, 64, 0.1); /* Bayangan halus */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 40px 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            padding: 30px 0;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .illustration {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .illustration svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px var(--shadow-color);
+        }
+
+        .card h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .card ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        .card li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 15px;
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .card h3 {
+                font-size: 1.3em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 1.6em;
+            }
+            .container {
+                padding: 0 10px;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .card {
+                padding: 20px;
+            }
+            .card h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mengenal Lebih Dekat Bakteri Tuberculosis</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <p>
+                Bakteri <em>Mycobacterium tuberculosis</em>, atau yang lebih dikenal sebagai basil TB, adalah agen penyebab penyakit tuberkulosis (TB). Penyakit ini telah menjadi masalah kesehatan global selama berabad-abad, mempengaruhi jutaan orang di seluruh dunia. Meskipun telah ada kemajuan signifikan dalam pencegahan dan pengobatan, TB tetap menjadi ancaman serius, terutama di negara-negara berkembang. Memahami sifat dan cara kerja bakteri ini sangat penting dalam memerangi penyebarannya.
+            </p>
+
+            <div class="illustration">
+                <!-- SVG Illustration of Mycobacterium tuberculosis -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="200" height="200">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#26a69a;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#4dd0e1;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="200" r="150" fill="url(#grad1)" />
+                    <text x="200" y="215" font-family="Verdana" font-size="24" text-anchor="middle" fill="white" font-weight="bold">TB</text>
+                    <!-- Simulating bacteria shape with abstract elements -->
+                    <path d="M 150 100 Q 200 50 250 100 Q 200 150 150 100 Z" fill="#ffecb3" opacity="0.8"/>
+                    <path d="M 100 150 Q 150 100 200 150 Q 150 200 100 150 Z" fill="#ffcc80" opacity="0.7"/>
+                    <path d="M 250 150 Q 300 100 350 150 Q 300 200 250 150 Z" fill="#ffcc80" opacity="0.7"/>
+                    <path d="M 150 250 Q 200 300 250 250 Q 200 200 150 250 Z" fill="#ffe082" opacity="0.8"/>
+                </svg>
+                <p style="font-size: 0.9em; color: #00796b;">Ilustrasi abstrak bakteri Tuberculosis</p>
+            </div>
+
+            <h2>Bagaimana Bakteri TB Menyebar?</h2>
+            <p>
+                Bakteri <em>Mycobacterium tuberculosis</em> adalah bakteri aerobik yang paling sering menginfeksi paru-paru. Penularan utama terjadi melalui udara ketika seseorang yang terinfeksi TB aktif batuk, bersin, berbicara, atau bernyanyi. Tetesan kecil yang mengandung bakteri ini kemudian dapat terhirup oleh orang lain. Sebagian besar orang yang terpapar bakteri TB tidak akan sakit karena sistem kekebalan tubuh mereka mampu mengendalikan infeksi. Namun, bagi sebagian orang, bakteri dapat tetap tidak aktif dalam tubuh untuk jangka waktu yang lama sebelum akhirnya menjadi aktif dan menyebabkan penyakit.
+            </p>
+
+            <div class="card">
+                <h3>Faktor Risiko dan Kerentanan</h3>
+                <ul>
+                    <li>Orang dengan sistem kekebalan tubuh yang lemah, seperti penderita HIV/AIDS, diabetes, atau mereka yang menjalani pengobatan imunosupresif, lebih rentan terhadap perkembangan TB aktif.</li>
+                    <li>Paparan berulang terhadap individu yang terinfeksi TB juga meningkatkan risiko penularan.</li>
+                    <li>Lingkungan yang padat dan ventilasi yang buruk dapat memfasilitasi penyebaran bakteri.</li>
+                    <li>Malnutrisi juga dapat melemahkan sistem kekebalan tubuh.</li>
+                </ul>
+            </div>
+
+            <h2>Gejala dan Diagnosis</h2>
+            <p>
+                Gejala TB paru aktif meliputi batuk yang berlangsung lebih dari tiga minggu, kadang-kadang disertai dahak berdarah, nyeri dada, demam, keringat malam hari, penurunan berat badan, dan kelelahan. Diagnosis TB biasanya melibatkan kombinasi pemeriksaan fisik, tes kulit (Mantoux test), pemeriksaan dahak mikroskopis, kultur bakteri, dan rontgen dada. Tes darah khusus untuk mendeteksi infeksi TB juga tersedia.
+            </p>
+
+            <div class="card">
+                <h3>Pencegahan dan Pengobatan</h3>
+                <ul>
+                    <li>Pencegahan TB sangat bergantung pada identifikasi dan pengobatan kasus TB aktif untuk menghentikan rantai penularan.</li>
+                    <li>Vaksin BCG dapat memberikan perlindungan terhadap bentuk TB yang parah pada anak-anak, namun efektivitasnya bervariasi.</li>
+                    <li>Pengobatan TB melibatkan penggunaan kombinasi beberapa obat antibiotik selama periode yang cukup lama (biasanya 6 bulan atau lebih). Kepatuhan terhadap pengobatan sangat penting untuk mencegah resistensi obat.</li>
+                    <li>Pemeriksaan rutin bagi kelompok berisiko tinggi, seperti pekerja kesehatan dan orang dengan HIV, juga merupakan langkah penting.</li>
+                </ul>
+            </div>
+
+            <p>
+                Memerangi bakteri tuberculosis memerlukan upaya terpadu dari berbagai pihak, termasuk penyediaan akses ke layanan kesehatan, kampanye kesadaran publik, dan penelitian berkelanjutan untuk mengembangkan metode pencegahan dan pengobatan yang lebih efektif. Dengan pemahaman yang lebih baik tentang musuh tak kasat mata ini, kita dapat bergerak lebih dekat untuk memberantas penyakit TB dari dunia.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Informasi Kesehatan. Hak Cipta Dilindungi.
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-day-harga">Bakwan Day Harga</a></li>
+<li><a href="/cara-membuat-bakso-mercon-sederhana">Cara Membuat Bakso Mercon Sederhana</a></li>
+<li><a href="/harga-bakpao-mini">Harga Bakpao Mini</a></li>
+<li><a href="/jajanan-batagor">Jajanan Batagor</a></li>
+<li><a href="/cara-membuat-kuah-cuko-bakwan">Cara Membuat Kuah Cuko Bakwan</a></li>
+<li><a href="/bakpau-a1-taman-anggrek">Bakpau A1 Taman Anggrek</a></li>
+<li><a href="/diare-bakteri">Diare Bakteri</a></li>
+<li><a href="/bakwan-jagung-mpasi">Bakwan Jagung Mpasi</a></li>
+<li><a href="/bumbu-bakso-mercon-goreng">Bumbu Bakso Mercon Goreng</a></li>
+<li><a href="/cara-buat-bakwan-padang">Cara Buat Bakwan Padang</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Kol Goreng Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --warna-utama: #50C878; /* Emerald Green */
+            --warna-sekunder: #90EE90; /* Light Green */
+            --warna-teks-gelap: #333;
+            --warna-teks-terang: #f8f8f8;
+            --warna-background: #F5FFFA; /* Mint Cream */
+            --warna-aksen: #FFD700; /* Gold */
+            --shadow-biru: rgba(0, 123, 255, 0.2);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--warna-background);
+            color: var(--warna-teks-gelap);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: var(--warna-teks-terang);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        h1, h2 {
+            color: var(--warna-utama);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            border-bottom: 2px solid var(--warna-sekunder);
+            padding-bottom: 10px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .gambar-utama {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Slightly smaller for mobile aesthetic */
+            margin: 0 auto 25px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px var(--shadow-biru);
+        }
+
+        .resep-bahan, .resep-cara {
+            background-color: var(--warna-sekunder);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .resep-bahan h3, .resep-cara h3 {
+            color: var(--warna-utama);
+            margin-top: 0;
+            text-align: center;
+            font-size: 1.4em;
+        }
+
+        .highlight {
+            color: var(--warna-utama);
+            font-weight: bold;
+        }
+
+        .tips {
+            background-color: var(--warna-aksen);
+            color: var(--warna-teks-gelap);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 25px;
+            font-size: 1.05em;
+        }
+
+        .tips strong {
+            color: var(--warna-utama);
+        }
+
+        /* SVG Styling */
+        .krispi-svg {
+            display: block;
+            margin: 0 auto;
+            width: 80px; /* Smaller, fitting the mobile aesthetic */
+            height: 80px;
+            fill: var(--warna-utama); /* Emerald Green */
+            animation: pulsate 2s infinite ease-in-out;
+        }
+
+        @keyframes pulsate {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .gambar-utama {
+                max-width: 300px;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+            .resep-bahan, .resep-cara {
+                padding: 10px;
+            }
+            .tips {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .krispi-svg {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- SVG Icon: Daun Krispi -->
+        <svg class="krispi-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-9H9v2h4v-2zm2 0h2v2h-2v-2zm-6 0h2v2H7v-2z"/>
+          <path d="M19.77 6.93l-1.28-1.28c-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0l1.28 1.28c.39.39.39 1.02 0 1.41l-1.41 1.41c-.39.39-1.02.39-1.41 0zM17.34 8.34l-1.28-1.28c-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0l1.28 1.28c.39.39.39 1.02 0 1.41l-1.41 1.41c-.39.39-1.02.39-1.41 0z"/>
+        </svg>
+
+        <h1>Bakwan Kol Goreng Sederhana</h1>
+
+        <img src="https://via.placeholder.com/400x250/50C878/FFFFFF?text=Bakwan+Kol+Goreng" alt="Gambar bakwan kol goreng yang renyah di piring" class="gambar-utama">
+
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan kol goreng, atau sering juga disebut bala-bala sayuran dengan fokus pada kol, adalah salah satu jajanan favorit masyarakat Indonesia. Rasanya yang nikmat, teksturnya yang garing, serta harganya yang terjangkau menjadikannya pilihan sempurna untuk teman minum teh atau kopi, atau sekadar pengganjal perut di sore hari.</p>
+
+        <p>Membuat bakwan kol goreng sendiri di rumah ternyata tidak sulit, lho. Dengan bahan-bahan yang mudah didapat dan langkah-langkah yang simpel, Anda bisa menyajikan camilan lezat ini kapan saja. Kunci utama dari bakwan kol goreng yang enak adalah adonan yang pas dan teknik menggoreng yang benar agar hasilnya renyah tahan lama.</p>
+
+        <div class="resep-bahan">
+            <h2>Bahan-bahan</h2>
+            <ul>
+                <li>1/4 kol ukuran sedang, iris tipis lebar</li>
+                <li>1 buah wortel ukuran kecil, serut kasar atau potong korek api tipis</li>
+                <li>2 batang daun bawang, iris halus</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (agar lebih renyah)</li>
+                <li>1 sdt ketumbar bubuk</li>
+                <li>1/2 sdt merica bubuk</li>
+                <li>1 sdt garam (sesuaikan selera)</li>
+                <li>1/4 sdt kaldu bubuk (opsional)</li>
+                <li>Air secukupnya (sekitar 100-120 ml, jangan terlalu banyak)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="resep-cara">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li>Campurkan tepung terigu, tepung beras, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika pakai) dalam wadah besar. Aduk rata.</li>
+                <li>Masukkan irisan kol, wortel, dan daun bawang ke dalam campuran tepung. Aduk rata hingga semua sayuran terbalut tepung secara merata.</li>
+                <li>Tambahkan air sedikit demi sedikit sambil terus diaduk. Gunakan air secukupnya hingga adonan menjadi kental tapi tidak terlalu cair. Pastikan sayuran terlapisi dengan baik namun tidak tergenang adonan. Konsistensi adonan yang pas adalah kunci kerenyahan.</li>
+                <li>Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+                <li>Ambil satu sendok sayur adonan, lalu lebarkan sedikit di atas sendok sebelum dimasukkan ke dalam minyak panas. Goreng hingga kedua sisinya berwarna kuning keemasan dan matang. Jangan terlalu banyak memasukkan adonan ke dalam wajan agar bakwan matang merata dan tidak saling menempel.</li>
+                <li>Angkat bakwan yang sudah matang dan tiriskan di atas kertas tisu untuk menyerap kelebihan minyak.</li>
+                <li>Sajikan bakwan kol goreng selagi hangat dengan sambal favorit Anda, seperti sambal kecap atau cabai rawit.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h3>Tips Agar Bakwan Makin Krispi</h3>
+            <p>Untuk mendapatkan bakwan kol goreng yang super renyah, perhatikan beberapa hal:</p>
+            <ul>
+                <li><strong>Jangan Terlalu Banyak Air:</strong> Kunci utama kerenyahan adalah adonan yang tidak terlalu encer. Adonan yang terlalu cair akan membuat bakwan lembek.</li>
+                <li><strong>Gunakan Tepung Beras:</strong> Campuran tepung beras dengan tepung terigu akan memberikan tekstur yang lebih garing dibandingkan hanya menggunakan tepung terigu.</li>
+                <li><strong>Goreng Sekali Saja:</strong> Hindari menggoreng bakwan dua kali karena bisa membuatnya menyerap banyak minyak dan menjadi lembek.</li>
+                <li><strong>Api Sedang:</strong> Gunakan api sedang saat menggoreng agar bagian dalam matang sempurna dan bagian luar tidak cepat gosong.</li>
+                <li><strong>Tiriskan dengan Baik:</strong> Setelah diangkat dari minyak, tiriskan bakwan di atas rak kawat atau kertas tisu agar sisa minyak terserap sempurna dan tetap renyah.</li>
+            </ul>
+            <p>Selamat mencoba membuat <span class="highlight">bakwan kol goreng</span> lezat di rumah!</p>
+        </div>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/contoh-bakteri-anaerob-adalah">Contoh Bakteri Anaerob Adalah</a></li>
+<li><a href="/cara-bikin-bumbu-bakso-mercon">Cara Bikin Bumbu Bakso Mercon</a></li>
+<li><a href="/buat-bakwan-renyah">Buat Bakwan Renyah</a></li>
+<li><a href="/bakwan-sehat">Bakwan Sehat</a></li>
+<li><a href="/daftar-harga-bakpiaku">Daftar Harga Bakpiaku</a></li>
+<li><a href="/cara-membuat-bakwan-milu">Cara Membuat Bakwan Milu</a></li>
+<li><a href="/resep-bakwan-wortel-toge">Resep Bakwan Wortel Toge</a></li>
+<li><a href="/resep-bakso-mercon-telur">Resep Bakso Mercon Telur</a></li>
+<li><a href="/alat-membuat-perkedel-jagung">Alat Membuat Perkedel Jagung</a></li>
+<li><a href="/bakpia-kukus-prawirotaman">Bakpia Kukus Prawirotaman</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

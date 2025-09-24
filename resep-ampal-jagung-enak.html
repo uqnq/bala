@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Ampal Jagung Enak & Praktis</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #0077cc; /* Biru cerah */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        h2 {
+            margin-top: 25px;
+            border-bottom: 2px solid #add8e6; /* LightBlue */
+            padding-bottom: 5px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #e0f7fa; /* Cyan Light */
+            border-radius: 8px;
+        }
+        .recipe-details p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #005f9a;
+        }
+        .ingredients ul, .steps ol {
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+        }
+        .ingredients {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px dashed #0077cc;
+        }
+        .steps {
+            background-color: #e0f7fa; /* Cyan Light */
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px dashed #005f9a;
+        }
+        strong {
+            color: #005f9a;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-details {
+                flex-direction: column;
+                align-items: center;
+            }
+            .recipe-details p {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Ampal Jagung Enak & Praktis</h1>
+
+        <!-- SVG Image -->
+        <svg width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi ampal jagung yang lezat">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" /> <!-- Emas -->
+                    <stop offset="100%" style="stop-color:#ffa500;stop-opacity:1" /> <!-- Oranye -->
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#90ee90;stop-opacity:1" /> <!-- Hijau muda -->
+                    <stop offset="100%" style="stop-color:#87ceeb;stop-opacity:1" /> <!-- Biru langit -->
+                </linearGradient>
+            </defs>
+            <!-- Background -->
+            <rect width="100%" height="100%" fill="url(#grad2)" />
+
+            <!-- Ampal Jagung Base -->
+            <ellipse cx="200" cy="120" rx="120" ry="70" fill="#fff8dc" /> <!-- Cornsilk -->
+            <ellipse cx="200" cy="130" rx="115" ry="65" fill="#ffdab9" /> <!-- PeachPuff -->
+
+            <!-- Jagung Textures -->
+            <g fill="#ffcc00"> <!-- Warna jagung -->
+                <circle cx="120" cy="90" r="8"/>
+                <circle cx="150" cy="70" r="8"/>
+                <circle cx="180" cy="50" r="8"/>
+                <circle cx="220" cy="50" r="8"/>
+                <circle cx="250" cy="70" r="8"/>
+                <circle cx="280" cy="90" r="8"/>
+                <circle cx="100" cy="120" r="8"/>
+                <circle cx="130" cy="140" r="8"/>
+                <circle cx="170" cy="155" r="8"/>
+                <circle cx="230" cy="155" r="8"/>
+                <circle cx="270" cy="140" r="8"/>
+                <circle cx="300" cy="120" r="8"/>
+            </g>
+
+            <!-- Garis Sederhana -->
+            <path d="M 50 160 Q 200 180 350 160" stroke="#ff8c00" stroke-width="5" fill="none" /> <!-- DarkOrange -->
+            <path d="M 60 170 Q 200 190 340 170" stroke="#ffdab9" stroke-width="3" fill="none" /> <!-- PeachPuff -->
+        </svg>
+
+        <p>Ampal jagung adalah kudapan tradisional yang tak lekang oleh waktu. Terbuat dari jagung manis yang diparut atau dihaluskan, lalu dicampur dengan tepung, santan, dan sedikit gula, kemudian digoreng hingga keemasan. Rasanya yang manis gurih, dengan tekstur sedikit kenyal di dalam dan renyah di luar, menjadikannya pilihan favorit untuk teman minum teh atau kopi di sore hari. Berbeda dengan bakwan jagung yang biasanya lebih banyak tepung dan sayuran, ampal jagung lebih menonjolkan rasa manis alami dari jagung itu sendiri.</p>
+
+        <div class="recipe-details">
+            <p><strong>Waktu Persiapan:</strong> 15 menit</p>
+            <p><strong>Waktu Memasak:</strong> 20-25 menit</p>
+            <p><strong>Porsi:</strong> 4-6 orang</p>
+        </div>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <ul>
+                <li>2 buah jagung manis ukuran sedang, pipil atau parut kasar</li>
+                <li>50 gram tepung terigu protein sedang</li>
+                <li>25 gram tepung beras (opsional, untuk kerenyahan ekstra)</li>
+                <li>100 ml santan kental</li>
+                <li>1 sendok makan gula pasir (sesuaikan selera)</li>
+                <li>½ sendok teh garam</li>
+                <li>¼ sendok teh vanili bubuk (opsional, untuk aroma)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat Ampal Jagung</h2>
+        <div class="steps">
+            <ol>
+                <li><strong>Siapkan Jagung:</strong> Jika menggunakan jagung pipil, blender atau ulek kasar hingga sedikit hancur tetapi masih ada tekstur biji jagung. Jika diparut, langsung gunakan. Sisihkan.</li>
+                <li><strong>Campur Adonan:</strong> Dalam wadah, campurkan tepung terigu, tepung beras (jika pakai), gula pasir, garam, dan vanili bubuk. Aduk rata.</li>
+                <li><strong>Tambahkan Santan & Jagung:</strong> Tuangkan santan kental sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan tidak menggumpal. Masukkan jagung yang sudah dihaluskan/dipipil ke dalam adonan. Aduk hingga semua bahan tercampur sempurna. Konsistensi adonan harus kental, tidak terlalu encer agar mudah dibentuk.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak sudah cukup panas sebelum menggoreng agar ampal jagung tidak menyerap terlalu banyak minyak dan hasilnya renyah.</li>
+                <li><strong>Goreng Ampal Jagung:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Bentuk bulat pipih atau sesuai selera. Goreng hingga kedua sisinya berwarna kuning keemasan dan matang merata.</li>
+                <li><strong>Tiriskan:</strong> Angkat ampal jagung yang sudah matang, tiriskan minyaknya dengan baik menggunakan tisu dapur atau rak kawat.</li>
+                <li><strong>Sajikan:</strong> Ampal jagung paling nikmat disajikan selagi hangat. Anda bisa menyajikannya sebagai camilan pendamping minum teh atau kopi.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan untuk Ampal Jagung Sempurna</h2>
+        <p>Untuk mendapatkan ampal jagung yang lebih lezat dan menarik, ada beberapa tips yang bisa Anda terapkan:</p>
+        <ul>
+            <li><strong>Pemilihan Jagung:</strong> Gunakan jagung manis yang masih segar dan berkualitas baik. Jagung muda biasanya memiliki rasa yang lebih manis alami.</li>
+            <li><strong>Tekstur Jagung:</strong> Jangan terlalu menghaluskan jagung. Biarkan masih ada sedikit tekstur biji jagung agar saat digigit terasa sensasi "meletup" yang nikmat.</li>
+            <li><strong>Kadar Santan:</strong> Jika suka rasa yang lebih gurih dan kaya, Anda bisa sedikit menambah jumlah santan, namun tetap perhatikan kekentalan adonan.</li>
+            <li><strong>Variasi Rasa:</strong> Jika suka, Anda bisa menambahkan sedikit parutan keju cheddar ke dalam adonan untuk rasa gurih manis yang unik, atau taburan sejumput bubuk cabai jika suka pedas.</li>
+            <li><strong>Menggoreng:</strong> Pastikan minyak cukup panas sebelum menggoreng. Jika terlalu dingin, ampal jagung akan lembek dan berminyak. Jika terlalu panas, bagian luarnya akan cepat gosong sementara bagian dalamnya belum matang. Gunakan api sedang untuk hasil terbaik.</li>
+        </ul>
+
+        <p>Membuat ampal jagung sendiri di rumah ternyata tidak sulit, bukan? Dengan bahan-bahan sederhana dan langkah-langkah yang mudah diikuti, Anda bisa menikmati kudapan lezat ini kapan saja. Selamat mencoba resep ampal jagung enak ini!</p>
+
+        <footer>
+            Terima kasih telah mengunjungi halaman resep kami.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/atom-kocir">Atom Kocir</a></li>
+<li><a href="/bakpao-buah-persik">Bakpao Buah Persik</a></li>
+<li><a href="/streptococcus-adalah">Streptococcus Adalah</a></li>
+<li><a href="/resep-bakwan-jagung-dengan-tepung-serbaguna">Resep Bakwan Jagung Dengan Tepung Serbaguna</a></li>
+<li><a href="/resep-bakwan-udang-renyah">Resep Bakwan Udang Renyah</a></li>
+<li><a href="/bakpia-kukus-tiramisu">Bakpia Kukus Tiramisu</a></li>
+<li><a href="/harga-bakpia-pathok-53">Harga Bakpia Pathok 53</a></li>
+<li><a href="/bakpia-pathok-145-ibu-sri-astuti-malioboro">Bakpia Pathok 145 Ibu Sri Astuti Malioboro</a></li>
+<li><a href="/cara-menggoreng-bakwan-dengan-cetakan">Cara Menggoreng Bakwan Dengan Cetakan</a></li>
+<li><a href="/bumbu-bakwan-goreng-enak">Bumbu Bakwan Goreng Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

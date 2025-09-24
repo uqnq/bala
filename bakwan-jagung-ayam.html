@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Jagung Ayam Lezat & Crispy</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna dasar sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna aksen sejuk */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        img.main-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #004d40; /* Aksen lebih gelap */
+        }
+        .recipe-section {
+            margin-top: 25px;
+            border-top: 1px dashed #b2dfdb;
+            padding-top: 20px;
+        }
+        .recipe-section h2 {
+            color: #00695c;
+            margin-bottom: 15px;
+        }
+        .ingredients li::before, .steps li::before {
+            content: "• ";
+            color: #00796b;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .ingredients li {
+            list-style: none;
+        }
+        .steps li {
+            list-style: none;
+        }
+        .steps li::before {
+             content: counter(step-counter) ". ";
+             counter-increment: step-counter;
+             color: #00796b;
+             font-weight: bold;
+             margin-left: -1em;
+             width: 1.5em; /* Adjust width for number */
+        }
+        .steps {
+            counter-reset: step-counter;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakwan Jagung Ayam: Perpaduan Renyah dan Gurih yang Menggugah Selera</h1>
+
+        <!-- SVG Gambar Utama -->
+        <svg class="main-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#26c6da;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" rx="15" ry="15" fill="url(#grad1)" />
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="40" font-weight="bold" fill="#ffffff" transform="rotate(-10 300 200)">
+                Bakwan Jagung Ayam
+            </text>
+            <!-- Detail kecil untuk nuansa -->
+            <circle cx="50" cy="300" r="10" fill="#ffc107" />
+            <circle cx="150" cy="280" r="8" fill="#ffcc80" />
+            <circle cx="250" cy="320" r="12" fill="#ffe082" />
+            <path d="M 350 100 C 380 80, 420 90, 450 120 S 470 180, 450 220 S 420 250, 380 240 S 340 200, 350 100 Z" fill="#f06292" />
+            <circle cx="480" cy="180" r="6" fill="#f48fb1" />
+            <circle cx="520" cy="220" r="7" fill="#f8bbd0" />
+        </svg>
+        <p>Siapa yang tidak suka jajanan renyah dan gurih? Bakwan jagung, atau yang sering disebut perkedel jagung, adalah salah satu camilan favorit banyak orang Indonesia. Kelezatannya yang khas, dengan sensasi manis jagung pipil yang berpadu dengan tekstur renyah di luar dan lembut di dalam, memang tak terbantahkan. Namun, kali ini kita akan sedikit berinovasi dengan menambahkan sentuhan ayam cincang untuk meningkatkan cita rasa dan nutrisinya. Ya, bakwan jagung ayam hadir sebagai bintang baru di meja makan Anda, siap menggoyang lidah!</p>
+
+        <p>Membuat bakwan jagung ayam ternyata tidak serumit yang dibayangkan. Kuncinya terletak pada pemilihan bahan yang tepat dan teknik menggoreng yang benar agar hasilnya tidak berminyak dan tetap garing. Dengan resep sederhana ini, Anda bisa menyajikan hidangan lezat yang cocok dinikmati sebagai camilan sore hari, pendamping nasi hangat, atau bahkan sebagai lauk pelengkap. Rasanya yang kaya, perpaduan manisnya jagung, gurihnya ayam, serta aroma bumbu rempah yang tercium menggoda, menjadikan bakwan jagung ayam ini pilihan yang sempurna untuk keluarga tercinta.</p>
+
+        <div class="recipe-section">
+            <h2>Bahan-Bahan</h2>
+            <ul class="ingredients">
+                <li>2 bonggol jagung manis, pipil atau serut kasar</li>
+                <li>100 gram daging ayam fillet, cincang halus</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk tekstur lebih renyah)</li>
+                <li>1 butir telur ayam</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya (opsional, jika jagung kurang manis)</li>
+                <li>Daun bawang secukupnya, iris tipis</li>
+                <li>Seledri secukupnya, iris halus (opsional)</li>
+                <li>Air secukupnya (jika adonan terlalu kental)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Cara Membuat</h2>
+            <ol class="steps">
+                <li><strong>Persiapan Adonan:</strong> Dalam mangkuk besar, campurkan jagung pipil/serut, ayam cincang, telur, bawang putih halus, ketumbar bubuk, merica bubuk, garam, gula (jika pakai), daun bawang, dan seledri (jika pakai). Aduk rata.</li>
+                <li><strong>Penambahan Tepung:</strong> Masukkan tepung terigu dan tepung beras ke dalam adonan. Aduk kembali hingga semua bahan tercampur rata dan membentuk adonan yang kental namun masih bisa diaduk. Jika adonan terasa terlalu kental, tambahkan sedikit air.</li>
+                <li><strong>Pemanasan Minyak:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam sempurna saat digoreng.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga bakwan berwarna kuning keemasan dan matang sempurna di kedua sisinya. Jangan menggoreng terlalu banyak dalam satu waktu agar suhu minyak tetap stabil dan bakwan matang merata.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan jagung ayam yang sudah matang, lalu tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Sajikan bakwan jagung ayam selagi hangat bersama sambal favorit Anda, cabai rawit utuh, atau saus cocolan.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Agar Bakwan Renyah Tahan Lama</h2>
+            <p>Untuk mendapatkan bakwan jagung ayam yang renyah sempurna dan tidak lembek, ada beberapa trik yang bisa Anda terapkan. Pertama, penggunaan tepung beras sangat membantu menciptakan tekstur yang lebih garing. Kedua, pastikan adonan tidak terlalu encer. Adonan yang terlalu cair akan membuat bakwan menyerap banyak minyak dan menjadi lembek. Ketiga, jangan lupa untuk menggunakan api sedang saat menggoreng. Api yang terlalu besar akan membuat bagian luar gosong sementara bagian dalamnya belum matang, sedangkan api yang terlalu kecil akan membuat bakwan menyerap minyak berlebih. Menambahkan sedikit maizena juga bisa menjadi alternatif untuk menambah kerenyahan.</p>
+            <p>Keberadaan ayam cincang dalam resep ini tidak hanya menambah rasa gurih yang kaya, tetapi juga memberikan sumber protein yang baik, menjadikannya camilan yang lebih bernutrisi. Perpaduan tekstur jagung yang sedikit berair, renyahnya lapisan luar, serta kenyalnya daging ayam, menciptakan pengalaman makan yang sangat memuaskan. Selamat mencoba resep bakwan jagung ayam ini dan nikmati kelezatannya bersama keluarga!</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-mama">Bakpia Mama</a></li>
+<li><a href="/cara-membuat-bakpao-untuk-dijual">Cara Membuat Bakpao Untuk Dijual</a></li>
+<li><a href="/resep-ampal-jagung-jawa">Resep Ampal Jagung Jawa</a></li>
+<li><a href="/bakso-mercon-bakso-mercon">Bakso Mercon Bakso Mercon</a></li>
+<li><a href="/cara-bikin-sambal-pentol-mercon">Cara Bikin Sambal Pentol Mercon</a></li>
+<li><a href="/bahan-bahan-buat-bakso-mercon">Bahan Bahan Buat Bakso Mercon</a></li>
+<li><a href="/bakpia-nayla">Bakpia Nayla</a></li>
+<li><a href="/bakpia-25-pathuk">Bakpia 25 Pathuk</a></li>
+<li><a href="/cara-buat-bakwan-keladi">Cara Buat Bakwan Keladi</a></li>
+<li><a href="/resep-bala2-sayur">Resep Bala2 Sayur</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

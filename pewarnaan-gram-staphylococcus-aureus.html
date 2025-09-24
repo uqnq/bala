@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pewarnaan Gram Staphylococcus Aureus</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4FC3F7; /* Biru cerah */
+            --secondary-color: #81C784; /* Hijau sejuk */
+            --text-color: #333;
+            --bg-color: #E0F7FA; /* Biru muda sangat pucat */
+            --card-bg: #FFFFFF;
+            --border-color: #B0BEC5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px 0;
+        }
+
+        .content-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        h2, h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        img.hero-image {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .step {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: auto;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 0 15px;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+            .content-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Pewarnaan Gram Staphylococcus Aureus</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content-card">
+                <img class="hero-image" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgODAwIDQwMCI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiNFNjYwQzRGIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIHRleHQtYW5jaG9yPSJtaWRkbGUgY2VudGVyIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNjAiIGZpbGw9IiNGRkYiPldhcm5hIEdyYW08L3RleHQ+PHRleHQgeD0iNTAlIiB5PSI1MCUiIHRleHQtYW5jaG9yPSJtaWRkbGUgY2VudGVyIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDAiIGZpbGw9IiMzMzMiIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIyIiBjbGlwLXByZXNlcnZlPSJpbmhlcml0IiBmb250LXdlaWdodD0iYm9sZCI+U3RhcGh5bG9jb2NjdXMgQXVyZXVzPC90ZXh0PjxwYXRoIGQ9Ik0yMDAgMjU1QzIwMCAzMzcuNSAyNjguNSAzODAgMzUwIDM4MEM0MzEuNSAzODAgNTAwIDMzNy41IDUwMCAyNTVDNDAwIDI1NSA1NjIuNSAxODMuNSA1NjIuNSAxMDJDMjAwIDMyNyAyMDAgMjU1IDIwMCAyNTVaIiBmaWxsPSIjRkZGIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iOCIvPjxwYXRoIGQ9Ik0yMTAgMjc1QzIxMCAzMzcgMjUzLjUgMzg1IDMwMCAzODVDMzQ2LjUgMzg1IDM4NSAzMzcgMzg1IDM1MEMzODUgMzUwIDMyNyAyODQgMjU1IDI4MkMyNTMgMjg0IDMxMCAyNzUgMjEwIDI3NVoiIGZpbGw9IiMzMzMiIHN0cm9rZT0iI0ZGRiIgc3R rva2UtLXdpZHRoPSIxMCIvPjxwYXRoIGQ9Ik00MjAgMjcwQzQyMCAzMjggNDY0IDM4MCA1MDAgMzhDNTQ2IDM4MCA1ODAgMzI4IDU4MCAyNzBDNTgwIDIxMCA1MjQgMTYyIDQ3MiAxNjJDNDIwIDE2MiA0MjAgMjEwIDQyMCAyNzBaIiBmaWxsPSIjMzMzIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMTAiLz48L3N2Zz4=" alt="Ilustrasi bakteri Staphylococcus Aureus yang diwarnai Gram">
+
+                <h2>Pentingnya Pewarnaan Gram</h2>
+                <p>
+                    Pewarnaan Gram adalah salah satu teknik diferensiasi bakteri yang paling fundamental dan penting dalam mikrobiologi. Teknik ini memungkinkan kita untuk membedakan bakteri berdasarkan komposisi dinding sel mereka, yang terbagi menjadi dua kelompok utama: bakteri Gram-positif dan bakteri Gram-negatif. Perbedaan ini tidak hanya membantu dalam identifikasi awal bakteri, tetapi juga memberikan petunjuk penting mengenai kerentanan bakteri terhadap antibiotik tertentu.
+                </p>
+
+                <h2>Memahami Staphylococcus Aureus</h2>
+                <p>
+                    Dalam konteks pewarnaan Gram, <strong>Staphylococcus aureus</strong> adalah bakteri yang sangat menarik perhatian. Bakteri ini termasuk dalam kelompok bakteri Gram-positif. Ini berarti bahwa ketika melalui prosedur pewarnaan Gram, sel bakteri Staphylococcus aureus akan mempertahankan kompleks pewarna kristal violet-iodin dan akan tampak berwarna ungu di bawah mikroskop.
+                </p>
+                <p>
+                    Secara morfologi, Staphylococcus aureus adalah kokus (berbentuk bulat) yang tersusun dalam kelompok yang menyerupai tandan anggur. Keberadaannya bisa menjadi komensal (tidak berbahaya) pada kulit dan selaput lendir manusia, namun juga dapat menjadi patogen oportunistik yang menyebabkan berbagai infeksi, mulai dari infeksi kulit ringan seperti bisul dan impetigo, hingga infeksi yang lebih serius seperti pneumonia, endokarditis, septikemia, dan sindrom syok toksik.
+                </p>
+
+                <h2>Proses Pewarnaan Gram untuk Staphylococcus Aureus</h2>
+                <p>
+                    Prosedur standar pewarnaan Gram melibatkan beberapa langkah kunci:
+                </p>
+                <ul>
+                    <li>
+                        <span class="step">1. Fiksasi:</span> Keringkan dan panaskan sampel bakteri pada kaca objek.
+                    </li>
+                    <li>
+                        <span class="step">2. Pewarnaan Primer:</span> Celupkan kaca objek ke dalam larutan kristal violet, yang mewarnai semua bakteri menjadi ungu.
+                    </li>
+                    <li>
+                        <span class="step">3. Mordant:</span> Tambahkan larutan iodin (biasanya Lugol's iodine). Iodin membentuk kompleks dengan kristal violet, menjadikannya lebih sulit larut.
+                    </li>
+                    <li>
+                        <span class="step">4. Dekolorisasi:</span> Gunakan alkohol atau aseton untuk menghilangkan pewarna. Pada bakteri Gram-positif seperti Staphylococcus aureus, dinding sel yang tebal akan menahan kompleks kristal violet-iodin dan tetap berwarna ungu. Sementara itu, pada bakteri Gram-negatif, lapisan peptidoglikan yang tipis dan adanya lapisan luar membran membuat pewarna mudah terlepas.
+                    </li>
+                    <li>
+                        <span class="step">5. Pewarnaan Kontras:</span> Gunakan pewarna penyeimbang seperti safranin. Safranin adalah pewarna merah muda. Bakteri yang telah kehilangan pewarna primer selama dekolorisasi akan menyerap safranin dan tampak merah muda. Bakteri Gram-positif yang tetap ungu tidak akan terpengaruh oleh safranin.
+                    </li>
+                </ul>
+
+                <h2>Interpretasi Hasil</h2>
+                <p>
+                    Setelah proses ini selesai, spesimen diamati di bawah mikroskop. Jika kita melihat kokus yang tersusun dalam kelompok dan berwarna ungu, ini adalah indikasi kuat adanya Staphylococcus aureus. Jika bakteri tampak merah muda, maka kemungkinan besar adalah bakteri Gram-negatif.
+                </p>
+                <p>
+                    Kemampuan untuk mengidentifikasi Staphylococcus aureus secara cepat melalui pewarnaan Gram sangat krusial dalam pengaturan klinis. Hal ini memungkinkan dokter untuk memulai pengobatan yang tepat dengan cepat, yang seringkali melibatkan penggunaan antibiotik yang efektif melawan bakteri Gram-positif. Namun, penting untuk diingat bahwa pewarnaan Gram adalah teknik identifikasi awal. Konfirmasi lebih lanjut, seperti uji biokimia atau analisis molekuler, mungkin diperlukan untuk identifikasi spesies yang definitif dan penentuan profil resistensi antibiotik.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Informasi Mikrobiologi</p>
+        </div>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/harga-bakpiaku-kaliurang">Harga Bakpiaku Kaliurang</a></li>
+<li><a href="/bakso-mercon-mas-gendut">Bakso Mercon Mas Gendut</a></li>
+<li><a href="/perkedel-jagung-bahan">Perkedel Jagung Bahan</a></li>
+<li><a href="/expired-bakpia-pathok">Expired Bakpia Pathok</a></li>
+<li><a href="/ceker-mercon-bakso">Ceker Mercon Bakso</a></li>
+<li><a href="/bakpia-tuna">Bakpia Tuna</a></li>
+<li><a href="/cara-membuat-bakpao-mudah">Cara Membuat Bakpao Mudah</a></li>
+<li><a href="/bakpia-matur-nuwun">Bakpia Matur Nuwun</a></li>
+<li><a href="/cara-membuat-bakwan-kering">Cara Membuat Bakwan Kering</a></li>
+<li><a href="/bakpia-wijaya-511">Bakpia Wijaya 511</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

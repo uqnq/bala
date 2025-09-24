@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakpao Karakter Kartun Lucu & Lezat!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9ff; /* Warna latar belakang sejuk dan cerah */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%); /* Gradien warna cerah */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            padding: 30px 25px;
+        }
+        .content h2 {
+            color: #2c7a7b; /* Warna aksen yang menenangkan */
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.8em;
+        }
+        .content p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .character-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            justify-items: center;
+        }
+        .character-item {
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .character-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(44, 122, 123, 0.2);
+        }
+        .character-item img {
+            width: 100%;
+            max-width: 120px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .character-item p {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #555;
+            font-weight: bold;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%); /* Gradien cerah untuk CTA */
+            border-radius: 10px;
+        }
+        .cta h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .cta p {
+            font-size: 1.1em;
+            color: #2d3748;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e2f3ff; /* Warna lembut di footer */
+            color: #555;
+            font-size: 0.9em;
+            border-top: 1px solid #d1e9f5;
+        }
+
+        /* SVG Icon (Contoh Sederhana) */
+        .svg-icon-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            .content {
+                padding: 25px 20px;
+            }
+            .content h2 {
+                font-size: 1.6em;
+            }
+            .character-gallery {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+            .character-item img {
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bakpao Karakter Kartun: Lezat & Menggemaskan!</h1>
+        </header>
+
+        <div class="content">
+            <div class="svg-icon-container">
+                <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM12 7c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm0 5c-.552 0-1-.448-1-1s.448-1 1-1 1 .448 1 1-.448 1-1 1zm1.878 4.087C13.254 16.854 12.651 17 12 17c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3c0 .651-.146 1.254-.417 1.813C14.743 15.976 13.555 16.5 12 16.5c-1.445 0-2.743-.658-3.583-1.687A5.964 5.964 0 0 1 8 13c0-3.309 2.691-6 6-6s6 2.691 6 6c0 1.054-.329 2.037-.878 2.813z" fill="#2c7a7b"/>
+                </svg>
+            </div>
+            <p>Siapa yang tidak suka makanan manis yang tampilannya tak kalah menggemaskan? Kini, hadir bakpao karakter kartun yang siap menyemarakkan momen ngemil Anda. Terbuat dari adonan pilihan yang lembut dan diisi dengan aneka rasa manis yang menggugah selera, bakpao ini bukan hanya sekadar camilan, tapi juga sebuah karya seni kuliner yang membawa keceriaan.</p>
+
+            <h2>Menghadirkan Fantasi Menjadi Kenyataan</h2>
+            <p>Bayangkan menyantap bakpao berbentuk karakter kartun favorit Anda, seperti Mickey Mouse yang ceria, Doraemon yang setia, atau bahkan Pikachu yang menggemaskan. Setiap gigitan bakpao karakter kartun adalah pengalaman menyenangkan yang membangkitkan imajinasi, baik bagi anak-anak maupun para penggemar kartun dari segala usia. Bentuknya yang detail dan warnanya yang cerah dibuat dengan hati-hati menggunakan pewarna alami yang aman, sehingga Anda bisa menikmati kelezatan tanpa khawatir.</p>
+
+            <p>Bahan-bahan berkualitas tinggi menjadi prioritas utama dalam pembuatan bakpao karakter kartun ini. Adonan yang empuk dan tidak mudah pecah berpadu sempurna dengan isian melimpah yang bervariasi. Mulai dari isian cokelat klasik yang meleleh di mulut, selai kacang yang gurih, hingga isian stroberi yang manis segar, semua disiapkan untuk memberikan sensasi rasa yang tak terlupakan. Anda bisa memilih isian yang paling sesuai dengan selera, atau mencoba kombinasi rasa untuk petualangan kuliner yang lebih seru.</p>
+
+            <div class="character-gallery">
+                <div class="character-item">
+                    <img src="https://via.placeholder.com/120/FFC0CB/000000?text=Bear" alt="Bakpao Beruang Lucu">
+                    <p>Bakpao Beruang</p>
+                </div>
+                <div class="character-item">
+                    <img src="https://via.placeholder.com/120/ADD8E6/000000?text=Bunny" alt="Bakpao Kelinci Gemas">
+                    <p>Bakpao Kelinci</p>
+                </div>
+                <div class="character-item">
+                    <img src="https://via.placeholder.com/120/90EE90/000000?text=Dino" alt="Bakpao Dinosaurus Unik">
+                    <p>Bakpao Dinosaurus</p>
+                </div>
+                <div class="character-item">
+                    <img src="https://via.placeholder.com/120/FFB6C1/000000?text=Kitty" alt="Bakpao Kucing Imut">
+                    <p>Bakpao Kucing</p>
+                </div>
+            </div>
+
+            <h2>Lebih dari Sekadar Camilan</h2>
+            <p>Bakpao karakter kartun sangat cocok dijadikan bekal sekolah yang menarik, kejutan di pesta ulang tahun, atau sekadar teman setia saat bersantai di rumah. Kehadirannya yang unik pasti akan membuat siapa saja tersenyum. Proses pembuatannya yang teliti memastikan setiap bakpao memiliki detail yang presisi, menghidupkan karakter-karakter yang Anda sukai.</p>
+
+            <p>Bagi Anda yang mencari ide hadiah atau ingin membuat acara semakin berkesan, bakpao karakter kartun bisa menjadi pilihan yang brilian. Pesan dalam jumlah tertentu untuk meramaikan acara spesial Anda, atau sekadar memanjakan diri dengan kelezatan yang tampil beda. Jadikan setiap momen lebih berwarna dan menyenangkan dengan bakpao karakter kartun yang tak hanya memanjakan lidah, tetapi juga mata.</p>
+
+            <div class="cta">
+                <h3>Siap Mencoba Kelezatan & Keceriaan?</h3>
+                <p>Temukan berbagai pilihan karakter dan rasa bakpao yang siap membuat harimu lebih menyenangkan. Jangan lewatkan sensasi unik dan rasa nikmatnya!</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/membuat-weci-sederhana">Membuat Weci Sederhana</a></li>
+<li><a href="/bakpia-hikmah">Bakpia Hikmah</a></li>
+<li><a href="/perkedel-jagung-mpasi">Perkedel Jagung Mpasi</a></li>
+<li><a href="/bakpia-kereta-api">Bakpia Kereta Api</a></li>
+<li><a href="/bumbu-bakwan-jagung-sederhana">Bumbu Bakwan Jagung Sederhana</a></li>
+<li><a href="/cara-bikin-bakwan-jagung-manis">Cara Bikin Bakwan Jagung Manis</a></li>
+<li><a href="/cara-buat-bak-pao">Cara Buat Bak Pao</a></li>
+<li><a href="/racikan-bakwan">Racikan Bakwan</a></li>
+<li><a href="/harga-bakpia-25-terbaru">Harga Bakpia 25 Terbaru</a></li>
+<li><a href="/bakwan-tahu-mie">Bakwan Tahu Mie</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

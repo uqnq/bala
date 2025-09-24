@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Bakwan Crispy Sayuran: Resep Mudah & Enak">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <title>Bakwan Crispy Sayuran: Resep Mudah & Enak</title>
+    <style>
+        :root {
+            --color-primary: #87CEEB; /* Sky Blue */
+            --color-secondary: #90EE90; /* Light Green */
+            --color-accent: #FFD700; /* Gold */
+            --color-text-dark: #333;
+            --color-text-light: #fff;
+            --font-family: 'Arial', sans-serif;
+            --spacing: 1rem;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: var(--spacing);
+            background-color: #f0f8ff; /* Alice Blue */
+            color: var(--color-text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: var(--spacing) auto;
+            background-color: var(--color-text-light);
+            padding: calc(var(--spacing) * 1.5);
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: calc(var(--spacing) * 1.5);
+        }
+
+        h2 {
+            font-size: 1.7em;
+            border-bottom: 2px dashed var(--color-secondary);
+            padding-bottom: calc(var(--spacing) / 2);
+            display: inline-block;
+        }
+
+        .intro-text {
+            font-style: italic;
+            color: #555;
+            text-align: center;
+            margin-bottom: calc(var(--spacing) * 1.5);
+        }
+
+        .content-section {
+            margin-bottom: calc(var(--spacing) * 2);
+        }
+
+        p {
+            margin-bottom: var(--spacing);
+        }
+
+        ul, ol {
+            margin-bottom: var(--spacing);
+            padding-left: calc(var(--spacing) * 1.5);
+        }
+
+        li {
+            margin-bottom: calc(var(--spacing) / 2);
+        }
+
+        .highlight {
+            color: var(--color-secondary);
+            font-weight: bold;
+        }
+
+        .recipe-steps {
+            background-color: #e0ffff; /* Light Cyan */
+            padding: calc(var(--spacing) * 1.2);
+            border-radius: 10px;
+            border-left: 5px solid var(--color-accent);
+        }
+
+        .recipe-steps h3 {
+            color: var(--color-text-dark);
+            margin-top: 0;
+            text-align: left;
+        }
+
+        .recipe-steps ol {
+            list-style-type: decimal;
+            padding-left: calc(var(--spacing) * 2);
+        }
+
+        .recipe-steps li {
+            margin-bottom: calc(var(--spacing));
+        }
+
+        .tip {
+            background-color: var(--color-secondary);
+            color: var(--color-text-light);
+            padding: var(--spacing);
+            border-radius: 10px;
+            margin-top: var(--spacing);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .recipe-ingredients {
+            background-color: #f5f5dc; /* Beige */
+            padding: var(--spacing);
+            border-radius: 10px;
+            margin-top: var(--spacing);
+        }
+
+        .recipe-ingredients ul {
+            list-style-type: disc;
+            padding-left: calc(var(--spacing) * 1.5);
+        }
+
+        .recipe-ingredients li {
+            margin-bottom: calc(var(--spacing) / 2);
+        }
+
+        .svg-container {
+            text-align: center;
+            margin-bottom: var(--spacing);
+        }
+
+        .svg-container svg {
+            width: 100%;
+            max-width: 300px; /* Adjust as needed */
+            height: auto;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: var(--spacing);
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            body {
+                padding: calc(var(--spacing) / 2);
+            }
+            .container {
+                padding: var(--spacing);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Bakwan Crispy Sayuran: Kelezatan Renyah di Setiap Gigitan</h1>
+        <p class="intro-text">Temukan resep mudah dan tips membuat bakwan sayuran yang super renyah, cocok untuk camilan atau lauk pendamping.</p>
+
+        <div class="svg-container">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi Bakwan Crispy Sayuran">
+                <!-- Bagian ini akan digambar sebagai ilustrasi bakwan crispy -->
+                <style>
+                    .vegetable { fill: #7FFF00; } /* Chartreuse */
+                    .batter { fill: #FFEBCD; } /* Blanched Almond */
+                    .crispy-edge { fill: #FFD700; } /* Gold */
+                    .shadow { fill: rgba(0,0,0,0.1); }
+                </style>
+                <!-- Bentuk dasar bakwan -->
+                <circle cx="50" cy="50" r="40" class="batter"/>
+                <!-- Potongan sayuran -->
+                <path d="M30 30 L40 20 L50 30 Z" class="vegetable"/>
+                <path d="M60 30 L70 20 L60 40 Z" class="vegetable"/>
+                <path d="M45 50 L55 60 L40 65 Z" class="vegetable"/>
+                <path d="M55 50 L65 60 L70 55 Z" class="vegetable"/>
+                <!-- Efek crispy -->
+                <circle cx="50" cy="50" r="42" fill="none" stroke="#FFD700" stroke-width="3" stroke-dasharray="5 5"/>
+                <!-- Bayangan -->
+                <ellipse cx="50" cy="85" rx="35" ry="10" class="shadow" transform="rotate(-5 50 85)"/>
+            </svg>
+        </div>
+
+        <div class="content-section">
+            <h2>Mengapa Bakwan Crispy Begitu Menggoda?</h2>
+            <p>Siapa yang bisa menolak kelezatan bakwan? Khususnya bakwan sayuran, hidangan klasik yang selalu berhasil menghangatkan suasana dan memanjakan lidah. Kombinasi antara sayuran segar yang melimpah, adonan tepung yang gurih, dan yang terpenting, teksturnya yang <span class="highlight">crispy</span> di luar namun tetap lembut di dalam, menjadikannya camilan favorit sepanjang masa.</p>
+            <p>Bakwan crispy sayuran bukan sekadar gorengan biasa. Ia adalah perpaduan sempurna antara kesehatan dan kenikmatan. Dengan beragam jenis sayuran yang digunakan, bakwan ini dapat menjadi cara menyenangkan untuk meningkatkan asupan serat dan vitamin harian Anda, terutama bagi anak-anak yang mungkin enggan makan sayur.</p>
+        </div>
+
+        <div class="content-section recipe-ingredients">
+            <h2>Bahan Utama untuk Bakwan Crispy Sempurna</h2>
+            <ul>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 butir telur</li>
+                <li>200-250 ml air dingin (sesuaikan kekentalan adonan)</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+            <h3>Aneka Sayuran Pilihan:</h3>
+            <ul>
+                <li>100 gram kol, iris tipis</li>
+                <li>1 buah wortel ukuran sedang, parut kasar atau iris korek api</li>
+                <li>50 gram tauge, buang akarnya</li>
+                <li>2 batang daun bawang, iris halus</li>
+                <li>(Opsional: buncis iris tipis, labu siam parut, brokoli kuntum kecil)</li>
+            </ul>
+        </div>
+
+        <div class="content-section recipe-steps">
+            <h2>Langkah Mudah Membuat Bakwan Crispy Sayuran</h2>
+            <ol>
+                <li>
+                    <span class="highlight">Siapkan Adonan Dasar:</span> Dalam mangkuk besar, campurkan tepung terigu dan tepung beras. Tambahkan garam, merica, dan kaldu bubuk jika menggunakan. Aduk rata.
+                </li>
+                <li>
+                    <span class="highlight">Campurkan Telur dan Air:</span> Kocok telur di mangkuk terpisah, lalu masukkan ke dalam campuran tepung. Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan jangan terlalu kental agar tidak tebal, dan jangan terlalu encer agar sayuran menempel.
+                </li>
+                <li>
+                    <span class="highlight">Masukkan Sayuran:</span> Masukkan semua sayuran yang sudah diiris/diparut ke dalam adonan. Aduk perlahan hingga semua sayuran terbalut rata dengan adonan. Pastikan sayuran terdistribusi merata.
+                </li>
+                <li>
+                    <span class="highlight">Panaskan Minyak:</span> Siapkan wajan datar atau penggorengan dengan minyak goreng yang cukup banyak. Panaskan minyak dengan api sedang cenderung besar. Minyak yang panas adalah kunci kerenyahan.
+                </li>
+                <li>
+                    <span class="highlight">Goreng Bakwan:</span> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng beberapa bakwan sekaligus, jangan terlalu penuh agar matang merata dan crispy. Biarkan sisi bawah agak kokoh sebelum dibalik.
+                </li>
+                <li>
+                    <span class="highlight">Balik dan Tiriskan:</span> Goreng hingga kedua sisi berwarna kuning keemasan dan terlihat renyah. Angkat bakwan menggunakan saringan atau penjepit, tiriskan minyaknya dengan baik. Letakkan di atas tisu dapur penyerap minyak.
+                </li>
+                <li>
+                    <span class="highlight">Sajikan:</span> Bakwan crispy sayuran paling nikmat disajikan selagi hangat. Sajikan dengan cabai rawit, sambal kacang, atau saus favorit Anda.
+                </li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <p>Tips Kerenyahan Ekstra: Gunakan air sangat dingin atau air es untuk adonan, dan jangan memasukkan terlalu banyak adonan sekaligus ke dalam minyak panas agar suhu minyak tidak turun drastis.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Variasi dan Kreasi Bakwan Sayuran</h2>
+            <p>Kreativitas dalam membuat bakwan sayuran memang tak terbatas. Anda bisa menambahkan udang cincang untuk rasa yang lebih gurih, jamur, atau bahkan jagung manis pipil. Kunci utamanya adalah keseimbangan rasa dan tekstur. Pastikan sayuran tidak terlalu basah agar adonan bisa menempel sempurna dan menghasilkan kerenyahan maksimal.</p>
+            <p>Penyajian bakwan crispy sayuran juga bisa ditingkatkan. Selain ditemani cabai rawit segar, Anda bisa mencoba membuatnya menjadi isian sandwich atau topping pada mi instan. Fleksibilitasnya menjadikannya pilihan camilan yang selalu bisa diandalkan di berbagai kesempatan.</p>
+        </div>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-tek-kie">Bakpao Tek Kie</a></li>
+<li><a href="/cara-membuat-bakwan-teri-basah">Cara Membuat Bakwan Teri Basah</a></li>
+<li><a href="/bakpia-cendana">Bakpia Cendana</a></li>
+<li><a href="/cara-membuat-bakwan-tempe-crispy">Cara Membuat Bakwan Tempe Crispy</a></li>
+<li><a href="/bakpao-china">Bakpao China</a></li>
+<li><a href="/bakwan-jagung-daun-jeruk">Bakwan Jagung Daun Jeruk</a></li>
+<li><a href="/bakwan-viral">Bakwan Viral</a></li>
+<li><a href="/bale-tottenham">Bale Tottenham</a></li>
+<li><a href="/amerika-serikat-vs-wales-skor">Amerika Serikat Vs Wales Skor</a></li>
+<li><a href="/cara-membuat-bakwan-udang-yang-enak">Cara Membuat Bakwan Udang Yang Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

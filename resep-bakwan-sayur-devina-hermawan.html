@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Sayur Lezat ala Devina Hermawan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            color: #00796b; /* Warna header sejuk */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Batasi lebar gambar */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients, .steps {
+            background-color: #f8f9fa; /* Latar sedikit berbeda untuk bagian resep */
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .ingredients ul, .steps ol {
+            padding-left: 30px;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #004d40; /* Warna teks tebal yang kontras */
+        }
+        a {
+            color: #00796b;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .recipe-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Sayur Lezat ala Devina Hermawan</h1>
+
+        <!-- SVG Gambar Bakwan Sayur -->
+        <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bakwanSayurTitle">
+            <title id="bakwanSayurTitle">Ilustrasi bakwan sayur renyah dengan garnish daun bawang</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#81c784;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <!-- Latar Belakang Kecoklatan -->
+            <rect width="600" height="400" fill="#ffe0b2"/>
+
+            <!-- Beberapa Bakwan -->
+            <g transform="translate(50, 150)">
+                <path d="M 0 0 Q 50 -20 100 0 T 200 0 T 300 0 T 350 -20 T 400 0 Q 350 50 300 70 T 200 70 T 100 70 T 50 50 T 0 0 Z" fill="#ffc107" stroke="#f57f17" stroke-width="3"/>
+                <circle cx="30" cy="15" r="10" fill="#f57f17" opacity="0.8"/>
+                <circle cx="70" cy="25" r="8" fill="#f57f17" opacity="0.7"/>
+                <circle cx="120" cy="10" r="12" fill="#f57f17" opacity="0.9"/>
+                <circle cx="160" cy="20" r="9" fill="#f57f17" opacity="0.75"/>
+            </g>
+            <g transform="translate(200, 100)">
+                <path d="M 0 0 Q 40 -15 80 0 T 160 0 T 200 0 T 240 -15 T 280 0 Q 240 40 200 55 T 120 55 T 40 55 T 0 40 T 0 0 Z" fill="#f9a825" stroke="#e65100" stroke-width="2"/>
+                <circle cx="20" cy="10" r="7" fill="#e65100" opacity="0.7"/>
+                <circle cx="50" cy="15" r="6" fill="#e65100" opacity="0.6"/>
+                <circle cx="90" cy="8" r="9" fill="#e65100" opacity="0.8"/>
+                <circle cx="130" cy="12" r="7" fill="#e65100" opacity="0.72"/>
+            </g>
+             <g transform="translate(400, 180)">
+                <path d="M 0 0 Q 30 -10 60 0 T 120 0 T 150 -10 T 180 0 Q 150 30 120 40 T 60 40 T 0 30 T 0 0 Z" fill="#ffab00" stroke="#bf360c" stroke-width="2"/>
+                <circle cx="15" cy="7" r="5" fill="#bf360c" opacity="0.6"/>
+                <circle cx="35" cy="10" r="4" fill="#bf360c" opacity="0.5"/>
+                <circle cx="55" cy="5" r="6" fill="#bf360c" opacity="0.7"/>
+            </g>
+
+            <!-- Sayuran (Garnish) -->
+            <g transform="translate(550, 350) rotate(-20)">
+                <path d="M 0 0 L 10 -15 L 20 0 L 10 10 Z" fill="#4caf50"/>
+                <circle cx="10" cy="8" r="3" fill="#388e3c"/>
+            </g>
+            <g transform="translate(530, 370) rotate(10)">
+                <path d="M 0 0 L 10 -15 L 20 0 L 10 10 Z" fill="#4caf50"/>
+                <circle cx="10" cy="8" r="3" fill="#388e3c"/>
+            </g>
+             <g transform="translate(570, 330) rotate(-30)">
+                <path d="M 0 0 L 8 -12 L 16 0 L 8 8 Z" fill="#4caf50"/>
+            </g>
+        </svg>
+
+        <p>Siapa yang tidak suka dengan kriuknya bakwan sayur yang hangat dan gurih? Hidangan klasik Indonesia ini selalu menjadi favorit di berbagai suasana, mulai dari teman ngopi sore hingga lauk pendamping nasi. Kali ini, kita akan mengintip rahasia membuat bakwan sayur yang renyah sempurna dan beraroma menggugah selera ala koki ternama, <strong>Devina Hermawan</strong>.</p>
+
+        <p>Resep bakwan sayur ala Devina Hermawan ini menawarkan kombinasi bahan yang tepat dan teknik penggorengan yang menghasilkan tekstur luar yang sangat garing, namun bagian dalamnya tetap lembut dan kaya rasa. Kunci utamanya terletak pada pemilihan tepung, komposisi sayuran, dan sedikit trik agar bakwan tidak lembek setelah digoreng.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan untuk Bakwan Sayur</h2>
+            <ul>
+                <li>250 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (untuk tekstur lebih renyah)</li>
+                <li>1 sendok teh kaldu bubuk</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>1 buah wortel ukuran sedang, iris korek api</li>
+                <li>50 gram tauge (opsional, untuk menambah tekstur)</li>
+                <li>Air secukupnya (sekitar 200-250 ml)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Cara Membuat Bakwan Sayur Renyah</h2>
+            <ol>
+                <li>Dalam wadah, campurkan tepung terigu, tepung beras, kaldu bubuk, garam, dan merica bubuk. Aduk rata.</li>
+                <li>Masukkan bawang putih halus, irisan daun bawang, kol, dan wortel ke dalam campuran tepung. Aduk sebentar hingga sayuran sedikit terlapisi tepung.</li>
+                <li>Tuangkan air sedikit demi sedikit sambil terus diaduk hingga membentuk adonan yang kental tapi tidak terlalu padat. Pastikan tidak ada gumpalan tepung. Konsistensi adonan ini penting agar bakwan renyah.</li>
+                <li>Jika menggunakan tauge, masukkan tauge sesaat sebelum menggoreng agar tidak terlalu layu.</li>
+                <li>Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang cenderung besar. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li>Ambil satu sendok sayur adonan, lalu masukkan ke dalam minyak panas. Ratakan sedikit agar tidak terlalu tebal. Goreng hingga salah satu sisi berwarna kuning keemasan.</li>
+                <li>Balik bakwan dan goreng sisi lainnya hingga matang dan berwarna cokelat keemasan.</li>
+                <li>Angkat bakwan dan tiriskan di atas kertas tisu untuk menyerap kelebihan minyak.</li>
+                <li>Ulangi proses hingga semua adonan habis.</li>
+            </ol>
+        </div>
+
+        <p>Tips tambahan dari Devina Hermawan untuk bakwan yang super renyah adalah jangan terlalu banyak mengaduk adonan setelah air masuk, dan segera goreng adonan begitu tercampur rata. Hindari menggoreng bakwan terlalu lama dengan api kecil karena akan membuatnya menyerap banyak minyak dan menjadi lembek.</p>
+
+        <p>Bakwan sayur hasil resep ini sangat cocok dinikmati selagi hangat dengan cocolan sambal kacang, saus sambal, atau bahkan dimakan begitu saja. Rasanya yang gurih, teksturnya yang renyah di luar namun lembut di dalam, serta aroma sayuran yang segar, menjadikan hidangan ini sempurna untuk menemani momen apa pun. Selamat mencoba kreasi bakwan sayur ala Devina Hermawan yang pasti akan membuat Anda ketagihan!</p>
+
+        <p>Anda juga bisa berkreasi dengan menambahkan sayuran lain seperti buncis, labu siam, atau bahkan sedikit udang kecil untuk variasi rasa. Kunci kelezatan bakwan adalah keseimbangan bumbu dan kesegaran bahan.</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-perkedel-jagung-gurih">Cara Membuat Perkedel Jagung Gurih</a></li>
+<li><a href="/cara-memasak-bakso-mercon">Cara Memasak Bakso Mercon</a></li>
+<li><a href="/bakso-beranak-telur">Bakso Beranak Telur</a></li>
+<li><a href="/balasan-alhamdulillah-ketika-bersin">Balasan Alhamdulillah Ketika Bersin</a></li>
+<li><a href="/bakwan-dempo-halal">Bakwan Dempo Halal</a></li>
+<li><a href="/bahan-membuat-perkedel-jagung">Bahan Membuat Perkedel Jagung</a></li>
+<li><a href="/bakteri-non-patogen">Bakteri Non Patogen</a></li>
+<li><a href="/resep-membuat-bakwan-sayur-renyah">Resep Membuat Bakwan Sayur Renyah</a></li>
+<li><a href="/bakpao-asli">Bakpao Asli</a></li>
+<li><a href="/mikrobiologi-pertanian">Mikrobiologi Pertanian</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

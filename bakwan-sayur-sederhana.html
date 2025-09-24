@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resep bakwan sayur sederhana yang lezat dan renyah. Cocok untuk camilan atau teman makan. Mudah dibuat di rumah.">
+    <title>Bakwan Sayur Sederhana: Resep Lezat & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk */
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue - warna cerah tapi sejuk */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .article-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .article-header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content-section {
+            margin-bottom: 30px;
+            padding: 0 15px; /* Agar teks tidak terlalu mepet pinggir di mobile */
+        }
+        .content-section h2 {
+            color: #5f9ea0; /* CadetBlue - variasi warna sejuk */
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .content-section p, .content-section ul, .content-section ol {
+            margin-bottom: 15px;
+        }
+        .content-section ul li, .content-section ol li {
+            margin-bottom: 8px;
+        }
+        .ingredients li, .steps li {
+            background-color: #e0ffff; /* LightCyan - warna latar belakang item yang cerah */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            border-left: 5px solid #4682b4; /* Garis pinggir warna cerah */
+        }
+        strong {
+            color: #2e8b57; /* SeaGreen - untuk penekanan warna cerah */
+        }
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e0ffff;
+            border-radius: 8px;
+        }
+        .cta p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .cta a {
+            display: inline-block;
+            background-color: #4682b4;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta a:hover {
+            background-color: #2c3e50;
+        }
+
+        /* Media Queries untuk tampilan mobile yang responsif */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .content-section {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="article-header">
+            <h1>Bakwan Sayur Sederhana: Si Renyah Penggugah Selera</h1>
+
+            <!-- SVG Gambar Bakwan Sayur -->
+            <svg width="100%" height="250" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakwanTitle">
+                <title id="bakwanTitle">Ilustrasi Bakwan Sayur Sederhana</title>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f0e68c;stop-opacity:1" /> <!-- Khaki -->
+                        <stop offset="100%" style="stop-color:#daa520;stop-opacity:1" /> <!-- Goldenrod -->
+                    </linearGradient>
+                </defs>
+                <!-- Latar belakang yang sedikit bertekstur -->
+                <rect width="100%" height="100%" fill="#fffaf0" /> <!-- FloralWhite -->
+
+                <!-- Beberapa Bakwan yang bertumpuk -->
+                <g transform="translate(50, 100) rotate(-10)">
+                    <path d="M 0 0 Q 50 -50 100 0 T 200 0 Q 150 50 100 100 Q 50 50 0 0 z" fill="url(#grad1)" stroke="#b8860b" stroke-width="3"/>
+                    <circle cx="50" cy="30" r="8" fill="#228b22"/> <!-- Hijau -->
+                    <circle cx="80" cy="50" r="7" fill="#008000"/> <!-- Hijau Tua -->
+                    <circle cx="20" cy="60" r="6" fill="#90ee90"/> <!-- LightGreen -->
+                </g>
+                <g transform="translate(150, 120) rotate(5)">
+                    <path d="M 0 0 Q 50 -50 100 0 T 200 0 Q 150 50 100 100 Q 50 50 0 0 z" fill="#f4a460" stroke="#a0522d" stroke-width="3"/> <!-- SandyBrown -->
+                    <circle cx="40" cy="20" r="7" fill="#32cd32"/> <!-- LimeGreen -->
+                    <circle cx="90" cy="40" r="6" fill="#2e8b57"/> <!-- SeaGreen -->
+                </g>
+                <g transform="translate(250, 90) rotate(-20)">
+                    <path d="M 0 0 Q 50 -50 100 0 T 200 0 Q 150 50 100 100 Q 50 50 0 0 z" fill="#deb887" stroke="#8b4513" stroke-width="3"/> <!-- BurlyWood -->
+                    <circle cx="60" cy="30" r="9" fill="#00fa9a"/> <!-- MediumSpringGreen -->
+                    <circle cx="110" cy="50" r="5" fill="#3cb371"/> <!-- MediumSeaGreen -->
+                </g>
+
+                <!-- Teks judul di atas bakwan -->
+                <text x="50%" y="50" text-anchor="middle" font-family="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" font-size="30" fill="#333" font-weight="bold">Bakwan Lezat</text>
+            </svg>
+            <p>Sebuah hidangan gorengan klasik Indonesia yang selalu dinanti.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Tentang Bakwan Sayur Sederhana</h2>
+            <p>
+                Bakwan sayur, atau yang sering juga disebut 'ote-ote' di beberapa daerah, adalah salah satu jajanan pasar favorit masyarakat Indonesia. Sederhana namun kaya rasa, bakwan sayur menawarkan kerenyahan di luar dan kelembutan sayuran segar di dalam. Camilan ini sangat cocok dinikmati kapan saja, baik saat santai sore hari ditemani teh hangat, sebagai pendamping nasi, atau sekadar pengganjal perut di antara waktu makan. Keistimewaan bakwan sayur terletak pada kemudahannya untuk dibuat di rumah dengan bahan-bahan yang mudah ditemukan. Aroma gurih dari adonan tepung yang digoreng berpadu sempurna dengan manisnya sayuran, menciptakan harmoni rasa yang tak tertahankan.
+            </p>
+            <p>
+                Resep bakwan sayur sederhana ini dirancang agar siapa saja bisa membuatnya, bahkan bagi pemula di dapur. Kunci kelezatan bakwan sayur ada pada keseimbangan bumbu dan tingkat kegaringan saat digoreng. Dengan sedikit trik, Anda bisa menghasilkan bakwan yang tidak berminyak namun tetap renyah tahan lama. Proses pembuatannya pun cukup cepat, menjadikannya pilihan ideal ketika Anda membutuhkan hidangan cepat saji yang memuaskan.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>Bahan-Bahan yang Dibutuhkan</h2>
+            <p>Untuk membuat bakwan sayur yang lezat dan renyah, siapkan bahan-bahan berikut:</p>
+            <ul class="ingredients">
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk tambahan kerenyahan)</li>
+                <li>1/2 sendok teh baking powder (opsional, untuk tekstur lebih ringan)</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh ketumbar bubuk</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional, jika suka)</li>
+                <li>1 siung bawang putih, haluskan</li>
+                <li>1 batang wortel, serut kasar atau potong korek api tipis</li>
+                <li>100 gram kol, iris halus</li>
+                <li>50 gram tauge, buang akarnya</li>
+                <li>50 gram buncis, iris tipis (opsional)</li>
+                <li>Air secukupnya (sekitar 200-250 ml, sesuaikan kekentalan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Langkah-Langkah Membuat Bakwan Sayur</h2>
+            <p>Ikuti panduan langkah demi langkah ini untuk hasil maksimal:</p>
+            <ol class="steps">
+                <li><strong>Campur Bahan Kering:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras, baking powder (jika pakai), garam, merica, ketumbar bubuk, dan kaldu bubuk (jika pakai). Aduk rata.</li>
+                <li><strong>Tambahkan Bumbu Basah:</strong> Masukkan bawang putih halus ke dalam campuran bahan kering.</li>
+                <li><strong>Masukkan Sayuran:</strong> Masukkan wortel, kol, tauge, dan buncis (jika pakai) ke dalam wadah. Aduk rata agar semua sayuran terlapisi oleh sedikit tepung.</li>
+                <li><strong>Buat Adonan:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang kental namun tidak terlalu padat. Pastikan adonan membalut sayuran dengan baik. Jangan terlalu banyak air agar bakwan tidak lembek.</li>
+                <li><strong>Panaskan Minyak:</strong> Siapkan wajan dan panaskan minyak goreng dalam jumlah banyak dengan api sedang. Minyak harus cukup panas agar bakwan bisa langsung renyah saat dimasukkan.</li>
+                <li><strong>Goreng Bakwan:</strong> Ambil satu sendok adonan, lalu masukkan ke dalam minyak panas. Goreng hingga bakwan berwarna kuning keemasan dan matang di kedua sisinya. Jangan terlalu banyak menggoreng sekaligus agar suhu minyak tidak turun drastis.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang dan tiriskan minyaknya menggunakan saringan atau letakkan di atas tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan sayur sederhana siap disajikan selagi hangat. Nikmati dengan cabai rawit, sambal, atau saus favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="content-section">
+            <h2>Tips Agar Bakwan Renyah Tahan Lama</h2>
+            <p>
+                Siapa yang tidak suka bakwan yang renyah? Berikut beberapa tips untuk mencapai kerenyahan maksimal:
+            </p>
+            <ul>
+                <li><strong>Gunakan Tepung Beras:</strong> Campuran tepung beras memberikan tekstur yang lebih garing dibandingkan hanya menggunakan tepung terigu.</li>
+                <li><strong>Jangan Terlalu Banyak Air:</strong> Adonan yang terlalu encer akan membuat bakwan menjadi lembek. Adonan harus cukup kental untuk membalut sayuran.</li>
+                <li><strong>Suhu Minyak Ideal:</strong> Pastikan minyak benar-benar panas sebelum menggoreng. Jika minyak kurang panas, bakwan akan menyerap banyak minyak dan menjadi lembek. Gunakan api sedang saat menggoreng agar bagian dalam matang sempurna tanpa bagian luar gosong.</li>
+                <li><strong>Goreng Bertahap:</strong> Jangan menggoreng terlalu banyak bakwan sekaligus dalam satu waktu. Ini akan menurunkan suhu minyak dan menghasilkan bakwan yang kurang renyah.</li>
+                <li><strong>Tiriskan dengan Benar:</strong> Setelah digoreng, tiriskan bakwan dengan baik untuk menghilangkan sisa minyak.</li>
+            </ul>
+        </div>
+
+        <div class="cta">
+            <p>Siap mencoba resep bakwan sayur sederhana ini di rumah?</p>
+            <p>Bagikan hasil kreasi Anda atau beri tahu kami jika ada tips tambahan!</p>
+            <a href="#">Bagikan Resep Ini</a>
+        </div>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-bogo">Bakwan Bogo</a></li>
+<li><a href="/pentol-mercon-daun-jeruk">Pentol Mercon Daun Jeruk</a></li>
+<li><a href="/bakwan-milu">Bakwan Milu</a></li>
+<li><a href="/harga-tahu-bakso-mercon">Harga Tahu Bakso Mercon</a></li>
+<li><a href="/perkedel-jagung-bahan">Perkedel Jagung Bahan</a></li>
+<li><a href="/resep-baguette">Resep Baguette</a></li>
+<li><a href="/bakso-beranak-mas-toto">Bakso Beranak Mas Toto</a></li>
+<li><a href="/bakpao-halal-terdekat">Bakpao Halal Terdekat</a></li>
+<li><a href="/bakwan-sayur-dan-jagung">Bakwan Sayur Dan Jagung</a></li>
+<li><a href="/bakpia-agung">Bakpia Agung</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

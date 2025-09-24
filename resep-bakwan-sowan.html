@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Sowan Lezat dan Mudah Dibuat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #87CEEB; /* Sky Blue */
+            --secondary-color: #F0FFF0; /* Honeydew */
+            --text-color: #333;
+            --accent-color: #FFDAB9; /* Peach Puff */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 15px;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        .main-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-section {
+            margin-bottom: 30px;
+        }
+
+        .recipe-section ul,
+        .recipe-section ol {
+            padding-left: 20px;
+        }
+
+        .recipe-section li {
+            margin-bottom: 10px;
+        }
+
+        .ingredients li,
+        .steps li {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .ingredients li::before,
+        .steps li::before {
+            content: '✔'; /* Checkmark icon */
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .steps li::before {
+            content: counter(step-counter, decimal);
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.1em;
+            left: -5px;
+        }
+
+        .steps ol {
+            counter-reset: step-counter;
+        }
+
+        .steps li {
+            counter-increment: step-counter;
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: var(--accent-color);
+            border-radius: 8px;
+            color: var(--text-color);
+        }
+
+        .call-to-action a {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-to-action a:hover {
+            background-color: #70A0B8; /* Darker Sky Blue */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 10px auto;">
+                <circle cx="50" cy="50" r="45" stroke="#87CEEB" stroke-width="5" fill="none"/>
+                <path d="M30 70 L50 30 L70 70" stroke="#FFDAB9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="50" cy="50" r="15" fill="#87CEEB"/>
+                <circle cx="35" cy="45" r="5" fill="#FFDAB9"/>
+                <circle cx="65" cy="45" r="5" fill="#FFDAB9"/>
+            </svg>
+            <h1>Resep Bakwan Sowan Lezat dan Mudah Dibuat</h1>
+        </header>
+
+        <div class="recipe-section">
+            <img src="placeholder-bakwan-sowan.jpg" alt="Ilustrasi Bakwan Sowan yang lezat dan renyah" class="main-image">
+            <p>Bakwan, siapa yang tidak tergoda dengan camilan renyah dan gurih ini? Kali ini, kita akan membahas resep istimewa, yaitu Bakwan Sowan. Nama 'sowan' memberikan kesan tradisional dan akrab, seolah bakwan ini siap menemani setiap momen berkumpul bersama keluarga atau teman. Keistimewaannya terletak pada perpaduan bumbu yang pas dan tekstur yang kriuk di luar namun tetap lembut di dalam. Cocok disantap kapan saja, baik saat cuaca mendung maupun cerah, Bakwan Sowan akan selalu menjadi pilihan yang memuaskan.</p>
+
+            <p>Membuat bakwan sendiri di rumah ternyata tidak sesulit yang dibayangkan. Dengan bahan-bahan yang mudah didapat dan langkah-langkah yang jelas, Anda bisa menyajikan kudapan favorit ini kapan pun Anda mau. Rahasia kelezatannya seringkali terletak pada adonan yang tepat dan teknik menggoreng yang benar. Jangan khawatir, dalam artikel ini, kami akan membagikan tips dan trik agar bakwan Anda jadi sempurna, renyah tahan lama, dan pastinya disukai seluruh anggota keluarga.</p>
+        </div>
+
+        <div class="recipe-section ingredients">
+            <h2>Bahan-Bahan Utama</h2>
+            <ul>
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk tekstur lebih renyah)</li>
+                <li>1 buah wortel ukuran sedang, iris tipis memanjang</li>
+                <li>1/2 buah kol ukuran kecil, iris tipis</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>100 gram tauge (opsional, untuk variasi)</li>
+                <li>150-200 ml air es (sesuaikan kekentalan adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+            <h2>Bumbu Halus</h2>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh garam (atau sesuai selera)</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section steps">
+            <h2>Langkah-Langkah Pembuatan Bakwan Sowan</h2>
+            <ol>
+                <li>
+                    Campurkan tepung terigu dan tepung beras dalam sebuah wadah.
+                </li>
+                <li>
+                    Masukkan bumbu halus ke dalam campuran tepung. Aduk rata.
+                </li>
+                <li>
+                    Tuangkan air es sedikit demi sedikit sambil terus diaduk hingga membentuk adonan yang kental tapi tidak terlalu padat. Pastikan tidak ada gumpalan tepung.
+                </li>
+                <li>
+                    Masukkan irisan wortel, kol, daun bawang, dan tauge (jika menggunakan) ke dalam adonan. Aduk kembali hingga semua sayuran terbalut rata oleh adonan.
+                </li>
+                <li>
+                    Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.
+                </li>
+                <li>
+                    Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan matang di kedua sisinya. Anda bisa membentuknya sedikit pipih atau membiarkannya agak tebal sesuai selera.
+                </li>
+                <li>
+                    Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan saringan atau tisu dapur.
+                </li>
+                <li>
+                    Sajikan Bakwan Sowan selagi hangat dengan saus sambal, sambal kacang, atau cabai rawit hijau.
+                </li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Tambahan untuk Bakwan Sowan Sempurna</h2>
+            <ul>
+                <li>Gunakan air es untuk membuat adonan bakwan lebih renyah.</li>
+                <li>Jangan terlalu banyak mengaduk adonan setelah sayuran masuk agar sayuran tidak terlalu lembek.</li>
+                <li>Pastikan minyak benar-benar panas sebelum menggoreng. Ini kunci agar bakwan tidak menyerap banyak minyak.</li>
+                <li>Goreng bakwan dalam jumlah yang tidak terlalu banyak sekaligus agar suhu minyak tetap stabil dan bakwan matang merata.</li>
+                <li>Jika ingin bakwan lebih awet renyahnya, campurkan sedikit parutan singkong atau sedikit soda kue ke dalam adonan.</li>
+            </ul>
+            <p>Bakwan Sowan ini sangat cocok dijadikan teman minum teh di sore hari, camilan saat santai, atau bahkan pendamping nasi saat makan siang. Aroma gurih dari bumbu halus berpadu dengan manisnya sayuran segar pasti akan membuat ketagihan. Selamat mencoba resep Bakwan Sowan ini di rumah!</p>
+        </div>
+
+        <div class="call-to-action">
+            <p>Siap menciptakan kelezatan bakwan di dapur Anda? Coba resep ini sekarang!</p>
+            <a href="#bagikan-resep">Bagikan Resep Ini</a>
+        </div>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bumbu-gorengan-bakwan">Resep Bumbu Gorengan Bakwan</a></li>
+<li><a href="/resep-bakwan-jagung-sosis">Resep Bakwan Jagung Sosis</a></li>
+<li><a href="/ote2-sayur">Ote2 Sayur</a></li>
+<li><a href="/bakpia-pathuk">Bakpia Pathuk</a></li>
+<li><a href="/balasan-allah-untuk-orang-sabar">Balasan Allah Untuk Orang Sabar</a></li>
+<li><a href="/cara-mudah-membuat-bakpao">Cara Mudah Membuat Bakpao</a></li>
+<li><a href="/rasa-rasa-bakpao">Rasa Rasa Bakpao</a></li>
+<li><a href="/cara-membuat-bakpao-karakter-lucu">Cara Membuat Bakpao Karakter Lucu</a></li>
+<li><a href="/tomyam-resep">Tomyam Resep</a></li>
+<li><a href="/cara-masak-bakwan-yang-enak">Cara Masak Bakwan Yang Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

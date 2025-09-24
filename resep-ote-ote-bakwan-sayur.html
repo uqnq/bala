@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temukan resep ote ote bakwan sayur yang mudah, renyah di luar, lembut di dalam. Cocok untuk camilan atau lauk.">
+    <title>Resep Ote Ote Bakwan Sayur Renyah Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Biru muda sejuk */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 95%;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff; /* Latar belakang putih bersih */
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Untuk memastikan sudut melengkung */
+        }
+        h1, h2 {
+            color: #00796b; /* Warna hijau toska cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.6em;
+            margin-top: 25px;
+            color: #009688; /* Warna hijau toska lebih terang */
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .recipe-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        .ingredients, .instructions {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f8f9fa; /* Latar belakang sedikit abu-abu */
+            border-radius: 10px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #00695c; /* Warna hijau toska gelap */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .ingredients, .instructions {
+                padding: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+                margin: 10px auto;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .ingredients li, .instructions li {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Ote Ote Bakwan Sayur Renyah dan Lezat</h1>
+
+        <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi Ote-ote Bakwan Sayur yang Lezat">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#4db6ac;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grad1)"/>
+            <circle cx="150" cy="200" r="60" fill="#fff"/>
+            <ellipse cx="150" cy="200" rx="55" ry="55" fill="#f5f5f5"/>
+            <path d="M100 150 Q 120 100 150 100 Q 180 100 200 150 Q 180 200 150 200 Q 120 200 100 150 Z" fill="#ffe082"/>
+            <path d="M120 130 Q 130 110 150 110 Q 170 110 180 130 Q 170 150 150 150 Q 130 150 120 130 Z" fill="#ffcc80"/>
+            <text x="150" y="210" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle">Bakwan</text>
+
+            <circle cx="300" cy="200" r="60" fill="#fff"/>
+            <ellipse cx="300" cy="200" rx="55" ry="55" fill="#f5f5f5"/>
+            <path d="M250 150 Q 270 100 300 100 Q 330 100 350 150 Q 330 200 300 200 Q 270 200 250 150 Z" fill="#81c784"/>
+            <path d="M270 130 Q 280 110 300 110 Q 320 110 330 130 Q 320 150 300 150 Q 280 150 270 130 Z" fill="#a5d6a7"/>
+            <text x="300" y="210" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle">Sayur</text>
+
+            <circle cx="450" cy="200" r="60" fill="#fff"/>
+            <ellipse cx="450" cy="200" rx="55" ry="55" fill="#f5f5f5"/>
+            <path d="M400 150 Q 420 100 450 100 Q 480 100 500 150 Q 480 200 450 200 Q 420 200 400 150 Z" fill="#80deea"/>
+            <path d="M420 130 Q 430 110 450 110 Q 470 110 480 130 Q 470 150 450 150 Q 430 150 420 130 Z" fill="#b2ebf2"/>
+            <text x="450" y="210" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle">Krispi</text>
+        </svg>
+
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Ote ote bakwan sayur adalah salah satu jajanan favorit yang selalu dinanti, baik saat santai maupun untuk teman makan nasi. Teksturnya yang kriuk di luar dan lembut di dalam, berpadu dengan aneka sayuran segar, menjadikannya pilihan sempurna. Membuat ote ote bakwan sayur di rumah ternyata tidak sulit lho! Dengan resep yang tepat dan beberapa tips sederhana, Anda bisa menciptakan bakwan seenak buatan pedagang kaki lima, bahkan lebih!</p>
+
+        <p>Keistimewaan dari ote ote bakwan sayur terletak pada kesederhanaannya namun kaya rasa. Memadukan tepung terigu dengan aneka sayuran seperti wortel, kol, tauge, dan daun bawang, lalu digoreng hingga keemasan, menghasilkan cita rasa yang memikat. Aroma harum saat menggorengnya saja sudah menggugah selera. Kuncinya adalah mendapatkan adonan yang pas, tidak terlalu encer agar tidak menyerap minyak banyak, namun juga tidak terlalu kental agar tidak bantat.</p>
+
+        <h2>Bahan-Bahan Ote Ote Bakwan Sayur</h2>
+        <div class="ingredients">
+            <ul>
+                <li><span class="highlight">150 gram</span> tepung terigu serbaguna</li>
+                <li><span class="highlight">50 gram</span> tepung beras (opsional, untuk menambah kerenyahan)</li>
+                <li><span class="highlight">1 butir</span> telur ayam</li>
+                <li><span class="highlight">1/2 sendok teh</span> garam</li>
+                <li><span class="highlight">1/4 sendok teh</span> merica bubuk</li>
+                <li><span class="highlight">1/2 sendok teh</span> kaldu bubuk (opsional)</li>
+                <li><span class="highlight">200-250 ml</span> air dingin (sesuaikan kekentalan)</li>
+                <li><span class="highlight">1 buah</span> wortel, iris korek api tipis</li>
+                <li><span class="highlight">1/4 bonggol</span> kol, iris tipis</li>
+                <li><span class="highlight">50 gram</span> tauge</li>
+                <li><span class="highlight">2 batang</span> daun bawang, iris tipis</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat Ote Ote Bakwan Sayur</h2>
+        <div class="instructions">
+            <ol>
+                <li>Dalam wadah besar, campurkan tepung terigu, tepung beras (jika pakai), garam, merica, dan kaldu bubuk. Aduk rata.</li>
+                <li>Masukkan telur ayam, aduk sebentar.</li>
+                <li>Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan licin dan tidak ada gumpalan. Kekentalan adonan sebaiknya seperti adonan martabak telur, tidak terlalu encer dan tidak terlalu kental.</li>
+                <li>Masukkan wortel, kol, tauge, dan daun bawang ke dalam adonan. Aduk rata hingga semua sayuran terlapisi adonan.</li>
+                <li>Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+                <li>Ambil satu sendok sayur penuh adonan sayuran, lalu tuang perlahan ke dalam minyak panas. Bentuk agak melebar dengan punggung sendok jika perlu. Lakukan ini sampai wajan terisi secukupnya, jangan terlalu penuh agar bakwan matang merata.</li>
+                <li>Goreng hingga bakwan berwarna cokelat keemasan dan matang sempurna. Balik sesekali agar matangnya merata.</li>
+                <li>Angkat bakwan dan tiriskan minyaknya di atas rak kawat atau tisu dapur.</li>
+                <li>Sajikan ote ote bakwan sayur selagi hangat dengan sambal kacang, cabai rawit, atau saus kesukaan Anda.</li>
+            </ol>
+        </div>
+
+        <p>Beberapa tips untuk mendapatkan ote ote bakwan sayur yang sempurna: Gunakan air yang sangat dingin saat membuat adonan, ini membantu menciptakan tekstur yang lebih renyah. Jangan terlalu banyak mengaduk adonan setelah sayuran masuk, cukup sampai tercampur rata saja. Goreng dengan minyak yang cukup panas dan stabil, serta jangan terlalu banyak memasukkan bakwan sekaligus ke dalam wajan agar suhu minyak tidak turun drastis. Dengan mengikuti langkah-langkah ini, Anda akan berhasil membuat bakwan sayur yang renyah, lezat, dan disukai semua anggota keluarga.</p>
+
+        <footer>
+            Camilan nikmat untuk setiap suasana.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cocolan-gorengan">Cocolan Gorengan</a></li>
+<li><a href="/cara-menghangatkan-bakpao">Cara Menghangatkan Bakpao</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-manis">Cara Membuat Bakwan Jagung Manis</a></li>
+<li><a href="/bakpia-kurnia-sari-terdekat">Bakpia Kurnia Sari Terdekat</a></li>
+<li><a href="/bakpia-kedaton">Bakpia Kedaton</a></li>
+<li><a href="/lokasi-bakso-mercon-terdekat">Lokasi Bakso Mercon Terdekat</a></li>
+<li><a href="/tutorial-bakwan-jagung">Tutorial Bakwan Jagung</a></li>
+<li><a href="/cara-membuat-bakwan-dengan-tepung-sajiku">Cara Membuat Bakwan Dengan Tepung Sajiku</a></li>
+<li><a href="/bakpia-pathok-terenak">Bakpia Pathok Terenak</a></li>
+<li><a href="/bakpia-kenes-terdekat">Bakpia Kenes Terdekat</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

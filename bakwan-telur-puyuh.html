@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Telur Puyuh: Camilan Enak & Bergizi</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #87CEEB; /* Sky Blue */
+            --secondary-color: #90EE90; /* Light Green */
+            --text-color: #333;
+            --background-color: #F0FFF0; /* Honeydew */
+            --accent-color: #FFB6C1; /* Light Pink */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 95%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensure contents respect border-radius */
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: var(--secondary-color);
+            margin-top: 30px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Limit height for mobile */
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto 20px auto;
+            background-color: var(--accent-color); /* Placeholder for SVG if not loaded */
+        }
+
+        .recipe-steps ol {
+            counter-reset: step-counter;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .recipe-steps li {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 25px;
+            counter-increment: step-counter;
+        }
+
+        .recipe-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .ingredients ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .ingredients li {
+            font-weight: bold;
+        }
+
+        .tip {
+            background-color: var(--accent-color);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-style: italic;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed var(--primary-color);
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                margin: 10px auto;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+            .hero-image {
+                max-height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-image" role="img" aria-labelledby="title-svg">
+                <title id="title-svg">Ilustrasi Bakwan Telur Puyuh yang Menggugah Selera</title>
+                <circle cx="50" cy="50" r="50" fill="#90EE90"/> <!-- Light Green background -->
+                <g transform="translate(15, 15) rotate(10)"> <!-- Slightly rotated for dynamism -->
+                    <ellipse cx="40" cy="55" rx="25" ry="18" fill="#FFFAF0"/> <!-- Golden brown bakwan shape -->
+                    <circle cx="48" cy="50" r="8" fill="#fff"/> <!-- White egg yolk -->
+                    <circle cx="48" cy="50" r="4" fill="#FF8C00"/> <!-- Orange egg yolk center -->
+                </g>
+                <g transform="translate(60, 20) scale(0.8)">
+                    <ellipse cx="30" cy="35" rx="15" ry="12" fill="#FFFAF0"/>
+                    <circle cx="38" cy="32" r="6" fill="#fff"/>
+                    <circle cx="38" cy="32" r="3" fill="#FF8C00"/>
+                </g>
+                <g transform="translate(30, 70) scale(0.7)">
+                    <ellipse cx="25" cy="25" rx="12" ry="10" fill="#FFFAF0"/>
+                    <circle cx="30" cy="22" r="5" fill="#fff"/>
+                    <circle cx="30" cy="22" r="2.5" fill="#FF8C00"/>
+                </g>
+                <!-- Subtle texture lines -->
+                <path d="M 20 30 Q 40 20 60 30" stroke="#E0D8B0" stroke-width="1" fill="none"/>
+                <path d="M 70 40 Q 80 50 70 60" stroke="#E0D8B0" stroke-width="1" fill="none"/>
+                <path d="M 30 70 Q 20 80 30 90" stroke="#E0D8B0" stroke-width="1" fill="none"/>
+            </svg>
+            <h1>Bakwan Telur Puyuh: Kelezatan Sederhana yang Menggoda Selera</h1>
+            <p>Siapa yang bisa menolak renyahnya bakwan dengan isian telur puyuh yang gurih? Camilan ini tidak hanya lezat, tetapi juga menawarkan keseimbangan nutrisi berkat protein dari telur puyuh. Cocok dinikmati kapan saja, baik saat santai, berkumpul bersama keluarga, atau bahkan sebagai lauk pelengkap.</p>
+        </header>
+
+        <section>
+            <h2>Mengapa Bakwan Telur Puyuh Begitu Istimewa?</h2>
+            <p>Kombinasi adonan tepung yang renyah di luar dan lembut di dalam, berpadu sempurna dengan tekstur padat dan rasa gurih dari telur puyuh rebus yang menjadi bintangnya. Telur puyuh sendiri kaya akan protein, vitamin A, B12, dan zat besi, menjadikannya pilihan camilan yang lebih sehat dibandingkan camilan gorengan lainnya.</p>
+            <p>Proses pembuatannya pun relatif mudah, menjadikannya pilihan favorit bagi para pecinta kuliner rumahan yang ingin menyajikan hidangan lezat tanpa repot. Aroma harum saat bakwan digoreng pasti akan menggugah selera siapa pun yang menciumnya.</p>
+        </section>
+
+        <section class="ingredients">
+            <h2>Bahan-Bahan Utama</h2>
+            <ul>
+                <li>Telur puyuh rebus, kupas</li>
+                <li>Tepung terigu</li>
+                <li>Tepung beras (untuk kerenyahan ekstra)</li>
+                <li>Sayuran (kol iris tipis, wortel parut, daun bawang iris halus)</li>
+                <li>Bumbu halus (bawang putih, ketumbar, merica, garam)</li>
+                <li>Air secukupnya</li>
+                <li>Minyak goreng</li>
+            </ul>
+        </section>
+
+        <section class="recipe-steps">
+            <h2>Cara Membuat Bakwan Telur Puyuh</h2>
+            <ol>
+                <li>
+                    Siapkan adonan: Campurkan tepung terigu, tepung beras, bumbu halus, dan sayuran dalam wadah.
+                </li>
+                <li>
+                    Tuang air sedikit demi sedikit sambil diaduk hingga adonan kental dan rata. Jangan terlalu encer agar bakwan tidak lembek.
+                </li>
+                <li>
+                    Panaskan minyak goreng dalam jumlah cukup banyak di wajan dengan api sedang.
+                </li>
+                <li>
+                    Ambil satu sendok sayur adonan, letakkan sebutir telur puyuh rebus di tengahnya, lalu tutup kembali dengan sedikit adonan. Pastikan telur puyuh tertutup sempurna.
+                </li>
+                <li>
+                    Masukkan adonan yang sudah berisi telur puyuh ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan matang merata di kedua sisinya.
+                </li>
+                <li>
+                    Angkat bakwan, tiriskan minyaknya, dan sajikan selagi hangat.
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Tips Menikmati Bakwan Telur Puyuh</h2>
+            <p>Bakwan telur puyuh paling nikmat disajikan selagi hangat dengan cocolan saus sambal, saus tomat, atau sambal kacang. Kerenyahannya akan terasa maksimal, dan kelembutan isian telur puyuh akan memberikan sensasi yang memanjakan lidah.</p>
+            <div class="tip">
+                <p>Untuk variasi yang lebih menarik, Anda bisa menambahkan udang cincang atau sedikit parutan keju ke dalam adonan bakwan. Ini akan menambah cita rasa dan tekstur yang unik.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Selamat mencoba resep bakwan telur puyuh yang lezat ini!</p>
+        </footer>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/balasan-di-akhirat-bagi-orang-orang-munafik-adalah-neraka">Balasan Di Akhirat Bagi Orang Orang Munafik Adalah Neraka</a></li>
+<li><a href="/bakso-mercon-jumbo-terdekat">Bakso Mercon Jumbo Terdekat</a></li>
+<li><a href="/bakpia-kukus-jalan-magelang">Bakpia Kukus Jalan Magelang</a></li>
+<li><a href="/bakso-beranak-terdekat-dari-lokasi-saya">Bakso Beranak Terdekat Dari Lokasi Saya</a></li>
+<li><a href="/bakwan-sayur-diah-didi">Bakwan Sayur Diah Didi</a></li>
+<li><a href="/cara-membuat-bakwan-kol-dan-wortel">Cara Membuat Bakwan Kol Dan Wortel</a></li>
+<li><a href="/bumbu-ampal-jagung">Bumbu Ampal Jagung</a></li>
+<li><a href="/bakwan-wortel">Bakwan Wortel</a></li>
+<li><a href="/bakwan-tahu-telur">Bakwan Tahu Telur</a></li>
+<li><a href="/bakpia-kartika">Bakpia Kartika</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

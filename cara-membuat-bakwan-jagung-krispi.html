@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Jagung Krispi Lezat!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #66BB6A; /* Hijau cerah */
+            --secondary-color: #FFCA28; /* Kuning cerah */
+            --background-color: #E8F5E9; /* Hijau sangat muda */
+            --text-color: #333333; /* Abu-abu gelap */
+            --card-background: #FFFFFF; /* Putih bersih */
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 20px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin-top: 20px;
+            color: var(--secondary-color);
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+        }
+
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .steps ol {
+            counter-reset: step-counter;
+        }
+
+        .steps li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter) ". ";
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+
+        .ingredients li::before {
+            content: "✔ ";
+            color: var(--secondary-color);
+            margin-right: 5px;
+        }
+
+        .tip {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-top: 25px;
+            font-style: italic;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .tip strong {
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto 20px auto;">
+                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm4.807-13.037l-5.634 5.634c-.16.16-.37.25-.576.25-.206 0-.416-.09-.576-.25L9.437 11.696a.82.82 0 010-1.152l2.343-2.343a.819.819 0 011.152 0l2.344 2.344c.32.32.32.832 0 1.152z" fill="#66BB6A"/>
+                <circle cx="12" cy="12" r="2" fill="#FFCA28"/>
+            </svg>
+            <h1>Cara Membuat Bakwan Jagung Krispi Lezat</h1>
+        </header>
+
+        <p>Siapa yang bisa menolak renyahnya bakwan jagung hangat? Camilan klasik Indonesia ini memang selalu jadi favorit keluarga. Dengan sedikit trik, Anda bisa membuat bakwan jagung yang tidak hanya gurih, tapi juga <span class="highlight">krispi</span> tahan lama. Artikel ini akan memandu Anda langkah demi langkah.</p>
+
+        <img src="https://images.unsplash.com/photo-1587211796862-7c1a63d3c05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Ilustrasi bakwan jagung krispi yang lezat dan berwarna cerah">
+
+        <h2>Mengapa Bakwan Jagung Krispi Disukai?</h2>
+        <p>Kombinasi manisnya jagung pipil, gurihnya adonan tepung, dan sensasi renyah di setiap gigitan adalah daya tarik utama bakwan jagung. Teksturnya yang pas menjadikannya camilan sempurna untuk teman minum teh atau kopi, bahkan bisa jadi lauk pendamping nasi hangat.</p>
+
+        <h2>Bahan-Bahan yang Dibutuhkan</h2>
+        <ul class="ingredients">
+            <li>2 buah jagung manis, pipil</li>
+            <li>100 gram tepung terigu serbaguna</li>
+            <li>30 gram tepung beras</li>
+            <li>1 butir telur ayam</li>
+            <li>1 batang daun bawang, iris tipis</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh ketumbar bubuk</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>Garam secukupnya</li>
+            <li>Air secukupnya untuk adonan</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bakwan Jagung Krispi</h2>
+        <ol class="steps">
+            <li><strong>Persiapan Jagung:</strong> Pipil jagung manis. Anda bisa memipilnya langsung atau menggunakan pisau. Sebagian jagung bisa dihaluskan kasar untuk memberikan tekstur yang lebih lembut di dalam bakwan, sisanya biarkan utuh agar rasa manis jagungnya lebih terasa saat digigit.</li>
+            <li><strong>Membuat Adonan:</strong> Dalam wadah, campurkan tepung terigu dan tepung beras. Tambahkan telur, irisan daun bawang, bawang putih halus, ketumbar bubuk, merica bubuk, dan garam. Aduk rata.</li>
+            <li><strong>Menambahkan Jagung:</strong> Masukkan jagung pipil ke dalam adonan tepung.</li>
+            <li><strong>Mengatur Kekentalan:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan memiliki kekentalan yang pas. Adonan tidak boleh terlalu encer agar bakwan tidak menyerap banyak minyak, namun juga tidak terlalu kental agar mudah menempel pada jagung. Konsistensi yang diinginkan adalah adonan yang bisa melapisi jagung namun masih terlihat ada butiran jagung yang menonjol.</li>
+            <li><strong>Proses Menggoreng yang Tepat:</strong> Panaskan minyak goreng dalam jumlah cukup banyak dengan api sedang cenderung besar. Pastikan minyak benar-benar panas sebelum memasukkan adonan bakwan. Gunakan sendok untuk mengambil adonan dan masukkan perlahan ke dalam minyak panas. Goreng hingga semua sisi berwarna kuning keemasan dan matang.</li>
+            <li><strong>Mendapatkan Krispi Maksimal:</strong> Kunci dari bakwan yang krispi adalah menggorengnya dalam minyak panas yang cukup banyak. Jangan terlalu banyak memasukkan bakwan sekaligus ke dalam penggorengan agar suhu minyak tetap stabil. Jika suhu minyak turun, bakwan akan cenderung menyerap minyak dan menjadi lembek.</li>
+            <li><strong>Tiriskan dan Sajikan:</strong> Angkat bakwan yang sudah matang dan tiriskan minyaknya menggunakan tisu dapur atau saringan kawat. Sajikan selagi hangat.</li>
+        </ol>
+
+        <div class="tip">
+            <h3>Tips Tambahan Agar Bakwan Lebih Krispi</h3>
+            <p>Untuk hasil yang <span class="highlight">lebih krispi</span> dan tahan lama, tambahkan 1 sendok makan <span class="highlight">tepung tapioka</span> atau <span class="highlight">tepung maizena</span> ke dalam adonan tepung terigu dan tepung beras. Tepung ini akan membantu menciptakan lapisan luar yang renyah.</p>
+        </div>
+
+        <p>Membuat bakwan jagung krispi ternyata tidaklah sulit. Dengan bahan-bahan sederhana dan langkah-langkah yang tepat, Anda bisa menyajikan camilan lezat yang disukai semua anggota keluarga. Selamat mencoba!</p>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-nayla">Bakpia Nayla</a></li>
+<li><a href="/bakso-beranak-lava-terdekat">Bakso Beranak Lava Terdekat</a></li>
+<li><a href="/bakpia-pathok-145-ibu-sri-astuti-malioboro">Bakpia Pathok 145 Ibu Sri Astuti Malioboro</a></li>
+<li><a href="/bakpao-mengkerut-setelah-dikukus">Bakpao Mengkerut Setelah Dikukus</a></li>
+<li><a href="/bakpao-telo-ungu">Bakpao Telo Ungu</a></li>
+<li><a href="/bakpao-joeys">Bakpao Joeys</a></li>
+<li><a href="/amerika-serikat-vs-wales-skor">Amerika Serikat Vs Wales Skor</a></li>
+<li><a href="/cara-masak-bakwan-jagung-crispy">Cara Masak Bakwan Jagung Crispy</a></li>
+<li><a href="/cetakan-bakwan-goreng">Cetakan Bakwan Goreng</a></li>
+<li><a href="/bakwan-lawit-pancasila">Bakwan Lawit Pancasila</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

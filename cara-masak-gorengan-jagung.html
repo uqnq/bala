@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Masak Gorengan Jagung Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna biru muda sejuk */
+            color: #004d40; /* Warna hijau tua untuk teks */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Aligned to top */
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background-color: #ffffff; /* Latar belakang konten putih cerah */
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2 {
+            color: #00796b; /* Warna hijau toska cerah */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+        }
+        p, li {
+            margin-bottom: 15px;
+            color: #004d40;
+            text-align: left;
+        }
+        ul {
+            padding-left: 25px;
+            text-align: left;
+        }
+        .highlight {
+            color: #f57f17; /* Warna oranye cerah untuk penekanan */
+            font-weight: bold;
+        }
+        .recipe-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .instructions ol {
+            counter-reset: list;
+            padding-left: 0;
+        }
+        .instructions li {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            list-style: none;
+        }
+        .instructions li::before {
+            content: counter(list);
+            counter-increment: list;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background-color: #00796b; /* Warna hijau toska cerah */
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+        .ingredients-list {
+            list-style: disc;
+            padding-left: 25px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #757575;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .instructions li::before {
+                width: 25px;
+                height: 25px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Masak Gorengan Jagung Renyah dan Gurih</h1>
+
+        <svg class="recipe-image" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00bcd4;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="400" rx="15" fill="url(#gradient)"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="40" font-weight="bold" opacity="0.8">
+                Gorengan Jagung Lezat
+            </text>
+            <circle cx="100" cy="250" r="40" fill="#fff59d"/> <!-- Jagung Kuning -->
+            <circle cx="150" cy="230" r="40" fill="#fff59d"/>
+            <circle cx="200" cy="250" r="40" fill="#fff59d"/>
+            <circle cx="250" cy="230" r="40" fill="#fff59d"/>
+            <circle cx="120" cy="290" r="40" fill="#fff59d"/>
+            <circle cx="170" cy="270" r="40" fill="#fff59d"/>
+            <circle cx="220" cy="290" r="40" fill="#fff59d"/>
+            <circle cx="270" cy="270" r="40" fill="#fff59d"/>
+
+            <path d="M 350 100 Q 400 150 450 100 T 500 100" stroke="#ffcc80" stroke-width="10" fill="none" stroke-linecap="round"/> <!-- Minyak Panas -->
+            <path d="M 370 120 Q 420 170 470 120 T 520 120" stroke="#ffcc80" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M 390 140 Q 440 190 490 140 T 540 140" stroke="#ffcc80" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+            <rect x="50" y="50" width="150" height="100" rx="10" fill="#a5d6a7" opacity="0.6"/> <!-- Piring -->
+            <text x="125" y="100" text-anchor="middle" fill="#004d40" font-size="20" font-weight="bold">Hasil</text>
+        </svg>
+
+        <p>Siapa yang tidak suka gorengan? Camilan renyah dan gurih ini selalu menjadi favorit di berbagai suasana. Salah satu jenis gorengan yang tak kalah populer adalah gorengan jagung. Dibuat dari jagung manis yang dicampur dengan adonan tepung dan bumbu rempah, gorengan jagung menawarkan rasa manis alami jagung yang berpadu sempurna dengan kerenyahan luarnya. Membuat gorengan jagung sendiri di rumah ternyata sangat mudah, lho!</p>
+
+        <p>Artikel ini akan memandu Anda langkah demi langkah untuk menciptakan gorengan jagung yang sempurna. Anda akan menemukan tips untuk membuat adonan yang pas, cara menggoreng agar hasilnya renyah tahan lama, serta variasi bumbu yang bisa Anda coba. Siapkan diri Anda untuk menikmati camilan lezat ini kapan saja Anda inginkan!</p>
+
+        <h2>Bahan-bahan untuk Gorengan Jagung Renyah</h2>
+
+        <ul class="ingredients-list">
+            <li>2 buah jagung manis, pipil atau serut kasar</li>
+            <li>100 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (untuk tambahan kerenyahan)</li>
+            <li>1 butir telur ayam</li>
+            <li>50 ml air es (atau secukupnya hingga adonan kental)</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh merica bubuk</li>
+            <li>1/2 sendok teh garam (sesuai selera)</li>
+            <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            <li>1 batang daun bawang, iris tipis (opsional, untuk aroma segar)</li>
+            <li>Minyak goreng secukupnya</li>
+        </ul>
+
+        <h2>Langkah-Langkah Memasak</h2>
+
+        <div class="instructions">
+            <ol>
+                <li>
+                    <p>
+                        <span class="highlight">Persiapan Jagung:</span>
+                        Pipil atau serut jagung manis. Jika menggunakan biji jagung utuh, Anda bisa memipilnya dengan pisau. Jika ingin tekstur yang lebih halus, Anda bisa menyerutnya dengan parutan keju. Pastikan untuk membuang bagian bonggol yang keras.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="highlight">Membuat Adonan:</span>
+                        Dalam sebuah wadah, campurkan tepung terigu, tepung beras, bawang putih halus, merica bubuk, garam, dan kaldu bubuk (jika pakai). Aduk rata bahan kering.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Tambahkan telur ayam ke dalam campuran tepung, lalu aduk rata. Tuangkan air es sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang kental dan tidak terlalu encer. Adonan yang terlalu encer akan membuat gorengan mudah pecah saat digoreng, sedangkan yang terlalu kental akan membuat gorengan terlalu padat. Tambahkan irisan daun bawang jika menggunakan.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="highlight">Mencampurkan Jagung:</span>
+                        Masukkan jagung pipil atau serut ke dalam adonan tepung. Aduk perlahan hingga semua jagung terbalut rata dengan adonan. Pastikan tidak ada biji jagung yang terlewat agar semua bagian bisa tergoreng sempurna.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="highlight">Menggoreng Gorengan Jagung:</span>
+                        Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar gorengan terendam sempurna.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Setelah minyak panas, ambil satu sendok adonan jagung, lalu gorengkan ke dalam minyak panas. Anda bisa membentuknya sesuai selera, misalnya bulat pipih atau sesuai ukuran sendok. Jangan terlalu memenuhi wajan agar suhu minyak tetap stabil dan gorengan matang merata.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Goreng hingga adonan berwarna kuning keemasan dan terlihat renyah. Balik gorengan sesekali agar matang merata di semua sisi. Angkat gorengan jagung dan tiriskan di atas kertas tisu atau rak kawat agar minyak berlebih terserap.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="highlight">Penyajian:</span>
+                        Gorengan jagung siap disajikan selagi hangat. Cocok dinikmati bersama saus sambal, cabai rawit, atau saus cocolan favorit Anda.
+                    </p>
+                </li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan untuk Gorengan Jagung yang Lebih Lezat</h2>
+        <ul>
+            <li>Gunakan jagung manis berkualitas baik untuk rasa yang optimal.</li>
+            <li>Penambahan tepung beras sangat penting untuk mendapatkan tekstur yang <span class="highlight">renyah</span>.</li>
+            <li>Jangan menggoreng dengan api terlalu besar agar bagian luar tidak gosong sebelum bagian dalamnya matang.</li>
+            <li>Untuk variasi, Anda bisa menambahkan sedikit parutan wortel atau irisan cabai rawit ke dalam adonan untuk rasa yang lebih pedas.</li>
+            <li>Jika ingin menyimpan sisa gorengan, tunggu hingga benar-benar dingin, lalu simpan dalam wadah kedap udara. Panaskan kembali sebentar di wajan atau oven agar kembali renyah.</li>
+        </ul>
+
+        <p>Membuat gorengan jagung yang lezat dan renyah di rumah ternyata sangat mudah dan menyenangkan. Dengan mengikuti panduan ini, Anda bisa menyajikan camilan yang disukai keluarga dan teman. Selamat mencoba!</p>
+
+        <div class="footer">
+            Artikel ini dibuat untuk memandu Anda dalam memasak gorengan jagung.
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-jawa">Resep Bakwan Jawa</a></li>
+<li><a href="/penjual-bakpao-terdekat">Penjual Bakpao Terdekat</a></li>
+<li><a href="/atom-kocir-bakpia-cirebon">Atom Kocir Bakpia Cirebon</a></li>
+<li><a href="/cara-buat-heci">Cara Buat Heci</a></li>
+<li><a href="/bakpao-kentang">Bakpao Kentang</a></li>
+<li><a href="/resep-bakwan-sayur-enak-dan-gurih">Resep Bakwan Sayur Enak Dan Gurih</a></li>
+<li><a href="/bumbu-membuat-dadar-jagung">Bumbu Membuat Dadar Jagung</a></li>
+<li><a href="/resep-bakwan-sayur-takaran-sendok">Resep Bakwan Sayur Takaran Sendok</a></li>
+<li><a href="/bakwan-keju">Bakwan Keju</a></li>
+<li><a href="/cara-membuat-goreng-bakwan">Cara Membuat Goreng Bakwan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

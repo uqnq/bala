@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Tahu Sederhana dan Enak</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #e0f7fa; /* Warna biru muda cerah */
+            color: #004d40; /* Warna hijau tua untuk teks */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna hijau toska yang lebih kuat */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            padding-left: 5px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .ingredients li {
+            font-weight: bold;
+            color: #00695c; /* Warna hijau laut */
+        }
+        .instructions li {
+            font-weight: normal;
+        }
+        .highlight {
+            color: #c62828; /* Warna merah untuk penekanan */
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #455a64; /* Warna abu-abu gelap */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Resep Bakwan Tahu Sederhana yang Lezat dan Renyah</h1>
+
+        <div class="image-container">
+            <!-- SVG Gambar Bakwan Tahu -->
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffe082;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffc107;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="300" height="200" rx="15" fill="#ffffff"/>
+                <!-- Tahu -->
+                <rect x="50" y="70" width="80" height="60" rx="5" fill="#f5deb3" stroke="#e0c28c" stroke-width="2"/>
+                <rect x="140" y="70" width="80" height="60" rx="5" fill="#f5deb3" stroke="#e0c28c" stroke-width="2"/>
+                <!-- Adonan -->
+                <polygon points="50,130 130,170 220,130 140,70" fill="url(#grad1)" stroke="#fbc02d" stroke-width="2"/>
+                <!-- Detail -->
+                <text x="100" y="100" font-family="Verdana" font-size="15" fill="#004d40">Tahu</text>
+                <text x="170" y="100" font-family="Verdana" font-size="15" fill="#004d40">Tahu</text>
+                <text x="90" y="140" font-family="Verdana" font-size="12" fill="#004d40">Crispy</text>
+                <text x="170" y="140" font-family="Verdana" font-size="12" fill="#004d40">Renyah</text>
+                <circle cx="80" cy="95" r="3" fill="#bdbdbd"/>
+                <circle cx="170" cy="95" r="3" fill="#bdbdbd"/>
+            </svg>
+            <p style="font-style: italic; font-size: 0.9em; color: #757575;">Ilustrasi bakwan tahu sederhana yang menggugah selera.</p>
+        </div>
+
+        <p>
+            Siapa yang tidak suka bakwan? Camilan renyah dan gurih ini memang selalu jadi favorit. Kali ini, kita akan membuat <span class="highlight">resep bakwan tahu sederhana</span> yang super mudah dan dijamin anti gagal. Bakwan tahu ini bisa jadi ide bekal yang praktis, sajian saat santai bersama keluarga, atau bahkan camilan untuk teman ngobrol. Dengan bahan-bahan yang mudah didapat dan langkah yang ringkas, Anda bisa menyajikan kudapan lezat ini kapan saja. Rasanya yang gurih berpadu dengan tekstur renyah di luar dan lembut di dalam akan membuat siapa saja ketagihan.
+        </p>
+
+        <p>
+            Membuat bakwan tahu tidak memerlukan keahlian khusus. Kunci utamanya adalah penggunaan tepung yang tepat dan proses menggoreng yang benar. Dengan resep ini, Anda tidak perlu khawatir bakwan menjadi lembek atau berminyak berlebihan. Bakwan tahu ini adalah pilihan camilan sehat yang bisa disajikan tanpa rasa bersalah, apalagi jika Anda menggunakan tahu yang kaya protein nabati. Mari kita siapkan bahan-bahannya dan mulai petualangan memasak yang menyenangkan!
+        </p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <ul class="ingredients">
+            <li>2 buah tahu putih ukuran sedang (sekitar 200-250 gram)</li>
+            <li>100 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (untuk tekstur lebih renyah)</li>
+            <li>1 batang daun bawang, iris tipis</li>
+            <li>1 batang seledri, iris tipis (opsional)</li>
+            <li>Air secukupnya</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Bumbu Halus</h2>
+        <ul class="ingredients">
+            <li>3 siung bawang putih</li>
+            <li>1/2 sendok teh merica butiran</li>
+            <li>1/2 sendok teh garam (sesuaikan selera)</li>
+            <li>1/4 sendok teh kaldu bubuk (opsional, jika suka)</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bakwan Tahu Sederhana</h2>
+        <ol class="instructions">
+            <li>
+                <span class="highlight">Persiapan Tahu:</span> Hancurkan tahu putih menggunakan garpu atau sendok hingga benar-benar halus. Anda bisa juga menghaluskannya menggunakan blender atau food processor jika ingin tekstur yang lebih lembut. Pindahkan tahu yang sudah dihancurkan ke dalam mangkuk.
+            </li>
+            <li>
+                <span class="highlight">Menyiapkan Adonan:</span> Campurkan tepung terigu dan tepung beras ke dalam mangkuk berisi tahu. Tambahkan bumbu halus (bawang putih, merica, garam, kaldu bubuk). Aduk rata semua bahan hingga tercampur sempurna.
+            </li>
+            <li>
+                <span class="highlight">Menambahkan Sayuran:</span> Masukkan irisan daun bawang dan seledri ke dalam adonan. Aduk kembali hingga merata.
+            </li>
+            <li>
+                <span class="highlight">Mengatur Kekentalan:</span> Tuangkan air sedikit demi sedikit sambil terus diaduk. Adonan bakwan tahu yang ideal adalah yang kental tapi tidak terlalu padat, sehingga bisa menempel pada tahu dan saat digoreng tidak mudah buyar. Jangan terlalu banyak air agar bakwan tidak lembek.
+            </li>
+            <li>
+                <span class="highlight">Menggoreng Bakwan:</span> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum memasukkan adonan. Gunakan sendok atau tangan untuk mengambil adonan bakwan tahu, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga sisi pertama berwarna kuning keemasan dan kokoh. Balik adonan dan goreng hingga semua sisi matang merata dan berwarna cokelat keemasan.
+            </li>
+            <li>
+                <span class="highlight">Meniriskan:</span> Angkat bakwan tahu yang sudah matang dan tiriskan minyaknya menggunakan saringan atau letakkan di atas tisu dapur untuk menyerap sisa minyak berlebih.
+            </li>
+            <li>
+                <span class="highlight">Sajikan:</span> Bakwan tahu sederhana siap disajikan selagi hangat. Nikmati bersama cabai rawit, saus sambal, atau acar timun agar semakin mantap.
+            </li>
+        </ol>
+
+        <p>
+            Tips tambahan agar bakwan tahu Anda semakin nikmat adalah jangan terlalu sering membolak-balik bakwan saat digoreng. Biarkan satu sisi matang sempurna sebelum dibalik. Selain itu, gunakan api sedang cenderung kecil setelah minyak panas agar bakwan matang merata hingga ke dalam dan tidak cepat gosong di luar. Bakwan tahu ini juga enak disantap keesokan harinya, meskipun teksturnya mungkin tidak serenyah saat baru digoreng.
+        </p>
+
+        <p>
+            Membuat <span class="highlight">resep bakwan tahu sederhana</span> ini adalah cara yang bagus untuk memanfaatkan tahu dan menciptakan hidangan yang disukai seluruh keluarga. Selamat mencoba dan semoga sukses!
+        </p>
+
+        <div class="footer">
+            Konten ini dibuat dengan cinta untuk para pecinta kuliner.
+        </div>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-toge-anti-gagal">Cara Membuat Toge Anti Gagal</a></li>
+<li><a href="/bakpao-ilufa">Bakpao Ilufa</a></li>
+<li><a href="/adonan-ote-ote-renyah">Adonan Ote Ote Renyah</a></li>
+<li><a href="/bakso-mercon-ceker">Bakso Mercon Ceker</a></li>
+<li><a href="/bumbu-bakwan-kol-wortel">Bumbu Bakwan Kol Wortel</a></li>
+<li><a href="/resep-bakwan-enak-dan-lembut">Resep Bakwan Enak Dan Lembut</a></li>
+<li><a href="/bakwan-daun-bawang">Bakwan Daun Bawang</a></li>
+<li><a href="/pentol-mercon-terdekat">Pentol Mercon Terdekat</a></li>
+<li><a href="/bakwan-jagung-xanderskitchen">Bakwan Jagung Xanderskitchen</a></li>
+<li><a href="/bakpia-pathok-bertahan-berapa-lama">Bakpia Pathok Bertahan Berapa Lama</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

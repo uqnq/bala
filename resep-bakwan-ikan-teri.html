@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Ikan Teri Lezat & Crispy</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            color: #004d40; /* Warna teks gelap sejuk */
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #00796b; /* Warna judul yang cerah */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #00695c;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .resep-gambar {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Sesuaikan lebar gambar */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+        .bahan-list {
+            background-color: #e0f2f1; /* Latar belakang bahan yang kontras */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .langkah-list {
+            background-color: #b2dfdb; /* Latar belakang langkah yang lebih cerah */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        strong {
+            color: #004d40;
+        }
+        .catatan {
+            font-style: italic;
+            color: #00695c;
+            margin-top: 20px;
+            border-top: 1px dashed #80cbc4;
+            padding-top: 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #4db6ac;
+            width: 100%;
+        }
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .resep-gambar {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Ikan Teri Lezat & Crispy</h1>
+
+        <svg class="resep-gambar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" fill="none">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#80cbc4;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00796b;stop-opacity:1" />
+                </linearGradient>
+                <clipPath id="clipShape">
+                    <rect width="500" height="300" rx="15" ry="15"/>
+                </clipPath>
+            </defs>
+            <g clip-path="url(#clipShape)">
+                <rect width="500" height="300" fill="#e0f2f1"/>
+                <!-- Bagian Bakwan -->
+                <path d="M150 100 Q 200 80 250 100 T 350 100 Q 400 120 350 150 T 250 150 Q 200 170 150 150 T 50 150 Q 100 120 150 100 Z" fill="#fff9c4"/>
+                <path d="M170 110 Q 210 95 260 110 T 340 110 Q 370 125 330 140 T 250 140 Q 210 155 170 140 T 100 140 Q 130 125 170 110 Z" fill="#ffe082"/>
+                <!-- Ikan Teri (simpel) -->
+                <g transform="translate(230, 125) rotate(15)">
+                    <ellipse cx="0" cy="0" rx="8" ry="3" fill="#bdbdbd"/>
+                    <path d="M-8 -2 L0 0 L-8 2 Z" fill="#bdbdbd"/>
+                </g>
+                <g transform="translate(260, 115) rotate(-10)">
+                    <ellipse cx="0" cy="0" rx="7" ry="2" fill="#bdbdbd"/>
+                    <path d="M-7 -1.5 L0 0 L-7 1.5 Z" fill="#bdbdbd"/>
+                </g>
+                 <g transform="translate(200, 130) rotate(20)">
+                    <ellipse cx="0" cy="0" rx="6" ry="2" fill="#bdbdbd"/>
+                    <path d="M-6 -1 L0 0 L-6 1 Z" fill="#bdbdbd"/>
+                </g>
+                <!-- Tambahan sayuran -->
+                <circle cx="180" cy="130" r="4" fill="#c8e6c9"/>
+                <circle cx="300" cy="130" r="4" fill="#c8e6c9"/>
+                <circle cx="240" cy="85" r="3" fill="#ffccbc"/>
+            </g>
+            <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" fill="url(#grad1)" font-size="25" font-weight="bold">Bakwan Teri</text>
+        </svg>
+
+        <p>Siapa yang tidak suka bakwan? Camilan renyah dan gurih ini memang selalu jadi favorit. Kali ini, kita akan membuat variasi bakwan yang tak kalah nikmat, yaitu Bakwan Ikan Teri. Perpaduan renyahnya adonan bakwan dengan gurihnya ikan teri dan aroma kucai yang segar akan membuat Anda ketagihan.</p>
+
+        <p>Resep ini cukup mudah diikuti, bahkan bagi pemula. Anda bisa menyajikannya sebagai camilan teman minum kopi atau teh, atau sebagai lauk pendamping nasi hangat. Kelezatan bakwan ikan teri ini tak hanya berasal dari bahan-bahannya, tetapi juga dari teknik menggoreng yang tepat agar hasilnya benar-benar crispy.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="bahan-list">
+            <ul>
+                <li><strong>Tepung Terigu:</strong> 150 gram (sekitar 15 sdm)</li>
+                <li><strong>Tepung Beras:</strong> 50 gram (sekitar 5 sdm)</li>
+                <li><strong>Ikan Teri Medan/Nasi:</strong> 50 gram, bilas air hangat lalu tiriskan</li>
+                <li><strong>Daun Kucai:</strong> 50 gram, iris tipis (jika tidak ada, bisa diganti daun bawang secukupnya)</li>
+                <li><strong>Wortel:</strong> 1 buah ukuran kecil, serut halus atau potong korek api sangat tipis</li>
+                <li><strong>Bumbu Halus:</strong></li>
+                <ul>
+                    <li>Bawang Putih: 3 siung</li>
+                    <li>Bawang Merah: 1 siung (opsional, untuk aroma)</li>
+                    <li>Kemiri: 1 butir</li>
+                    <li>Ketumbar Bubuk: 1/2 sdt</li>
+                    <li>Garam: secukupnya</li>
+                    <li>Merica Bubuk: secukupnya</li>
+                </ul>
+                <li><strong>Air Es/Air Dingin:</strong> sekitar 200-250 ml (sesuaikan kekentalan adonan)</li>
+                <li><strong>Minyak Goreng:</strong> secukupnya, untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat Bakwan Ikan Teri</h2>
+        <div class="langkah-list">
+            <ol>
+                <li><strong>Siapkan Adonan:</strong> Dalam wadah, campurkan tepung terigu dan tepung beras. Masukkan bumbu halus, garam, dan merica bubuk. Aduk rata.</li>
+                <li><strong>Tambahkan Air:</strong> Tuang air es sedikit demi sedikit sambil terus diaduk hingga adonan licin dan tidak bergerindil. Kekentalan adonan sebaiknya tidak terlalu encer agar tidak mudah pecah saat digoreng.</li>
+                <li><strong>Masukkan Bahan Lain:</strong> Masukkan ikan teri yang sudah ditiriskan, irisan daun kucai, dan wortel serut ke dalam adonan. Aduk kembali hingga semua bahan tercampur rata.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam jumlah yang cukup banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum adonan dimasukkan.</li>
+                <li><strong>Goreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Goreng hingga bakwan berwarna kuning keemasan dan matang di kedua sisinya. Anda bisa menggoreng beberapa buah sekaligus, tapi jangan terlalu penuh agar bakwan matang merata dan tidak menempel satu sama lain.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang menggunakan saringan atau penjepit, lalu tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak. Hal ini penting agar bakwan tetap renyah.</li>
+                <li><strong>Sajikan:</strong> Bakwan ikan teri siap disajikan selagi hangat dengan sambal favorit Anda, seperti sambal kecap atau sambal rawit.</li>
+            </ol>
+        </div>
+
+        <p class="catatan"><strong>Tips agar Bakwan Lebih Crispy:</strong> Gunakan air es untuk adonan, pastikan minyak benar-benar panas saat menggoreng, dan jangan menggoreng terlalu banyak bakwan dalam satu waktu. Anda juga bisa menambahkan sedikit baking powder ke dalam adonan untuk hasil yang lebih mengembang dan renyah.</p>
+
+        <p>Membuat bakwan ikan teri ini sangat menyenangkan. Aroma gurih dari ikan teri yang berpadu dengan segarnya daun kucai akan menggugah selera siapa saja. Teksturnya yang renyah di luar dan lembut di dalam, dengan cita rasa asin gurih yang pas, menjadikan camilan ini sempurna untuk dinikmati kapan saja.</p>
+
+        <p>Ikan teri sendiri kaya akan protein dan kalsium, sehingga bakwan ini bukan hanya lezat tetapi juga memberikan nutrisi tambahan. Dengan sedikit usaha di dapur, Anda bisa menyajikan kudapan istimewa yang disukai seluruh keluarga. Selamat mencoba!</p>
+    </div>
+    <footer>
+        <p>&copy; 2023 Resep Nusantara</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-bakwan-jagung-tepung-sasa">Cara Membuat Bakwan Jagung Tepung Sasa</a></li>
+<li><a href="/bakpao-kingkong">Bakpao Kingkong</a></li>
+<li><a href="/resep-bakwan-enak-dan-renyah">Resep Bakwan Enak Dan Renyah</a></li>
+<li><a href="/bakteri-basil-adalah">Bakteri Basil Adalah</a></li>
+<li><a href="/bakwan-kukus">Bakwan Kukus</a></li>
+<li><a href="/cara-buat-bakwan-mie">Cara Buat Bakwan Mie</a></li>
+<li><a href="/cara-memasak-bakwan-jagung">Cara Memasak Bakwan Jagung</a></li>
+<li><a href="/resep-koya">Resep Koya</a></li>
+<li><a href="/cara-membuat-isian-bakpia-keju">Cara Membuat Isian Bakpia Keju</a></li>
+<li><a href="/cara-menghias-bakpao">Cara Menghias Bakpao</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

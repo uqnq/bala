@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakpia Nomor Satu: Kelezatan Legendaris</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #FFC107; /* Kuning cerah */
+            --background-color: #E8F5E9; /* Hijau muda pastel */
+            --text-color: #333;
+            --heading-color: #2E7D32;
+            --card-background: #FFFFFF;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-background);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px var(--shadow-color);
+            flex: 1; /* Agar konten mengisi ruang */
+        }
+
+        h1, h2 {
+            color: var(--heading-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+
+        img.hero-image {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Batasi lebar gambar */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: var(--secondary-color);
+            color: var(--heading-color);
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4); /* Bayangan kuning cerah */
+        }
+
+        .cta-button:hover {
+            background-color: #ffb300; /* Warna kuning lebih gelap saat hover */
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: var(--heading-color);
+            background-color: var(--primary-color);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .cta-button {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <svg class="hero-image" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakpiaTitle">
+            <title id="bakpiaTitle">Ilustrasi Bakpia yang Menggugah Selera</title>
+            <defs>
+                <linearGradient id="bakpiaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FFD180;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#FFAB40;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feFlood flood-color="#000" flood-opacity="0.2"/>
+                    <feComposite in2="offsetblur" operator="in"/>
+                    <feMerge>
+                        <feMergeNode in="shadow"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <path d="M 10 20 Q 20 10, 30 20 T 50 20 T 70 20 T 90 20 L 90 60 Q 70 70, 50 60 T 10 60 Z" fill="url(#bakpiaGradient)" filter="url(#shadow)"/>
+            <ellipse cx="30" cy="40" rx="8" ry="5" fill="#E65100" filter="url(#shadow)"/>
+            <ellipse cx="50" cy="40" rx="8" ry="5" fill="#E65100" filter="url(#shadow)"/>
+            <ellipse cx="70" cy="40" rx="8" ry="5" fill="#E65100" filter="url(#shadow)"/>
+            <text x="50" y="45" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">BA</text>
+            <text x="50" y="55" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">KIA</text>
+        </svg>
+
+        <h1>Temukan Kelezatan Sejati: Bakpia Nomor Satu</h1>
+
+        <p>
+            Di tengah hiruk pikuk kehidupan modern, ada satu cita rasa yang selalu mampu membawa kita kembali ke akar kebudayaan, menghadirkan kehangatan kenangan masa lalu, dan memanjakan lidah dengan kesempurnaan. Itulah <span class="highlight">Bakpia Nomor Satu</span>. Lebih dari sekadar kue tradisional, bakpia ini adalah sebuah legenda yang telah teruji oleh waktu, dinikmati oleh generasi ke generasi, dan terus menjadi pilihan utama bagi siapa saja yang mencari pengalaman kuliner tak terlupakan.
+        </p>
+
+        <p>
+            Apa yang membuat <span class="highlight">Bakpia Nomor Satu</span> begitu istimewa? Jawabannya terletak pada perpaduan sempurna antara kekayaan resep turun-temurun, pemilihan bahan baku berkualitas premium, dan sentuhan tangan para pengrajin yang memiliki dedikasi tinggi. Setiap gigitan bakpia ini menghadirkan sensasi unik: kulitnya yang renyah di luar namun lembut di dalam, berpadu mesra dengan isiannya yang melimpah ruah dengan aroma khas.
+        </p>
+
+        <h2>Kelezatan yang Tak Tertandingi</h2>
+
+        <p>
+            Kami memahami bahwa setiap penikmat bakpia memiliki preferensi sendiri. Oleh karena itu, <span class="highlight">Bakpia Nomor Satu</span> hadir dengan berbagai varian isian yang menggugah selera. Mulai dari isian klasik seperti kacang hijau yang manis legit, hingga pilihan yang lebih modern dan inovatif yang dibuat dari perpaduan rasa yang tak terduga. Setiap varian diolah dengan cermat untuk memastikan rasa yang otentik dan kualitas yang konsisten.
+        </p>
+
+        <p>
+            Proses pembuatan <span class="highlight">Bakpia Nomor Satu</span> bukanlah sekadar produksi massal. Ini adalah sebuah seni. Kami menjaga setiap detail, mulai dari memanaskan oven pada suhu yang tepat, hingga memastikan setiap bakpia mendapatkan sentuhan akhir yang sempurna. Hasilnya adalah produk yang tidak hanya lezat di lidah, tetapi juga indah dipandang mata. Aroma harum yang menguar saat bakpia dikeluarkan dari oven adalah pengantar kenikmatan yang tak terlukiskan.
+        </p>
+
+        <p>
+            Keberhasilan <span class="highlight">Bakpia Nomor Satu</span> tidak lepas dari komitmen kami terhadap kualitas. Kami selalu berinovasi, namun tidak pernah meninggalkan esensi dari bakpia itu sendiri. Kami percaya bahwa makanan tradisional memiliki kekuatan untuk menyatukan, mengingatkan kita akan keindahan kesederhanaan, dan memberikan kebahagiaan dalam setiap momen. Jadikanlah <span class="highlight">Bakpia Nomor Satu</span> sebagai teman setia Anda, baik saat merayakan momen spesial, sebagai buah tangan untuk orang terkasih, maupun sekadar untuk menemani secangkir teh di sore hari.
+        </p>
+
+        <p>
+            Raih pengalaman kuliner otentik yang akan membuat Anda ketagihan. Rasakan sendiri mengapa <span class="highlight">Bakpia Nomor Satu</span> senantiasa menjadi pilihan terbaik.
+        </p>
+
+        <a href="#" class="cta-button">Pesan Sekarang & Rasakan Kelezatannya!</a>
+    </div>
+
+    <footer>
+        &copy; Hak Cipta Dilindungi
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-bayam-renyah">Resep Bakwan Bayam Renyah</a></li>
+<li><a href="/resep-bakwan-ala-abang-gorengan">Resep Bakwan Ala Abang Gorengan</a></li>
+<li><a href="/bakteri-dalam-yakult">Bakteri Dalam Yakult</a></li>
+<li><a href="/balasan-bagi-orang-yang-meninggalkan-shalat">Balasan Bagi Orang Yang Meninggalkan Shalat</a></li>
+<li><a href="/rasa-rasa-bakpao">Rasa Rasa Bakpao</a></li>
+<li><a href="/cetakan-bakpao">Cetakan Bakpao</a></li>
+<li><a href="/bakso-mercon-buana-raya">Bakso Mercon Buana Raya</a></li>
+<li><a href="/bakpia-kacang-hijau-basah">Bakpia Kacang Hijau Basah</a></li>
+<li><a href="/bakpia-999">Bakpia 999</a></li>
+<li><a href="/resep-bakwan-jagung-sayur">Resep Bakwan Jagung Sayur</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

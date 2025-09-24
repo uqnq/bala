@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Perkedel Udang Kelapa Lezat & Segar</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #004d40; /* Warna teks gelap sejuk */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna judul lebih cerah */
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #009688; /* Warna subjudul cerah */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #80cbc4; /* Garis bawah halus */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .ingredients li::before {
+            content: "• ";
+            color: #26a69a; /* Warna bullet poin */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .instructions li::before {
+            content: counter(list-item) ". ";
+            color: #26a69a; /* Warna nomor instruksi */
+            font-weight: bold;
+        }
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        strong {
+            color: #00796b;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Perkedel Udang Kelapa: Gurih, Segar, dan Mudah Dibuat</h1>
+
+        <div class="hero-image">
+            <!-- SVG Image: Perkedel Udang Kelapa yang menggugah selera -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M150 100 Q 200 50 250 100 Q 300 150 250 200 Q 200 250 150 200 Q 100 150 150 100 z" fill="#ffffff"/>
+                <path d="M250 100 Q 300 50 350 100 Q 400 150 350 200 Q 300 250 250 200 Q 200 150 250 100 z" fill="#ffffff"/>
+                <path d="M200 150 Q 250 100 300 150 Q 350 200 300 250 Q 250 300 200 250 Q 150 200 200 150 z" fill="#ffffff"/>
+
+                <!-- Udang -->
+                <path d="M180 140 C 190 130 210 130 220 140 C 230 150 220 160 210 160 C 200 160 190 150 180 140 z" fill="#e57373" stroke="#c62828"/>
+                <path d="M200 145 C 205 140 215 140 220 145 C 225 150 215 155 200 150 z" fill="#e57373" stroke="#c62828"/>
+                <path d="M280 140 C 290 130 310 130 320 140 C 330 150 320 160 310 160 C 300 160 290 150 280 140 z" fill="#e57373" stroke="#c62828"/>
+                <path d="M300 145 C 305 140 315 140 320 145 C 325 150 315 155 300 150 z" fill="#e57373" stroke="#c62828"/>
+
+                <!-- Kelapa Parut -->
+                <circle cx="180" cy="180" r="10" fill="#fff9c4"/>
+                <circle cx="220" cy="190" r="8" fill="#fff9c4"/>
+                <circle cx="160" cy="195" r="7" fill="#fff9c4"/>
+                <circle cx="260" cy="180" r="10" fill="#fff9c4"/>
+                <circle cx="300" cy="190" r="8" fill="#fff9c4"/>
+                <circle cx="240" cy="195" r="7" fill="#fff9c4"/>
+
+                <!-- Bumbu dan Daun Bawang -->
+                <line x1="225" y1="160" x2="240" y2="170" stroke="#8bc34a" stroke-width="3"/>
+                <line x1="275" y1="160" x2="290" y2="170" stroke="#8bc34a" stroke-width="3"/>
+
+                <!-- Piring -->
+                <ellipse cx="250" cy="300" rx="240" ry="40" fill="#f5f5f5" stroke="#9e9e9e"/>
+                <path d="M10 300 Q 250 320 490 300" fill="none" stroke="#bdbdbd" stroke-width="5"/>
+
+                <text x="250" y="360" font-size="20" text-anchor="middle" fill="#616161">Perkedel Udang Kelapa</text>
+            </svg>
+            <p><em>Perpaduan sempurna udang segar dan gurihnya kelapa.</em></p>
+        </div>
+
+        <p>Perkedel adalah salah satu hidangan yang sangat populer di Indonesia. Umumnya, perkedel terbuat dari kentang yang dihaluskan, dicampur dengan bumbu-bumbu, lalu digoreng hingga keemasan. Namun, bagaimana jika kita mencoba variasi yang lebih menarik dan kaya rasa? Resep perkedel udang kelapa ini hadir untuk memanjakan lidah Anda dengan kombinasi unik dari tekstur dan cita rasa.</p>
+
+        <p>Perpaduan udang yang kenyal dan manis berpadu dengan gurihnya kelapa parut yang disangrai menciptakan sensasi rasa yang tidak terlupakan. Selain itu, penambahan bumbu rempah yang pas membuat hidangan ini semakin aromatik dan menggugah selera. Perkedel udang kelapa ini sangat cocok dinikmati sebagai lauk pendamping nasi hangat atau sebagai camilan istimewa saat berkumpul bersama keluarga.</p>
+
+        <p>Membuat perkedel udang kelapa ternyata tidak sesulit yang dibayangkan. Dengan bahan-bahan yang mudah ditemukan di pasar tradisional maupun supermarket, Anda bisa menyajikan hidangan lezat ini di rumah. Proses pembuatannya pun relatif cepat, menjadikannya pilihan ideal bagi Anda yang memiliki kesibukan namun tetap ingin menyajikan makanan sehat dan bergizi untuk orang terkasih.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <ul class="ingredients">
+            <li>300 gram udang segar, kupas, buang kulit dan kepalanya, cincang halus</li>
+            <li>150 gram kelapa parut kasar</li>
+            <li>1 batang daun bawang, iris halus</li>
+            <li>1 batang seledri, iris halus</li>
+            <li>1 butir telur ayam</li>
+            <li>Minyak goreng secukupnya</li>
+        </ul>
+
+        <h2>Bumbu Halus</h2>
+        <ul class="ingredients">
+            <li>5 siung bawang merah</li>
+            <li>3 siung bawang putih</li>
+            <li>2 buah cabai merah keriting (sesuai selera pedas)</li>
+            <li>1/2 sendok teh merica bubuk</li>
+            <li>1/2 sendok teh ketumbar bubuk</li>
+            <li>1/4 sendok teh pala bubuk</li>
+            <li>Garam secukupnya</li>
+            <li>Gula pasir secukupnya</li>
+        </ul>
+
+        <h2>Cara Membuat Perkedel Udang Kelapa</h2>
+        <ol class="instructions">
+            <li><strong>Sangrai Kelapa Parut:</strong> Panaskan wajan tanpa minyak. Sangrai kelapa parut dengan api kecil hingga kelapa berwarna sedikit kecoklatan dan harum. Angkat dan sisihkan. Proses penyangraian ini akan mengeluarkan aroma gurih kelapa yang khas.</li>
+            <li><strong>Haluskan Bumbu:</strong> Ulek atau blender semua bahan bumbu halus hingga benar-benar halus.</li>
+            <li><strong>Campurkan Adonan:</strong> Dalam sebuah wadah, campurkan udang cincang halus, kelapa parut sangrai, daun bawang iris, seledri iris, dan bumbu halus. Aduk rata hingga semua bahan tercampur sempurna.</li>
+            <li><strong>Tambahkan Telur:</strong> Masukkan telur ayam ke dalam adonan. Aduk kembali hingga adonan menjadi kalis dan mudah dibentuk. Jika adonan terasa terlalu lembek, Anda bisa menambahkan sedikit tepung terigu atau tepung tapioka, namun biasanya tanpa tambahan tepung pun sudah cukup baik.</li>
+            <li><strong>Bentuk Perkedel:</strong> Ambil sedikit adonan, lalu bentuk bulat pipih menggunakan tangan. Lakukan hingga semua adonan habis. Ukuran perkedel bisa disesuaikan dengan selera Anda.</li>
+            <li><strong>Goreng Perkedel:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Goreng perkedel udang kelapa hingga berwarna coklat keemasan di kedua sisinya. Pastikan minyak sudah cukup panas agar perkedel tidak menyerap banyak minyak.</li>
+            <li><strong>Sajikan:</strong> Angkat perkedel yang sudah matang, tiriskan dari minyak berlebih. Sajikan perkedel udang kelapa selagi hangat bersama nasi putih, sambal, atau sebagai camilan.</li>
+        </ol>
+
+        <p>Perkedel udang kelapa ini menawarkan cita rasa yang berbeda dari perkedel kentang biasa. Sensasi gurih kelapa yang disangrai berpadu sempurna dengan manisnya udang, menciptakan harmoni rasa yang lezat. Hidangan ini juga kaya akan protein dari udang dan serat dari kelapa, menjadikannya pilihan yang lebih sehat. Selamat mencoba resep perkedel udang kelapa ini di rumah!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-simple">Bakwan Simple</a></li>
+<li><a href="/bakso-mercon-pip">Bakso Mercon Pip</a></li>
+<li><a href="/bakwan-bumbu-pecel">Bakwan Bumbu Pecel</a></li>
+<li><a href="/resep-goreng-bakwan-renyah">Resep Goreng Bakwan Renyah</a></li>
+<li><a href="/bakteri-bacillus-sp">Bakteri Bacillus Sp</a></li>
+<li><a href="/bumbu-bakwan-sayur-enak">Bumbu Bakwan Sayur Enak</a></li>
+<li><a href="/cara-bikin-kolak-ubi">Cara Bikin Kolak Ubi</a></li>
+<li><a href="/resep-bakwan-jagung-lezat">Resep Bakwan Jagung Lezat</a></li>
+<li><a href="/cara-cara-membuat-bakwan">Cara Cara Membuat Bakwan</a></li>
+<li><a href="/bumbu-mercon-pedas">Bumbu Mercon Pedas</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

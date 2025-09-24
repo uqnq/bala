@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Sayur Bala Bala Gurih & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna biru muda sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff; /* Latar belakang konten putih bersih */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna hijau toska cerah */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f0f4f8; /* Warna abu-abu kebiruan lembut */
+            border-radius: 8px;
+        }
+        .recipe-section h3 {
+            color: #004d40; /* Warna hijau tua cerah */
+            margin-bottom: 15px;
+        }
+        .recipe-section ul, .recipe-section ol {
+            padding-left: 25px;
+        }
+        .recipe-section li {
+            margin-bottom: 10px;
+        }
+        .ingredients li, .instructions li {
+            position: relative;
+            padding-left: 20px;
+        }
+        .ingredients li::before, .instructions li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #00796b;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .instructions li::before {
+            content: counter(list-item) '.';
+            counter-increment: list-item;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #004d40;
+        }
+        .instructions ol {
+            counter-reset: list-item;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #00796b;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .recipe-section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nikmati Bakwan Sayur Bala Bala Sempurna</h1>
+
+        <svg width="100%" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakwan sayur bala bala yang renyah dan berwarna-warni">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grad1)" />
+
+            <!-- Bakwan 1 -->
+            <g transform="translate(50, 50)">
+                <path d="M 0 0 C 10 -10 20 -10 30 0 C 40 10 40 20 30 30 C 20 40 10 40 0 30 C -10 20 -10 10 0 0 Z" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="1"/>
+                <circle cx="15" cy="15" r="5" fill="#a5d6a7"/> <!-- Sayuran hijau -->
+                <circle cx="5" cy="20" r="4" fill="#ffcc80"/> <!-- Sayuran oranye -->
+                <circle cx="25" cy="10" r="3" fill="#e0e0e0"/> <!-- Sayuran putih -->
+            </g>
+
+            <!-- Bakwan 2 -->
+            <g transform="translate(150, 60)">
+                <path d="M 0 0 C 10 -10 20 -10 30 0 C 40 10 40 20 30 30 C 20 40 10 40 0 30 C -10 20 -10 10 0 0 Z" fill="#fff9c4" stroke="#bdbdbd" stroke-width="1"/>
+                <circle cx="10" cy="10" r="5" fill="#81c784"/> <!-- Sayuran hijau -->
+                <circle cx="20" cy="25" r="4" fill="#ffab91"/> <!-- Sayuran merah muda -->
+            </g>
+
+            <!-- Bakwan 3 -->
+            <g transform="translate(250, 40)">
+                <path d="M 0 0 C 10 -10 20 -10 30 0 C 40 10 40 20 30 30 C 20 40 10 40 0 30 C -10 20 -10 10 0 0 Z" fill="#e8f5e9" stroke="#bdbdbd" stroke-width="1"/>
+                <circle cx="15" cy="20" r="6" fill="#4db6ac"/> <!-- Sayuran hijau gelap -->
+                <circle cx="5" cy="10" r="4" fill="#f8bbd0"/> <!-- Sayuran pink -->
+                <circle cx="25" cy="15" r="3" fill="#ffe0b2"/> <!-- Sayuran kuning -->
+            </g>
+
+             <!-- Bakwan 4 -->
+            <g transform="translate(350, 70)">
+                <path d="M 0 0 C 10 -10 20 -10 30 0 C 40 10 40 20 30 30 C 20 40 10 40 0 30 C -10 20 -10 10 0 0 Z" fill="#fce4ec" stroke="#bdbdbd" stroke-width="1"/>
+                <circle cx="10" cy="15" r="5" fill="#ef9a9a"/> <!-- Sayuran merah -->
+                <circle cx="20" cy="10" r="4" fill="#b2ebf2"/> <!-- Sayuran biru muda -->
+            </g>
+
+             <!-- Bakwan 5 -->
+            <g transform="translate(450, 55)">
+                <path d="M 0 0 C 10 -10 20 -10 30 0 C 40 10 40 20 30 30 C 20 40 10 40 0 30 C -10 20 -10 10 0 0 Z" fill="#fffde7" stroke="#bdbdbd" stroke-width="1"/>
+                <circle cx="15" cy="20" r="5" fill="#c5e1a5"/> <!-- Sayuran hijau terang -->
+                <circle cx="5" cy="10" r="3" fill="#b0bec5"/> <!-- Sayuran abu-abu -->
+                <circle cx="25" cy="15" r="4" fill="#e6ee9c"/> <!-- Sayuran kuning hijau -->
+            </g>
+
+            <text x="50%" y="180" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#004d40">Tampilan Bakwan Sayur Bala Bala yang Menggugah Selera</text>
+        </svg>
+
+
+        <p>Siapa yang bisa menolak kerenyahan dan kelezatan <span class="keyword">resep bakwan sayur bala bala</span>? Camilan klasik Indonesia ini selalu menjadi favorit, baik disantap hangat-hangat saat sore hari ditemani teh manis, maupun sebagai lauk pendamping nasi. Variasi isian sayuran membuat bakwan tidak hanya nikmat, tetapi juga bisa menjadi cara menyenangkan untuk menambah asupan serat harian, terutama bagi anak-anak yang mungkin kurang suka makan sayur.</p>
+
+        <p>Membuat bakwan sayur bala bala sendiri di rumah ternyata tidak serumit yang dibayangkan. Dengan bahan-bahan yang mudah didapat dan langkah-langkah yang sederhana, Anda bisa menyajikan bakwan yang renyah di luar dan lembut di dalam. Kunci dari bakwan yang sempurna adalah adonan yang pas dan teknik menggoreng yang benar. Jangan khawatir jika percobaan pertama belum sempurna, latihan membuat camilan ini akan semakin mengasah keahlian Anda.</p>
+
+        <div class="recipe-section">
+            <h2>Bahan-Bahan</h2>
+            <ul class="ingredients">
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk menambah kerenyahan)</li>
+                <li>1 batang wortel, iris korek api halus</li>
+                <li>1/4 bonggol kol, iris tipis</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>1 batang seledri, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>1 sendok teh garam (sesuai selera)</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+                <li>± 150-200 ml air dingin (sesuaikan kekentalan adonan)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Cara Membuat</h2>
+            <ol class="instructions">
+                <li>Dalam wadah besar, campurkan tepung terigu dan tepung beras (jika menggunakan). Aduk rata.</li>
+                <li>Masukkan bawang putih halus, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk kembali.</li>
+                <li>Tambahkan sayuran yang sudah diiris: wortel, kol, daun bawang, dan seledri. Aduk rata hingga semua sayuran terbalut tepung.</li>
+                <li>Tuangkan air dingin sedikit demi sedikit sambil terus diaduk. Hentikan penambahan air jika adonan sudah mencapai kekentalan yang diinginkan. Adonan yang terlalu kental akan membuat bakwan keras, sedangkan yang terlalu cair akan membuat bakwan mudah hancur saat digoreng.</li>
+                <li>Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</li>
+                <li>Setelah minyak panas, ambil satu sendok sayur adonan bakwan, lalu ratakan sedikit di sisi wajan atau bentuk sesuai selera. Masukkan beberapa buah bakwan sesuai kapasitas wajan.</li>
+                <li>Goreng hingga kedua sisi bakwan berwarna kuning keemasan dan matang merata.</li>
+                <li>Angkat bakwan dan tiriskan minyaknya menggunakan saringan atau alas tisu dapur.</li>
+                <li>Sajikan bakwan sayur bala bala selagi hangat. Nikmati bersama sambal kacang, cabai rawit, atau saus sambal favorit Anda.</li>
+            </ol>
+        </div>
+
+        <p>Variasi dalam membuat <span class="keyword">resep bakwan sayur bala bala</span> juga bisa dilakukan dengan menambahkan bahan lain seperti tauge, buncis yang diiris tipis, atau bahkan udang cincang untuk cita rasa yang lebih kaya. Kuncinya adalah menyesuaikan kekentalan adonan dan memastikan semua sayuran terpotong dengan baik agar matang sempurna saat digoreng.</p>
+
+        <p>Mencari resep yang tepat untuk bakwan sayur bala bala adalah langkah awal menuju camilan yang sempurna. Dengan panduan ini, diharapkan Anda dapat menciptakan bakwan yang tidak hanya lezat, tetapi juga menjadi kebanggaan keluarga di meja makan. Selamat mencoba dan nikmati kelezatan setiap gigitannya!</p>
+
+        <footer>
+            Terima kasih telah mengunjungi!
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-daging-babi-cincang">Bakpao Daging Babi Cincang</a></li>
+<li><a href="/resep-bakwan-goreng-kopong">Resep Bakwan Goreng Kopong</a></li>
+<li><a href="/cara-goreng-bakwan-agar-tidak-berminyak">Cara Goreng Bakwan Agar Tidak Berminyak</a></li>
+<li><a href="/10-bakteri-yang-menguntungkan">10 Bakteri Yang Menguntungkan</a></li>
+<li><a href="/cara-bikin-perkedel-jagung-renyah">Cara Bikin Perkedel Jagung Renyah</a></li>
+<li><a href="/resep-kakiage-marugame-udon">Resep Kakiage Marugame Udon</a></li>
+<li><a href="/cara-menggoreng-bakwan-agar-tidak-lengket">Cara Menggoreng Bakwan Agar Tidak Lengket</a></li>
+<li><a href="/bakpia-mami-japanan">Bakpia Mami Japanan</a></li>
+<li><a href="/al-jazaa-min-jinsil-amal">Al Jazaa Min Jinsil Amal</a></li>
+<li><a href="/bakpia-kencana-harga">Bakpia Kencana Harga</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

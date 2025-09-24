@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakpao Sederhana Anti Gagal</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Alice Blue - warna sejuk */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Mulai dari atas */
+            min-height: 100vh;
+            flex-direction: column;
+            padding-bottom: 20px; /* Tambahkan sedikit ruang di bawah */
+        }
+        .container {
+            width: 95%;
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Pusatkan konten */
+        }
+        h1 {
+            color: #007bff; /* Biru cerah */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+            text-shadow: 1px 1px 3px rgba(0, 123, 255, 0.3);
+        }
+        h2 {
+            color: #28a745; /* Hijau cerah */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 5px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+        .ingredients, .instructions {
+            background-color: #e0f7fa; /* Cyan Light - warna sejuk cerah */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .ingredients h3, .instructions h3 {
+            color: #0056b3; /* Biru lebih tua */
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .recipe-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        strong {
+            color: #dc3545; /* Merah sedikit cerah untuk penekanan */
+        }
+        .tips {
+            background-color: #fffacd; /* Lemon Chiffon - warna cerah */
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-style: italic;
+            color: #808000; /* Olive */
+        }
+        .tips strong {
+            color: #800000; /* Maroon */
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 92%;
+                padding: 15px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+            .ingredients h3, .instructions h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakpao Sederhana Anti Gagal</h1>
+
+        <div class="recipe-image">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakpao yang lembut dan mengembang">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FF9A8B;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FF6A88;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+                        <feOffset dx="0" dy="4" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <path d="M100 50 Q 200 0, 300 50 Q 400 100, 300 150 Q 200 200, 100 150 Q 0 100, 100 50 Z" fill="url(#grad1)" filter="url(#shadow)"/>
+                <circle cx="200" cy="100" r="30" fill="#fff"/>
+                <path d="M170 70 Q 180 80, 200 90 Q 220 80, 230 70 Z" fill="#f4a261"/>
+                <text x="200" y="170" font-family="Verdana" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">Bakpao</text>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak suka bakpao? Camilan lembut, manis, dan mengenyangkan ini selalu jadi favorit banyak orang. Membuat bakpao sendiri di rumah mungkin terdengar menakutkan, tetapi dengan resep sederhana ini, Anda bisa menciptakan bakpao empuk dan anti gagal, bahkan jika Anda pemula sekalipun. Kuncinya adalah kesabaran dan mengikuti langkah-langkah dengan cermat.</p>
+
+        <div class="ingredients">
+            <h3>Bahan-Bahan Utama</h3>
+            <ul>
+                <li>250 gram tepung terigu protein tinggi (misal: Cakra Kembar)</li>
+                <li>50 gram tepung terigu protein sedang (misal: Segitiga Biru)</li>
+                <li>60 gram gula pasir</li>
+                <li>1 sendok teh ragi instan</li>
+                <li>1/4 sendok teh garam</li>
+                <li>120-130 ml air es (atau susu cair dingin)</li>
+                <li>2 sendok makan minyak goreng atau margarin cair</li>
+            </ul>
+            <h3>Bahan Isian (Contoh: Coklat Merek*)</h3>
+            <ul>
+                <li>Secukupnya coklat batangan, potong dadu kecil (atau isian favorit lainnya seperti kacang hijau, keju, dll)</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h3>Langkah-Langkah Membuat Bakpao</h3>
+            <ol>
+                <li><strong>Persiapan Ragi:</strong> Dalam wadah kecil, campurkan ragi instan dengan sedikit gula pasir (ambil dari takaran resep) dan sekitar 50 ml air es. Aduk rata dan diamkan selama 5-10 menit. Jika ragi mengembang dan berbusa, berarti ragi masih aktif dan siap digunakan.</li>
+                <li><strong>Campur Bahan Kering:</strong> Dalam mangkuk besar, campurkan tepung terigu protein tinggi dan sedang, sisa gula pasir, dan garam. Aduk rata.</li>
+                <li><strong>Campur Adonan:</strong> Buat lubang di tengah campuran tepung, lalu masukkan larutan ragi yang sudah berbusa dan sisa air es sedikit demi sedikit sambil diaduk atau diuleni. Tambahkan minyak goreng atau margarin cair.</li>
+                <li><strong>Uleni Hingga Kalis:</strong> Uleni adonan di atas permukaan datar yang sudah ditaburi sedikit tepung hingga adonan menjadi kalis, elastis, dan tidak lengket di tangan. Proses ini bisa memakan waktu sekitar 10-15 menit jika menggunakan tangan, atau lebih cepat dengan mixer roti.</li>
+                <li><strong>Proses Fermentasi (Proofing Pertama):</strong> Bulatkan adonan, masukkan kembali ke dalam mangkuk yang sudah diolesi sedikit minyak. Tutup mangkuk dengan serbet lembab atau plastik wrap. Diamkan di tempat hangat selama kurang lebih 45-60 menit hingga adonan mengembang dua kali lipat.</li>
+                <li><strong>Kempiskan dan Bagi Adonan:</strong> Setelah mengembang, kempiskan adonan dengan cara meninjunya perlahan. Keluarkan adonan dari mangkuk dan bagi adonan sesuai ukuran bakpao yang diinginkan. Bulatkan kembali setiap bagian adonan.</li>
+                <li><strong>Isi Bakpao:</strong> Pipihkan setiap bulatan adonan, isi dengan isian coklat atau isian favorit lainnya. Rekatkan bagian pinggirnya dengan baik hingga isian tertutup rapat.</li>
+                <li><strong>Proses Fermentasi Kedua:</strong> Tata bakpao yang sudah diisi di atas kertas roti atau alas pengukusan yang sudah diolesi sedikit minyak. Beri jarak antar bakpao. Tutup kembali dengan serbet lembab dan diamkan lagi selama 20-30 menit hingga mengembang kembali (jangan sampai terlalu mengembang).</li>
+                <li><strong>Mengukus:</strong> Panaskan kukusan hingga airnya mendidih dan uapnya banyak. Gunakan api sedang.</li>
+                <li><strong>Kukus Bakpao:</strong> Kukus bakpao selama 10-15 menit. Jangan membuka tutup kukusan selama proses mengukus agar bakpao tidak kempes. Gunakan api stabil.</li>
+                <li><strong>Sajikan:</strong> Angkat bakpao dari kukusan dengan hati-hati. Bakpao siap disajikan selagi hangat.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h3>Tips Sukses Membuat Bakpao Anti Gagal</h3>
+            <ul>
+                <li>Pastikan semua bahan dalam suhu ruang, kecuali air/susu yang disarankan dingin untuk membantu mengontrol suhu adonan.</li>
+                <li>Gunakan ragi instan yang masih aktif. Tes keaktifannya sebelum digunakan.</li>
+                <li>Jangan ragu untuk menambah atau mengurangi sedikit jumlah cairan (air/susu) tergantung kelembaban tepung Anda. Adonan yang baik terasa lembut dan tidak lengket.</li>
+                <li>Pastikan tempat fermentasi hangat dan tidak berangin.</li>
+                <li>Saat mengukus, jangan membuka tutup kukusan sebelum waktunya. Gunakan api sedang agar bakpao matang merata dan tidak kempes. Jika menggunakan kukusan berlapis, pastikan uapnya banyak dan stabil.</li>
+            </ul>
+        </div>
+
+        <p>Membuat bakpao sendiri memang menyenangkan. Dengan resep sederhana dan beberapa tips di atas, Anda pasti bisa menghasilkan bakpao yang lembut, mengembang sempurna, dan pastinya disukai seluruh keluarga. Selamat mencoba!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-mangkok-beranak-jogja-kota-yogyakarta-daerah-istimewa-yogyakarta">Bakso Mangkok Beranak Jogja Kota Yogyakarta Daerah Istimewa Yogyakarta</a></li>
+<li><a href="/beda-jamur-dan-bakteri">Beda Jamur Dan Bakteri</a></li>
+<li><a href="/mie-ayam-bakwan">Mie Ayam Bakwan</a></li>
+<li><a href="/dadar-jagung-tanpa-minyak">Dadar Jagung Tanpa Minyak</a></li>
+<li><a href="/bakpia-eny-523">Bakpia Eny 523</a></li>
+<li><a href="/bikin-bakwan-jagung-biar-renyah">Bikin Bakwan Jagung Biar Renyah</a></li>
+<li><a href="/bakwan-abang-gorengan">Bakwan Abang Gorengan</a></li>
+<li><a href="/resep-pentol-pedas-mercon">Resep Pentol Pedas Mercon</a></li>
+<li><a href="/harga-bakpia-basah">Harga Bakpia Basah</a></li>
+<li><a href="/daftar-harga-bakpia-kencana">Daftar Harga Bakpia Kencana</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

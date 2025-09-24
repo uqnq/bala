@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bak Pao Empuk & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff; /* Biru cerah */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #0056b3; /* Biru lebih gelap */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0f7fa; /* Biru sangat muda */
+            padding-bottom: 5px;
+        }
+        p, li {
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start; /* Agar gambar sejajar dengan teks */
+            margin-bottom: 25px;
+            background-color: #e0f7fa; /* Biru sangat muda untuk highlight */
+            padding: 15px;
+            border-radius: 8px;
+            gap: 20px; /* Jarak antara gambar dan teks */
+        }
+        .step img {
+            max-width: 120px; /* Ukuran gambar */
+            height: auto;
+            border-radius: 5px;
+            flex-shrink: 0; /* Agar gambar tidak mengecil */
+        }
+        .step-text {
+            flex-grow: 1; /* Memastikan teks mengisi ruang */
+        }
+        .step-text h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+        .ingredients li {
+            background-color: #f0f8ff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+        }
+        .instructions {
+            padding-left: 0;
+        }
+        .instructions li {
+            background-color: #ffffff; /* Latar belakang putih untuk instruksi */
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #b3e5fc; /* Border biru muda */
+        }
+        .recipe-summary {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #b3e5fc; /* Biru muda */
+            border-radius: 8px;
+            color: #004d40; /* Hijau kebiruan gelap */
+        }
+        .recipe-summary strong {
+            color: #0056b3;
+        }
+        svg {
+            display: block;
+            margin: 20px auto;
+            width: 150px; /* Ukuran SVG */
+            height: auto;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            .step {
+                flex-direction: column; /* Tumpuk gambar dan teks di layar kecil */
+                align-items: center;
+                text-align: center;
+            }
+            .step img {
+                margin-bottom: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cara Membuat Bak Pao Empuk dan Lezat</h1>
+
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" fill="#81d4fa" stroke="#0277bd" stroke-width="3"/>
+            <path d="M 40 40 Q 50 30 60 40 L 60 60 Q 50 70 40 60 Z" fill="#ffffff"/>
+            <path d="M 45 45 Q 50 38 55 45 Z" fill="#0277bd"/>
+            <text x="50" y="65" font-family="Verdana" font-size="12" text-anchor="middle" fill="#0277bd">Pao</text>
+        </svg>
+
+        <p class="recipe-summary">
+            Siapa yang tidak suka kelembutan bak pao yang baru matang? Isiannya yang gurih dan manis selalu berhasil memanjakan lidah. Membuat bak pao sendiri di rumah ternyata tidak sesulit yang dibayangkan. Ikuti panduan lengkap ini untuk menghasilkan bak pao yang sempurna, empuk, dan beraroma menggugah selera. Cocok untuk sarapan, camilan, atau bekal!
+        </p>
+
+        <h2>Bahan-Bahan Membuat Bak Pao</h2>
+
+        <p>Untuk menghasilkan bak pao yang mengembang sempurna, gunakan bahan-bahan berkualitas:</p>
+        <ul class="ingredients">
+            <li>500 gram tepung terigu protein tinggi</li>
+            <li>100 gram gula pasir</li>
+            <li>10 gram ragi instan</li>
+            <li>5 gram baking powder</li>
+            <li>250 ml susu cair hangat</li>
+            <li>50 gram margarin</li>
+            <li>1/2 sendok teh garam</li>
+            <li>Bahan isian (sesuai selera, contoh: ayam cincang, kacang hijau, cokelat meses)</li>
+        </ul>
+
+        <h2>Langkah-Langkah Pembuatan Bak Pao</h2>
+
+        <div class="step">
+            <img src="https://via.placeholder.com/120x120/b3e5fc/0277bd?text=Aduk" alt="Ilustrasi mencampur adonan bak pao">
+            <div class="step-text">
+                <h3>1. Campurkan Bahan Kering</h3>
+                <p>Dalam wadah besar, campurkan tepung terigu, gula pasir, ragi instan, dan baking powder. Aduk rata menggunakan whisk atau spatula.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <img src="https://via.placeholder.com/120x120/81d4fa/0277bd?text=Uleni" alt="Ilustrasi menguleni adonan bak pao">
+            <div class="step-text">
+                <h3>2. Tambahkan Cairan dan Uleni</h3>
+                <p>Tuang susu cair hangat sedikit demi sedikit sambil terus diuleni. Setelah adonan setengah kalis, masukkan margarin dan garam. Lanjutkan menguleni hingga adonan benar-benar kalis, elastis, dan tidak lengket di tangan. Ini adalah kunci kelembutan bak pao.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <img src="https://via.placeholder.com/120x120/4fc3f7/0277bd?text=Proofing" alt="Ilustrasi adonan bak pao mengembang">
+            <div class="step-text">
+                <h3>3. Proses Proofing (Mengistirahatkan Adonan)</h3>
+                <p>Bulatkan adonan, letakkan dalam wadah yang sudah diolesi sedikit minyak. Tutup wadah dengan cling wrap atau kain bersih. Diamkan di tempat hangat selama kurang lebih 1 jam atau hingga adonan mengembang dua kali lipat.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <img src="https://via.placeholder.com/120x120/29b6f6/0277bd?text=Bentuk" alt="Ilustrasi membentuk bak pao dengan isian">
+            <div class="step-text">
+                <h3>4. Bagi dan Isi Adonan</h3>
+                <p>Setelah mengembang, kempiskan adonan dengan lembut. Bagi adonan menjadi beberapa bagian sesuai ukuran yang diinginkan. Pipihkan setiap bagian adonan, isi dengan bahan isian yang sudah disiapkan, lalu rapatkan pinggirannya hingga membentuk bulatan pao. Pastikan isian tertutup rapat agar tidak bocor saat dikukus.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <img src="https://via.placeholder.com/120x120/03a9f4/0277bd?text=Kukus" alt="Ilustrasi mengukus bak pao">
+            <div class="step-text">
+                <h3>5. Tahap Akhir: Mengukus</h3>
+                <p>Siapkan kukusan yang sudah panas. Alasi loyang dengan kertas roti atau daun pisang agar pao tidak menempel. Susun pao di dalam kukusan dengan jarak yang cukup. Kukus selama kurang lebih 10-15 menit dengan api sedang hingga matang dan mengembang sempurna. Buka tutup kukusan sesekali agar pao tidak kempes.</p>
+            </div>
+        </div>
+
+        <h2>Tips Tambahan</h2>
+        <ul class="instructions">
+            <li>Gunakan susu hangat suam-suam kuku, jangan terlalu panas agar ragi tidak mati.</li>
+            <li>Pastikan tempat proofing cukup hangat dan bebas angin.</li>
+            <li>Jangan terlalu lama mengukus agar pao tidak keras.</li>
+            <li>Untuk variasi warna, tambahkan sedikit pewarna makanan alami seperti jus pandan atau ubi ungu pada adonan.</li>
+        </ul>
+
+        <p>Dengan mengikuti panduan <strong>cara membuat bak pao</strong> ini, Anda dapat menciptakan hidangan yang lezat dan memuaskan. Selamat mencoba dan nikmati hasil kreasi Anda!</p>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-beranak-yang-enak">Bakso Beranak Yang Enak</a></li>
+<li><a href="/bakpia-tugu-lempuyangan">Bakpia Tugu Lempuyangan</a></li>
+<li><a href="/resep-bakwan-lawit">Resep Bakwan Lawit</a></li>
+<li><a href="/bakwan-spesial">Bakwan Spesial</a></li>
+<li><a href="/harga-bakpia-pathok-di-malioboro">Harga Bakpia Pathok Di Malioboro</a></li>
+<li><a href="/bakpia-pathok-mandiri-214">Bakpia Pathok Mandiri 214</a></li>
+<li><a href="/cara-bikin-bakwan-jagung-crispy">Cara Bikin Bakwan Jagung Crispy</a></li>
+<li><a href="/bumbu-membuat-bakwan-goreng">Bumbu Membuat Bakwan Goreng</a></li>
+<li><a href="/bakpia-kencana-harga">Bakpia Kencana Harga</a></li>
+<li><a href="/top-speed-bale">Top Speed Bale</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

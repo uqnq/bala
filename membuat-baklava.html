@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Baklava: Resep Klasik Lezat</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #4682b4; /* SteelBlue - warna sejuk cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #5f9ea0; /* CadetBlue - warna sejuk cerah */
+            margin-top: 30px;
+            border-bottom: 2px solid #e0ffff; /* LightCyan - sentuhan sejuk */
+            padding-bottom: 5px;
+        }
+        .content-section {
+            width: 100%;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .content-section p {
+            margin-bottom: 15px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 20px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .recipe-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Membuat Baklava: Manisnya Tradisi dalam Setiap Gigitan</h1>
+            <svg class="recipe-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="baklavaTitle">
+                <title id="baklavaTitle">Ilustrasi Baklava yang Menggugah Selera</title>
+                <rect width="400" height="250" rx="15" ry="15" fill="#ffffff"/>
+                <path d="M 20 20 L 380 20 L 380 230 L 20 230 Z" fill="#f8f8ff" stroke="#e6e6fa" stroke-width="2"/>
+
+                <!-- Lapisan Phyllo -->
+                <path d="M 30 30 L 370 30 L 370 40 L 30 40 Z" fill="#f0fff0" stroke="#98fb98" stroke-width="0.5"/>
+                <path d="M 30 45 L 370 45 L 370 55 L 30 55 Z" fill="#f0fff0" stroke="#98fb98" stroke-width="0.5"/>
+                <path d="M 30 60 L 370 60 L 370 70 L 30 70 Z" fill="#f0fff0" stroke="#98fb98" stroke-width="0.5"/>
+
+                <!-- Lapisan Kacang -->
+                <path d="M 40 75 L 360 75 L 360 95 L 40 95 Z" fill="#ffe4c4" stroke="#deb887" stroke-width="1"/>
+                <circle cx="100" cy="85" r="3" fill="#deb887"/>
+                <circle cx="150" cy="85" r="3" fill="#deb887"/>
+                <circle cx="200" cy="85" r="3" fill="#deb887"/>
+                <circle cx="250" cy="85" r="3" fill="#deb887"/>
+                <circle cx="300" cy="85" r="3" fill="#deb887"/>
+
+                <!-- Lapisan Phyllo lagi -->
+                <path d="M 30 100 L 370 100 L 370 110 L 30 110 Z" fill="#f0fff0" stroke="#98fb98" stroke-width="0.5"/>
+                <path d="M 30 115 L 370 115 L 370 125 L 30 125 Z" fill="#f0fff0" stroke="#98fb98" stroke-width="0.5"/>
+
+                <!-- Lapisan Isian Tengah -->
+                <path d="M 50 130 L 350 130 L 350 150 L 50 150 Z" fill="#f5f5dc" stroke="#d2b48c" stroke-width="1"/>
+
+                <!-- Lapisan Phyllo -->
+                <path d="M 30 160 L 370 160 L 370 170 L 30 170 Z" fill="#f0fff0" stroke="#98fb98" stroke-width="0.5"/>
+                <path d="M 30 175 L 370 175 L 370 185 L 30 185 Z" fill="#f0fff0" stroke="#98fb98" stroke-width="0.5"/>
+
+                <!-- Lapisan Kacang -->
+                <path d="M 40 190 L 360 190 L 360 210 L 40 210 Z" fill="#ffe4c4" stroke="#deb887" stroke-width="1"/>
+                <circle cx="80" cy="200" r="3" fill="#deb887"/>
+                <circle cx="130" cy="200" r="3" fill="#deb887"/>
+                <circle cx="180" cy="200" r="3" fill="#deb887"/>
+                <circle cx="230" cy="200" r="3" fill="#deb887"/>
+                <circle cx="280" cy="200" r="3" fill="#deb887"/>
+                <circle cx="330" cy="200" r="3" fill="#deb887"/>
+
+                <!-- Lapisan Phyllo Teratas -->
+                <path d="M 30 215 L 370 215 L 370 225 L 30 225 Z" fill="#f0fff0" stroke="#98fb98" stroke-width="0.5"/>
+                <path d="M 30 228 L 370 228 L 370 235 L 30 235 Z" fill="#f0fff0" stroke="#98fb98" stroke-width="0.5"/>
+
+                <!-- Sirup -->
+                <polygon points="200,20 220,30 190,30" fill="#ffd700" stroke="#daa520" stroke-width="1"/>
+                <polygon points="180,30 200,40 170,40" fill="#ffd700" stroke="#daa520" stroke-width="1"/>
+                <polygon points="220,30 240,40 210,40" fill="#ffd700" stroke="#daa520" stroke-width="1"/>
+            </svg>
+        </header>
+
+        <section class="content-section">
+            <p>Baklava adalah hidangan penutup tradisional yang berasal dari Timur Tengah dan Mediterania. Kelezatan kue lapis ini terletak pada perpaduan sempurna antara adonan phyllo yang renyah, isian kacang yang gurih, serta siraman sirup manis yang meresap. Membuat baklava sendiri di rumah mungkin terdengar menantang, namun dengan panduan yang tepat, Anda bisa menciptakan kelezatan otentik ini.</p>
+        </section>
+
+        <section class="content-section ingredients">
+            <h2>Bahan-bahan</h2>
+            <ul>
+                <li>1 bungkus adonan phyllo (sekitar 450-500 gram), cairkan sesuai petunjuk kemasan</li>
+                <li>250 gram kacang kenari atau pistachio, cincang kasar</li>
+                <li>100 gram gula pasir</li>
+                <li>1 sendok teh kayu manis bubuk</li>
+                <li>1/2 sendok teh kapulaga bubuk (opsional)</li>
+                <li>170 gram mentega tawar, lelehkan</li>
+                <li><strong>Untuk Sirup:</strong></li>
+                <li>300 gram gula pasir</li>
+                <li>200 ml air</li>
+                <li>1 sendok makan air perasan lemon</li>
+                <li>1 batang kayu manis</li>
+                <li>2-3 butir kapulaga (memarkan)</li>
+                <li>1 sendok teh air mawar atau ekstrak vanila (opsional)</li>
+            </ul>
+        </section>
+
+        <section class="content-section instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li><strong>Persiapan Isian:</strong> Dalam mangkuk, campurkan kacang cincang, 100 gram gula pasir, kayu manis bubuk, dan kapulaga bubuk (jika menggunakan). Aduk rata.</li>
+                <li><strong>Persiapan Loyang:</strong> Olesi loyang persegi ukuran sekitar 23x33 cm dengan mentega leleh.</li>
+                <li><strong>Menata Lapisan Phyllo:</strong> Buka adonan phyllo dengan hati-hati. Ambil satu lembar, letakkan di atas loyang, lalu olesi permukaannya dengan mentega leleh. Ulangi proses ini hingga Anda menggunakan sekitar 8-10 lembar adonan phyllo, membentuk dasar baklava.</li>
+                <li><strong>Menambahkan Isian:</strong> Taburkan setengah dari campuran isian kacang secara merata di atas lapisan phyllo.</li>
+                <li><strong>Lapisan Phyllo Lanjutan:</strong> Tutupi isian kacang dengan lapisan phyllo lagi, setiap lembar diolesi mentega leleh, sebanyak 4-6 lembar.</li>
+                <li><strong>Isian Kedua:</strong> Taburkan sisa campuran isian kacang di atas lapisan phyllo.</li>
+                <li><strong>Lapisan Phyllo Penutup:</strong> Tutupi seluruhnya dengan sisa lembaran adonan phyllo, pastikan setiap lembar diolesi mentega leleh. Lipat bagian tepi yang berlebih ke dalam.</li>
+                <li><strong>Memotong Baklava:</strong> Dengan pisau tajam, potong baklava menjadi bentuk wajik atau persegi sebelum dipanggang. Tujuannya agar sirup lebih mudah meresap nantinya.</li>
+                <li><strong>Memanggang:</strong> Panggang dalam oven yang sudah dipanaskan pada suhu 160°C selama sekitar 45-60 menit, atau hingga permukaannya berwarna cokelat keemasan dan renyah.</li>
+                <li><strong>Membuat Sirup:</strong> Sambil menunggu baklava matang, buat sirupnya. Dalam panci, campurkan 300 gram gula pasir, air, batang kayu manis, dan kapulaga yang sudah dimemarkan. Masak dengan api sedang sambil diaduk hingga gula larut.</li>
+                <li><strong>Mendidihkan Sirup:</strong> Setelah mendidih, kecilkan api dan biarkan merunduk selama sekitar 5-7 menit hingga sedikit mengental. Angkat dari api, buang batang kayu manis dan kapulaga. Masukkan air perasan lemon dan air mawar/vanila (jika menggunakan). Aduk rata.</li>
+                <li><strong>Menyiram Baklava:</strong> Segera setelah baklava keluar dari oven, tuangkan sirup panas secara merata ke seluruh permukaannya. Biarkan baklava meresap dan dingin sepenuhnya (minimal beberapa jam atau semalaman) sebelum disajikan agar rasa lebih maksimal.</li>
+            </ol>
+        </section>
+
+        <div class="footer">
+            Nikmati kelezatan baklava buatan sendiri yang kaya rasa dan aroma.
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-bromo">Bakwan Bromo</a></li>
+<li><a href="/bakpia-pathok-harga-2022">Bakpia Pathok Harga 2022</a></li>
+<li><a href="/bumbu-bikin-bakso-mercon">Bumbu Bikin Bakso Mercon</a></li>
+<li><a href="/bakwan-jagung-manis-crispy">Bakwan Jagung Manis Crispy</a></li>
+<li><a href="/bakwan-tahu-tauge">Bakwan Tahu Tauge</a></li>
+<li><a href="/cara-membuat-bakwan-goreng-renyah">Cara Membuat Bakwan Goreng Renyah</a></li>
+<li><a href="/cara-buat-bakso-ceker-mercon">Cara Buat Bakso Ceker Mercon</a></li>
+<li><a href="/bakwan-kuah">Bakwan Kuah</a></li>
+<li><a href="/bakpao-kosong">Bakpao Kosong</a></li>
+<li><a href="/pangsit-bawang">Pangsit Bawang</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

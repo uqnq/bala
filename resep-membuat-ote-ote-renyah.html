@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Ote Ote Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #66cdaa; /* Sejuk, cerah hijau mint */
+            --secondary-color: #ffe4b5; /* Hangat, cerah kuning pastel */
+            --text-color: #333;
+            --background-color: #f0fff0; /* Sangat sejuk, latar belakang hijau muda */
+            --card-background: #ffffff;
+            --accent-color: #ff7f50; /* Sedikit sentuhan cerah oranye */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 15px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to the top */
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px; /* Max width for content */
+            background-color: var(--card-background);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.7em;
+            margin-top: 25px;
+            border-bottom: 2px dashed var(--accent-color);
+            padding-bottom: 5px;
+            display: inline-block; /* To make border bottom fit content */
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 300px; /* Adjust image size */
+            margin: 20px auto;
+            display: block;
+        }
+
+        .intro-text {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .recipe-section {
+            text-align: left;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .recipe-section h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .recipe-section ul, .recipe-section ol {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .recipe-section li {
+            margin-bottom: 8px;
+        }
+
+        .steps li::before {
+            content: "✔ ";
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .ingredients li::before {
+            content: "• ";
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        strong {
+            color: var(--accent-color);
+        }
+
+        .tips {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 10px;
+            font-style: italic;
+        }
+
+        .tips strong {
+            color: var(--secondary-color);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .intro-text {
+                font-size: 1em;
+            }
+            .hero-image {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <svg class="hero-image" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc">
+            <title id="title">Ilustrasi Ote Ote Renyah</title>
+            <desc id="desc">Gambar ilustrasi ote ote berwarna keemasan dengan sedikit sayuran hijau dan oranye.</desc>
+            <path d="M10 10 Q 20 0 30 10 T 50 10 T 70 10 T 90 10 V 70 H 10 Z" fill="#ffec8b" stroke="#e0c35e" stroke-width="2"/>
+            <circle cx="25" cy="45" r="8" fill="#b0e0e6" />
+            <circle cx="50" cy="40" r="8" fill="#ffb347" />
+            <circle cx="75" cy="45" r="8" fill="#b0e0e6" />
+            <text x="50" y="55" font-family="Verdana" font-size="10" fill="#333" text-anchor="middle" font-weight="bold">Ote Ote</text>
+        </svg>
+
+        <h1>Resep Ote Ote Renyah Sempurna</h1>
+
+        <p class="intro-text">Siapa yang bisa menolak kerenyahan gurih dari ote-ote hangat? Makanan ringan favorit banyak orang ini ternyata mudah dibuat di rumah. Ikuti resep simpel ini untuk menghasilkan ote-ote yang renyah di luar, lembut di dalam, dan penuh cita rasa.</p>
+
+        <h2>Rahasia Kerenyahan Maksimal</h2>
+        <p>Kunci utama ote-ote yang renyah terletak pada adonan dan cara menggorengnya. Adonan yang pas akan menghasilkan kulit yang tipis dan garing, sementara suhu minyak yang tepat memastikan ote-ote matang merata tanpa menyerap terlalu banyak minyak.</p>
+
+        <div class="recipe-section">
+            <h3>Bahan-Bahan Ote Ote</h3>
+            <ul class="ingredients">
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>Sekitar 250-300 ml air es (sesuaikan kekentalan)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>1 buah wortel ukuran kecil, parut kasar atau potong korek api sangat halus</li>
+                <li>50 gram taoge (opsional)</li>
+                <li>Bahan isian (sesuai selera): udang kecil, irisan kol, atau tauge lebih banyak</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Cara Membuat Ote Ote Renyah</h3>
+            <ol class="steps">
+                <li><strong>Siapkan Adonan:</strong> Dalam mangkuk besar, campurkan tepung terigu, tepung beras, garam, merica, dan kaldu bubuk. Aduk rata.</li>
+                <li><strong>Tambahkan Air Es:</strong> Tuangkan air es sedikit demi sedikit sambil terus diaduk hingga adonan menjadi licin dan tidak ada gumpalan. Kekentalan adonan harus pas, tidak terlalu kental dan tidak terlalu encer. Adonan yang ideal akan menempel pada sayuran dan bisa sedikit mengalir.</li>
+                <li><strong>Masukkan Sayuran:</strong> Masukkan irisan daun bawang, wortel parut, dan taoge (jika pakai) ke dalam adonan. Aduk rata hingga semua sayuran terbalut adonan. Jika menggunakan isian tambahan seperti udang, masukkan pada tahap ini.</li>
+                <li><strong>Panaskan Minyak:</strong> Siapkan wajan dengan minyak goreng yang cukup banyak. Panaskan minyak dengan api sedang hingga benar-benar panas. Ini penting agar ote-ote langsung kokoh saat masuk ke wajan.</li>
+                <li><strong>Goreng Ote Ote:</strong> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng beberapa buah sekaligus, jangan terlalu penuh agar matang merata.</li>
+                <li><strong>Balik dan Angkat:</strong> Goreng hingga salah satu sisi berwarna keemasan dan kokoh, lalu balik dengan hati-hati. Goreng hingga kedua sisi matang merata dan berwarna cokelat keemasan yang cantik. Angkat dan tiriskan minyaknya menggunakan saringan atau tisu dapur.</li>
+                <li><strong>Sajikan:</strong> Ote-ote siap disajikan selagi hangat. Nikmati dengan cabai rawit hijau atau saus sambal favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <strong>Tips Tambahan untuk Ote Ote Sempurna:</strong>
+            <ul>
+                <li>Gunakan air es untuk adonan agar menghasilkan kulit yang lebih renyah.</li>
+                <li>Pastikan minyak benar-benar panas sebelum menggoreng agar ote-ote tidak menyerap banyak minyak dan menjadi lembek.</li>
+                <li>Jangan terlalu sering membolak-balik ote-ote saat menggoreng agar tidak mudah hancur.</li>
+                <li>Untuk variasi, Anda bisa menambahkan udang kecil, irisan kol tipis, atau jagung pipil ke dalam adonan.</li>
+                <li>Tiriskan ote-ote dengan baik agar tetap renyah.</li>
+            </ul>
+        </div>
+
+        <p>Membuat ote-ote renyah di rumah tidaklah sulit. Dengan bahan-bahan sederhana dan sedikit trik, Anda bisa menyajikan camilan lezat yang disukai seluruh keluarga. Selamat mencoba dan nikmati kelezatan ote-ote buatan sendiri!</p>
+
+        <footer>
+            Resep mudah untuk camilan favorit.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/antibakteri-adalah">Antibakteri Adalah</a></li>
+<li><a href="/buat-bakwan-sayur-renyah">Buat Bakwan Sayur Renyah</a></li>
+<li><a href="/resep-buat-bakwan-gurih">Resep Buat Bakwan Gurih</a></li>
+<li><a href="/bakpao-elfin-bsd">Bakpao Elfin Bsd</a></li>
+<li><a href="/resep-bala-bala-mie">Resep Bala Bala Mie</a></li>
+<li><a href="/bakwan-ubi">Bakwan Ubi</a></li>
+<li><a href="/cara-mengukus-bakpao-supaya-tidak-mengkerut">Cara Mengukus Bakpao Supaya Tidak Mengkerut</a></li>
+<li><a href="/membuat-weci">Membuat Weci</a></li>
+<li><a href="/cara-membuat-bakpao-ubi-kuning">Cara Membuat Bakpao Ubi Kuning</a></li>
+<li><a href="/bahan-bikin-bakwan-goreng">Bahan Bikin Bakwan Goreng</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Daun Singkong Super Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #20b2aa; /* LightSeaGreen - warna cerah yang sejuk */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #00ced1; /* DarkTurquoise - aksen cerah */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed #00ced1;
+            padding-bottom: 5px;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .recipe-image {
+            display: block;
+            margin: 30px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        .ingredients, .instructions {
+            background-color: #e0ffff; /* LightCyan - latar belakang sedikit lebih gelap untuk kontras */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .ingredients h3, .instructions h3 {
+            color: #008080; /* Teal - warna penekanan */
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            color: #ff6347; /* Tomato - sedikit aksen warna cerah */
+            font-weight: bold;
+        }
+        .tip {
+            background-color: #fffacd; /* LemonChiffon - kotak tips warna lembut */
+            border-left: 5px solid #ffd700; /* Gold - garis pemisah warna cerah */
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.7em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .recipe-image {
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Daun Singkong Super Renyah</h1>
+
+        <svg class="recipe-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid meet">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#20b2aa;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00ced1;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feMerge>
+                        <feMergeNode in="offsetblur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <!-- Background gradient -->
+            <rect width="100%" height="100%" fill="url(#grad1)"/>
+
+            <!-- Bakwan graphic -->
+            <g transform="translate(100, 50) scale(0.8)">
+                <path d="M0,0 C50,-20 100,-10 100,30 C120,80 80,120 40,120 C-20,120 -40,80 -20,40 C0,0 0,0 0,0 z" fill="#f5deb3" stroke="#deb887" stroke-width="2" filter="url(#shadow)"/>
+                <circle cx="30" cy="40" r="15" fill="#f5deb3" stroke="#deb887" stroke-width="2" filter="url(#shadow)"/>
+                <circle cx="60" cy="20" r="12" fill="#f5deb3" stroke="#deb887" stroke-width="2" filter="url(#shadow)"/>
+                <circle cx="80" cy="60" r="10" fill="#f5deb3" stroke="#deb887" stroke-width="2" filter="url(#shadow)"/>
+                <circle cx="50" cy="80" r="14" fill="#f5deb3" stroke="#deb887" stroke-width="2" filter="url(#shadow)"/>
+                <circle cx="20" cy="60" r="11" fill="#f5deb3" stroke="#deb887" stroke-width="2" filter="url(#shadow)"/>
+            </g>
+            <!-- Daun Singkong graphic -->
+            <g transform="translate(300, 80) scale(0.7)">
+                <path d="M0,0 L50,-20 L80,10 L60,40 L30,50 Z" fill="#90ee90" stroke="#32cd32" stroke-width="2" filter="url(#shadow)"/>
+                <path d="M20,10 L70,-5 L90,20 L70,50 L40,55 Z" fill="#90ee90" stroke="#32cd32" stroke-width="2" filter="url(#shadow)"/>
+                <path d="M40,20 L90,15 L100,35 L80,55 L50,60 Z" fill="#90ee90" stroke="#32cd32" stroke-width="2" filter="url(#shadow)"/>
+            </g>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="bold" filter="url(#shadow)">Bakwan</text>
+            <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="25" filter="url(#shadow)">Daun Singkong</text>
+        </svg>
+
+        <p>Siapa yang tidak suka bakwan? Camilan renyah dan gurih ini selalu menjadi favorit di setiap kesempatan, mulai dari teman minum teh di sore hari hingga pelengkap santapan nasi hangat. Kali ini, kita akan membahas resep bakwan daun singkong yang tak kalah lezat dari bakwan sayuran pada umumnya. Daun singkong yang seringkali dianggap sayuran sederhana ternyata bisa diolah menjadi hidangan yang menggugah selera dengan tekstur yang unik dan rasa yang khas.</p>
+
+        <p>Mengolah daun singkong menjadi bakwan bukan hanya cara yang inovatif untuk menikmati sayuran ini, tetapi juga solusi cerdas untuk mengurangi sisa makanan. Daun singkong mudah didapat, harganya terjangkau, dan kaya akan nutrisi. Dengan sedikit sentuhan bumbu dan teknik yang tepat, daun singkong akan bertransformasi menjadi bakwan yang <span class="highlight">renyah di luar dan lembut di dalam</span>.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan</h2>
+            <ul>
+                <li>2 ikat daun singkong muda, siangi, cuci bersih, dan iris halus</li>
+                <li>150 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1 cm kencur, haluskan (opsional, untuk aroma khas)</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Sekitar 150-200 ml air dingin (atau secukupnya hingga adonan kental)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li>Pertama, rebus daun singkong sebentar dalam air mendidih yang sudah diberi sedikit garam. Tiriskan dan peras hingga airnya benar-benar hilang. Haluskan kasar daun singkong dengan cara diulek atau dicincang kasar. Ini akan membantu tekstur bakwan nantinya.</li>
+                <li>Dalam wadah, campurkan tepung terigu, tepung beras, irisan daun bawang, bawang putih halus, kencur halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li>Masukkan daun singkong yang sudah dihaluskan kasar ke dalam campuran tepung. Aduk rata hingga daun singkong terbalut tepung.</li>
+                <li>Tuang air dingin sedikit demi sedikit sambil terus diaduk hingga adonan mengental dan bisa dibentuk. Jangan terlalu encer agar bakwan tidak menyerap banyak minyak. Konsistensi adonan harus bisa menempel pada daun singkong.</li>
+                <li>Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang cenderung kecil. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+                <li>Ambil satu sendok adonan, lalu goreng dalam minyak panas. Lakukan hingga wajan terisi secukupnya, jangan terlalu penuh agar bakwan matang merata dan tetap renyah.</li>
+                <li>Goreng bakwan hingga berwarna kuning keemasan dan matang sempurna. Balik sesekali agar matang merata di kedua sisinya.</li>
+                <li>Angkat bakwan daun singkong dan tiriskan di atas kertas tisu untuk menyerap kelebihan minyak.</li>
+                <li>Sajikan bakwan daun singkong selagi hangat sebagai camilan atau lauk pendamping.</li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <p><strong>Tips Tambahan:</strong> Untuk hasil bakwan yang lebih renyah tahan lama, gunakan air yang sangat dingin atau tambahkan sedikit es batu ke dalam adonan. Penggunaan tepung beras juga sangat krusial untuk menciptakan tekstur yang garing maksimal.</p>
+        </div>
+
+        <p>Bakwan daun singkong ini adalah bukti bahwa bahan sederhana bisa menjadi bintang di meja makan. Rasanya yang gurih, ditambah aroma khas daun singkong yang berpadu dengan bumbu rempah, akan membuat Anda ketagihan. Teksturnya yang renyah di luar dan sedikit lembut di dalam begitu memanjakan lidah. Sangat cocok dinikmati bersama cabai rawit hijau segar, sambal, atau saus sambal favorit Anda.</p>
+
+        <p>Jangan ragu untuk bereksperimen dengan bumbu. Anda bisa menambahkan sedikit irisan cabai rawit merah jika suka pedas, atau sedikit parutan wortel untuk variasi warna dan rasa. Kunci utamanya adalah penggunaan daun singkong segar dan teknik menggoreng yang tepat agar hasilnya maksimal. Selamat mencoba membuat bakwan daun singkong kreasi Anda sendiri!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-bala2">Cara Membuat Bala2</a></li>
+<li><a href="/pengelompokan-bakteri">Pengelompokan Bakteri</a></li>
+<li><a href="/bakso-mercon-sukatani">Bakso Mercon Sukatani</a></li>
+<li><a href="/bakwan">Bakwan</a></li>
+<li><a href="/cara-membuat-bakpia-coklat">Cara Membuat Bakpia Coklat</a></li>
+<li><a href="/bakso-mercon-pip">Bakso Mercon Pip</a></li>
+<li><a href="/bakpao-chik-yen-halal">Bakpao Chik Yen Halal</a></li>
+<li><a href="/bakteri-di-lambung">Bakteri Di Lambung</a></li>
+<li><a href="/bumbu-bakwan-jagung-rumahan">Bumbu Bakwan Jagung Rumahan</a></li>
+<li><a href="/ceker-dan-bakso-mercon">Ceker Dan Bakso Mercon</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

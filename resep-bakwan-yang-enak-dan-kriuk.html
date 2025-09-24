@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temukan resep bakwan yang enak dan kriuk, camilan favorit yang mudah dibuat di rumah. Dijamin anti lembek!">
+    <title>Resep Bakwan Enak & Kriuk | Rahasia Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #FFC107; /* Kuning cerah */
+            --background-color: #E8F5E9; /* Hijau muda pucat */
+            --text-color: #333;
+            --heading-color: #2E7D32; /* Hijau tua */
+            --card-background: #FFFFFF;
+            --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --border-radius: 10px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 16px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            padding: 24px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
+            font-size: 1.5em;
+        }
+
+        p, ul, ol {
+            margin-bottom: 16px;
+            font-size: 1.1em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--heading-color);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-bottom: 24px;
+            display: block; /* Agar tidak ada spasi di bawah gambar */
+        }
+
+        .recipe-section {
+            background-color: var(--background-color);
+            padding: 16px;
+            border-radius: var(--border-radius);
+            margin-bottom: 24px;
+            border: 1px dashed var(--primary-color);
+        }
+
+        .recipe-section h3 {
+            color: var(--heading-color);
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+
+        .tips-section {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 16px;
+            border-radius: var(--border-radius);
+            margin-top: 24px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .tips-section h3 {
+            color: var(--heading-color);
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+
+        .tips-section ul li {
+            color: var(--text-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Enak dan Kriuk: Camilan Sempurna di Setiap Gigitan</h1>
+
+        <!-- SVG Image -->
+        <svg class="hero-image" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakwanTitle">
+            <title id="bakwanTitle">Ilustrasi bakwan sayur renyah berwarna emas cerah.</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:rgb(255,193,7);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(76,175,80);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="800" height="300" fill="var(--background-color)" rx="15"/>
+
+            <!-- Bakwan 1 -->
+            <path d="M 150 150 Q 170 120 200 150 T 250 150 Q 270 180 250 210 T 200 210 Q 180 180 150 150 Z" fill="var(--secondary-color)" transform="rotate(-10 200 180)"/>
+            <ellipse cx="200" cy="180" rx="30" ry="10" fill="#FFD54F" transform="rotate(-10 200 180)"/>
+
+            <!-- Bakwan 2 -->
+            <path d="M 350 160 Q 370 130 400 160 T 450 160 Q 470 190 450 220 T 400 220 Q 380 190 350 160 Z" fill="var(--secondary-color)" transform="rotate(15 400 190)"/>
+            <ellipse cx="400" cy="190" rx="30" ry="10" fill="#FFD54F" transform="rotate(15 400 190)"/>
+
+            <!-- Bakwan 3 -->
+            <path d="M 550 170 Q 570 140 600 170 T 650 170 Q 670 200 650 230 T 600 230 Q 580 200 550 170 Z" fill="var(--secondary-color)" transform="rotate(-20 600 200)"/>
+            <ellipse cx="600" cy="200" rx="30" ry="10" fill="#FFD54F" transform="rotate(-20 600 200)"/>
+
+            <!-- Kripik Sayur (simple shapes) -->
+            <polygon points="220,100 230,80 240,100" fill="#A5D6A7"/>
+            <polygon points="230,85 240,65 250,85" fill="#A5D6A7"/>
+            <polygon points="260,120 270,100 280,120" fill="#C8E6C9"/>
+
+            <polygon points="420,110 430,90 440,110" fill="#C8E6C9"/>
+            <polygon points="430,95 440,75 450,95" fill="#C8E6C9"/>
+
+            <polygon points="620,130 630,110 640,130" fill="#A5D6A7"/>
+
+            <!-- Garnish -->
+            <circle cx="160" cy="170" r="3" fill="#FFAB40"/>
+            <circle cx="220" cy="190" r="3" fill="#FFAB40"/>
+            <circle cx="360" cy="190" r="3" fill="#FFAB40"/>
+            <circle cx="430" cy="210" r="3" fill="#FFAB40"/>
+            <circle cx="570" cy="200" r="3" fill="#FFAB40"/>
+            <circle cx="630" cy="220" r="3" fill="#FFAB40"/>
+
+            <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="var(--heading-color)" font-size="30" font-weight="bold">Bakwan</text>
+            <text x="50%" y="65%" text-anchor="middle" dy=".3em" fill="var(--primary-color)" font-size="20">Renyah & Lezat</text>
+        </svg>
+
+        <p>Siapa yang tidak suka bakwan? Camilan gurih yang renyah di luar dan lembut di dalam ini selalu menjadi favorit di berbagai kesempatan. Baik sebagai teman minum teh, lauk pendamping, atau sekadar pengganjal lapar, bakwan selalu berhasil memanjakan lidah. Membuat bakwan yang enak dan kriuk ternyata tidak sesulit yang dibayangkan. Dengan mengikuti resep dan tips yang tepat, Anda bisa menyajikan bakwan sempurna yang disukai seluruh keluarga.</p>
+
+        <div class="recipe-section">
+            <h2>Resep Dasar Bakwan Sayur Kriuk</h2>
+            <p>Resep ini adalah fondasi untuk bakwan sayur yang lezat dan renyah. Kunci utamanya adalah pada adonan dan cara menggorengnya.</p>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk ekstra kriuk)</li>
+                <li>1 sendok teh garam</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>250-300 ml air dingin (secukupnya, jangan terlalu kental/cair)</li>
+                <li>Sayuran sesuai selera (wortel parut/iris tipis, kol iris tipis, tauge, buncis iris tipis, daun bawang iris)</li>
+                <li>Minyak goreng secukupnya (pastikan cukup banyak agar bakwan terendam)</li>
+            </ul>
+
+            <h3>Cara Membuat:</h3>
+            <ol>
+                <li>Campurkan tepung terigu, tepung beras, garam, merica bubuk, dan kaldu bubuk dalam sebuah wadah. Aduk rata.</li>
+                <li>Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga membentuk adonan yang licin dan tidak bergerindil. Kekentalan adonan harus pas, tidak terlalu kental agar tidak bantat, dan tidak terlalu cair agar sayuran menempel.</li>
+                <li>Masukkan irisan sayuran ke dalam adonan. Aduk rata hingga semua sayuran terlapisi adonan.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang cenderung besar. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li>Ambil satu sendok sayur adonan, lalu goreng dalam minyak panas. Jangan terlalu banyak memasukkan adonan sekaligus agar suhu minyak tidak turun drastis.</li>
+                <li>Goreng hingga bakwan berwarna kuning keemasan dan matang sempurna di kedua sisinya. Balik sesekali agar matang merata.</li>
+                <li>Angkat bakwan dan tiriskan minyaknya menggunakan saringan atau tisu dapur penyerap minyak.</li>
+                <li>Sajikan bakwan selagi hangat dengan saus sambal, cabai rawit, atau lontong.</li>
+            </ol>
+        </div>
+
+        <div class="tips-section">
+            <h3>Tips Jitu Membuat Bakwan Enak dan Super Kriuk</h3>
+            <ul>
+                <li><strong>Gunakan Air Dingin:</strong> Air dingin membantu menciptakan adonan yang lebih renyah karena proses penggorengannya lebih cepat.</li>
+                <li><strong>Tambahkan Tepung Beras:</strong> Tepung beras memiliki kandungan pati yang lebih tinggi, sehingga membuat bakwan menjadi lebih renyah dan tahan lama kriuknya.</li>
+                <li><strong>Adonan Jangan Terlalu Kental:</strong> Adonan yang terlalu kental akan membuat bakwan menjadi tebal, berat, dan sulit matang merata, sehingga cenderung lembek.</li>
+                <li><strong>Minyak Harus Benar-benar Panas:</strong> Ini adalah kunci utama agar bakwan langsung kokoh saat masuk wajan dan tidak menyerap banyak minyak. Gunakan api sedang cenderung besar saat menggoreng.</li>
+                <li><strong>Jangan Terlalu Sering Dibalik:</strong> Gorenglah hingga satu sisi cukup kokoh sebelum dibalik. Membalik terlalu sering bisa membuat bakwan pecah dan menyerap minyak.</li>
+                <li><strong>Jangan Goreng Terlalu Banyak Sekaligus:</strong> Memasukkan terlalu banyak bakwan dalam satu waktu akan menurunkan suhu minyak, membuat bakwan menyerap minyak, dan menjadi lembek.</li>
+                <li><strong>Tiriskan dengan Baik:</strong> Pastikan bakwan benar-benar ditiriskan dari minyak berlebih.</li>
+                <li><strong>Sajikan Segera:</strong> Bakwan paling enak dinikmati saat masih hangat dan kriuk. Jika ingin disimpan, masukkan ke dalam wadah kedap udara setelah benar-benar dingin untuk menjaga kerenyahannya.</li>
+            </ul>
+        </div>
+
+        <p>Dengan mengikuti panduan ini, Anda tidak perlu lagi khawatir bakwan buatan sendiri menjadi lembek. Nikmati hasil kreasi Anda yang renyah, gurih, dan pastinya disukai banyak orang!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-kukus-tugu-tahan-berapa-hari">Bakpia Kukus Tugu Tahan Berapa Hari</a></li>
+<li><a href="/cara-masak-bakwan">Cara Masak Bakwan</a></li>
+<li><a href="/aneka-masakan-dari-daun-singkong">Aneka Masakan Dari Daun Singkong</a></li>
+<li><a href="/resep-dadar-jagung-enak">Resep Dadar Jagung Enak</a></li>
+<li><a href="/bakwan-marina">Bakwan Marina</a></li>
+<li><a href="/balik-papan">Balik Papan</a></li>
+<li><a href="/bakso-beranak-besongol">Bakso Beranak Besongol</a></li>
+<li><a href="/sendok-bakwan">Sendok Bakwan</a></li>
+<li><a href="/cara-membuat-bakpao-yang-lembut">Cara Membuat Bakpao Yang Lembut</a></li>
+<li><a href="/resep-makanan-dari-jagung-simple">Resep Makanan Dari Jagung Simple</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

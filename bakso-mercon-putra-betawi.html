@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakso Mercon Putra Betawi: Pedas Nikmat!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            --text-color: #004d40; /* Warna teks hijau tua sejuk */
+            --accent-color: #00796b; /* Warna aksen hijau toska */
+            --card-bg: #ffffff; /* Latar belakang kartu */
+            --shadow-color: rgba(0, 77, 64, 0.1); /* Bayangan lembut */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 16px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px var(--shadow-color);
+        }
+
+        h1, h2 {
+            color: var(--accent-color);
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 24px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 24px 0;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .menu-item {
+            background-color: var(--card-bg);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .menu-item h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1.5em;
+            margin-bottom: 8px;
+        }
+
+        .menu-item p {
+            margin-bottom: 0;
+            color: #333; /* Warna teks deskripsi yang sedikit lebih gelap */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--shadow-color);
+            font-size: 0.9em;
+            color: #666; /* Warna abu-abu lembut untuk footer */
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakso Mercon Putra Betawi: Sensasi Pedas Menggugah Selera</h1>
+
+        <div class="image-container">
+            <!-- SVG Gambar Bakso Mercon Putra Betawi -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+                <defs>
+                    <linearGradient id="gradient-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#80deea; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#4dd0e1; stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00796b" flood-opacity="0.3"/>
+                    </filter>
+                </defs>
+                <rect width="600" height="300" rx="15" ry="15" fill="url(#gradient-bg)" />
+
+                <!-- Siluet Mangkuk Bakso -->
+                <path d="M 50 180 C 50 250, 150 290, 300 290 C 450 290, 550 250, 550 180 C 550 110, 450 70, 300 70 C 150 70, 50 110, 50 180 Z" fill="#ffffff" filter="url(#shadow)" />
+                <path d="M 70 175 C 70 240, 130 280, 300 280 C 470 280, 530 240, 530 175 C 530 110, 470 70, 300 70 C 130 70, 70 110, 70 175 Z" fill="#f5f5f5" opacity="0.8"/>
+
+                <!-- Bakso -->
+                <circle cx="200" cy="150" r="25" fill="#c62828" filter="url(#shadow)"/>
+                <circle cx="280" cy="120" r="20" fill="#d32f2f" filter="url(#shadow)"/>
+                <circle cx="360" cy="160" r="22" fill="#b71c1c" filter="url(#shadow)"/>
+                <circle cx="250" cy="190" r="18" fill="#e57373" filter="url(#shadow)"/>
+                <circle cx="330" cy="190" r="20" fill="#d32f2f" filter="url(#shadow)"/>
+
+                <!-- Teks Mercon -->
+                <text x="300" y="100" font-family="Arial, sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">MERCON</text>
+                <text x="300" y="130" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">Pedasnya</text>
+
+                <!-- Teks Putra Betawi -->
+                <text x="300" y="230" font-family="Arial, sans-serif" font-size="35" fill="#ffffff" text-anchor="middle" font-weight="bold">Putra Betawi</text>
+            </svg>
+            <p><small>Nikmati kelezatan Bakso Mercon Putra Betawi yang menggoda.</small></p>
+        </div>
+
+        <p>Bagi para pencinta kuliner pedas, menemukan semangkuk bakso yang pas di lidah adalah sebuah kenikmatan tersendiri. Di antara berbagai pilihan yang ada, <span class="highlight">Bakso Mercon Putra Betawi</span> hadir menawarkan pengalaman rasa yang tak terlupakan. Perpaduan antara tekstur bakso yang kenyal, kuah kaldu yang gurih, dan bumbu mercon yang pedasnya mantap menjadi daya tarik utama dari kuliner legendaris ini.</p>
+
+        <p>Putra Betawi bukan sekadar nama, melainkan jaminan kualitas dan cita rasa otentik Betawi yang terjaga. Resep turun-temurun yang diwariskan dari generasi ke generasi menjadi kunci utama keunggulan Bakso Mercon Putra Betawi. Setiap butir baksonya dibuat dari daging sapi pilihan berkualitas tinggi, diolah dengan bumbu rempah rahasia yang menghasilkan cita rasa yang khas dan mendalam. Anda tidak akan menemukan rasa hambar atau kurang bumbu di setiap gigitannya.</p>
+
+        <h2>Lebih dari Sekadar Bakso Pedas</h2>
+
+        <p>Yang membedakan Bakso Mercon Putra Betawi adalah olahan sambal merconnya. Berbeda dengan sambal bakso pada umumnya, sambal mercon di sini diracik khusus dengan cabai pilihan yang memiliki tingkat kepedasan luar biasa, dipadukan dengan bumbu-bumbu aromatik seperti bawang, jahe, dan rempah lainnya. Hasilnya adalah sambal yang tidak hanya pedas, tetapi juga kaya rasa dan mampu membangunkan selera makan siapa saja. Kepedasan ini dirancang untuk memberikan sensasi "mercon" yang meledak di mulut, namun tetap harmonis dengan gurihnya kuah bakso.</p>
+
+        <div class="menu-item">
+            <h3>Bakso Mercon Spesial</h3>
+            <p>Semangkuk bakso daging sapi pilihan dengan isian sambal mercon yang meledak di lidah, disajikan dengan kuah kaldu gurih yang menghangatkan.</p>
+        </div>
+
+        <div class="menu-item">
+            <h3>Bakso Urat Super</h3>
+            <p>Bagi Anda yang menyukai tekstur lebih kenyal dan padat, bakso urat super kami adalah pilihan yang tepat.</p>
+        </div>
+
+        <div class="menu-item">
+            <h3>Bakso Keju Meleleh</h3>
+            <p>Sensasi gurih keju yang meleleh di dalam bakso, memberikan kejutan rasa yang menyenangkan.</p>
+        </div>
+
+        <p>Setiap sajian Bakso Mercon Putra Betawi disajikan lengkap dengan pelengkap seperti mie kuning, bihun, sawi, tauge, dan taburan seledri serta bawang goreng. Anda juga bisa menambahkan pangsit rebus, siomay, atau tahu bakso untuk melengkapi kenikmatan bersantap. Kuahnya yang bening namun kaya kaldu menjadi media yang sempurna untuk menyatukan semua rasa.</p>
+
+        <p>Mengunjungi kedai Bakso Mercon Putra Betawi bukan hanya tentang makan, tetapi juga tentang merasakan kehangatan dan keramahan khas Betawi. Suasana yang nyaman dan pelayanan yang ramah membuat setiap pengunjung merasa betah. Ini adalah tempat yang ideal untuk berkumpul bersama keluarga, teman, atau sekadar menikmati waktu makan siang yang memuaskan setelah beraktivitas.</p>
+
+        <p>Jadi, jika Anda sedang mencari destinasi kuliner yang menyajikan cita rasa pedas autentik dengan kualitas terjamin, jangan ragu untuk mencoba <span class="highlight">Bakso Mercon Putra Betawi</span>. Bersiaplah untuk ketagihan dengan ledakan rasa pedas nikmat yang akan membuat Anda ingin kembali lagi dan lagi!</p>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-panggang-oven">Bakwan Panggang Oven</a></li>
+<li><a href="/resep-bakwan-sayur-tidak-berminyak">Resep Bakwan Sayur Tidak Berminyak</a></li>
+<li><a href="/cara-membuat-kuah-cabe-bakwan">Cara Membuat Kuah Cabe Bakwan</a></li>
+<li><a href="/resep-bakwan-kawi-untuk-jualan">Resep Bakwan Kawi Untuk Jualan</a></li>
+<li><a href="/bakwan-instan">Bakwan Instan</a></li>
+<li><a href="/pentol-mercon-cup">Pentol Mercon Cup</a></li>
+<li><a href="/bakso-beranak-jakober">Bakso Beranak Jakober</a></li>
+<li><a href="/cara-membuat-opor-ayam-santan">Cara Membuat Opor Ayam Santan</a></li>
+<li><a href="/bakpia-kurnia-sari-wates">Bakpia Kurnia Sari Wates</a></li>
+<li><a href="/cara-buat-perkedel-jagung-tanpa-telur">Cara Buat Perkedel Jagung Tanpa Telur</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

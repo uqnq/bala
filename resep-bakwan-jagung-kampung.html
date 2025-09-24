@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Jagung Kampung: Gurih & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* CSS untuk tampilan rapi, mobile web, warna sejuk cerah */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 15px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk */
+            color: #004d40; /* Warna teks gelap */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px; /* Lebar maksimum konten */
+            background-color: #ffffff; /* Latar belakang konten */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 77, 64, 0.1); /* Bayangan lembut */
+        }
+        h1 {
+            color: #00796b; /* Warna judul lebih cerah */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #b2ebf2; /* Garis bawah sejuk */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .recipe-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #00695c; /* Warna teks tebal */
+        }
+        .tips {
+            background-color: #e0f2f1; /* Latar belakang tips */
+            padding: 15px;
+            border-left: 5px solid #00796b;
+            margin-top: 25px;
+            border-radius: 5px;
+        }
+        .tips h3 {
+            margin-top: 0;
+            color: #00695c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="recipe-image">
+            <!-- Gambar SVG yang cocok untuk bakwan jagung kampung -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffb300;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f57c00;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" fill="#FFF3E0"/> <!-- Latar belakang lembut -->
+
+                <!-- Ilustrasi Jagung -->
+                <path d="M200 100 C 200 80, 220 70, 240 60 C 260 50, 280 50, 300 60 C 320 70, 340 80, 340 100 C 340 120, 320 130, 300 140 C 280 150, 260 150, 240 140 C 220 130, 200 120, 200 100 Z" fill="#FBC02D"/> <!-- Bulir jagung utama -->
+                <path d="M220 90 C 220 80, 230 75, 240 70 C 250 65, 260 65, 270 70 C 280 75, 290 80, 290 90 C 290 100, 280 105, 270 110 C 260 115, 250 115, 240 110 C 230 105, 220 100, 220 90 Z" fill="#F9A825"/> <!-- Bulir jagung sedikit lebih dalam -->
+                <path d="M240 80 C 240 75, 245 72, 250 70 C 255 68, 260 68, 265 70 C 270 72, 275 75, 275 80 C 275 85, 270 88, 265 90 C 260 92, 255 92, 250 90 C 245 88, 240 85, 240 80 Z" fill="#FFD54F"/> <!-- Detail bulir -->
+
+                <!-- Daun Jagung -->
+                <path d="M180 120 C 150 150, 170 200, 200 220 L 220 200 C 200 180, 190 150, 180 120 Z" fill="#689F38"/>
+                <path d="M260 120 C 290 150, 270 200, 240 220 L 220 200 C 240 180, 250 150, 260 120 Z" fill="#689F38"/>
+
+                <!-- Bentuk Bakwan Jagung -->
+                <g transform="translate(350, 150) rotate(20)">
+                    <path d="M0 -50 A 50 50 0 0 1 50 0 A 50 50 0 0 1 0 50 A 50 50 0 0 1 -50 0 A 50 50 0 0 1 0 -50 Z" fill="url(#grad1)" stroke="#e65100" stroke-width="2"/>
+                    <circle cx="0" cy="0" r="15" fill="#FFF9C4"/> <!-- Tekstur renyah -->
+                    <circle cx="10" cy="-10" r="5" fill="#FFF9C4"/>
+                    <circle cx="-10" cy="10" r="5" fill="#FFF9C4"/>
+                    <circle cx="15" cy="15" r="3" fill="#FFF9C4"/>
+                    <circle cx="-15" cy="-15" r="3" fill="#FFF9C4"/>
+                </g>
+                <g transform="translate(450, 100) rotate(-10)">
+                    <path d="M0 -40 A 40 40 0 0 1 40 0 A 40 40 0 0 1 0 40 A 40 40 0 0 1 -40 0 A 40 40 0 0 1 0 -40 Z" fill="url(#grad1)" stroke="#e65100" stroke-width="2"/>
+                    <circle cx="0" cy="0" r="12" fill="#FFF9C4"/>
+                    <circle cx="8" cy="-8" r="4" fill="#FFF9C4"/>
+                    <circle cx="-8" cy="8" r="4" fill="#FFF9C4"/>
+                </g>
+                 <g transform="translate(380, 220) rotate(10)">
+                    <path d="M0 -30 A 30 30 0 0 1 30 0 A 30 30 0 0 1 0 30 A 30 30 0 0 1 -30 0 A 30 30 0 0 1 0 -30 Z" fill="url(#grad1)" stroke="#e65100" stroke-width="2"/>
+                    <circle cx="0" cy="0" r="10" fill="#FFF9C4"/>
+                </g>
+
+            </svg>
+        </div>
+
+        <h1>Resep Bakwan Jagung Kampung: Gurih, Renyah, dan Menggugah Selera</h1>
+
+        <p>Siapa yang tidak suka dengan camilan yang satu ini? Bakwan jagung, atau yang sering disebut perkedel jagung di beberapa daerah, adalah jajanan favorit banyak orang Indonesia. Aroma harumnya saat digoreng saja sudah bisa membuat perut keroncongan. Apalagi rasanya yang gurih, manis dari jagung, dengan tekstur renyah di luar dan lembut di dalam. Resep bakwan jagung kampung ini akan membawa Anda kembali ke cita rasa nostalgia, mudah dibuat, dan pasti disukai keluarga.</p>
+
+        <h2>Mengapa Bakwan Jagung Kampung Begitu Istimewa?</h2>
+        <p>Yang membuat bakwan jagung kampung begitu istimewa adalah kesederhanaannya. Bahan-bahannya mudah didapat, proses pembuatannya tidak rumit, namun hasilnya luar biasa. Penggunaan jagung manis segar yang dipipil dan dicampur dengan adonan tepung serta bumbu-bumbu dapur sederhana, menghasilkan rasa otentik yang sulit ditolak. Kehadiran irisan daun bawang dan seledri menambah aroma segar yang khas.</p>
+
+        <h2>Bahan-Bahan Utama:</h2>
+        <ul>
+            <li>3-4 buah jagung manis segar, pipil atau serut kasar</li>
+            <li>150 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+            <li>1 butir telur ayam</li>
+            <li>1 batang daun bawang, iris halus</li>
+            <li>1 batang seledri, iris halus (opsional, tapi sangat direkomendasikan)</li>
+            <li>150-200 ml air dingin (sesuaikan kekentalan adonan)</li>
+            <li>Garam, gula, dan merica secukupnya</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Bumbu Halus:</h2>
+        <ul>
+            <li>4 siung bawang merah</li>
+            <li>2 siung bawang putih</li>
+            <li>1/2 ruas jari kencur (memberi aroma khas kampung)</li>
+            <li>1 cm kunyit (opsional, untuk warna lebih menarik)</li>
+        </ul>
+
+        <h2>Cara Membuat Bakwan Jagung Kampung yang Lezat:</h2>
+        <ol>
+            <li><strong>Persiapan Jagung:</strong> Pipil atau serut jagung manis. Jika Anda suka tekstur yang lebih kasar, serut menggunakan pisau. Jika ingin lebih halus, gunakan parutan keju. Sisihkan.</li>
+            <li><strong>Haluskan Bumbu:</strong> Ulek atau blender bawang merah, bawang putih, kencur, dan kunyit hingga halus.</li>
+            <li><strong>Campur Bahan Kering:</strong> Dalam wadah besar, campurkan tepung terigu, tepung beras, garam, gula, dan merica bubuk. Aduk rata.</li>
+            <li><strong>Masukkan Bumbu dan Jagung:</strong> Masukkan bumbu halus ke dalam campuran tepung. Tambahkan jagung pipil/serut, irisan daun bawang, dan seledri (jika menggunakan). Aduk hingga tercampur merata.</li>
+            <li><strong>Tambahkan Telur dan Air:</strong> Pecahkan telur ayam ke dalam adonan. Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer agar bakwan tidak menyebar saat digoreng, namun juga tidak terlalu kental.</li>
+            <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Minyak yang cukup banyak akan membantu bakwan matang merata dan renyah.</li>
+            <li><strong>Goreng Bakwan:</strong> Ambil satu sendok sayur adonan bakwan, lalu masukkan ke dalam minyak panas. Goreng hingga kedua sisinya berwarna kuning keemasan dan matang. Jangan menggoreng terlalu banyak dalam satu waktu agar suhu minyak tetap stabil.</li>
+            <li><strong>Tiriskan:</strong> Angkat bakwan jagung yang sudah matang dan tiriskan di atas kertas tisu atau rak kawat agar minyak berlebih terserap.</li>
+            <li><strong>Sajikan:</strong> Bakwan jagung kampung siap disajikan selagi hangat. Nikmati dengan cabai rawit, saus sambal, atau lontong sebagai camilan atau lauk.</li>
+        </ol>
+
+        <div class="tips">
+            <h3>Tips Agar Bakwan Jagung Renyah Tahan Lama:</h3>
+            <ul>
+                <li>Gunakan air dingin untuk adonan. Air dingin membantu membuat tekstur bakwan lebih renyah.</li>
+                <li>Jangan terlalu banyak mengaduk adonan setelah semua bahan tercampur. Mengaduk berlebihan bisa membuat bakwan menjadi keras.</li>
+                <li>Pastikan minyak goreng benar-benar panas sebelum memasukkan adonan bakwan.</li>
+                <li>Tiriskan bakwan dengan baik setelah digoreng.</li>
+            </ul>
+        </div>
+
+        <p>Resep bakwan jagung kampung ini adalah bukti bahwa hidangan sederhana bisa menjadi sangat istimewa. Coba resep ini di rumah dan rasakan kembali kehangatan cita rasa kampung halaman. Selamat mencoba!</p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-mie-burung-dara">Bakwan Mie Burung Dara</a></li>
+<li><a href="/bakpao-untuk-jualan">Bakpao Untuk Jualan</a></li>
+<li><a href="/timnas-wales-piala-dunia-2022">Timnas Wales Piala Dunia 2022</a></li>
+<li><a href="/cara-membuat-bakpao-lipat">Cara Membuat Bakpao Lipat</a></li>
+<li><a href="/tulisan-arab-al-jaza-min-jinsil-amal">Tulisan Arab Al Jaza Min Jinsil Amal</a></li>
+<li><a href="/bakpia-merupakan-oleh-oleh-khas-dari-daerah">Bakpia Merupakan Oleh Oleh Khas Dari Daerah</a></li>
+<li><a href="/perkedel-jagung-in-english">Perkedel Jagung In English</a></li>
+<li><a href="/cara-membuat-bakwan-enak-renyah">Cara Membuat Bakwan Enak Renyah</a></li>
+<li><a href="/cara-membuat-toge-anti-gagal">Cara Membuat Toge Anti Gagal</a></li>
+<li><a href="/harga-kurnia-sari-bakpia">Harga Kurnia Sari Bakpia</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

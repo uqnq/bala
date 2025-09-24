@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Crispy & Lezat untuk Keluarga</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul yang cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #80cbc4;
+            padding-bottom: 10px;
+        }
+        img.hero-image {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 0 auto 25px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content-section {
+            margin-bottom: 30px;
+        }
+        .content-section p,
+        .content-section ul {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .content-section ul li {
+            margin-bottom: 8px;
+        }
+        .ingredients ul, .steps ol {
+            padding-left: 25px;
+        }
+        .ingredients ul li::before {
+            content: "• ";
+            color: #00796b;
+            font-weight: bold;
+            margin-left: -15px;
+        }
+        .steps ol li::before {
+            content: counter(list-item) ". ";
+            color: #00796b;
+            font-weight: bold;
+        }
+        .steps ol {
+            counter-reset: list-item;
+        }
+        .steps li {
+            counter-increment: list-item;
+        }
+        .tips {
+            background-color: #e8f5e9; /* Warna latar belakang tips yang lembut */
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #4caf50; /* Garis penanda warna hijau */
+            font-size: 1.05em;
+        }
+        .tips strong {
+            color: #2e7d32;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            img.hero-image {
+                margin-bottom: 20px;
+            }
+            .content-section p,
+            .content-section ul {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Resep Bakwan Crispy & Lezat untuk Keluarga</h1>
+
+        <!-- Gambar SVG Bakwan -->
+        <svg class="hero-image" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakwanTitle">
+            <title id="bakwanTitle">Ilustrasi Bakwan Renyah</title>
+            <defs>
+                <linearGradient id="gradient-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#333" flood-opacity="0.3"/>
+                </filter>
+            </defs>
+            <rect width="100%" height="100%" rx="15" ry="15" fill="url(#gradient-bg)" filter="url(#shadow)"/>
+
+            <!-- Bakwan 1 -->
+            <path d="M120,150 Q150,120 180,150 Q150,180 120,150 Z" fill="#dcedc8" stroke="#a5d6a7" stroke-width="2"/>
+            <path d="M135,145 Q150,130 165,145 Q150,160 135,145 Z" fill="#c8e6c9" stroke="#a5d6a7" stroke-width="1"/>
+            <path d="M110,160 Q130,140 150,160 Q130,180 110,160 Z" fill="#dcedc8" stroke="#a5d6a7" stroke-width="2"/>
+
+            <!-- Bakwan 2 -->
+            <path d="M250,120 Q280,100 310,120 Q280,140 250,120 Z" fill="#dcedc8" stroke="#a5d6a7" stroke-width="2"/>
+            <path d="M265,115 Q280,105 295,115 Q280,125 265,115 Z" fill="#c8e6c9" stroke="#a5d6a7" stroke-width="1"/>
+            <path d="M240,130 Q260,110 280,130 Q260,150 240,130 Z" fill="#dcedc8" stroke="#a5d6a7" stroke-width="2"/>
+
+            <!-- Bakwan 3 -->
+            <path d="M380,180 Q410,160 440,180 Q410,200 380,180 Z" fill="#dcedc8" stroke="#a5d6a7" stroke-width="2"/>
+            <path d="M395,175 Q410,165 425,175 Q410,185 395,175 Z" fill="#c8e6c9" stroke="#a5d6a7" stroke-width="1"/>
+            <path d="M370,190 Q390,170 410,190 Q390,210 370,190 Z" fill="#dcedc8" stroke="#a5d6a7" stroke-width="2"/>
+
+            <!-- Garis-garis halus -->
+            <g stroke="#a5d6a7" stroke-width="0.5" fill="none">
+                <path d="M130,140 Q145,130 160,140"/>
+                <path d="M115,155 Q130,145 145,155"/>
+                <path d="M260,110 Q275,100 290,110"/>
+                <path d="M245,125 Q260,115 275,125"/>
+                <path d="M390,170 Q405,160 420,170"/>
+                <path d="M375,185 Q390,175 405,185"/>
+            </g>
+
+            <!-- Teks sederhana -->
+            <text x="250" y="35" font-family="Arial, sans-serif" font-size="20" fill="#00796b" text-anchor="middle">Bakwan</text>
+        </svg>
+
+        <div class="content-section">
+            <p>Siapa yang tidak suka bakwan? Cemilan renyah dan gurih ini selalu jadi favorit keluarga, baik saat santai maupun menemani hidangan utama. Mengolah bakwan sendiri di rumah ternyata tidak sulit, lho! Dengan sedikit kreativitas, Anda bisa membuat bakwan yang tidak hanya enak tapi juga sehat.</p>
+            <p>Artikel ini akan memandu Anda langkah demi langkah untuk membuat bakwan sayur yang super renyah dan lezat, lengkap dengan tips agar hasilnya sempurna. Mari kita mulai petualangan kuliner Anda!</p>
+        </div>
+
+        <div class="content-section ingredients">
+            <h2>Bahan-Bahan Bakwan Crispy</h2>
+            <ul>
+                <li>1 buah wortel ukuran sedang, parut kasar atau iris korek api</li>
+                <li>1/4 buah kol ukuran kecil, iris tipis</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk tambahan kerenyahan)</li>
+                <li>1 butir telur ayam</li>
+                <li>150-200 ml air dingin (sesuaikan kekentalan adonan)</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir sejumput (opsional, untuk menyeimbangkan rasa)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="content-section steps">
+            <h2>Cara Membuat Bakwan Renyah</h2>
+            <ol>
+                <li>Dalam wadah besar, campurkan tepung terigu, tepung beras (jika pakai), bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan gula pasir (jika pakai). Aduk rata.</li>
+                <li>Masukkan telur, lalu tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan tidak bergerindil. Kekentalan adonan sebaiknya tidak terlalu encer agar bakwan tidak lembek.</li>
+                <li>Masukkan irisan wortel, kol, dan daun bawang ke dalam adonan. Aduk kembali hingga semua sayuran terbalut rata oleh adonan.</li>
+                <li>Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan bakwan.</li>
+                <li>Ambil satu sendok sayur adonan, lalu tuangkan perlahan ke dalam minyak panas. Lakukan hingga wajan terisi secukupnya, jangan terlalu penuh agar bakwan matang merata dan mudah dibalik.</li>
+                <li>Goreng bakwan hingga berwarna kuning keemasan dan matang di kedua sisinya. Balik sesekali agar matang sempurna.</li>
+                <li>Angkat bakwan yang sudah matang dan tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li>Sajikan bakwan selagi hangat dengan sambal cocolan favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="content-section tips">
+            <h2>Tips Agar Bakwan Makin Crispy Tahan Lama</h2>
+            <p>
+                <strong>1. Gunakan Air Dingin:</strong> Air es atau air dingin akan membantu menciptakan adonan yang lebih renyah.
+            </p>
+            <p>
+                <strong>2. Jangan Terlalu Banyak Mengaduk:</strong> Mengaduk adonan terlalu lama bisa membuat gluten tepung berkembang, menghasilkan bakwan yang keras. Cukup aduk hingga rata.
+            </p>
+            <p>
+                <strong>3. Tambahkan Tepung Beras:</strong> Sedikit tepung beras dalam adonan bisa memberikan tekstur yang lebih renyah.
+            </p>
+            <p>
+                <strong>4. Minyak Panas:</strong> Pastikan minyak benar-benar panas sebelum menggoreng. Ini kunci agar bakwan tidak menyerap banyak minyak dan menjadi renyah di luar.
+            </p>
+            <p>
+                <strong>5. Jangan Terlalu Tebal:</strong> Buat bakwan tidak terlalu tebal agar matang merata hingga ke dalam dan tetap renyah.
+            </p>
+            <p>
+                <strong>6. Tiriskan dengan Benar:</strong> Tiriskan bakwan segera setelah diangkat dari penggorengan agar tidak lembek karena uap panas.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <p>Membuat bakwan sendiri memberikan keleluasaan untuk berkreasi. Anda bisa menambahkan berbagai jenis sayuran lain seperti tauge, jagung pipil, atau bahkan udang cincang untuk variasi rasa. Selamat mencoba resep bakwan crispy ini dan nikmati kelezatannya bersama orang-orang terkasih!</p>
+        </div>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-wortel-daun-bawang">Bakwan Wortel Daun Bawang</a></li>
+<li><a href="/bumbu-ote-ote-weci">Bumbu Ote Ote Weci</a></li>
+<li><a href="/resep-bakwan-sayur-enak-dan-renyah">Resep Bakwan Sayur Enak Dan Renyah</a></li>
+<li><a href="/resep-dadar-jagung-renyah">Resep Dadar Jagung Renyah</a></li>
+<li><a href="/bakpao-goreng">Bakpao Goreng</a></li>
+<li><a href="/bakso-beranak-58">Bakso Beranak 58</a></li>
+<li><a href="/balasan-terhadap-penentang-dakwah">Balasan Terhadap Penentang Dakwah</a></li>
+<li><a href="/cara-membuat-bakwan-jembak">Cara Membuat Bakwan Jembak</a></li>
+<li><a href="/bumbu-weci-sederhana">Bumbu Weci Sederhana</a></li>
+<li><a href="/bakpao-mantap">Bakpao Mantap</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

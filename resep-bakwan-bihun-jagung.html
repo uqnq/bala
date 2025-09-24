@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resep bakwan bihun jagung yang renyah, gurih, dan mudah dibuat. Cocok untuk camilan keluarga atau ide jualan. Tampilan warna sejuk cerah di web mobile.">
+    <title>Resep Bakwan Bihun Jagung Renyah & Gurih</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Biru langit muda */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #00796b; /* Hijau toska tua */
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #004d40; /* Hijau toska sangat tua */
+            margin-top: 25px;
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 1.5em;
+        }
+        p, ul, ol {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .highlight {
+            color: #00695c; /* Hijau toska sedang */
+            font-weight: bold;
+        }
+        .ingredients-list li {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%2300695c" class="bi bi-check-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 4.284 6.224a.75.75 0 0 0-1.06 1.06l3.471 3.47a.75.75 0 0 0 1.08-.022l4.97-5.617a.75.75 0 0 0-.022-1.08z"/></svg>') no-repeat left 3px;
+            padding-left: 25px;
+        }
+        .instructions-list li {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23004d40" class="bi bi-pin-fill" viewBox="0 0 16 16"><path d="M4.14 1.5A1.5 1.5 0 0 1 5.5 0h5a1.5 1.5 0 0 1 1.36 1h.46c.62.03 1.04.53 1.04 1.14v.55a1.5 1.5 0 0 1-1.36 1h-.34a1.5 1.5 0 0 1-1.36 1h.34a1.5 1.5 0 0 1 1.36 1v.55c0 .61-.42 1.11-1.04 1.14h-.46a1.5 1.5 0 0 1-1.36-1h.34a1.5 1.5 0 0 1-1.36-1v-.55a1.5 1.5 0 0 1 1.36-1h.34a1.5 1.5 0 0 1-1.36-1v-.55a1.5 1.5 0 0 1 1.04-1.14h.46A1.5 1.5 0 0 1 10.5 4V2.5a1.5 1.5 0 0 1-1.36-1H5.5a1.5 1.5 0 0 1-1.36 1H4.14A1.5 1.5 0 0 1 2.78 1.5v9.5a1.5 1.5 0 0 1 1.36 1h.46c.62.03 1.04.53 1.04 1.14v.55a1.5 1.5 0 0 1-1.36 1h-.34a1.5 1.5 0 0 1-1.36-1v-.55c0-.61.42-1.11 1.04-1.14h.46a1.5 1.5 0 0 1 1.36-1h-.34a1.5 1.5 0 0 1 1.36-1v-.55a1.5 1.5 0 0 1-1.36-1h.34a1.5 1.5 0 0 1-1.36-1v-.55a1.5 1.5 0 0 1 1.04-1.14H4.14A1.5 1.5 0 0 1 2.78 12.5V1.5z"/></svg>') no-repeat left 3px;
+            padding-left: 25px;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='150' height='150'><style>.a{fill:%2300796b;}</style><path class='a' d='M84.7,73.3c0,1.5-0.6,2.9-1.6,4.1l-10.8,12.4c-1.1,1.3-2.6,2-4.1,2H33.7c-1.5,0-2.9-0.6-4.1-1.6l-12.4-10.8c-1.3-1.1-2-2.6-2-4.1V33.7c0-1.5,0.6-2.9,1.6-4.1l10.8-12.4c1.1-1.3,2.6-2,4.1-2H66.3c1.5,0,2.9,0.6,4.1,1.6l12.4,10.8c1.3,1.1,2,2.6,2,4.1V73.3z M50,26.7c-1.5,0-2.9,0.6-4.1,1.6l-12.4,10.8c-1.1,1.3-2,2.6-2,4.1v33.7c0,1.5,0.6,2.9,1.6,4.1l10.8,12.4c1.3,1.1,2.6,2,4.1,2H66.3c1.5,0,2.9-0.6,4.1-1.6l12.4-10.8c1.1-1.3,2-2.6,2-4.1V33.7c0-1.5-0.6-2.9-1.6-4.1l-10.8-12.4c-1.3-1.1-2.6-2-4.1-2H50z M50,30.9c-0.6,0-1.1,0.2-1.6,0.6l-10.8,12.4c-0.6,0.6-1,1.5-1,2.3v33.7c0,0.6,0.2,1.1,0.6,1.6l10.8,12.4c0.6,0.6,1.5,1,2.3,1H66.3c0.6,0,1.1-0.2,1.6-0.6l10.8-12.4c0.6-0.6,1-1.5,1-2.3V33.7c0-0.6-0.2-1.1-0.6-1.6l-10.8-12.4c-0.6-0.6-1.5-1-2.3-1H50z M50,37.5c2.1,0,3.7,1.6,3.7,3.7v23.7l7.5,7.5l-7.5,7.5H50c-2.1,0-3.7-1.6-3.7-3.7V41.2c0-2.1,1.6-3.7,3.7-3.7H50z M50,50h3.7l-3.7,3.7V50z M50,57.5h3.7l-3.7,3.7V57.5z'/></svg>" alt="Ilustrasi Bakwan Bihun Jagung" class="recipe-image">
+
+        <h1>Resep Bakwan Bihun Jagung Renyah dan Gurih</h1>
+        <p>Siapa yang tidak suka bakwan? Camilan gurih yang selalu jadi favorit banyak orang. Kali ini, kita akan membuat variasi bakwan yang tak kalah lezat, yaitu Bakwan Bihun Jagung. Perpaduan tekstur renyah dari adonan tepung, kenyal dari bihun, manis dari jagung, dan gurih dari bumbu rempah, menjadikan camilan ini istimewa. Cocok disantap saat santai bersama keluarga atau bahkan dijadikan ide jualan yang menguntungkan.</p>
+
+        <p>Membuat bakwan bihun jagung ternyata tidak serumit yang dibayangkan. Dengan bahan-bahan yang mudah didapat dan langkah-langkah yang jelas, Anda bisa menyajikan camilan lezat ini di rumah. Rahasia kerenyahan bakwan ini terletak pada adonan yang pas dan teknik menggoreng yang tepat. Jangan khawatir, resep ini akan memandu Anda hingga berhasil menciptakan bakwan yang sempurna!</p>
+
+        <h2>Bahan-bahan</h2>
+        <ul class="ingredients-list">
+            <li>100 gram bihun kering, seduh air panas hingga lunak, tiriskan, potong-potong</li>
+            <li>100 gram jagung manis pipil (bisa menggunakan jagung kalengan atau segar)</li>
+            <li>150 gram tepung terigu protein sedang</li>
+            <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+            <li>1 butir telur</li>
+            <li>1 batang daun bawang, iris halus</li>
+            <li>1 batang seledri, iris halus (opsional, untuk aroma)</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Bumbu Halus</h2>
+        <ul class="ingredients-list">
+            <li>4 siung bawang putih</li>
+            <li>3 siung bawang merah</li>
+            <li>1/2 sendok teh merica butiran</li>
+            <li>1 sendok teh garam (atau sesuai selera)</li>
+            <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+        </ul>
+
+        <h2>Cara Membuat</h2>
+        <ol class="instructions-list">
+            <li><strong>Persiapan Adonan:</strong> Dalam wadah besar, campurkan tepung terigu dan tepung beras. Masukkan bumbu halus, aduk rata.</li>
+            <li>Tambahkan telur ke dalam campuran tepung, aduk hingga berbutir-butir.</li>
+            <li>Masukkan potongan bihun yang sudah ditiriskan, jagung manis pipil, irisan daun bawang, dan seledri (jika menggunakan). Aduk semua bahan hingga tercampur rata.</li>
+            <li>Tambahkan sedikit demi sedikit air dingin (sekitar 100-150 ml) sambil terus diaduk hingga adonan kental dan semua bahan tercampur merata. Konsistensi adonan harus pas, tidak terlalu encer agar tidak melempem, tapi juga tidak terlalu kental agar bakwan tetap ringan.</li>
+            <li><strong>Menggoreng:</strong> Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+            <li>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng beberapa buah bakwan hingga berwarna kuning keemasan dan matang di kedua sisinya. Jangan terlalu banyak memasukkan bakwan sekaligus agar suhu minyak tidak turun drastis dan bakwan bisa matang merata serta renyah.</li>
+            <li>Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan saringan atau tisu dapur penyerap minyak.</li>
+            <li>Ulangi proses menggoreng hingga semua adonan habis.</li>
+            <li>Sajikan bakwan bihun jagung selagi hangat dengan sambal cocolan favorit Anda, seperti sambal terasi, saus sambal, atau cabai rawit hijau.</li>
+        </ol>
+
+        <h2>Tips Tambahan untuk Bakwan Sempurna</h2>
+        <ul>
+            <li>Pastikan bihun sudah benar-benar lunak sebelum dipotong dan dicampur adonan agar tidak keras saat digoreng.</li>
+            <li>Menggunakan tepung beras sangat disarankan karena dapat membuat bakwan menjadi lebih renyah tahan lama.</li>
+            <li>Jangan terlalu banyak memasukkan bumbu halus, sesuaikan dengan jumlah adonan agar rasa gurihnya merata.</li>
+            <li>Gunakan api sedang saat menggoreng. Api terlalu besar akan membuat bakwan cepat gosong di luar namun belum matang di dalam.</li>
+            <li>Untuk hasil terbaik, goreng bakwan hingga berwarna kuning keemasan yang merata dan terdengar bunyi "kriuk" saat digigit.</li>
+        </ul>
+
+        <p>Bakwan bihun jagung adalah pilihan camilan yang serbaguna dan disukai oleh segala usia. Dengan mengikuti resep dan tips di atas, Anda akan dapat menciptakan bakwan yang renyah di luar, lembut di dalam, kaya rasa, dan tentunya <span class="highlight">menggugah selera</span>.</p>
+
+        <footer>
+            Terima kasih telah mengunjungi! Selamat mencoba resep bakwan bihun jagung ini.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakteri-pemakan-daging">Bakteri Pemakan Daging</a></li>
+<li><a href="/cara-membuat-bakwan-keladi">Cara Membuat Bakwan Keladi</a></li>
+<li><a href="/cara-membuat-bakpao-goreng">Cara Membuat Bakpao Goreng</a></li>
+<li><a href="/bakwan-lapis">Bakwan Lapis</a></li>
+<li><a href="/bakpiaku-stasiun-tugu">Bakpiaku Stasiun Tugu</a></li>
+<li><a href="/bakpao-karakter-terdekat">Bakpao Karakter Terdekat</a></li>
+<li><a href="/bakwan-go">Bakwan Go</a></li>
+<li><a href="/bakpia-88-ny-melly">Bakpia 88 Ny Melly</a></li>
+<li><a href="/bakpao-karakter-kartun">Bakpao Karakter Kartun</a></li>
+<li><a href="/cara-buat-bakwan-toge">Cara Buat Bakwan Toge</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

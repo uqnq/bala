@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Oyong Tumis: Lezat & Sehat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #8BC34A; /* Hijau muda */
+            --text-color: #333;
+            --background-color: #F1F8E9; /* Hijau pastel sangat muda */
+            --card-background: #E8F5E9; /* Hijau pastel sedikit lebih pekat */
+            --border-color: #C8E6C9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 768px; /* Lebar maksimal untuk tampilan web mobile */
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 20px 15px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .content {
+            padding: 20px 15px;
+        }
+
+        .article-title {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .article-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .article-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .article-body p, .article-body h2, .article-body h3, .article-body ul, .article-body ol {
+            margin-bottom: 15px;
+        }
+
+        .article-body h2 {
+            color: var(--primary-color);
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        .article-body h3 {
+            color: var(--secondary-color);
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .recipe-section {
+            background-color: var(--card-background);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .recipe-section h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .recipe-section ul, .recipe-section ol {
+            padding-left: 20px;
+        }
+
+        .recipe-section li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .article-title {
+                font-size: 1.6em;
+            }
+        }
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .article-title {
+                font-size: 1.4em;
+            }
+            .content {
+                padding: 15px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Resep Lezat & Praktis</h1>
+        </header>
+        <div class="content">
+            <h1 class="article-title">Resep Oyong Tumis: Kesegaran Sederhana yang Menggugah Selera</h1>
+
+            <div class="article-image">
+                <svg width="100%" height="200" viewBox="0 0 600 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:var(--secondary-color);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grad1)" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="30" font-weight="bold">Oyong Tumis Segar</text>
+                </svg>
+                <p style="font-size: 0.8em; color: #777;">Ilustrasi oyong tumis yang menggugah selera.</p>
+            </div>
+
+            <div class="article-body">
+                <p>Sayuran oyong, atau yang sering dikenal juga sebagai gambas, merupakan salah satu sayuran hijau yang memiliki banyak penggemar. Teksturnya yang sedikit berlendir saat dimasak justru memberikan sensasi lembut dan nikmat di lidah. Tidak hanya itu, oyong juga kaya akan nutrisi penting seperti vitamin A, C, K, serta serat yang baik untuk kesehatan pencernaan dan tubuh secara keseluruhan.</p>
+
+                <p>Salah satu cara paling populer dan mudah untuk menikmati kelezatan oyong adalah dengan mengolahnya menjadi oyong tumis. Resep ini sangat cocok bagi Anda yang menginginkan hidangan cepat, sehat, dan pastinya lezat untuk menemani nasi hangat Anda. Kesederhanaan bumbu yang digunakan justru membuat rasa asli oyong tetap menonjol, berpadu harmonis dengan aroma gurih dari bawang dan sedikit sentuhan pedas jika Anda menyukainya.</p>
+
+                <h2>Mengapa Memilih Resep Oyong Tumis?</h2>
+                <p>Oyong tumis menawarkan kombinasi sempurna antara kemudahan dalam persiapan dan manfaat kesehatan. Proses menumis yang singkat membantu menjaga kandungan nutrisi oyong agar tidak banyak yang hilang. Selain itu, resep ini sangat fleksibel; Anda bisa menambahkan berbagai bahan lain seperti udang, tahu, tempe, atau bahkan telur untuk variasi rasa dan tekstur yang lebih kaya.</p>
+
+                <p>Hidangan ini ideal untuk makan siang atau makan malam yang ringan namun tetap mengenyangkan. Rasanya yang ringan juga membuatnya cocok sebagai pendamping lauk utama yang lebih berat, seperti ayam goreng atau ikan bakar.</p>
+
+                <div class="recipe-section">
+                    <h3>Resep Oyong Tumis Sederhana</h3>
+                    <h4>Bahan-bahan:</h4>
+                    <ul>
+                        <li>2 buah oyong ukuran sedang, pilih yang masih muda dan segar</li>
+                        <li>3 siung bawang putih, cincang halus</li>
+                        <li>2 siung bawang merah, iris tipis</li>
+                        <li>1 buah cabai merah keriting (opsional, sesuaikan selera pedas)</li>
+                        <li>1/2 buah tomat merah, potong-potong</li>
+                        <li>1/2 sdt garam (atau secukupnya)</li>
+                        <li>1/4 sdt merica bubuk</li>
+                        <li>1/2 sdt gula pasir</li>
+                        <li>100 ml air atau kaldu ayam</li>
+                        <li>1 sdm minyak goreng</li>
+                    </ul>
+
+                    <h4>Cara Membuat:</h4>
+                    <ol>
+                        <li>Pertama, siapkan oyong. Kupas kulit luarnya yang berbulu tipis, lalu potong-potong sesuai selera. Cuci bersih oyong yang sudah dipotong.</li>
+                        <li>Panaskan minyak goreng dalam wajan. Tumis bawang putih dan bawang merah hingga harum dan sedikit kecoklatan.</li>
+                        <li>Jika menggunakan cabai, masukkan irisan cabai merah keriting, lalu tomat. Tumis sebentar hingga tomat agak layu.</li>
+                        <li>Masukkan potongan oyong ke dalam wajan. Aduk rata dengan bumbu.</li>
+                        <li>Tuangkan air atau kaldu ayam. Bumbui dengan garam, merica bubuk, dan gula pasir. Aduk kembali.</li>
+                        <li>Masak oyong hingga matang dan teksturnya empuk namun tidak terlalu lembek. Sesuaikan kekentalan kuah dengan selera Anda.</li>
+                        <li>Koreksi rasa. Jika sudah pas, angkat dan sajikan oyong tumis selagi hangat bersama nasi putih.</li>
+                    </ol>
+                </div>
+
+                <h2>Tips Tambahan untuk Oyong Tumis yang Lebih Nikmat</h2>
+                <p>Untuk mendapatkan hasil oyong tumis yang optimal, perhatikan beberapa tips berikut:</p>
+                <ul>
+                    <li><strong>Pilih Oyong yang Tepat:</strong> Gunakan oyong yang masih muda. Oyong yang sudah tua cenderung memiliki biji yang lebih banyak dan tekstur yang kurang lembut. Kulit luarnya yang berbulu harus dikupas hingga bersih agar tidak mengganggu saat dimakan.</li>
+                    <li><strong>Jangan Terlalu Lama Memasak:</strong> Oyong cepat matang. Memasaknya terlalu lama akan membuatnya lembek dan berair. Masaklah hanya sampai oyong sedikit melunak namun masih renyah.</li>
+                    <li><strong>Variasi Protein:</strong> Tambahkan protein seperti udang kupas, irisan tahu sutra, atau potongan tempe goreng untuk menambah nilai gizi dan rasa.</li>
+                    <li><strong>Sentuhan Segar:</strong> Beberapa orang suka menambahkan sedikit perasan jeruk nipis atau taburan daun bawang cincang sesaat sebelum disajikan untuk aroma yang lebih segar.</li>
+                </ul>
+
+                <p>Resep oyong tumis ini adalah bukti bahwa hidangan sehat tidak harus rumit atau membosankan. Dengan bahan-bahan sederhana dan langkah-langkah yang mudah, Anda bisa menyajikan hidangan penuh kesegaran dan nutrisi untuk keluarga tercinta. Selamat mencoba dan nikmati kelezatan oyong dalam setiap suapannya!</p>
+
+            </div>
+            <footer class="footer">
+                <p>&copy; Resep Lezat. Semua hak dilindungi.</p>
+            </footer>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-23">Bakpia 23</a></li>
+<li><a href="/bakso-mercon-cak-roni">Bakso Mercon Cak Roni</a></li>
+<li><a href="/bakwan-laron">Bakwan Laron</a></li>
+<li><a href="/cara-membuat-bakwan-tahu-jagung">Cara Membuat Bakwan Tahu Jagung</a></li>
+<li><a href="/bakpia-pathok-bandara-jaya">Bakpia Pathok Bandara Jaya</a></li>
+<li><a href="/bakpia-merlino">Bakpia Merlino</a></li>
+<li><a href="/bakwan-jagung-sederhana">Bakwan Jagung Sederhana</a></li>
+<li><a href="/resep-bakwan-bayam-crispy">Resep Bakwan Bayam Crispy</a></li>
+<li><a href="/bakso-ranjau-beranak">Bakso Ranjau Beranak</a></li>
+<li><a href="/cara-menghilangkan-balanitis">Cara Menghilangkan Balanitis</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

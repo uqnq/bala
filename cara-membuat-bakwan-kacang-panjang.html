@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Kacang Panjang Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            width: 95%;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        h1, h2, h3 {
+            color: #4682b4; /* SteelBlue */
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Batasi lebar gambar agar proporsional */
+            height: auto;
+            margin: 0 auto 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients, .steps {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #e0f7fa; /* Light Cyan */
+            border-radius: 8px;
+        }
+        .ingredients h2, .steps h2 {
+            color: #00796b; /* Teal */
+            margin-top: 0;
+        }
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #00796b; /* Teal */
+            background-color: #b2ebf2; /* Cyan 200 */
+            padding: 5px 10px;
+            border-radius: 50%;
+            margin-right: 15px;
+            flex-shrink: 0; /* Agar nomor tidak mengecil */
+        }
+        .step-description {
+            flex-grow: 1;
+        }
+        .tips {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #fff9c4; /* Light Yellow */
+            border-radius: 8px;
+            border-left: 5px solid #fbc02d; /* Yellow 700 */
+        }
+        .tips h3 {
+            color: #fbc02d; /* Yellow 700 */
+            margin-top: 0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                margin: 10px auto;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .recipe-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cara Membuat Bakwan Kacang Panjang Lezat dan Renyah</h1>
+
+        <svg class="recipe-image" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakwanTitle">
+            <title id="bakwanTitle">Ilustrasi bakwan kacang panjang</title>
+            <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81c784; stop-opacity:1" /> <!-- Green 300 -->
+                    <stop offset="100%" style="stop-color:#e0f2f1; stop-opacity:1" /> <!-- Teal 50 -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="0" dy="4" result="offsetblur"/>
+                    <feFlood flood-color="#000" flood-opacity="0.2"/>
+                    <feComposite in2="offsetblur" operator="in"/>
+                    <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+
+            <!-- Background -->
+            <rect width="100%" height="100%" fill="url(#gradient1)" />
+
+            <!-- Bakwan elements -->
+            <g transform="translate(100, 150) rotate(-10)">
+                <path d="M 0,0
+                         C 30,10 60,10 90,0
+                         C 100,-30 100,-60 90,-90
+                         C 60,-100 30,-100 0,-90
+                         C -30,-60 -30,-30 0,0 Z" fill="#fbc02d" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/> <!-- Kacang panjang -->
+                <circle cx="45" cy="-45" r="15" fill="#fbc02d" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+            </g>
+
+            <g transform="translate(250, 120) rotate(15)">
+                <path d="M 0,0
+                         C 25,8 50,8 75,0
+                         C 83,-25 83,-50 75,-75
+                         C 50,-83 25,-83 0,-75
+                         C -25,-50 -25,-25 0,0 Z" fill="#fbc02d" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/> <!-- Kacang panjang -->
+                <circle cx="37.5" cy="-37.5" r="12" fill="#fbc02d" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/>
+            </g>
+
+            <g transform="translate(380, 170) rotate(-20)">
+                <path d="M 0,0
+                         C 20,7 40,7 60,0
+                         C 66,-20 66,-40 60,-60
+                         C 40,-66 20,-66 0,-60
+                         C -20,-40 -20,-20 0,0 Z" fill="#fbc02d" stroke="#e65100" stroke-width="1.5" filter="url(#shadow)"/> <!-- Kacang panjang -->
+                <circle cx="30" cy="-30" r="10" fill="#fbc02d" stroke="#e65100" stroke-width="1.2" filter="url(#shadow)"/>
+            </g>
+
+            <!-- Garis-garis adonan -->
+            <g stroke="#ffcc80" stroke-width="3" fill="none" filter="url(#shadow)"> <!-- Amber 200 -->
+                <path d="M 150,180 Q 200,100 300,150" />
+                <path d="M 120,220 Q 250,170 350,200" />
+                <path d="M 180,230 Q 320,190 420,210" />
+            </g>
+        </svg>
+
+        <p>Bakwan, atau gorengan, adalah salah satu camilan favorit masyarakat Indonesia. Berbagai macam sayuran bisa diolah menjadi bakwan yang lezat, termasuk kacang panjang. Bakwan kacang panjang memiliki tekstur yang unik, renyah di luar dengan sensasi lembut dan gurih di dalam, menjadikannya pilihan yang sangat menggugah selera. Proses pembuatannya pun relatif mudah, cocok bagi Anda yang ingin mencoba membuat camilan rumahan yang lezat.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan</h2>
+            <ul>
+                <li>250 gram kacang panjang, iris tipis menyerong (sekitar 1-2 cm)</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh garam (sesuaikan selera)</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>150-200 ml air es (atau secukupnya hingga adonan kental tapi bisa tercetak)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Langkah-langkah Membuat Bakwan Kacang Panjang</h2>
+            <div class="step-item">
+                <div class="step-number">1</div>
+                <div class="step-description">
+                    <p><strong>Persiapan Kacang Panjang:</strong> Cuci bersih kacang panjang, kemudian iris tipis menyerong dengan ketebalan sekitar 1-2 cm. Sisihkan.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-description">
+                    <p><strong>Membuat Adonan Tepung:</strong> Dalam sebuah wadah, campurkan tepung terigu dan tepung beras. Aduk rata.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-description">
+                    <p><strong>Tambahkan Bumbu:</strong> Masukkan bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan) ke dalam campuran tepung. Aduk kembali hingga bumbu tercampur rata.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">4</div>
+                <div class="step-description">
+                    <p><strong>Tuang Air Es:</strong> Tuangkan air es sedikit demi sedikit sambil terus diaduk. Pastikan adonan tidak terlalu encer dan tidak terlalu kental. Konsistensi yang diinginkan adalah adonan yang bisa melapisi kacang panjang dengan baik, namun tetap mudah untuk digoreng.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">5</div>
+                <div class="step-description">
+                    <p><strong>Masukkan Kacang Panjang dan Daun Bawang:</strong> Masukkan irisan kacang panjang dan irisan daun bawang ke dalam adonan. Aduk rata hingga semua irisan kacang panjang terlapisi adonan tepung dengan baik.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">6</div>
+                <div class="step-description">
+                    <p><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum menggoreng bakwan.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">7</div>
+                <div class="step-description">
+                    <p><strong>Menggoreng Bakwan:</strong> Ambil adonan menggunakan sendok atau tangan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga bakwan berwarna kuning keemasan dan matang merata di kedua sisinya. Jangan terlalu banyak memasukkan bakwan ke dalam wajan agar suhunya tetap stabil dan bakwan matang sempurna.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">8</div>
+                <div class="step-description">
+                    <p><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang, tiriskan minyaknya di atas rak kawat atau tisu dapur penyerap minyak.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">9</div>
+                <div class="step-description">
+                    <p><strong>Sajikan:</strong> Bakwan kacang panjang siap disajikan selagi hangat. Nikmati dengan cabai rawit hijau atau saus sambal favorit Anda.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips">
+            <h3>Tips untuk Bakwan Kacang Panjang yang Sempurna</h3>
+            <ul>
+                <li>Gunakan air es untuk adonan. Air dingin membantu menciptakan tekstur bakwan yang lebih renyah.</li>
+                <li>Jangan mengaduk adonan terlalu lama setelah tepung dan air dicampur. Biarkan sedikit kasar untuk tekstur yang lebih baik.</li>
+                <li>Pastikan minyak goreng dalam kondisi benar-benar panas sebelum memasukkan adonan. Ini mencegah bakwan menyerap terlalu banyak minyak.</li>
+                <li>Irisan kacang panjang jangan terlalu tebal agar cepat matang dan renyah.</li>
+                <li>Anda bisa menambahkan sedikit tepung tapioka ke dalam adonan untuk kerenyahan yang lebih tahan lama.</li>
+            </ul>
+        </div>
+
+        <p>Membuat bakwan kacang panjang sendiri di rumah memang menyenangkan. Selain bisa mengatur kekentalan adonan dan takaran bumbu sesuai selera, Anda juga bisa memastikan kebersihan bahan-bahan yang digunakan. Camilan ini sangat cocok dinikmati saat sore hari ditemani secangkir teh hangat atau kopi. Selamat mencoba!</p>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-mercon-di-solo">Bakso Mercon Di Solo</a></li>
+<li><a href="/cara-masak-bakpao-frozen">Cara Masak Bakpao Frozen</a></li>
+<li><a href="/jenis-bakung">Jenis Bakung</a></li>
+<li><a href="/allah-sebaik-baik-pemberi-balasan">Allah Sebaik Baik Pemberi Balasan</a></li>
+<li><a href="/bakpia-istu-mino">Bakpia Istu Mino</a></li>
+<li><a href="/bumbu-halus-buat-bakwan">Bumbu Halus Buat Bakwan</a></li>
+<li><a href="/bakpia-kukus-tugu-jalan-solo">Bakpia Kukus Tugu Jalan Solo</a></li>
+<li><a href="/bakso-beranak-ngawi">Bakso Beranak Ngawi</a></li>
+<li><a href="/resep-bakwan-labu-siam">Resep Bakwan Labu Siam</a></li>
+<li><a href="/pangsit-bakwan">Pangsit Bakwan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

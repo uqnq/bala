@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Krispi Terenak dan Mudah!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang biru muda sejuk */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff; /* Latar belakang konten putih bersih */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #00796b; /* Warna judul hijau toska */
+            margin-bottom: 15px;
+            font-size: 2.2em;
+        }
+        .subtitle {
+            color: #004d40; /* Warna subjudul hijau lebih gelap */
+            margin-bottom: 25px;
+            font-size: 1.2em;
+        }
+        img.main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            text-align: left;
+        }
+        ul, ol {
+            text-align: left;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #004d40;
+        }
+        .instructions p {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .cta {
+            display: block;
+            background-color: #ff8f00; /* Warna tombol oranye cerah */
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+            font-size: 1.1em;
+        }
+        .cta:hover {
+            background-color: #f57c00; /* Warna tombol oranye lebih gelap saat hover */
+        }
+        .ingredients-list li, .steps-list li {
+            position: relative;
+            padding-left: 25px;
+        }
+        .ingredients-list li::before, .steps-list li::before {
+            content: '✔'; /* Simbol centang */
+            position: absolute;
+            left: 0;
+            color: #00796b; /* Warna centang hijau toska */
+            font-weight: bold;
+        }
+        /* SVG Styles */
+        .inline-svg {
+            vertical-align: middle;
+            margin-right: 10px;
+            fill: #00796b; /* Warna SVG hijau toska */
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .cta {
+                font-size: 1em;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iaWNvbiI+PHBhdGggZD0iTTQgMTguOEwxOSA0Ii8+PHBhdGggZD0iTTE5IDQuTDQgMTguOCIvPjwvc3ZnPg==" alt="Ikon Koki" class="inline-svg" width="24" height="24">
+        <h1>Resep Bakwan Krispi Terenak dan Mudah!</h1>
+        <p class="subtitle">Siapa yang tidak suka camilan renyah dan gurih ini? Mari buat bakwan krispi ala rumahan yang pasti jadi favorit keluarga.</p>
+
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlM2Y3ZmEiLz48cGF0aCBkPSJNNDUgNzVMMjUwIDE3NUwxNjUgMjUwTDQ1IDc1WiIgZmlsbD0iI2FkYmJkZiIvPjxwYXRoIGQ9Ik0xNjUgNzVMMzU1IDE3NUwyNjUgMjUwTDE2NSA3NVoiIGZpbGw9IiNhYmNkZGYiLz48cGF0aCBkPSJNNDAgMjAwTDE0MCAxNzVMMTY1IDI1MFw0MCAyMDBaIiBmaWxsPSIjY2RkZWZlIi8+PHBhdGggZD0iTTIzNSAyNTBMMzAwIDIwMEwyMzUgMTUxLjY3TDIzNSAyNTBaIiBmaWxsPSIjY2RkZWZlIi8+PHBhdGggZD0iTTI3NSAxMjVMMzY1IDc1TDM1NSAxNzVMNTEgMjAwTDQ1IDc1TDE2NSAxNzVMMjUwIDE3NUwxNjUgMjUwTDI4Mi41IDE5MC44M0wyNzUgMTI1WiIgZmlsbD0iI2U2ZjFmMSIvPjxwYXRoIGQ9Ik0yNDcgNzVMMTM1IDEyNUw0NSA3NUwxNDUgMTI1TDI0NyA3NVoiIGZpbGw9IiNlNWYxZTEiLz48cGF0aCBkPSJNNDAgMTc1TDExMi41IDEyNUwxNDAgMTc1TDExMi41IDIyNUw0MCAxNzVabTMyLjUgNDEgMjAuMCA0MSAxMDcgMjEgNDEgMjEgMzIgMjEgMCA0MVoiIGZpbGw9IiNkY2U1ZTYiLz48cGF0aCBkPSJNMTQ1IDEyNUwxODcgNzVMMTg3IDEyNUwxNDUgMTI1WiIgZmlsbD0iI2RjZTVlNiIvPjxwYXRoIGQ9Ik0xMTIgMTc1TDgzIDIzNSAxMTIgMjM1TDExMiAxNzVaIiBmaWxsPSIjZGFkY2VkIi8+PHBhdGggZD0iTTQwIDI0NUw0NSAyNTBMMzUgMjU1TDQwIDI0NVoiIGZpbGw9IiNhZGJjZGYiLz48cGF0aCBkPSJNMTY1IDE3NUwxNjUgMjUwTDE1NSAyNTBMMTY1IDE3NVoiIGZpbGw9IiNiY2RlZGYiLz48cGF0aCBkPSJNMTU1IDcwTDIwMCA0NUwzMDkgNzVMMTU1IDcwWiIgZmlsbD0iI2ViZjFmMSIvPjxwYXRoIGQ9Ik0xODcgNzVMMjI1IDQ1TDMyNSAyMDVMMTg3IDc1WiIgZmlsbD0iI2RiZWRlYiIvPjxwYXRoIGQ9Ik0xNDAgMTI1TDE3NSAxMDBMMjIzIDEyNUwxNzUgMTU1TDE0MCAxMjVaIiBmaWxsPSIjZGJlZGVhIi8+PHBhdGggZD0iTTEwMCAyMDAgTDE3NSAxNzVMMTQwIDI1MEwxMDAgMjAwWiIgZmlsbD0iI2RiZWRlYiIvPjxwYXRoIGQ9Ik00NSA3NUwxMjUgMTI1TDE0NSAyMDVMNDUgNzVaIiBmaWxsPSIjZGVmMmYxIi8+PHBhdGggZD0iTTM1NSAxNzVMNDAwIDIyNUwzNTUgMzAwTDM1NSAxNzVaIiBmaWxsPSIjZGVmMmYxIi8+PHBhdGggZD0iTTI0NSAxNzVMNDAwIDIyNUwyNDUgMzAwTDI0NSAxNzVaIiBmaWxsPSIjZGVmMmYxIi8+PHBhdGggZD0iTTI1MCA0NSAxODcgNzVMNDUgNzVMMTQ1IDEyNUwyNDcgNzVMMTUzIDEyNUw0NSAyMDVMNTUgMzAwTDI0NSA3NUwyNDUgMTcwLjMzTDI1MCA0NVoiIGZpbGw9IiNmNmYxZjEiLz48L3N2Zz4=" alt="Ilustrasi bakwan sayur yang renyah" class="main-image">
+
+        <h2>Mengapa Bakwan Ini Spesial?</h2>
+        <p>Bakwan krispi bukanlah sekadar gorengan biasa. Kunci kelezatan dan kerenyahannya terletak pada beberapa trik sederhana yang akan kita bahas. Dijamin, sekali mencoba, Anda akan ketagihan dan ingin membuatnya lagi dan lagi!</p>
+
+        <h2>Bahan-bahan yang Anda Butuhkan:</h2>
+        <ul class="ingredients-list">
+            <li><strong>Sayuran:</strong> 1 buah wortel ukuran sedang (iris tipis memanjang), 1/4 kol ukuran kecil (iris tipis), 2 batang daun bawang (iris tipis), 100 gram tauge (opsional). Anda bisa menambahkan sayuran lain seperti buncis atau labu siam.</li>
+            <li><strong>Tepung:</strong> 150 gram tepung terigu serbaguna, 50 gram tepung beras (ini kunci kerenyahannya!), 2 sendok makan tepung maizena (untuk tambahan crispy).</li>
+            <li><strong>Bumbu Halus:</strong> 3 siung bawang putih, 1/2 sendok teh merica butiran, 1/4 sendok teh ketumbar bubuk, 1/2 sendok teh garam (sesuaikan selera), sejumput kaldu bubuk (opsional).</li>
+            <li><strong>Cairan:</strong> Sekitar 150-200 ml air dingin atau air es (sangat penting untuk kerenyahan).</li>
+            <li><strong>Minyak Goreng:</strong> Secukupnya untuk menggoreng, pastikan minyak cukup banyak agar bakwan terendam.</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bakwan Krispi Super Renyah:</h2>
+        <div class="instructions">
+            <p><strong>1. Siapkan Adonan Kering:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras, tepung maizena, dan bumbu halus yang sudah diulek atau diblender. Aduk rata hingga semua bahan tercampur sempurna.</p>
+            <p><strong>2. Tambahkan Sayuran:</strong> Masukkan irisan wortel, kol, dan daun bawang (serta tauge jika menggunakan) ke dalam campuran tepung. Aduk sebentar agar sayuran terlapisi tepung.</p>
+            <p><strong>3. Tuang Air Es:</strong> Tuangkan air dingin atau air es sedikit demi sedikit sambil terus diaduk. Adonan jangan terlalu kental dan jangan terlalu encer. Konsistensinya harus pas, melapisi sayuran dengan baik namun tidak menggumpal tebal. Penggunaan air es akan membantu menciptakan tekstur yang lebih renyah.</p>
+            <p><strong>4. Panaskan Minyak:</strong> Panaskan minyak goreng dalam wajan dengan api sedang hingga benar-benar panas. Pastikan minyak cukup banyak agar bakwan bisa matang merata dan hasilnya lebih renyah.</p>
+            <p><strong>5. Goreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu tuangkan perlahan ke dalam minyak panas. Jangan terlalu banyak memasukkan adonan dalam satu waktu agar bakwan matang sempurna dan tidak lengket satu sama lain.</p>
+            <p><strong>6. Balik dan Angkat:</strong> Goreng hingga sisi bawah bakwan berwarna kuning keemasan dan kokoh. Balik bakwan dengan hati-hati dan goreng hingga kedua sisi matang sempurna dan berwarna kecoklatan. Angkat bakwan dan tiriskan minyaknya dengan baik.</p>
+            <p><strong>7. Sajikan:</strong> Bakwan krispi siap disajikan selagi hangat. Nikmati kerenyahannya dengan sambal cocolan favorit Anda, saus sambal, atau rawit hijau.</p>
+        </div>
+
+        <h2>Tips Tambahan untuk Bakwan Paling Krispi:</h2>
+        <ul class="ingredients-list">
+            <li>Gunakan air es atau air dingin untuk adonan, ini kunci utama kerenyahannya.</li>
+            <li>Jangan menggoreng bakwan dalam minyak yang kurang panas, karena bakwan akan menyerap banyak minyak dan menjadi lembek.</li>
+            <li>Tiriskan bakwan dengan baik setelah digoreng agar tidak cepat melempem.</li>
+            <li>Jika ingin menyimpan sisa adonan, simpan terpisah antara bahan kering dan cair. Campurkan sesaat sebelum digoreng.</li>
+            <li>Variasi sayuran sangat bisa disesuaikan dengan selera Anda.</li>
+        </ul>
+
+        <p>Dengan resep dan tips ini, Anda kini bisa membuat bakwan krispi rumahan yang tidak kalah enaknya dengan bakwan yang dijual di luar. Selamat mencoba dan selamat menikmati kelezatan camilan favorit ini!</p>
+
+        <a href="#download-recipe" class="cta">Unduh Resep Bakwan Krispi Gratis!</a>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/doa-balasan-untuk-orang-jahat">Doa Balasan Untuk Orang Jahat</a></li>
+<li><a href="/bumbu-untuk-bakwan">Bumbu Untuk Bakwan</a></li>
+<li><a href="/bakpao-enak">Bakpao Enak</a></li>
+<li><a href="/bakwan-jamur-grigit">Bakwan Jamur Grigit</a></li>
+<li><a href="/amerika-serikat-vs-wales-skor">Amerika Serikat Vs Wales Skor</a></li>
+<li><a href="/resep-bakwan-kucai">Resep Bakwan Kucai</a></li>
+<li><a href="/resep-perkedel-jagung-sunda">Resep Perkedel Jagung Sunda</a></li>
+<li><a href="/bakpia-kering-coklat">Bakpia Kering Coklat</a></li>
+<li><a href="/bakwan-diet">Bakwan Diet</a></li>
+<li><a href="/masakan-kluwek">Masakan Kluwek</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

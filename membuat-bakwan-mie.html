@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Mie Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #FFD700; /* Kuning cerah */
+            --color-secondary: #87CEEB; /* Biru langit sejuk */
+            --color-background: #F0FFF0; /* Hijau pucat lembut */
+            --color-text: #333;
+            --color-accent: #32CD32; /* Hijau lime */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 1.5em;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 1em;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 0.3em;
+        }
+
+        p, li {
+            margin-bottom: 1em;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5em;
+        }
+
+        .highlight {
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Batasi lebar gambar agar responsif */
+            height: auto;
+            margin: 1.5em auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5em;
+        }
+
+        .step-number {
+            font-size: 2.5em;
+            color: var(--color-secondary);
+            margin-right: 0.5em;
+            font-weight: bold;
+            opacity: 0.7;
+        }
+
+        .step-description {
+            flex: 1;
+        }
+
+        .ingredients-list {
+            background-color: var(--color-background);
+            padding: 1em;
+            border-radius: 8px;
+            margin-bottom: 1.5em;
+        }
+
+        .ingredients-list h3 {
+            margin-top: 0;
+            color: var(--color-primary);
+            margin-bottom: 0.5em;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1em;
+            }
+            .container {
+                padding: 1em;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .step-number {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--color-primary);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:var(--color-accent);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="400" fill="var(--color-background)" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="url(#grad1)" font-size="50" font-weight="bold">
+                Bakwan Mie Lezat
+            </text>
+            <path d="M100 300 Q 200 250 300 300 T 500 300" stroke="var(--color-secondary)" stroke-width="8" fill="none" />
+            <circle cx="150" cy="280" r="15" fill="var(--color-primary)" />
+            <circle cx="250" cy="280" r="15" fill="var(--color-primary)" />
+            <circle cx="350" cy="280" r="15" fill="var(--color-primary)" />
+            <circle cx="450" cy="280" r="15" fill="var(--color-primary)" />
+            <path d="M50 350 L 150 350 L 100 390 Z" fill="var(--color-accent)" />
+            <text x="120" y="365" font-size="20" fill="white" font-weight="bold">HOT</text>
+        </svg>
+
+        <h1>Cara Membuat Bakwan Mie Lezat dan Gurih</h1>
+
+        <p>Siapa yang tidak suka bakwan? Camilan renyah dan gurih ini selalu jadi favorit. Kali ini, kita akan berkreasi dengan menambahkan mie instan ke dalam adonan bakwan, menjadikannya <span class="highlight">bakwan mie</span> yang unik dan semakin menggugah selera. Resep ini sangat mudah diikuti, bahkan bagi pemula sekalipun. Cocok dinikmati saat santai bersama keluarga atau teman.</p>
+
+        <div class="ingredients-list">
+            <h3>Bahan-bahan yang Anda Butuhkan:</h3>
+            <ul>
+                <li>2 bungkus mie instan (rasa apa saja sesuai selera), rebus setengah matang</li>
+                <li>100 gram tepung terigu</li>
+                <li>50 gram tepung beras</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>1 buah wortel ukuran kecil, parut kasar atau potong korek api</li>
+                <li>50 gram tauge (opsional)</li>
+                <li>1 butir telur</li>
+                <li>Air secukupnya</li>
+                <li>Minyak goreng secukupnya</li>
+                <li>Bumbu mie instan (dari kedua bungkus)</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-langkah Membuat Bakwan Mie</h2>
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-description">
+                <p>Pertama, siapkan mie instan. Rebus mie instan hingga setengah matang, lalu tiriskan. Jangan terlalu matang agar tidak lembek saat digoreng. Anda bisa memotong mie menjadi beberapa bagian agar lebih mudah dicampur.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-description">
+                <p>Dalam wadah besar, campurkan tepung terigu dan tepung beras. Tambahkan bumbu mie instan yang sudah Anda siapkan tadi. Aduk rata agar semua bumbu tercampur merata dengan tepung.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-description">
+                <p>Masukkan telur ke dalam campuran tepung, lalu kocok lepas bersama tepung. Tambahkan sedikit demi sedikit air sambil terus diaduk hingga adonan menjadi kental dan tidak menggumpal. Kekentalan adonan ini penting agar bakwan tidak mudah pecah saat digoreng.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-description">
+                <p>Selanjutnya, masukkan irisan daun bawang, wortel parut/potong, dan tauge (jika menggunakan) ke dalam adonan tepung. Terakhir, masukkan mie instan yang sudah ditiriskan. Aduk perlahan hingga semua bahan tercampur rata dengan adonan.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-description">
+                <p>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum Anda mulai menggoreng. Anda bisa mengetesnya dengan sedikit menjatuhkan adonan ke dalam minyak; jika langsung berdesis dan mengapung, minyak sudah siap.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-description">
+                <p>Ambil satu sendok sayur adonan, lalu goreng dalam minyak panas. Goreng hingga bakwan berwarna kuning keemasan dan terlihat renyah di kedua sisinya. Balik sesekali agar matang merata. Lakukan hingga semua adonan habis.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">7</div>
+            <div class="step-description">
+                <p>Angkat bakwan mie yang sudah matang, tiriskan minyaknya menggunakan kertas tisu agar tidak terlalu berminyak. Sajikan selagi hangat.</p>
+            </div>
+        </div>
+
+        <h2>Tips Tambahan untuk Bakwan Mie yang Sempurna</h2>
+        <p>Untuk mendapatkan tekstur bakwan mie yang ekstra renyah, Anda bisa menambahkan sedikit <span class="highlight">tepung sagu atau tapioka</span> ke dalam adonan. Pastikan minyak goreng cukup banyak dan panas agar bakwan matang sempurna tanpa menyerap terlalu banyak minyak. Jangan terlalu banyak memasukkan adonan ke dalam wajan agar suhu minyak tidak turun drastis, yang bisa membuat bakwan lembek. Bakwan mie ini sangat nikmat disantap dengan sambal kacang, saus sambal, atau cabai rawit hijau.</p>
+
+        <p>Selamat mencoba resep <span class="highlight">membuat bakwan mie</span> yang lezat ini di rumah!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-beranak-bakso-beranak">Bakso Beranak Bakso Beranak</a></li>
+<li><a href="/cara-mencetak-bakwan-dengan-sendok-sayur">Cara Mencetak Bakwan Dengan Sendok Sayur</a></li>
+<li><a href="/diare-karena-bakteri">Diare Karena Bakteri</a></li>
+<li><a href="/buat-bakwan-sayur-wortel">Buat Bakwan Sayur Wortel</a></li>
+<li><a href="/resep-bala-bala-bulat">Resep Bala Bala Bulat</a></li>
+<li><a href="/adonan-weci">Adonan Weci</a></li>
+<li><a href="/resep-perkedel-jagung-pakai-telur">Resep Perkedel Jagung Pakai Telur</a></li>
+<li><a href="/resep-bumbu-perkedel-jagung">Resep Bumbu Perkedel Jagung</a></li>
+<li><a href="/bakso-beranak-dekat-sini">Bakso Beranak Dekat Sini</a></li>
+<li><a href="/bakwan-jagung-spesial">Bakwan Jagung Spesial</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

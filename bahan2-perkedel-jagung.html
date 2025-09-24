@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahan Perkedel Jagung Sederhana & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - Warna sejuk cerah */
+            color: #333;
+        }
+        .container {
+            max-width: 768px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue - Warna sejuk cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #5f9ea0; /* CadetBlue - Warna sejuk cerah */
+            margin-top: 30px;
+        }
+        img.main-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+        }
+        .ingredients-list li {
+            background-color: #e0ffff; /* LightCyan - Warna sejuk cerah */
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 5px;
+            border-left: 5px solid #4682b4; /* SteelBlue */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .ingredients-list li::before {
+            content: '🌽'; /* Emoji jagung sebagai penanda */
+            font-size: 1.2em;
+        }
+        .instructions p, .ingredients-list p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #008080; /* Teal - Warna sejuk cerah */
+        }
+        .svg-icon {
+            width: 20px;
+            height: 20px;
+            fill: #4682b4; /* SteelBlue */
+            margin-right: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="svg-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 15C32.9086 15 15 32.9086 15 50C15 67.0914 32.9086 85 50 85C67.0914 85 85 67.0914 85 50C85 32.9086 67.0914 15 50 15ZM50 10C70.0179 10 86.0833 26.0654 86.0833 46.0833C86.0833 66.1012 70.0179 82.1667 50 82.1667C29.9821 82.1667 13.9167 66.1012 13.9167 46.0833C13.9167 26.0654 29.9821 10 50 10ZM50 40C47.2386 40 45 42.2386 45 45V55C45 57.7614 47.2386 60 50 60C52.7614 60 55 57.7614 55 55V45C55 42.2386 52.7614 40 50 40Z" fill="#4682B4"/>
+            <path d="M50 70C47.2386 70 45 72.2386 45 75C45 77.7614 47.2386 80 50 80C52.7614 80 55 77.7614 55 75C55 72.2386 52.7614 70 50 70Z" fill="#4682B4"/>
+        </svg>
+        <h1>Resep Perkedel Jagung Sederhana dan Menggugah Selera</h1>
+
+        <img src="https://images.unsplash.com/photo-1618500758547-e99a1b34f34e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Perkedel jagung yang renyah dan menggoda selera di atas piring" class="main-image">
+
+        <p>Siapa yang tidak suka perkedel jagung? Camilan gurih renyah di luar, lembut di dalam, dengan manisnya jagung yang melekat di setiap gigitan. Perkedel jagung adalah hidangan klasik yang selalu berhasil menghangatkan suasana, baik sebagai teman makan nasi hangat, camilan sore hari, atau bahkan lauk pendamping aneka hidangan lainnya. Yang membuatnya istimewa adalah kesederhanaannya. Dengan bahan-bahan yang mudah didapat dan cara pembuatan yang tidak rumit, Anda bisa menyajikan hidangan lezat ini kapan saja.</p>
+
+        <h2>Bahan-bahan Utama Perkedel Jagung</h2>
+        <p>Untuk membuat perkedel jagung yang sempurna, pemilihan bahan adalah kunci. Berikut adalah daftar bahan-bahan yang Anda perlukan, lengkap dengan sedikit penjelasan agar hasil masakan Anda semakin maksimal:</p>
+
+        <ul class="ingredients-list">
+            <li>
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 21C4.44772 21 4 20.5523 4 20V7C4 6.44772 4.44772 6 5 6H8.375V4.5C8.375 3.11929 9.49429 2 10.875 2C12.2557 2 13.375 3.11929 13.375 4.5V6H19C19.5523 6 20 6.44772 20 7V10H21C21.5523 10 22 10.4477 22 11V20C22 20.5523 21.5523 21 21 21H5Z" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.375 13H15.625" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.375 17H12.5" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <strong>Jagung Manis:</strong>
+                <p>2-3 buah jagung manis ukuran sedang. Pilih jagung yang bijinya sudah tua namun masih empuk saat dipetik. Anda bisa memipil bijinya atau mencincangnya kasar agar tekstur perkedel lebih bervariasi. Memipil jagung akan memberikan rasa manis alami yang lebih kuat.</p>
+            </li>
+            <li>
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.47712 2 2 6.47712 2 12C2 17.5229 6.47712 22 12 22C17.5229 22 22 17.5229 22 12C22 6.47712 17.5229 2 12 2ZM12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20Z" fill="#008080"/>
+                    <path d="M12 6V12H18" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <strong>Tepung Terigu:</strong>
+                <p>5-7 sendok makan tepung terigu serbaguna. Jumlah ini bisa disesuaikan tergantung kelembapan jagung Anda. Gunakan secukupnya hingga adonan bisa dibentuk.</p>
+            </li>
+            <li>
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 4V6" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 12H20" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 12H4" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 18V20" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.625 15.625L17.0392 17.0392" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.96084 6.96084L8.375 8.375" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.375 15.625L6.96084 17.0392" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.625 8.375L17.0392 6.96084" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <strong>Telur:</strong>
+                <p>1 butir telur ayam. Telur berfungsi sebagai pengikat adonan agar perkedel tidak mudah hancur saat digoreng.</p>
+            </li>
+            <li>
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 17.25C15.4563 17.25 18.25 14.4563 18.25 11C18.25 7.54375 15.4563 4.75 12 4.75C8.54375 4.75 5.75 7.54375 5.75 11C5.75 14.4563 8.54375 17.25 12 17.25Z" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 2V4.75" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 17.25V20" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 12H17.25" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 12H6.75" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.625 15.625L17.0392 17.0392" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.96084 6.96084L8.375 8.375" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.375 15.625L6.96084 17.0392" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.625 8.375L17.0392 6.96084" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <strong>Daun Bawang:</strong>
+                <p>1-2 batang daun bawang, iris tipis. Daun bawang memberikan aroma segar dan sedikit rasa pedas yang khas.</p>
+            </li>
+            <li>
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 20.5C11.8807 20.5 13 19.3807 13 18C13 16.6193 11.8807 15.5 10.5 15.5C9.11929 15.5 8 16.6193 8 18C8 19.3807 9.11929 20.5 10.5 20.5Z" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 14V11C10.5 10.4477 10.9477 10 11.5 10C12.0523 10 12.5 10.4477 12.5 11V14" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.5 14C17.8807 14 19 12.8807 19 11.5C19 10.1193 17.8807 9 16.5 9C15.1193 9 14 10.1193 14 11.5C14 12.8807 15.1193 14 16.5 14Z" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.5 7C16.5 7.55228 16.0523 8 15.5 8C14.9477 8 14.5 7.55228 14.5 7C14.5 6.44772 14.9477 6 15.5 6C16.0523 6 16.5 6.44772 16.5 7Z" fill="#008080"/>
+                    <path d="M16.5 11.5V14" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.5 16.5H14" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 16.5H15.5" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 16.5H19" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19 16.5H20" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.5 19.5H18" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 19.5H19" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.5 21H18" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 11C8.55228 11 9 10.5523 9 10C9 9.44772 8.55228 9 8 9C7.44772 9 7 9.44772 7 10C7 10.5523 7.44772 11 8 11Z" fill="#008080"/>
+                    <path d="M5.5 8C5.5 8.55228 5.05228 9 4.5 9C3.94772 9 3.5 8.55228 3.5 8C3.5 7.44772 3.94772 7 4.5 7C5.05228 7 5.5 7.44772 5.5 8Z" fill="#008080"/>
+                    <path d="M20.5 8C20.5 8.55228 20.0523 9 19.5 9C18.9477 9 18.5 8.55228 18.5 8C18.5 7.44772 18.9477 7 19.5 7C20.0523 7 20.5 7.44772 20.5 8Z" fill="#008080"/>
+                    <path d="M10.5 5C10.5 5.55228 10.0523 6 9.5 6C8.94772 6 8.5 5.55228 8.5 5C8.5 4.44772 8.94772 4 9.5 4C10.0523 4 10.5 4.44772 10.5 5Z" fill="#008080"/>
+                    <path d="M13.5 5C13.5 5.55228 13.0523 6 12.5 6C11.9477 6 11.5 5.55228 11.5 5C11.5 4.44772 11.9477 4 12.5 4C13.0523 4 13.5 4.44772 13.5 5Z" fill="#008080"/>
+                    <path d="M16.5 5C16.5 5.55228 16.0523 6 15.5 6C14.9477 6 14.5 5.55228 14.5 5C14.5 4.44772 14.9477 4 15.5 4C16.0523 4 16.5 4.44772 16.5 5Z" fill="#008080"/>
+                </svg>
+                <strong>Bumbu Halus:</strong>
+                <p>2-3 siung bawang putih, 2-3 siung bawang merah, 1/2 sendok teh merica bubuk, garam secukupnya, dan sedikit ketumbar bubuk (opsional). Haluskan semua bahan bumbu.</p>
+            </li>
+            <li>
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 3.5H7C5.08985 3.5 3.5 5.08985 3.5 7V17C3.5 18.9101 5.08985 20.5 7 20.5H17C18.9101 20.5 20.5 18.9101 20.5 17V7C20.5 5.08985 18.9101 3.5 17 3.5Z" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 10.5H13.5" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 13.5H13.5" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 7H7" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 7H17" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 17H7" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 17H17" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 7H11" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 17H11" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13 10.5H13.5" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13 13.5H13.5" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <strong>Minyak Goreng:</strong>
+                <p>Secukupnya untuk menggoreng perkedel hingga matang dan berwarna keemasan.</p>
+            </li>
+        </ul>
+
+        <h2>Cara Membuat Perkedel Jagung</h2>
+        <div class="instructions">
+            <p>Setelah semua bahan siap, proses pembuatan perkedel jagung sangatlah mudah:</p>
+            <ol>
+                <li><strong>Persiapan Jagung:</strong> Pipil atau cincang kasar biji jagung. Jika menggunakan blender, jangan terlalu halus, biarkan ada tekstur yang masih terasa.</li>
+                <li><strong>Campur Bahan:</strong> Dalam sebuah wadah, campurkan jagung pipil/cincang, tepung terigu, telur, irisan daun bawang, dan bumbu halus. Aduk rata hingga semua bahan tercampur merata dan membentuk adonan yang bisa disendokkan. Jika adonan terlalu kering, tambahkan sedikit air atau telur. Jika terlalu basah, tambahkan sedikit tepung terigu.</li>
+                <li><strong>Goreng Perkedel:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Ambil satu sendok adonan perkedel, lalu goreng perlahan ke dalam minyak panas. Masak hingga kedua sisinya berwarna keemasan dan matang sempurna.</li>
+                <li><strong>Tiriskan dan Sajikan:</strong> Angkat perkedel jagung yang sudah matang, tiriskan minyaknya di atas kertas tisu. Sajikan selagi hangat. Perkedel jagung siap dinikmati bersama nasi hangat, sambal, atau sebagai camilan.</li>
+            </ol>
+        </div>
+
+        <p>Dengan resep sederhana dan bahan-bahan yang mudah ditemukan ini, Anda bisa menghadirkan kelezatan perkedel jagung kapan saja. Selamat mencoba dan nikmati hidangan rumahan yang selalu disukai keluarga!</p>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi. Selamat Memasak!</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-subur-bakwan-babi">Bakwan Subur Bakwan Babi</a></li>
+<li><a href="/resep-membuat-gorengan-bakwan">Resep Membuat Gorengan Bakwan</a></li>
+<li><a href="/bakpia-basah-kacang-hijau">Bakpia Basah Kacang Hijau</a></li>
+<li><a href="/bakpao-sederhana">Bakpao Sederhana</a></li>
+<li><a href="/bakteri-makanan">Bakteri Makanan</a></li>
+<li><a href="/cara-membuat-bakpao-lembut-dan-mengembang">Cara Membuat Bakpao Lembut Dan Mengembang</a></li>
+<li><a href="/bakwan-resep-enak">Bakwan Resep Enak</a></li>
+<li><a href="/bakpia-aristi">Bakpia Aristi</a></li>
+<li><a href="/bakwan-gurih-dan-renyah">Bakwan Gurih Dan Renyah</a></li>
+<li><a href="/resep-bakwan-tanpa-minyak">Resep Bakwan Tanpa Minyak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

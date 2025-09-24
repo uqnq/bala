@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Kering Renyah Tanpa Ribet</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Styling dasar untuk tampilan mobile yang rapi, warna sejuk cerah */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna cerah dan sejuk */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center; /* Pusatkan konten utama */
+            padding-bottom: 20px; /* Ruang di bagian bawah */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px; /* Lebar maksimum konten */
+            padding: 20px;
+            box-sizing: border-box; /* Padding termasuk dalam lebar */
+        }
+
+        h1, h2, h3 {
+            color: #0077cc; /* Biru cerah untuk judul */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-top: 25px;
+            color: #3399ff; /* Biru lebih muda untuk sub-judul */
+        }
+
+        p, ul, ol {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        ul, ol {
+            padding-left: 25px; /* Indentasi untuk daftar */
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block; /* Hilangkan spasi ekstra di bawah gambar */
+            margin-bottom: 30px;
+            border-radius: 8px; /* Sudut membulat untuk gambar */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+        }
+
+        .recipe-section {
+            background-color: #ffffff; /* Latar belakang putih untuk bagian resep */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Bayangan sangat lembut */
+            margin-bottom: 30px;
+        }
+
+        .ingredients ul, .steps ol {
+            padding-left: 30px;
+        }
+
+        .ingredients li, .steps li {
+            margin-bottom: 12px;
+            position: relative; /* Untuk pseudo-element */
+        }
+
+        /* Menambahkan ikon kecil di daftar bahan dan langkah */
+        .ingredients li::before {
+            content: '•'; /* Simbol bullet */
+            color: #00cc99; /* Warna hijau cerah untuk poin */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: -20px;
+            top: 0;
+        }
+
+        .steps li::before {
+            content: counter(step-counter) '.'; /* Nomor langkah */
+            color: #ff9900; /* Warna oranye cerah untuk nomor */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: -25px;
+            top: 0;
+        }
+
+        /* Menggunakan counter untuk penomoran langkah otomatis */
+        ol {
+            counter-reset: step-counter;
+        }
+        li {
+            counter-increment: step-counter;
+        }
+
+
+        strong {
+            color: #ff6600; /* Warna aksen oranye untuk penekanan */
+        }
+
+        .tips {
+            background-color: #e0ffff; /* Warna cyan muda untuk tips */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            border-left: 5px solid #00cc99; /* Garis aksen hijau */
+        }
+
+        .tips h3 {
+            color: #009999; /* Warna biru kehijauan untuk judul tips */
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p, ul, ol {
+                font-size: 15px;
+            }
+            .hero-image {
+                margin-bottom: 20px;
+            }
+            .recipe-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+            <h1>Resep Bakwan Kering Renyah Tanpa Ribet</h1>
+
+            <!-- SVG Gambar Bakwan Kering -->
+            <svg class="hero-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" aria-label="Ilustrasi bakwan kering berwarna coklat keemasan dengan taburan bumbu, terlihat renyah dan menggugah selera.">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffe0b2;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffcc80;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+                        <feOffset dx="3" dy="3" result="offsetblur"/>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Background -- Latar Belakang Cerah -->
+                <rect width="100%" height="100%" fill="#e0f7fa" /> <!-- Light Cyan -->
+
+                <!-- Bakwan 1 -->
+                <g transform="translate(150, 180) scale(0.8)">
+                    <path d="M0,0 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0" fill="#f5deb3" filter="url(#shadow)"/> <!-- Bakwan Base -->
+                    <path d="M0,0 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0" fill="#d2b48c" fill-opacity="0.3" transform="rotate(30, 50, 0)"/>
+                    <path d="M0,0 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0" fill="#d2b48c" fill-opacity="0.3" transform="rotate(-30, 50, 0)"/>
+                    <circle cx="25" cy="25" r="10" fill="#ffb74d" opacity="0.7" transform="rotate(15, 25, 25)"/>
+                    <circle cx="75" cy="30" r="12" fill="#ffb74d" opacity="0.7" transform="rotate(-10, 75, 30)"/>
+                    <circle cx="50" cy="45" r="8" fill="#ffb74d" opacity="0.7" transform="rotate(40, 50, 45)"/>
+                </g>
+
+                <!-- Bakwan 2 -->
+                <g transform="translate(400, 200) scale(0.9)">
+                    <path d="M0,0 a60,60 0 1,0 120,0 a60,60 0 1,0 -120,0" fill="#f5deb3" filter="url(#shadow)"/> <!-- Bakwan Base -->
+                    <path d="M0,0 a60,60 0 1,0 120,0 a60,60 0 1,0 -120,0" fill="#d2b48c" fill-opacity="0.3" transform="rotate(20, 60, 0)"/>
+                    <path d="M0,0 a60,60 0 1,0 120,0 a60,60 0 1,0 -120,0" fill="#d2b48c" fill-opacity="0.3" transform="rotate(-20, 60, 0)"/>
+                    <circle cx="30" cy="30" r="15" fill="#ffb74d" opacity="0.7" transform="rotate(25, 30, 30)"/>
+                    <circle cx="90" cy="35" r="13" fill="#ffb74d" opacity="0.7" transform="rotate(-15, 90, 35)"/>
+                    <circle cx="60" cy="50" r="10" fill="#ffb74d" opacity="0.7" transform="rotate(50, 60, 50)"/>
+                </g>
+
+                 <!-- Bakwan 3 -->
+                <g transform="translate(600, 150) scale(0.7)">
+                    <path d="M0,0 a40,40 0 1,0 80,0 a40,40 0 1,0 -80,0" fill="#f5deb3" filter="url(#shadow)"/> <!-- Bakwan Base -->
+                    <path d="M0,0 a40,40 0 1,0 80,0 a40,40 0 1,0 -80,0" fill="#d2b48c" fill-opacity="0.3" transform="rotate(40, 40, 0)"/>
+                    <circle cx="20" cy="20" r="8" fill="#ffb74d" opacity="0.7" transform="rotate(10, 20, 20)"/>
+                    <circle cx="60" cy="25" r="7" fill="#ffb74d" opacity="0.7" transform="rotate(-5, 60, 25)"/>
+                </g>
+
+                <!-- Taburan bumbu/rempah -->
+                <circle cx="180" cy="150" r="3" fill="#e65100" opacity="0.5"/>
+                <circle cx="210" cy="130" r="2" fill="#f57c00" opacity="0.5"/>
+                <circle cx="160" cy="220" r="3" fill="#e65100" opacity="0.5"/>
+
+                <circle cx="430" cy="170" r="4" fill="#e65100" opacity="0.5"/>
+                <circle cx="460" cy="190" r="3" fill="#f57c00" opacity="0.5"/>
+                <circle cx="380" cy="240" r="4" fill="#e65100" opacity="0.5"/>
+
+                <circle cx="620" cy="130" r="3" fill="#e65100" opacity="0.5"/>
+                <circle cx="640" cy="150" r="2" fill="#f57c00" opacity="0.5"/>
+
+                <!-- Teks Judul Sederhana -->
+                <text x="50%" y="50" font-size="40" fill="#0077cc" text-anchor="middle" font-weight="bold" filter="url(#shadow)">
+                    Bakwan Kering
+                </text>
+            </svg>
+
+            <p>Siapa yang tidak suka<strong> bakwan</strong>? Camilan gorengan yang gurih ini selalu menjadi favorit. Namun, seringkali tantangannya adalah mendapatkan tekstur yang<strong> renyah sempurna</strong> dan tahan lama. Resep kali ini akan membagikan cara membuat bakwan kering yang<strong> mudah, cepat, dan pasti kriuk</strong> di setiap gigitannya, cocok dinikmati kapan saja!</p>
+
+            <div class="recipe-section">
+                <h2>Bahan Utama</h2>
+                <ul class="ingredients">
+                    <li>150 gram tepung terigu protein sedang</li>
+                    <li>50 gram tepung beras (penting untuk kerenyahan)</li>
+                    <li>1/2 sendok teh baking powder (opsional, untuk tekstur lebih ringan)</li>
+                    <li>1/4 sendok teh bubuk kunyit (untuk warna cantik)</li>
+                    <li>1/2 sendok teh garam</li>
+                    <li>1/4 sendok teh merica bubuk</li>
+                    <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                    <li>200-250 ml air dingin (sesuaikan kekentalan adonan)</li>
+                    <li>Minyak goreng secukupnya untuk menggoreng</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h2>Sayuran Pelengkap (Pilih Sesuai Selera)</h2>
+                <ul class="ingredients">
+                    <li>1 buah wortel ukuran sedang, iris korek api tipis</li>
+                    <li>50 gram kol, iris tipis</li>
+                    <li>1 batang daun bawang, iris halus</li>
+                    <li>50 gram tauge (opsional, tambahkan di akhir agar tidak terlalu lembek)</li>
+                    <li>100 gram udang kupas, potong kecil (opsional, untuk variasi bakwan udang)</li>
+                    <li>50 gram daging ayam fillet, potong dadu kecil (opsional)</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h2>Cara Membuat Bakwan Kering Renyah</h2>
+                <ol class="steps">
+                    <li><strong>Persiapan Adonan Kering:</strong> Dalam sebuah wadah besar, campurkan tepung terigu, tepung beras, baking powder (jika pakai), bubuk kunyit, garam, merica bubuk, dan kaldu bubuk (jika pakai). Aduk rata hingga semua bahan kering tercampur sempurna.</li>
+                    <li><strong>Tambahkan Cairan:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk menggunakan whisk atau sendok. Pastikan tidak ada gumpalan tepung. Kekentalan adonan harus pas, tidak terlalu encer dan tidak terlalu kental. Adonan yang ideal bisa melapisi sayuran dengan baik namun tidak terlalu tebal.</li>
+                    <li><strong>Campurkan Sayuran:</strong> Masukkan irisan wortel, kol, dan daun bawang ke dalam adonan. Jika menggunakan tauge, udang, atau ayam, masukkan bahan-bahan tersebut ke dalam adonan. Aduk rata hingga semua bahan terbalur adonan. Jika adonan terasa terlalu kental, tambahkan sedikit air dingin.</li>
+                    <li><strong>Panaskan Minyak:</strong> Siapkan wajan dan tuangkan minyak goreng secukupnya. Panaskan dengan api sedang hingga benar-benar panas. Minyak yang cukup panas adalah kunci agar bakwan bisa renyah dari luar dan matang sempurna tanpa menyerap banyak minyak.</li>
+                    <li><strong>Menggoreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Jangan terlalu banyak memasukkan bakwan sekaligus agar suhu minyak tidak turun drastis dan bakwan matang merata.</li>
+                    <li><strong>Balik dan Tiriskan:</strong> Goreng bakwan hingga berwarna cokelat keemasan di satu sisi, lalu balik dan goreng sisi lainnya hingga matang sempurna dan renyah. Gunakan saringan minyak untuk mengangkat bakwan dan tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak.</li>
+                    <li><strong>Sajikan:</strong> Bakwan kering siap disajikan selagi hangat. Nikmati dengan sambal favorit Anda atau cabai rawit hijau untuk sensasi pedas yang menggugah selera.</li>
+                </ol>
+            </div>
+
+            <div class="tips">
+                <h3>Tips Mendapatkan Bakwan Super Renyah</h3>
+                <ul>
+                    <li><strong>Gunakan Tepung Beras:</strong> Tepung beras adalah kunci utama kerenyahan bakwan. Jangan lewatkan bahan ini.</li>
+                    <li><strong>Air Dingin:</strong> Menggunakan air dingin saat membuat adonan dapat membantu menghasilkan tekstur yang lebih renyah.</li>
+                    <li><strong>Jangan Terlalu Lama Mengaduk:</strong> Campurkan sayuran ke dalam adonan sesaat sebelum digoreng. Mengaduk terlalu lama bisa membuat sayuran mengeluarkan air dan adonan menjadi lembek.</li>
+                    <li><strong>Minyak Panas:</strong> Pastikan minyak sudah benar-benar panas saat bakwan dimasukkan. Tes dengan sedikit adonan, jika langsung mengapung dan bergelembung, berarti minyak sudah siap.</li>
+                    <li><strong>Goreng Hingga Keemasan:</strong> Goreng bakwan hingga warnanya cokelat keemasan yang merata. Ini menandakan bakwan sudah matang sempurna dan renyah.</li>
+                    <li><strong>Tiriskan dengan Benar:</strong> Tiriskan bakwan di rak kawat agar uap panas bisa keluar dan menjaga kerenyahannya, hindari menumpuknya langsung di wadah tertutup.</li>
+                </ul>
+            </div>
+
+            <p>Membuat bakwan kering yang renyah ternyata tidak sesulit yang dibayangkan. Dengan sedikit trik dan bahan yang tepat, Anda bisa menyajikan camilan lezat ini kapan saja. Selamat mencoba dan nikmati kelezatannya!</p>
+        </article>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-menyimpan-bakpao-di-freezer">Cara Menyimpan Bakpao Di Freezer</a></li>
+<li><a href="/perkedel-udang-jagung">Perkedel Udang Jagung</a></li>
+<li><a href="/bakso-besar-mercon">Bakso Besar Mercon</a></li>
+<li><a href="/bumbu-bakso-mercon-goreng">Bumbu Bakso Mercon Goreng</a></li>
+<li><a href="/bakpia-kurnia-sari-solo">Bakpia Kurnia Sari Solo</a></li>
+<li><a href="/bakwan-mie-indomie">Bakwan Mie Indomie</a></li>
+<li><a href="/cara-buat-dadar-jagung">Cara Buat Dadar Jagung</a></li>
+<li><a href="/resep-bakwan-tidak-berminyak">Resep Bakwan Tidak Berminyak</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-enak-dan-gurih">Cara Membuat Bakwan Jagung Enak Dan Gurih</a></li>
+<li><a href="/resep-bakwan-sayur-jagung">Resep Bakwan Sayur Jagung</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

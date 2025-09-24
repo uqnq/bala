@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Cocolan Bakwan yang Menggugah Selera</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4682b4; /* SteelBlue - warna cerah tapi menenangkan */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #5f9ea0; /* CadetBlue - warna sejuk cerah */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0ffff; /* LightCyan - aksen halus */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-step {
+            font-weight: bold;
+            color: #20b2aa; /* LightSeaGreen - aksen cerah */
+        }
+        .ingredients {
+            background-color: #e0ffff; /* LightCyan - latar belakang lembut untuk bahan */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .ingredients h3 {
+            color: #008080; /* Teal - warna kuat tapi sejuk */
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .main-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .main-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: #3cb371; /* MediumSeaGreen - warna cerah dan mengundang */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #2e8b57; /* SeaGreen - warna yang lebih dalam saat hover */
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Media query untuk tampilan mobile */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="main-image">
+            <!-- SVG Gambar Cocolan Bakwan -->
+            <svg width="100%" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Latar belakang lembut -->
+                <rect width="600" height="200" rx="10" fill="#e0ffff"/>
+
+                <!-- Bakwan sebagai elemen utama -->
+                <path d="M 100 100 Q 150 50 200 100 T 300 100 Q 350 50 400 100 T 500 100 L 450 150 Q 400 180 350 150 T 250 150 Q 200 180 150 150 T 100 100 Z" fill="#ffdab9" stroke="#e9967a" stroke-width="2"/>
+                <circle cx="150" cy="80" r="5" fill="#ffdab9"/>
+                <circle cx="250" cy="70" r="7" fill="#ffdab9"/>
+                <circle cx="350" cy="75" r="6" fill="#ffdab9"/>
+                <circle cx="450" cy="85" r="8" fill="#ffdab9"/>
+
+                <!-- Cocolan saus merah -->
+                <path d="M 250 120 C 270 100 300 100 320 120 C 330 130 320 140 300 140 C 280 140 270 130 250 120 Z" fill="#dc143c" stroke="#8b0000" stroke-width="1"/>
+                <text x="285" y="130" font-family="Verdana" font-size="12" fill="white" text-anchor="middle">Pedas</text>
+
+                <!-- Cocolan saus hijau -->
+                <path d="M 380 120 C 400 100 430 100 450 120 C 460 130 450 140 430 140 C 410 140 400 130 380 120 Z" fill="#32cd32" stroke="#006400" stroke-width="1"/>
+                <text x="415" y="130" font-family="Verdana" font-size="12" fill="white" text-anchor="middle">Asam</text>
+
+                <!-- Teks judul -->
+                <text x="300" y="30" font-family="Verdana" font-size="20" fill="#4682b4" text-anchor="middle" font-weight="bold">Bakwan Lezat</text>
+                <text x="300" y="55" font-family="Verdana" font-size="14" fill="#5f9ea0" text-anchor="middle">Siap dicocol!</text>
+            </svg>
+            <p style="font-style: italic; color: #777; font-size: 0.9em;">Ilustrasi bakwan dengan aneka cocolan.</p>
+        </div>
+
+        <h1>Resep Cocolan Bakwan yang Menggugah Selera</h1>
+
+        <p>Siapa yang bisa menolak godaan bakwan renyah saat hangat? Camilan klasik ini memang selalu jadi favorit. Namun, apa jadinya bakwan tanpa teman setianya, si cocolan yang kaya rasa? Cocolan bakwan bukan sekadar pelengkap, ia adalah kunci yang bisa mengubah bakwan biasa menjadi sajian istimewa. Mulai dari yang pedas menggigit, asam segar, manis gurih, hingga yang unik dan eksotis, setiap varian cocolan menawarkan pengalaman rasa yang berbeda.</p>
+
+        <p>Mempersiapkan cocolan bakwan sendiri di rumah ternyata tidak sesulit yang dibayangkan. Dengan beberapa bahan sederhana yang mudah didapat, Anda bisa menciptakan saus cocolan yang tak kalah lezat dari yang dijual di luaran. Artikel ini akan memandu Anda untuk membuat beberapa resep cocolan bakwan yang paling populer dan mudah dibuat, cocok untuk menemani santai sore Anda atau menjadi hidangan pelengkap saat berkumpul bersama keluarga dan teman.</p>
+
+        <h2>1. Cocolan Sambal Kecap Pedas Manis</h2>
+
+        <p>Ini adalah resep klasik yang paling disukai banyak orang karena kesederhanaannya dan rasanya yang pas.</p>
+
+        <div class="ingredients">
+            <h3>Bahan:</h3>
+            <ul>
+                <li>10 buah cabai rawit merah (sesuaikan tingkat pedasnya)</li>
+                <li>3 buah cabai merah keriting</li>
+                <li>5 sendok makan kecap manis</li>
+                <li>1 siung bawang putih, cincang halus</li>
+                <li>1 sendok makan air jeruk nipis/lemon</li>
+                <li>Sejumput garam</li>
+            </ul>
+        </div>
+
+        <h3>Cara Membuat:</h3>
+        <ol>
+            <li class="recipe-step">Haluskan cabai rawit dan cabai merah keriting. Anda bisa menggunakan ulekan atau blender.</li>
+            <li class="recipe-step">Campurkan cabai halus dengan bawang putih cincang, kecap manis, air jeruk nipis, dan garam dalam mangkuk.</li>
+            <li class="recipe-step">Aduk rata hingga semua bahan tercampur sempurna.</li>
+            <li class="recipe-step">Cicipi dan sesuaikan rasa manis, pedas, dan asamnya.</li>
+            <li class="recipe-step">Sajikan segera atau simpan di wadah tertutup di kulkas.</li>
+        </ol>
+
+        <h2>2. Cocolan Saus Kacang Creamy</h2>
+
+        <p>Saus kacang memberikan rasa gurih yang kaya dan tekstur yang lembut, sangat cocok berpadu dengan renyahnya bakwan.</p>
+
+        <div class="ingredients">
+            <h3>Bahan:</h3>
+            <ul>
+                <li>100 gram kacang tanah goreng</li>
+                <li>2 siung bawang putih</li>
+                <li>3 buah cabai rawit merah (opsional)</li>
+                <li>2 sendok makan gula merah sisir</li>
+                <li>1 sendok teh garam</li>
+                <li>2 sendok makan air asam jawa</li>
+                <li>100 ml air panas (atau secukupnya)</li>
+                <li>1 sendok makan kecap manis</li>
+            </ul>
+        </div>
+
+        <h3>Cara Membuat:</h3>
+        <ol>
+            <li class="recipe-step">Haluskan kacang tanah goreng, bawang putih, cabai rawit (jika pakai), gula merah, dan garam menggunakan blender atau cobek.</li>
+            <li class="recipe-step">Tambahkan air asam jawa dan sedikit demi sedikit air panas sambil terus dihaluskan hingga mendapatkan kekentalan yang diinginkan.</li>
+            <li class="recipe-step">Pindahkan ke dalam panci kecil, tambahkan kecap manis.</li>
+            <li class="recipe-step">Masak di atas api kecil sambil terus diaduk hingga mengental dan mengeluarkan minyak.</li>
+            <li class="recipe-step">Angkat dan sajikan selagi hangat atau dingin.</li>
+        </ol>
+
+        <h2>3. Cocolan Saus Thai Sweet Chili</h2>
+
+        <p>Jika Anda menyukai perpaduan rasa manis, pedas, dan sedikit asam dengan aroma bawang putih yang kuat, saus ini jawabannya.</p>
+
+        <div class="ingredients">
+            <h3>Bahan:</h3>
+            <ul>
+                <li>5 sendok makan saus tomat</li>
+                <li>3 sendok makan saus sambal</li>
+                <li>2 sendok makan gula pasir</li>
+                <li>1 sendok makan cuka</li>
+                <li>2 siung bawang putih, cincang halus lalu tumis sebentar</li>
+                <li>1/2 sendok teh maizena, larutkan dengan sedikit air</li>
+                <li>1/4 sendok teh garam</li>
+            </ul>
+        </div>
+
+        <h3>Cara Membuat:</h3>
+        <ol>
+            <li class="recipe-step">Campurkan saus tomat, saus sambal, gula pasir, cuka, garam, dan bawang putih tumis dalam panci.</li>
+            <li class="recipe-step">Aduk rata dan masak di atas api sedang hingga mendidih.</li>
+            <li class="recipe-step">Masukkan larutan maizena sedikit demi sedikit sambil terus diaduk hingga saus mengental.</li>
+            <li class="recipe-step">Masak sebentar lagi hingga meletup-letup.</li>
+            <li class="recipe-step">Angkat dan dinginkan sebelum disajikan.</li>
+        </ol>
+
+        <p>Membuat cocolan bakwan sendiri adalah cara yang menyenangkan untuk mengeksplorasi berbagai rasa dan menyesuaikannya dengan selera pribadi. Resep-resep di atas hanyalah titik awal. Jangan ragu untuk berkreasi dengan menambahkan bahan lain seperti jahe parut, daun jeruk, atau sedikit terasi untuk menciptakan cocolan bakwan yang paling sesuai dengan lidah Anda. Selamat mencoba dan nikmati setiap gigitan bakwan Anda!</p>
+
+        <a href="#top" class="cta-button">Kembali ke Atas</a>
+
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi. Semua konten adalah milik penulis.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-kelor">Resep Bakwan Kelor</a></li>
+<li><a href="/resep-bakwan-jagung-pedas-crispy">Resep Bakwan Jagung Pedas Crispy</a></li>
+<li><a href="/masak-gimbal-jagung">Masak Gimbal Jagung</a></li>
+<li><a href="/bakteri-jahat-pada-makanan">Bakteri Jahat Pada Makanan</a></li>
+<li><a href="/adonan-bakwan-jagung-disimpan-di-kulkas">Adonan Bakwan Jagung Disimpan Di Kulkas</a></li>
+<li><a href="/bakpia-rajawali-tebing-tinggi">Bakpia Rajawali Tebing Tinggi</a></li>
+<li><a href="/penyakit-balanitis">Penyakit Balanitis</a></li>
+<li><a href="/cara-buat-mini-pao">Cara Buat Mini Pao</a></li>
+<li><a href="/bakso-beranak-pedas-gila">Bakso Beranak Pedas Gila</a></li>
+<li><a href="/bumbu-bakwan-jagung-biasa">Bumbu Bakwan Jagung Biasa</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

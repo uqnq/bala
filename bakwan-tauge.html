@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Tauge: Resep Sederhana, Rasa Istimewa</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Warna hijau muda yang menenangkan */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4caf50; /* Hijau cerah untuk judul utama */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #66bb6a; /* Hijau lebih muda untuk subjudul */
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .recipe-section {
+            background-color: #f1f8e9; /* Hijau pucat untuk bagian resep */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #81c784; /* Garis hijau untuk menyorot */
+        }
+        .recipe-section h3 {
+            color: #388e3c; /* Hijau tua untuk judul resep */
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .recipe-section ul, .recipe-section ol {
+            padding-left: 25px;
+        }
+        .recipe-section li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #388e3c;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #757575;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                margin: 15px;
+                padding: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                margin: 10px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakwan Tauge: Kudapan Renyah dan Bergizi dari Dapur Nusantara</h1>
+
+        <div class="image-container">
+            <!-- SVG Gambar Bakwan Tauge -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none" stroke="#4CAF50" stroke-width="2">
+                <title>Ilustrasi Bakwan Tauge Renyah</title>
+                <desc>Ilustrasi sederhana bakwan tauge berwarna cokelat keemasan dengan beberapa helai tauge terlihat.</desc>
+                <!-- Wadah luar bakwan -->
+                <path d="M 50 250 Q 150 150 300 250 T 550 250 V 350 H 50 Z" fill="#f5e9cf"/>
+                <!-- Tauge di dalam -->
+                <g stroke="#8bc34a" stroke-width="1.5">
+                    <line x1="150" y1="270" x2="170" y2="250"/>
+                    <line x1="200" y1="260" x2="220" y2="240"/>
+                    <line x1="250" y1="270" x2="270" y2="250"/>
+                    <line x1="300" y1="280" x2="320" y2="260"/>
+                    <line x1="350" y1="270" x2="370" y2="250"/>
+                    <line x1="400" y1="260" x2="420" y2="240"/>
+                    <line x1="450" y1="270" x2="470" y2="250"/>
+                </g>
+                <!-- Tampilan lebih detail pada bagian depan -->
+                <path d="M 100 300 C 120 270 180 270 200 300 C 220 330 180 350 150 350 Z" fill="#f5e9cf"/>
+                <path d="M 200 300 C 220 270 280 270 300 300 C 320 330 280 350 250 350 Z" fill="#f5e9cf"/>
+                <path d="M 300 300 C 320 270 380 270 400 300 C 420 330 380 350 350 350 Z" fill="#f5e9cf"/>
+                <path d="M 400 300 C 420 270 480 270 500 300 C 520 330 480 350 450 350 Z" fill="#f5e9cf"/>
+                <!-- Highlight keemasan -->
+                <defs>
+                    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffeb3b;stop-opacity:0.5"/>
+                        <stop offset="100%" style="stop-color:#ffc107;stop-opacity:0.7"/>
+                    </linearGradient>
+                </defs>
+                <rect x="50" y="250" width="500" height="100" fill="url(#goldGradient)" opacity="0.3" rx="10" ry="10"/>
+            </svg>
+        </div>
+
+        <p>Di tengah beragamnya kuliner Indonesia yang kaya rasa dan tekstur, terdapat satu sajian sederhana namun tak pernah lekang oleh waktu: bakwan tauge. Kudapan ini adalah perwujudan cita rasa nusantara yang merakyat, mudah dibuat, dan selalu berhasil menghadirkan kehangatan di setiap gigitannya. Lebih dari sekadar camilan biasa, bakwan tauge merupakan salah satu primadona di antara berbagai jenis gorengan yang dijajakan di pinggir jalan hingga disajikan di meja makan keluarga. Kehadirannya seolah menjadi pelepas dahaga akan rasa gurih dan renyah yang memanjakan lidah.</p>
+
+        <h2>Pesona Bakwan Tauge</h2>
+
+        <p>Apa yang membuat bakwan tauge begitu istimewa? Jawabannya terletak pada kesederhanaannya yang justru menjadi kekuatan utamanya. Kombinasi tepung terigu yang digoreng hingga keemasan, dipadukan dengan dominasi tauge segar yang memberikan sensasi renyah unik saat digigit, serta aneka bumbu yang meresap sempurna, menjadikan bakwan tauge sebagai pilihan camilan yang digemari oleh berbagai kalangan usia. Tauge, dengan teksturnya yang khas dan rasa manis ringan, mampu memberikan dimensi baru pada adonan bakwan tradisional yang biasanya hanya berisi sayuran lain.</p>
+
+        <p>Tekstur renyah di luar berpadu harmonis dengan sedikit "kriuk" dari tauge di dalamnya. Sensasi ini semakin terasa nikmat ketika dinikmati selagi hangat, ditemani sambal kacang, cabai rawit utuh, atau bahkan hanya dicocol dengan saus sambal favorit. Aroma harum yang menyeruak saat bakwan tauge digoreng pun sudah cukup untuk membangkitkan selera. Tak heran jika penjual gorengan seringkali menjadi magnet, dan bakwan tauge selalu menjadi salah satu item yang paling diburu.</p>
+
+        <h2>Tips Membuat Bakwan Tauge Lezat di Rumah</h2>
+
+        <p>Membuat bakwan tauge sendiri di rumah ternyata tidaklah sulit. Dengan bahan-bahan yang mudah didapatkan dan langkah-langkah yang sederhana, Anda dapat menyajikan kudapan lezat ini kapan saja. Kunci utama dari bakwan tauge yang sempurna adalah adonan yang pas dan teknik menggoreng yang tepat. Adonan yang terlalu encer akan membuat bakwan mudah pecah saat digoreng, sementara adonan yang terlalu kental akan menghasilkan bakwan yang keras dan tidak renyah. Keseimbangan adalah kuncinya.</p>
+
+        <div class="recipe-section">
+            <h3>Resep Sederhana Bakwan Tauge</h3>
+            <p>Berikut adalah resep dasar yang bisa Anda coba:</p>
+            
+            <h4>Bahan-bahan:</h4>
+            <ul>
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk hasil lebih renyah)</li>
+                <li>150-200 gram tauge segar, buang akar dan ujungnya jika perlu</li>
+                <li>50 gram kol, iris tipis (opsional, untuk variasi)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>1 sendok teh kaldu bubuk (ayam/sapi)</li>
+                <li>Garam secukupnya</li>
+                <li>Air secukupnya untuk adonan</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+
+            <h4>Cara Membuat:</h4>
+            <ol>
+                <li>Campurkan tepung terigu, tepung beras, bawang putih halus, merica, kaldu bubuk, dan garam dalam sebuah wadah. Aduk rata.</li>
+                <li>Masukkan irisan kol (jika menggunakan) dan daun bawang, aduk sebentar.</li>
+                <li>Tuang air sedikit demi sedikit sambil terus diaduk hingga membentuk adonan yang kental namun tidak terlalu pekat. Jangan terlalu banyak air agar bakwan tidak lembek.</li>
+                <li>Masukkan tauge segar ke dalam adonan. Aduk perlahan hingga tauge tercampur rata dengan adonan. Hindari mengaduk terlalu kuat agar tauge tidak hancur.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang.</li>
+                <li>Ambil satu sendok sayur adonan, lalu masukkan ke dalam minyak panas. Goreng hingga berwarna cokelat keemasan dan matang di kedua sisinya.</li>
+                <li>Angkat bakwan yang sudah matang, tiriskan minyaknya, dan sajikan selagi hangat.</li>
+            </ol>
+        </div>
+
+        <p>Menyantap bakwan tauge hangat, apalagi bersama keluarga atau teman, selalu memberikan kebahagiaan tersendiri. Kelezatannya bukan hanya berasal dari rasa, tetapi juga dari kebersamaan yang tercipta saat menikmati kudapan sederhana ini. Selamat mencoba berkreasi dengan bakwan tauge di dapur Anda!</p>
+    </div>
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi.</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-ming-yue">Bakpao Ming Yue</a></li>
+<li><a href="/isian-coklat-untuk-bakpia">Isian Coklat Untuk Bakpia</a></li>
+<li><a href="/pohon-bakung-bunga-putih">Pohon Bakung Bunga Putih</a></li>
+<li><a href="/lukisan-bunga-bakung">Lukisan Bunga Bakung</a></li>
+<li><a href="/kue-klapertart-kukus">Kue Klapertart Kukus</a></li>
+<li><a href="/harga-bakpia-kencana">Harga Bakpia Kencana</a></li>
+<li><a href="/resep-buat-bakwan-enak-dan-gurih">Resep Buat Bakwan Enak Dan Gurih</a></li>
+<li><a href="/bakpia-arka">Bakpia Arka</a></li>
+<li><a href="/cara-buat-ote">Cara Buat Ote</a></li>
+<li><a href="/bakpia-bu-marno">Bakpia Bu Marno</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Mie Kriuk Super Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang biru muda sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* Latar belakang putih untuk konten */
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Mencegah elemen anak keluar dari batas */
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul hijau kebiruan */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #e0f2f1; /* Latar belakang bagian resep lebih terang */
+            border-radius: 10px;
+        }
+        .recipe-section h2 {
+            color: #004d40; /* Warna judul bagian resep lebih gelap */
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .ingredients li::before, .instructions li::before {
+            content: "✔ "; /* Simbol centang cerah */
+            color: #26a69a; /* Warna simbol centang */
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .instructions li::before {
+            content: "▶ "; /* Simbol panah untuk instruksi */
+            color: #80cbc4; /* Warna simbol panah */
+        }
+        .tip {
+            background-color: #fff9c4; /* Latar belakang tips kuning cerah */
+            border-left: 5px solid #fbc02d; /* Garis tepi kuning cerah */
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .tip strong {
+            color: #f57f17; /* Warna teks kuat tips */
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Media query untuk tampilan mobile yang lebih responsif */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Mie Kriuk Super Renyah</h1>
+
+        <svg width="100%" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#80cbc4;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#26a69a;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="200" fill="url(#grad1)" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="40" font-weight="bold">Bakwan Mie Kriuk Menggoda</text>
+        </svg>
+
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan mie kriuk adalah salah satu jajanan favorit yang selalu berhasil menggugah selera. Kombinasi antara tekstur mie yang renyah, sayuran segar, dan bumbu yang pas menjadikannya pilihan sempurna untuk teman minum teh atau sekadar pengganjal perut di sore hari. Resep ini akan memandu Anda membuat bakwan mie kriuk yang tidak hanya enak, tetapi juga super renyah tahan lama.</p>
+
+        <p>Membuat bakwan mie kriuk sebenarnya cukup mudah. Kuncinya terletak pada adonan yang tepat dan teknik menggoreng yang benar. Dengan beberapa bahan sederhana yang mudah ditemukan di dapur, Anda bisa menyajikan camilan lezat ini kapan saja. Mari kita mulai petualangan kuliner membuat bakwan mie kriuk yang istimewa!</p>
+
+        <div class="recipe-section">
+            <h2>Bahan-Bahan</h2>
+            <ul class="ingredients">
+                <li>1 bungkus mie instan (rasa apa saja, hancurkan kasar)</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk ekstra kriuk)</li>
+                <li>1 batang wortel, serut kasar</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>Air secukupnya (sekitar 150-200 ml)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Cara Membuat</h2>
+            <ol class="instructions">
+                <li><strong>Persiapan Mie:</strong> Rebus mie instan sebentar saja hingga setengah matang, tiriskan. Hancurkan mie menjadi potongan-potongan yang lebih kecil.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras, bawang putih halus, garam, merica bubuk, dan kaldu bubuk (jika pakai). Aduk rata.</li>
+                <li><strong>Menambahkan Bahan Lain:</strong> Masukkan wortel serut dan daun bawang iris ke dalam campuran tepung.</li>
+                <li><strong>Mengentalkan Adonan:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kental dan semua bahan tercampur rata. Jangan terlalu encer agar bakwan tidak lembek.</li>
+                <li><strong>Memasukkan Mie:</strong> Masukkan mie instan yang sudah dihancurkan ke dalam adonan. Aduk perlahan hingga semua mie terlapisi adonan dengan baik.</li>
+                <li><strong>Menggoreng:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</li>
+                <li><strong>Membentuk Bakwan:</strong> Ambil satu sendok adonan dan masukkan ke dalam minyak panas. Goreng hingga berwarna cokelat keemasan dan teksturnya renyah. Balik sesekali agar matang merata.</li>
+                <li><strong>Meniriskan:</strong> Angkat bakwan mie kriuk yang sudah matang dan tiriskan minyaknya di atas tisu dapur agar tidak terlalu berminyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan mie kriuk siap disajikan selagi hangat dengan sambal favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <strong>Tips untuk Bakwan Super Kriuk:</strong>
+            <ul>
+                <li>Gunakan kombinasi tepung terigu dan tepung beras. Tepung beras memberikan tekstur yang lebih renyah.</li>
+                <li>Jangan membuat adonan terlalu encer. Konsistensi adonan yang kental akan membantu bakwan tetap renyah.</li>
+                <li>Pastikan minyak goreng benar-benar panas sebelum menggoreng bakwan. Ini kunci agar bakwan tidak menyerap banyak minyak dan bisa renyah.</li>
+                <li>Goreng bakwan dalam beberapa tahap, jangan terlalu banyak sekaligus dalam satu wajan. Ini agar suhu minyak tetap stabil dan bakwan matang merata serta kriuk.</li>
+                <li>Untuk menjaga kerenyahan, simpan bakwan yang sudah dingin dalam wadah kedap udara.</li>
+            </ul>
+        </div>
+
+        <p>Nikmati kelezatan bakwan mie kriuk buatan sendiri yang dapat membangkitkan selera. Camilan ini sangat cocok dinikmati bersama keluarga atau teman. Selamat mencoba dan semoga berhasil menciptakan bakwan mie kriuk yang sempurna!</p>
+    </div>
+    <footer>
+        Resep ini dibuat untuk memberikan inspirasi kuliner.
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/streptococcus-bakteri-gram">Streptococcus Bakteri Gram</a></li>
+<li><a href="/bakwan-jagung-sarang-oci">Bakwan Jagung Sarang Oci</a></li>
+<li><a href="/supaya-bakpao-tidak-keriput">Supaya Bakpao Tidak Keriput</a></li>
+<li><a href="/bakwan-sayur-pakai-telur-atau-tidak">Bakwan Sayur Pakai Telur Atau Tidak</a></li>
+<li><a href="/resep-bakwan-jamur">Resep Bakwan Jamur</a></li>
+<li><a href="/bakpia-surya">Bakpia Surya</a></li>
+<li><a href="/contoh-bakteri-endofit">Contoh Bakteri Endofit</a></li>
+<li><a href="/cara-buat-dadar-jagung-sederhana">Cara Buat Dadar Jagung Sederhana</a></li>
+<li><a href="/bumbu-bakwan-simple">Bumbu Bakwan Simple</a></li>
+<li><a href="/bakpia-kacang-tanah">Bakpia Kacang Tanah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

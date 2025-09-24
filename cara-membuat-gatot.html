@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Gatot Kaca yang Enak dan Sehat</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        :root {
+            --bg-color: #e0f7fa; /* Biru muda sejuk */
+            --text-color: #004d40; /* Hijau tua pekat untuk teks */
+            --accent-color: #00bcd4; /* Biru cerah sebagai aksen */
+            --card-bg: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Atur lebar maksimal gambar */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--shadow-color);
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .step-number {
+            background-color: var(--accent-color);
+            color: white;
+            font-weight: bold;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0; /* Mencegah nomor langkah mengecil */
+        }
+
+        .step-description {
+            flex-grow: 1;
+        }
+
+        .ingredients-list, .steps-list {
+            padding-left: 20px;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.7em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 15px;
+            }
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .recipe-image {
+                max-width: 90%; /* Gambar lebih fleksibel di layar kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Membuat Gatot Kaca yang Lezat dan Bernutrisi</h1>
+
+        <svg class="recipe-image" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#00bcd4;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#80deea;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="400" height="250" rx="10" fill="url(#grad1)" />
+            <path d="M100 100 L150 150 L100 200 L50 150 Z" fill="#f44336" stroke="#fff" stroke-width="2"/>
+            <circle cx="200" cy="125" r="40" fill="#ffeb3b" stroke="#fff" stroke-width="2"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#004d40" font-size="24" font-weight="bold">Gatot</text>
+        </svg>
+        <p>Siapa yang tidak suka dengan hidangan tradisional Indonesia yang unik dan mengenyangkan ini? Gatot, atau sering juga disebut 'tiwul gatot', adalah makanan khas dari daerah Gunung Kidul, Yogyakarta, yang terbuat dari singkong. Proses pengolahannya yang khas memberikan tekstur dan rasa yang berbeda dari olahan singkong pada umumnya. Membuat gatot di rumah ternyata tidak sesulit yang dibayangkan, lho! Dengan sedikit kesabaran dan mengikuti langkah-langkah yang tepat, Anda bisa menikmati kelezatan gatot kapan saja.</p>
+
+        <h2>Apa itu Gatot?</h2>
+        <p>Gatot merupakan makanan tradisional yang dulunya menjadi penyelamat saat paceklik. Terbuat dari singkong yang dijemur hingga kering kemudian diolah kembali, gatot memiliki cita rasa gurih, sedikit manis, dan tekstur yang kenyal. Keunikan gatot terletak pada proses fermentasi yang terjadi selama penjemuran, yang memberikan aroma khas dan rasa yang lebih kompleks.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <p>Untuk membuat gatot yang lezat, Anda memerlukan beberapa bahan dasar yang mudah ditemukan:</p>
+        <ul class="ingredients-list">
+            <li>Singkong segar secukupnya (pilih singkong yang tua dan berkualitas baik)</li>
+            <li>Air bersih</li>
+            <li>Gula pasir secukupnya (sesuai selera)</li>
+            <li>Garam secukupnya</li>
+            <li>Kelapa parut setengah tua</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Gatot</h2>
+        <p>Proses pembuatan gatot memang membutuhkan ketelatenan, terutama pada tahap pengeringan singkong. Berikut adalah panduan lengkapnya:</p>
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-description">
+                <h3>Persiapan Singkong</h3>
+                <p>Kupas singkong, cuci bersih, lalu potong-potong sesuai selera. Ukuran potongan bisa sedang, jangan terlalu tebal agar cepat kering.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-description">
+                <h3>Penjemuran (Tahap Kunci)</h3>
+                <p>Singkong yang sudah dipotong kemudian dijemur di bawah terik matahari. Proses ini membutuhkan waktu beberapa hari hingga singkong benar-benar kering dan mengeras. Pastikan singkong tidak terkena air hujan selama penjemuran. Singkong yang kering sempurna akan berwarna lebih gelap dan berbau khas fermentasi.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-description">
+                <h3>Perendaman dan Pencucian</h3>
+                <p>Setelah kering, singkong yang sudah menjadi gaplek ini direndam dalam air bersih. Waktu perendaman bisa bervariasi, biasanya semalam atau beberapa jam, tergantung tingkat kekeringan gaplek. Tujuannya adalah agar singkong kembali lunak dan siap diolah.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-description">
+                <h3>Proses Pengukusan</h3>
+                <p>Tiriskan singkong dari air rendaman. Siapkan panci pengukus yang sudah dipanaskan. Kukus singkong hingga benar-benar empuk dan matang. Proses pengukusan ini biasanya memakan waktu cukup lama.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-description">
+                <h3>Pemberian Rasa</h3>
+                <p>Setelah singkong matang dan masih panas, masukkan gula pasir dan garam sesuai selera Anda. Aduk rata agar gula dan garam larut serta meresap. Anda bisa menyesuaikan tingkat kemanisan sesuai preferensi.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-description">
+                <h3>Penyajian</h3>
+                <p>Sajikan gatot selagi hangat. Taburi dengan kelapa parut setengah tua yang sudah dikukus sebentar agar lebih gurih dan tidak mudah basi. Gatot siap dinikmati sebagai camilan sehat atau pendamping makanan.</p>
+            </div>
+        </div>
+
+        <h2>Tips Tambahan</h2>
+        <p>
+            Untuk hasil terbaik, gunakan singkong yang baru dipanen dan pastikan proses penjemuran dilakukan secara optimal. Jika Anda tidak memiliki waktu untuk menjemur singkong, Anda bisa mencari gaplek singkong yang sudah jadi di pasar tradisional. Perhatikan kualitas gaplek yang dibeli.
+        </p>
+        <p>
+            Variasi rasa juga bisa ditambahkan, misalnya dengan mencampurkan sedikit vanili atau daun pandan saat mengukus agar aroma gatot lebih harum. Untuk penyajian yang lebih menarik, Anda bisa mencetak gatot dengan cetakan kue sebelum disajikan.
+        </p>
+        <p>
+            Gatot adalah contoh sempurna bagaimana bahan sederhana seperti singkong bisa diolah menjadi hidangan yang lezat dan bernutrisi. Selamat mencoba resep <span class="highlight">cara membuat gatot</span> ini di rumah Anda!
+        </p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bala-bala-oncom">Bala Bala Oncom</a></li>
+<li><a href="/bumbu-bakwan-jamur">Bumbu Bakwan Jamur</a></li>
+<li><a href="/bunga-lili-bakung">Bunga Lili Bakung</a></li>
+<li><a href="/resep-bala-bala-kriuk">Resep Bala Bala Kriuk</a></li>
+<li><a href="/bakso-mercon-kering">Bakso Mercon Kering</a></li>
+<li><a href="/bakpao-wortel">Bakpao Wortel</a></li>
+<li><a href="/adonan-bakwan-biar-renyah">Adonan Bakwan Biar Renyah</a></li>
+<li><a href="/bakwan-dempo-halal">Bakwan Dempo Halal</a></li>
+<li><a href="/bakpia-45">Bakpia 45</a></li>
+<li><a href="/bakpia-koe">Bakpia Koe</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Takaran Sendok: Praktis & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna kontras cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .recipe-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f4ffff;
+            border-radius: 10px;
+        }
+        .recipe-section h2 {
+            color: #004d40;
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .ingredients li, .instructions li {
+            position: relative;
+            padding-left: 25px;
+        }
+        .ingredients li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #00796b;
+            font-weight: bold;
+        }
+        .instructions li::before {
+            content: counter(list-item);
+            position: absolute;
+            left: 0;
+            color: #00796b;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .note {
+            font-style: italic;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+        strong {
+            color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="image-container">
+            <!-- SVG Gambar Bakwan yang Lezat -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakwan sayur berwarna keemasan">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f0e68c;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#daa520;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" rx="15" fill="#fff3e0"/>
+                <!-- Bakwan 1 -->
+                <ellipse cx="150" cy="150" rx="70" ry="60" fill="url(#grad1)" stroke="#b8860b" stroke-width="3"/>
+                <path d="M150 90 q 20 -30 50 -20" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M150 90 q -20 -30 -50 -20" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M150 210 q 20 30 50 20" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M150 210 q -20 30 -50 20" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M100 150 q -30 20 -20 50" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M100 150 q -30 -20 -20 -50" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M200 150 q 30 20 20 50" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M200 150 q 30 -20 20 -50" fill="none" stroke="#daa520" stroke-width="2"/>
+                <!-- Bakwan 2 -->
+                <ellipse cx="350" cy="170" rx="80" ry="70" fill="url(#grad1)" stroke="#b8860b" stroke-width="3"/>
+                <path d="M350 100 q 30 -40 70 -30" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M350 100 q -30 -40 -70 -30" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M350 240 q 30 40 70 30" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M350 240 q -30 40 -70 30" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M280 170 q -40 30 -30 70" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M280 170 q -40 -30 -30 -70" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M420 170 q 40 30 30 70" fill="none" stroke="#daa520" stroke-width="2"/>
+                <path d="M420 170 q 40 -30 30 -70" fill="none" stroke="#daa520" stroke-width="2"/>
+                <!-- Sayuran Sederhana -->
+                <rect x="80" y="230" width="50" height="20" fill="#2e7d32" rx="5"/> <!-- Wortel -->
+                <rect x="160" y="230" width="50" height="20" fill="#8bc34a" rx="5"/> <!-- Kol -->
+                <rect x="240" y="230" width="50" height="20" fill="#2e7d32" rx="5"/> <!-- Daun Bawang -->
+                <rect x="480" y="220" width="50" height="20" fill="#8bc34a" rx="5"/> <!-- Kol -->
+                <rect x="400" y="220" width="50" height="20" fill="#2e7d32" rx="5"/> <!-- Daun Bawang -->
+            </svg>
+        </div>
+
+        <h1>Resep Bakwan Takaran Sendok: Praktis & Lezat untuk Semua</h1>
+
+        <p>Siapa yang tidak suka bakwan? Gorengan renyah yang identik dengan camilan atau teman makan nasi ini memang selalu menggoda selera. Namun, seringkali kita ragu untuk membuatnya sendiri di rumah karena khawatir takaran bahan akan salah dan hasil akhirnya tidak memuaskan. Jangan khawatir! Dengan resep bakwan takaran sendok ini, Anda bisa menciptakan bakwan yang renyah di luar dan lembut di dalam dengan mudah, tanpa perlu timbangan dapur yang rumit.</p>
+
+        <div class="recipe-section">
+            <h2>Mengapa Resep Takaran Sendok?</h2>
+            <p>Resep ini dirancang khusus bagi Anda yang ingin praktis. Menggunakan sendok sebagai alat ukur utama membuat proses memasak jadi lebih sederhana, cepat, dan minim alat. Cocok sekali untuk pemula atau bagi yang sedang ingin membuat camilan cepat tanpa repot menyiapkan banyak peralatan dapur.</p>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Bahan-Bahan Utama</h2>
+            <p>Bahan-bahan berikut adalah panduan umum untuk membuat bakwan sayur klasik. Anda bisa menyesuaikan jenis sayuran sesuai selera.</p>
+            <ul class="ingredients">
+                <li>10 sendok makan tepung terigu serbaguna</li>
+                <li>2 sendok makan tepung beras (untuk tambahan kerenyahan)</li>
+                <li>1 sendok teh garam (atau sesuai selera)</li>
+                <li>½ sendok teh kaldu bubuk (opsional)</li>
+                <li>¼ sendok teh merica bubuk</li>
+                <li>1 butir telur ayam (ukuran sedang)</li>
+                <li>Sekitar 8-10 sendok makan air (sesuaikan kekentalan adonan)</li>
+                <li>Sayuran sesuai selera, iris tipis dan kecil (contoh: kol, wortel, tauge, buncis, daun bawang)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Langkah-Langkah Membuat Bakwan</h2>
+            <p>Ikuti panduan ini untuk hasil bakwan yang sempurna:</p>
+            <ol class="instructions">
+                <li><strong>Siapkan Adonan Kering:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras, garam, kaldu bubuk (jika pakai), dan merica bubuk. Aduk rata.</li>
+                <li><strong>Tambahkan Telur:</strong> Masukkan telur ayam ke dalam campuran tepung. Aduk menggunakan whisk atau garpu hingga tercampur rata.</li>
+                <li><strong>Tuang Air Sedikit Demi Sedikit:</strong> Perlahan tuangkan air sambil terus diaduk. Masukkan air sedikit demi sedikit (mulai dari 8 sendok makan) hingga mendapatkan kekentalan adonan yang pas. Adonan sebaiknya tidak terlalu encer dan tidak terlalu kental, cukup untuk melapisi sayuran.</li>
+                <li><strong>Masukkan Sayuran:</strong> Masukkan irisan sayuran ke dalam adonan. Aduk rata hingga semua sayuran terbalut adonan dengan baik.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam saat digoreng.</li>
+                <li><strong>Goreng Bakwan:</strong> Ambil satu sendok sayur adonan beserta sayurannya, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga salah satu sisi berwarna cokelat keemasan dan matang.</li>
+                <li><strong>Balik dan Tiriskan:</strong> Balik bakwan agar matang merata di sisi lainnya. Setelah matang sempurna dan berwarna cokelat keemasan, angkat bakwan dan tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan siap disajikan selagi hangat. Nikmati dengan cabai rawit, saus sambal, atau lontong.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Tambahan untuk Bakwan Lebih Nikmat</h2>
+            <p>Beberapa tips kecil ini bisa membuat bakwan buatan Anda semakin istimewa:</p>
+            <ul>
+                <li><strong>Kerenyahan Ekstra:</strong> Untuk bakwan yang lebih renyah, Anda bisa menambahkan 1 sendok makan sagu atau tapioka ke dalam adonan kering. Pastikan juga minyak goreng benar-benar panas saat bakwan dimasukkan.</li>
+                <li><strong>Variasi Sayuran:</strong> Jangan ragu bereksperimen dengan sayuran lain seperti jagung pipil, labu siam parut, atau bahkan jamur. Potong sayuran sesuai selera, namun pastikan ukurannya tidak terlalu besar agar matang merata.</li>
+                <li><strong>Adonan Siap Pakai:</strong> Anda bisa menyiapkan adonan kering (campuran tepung dan bumbu) sebelumnya dan menyimpannya dalam wadah kedap udara. Saat ingin membuat bakwan, tinggal tambahkan telur dan air.</li>
+                <li><strong>Hindari Mengaduk Berlebihan:</strong> Setelah sayuran dicampur dengan adonan, jangan terlalu lama mengaduknya agar sayuran tidak mengeluarkan terlalu banyak air.</li>
+            </ul>
+        </div>
+
+        <p class="note">Membuat bakwan takaran sendok sangatlah mudah dan menyenangkan. Dengan sedikit kreativitas dan mengikuti langkah-langkah di atas, Anda akan dapat menyajikan camilan favorit keluarga dengan hasil yang memuaskan. Selamat mencoba!</p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-wortel">Bakwan Wortel</a></li>
+<li><a href="/bakpao-ny-liem">Bakpao Ny Liem</a></li>
+<li><a href="/resep-kentang-mustofa-balado">Resep Kentang Mustofa Balado</a></li>
+<li><a href="/bakwan-mie-telur">Bakwan Mie Telur</a></li>
+<li><a href="/harga-bakso-beranak-mercon">Harga Bakso Beranak Mercon</a></li>
+<li><a href="/resep-bakwan-tanpa-minyak">Resep Bakwan Tanpa Minyak</a></li>
+<li><a href="/gorengan-crispy">Gorengan Crispy</a></li>
+<li><a href="/bakpao-powder">Bakpao Powder</a></li>
+<li><a href="/bakso-beranak-citra-raya">Bakso Beranak Citra Raya</a></li>
+<li><a href="/bakso-mercon-pedas">Bakso Mercon Pedas</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

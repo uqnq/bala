@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikin Dadar Jagung Enak & Renyah!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna sejuk biru muda */
+            color: #004d40; /* Warna teks hijau tua yang sejuk */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 77, 64, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul hijau cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .recipe-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 77, 64, 0.1);
+        }
+        .ingredients, .instructions {
+            background-color: #f0f8ff; /* Warna latar belakang daftar lebih cerah */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .ingredients h2, .instructions h2 {
+            text-align: left;
+            margin-bottom: 15px;
+            color: #00796b;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .step-number {
+            background-color: #4dd0e1; /* Warna nomor langkah biru cerah */
+            color: white;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0; /* Mencegah nomor langkah menyusut */
+        }
+        .step-text {
+            flex-grow: 1;
+        }
+        .tips {
+            background-color: #e8f5e9; /* Warna latar belakang tips hijau muda */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .tips h2 {
+            color: #388e3c; /* Warna judul tips hijau tua */
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #757575;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="image-container">
+            <svg class="recipe-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00bcd4;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grad1)" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="30" font-weight="bold">
+                    Dadar Jagung Nikmat
+                </text>
+                <circle cx="50" cy="50" r="15" fill="#ffeb3b" /> <!-- Jagung kuning cerah -->
+                <circle cx="80" cy="70" r="15" fill="#ffeb3b" />
+                <circle cx="110" cy="50" r="15" fill="#ffeb3b" />
+                <circle cx="140" cy="70" r="15" fill="#ffeb3b" />
+                <circle cx="170" cy="50" r="15" fill="#ffeb3b" />
+
+                <circle cx="200" cy="50" r="15" fill="#ffeb3b" />
+                <circle cx="230" cy="70" r="15" fill="#ffeb3b" />
+                <circle cx="260" cy="50" r="15" fill="#ffeb3b" />
+                <circle cx="290" cy="70" r="15" fill="#ffeb3b" />
+                <circle cx="320" cy="50" r="15" fill="#ffeb3b" />
+
+                <circle cx="50" cy="150" r="15" fill="#ffeb3b" />
+                <circle cx="80" cy="170" r="15" fill="#ffeb3b" />
+                <circle cx="110" cy="150" r="15" fill="#ffeb3b" />
+                <circle cx="140" cy="170" r="15" fill="#ffeb3b" />
+                <circle cx="170" cy="150" r="15" fill="#ffeb3b" />
+
+                <circle cx="200" cy="150" r="15" fill="#ffeb3b" />
+                <circle cx="230" cy="170" r="15" fill="#ffeb3b" />
+                <circle cx="260" cy="150" r="15" fill="#ffeb3b" />
+                <circle cx="290" cy="170" r="15" fill="#ffeb3b" />
+                <circle cx="320" cy="150" r="15" fill="#ffeb3b" />
+
+                <path d="M 20 220 Q 100 180 180 220 T 360 220" fill="none" stroke="#a5d6a7" stroke-width="15" /> <!-- Daun hijau muda -->
+                <path d="M 50 250 Q 150 210 250 250 T 450 250" fill="none" stroke="#81c784" stroke-width="15" />
+            </svg>
+            <p style="font-style: italic; font-size: 0.9em; color: #00695c;">Ilustrasi dadar jagung yang menggugah selera.</p>
+        </div>
+
+        <h1>Cara Bikin Dadar Jagung yang Enak dan Renyah</h1>
+
+        <p>Siapa yang tidak suka dengan dadar jagung? Camilan renyah dan manis ini selalu menjadi favorit banyak orang, baik saat santai maupun sebagai teman makan nasi. Membuat dadar jagung yang sempurna ternyata tidak sulit, lho! Dengan beberapa tips sederhana, Anda bisa menciptakan dadar jagung yang lezat, gurih, dan pastinya kriuk di setiap gigitan. Mari kita simak cara bikin dadar jagung yang enak.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan Utama</h2>
+            <ul>
+                <li>2 buah jagung manis ukuran sedang, pipil atau serut kasar</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1/2 sendok teh baking powder (opsional, untuk hasil lebih mengembang)</li>
+                <li>1 butir telur ayam</li>
+                <li>150-200 ml air (sesuaikan konsistensi adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+
+            <h2>Bumbu Halus</h2>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>2 siung bawang merah</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh garam (atau sesuai selera)</li>
+                <li>Sejumput gula pasir (opsional, jika jagung kurang manis)</li>
+                <li>1 batang daun bawang, iris tipis (opsional, untuk aroma segar)</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Langkah-langkah Membuat Dadar Jagung Enak</h2>
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-text">
+                    <p><strong>Persiapkan Jagung:</strong> Pipil atau serut kasar jagung manis. Jika ingin tekstur yang lebih kasar dan renyah, Anda bisa mencampur sebagian jagung yang diblender kasar dengan jagung yang masih utuh atau diserut.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-text">
+                    <p><strong>Haluskan Bumbu:</strong> Ulek atau blender semua bahan bumbu halus hingga tercampur rata dan lembut. Tambahkan irisan daun bawang jika menggunakannya.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-text">
+                    <p><strong>Buat Adonan:</strong> Dalam wadah besar, campurkan tepung terigu, tepung beras, dan baking powder (jika pakai). Aduk rata.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-text">
+                    <p><strong>Campurkan Semua Bahan:</strong> Masukkan jagung pipil/serut, bumbu halus, dan telur ke dalam campuran tepung. Aduk rata.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-text">
+                    <p><strong>Tuang Air:</strong> Tambahkan air sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer agar tidak pecah saat digoreng, namun juga tidak terlalu kental agar tidak keras.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-text">
+                    <p><strong>Panaskan Minyak:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum adonan dimasukkan.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">7</div>
+                <div class="step-text">
+                    <p><strong>Goreng Dadar Jagung:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Pipihkan sedikit dengan punggung sendok agar matang merata dan lebih renyah. Goreng hingga kedua sisinya berwarna kuning keemasan dan matang.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">8</div>
+                <div class="step-text">
+                    <p><strong>Tiriskan dan Sajikan:</strong> Angkat dadar jagung yang sudah matang, tiriskan minyaknya di atas kertas tisu agar tidak terlalu berminyak. Sajikan selagi hangat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips">
+            <h2>Tips Agar Dadar Jagung Makin Enak dan Renyah</h2>
+            <ul>
+                <li><strong>Pilih Jagung yang Tepat:</strong> Gunakan jagung manis yang masih muda agar rasanya lebih manis dan teksturnya lembut.</li>
+                <li><strong>Kombinasi Tepung:</strong> Perpaduan tepung terigu dan tepung beras sangat penting untuk mendapatkan kerenyahan yang maksimal.</li>
+                <li><strong>Jangan Terlalu Banyak Air:</strong> Konsistensi adonan yang pas kunci utama dadar jagung tidak lembek.</li>
+                <li><strong>Api Sedang:</strong> Menggoreng dengan api sedang akan memastikan dadar matang sempurna hingga ke dalam tanpa gosong di luar.</li>
+                <li><strong>Minyak Panas:</strong> Pastikan minyak sudah benar-benar panas sebelum adonan dimasukkan agar dadar langsung 'mengeras' di luar dan menjadi renyah.</li>
+                <li><strong>Jangan Terlalu Tebal:</strong> Adonan yang terlalu tebal akan sulit matang merata dan cenderung lembek di tengah.</li>
+            </ul>
+        </div>
+
+        <p>Dengan resep dan tips di atas, Anda pasti bisa membuat dadar jagung yang lezat dan disukai semua anggota keluarga. Selamat mencoba!</p>
+
+    </div>
+
+    <footer>
+        <p>Artikel ini berisi panduan membuat dadar jagung yang enak.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-jamur-sawit">Bakwan Jamur Sawit</a></li>
+<li><a href="/cara-membuat-isian-bakpao">Cara Membuat Isian Bakpao</a></li>
+<li><a href="/cara-menyimpan-adonan-perkedel-jagung-di-kulkas">Cara Menyimpan Adonan Perkedel Jagung Di Kulkas</a></li>
+<li><a href="/bakwan-yang-enak-dan-gurih">Bakwan Yang Enak Dan Gurih</a></li>
+<li><a href="/asinan-jagung-bakar-pak-sabur">Asinan Jagung Bakar Pak Sabur</a></li>
+<li><a href="/bakpia-anisa">Bakpia Anisa</a></li>
+<li><a href="/bakso-pentol-mercon">Bakso Pentol Mercon</a></li>
+<li><a href="/resep-perkedel-jagung-pakai-telur">Resep Perkedel Jagung Pakai Telur</a></li>
+<li><a href="/resep-bakwan-jamur">Resep Bakwan Jamur</a></li>
+<li><a href="/cara-membuat-isian-coklat-untuk-bakpao">Cara Membuat Isian Coklat Untuk Bakpao</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

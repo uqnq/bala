@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakpia 803 Bu Marno: Kelezatan Khas Jogja</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Warna-warna sejuk cerah */
+        :root {
+            --warna-utama: #70C1B3; /* Hijau toska cerah */
+            --warna-sekunder: #F7FFF7; /* Putih cerah */
+            --warna-aksen: #FFB347; /* Oranye lembut */
+            --warna-teks-gelap: #333;
+            --warna-teks-terang: #fff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--warna-sekunder);
+            color: var(--warna-teks-gelap);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--warna-sekunder);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: var(--warna-utama);
+            color: var(--warna-teks-terang);
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            padding: 0 15px;
+        }
+
+        h2 {
+            color: var(--warna-utama);
+            border-bottom: 2px solid var(--warna-aksen);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: var(--warna-aksen);
+            font-weight: bold;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 12px 25px;
+            background-color: var(--warna-aksen);
+            color: var(--warna-teks-terang);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e09d3a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: var(--warna-teks-gelap);
+            font-size: 0.9em;
+            width: 100%;
+            background-color: var(--warna-sekunder);
+            border-top: 1px solid #eee;
+        }
+
+        /* Media Query untuk tampilan mobile yang lebih optimal */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 15px auto;
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bakpia 803 Bu Marno: Legenda Manis dari Jogja</h1>
+        </header>
+
+        <div class="content">
+            <div class="image-container">
+                <!-- SVG Gambar Bakpia -->
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakpia isi coklat yang menggoda">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#E8A059;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#D38547;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#6A4F3B;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#513B2C;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Bakpia Utama -->
+                    <ellipse cx="200" cy="150" rx="80" ry="60" fill="url(#grad1)" stroke="#C07A42" stroke-width="3"/>
+                    <!-- Isian Coklat -->
+                    <ellipse cx="200" cy="150" rx="50" ry="35" fill="url(#grad2)" />
+                    <!-- Detail Pecahan Kecil -->
+                    <path d="M180 130 Q 190 120 200 130 T 220 130" stroke="#D38547" stroke-width="1" fill="none"/>
+                    <path d="M180 170 Q 190 180 200 170 T 220 170" stroke="#D38547" stroke-width="1" fill="none"/>
+                    <!-- Pantulan Cahaya -->
+                    <ellipse cx="210" cy="140" rx="15" ry="10" fill="rgba(255,255,255,0.3)" transform="rotate(-20 210 140)"/>
+
+                    <!-- Teks "Bakpia 803" -->
+                    <text x="200" y="90" font-family="Arial, sans-serif" font-size="20" fill="#FFF" text-anchor="middle" font-weight="bold">Bakpia 803</text>
+                    <text x="200" y="115" font-family="Arial, sans-serif" font-size="15" fill="#FFB347" text-anchor="middle">Bu Marno</text>
+                </svg>
+            </div>
+
+            <p>Ketika berbicara tentang oleh-oleh khas Yogyakarta, nama <strong>bakpia</strong> selalu menjadi primadona. Di antara sekian banyak produsen bakpia yang ada, <strong>Bakpia 803 Bu Marno</strong> telah mengukir namanya sebagai salah satu legenda kuliner yang wajib dicicipi. Dengan cita rasa autentik yang terjaga dari generasi ke generasi, bakpia ini menawarkan pengalaman rasa yang tak terlupakan bagi setiap penikmatnya.</p>
+
+            <h2>Keistimewaan Bakpia 803 Bu Marno</h2>
+            <p>Apa yang membuat <strong>Bakpia 803 Bu Marno</strong> begitu istimewa? Rahasianya terletak pada perpaduan sempurna antara kulit bakpia yang renyah di luar namun lembut di dalam, dengan isian yang melimpah dan kaya rasa. Bu Marno dikenal sangat selektif dalam memilih bahan baku, memastikan setiap gigitan bakpia menghadirkan kualitas terbaik. Mulai dari kacang hijau pilihan untuk isian klasik, hingga varian coklat yang legit, semuanya diolah dengan resep turun-temurun yang terjaga keasliannya.</p>
+
+            <p>Proses pembuatan yang higienis dan penuh ketelitian menjadi ciri khas lain dari <strong>Bakpia 803 Bu Marno</strong>. Setiap bakpia dibentuk dan dipanggang dengan hati-hati untuk menghasilkan tekstur yang sempurna. Aroma harum yang menguar saat bakpia masih hangat adalah undangan tak tertahankan untuk segera mencicipinya. Tidak heran jika bakpia ini menjadi favorit wisatawan maupun warga lokal yang mencari rasa bakpia yang benar-benar otentik.</p>
+
+            <h2>Lebih dari Sekadar Oleh-Oleh</h2>
+            <p>Mengunjungi Yogyakarta tidak akan lengkap tanpa membawa pulang setidaknya satu kotak <strong>Bakpia 803 Bu Marno</strong>. Bakpia ini bukan hanya sekadar oleh-oleh, tetapi juga merupakan representasi dari kekayaan kuliner dan tradisi masyarakat Jogja. Cocok dinikmati bersama keluarga dan kerabat saat bersantai, atau sebagai teman setia di setiap perjalanan.</p>
+
+            <p>Keberadaan nomor 803 pada nama bakpia ini bukan sekadar penanda, melainkan seringkali diasosiasikan dengan nomor rumah atau lokasi spesifik di mana Bu Marno memulai usahanya. Hal ini menambah sentuhan personal dan historis pada merek dagangnya, membuatnya lebih mudah dikenali dan diingat. Pengalaman berburu bakpia legendaris ini tentu akan menjadi cerita tersendiri saat Anda kembali dari kota pelajar.</p>
+
+            <p>Bagi Anda yang ingin merasakan kelezatan sejati dari <strong>Bakpia 803 Bu Marno</strong>, pastikan untuk mencarinya di tempat yang tepat. Ketenaran dan kualitasnya membuat bakpia ini seringkali menjadi buruan. Jangan ragu untuk mencoba berbagai varian rasa yang ditawarkan, karena setiap varian memiliki daya tarik tersendiri. Rasakan sensasi gigitan pertama yang akan membawa Anda pada petualangan rasa yang tiada duanya. <strong>Bakpia 803 Bu Marno</strong> adalah janji kelezatan yang tak akan pernah mengecewakan.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi.</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/pia-kacang">Pia Kacang</a></li>
+<li><a href="/cara-bikin-kolak-ubi">Cara Bikin Kolak Ubi</a></li>
+<li><a href="/bakpia-rizky-jalan-wonosari">Bakpia Rizky Jalan Wonosari</a></li>
+<li><a href="/bale-cr7">Bale Cr7</a></li>
+<li><a href="/bakpao-mentega-kuning">Bakpao Mentega Kuning</a></li>
+<li><a href="/resep-buat-bakwan-sayur">Resep Buat Bakwan Sayur</a></li>
+<li><a href="/resep-bakso-mercon-rumahan">Resep Bakso Mercon Rumahan</a></li>
+<li><a href="/cara-membuat-roti-spiku">Cara Membuat Roti Spiku</a></li>
+<li><a href="/bakpia-solo-09">Bakpia Solo 09</a></li>
+<li><a href="/resep-bumbu-ote-ote-renyah">Resep Bumbu Ote Ote Renyah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

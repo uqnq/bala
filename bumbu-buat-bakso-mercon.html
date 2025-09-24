@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumbu Bakso Mercon: Resep Lezat & Pedas</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #4682b4; /* SteelBlue - warna sejuk */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.7em;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #ff6347; /* Tomato - sedikit kontras cerah */
+        }
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Sesuaikan lebar gambar */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #e6f2ff; /* Warna sejuk cerah untuk footer */
+            color: #4682b4;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.3em;
+            }
+            .hero-image {
+                max-width: 90%;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            h3 {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <svg class="hero-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="title-svg">
+            <title id="title-svg">Ilustrasi bakso mercon dengan cabai dan rempah</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ff9a8b;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#fec89a;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feMerge>
+                        <feMergeNode in="offsetblur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grad1)" />
+
+            <!-- Bakso 1 -->
+            <circle cx="200" cy="200" r="70" fill="#e57373" filter="url(#shadow)"/>
+            <circle cx="200" cy="200" r="50" fill="#f48fb1" />
+            <path d="M 180 170 Q 200 160 220 170 L 200 190 Z" fill="#fbc02d" transform="rotate(10 200 200)" filter="url(#shadow)"/> <!-- Cabai kecil -->
+
+            <!-- Bakso 2 -->
+            <circle cx="400" cy="220" r="80" fill="#d32f2f" filter="url(#shadow)"/>
+            <circle cx="400" cy="220" r="60" fill="#ef5350" />
+            <path d="M 380 190 Q 400 170 420 190 L 400 210 Z" fill="#fbc02d" transform="rotate(-20 400 220)" filter="url(#shadow)"/> <!-- Cabai besar -->
+            <path d="M 370 230 Q 380 240 390 230 L 380 220 Z" fill="#fbc02d" transform="rotate(30 400 220)" filter="url(#shadow)"/> <!-- Cabai kecil -->
+
+            <!-- Bakso 3 -->
+            <circle cx="600" cy="180" r="75" fill="#c62828" filter="url(#shadow)"/>
+            <circle cx="600" cy="180" r="55" fill="#e57373" />
+            <path d="M 580 150 Q 600 140 620 150 L 600 170 Z" fill="#fbc02d" transform="rotate(5 600 180)" filter="url(#shadow)"/> <!-- Cabai -->
+
+            <!-- Rempah-rempah -->
+            <circle cx="150" cy="100" r="10" fill="#a1887f" opacity="0.6" />
+            <circle cx="250" cy="120" r="8" fill="#a1887f" opacity="0.6" />
+            <circle cx="300" cy="80" r="12" fill="#fbc02d" opacity="0.7" />
+            <circle cx="500" cy="150" r="10" fill="#a1887f" opacity="0.6" />
+            <circle cx="650" cy="100" r="9" fill="#a1887f" opacity="0.6" />
+
+            <!-- Teks -->
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="40" font-weight="bold" opacity="0.8" filter="url(#shadow)">
+                Bakso Mercon
+            </text>
+        </svg>
+
+        <h1>Bumbu Rahasia Bakso Mercon: Pedasnya Bikin Nagih!</h1>
+
+        <p>
+            Siapa yang tidak tergoda dengan semangkuk bakso mercon yang menggugah selera? Aroma rempah yang kaya berpadu dengan pedasnya cabai menciptakan sensasi kenikmatan yang tak terlupakan. Kunci utama dari kelezatan bakso mercon terletak pada bumbunya. Meracik bumbu yang tepat bukan hanya soal pedas, tetapi juga keseimbangan rasa gurih, manis, dan aroma yang memikat. Artikel ini akan membongkar rahasia bumbu buat bakso mercon agar Anda bisa membuatnya sendiri di rumah, menyajikan hidangan istimewa untuk keluarga tercinta.
+        </p>
+
+        <h2>Komponen Utama Bumbu Bakso Mercon</h2>
+
+        <p>
+            Untuk menciptakan rasa otentik bakso mercon, kita perlu memahami bahan-bahan dasar yang membentuk harmoni rasa pedasnya. Bumbu ini biasanya terdiri dari beberapa elemen krusial:
+        </p>
+
+        <ul>
+            <li><strong>Cabai:</strong> Tentu saja, ini adalah bintang utamanya. Kombinasi cabai merah keriting dan cabai rawit menjadi pilihan paling umum. Jumlahnya bisa disesuaikan dengan tingkat kepedasan yang diinginkan.</li>
+            <li><strong>Bawang:</strong> Bawang merah dan bawang putih adalah dasar dari hampir semua masakan Indonesia. Keduanya memberikan aroma dan rasa gurih yang mendalam.</li>
+            <li><strong>Rempah Aromatik:</strong> Jahe, lengkuas, dan kencur memberikan sentuhan hangat dan aroma khas yang memperkaya rasa bakso mercon.</li>
+            <li><strong>Perasa:</strong> Garam, gula, dan kaldu bubuk (opsional) berfungsi untuk menyeimbangkan rasa dan meningkatkan kelezatan keseluruhan.</li>
+            <li><strong>Pelengkap:</strong> Daun jeruk, serai, dan terkadang sedikit terasi bisa menambah kompleksitas rasa dan aroma.</li>
+        </ul>
+
+        <h2>Resep Bumbu Dasar Bakso Mercon</h2>
+
+        <p>
+            Berikut adalah resep bumbu dasar yang bisa Anda gunakan sebagai patokan. Ingat, fleksibilitas adalah kunci, jangan ragu untuk menyesuaikan sesuai selera Anda.</p>
+
+        <h3>Bahan-Bahan Bumbu Halus:</h3>
+        <ol>
+            <li>150 gram cabai merah keriting</li>
+            <li>50 gram cabai rawit merah (sesuaikan tingkat kepedasan)</li>
+            <li>10 siung bawang merah</li>
+            <li>6 siung bawang putih</li>
+            <li>3 cm jahe</li>
+            <li>2 cm lengkuas muda</li>
+            <li>1 cm kencur (opsional, untuk aroma yang lebih khas)</li>
+            <li>1 sendok teh garam</li>
+            <li>1/2 sendok teh gula pasir</li>
+            <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+        </ol>
+
+        <h3>Cara Membuat Bumbu Halus:</h3>
+        <ol>
+            <li>Cuci bersih semua cabai dan rempah.</li>
+            <li>Masukkan semua bahan ke dalam blender atau ulekan. Tambahkan sedikit minyak goreng atau air untuk mempermudah proses penghalusan.</li>
+            <li>Haluskan semua bahan hingga benar-benar halus.</li>
+        </ol>
+
+        <h2>Tips Mengolah Bumbu Bakso Mercon</h2>
+
+        <p>
+            Bumbu halus ini adalah dasar yang luar biasa, namun cara pengolahannya juga sangat mempengaruhi hasil akhir:
+        </p>
+        <ul>
+            <li><strong>Tumis Hingga Matang:</strong> Setelah dihaluskan, bumbu harus ditumis dengan minyak secukupnya hingga benar-benar matang dan harum. Ini penting untuk menghilangkan bau langu dari cabai dan bawang, serta mengeluarkan aroma rempah secara maksimal.</li>
+            <li><strong>Tambahkan Aroma Lain:</strong> Saat menumis, Anda bisa menambahkan beberapa lembar daun jeruk yang disobek, dan serai yang digeprek untuk menambah dimensi rasa.</li>
+            <li><strong>Keseimbangan Rasa:</strong> Cicipi bumbu yang sudah ditumis, sesuaikan rasa garam dan gula jika diperlukan. Bumbu yang seimbang akan membuat kuah bakso mercon Anda terasa lezat, bukan hanya pedas semata.</li>
+            <li><strong>Menyimpan Bumbu:</strong> Bumbu halus yang sudah ditumis dan dingin dapat disimpan dalam wadah kedap udara di kulkas selama beberapa hari. Ini memudahkan Anda saat ingin membuat bakso mercon kapan saja.</li>
+        </ul>
+
+        <h2>Variasi Bumbu Bakso Mercon</h2>
+
+        <p>
+            Bagi Anda yang ingin bereksperimen, beberapa variasi bumbu buat bakso mercon bisa dicoba:
+        </p>
+        <ul>
+            <li><strong>Tambahkan Tomat:</strong> Sedikit tomat yang dihaluskan bersama bumbu dapat memberikan sentuhan rasa asam segar dan warna yang lebih cerah.</li>
+            <li><strong>Udang Rebon:</strong> Untuk rasa gurih yang lebih intens, Anda bisa menambahkan sedikit udang rebon yang dihaluskan bersama bumbu.</li>
+            <li><strong>Kacang Tanah Sangrai:</strong> Beberapa daerah menambahkan sedikit kacang tanah sangrai yang dihaluskan untuk tekstur dan rasa yang unik.</li>
+        </ul>
+
+        <p>
+            Meracik bumbu buat bakso mercon memang membutuhkan perhatian pada detail. Namun, dengan panduan di atas, Anda kini memiliki bekal yang cukup untuk menciptakan bakso mercon yang tidak hanya pedas, tetapi juga kaya rasa dan beraroma menggoda. Selamat mencoba dan nikmati sensasi pedasnya yang bikin nagih!
+        </p>
+
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-bakpao-yang-lembut-dan-enak">Cara Membuat Bakpao Yang Lembut Dan Enak</a></li>
+<li><a href="/bakwan-bromo">Bakwan Bromo</a></li>
+<li><a href="/resep-bakwan-teri-kering">Resep Bakwan Teri Kering</a></li>
+<li><a href="/perkedel-jagung-adalah">Perkedel Jagung Adalah</a></li>
+<li><a href="/cara-buat-bakwan-jagung">Cara Buat Bakwan Jagung</a></li>
+<li><a href="/bakwan-daging">Bakwan Daging</a></li>
+<li><a href="/cara-membuat-bakso-mercon-pedas">Cara Membuat Bakso Mercon Pedas</a></li>
+<li><a href="/resep-bakwan-jagung-renyah-dan-gurih">Resep Bakwan Jagung Renyah Dan Gurih</a></li>
+<li><a href="/bakpia-kukus-jl-kaliurang">Bakpia Kukus Jl Kaliurang</a></li>
+<li><a href="/bakpao-tanpa-telur">Bakpao Tanpa Telur</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

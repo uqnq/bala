@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bumbu Bakwan Udang Lezat & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna cerah yang menenangkan */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #00796b;
+            border-bottom: 2px solid #80cbc4;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            color: #00796b;
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .ingredients li, .steps li {
+            background-color: #f0f8ff; /* Warna latar belakang item yang lebih lembut */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border-left: 4px solid #80cbc4;
+        }
+        .note {
+            font-style: italic;
+            color: #555;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e8f5e9; /* Warna hijau lembut untuk catatan */
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bumbu Bakwan Udang Lezat & Renyah</h1>
+
+        <div class="image-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" aria-label="Ilustrasi bakwan udang yang menggugah selera">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#80cbc4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00796b;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <!-- Background -->
+                <rect width="600" height="400" fill="#f0f8ff" />
+
+                <!-- Bakwan Udang -->
+                <g transform="translate(50, 50)">
+                    <!-- Udang 1 -->
+                    <path d="M0 50 L 20 30 L 40 50 L 20 70 Z" fill="#ff9800" filter="url(#shadow)"/>
+                    <circle cx="10" cy="45" r="3" fill="#ffffff" />
+                    <circle cx="30" cy="45" r="3" fill="#ffffff" />
+
+                    <!-- Udang 2 -->
+                    <path d="M80 70 L 100 50 L 120 70 L 100 90 Z" fill="#ff9800" transform="rotate(15 100 70)" filter="url(#shadow)"/>
+                    <circle cx="90" cy="65" r="3" fill="#ffffff" />
+                    <circle cx="110" cy="65" r="3" fill="#ffffff" />
+
+                    <!-- Bakwan Base -->
+                    <ellipse cx="150" cy="150" rx="80" ry="70" fill="#fff9c4" filter="url(#shadow)"/>
+                    <ellipse cx="120" cy="130" rx="75" ry="65" fill="#ffe082" filter="url(#shadow)"/>
+                    <ellipse cx="180" cy="130" rx="70" ry="60" fill="#ffe082" filter="url(#shadow)"/>
+
+                    <!-- Crispy Texture -->
+                    <path d="M100 50 Q 150 20 200 50 T 300 50" stroke="#fbc02d" stroke-width="4" fill="none" opacity="0.7"/>
+                    <path d="M100 100 Q 150 80 200 100 T 300 100" stroke="#fbc02d" stroke-width="3" fill="none" opacity="0.7"/>
+                    <path d="M100 150 Q 150 130 200 150 T 300 150" stroke="#fbc02d" stroke-width="3" fill="none" opacity="0.7"/>
+                    <path d="M100 200 Q 150 180 200 200 T 300 200" stroke="#fbc02d" stroke-width="4" fill="none" opacity="0.7"/>
+
+                    <!-- Scattered Shrimp -->
+                    <g transform="translate(50, 100) rotate(30)">
+                        <path d="M0 20 L 10 10 L 20 20 L 10 30 Z" fill="#ff9800" />
+                        <circle cx="5" cy="18" r="2" fill="#ffffff" />
+                        <circle cx="15" cy="18" r="2" fill="#ffffff" />
+                    </g>
+                     <g transform="translate(200, 80) rotate(-20)">
+                        <path d="M0 20 L 10 10 L 20 20 L 10 30 Z" fill="#ff9800" />
+                        <circle cx="5" cy="18" r="2" fill="#ffffff" />
+                        <circle cx="15" cy="18" r="2" fill="#ffffff" />
+                    </g>
+                     <g transform="translate(250, 150) rotate(10)">
+                        <path d="M0 20 L 10 10 L 20 20 L 10 30 Z" fill="#ff9800" />
+                        <circle cx="5" cy="18" r="2" fill="#ffffff" />
+                        <circle cx="15" cy="18" r="2" fill="#ffffff" />
+                    </g>
+                </g>
+
+                <!-- Green Sauce Dip -->
+                <path d="M500 300 Q 520 280 550 300 L 530 320 Z" fill="#4CAF50" opacity="0.6"/>
+                <path d="M500 300 Q 510 290 530 300 L 520 310 Z" fill="#8BC34A" opacity="0.8"/>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan udang adalah salah satu jajanan pasar favorit yang selalu berhasil menggugah selera. Perpaduan tekstur renyah dari adonan tepung dan manisnya udang segar membuat bakwan ini tak pernah gagal memuaskan lidah. Kunci dari bakwan udang yang sempurna terletak pada bumbunya. Dengan resep bumbu bakwan udang yang tepat, Anda bisa menciptakan camilan lezat ini di rumah.</p>
+
+        <p>Membuat bakwan udang sendiri memberikan kepuasan tersendiri. Anda bisa mengatur sendiri seberapa banyak udang yang ingin digunakan dan memastikan kesegaran bahan-bahannya. Resep bumbu bakwan udang yang akan kita bahas ini sederhana namun kaya rasa, menghasilkan bakwan yang tidak hanya renyah di luar, tetapi juga gurih dan nikmat di dalam.</p>
+
+        <h2>Bahan Utama</h2>
+        <ul class="ingredients">
+            <li>200 gram udang segar, kupas, sisakan ekornya (opsional), belah punggungnya</li>
+            <li>100 gram tepung terigu</li>
+            <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+            <li>1 batang daun bawang, iris tipis</li>
+            <li>1 batang seledri, iris tipis</li>
+            <li>5-6 lembar kol, iris tipis (opsional, untuk variasi)</li>
+            <li>Air secukupnya untuk adonan</li>
+            <li>Minyak goreng secukupnya</li>
+        </ul>
+
+        <h2>Resep Bumbu Halus</h2>
+        <ul class="ingredients">
+            <li>4 siung bawang putih</li>
+            <li>2 siung bawang merah</li>
+            <li>1/2 sendok teh ketumbar bubuk</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>1/2 sendok teh garam (sesuaikan selera)</li>
+            <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            <li>1 cm kunyit (opsional, untuk warna lebih menarik)</li>
+        </ul>
+
+        <h2>Cara Membuat Bakwan Udang</h2>
+        <ol class="steps">
+            <li><strong>Persiapan Udang:</strong> Cuci bersih udang, kupas, dan belah punggungnya jika diinginkan. Anda bisa memotong udang menjadi beberapa bagian jika ukurannya terlalu besar.</li>
+            <li><strong>Membuat Adonan:</strong> Dalam sebuah wadah, campurkan tepung terigu dan tepung beras.</li>
+            <li><strong>Menghaluskan Bumbu:</strong> Ulek atau blender semua bahan bumbu halus hingga benar-benar tercampur rata dan halus.</li>
+            <li><strong>Mencampur Adonan:</strong> Masukkan bumbu halus ke dalam campuran tepung. Tambahkan irisan daun bawang dan seledri (serta kol jika menggunakan). Aduk rata.</li>
+            <li><strong>Mengatur Kekentalan Adonan:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan memiliki kekentalan yang pas, tidak terlalu encer dan tidak terlalu kental. Pastikan semua bahan tercampur rata.</li>
+            <li><strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</li>
+            <li><strong>Membentuk Bakwan:</strong> Ambil satu sendok adonan, letakkan udang di atasnya, lalu sendokkan lagi adonan untuk menutupi udang. Perlahan masukkan ke dalam minyak panas. Lakukan hingga wajan terisi secukupnya, jangan terlalu penuh agar bakwan matang merata.</li>
+            <li><strong>Memastikan Kerenyahan:</strong> Goreng bakwan hingga berwarna kuning keemasan dan terlihat renyah. Balik sesekali agar matang merata di kedua sisinya.</li>
+            <li><strong>Meniriskan:</strong> Angkat bakwan udang yang sudah matang dan tiriskan minyaknya menggunakan saringan atau tisu dapur.</li>
+            <li><strong>Sajikan:</strong> Sajikan bakwan udang selagi hangat. Nikmati dengan saus sambal, cabai rawit, atau pelengkap lainnya.</li>
+        </ol>
+
+        <div class="note">
+            <p><strong>Tips Tambahan:</strong></p>
+            <ul>
+                <li>Untuk hasil yang lebih renyah tahan lama, Anda bisa menambahkan sedikit air kapur sirih ke dalam adonan.</li>
+                <li>Pastikan minyak goreng sudah benar-benar panas sebelum memasukkan adonan bakwan. Ini akan membantu bakwan mengembang dan menjadi renyah.</li>
+                <li>Jangan terlalu sering mengaduk bakwan saat digoreng agar tidak menyerap terlalu banyak minyak.</li>
+                <li>Kombinasi tepung terigu dan tepung beras memberikan keseimbangan kerenyahan yang sempurna.</li>
+            </ul>
+        </div>
+
+        <p>Dengan resep bumbu bakwan udang yang simpel ini, Anda bisa menyajikan hidangan lezat yang cocok dinikmati kapan saja. Baik sebagai camilan sore ditemani teh hangat, atau sebagai lauk pendamping nasi, bakwan udang selalu menjadi pilihan yang tepat. Selamat mencoba!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-untuk-diet">Bakwan Untuk Diet</a></li>
+<li><a href="/bumbu-bakwan-sayur-sederhana">Bumbu Bakwan Sayur Sederhana</a></li>
+<li><a href="/perkedel-udang-rebon">Perkedel Udang Rebon</a></li>
+<li><a href="/bakwan-kriuk">Bakwan Kriuk</a></li>
+<li><a href="/harga-pentol-mercon-per-porsi">Harga Pentol Mercon Per Porsi</a></li>
+<li><a href="/pia-kering-bogasari">Pia Kering Bogasari</a></li>
+<li><a href="/pohon-bakung-air-mancur">Pohon Bakung Air Mancur</a></li>
+<li><a href="/bakwan-jagung-blender">Bakwan Jagung Blender</a></li>
+<li><a href="/bakwan-46-prasmanan">Bakwan 46 Prasmanan</a></li>
+<li><a href="/resep-buat-bakso-mercon">Resep Buat Bakso Mercon</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

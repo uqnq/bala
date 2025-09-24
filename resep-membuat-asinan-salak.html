@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Asinan Salak Segar & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk dan cerah */
+            color: #333;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; /* Memastikan padding tidak menambah lebar */
+        }
+        h1 {
+            color: #0077cc; /* Biru cerah */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #33aaff; /* Biru lebih muda */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.7em;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #005fa3; /* Biru lebih gelap untuk penekanan */
+        }
+        .recipe-image {
+            display: block;
+            margin: 30px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .ingredients, .instructions {
+            background-color: #e6f7ff; /* Biru sangat pucat */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+            margin-bottom: 0; /* Hilangkan margin bawah untuk list terakhir */
+        }
+        .note {
+            font-style: italic;
+            color: #555;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.95em;
+        }
+        /* Media query untuk tampilan yang lebih baik di layar kecil */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+            .recipe-image {
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Resep Asinan Salak Segar & Lezat</h1>
+
+        <p>Asinan salak adalah hidangan penutup atau camilan yang menyegarkan, terutama saat cuaca panas. Perpaduan rasa asam, manis, dan pedas yang khas membuat asinan salak digemari banyak orang. Proses membuatnya pun relatif mudah, cocok untuk dicoba di rumah.</p>
+
+        <!-- Gambar SVG -->
+        <svg class="recipe-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" aria-label="Ilustrasi visual asinan salak yang menggugah selera">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FFB300;stop-opacity:1" /> <!-- Oranye cerah -->
+                    <stop offset="100%" style="stop-color:#FFD54F;stop-opacity:1" /> <!-- Oranye muda -->
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#EF5350;stop-opacity:1" /> <!-- Merah -->
+                    <stop offset="100%" style="stop-color:#E57373;stop-opacity:1" /> <!-- Merah muda -->
+                </linearGradient>
+            </defs>
+            <!-- Latar belakang -->
+            <rect width="100%" height="100%" fill="#FFF9C4" /> <!-- Kuning pucat -->
+
+            <!-- Buah salak -->
+            <g transform="translate(150, 150) rotate(10)">
+                <ellipse cx="0" cy="0" rx="60" ry="30" fill="#FFB74D" /> <!-- Coklat salak -->
+                <path d="M -55 -20 Q -40 -30 -20 -30 Q -5 -30 10 -20 L 10 15 Q 0 20 -10 15 Q -20 15 -35 5 Q -50 5 -55 -20 Z" fill="#F9A825" /> <!-- Detail kulit salak -->
+                <circle cx="0" cy="-15" r="10" fill="black" opacity="0.2"/> <!-- Bayangan -->
+            </g>
+            <g transform="translate(280, 180) rotate(-5)">
+                <ellipse cx="0" cy="0" rx="55" ry="28" fill="#FFB74D" />
+                <path d="M -50 -18 Q -35 -25 -18 -25 Q -3 -25 8 -18 L 8 12 Q -2 17 -12 12 Q -22 12 -32 3 Q -42 3 -50 -18 Z" fill="#F9A825" />
+                <circle cx="0" cy="-13" r="9" fill="black" opacity="0.2"/>
+            </g>
+            <g transform="translate(420, 140) rotate(20)">
+                <ellipse cx="0" cy="0" rx="65" ry="35" fill="#FFB74D" />
+                <path d="M -60 -22 Q -45 -32 -22 -32 Q -5 -32 12 -22 L 12 18 Q -4 23 -14 18 Q -24 18 -40 7 Q -50 7 -60 -22 Z" fill="#F9A825" />
+                <circle cx="0" cy="-18" r="11" fill="black" opacity="0.2"/>
+            </g>
+
+            <!-- Bumbu asinan (cabai, garam, gula) -->
+            <g transform="translate(100, 280)">
+                <circle cx="0" cy="0" r="15" fill="#E53935" /> <!-- Cabai merah -->
+                <circle cx="30" cy="0" r="12" fill="#EEEEEE" /> <!-- Gula -->
+                <circle cx="60" cy="0" r="10" fill="#CFD8DC" /> <!-- Garam -->
+            </g>
+
+            <!-- Kuah -->
+            <rect x="20" y="300" width="560" height="90" rx="10" ry="10" fill="rgba(255,255,255,0.7)" /> <!-- Kuah transparan -->
+            <text x="300" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FF6F00">Kuah Asinan Segar</text>
+        </svg>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan</h2>
+            <ul>
+                <li>500 gram salak, pilih yang matang dan manis</li>
+                <li>2-3 buah cabai merah keriting (sesuaikan selera pedas)</li>
+                <li>1-2 buah cabai rawit merah (opsional, untuk rasa lebih pedas)</li>
+                <li>2-3 sendok makan gula pasir</li>
+                <li>1/2 sendok teh garam</li>
+                <li>200 ml air matang</li>
+                <li>1 sendok makan cuka makan (opsional, untuk rasa lebih asam segar)</li>
+                <li>1/2 sendok teh terasi bakar (opsional, untuk aroma khas)</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat Asinan Salak</h2>
+            <ol>
+                <li><strong>Persiapan Salak:</strong> Kupas kulit salak hingga bersih, buang ujungnya yang tajam. Belah salak menjadi dua atau empat bagian, tergantung ukurannya. Buang bijinya.</li>
+                <li><strong>Haluskan Bumbu Kuah:</strong> Siapkan ulekan atau blender. Haluskan cabai merah keriting, cabai rawit (jika menggunakan), dan terasi (jika menggunakan). Tambahkan gula pasir dan garam, ulek kembali hingga tercampur rata.</li>
+                <li><strong>Buat Kuah Asinan:</strong> Tuangkan air matang ke dalam wadah terpisah. Masukkan bumbu yang sudah dihaluskan ke dalam air. Aduk rata hingga gula dan garam larut. Jika menggunakan cuka, tambahkan cuka dan aduk kembali.</li>
+                <li><strong>Rendam Salak:</strong> Masukkan potongan salak ke dalam larutan kuah asinan. Pastikan semua potongan salak terendam dengan baik.</li>
+                <li><strong>Dinginkan dan Sajikan:</strong> Tutup wadah dan simpan di dalam kulkas minimal 1-2 jam agar bumbu meresap sempurna dan asinan terasa dingin menyegarkan.</li>
+            </ol>
+        </div>
+
+        <p>Asinan salak siap dinikmati. Sajikan selagi dingin untuk sensasi yang lebih menggugah selera. Anda bisa menambahkan irisan timun atau nanas jika suka variasi lain.</p>
+
+        <p class="note">Tips: Gunakan salak yang tidak terlalu muda agar rasa manisnya lebih terasa. Jika ingin kuah yang lebih kental, Anda bisa menambahkan sedikit air asam jawa.</p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-mercon-mas-gilang">Bakso Mercon Mas Gilang</a></li>
+<li><a href="/resep-bakwan-jagung-tanpa-minyak">Resep Bakwan Jagung Tanpa Minyak</a></li>
+<li><a href="/membuat-gorengan-bakwan">Membuat Gorengan Bakwan</a></li>
+<li><a href="/alat-dan-bahan-membuat-bakwan-jagung">Alat Dan Bahan Membuat Bakwan Jagung</a></li>
+<li><a href="/klub-terbaru-gareth-bale">Klub Terbaru Gareth Bale</a></li>
+<li><a href="/harga-bakpia-patuk-75">Harga Bakpia Patuk 75</a></li>
+<li><a href="/depot-bakwan-erna">Depot Bakwan Erna</a></li>
+<li><a href="/cara-membuat-perkedel-jagung-yang-enak-dan-renyah">Cara Membuat Perkedel Jagung Yang Enak Dan Renyah</a></li>
+<li><a href="/bakwan-goreng-babi-udang">Bakwan Goreng Babi Udang</a></li>
+<li><a href="/bakpia-450">Bakpia 450</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

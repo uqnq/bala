@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakso Ikan Mercon Pedas Menggugah Selera</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #FFC107; /* Kuning cerah */
+            --text-color: #333;
+            --background-color: #E8F5E9; /* Hijau muda pastel */
+            --card-background: #FFFFFF;
+            --border-color: #C8E6C9;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.7em;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro-section p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .svg-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .svg-container svg {
+            width: 150px;
+            height: 150px;
+            fill: var(--primary-color);
+        }
+
+        .recipe-card {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            padding: 20px;
+            margin-bottom: 25px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .recipe-card h3 {
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+
+        .recipe-card ul,
+        .recipe-card ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .recipe-card li {
+            margin-bottom: 8px;
+        }
+
+        .recipe-card p {
+            margin-bottom: 15px;
+        }
+
+        .ingredients ul {
+            list-style-type: disc;
+        }
+
+        .instructions ol {
+            list-style-type: decimal;
+        }
+
+        .tips {
+            background-color: var(--background-color);
+            border-left: 5px solid var(--secondary-color);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .tips h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .svg-container svg {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            .recipe-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="intro-section">
+            <h1>Resep Bakso Ikan Mercon</h1>
+            <p>Nikmati sensasi pedas dan gurih dari bakso ikan buatan sendiri yang dijamin bikin nagih!</p>
+        </div>
+
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                <path d="M17.27 10.31l-4.95-4.95c-.19-.19-.43-.31-.69-.31-.26 0-.5-.12-.69-.31-.19.19-.5.51-.69.69l-4.95 4.95c-.39.39-.39 1.03 0 1.42.39.39 1.03.39 1.42 0l2.83-2.83v7.09c0 .55.45 1 1 1s1-.45 1-1v-7.09l2.83 2.83c.39.39 1.03.39 1.42 0 .39-.39.39-1.03 0-1.42z"/>
+            </svg>
+            <p>Bakso Ikan Mercon - Kelezatan Pedas yang Menggoda</p>
+        </div>
+
+        <div class="recipe-card">
+            <h2>Bahan Utama Bakso Ikan</h2>
+            <div class="ingredients">
+                <ul>
+                    <li>300 gram daging ikan tenggiri/kakap fillet, haluskan</li>
+                    <li>100 gram tepung tapioka/sagu</li>
+                    <li>50 gram tepung terigu</li>
+                    <li>1 butir telur</li>
+                    <li>2 siung bawang putih, haluskan</li>
+                    <li>1/2 sendok teh garam</li>
+                    <li>1/4 sendok teh merica bubuk</li>
+                    <li>1/4 sendok teh penyedap rasa (opsional)</li>
+                    <li>Es batu secukupnya (untuk tekstur kenyal)</li>
+                    <li>Air secukupnya untuk merebus</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <h2>Bahan Bumbu Mercon</h2>
+            <div class="ingredients">
+                <ul>
+                    <li>10-15 buah cabai rawit merah (sesuaikan selera pedas)</li>
+                    <li>5 buah cabai merah keriting</li>
+                    <li>3 siung bawang merah</li>
+                    <li>2 siung bawang putih</li>
+                    <li>1 ruas jari jahe</li>
+                    <li>1 batang serai, memarkan</li>
+                    <li>2 lembar daun salam</li>
+                    <li>1 lembar daun jeruk</li>
+                    <li>1 sendok makan saus sambal</li>
+                    <li>1 sendok teh saus tomat</li>
+                    <li>1/2 sendok teh kecap manis</li>
+                    <li>Garam, gula, dan merica secukupnya</li>
+                    <li>Minyak goreng secukupnya untuk menumis</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <h2>Cara Membuat Bakso Ikan Mercon</h2>
+            <div class="instructions">
+                <h3>1. Membuat Adonan Bakso Ikan:</h3>
+                <ol>
+                    <li>Campurkan daging ikan halus, telur, bawang putih halus, garam, merica, dan penyedap rasa dalam wadah. Aduk rata.</li>
+                    <li>Masukkan tepung tapioka dan tepung terigu sedikit demi sedikit sambil terus diaduk hingga adonan kalis dan bisa dibentuk.</li>
+                    <li>Tambahkan es batu sedikit demi sedikit sambil terus diaduk dan diuleni agar bakso kenyal.</li>
+                    <li>Ambil adonan secukupnya, bentuk bulat-bulat menggunakan tangan yang sudah dibasahi air.</li>
+                    <li>Didihkan air dalam panci. Masukkan bulatan bakso ikan. Masak hingga bakso mengapung, menandakan sudah matang. Angkat dan tiriskan.</li>
+                </ol>
+
+                <h3>2. Membuat Bumbu Mercon:</h3>
+                <ol>
+                    <li>Haluskan cabai rawit, cabai merah keriting, bawang merah, bawang putih, dan jahe.</li>
+                    <li>Panaskan minyak goreng secukupnya dalam wajan. Tumis bumbu halus hingga harum.</li>
+                    <li>Masukkan serai, daun salam, dan daun jeruk. Aduk rata.</li>
+                    <li>Tambahkan saus sambal, saus tomat, dan kecap manis. Aduk kembali.</li>
+                    <li>Bumbui dengan garam, gula, dan merica secukupnya. Koreksi rasa.</li>
+                </ol>
+
+                <h3>3. Menggabungkan Bakso dan Bumbu:</h3>
+                <ol>
+                    <li>Masukkan bakso ikan yang sudah direbus ke dalam tumisan bumbu mercon.</li>
+                    <li>Aduk rata perlahan agar bakso tidak hancur. Masak sebentar hingga bumbu meresap.</li>
+                    <li>Angkat dan sajikan bakso ikan mercon selagi hangat.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-card tips">
+            <h4>Tips Tambahan:</h4>
+            <ul>
+                <li>Untuk rasa yang lebih kaya, gunakan campuran beberapa jenis ikan.</li>
+                <li>Pastikan adonan bakso dingin saat dibentuk agar tidak lengket. Penggunaan es batu sangat membantu.</li>
+                <li>Tingkat kepedasan bisa disesuaikan dengan jumlah cabai yang digunakan.</li>
+                <li>Bakso ikan mercon nikmat disantap bersama nasi hangat, lontong, atau mie.</li>
+                <li>Jika suka, Anda bisa menambahkan sedikit air saat menumis bumbu agar tidak terlalu kering.</li>
+            </ul>
+        </div>
+
+        <div class="recipe-card">
+            <h2>Nikmati Sajian Spesial Anda!</h2>
+            <p>Bakso ikan mercon ini adalah pilihan tepat untuk Anda yang menyukai tantangan rasa pedas. Coba resep ini di rumah dan rasakan sendiri kelezatannya. Selamat mencoba!</p>
+        </div>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/masakan-bakwan-jagung">Masakan Bakwan Jagung</a></li>
+<li><a href="/bakwan-sayur-xanderskitchen">Bakwan Sayur Xanderskitchen</a></li>
+<li><a href="/resep-bakwan-goreng-udang">Resep Bakwan Goreng Udang</a></li>
+<li><a href="/bakwan-tempe-sederhana">Bakwan Tempe Sederhana</a></li>
+<li><a href="/cara-buat-bakso-mercon-enak">Cara Buat Bakso Mercon Enak</a></li>
+<li><a href="/bakwan-pare">Bakwan Pare</a></li>
+<li><a href="/bakpao-karakter-panda">Bakpao Karakter Panda</a></li>
+<li><a href="/bakpao-kemasan">Bakpao Kemasan</a></li>
+<li><a href="/gareth-bale-dijual">Gareth Bale Dijual</a></li>
+<li><a href="/perkedel-jagung-enak">Perkedel Jagung Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

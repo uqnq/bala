@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Udang Simple: Gurih Renyah!</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        :root {
+            --primary-color: #50C878; /* Emerald Green - warna sejuk cerah */
+            --secondary-color: #FFD700; /* Gold - aksen cerah */
+            --text-color: #333;
+            --background-color: #F0FFF0; /* Honeydew - latar belakang cerah */
+            --card-background: #FFFFFF;
+            --border-color: #D3D3D3;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px; /* Lebar maksimum untuk konten */
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        img.hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .recipe-section {
+            margin-bottom: 20px;
+        }
+
+        .recipe-section p,
+        .recipe-section ul li,
+        .recipe-section ol li {
+            margin-bottom: 10px;
+        }
+
+        .ingredients ul,
+        .instructions ol {
+            padding-left: 25px;
+        }
+
+        .ingredients ul li::before,
+        .instructions ol li::before {
+            content: "• ";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .instructions ol li::before {
+            content: counter(list-item) ". ";
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0 auto;
+            padding: 12px 25px;
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #e0b100;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 15px;
+            }
+            .cta-button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Resep Bakwan Udang Simple: Camilan Gurih Renyah yang Disukai Semua</h1>
+
+        <svg class="hero-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svgTitle">
+            <title id="svgTitle">Ilustrasi Bakwan Udang Renyah</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:var(--secondary-color);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="400" fill="url(#grad1)" rx="15"/>
+            <g transform="translate(30, 50)">
+                <!-- Gumpalan adonan bakwan -->
+                <path d="M 100 150 Q 120 100 180 110 T 250 160 Q 200 200 130 180 Z" fill="#FFDAB9" stroke="#E0A478" stroke-width="2"/>
+                <path d="M 150 180 Q 170 140 230 150 T 280 190 Q 230 220 160 200 Z" fill="#FFDAB9" stroke="#E0A478" stroke-width="2"/>
+                <!-- Udang -->
+                <g transform="translate(100, 130) scale(0.8)">
+                    <path d="M 0 20 C 10 0 30 0 40 20 C 50 40 30 50 20 40 C 10 30 0 30 0 20 Z" fill="#FF6347" stroke="#A52A2A" stroke-width="2"/>
+                    <path d="M 20 15 L 40 25 L 20 35 Z" fill="#FF6347" stroke="#A52A2A" stroke-width="2"/>
+                </g>
+                 <g transform="translate(190, 160) scale(0.7)">
+                    <path d="M 0 20 C 10 0 30 0 40 20 C 50 40 30 50 20 40 C 10 30 0 30 0 20 Z" fill="#FF6347" stroke="#A52A2A" stroke-width="2"/>
+                    <path d="M 20 15 L 40 25 L 20 35 Z" fill="#FF6347" stroke="#A52A2A" stroke-width="2"/>
+                </g>
+                <!-- Bumbu halus/daun -->
+                <circle cx="90" cy="120" r="5" fill="#90EE90"/>
+                <circle cx="260" cy="140" r="4" fill="#90EE90"/>
+                <circle cx="200" cy="100" r="3" fill="#90EE90"/>
+            </g>
+            <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF" font-size="25" font-weight="bold" stroke="#333" stroke-width="0.5">
+                Bakwan Udang Simple
+            </text>
+        </svg>
+
+        <div class="recipe-section">
+            <p>Siapa yang bisa menolak kelezatan bakwan? Apalagi jika bakwan tersebut berisi udang yang gurih, dengan tekstur renyah di luar dan lembut di dalam. Resep bakwan udang simple ini adalah solusi sempurna bagi Anda yang ingin menyajikan camilan lezat tanpa perlu repot. Cocok dinikmati kapan saja, baik sebagai teman minum teh atau pendamping hidangan utama. Dengan bahan-bahan yang mudah didapat dan langkah yang lugas, Anda bisa segera menikmati kelezatan bakwan udang buatan sendiri.</p>
+        </div>
+
+        <div class="recipe-section ingredients">
+            <h2>Bahan-bahan Utama</h2>
+            <ul>
+                <li>150 gram udang segar, kupas, buang kulit dan kepala, sisakan ekor (opsional), belah punggungnya</li>
+                <li>150 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air secukupnya (sekitar 150-200 ml atau hingga adonan kental pas)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section instructions">
+            <h2>Cara Membuat Bakwan Udang</h2>
+            <ol>
+                <li><strong>Persiapan Udang:</strong> Cuci bersih udang yang sudah dikupas. Anda bisa membiarkan udang utuh atau memotongnya menjadi dua bagian jika ukurannya terlalu besar. Sisakan ekor udang agar tampilan lebih menarik dan mudah dipegang saat digoreng.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam wadah, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+                <li><strong>Bumbu Halus:</strong> Masukkan bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan) ke dalam campuran tepung. Aduk rata.</li>
+                <li><strong>Menambahkan Cairan:</strong> Tuang air sedikit demi sedikit sambil terus diaduk hingga membentuk adonan yang kental, tidak terlalu encer dan tidak terlalu kental. Pastikan tidak ada gumpalan tepung.</li>
+                <li><strong>Menambahkan Daun Bawang:</strong> Masukkan irisan daun bawang ke dalam adonan. Aduk kembali hingga tercampur rata.</li>
+                <li><strong>Proses Menggoreng:</strong> Panaskan minyak goreng dalam jumlah cukup banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas agar bakwan renyah dan tidak menyerap banyak minyak.</li>
+                <li><strong>Membentuk dan Menggoreng Bakwan:</strong> Ambil satu sendok sayur adonan, letakkan beberapa udang di atasnya. Goreng adonan beserta udang ke dalam minyak panas. Gunakan sendok atau spatula untuk sedikit membentuk agar tidak terlalu melebar. Goreng hingga berwarna kuning keemasan dan matang merata di kedua sisinya.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan udang yang sudah matang, tiriskan di atas kertas tisu atau rak kawat untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan udang siap disajikan selagi hangat. Sajikan dengan saus sambal, cabai rawit, atau lontong agar lebih nikmat.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Tambahan</h2>
+            <p>Untuk hasil yang lebih maksimal, pastikan adonan tidak terlalu encer. Adonan yang pas akan membantu bakwan tetap menempel pada udang dan menghasilkan kerenyahan yang sempurna. Penggunaan tepung beras sangat direkomendasikan karena dapat menambah tekstur renyah yang tahan lama. Jika suka, Anda bisa menambahkan sedikit irisan cabai rawit ke dalam adonan untuk sensasi pedas yang menggugah selera.</p>
+        </div>
+
+        <a href="#top" class="cta-button">Kembali ke Atas</a>
+
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-buat-bakwan">Resep Buat Bakwan</a></li>
+<li><a href="/isian-keju-untuk-bakpia">Isian Keju Untuk Bakpia</a></li>
+<li><a href="/bakwan-tauge-kol">Bakwan Tauge Kol</a></li>
+<li><a href="/membuat-gimbal-jagung">Membuat Gimbal Jagung</a></li>
+<li><a href="/bakpia-enak-dijogja">Bakpia Enak Dijogja</a></li>
+<li><a href="/ucapan-balasan-assalamualaikum">Ucapan Balasan Assalamualaikum</a></li>
+<li><a href="/bakteri-e-coli">Bakteri E Coli</a></li>
+<li><a href="/basil-bakteri">Basil Bakteri</a></li>
+<li><a href="/bakso-jumbo-mercon">Bakso Jumbo Mercon</a></li>
+<li><a href="/pengertian-kuman">Pengertian Kuman</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

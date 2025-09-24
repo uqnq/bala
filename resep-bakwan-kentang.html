@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Kentang Renyah & Gurih</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .header {
+            background-color: #00bcd4; /* Warna aksen cerah */
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #00796b; /* Warna judul bagian yang lebih dalam */
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        .content p, .content ul, .content ol {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .content ul li, .content ol li {
+            margin-bottom: 10px;
+        }
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .recipe-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients, .instructions {
+            margin-bottom: 25px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .note {
+            background-color: #fff9c4; /* Warna latar catatan */
+            padding: 15px;
+            border-left: 5px solid #fbc02d; /* Border aksen catatan */
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            .content h2 {
+                font-size: 22px;
+            }
+            .content p, .content ul, .content ol {
+                font-size: 15px;
+            }
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Resep Bakwan Kentang Renyah dan Gurih</h1>
+        </div>
+        <div class="content">
+            <div class="recipe-image">
+                <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00bcd4;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#4dd0e1;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="600" height="300" rx="12" fill="url(#grad1)" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="30" font-weight="bold">Lezatnya Bakwan Kentang</text>
+                    <circle cx="100" cy="150" r="40" fill="#ffffff" />
+                    <path d="M 100 130 Q 120 110 140 130 T 100 170 Z" fill="#ffffff" stroke="#00bcd4" stroke-width="3"/>
+                    <circle cx="200" cy="150" r="40" fill="#ffffff" />
+                    <path d="M 200 130 Q 220 110 240 130 T 200 170 Z" fill="#ffffff" stroke="#00bcd4" stroke-width="3"/>
+                    <circle cx="300" cy="150" r="40" fill="#ffffff" />
+                    <path d="M 300 130 Q 320 110 340 130 T 300 170 Z" fill="#ffffff" stroke="#00bcd4" stroke-width="3"/>
+                    <circle cx="400" cy="150" r="40" fill="#ffffff" />
+                    <path d="M 400 130 Q 420 110 440 130 T 400 170 Z" fill="#ffffff" stroke="#00bcd4" stroke-width="3"/>
+                    <circle cx="500" cy="150" r="40" fill="#ffffff" />
+                    <path d="M 500 130 Q 520 110 540 130 T 500 170 Z" fill="#ffffff" stroke="#00bcd4" stroke-width="3"/>
+                    <path d="M 300 250 Q 350 280 400 250 T 300 220 Z" fill="#fbc02d" />
+                    <path d="M 250 250 Q 300 280 350 250 T 250 220 Z" fill="#fbc02d" />
+                    <path d="M 350 250 Q 400 280 450 250 T 350 220 Z" fill="#fbc02d" />
+                </svg>
+                <p><small>Ilustrasi bakwan kentang yang menggugah selera.</small></p>
+            </div>
+
+            <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan kentang adalah salah satu jajanan tradisional Indonesia yang selalu menjadi favorit banyak orang. Kelezatannya yang khas, teksturnya yang renyah di luar dan lembut di dalam, membuatnya cocok dinikmati kapan saja, baik sebagai teman minum teh maupun sebagai lauk pendamping nasi. Membuat bakwan kentang di rumah ternyata tidaklah sulit, lho!</p>
+
+            <p>Dengan bahan-bahan yang mudah didapat dan langkah-langkah yang sederhana, Anda bisa menyajikan bakwan kentang homemade yang tak kalah lezat dari yang dijual di luaran. Resep ini akan memandu Anda langkah demi langkah untuk menciptakan bakwan kentang yang sempurna.</p>
+
+            <div class="ingredients">
+                <h2>Bahan-Bahan:</h2>
+                <ul>
+                    <li><span class="bold">2 buah kentang ukuran sedang</span> (sekitar 300 gram), kupas dan parut kasar</li>
+                    <li><span class="bold">50 gram tepung terigu serbaguna</span></li>
+                    <li><span class="bold">2 sendok makan tepung beras</span> (untuk menambah kerenyahan)</li>
+                    <li><span class="bold">1 batang daun bawang</span>, iris halus</li>
+                    <li><span class="bold">1/2 batang wortel</span> (opsional), parut halus</li>
+                    <li><span class="bold">2 siung bawang putih</span>, haluskan</li>
+                    <li><span class="bold">1/2 sendok teh garam</span> (sesuaikan selera)</li>
+                    <li><span class="bold">1/4 sendok teh merica bubuk</span></li>
+                    <li><span class="bold">1/4 sendok teh kaldu bubuk</span> (opsional, jika suka)</li>
+                    <li><span class="bold">Air secukupnya</span> (sekitar 50-75 ml, jangan terlalu banyak agar tidak lembek)</li>
+                    <li><span class="bold">Minyak goreng secukupnya</span> untuk menggoreng</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2>Cara Membuat:</h2>
+                <ol>
+                    <li><span class="bold">Persiapan Kentang:</span> Setelah kentang diparut kasar, peras sedikit airnya agar adonan tidak terlalu basah. Anda bisa menekan parutan kentang dengan tangan bersih atau menggunakan saringan. Sisihkan.</li>
+                    <li><span class="bold">Membuat Adonan:</span> Dalam sebuah wadah, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+                    <li><span class="bold">Menambahkan Bumbu:</span> Masukkan bawang putih halus, garam, merica bubuk, dan kaldu bubuk (jika menggunakan) ke dalam campuran tepung. Aduk kembali.</li>
+                    <li><span class="bold">Menggabungkan Bahan:</span> Masukkan parutan kentang, irisan daun bawang, dan wortel parut (jika menggunakan) ke dalam wadah berisi campuran tepung dan bumbu. Aduk rata.</li>
+                    <li><span class="bold">Menambahkan Air:</span> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang kental namun masih bisa dibentuk. Adonan tidak boleh terlalu encer agar bakwan tidak menyebar saat digoreng dan tetap renyah.</li>
+                    <li><span class="bold">Memanaskan Minyak:</span> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam saat digoreng.</li>
+                    <li><span class="bold">Menggoreng Bakwan:</span> Ambil satu sendok sayur adonan bakwan, lalu masukkan perlahan ke dalam minyak panas. Bentuk sesuai selera, bisa bulat pipih atau memanjang. Goreng bakwan hingga berwarna kuning keemasan dan matang sempurna.</li>
+                    <li><span class="bold">Tiriskan:</span> Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan tisu dapur atau saringan kawat. Ulangi proses ini hingga semua adonan habis.</li>
+                    <li><span class="bold">Sajikan:</span> Bakwan kentang siap disajikan selagi hangat. Nikmati dengan sambal kecap, cabai rawit, atau saus favorit Anda.</li>
+                </ol>
+            </div>
+
+            <div class="note">
+                <p><span class="bold">Tips Tambahan:</span> Agar bakwan kentang semakin renyah, pastikan minyak benar-benar panas saat menggoreng dan jangan terlalu banyak memasukkan adonan ke dalam wajan sekaligus agar suhu minyak tidak turun drastis. Penggunaan tepung beras juga sangat membantu menciptakan tekstur yang renyah.</p>
+            </div>
+
+            <p>Dengan resep sederhana ini, Anda bisa menikmati bakwan kentang yang lezat dan memuaskan di rumah. Selamat mencoba dan semoga berhasil!</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/tutorial-bikin-bakwan-jagung">Tutorial Bikin Bakwan Jagung</a></li>
+<li><a href="/bakpao-keju">Bakpao Keju</a></li>
+<li><a href="/pao-pao-bakpao-empuk">Pao Pao Bakpao Empuk</a></li>
+<li><a href="/bakpao-bakar">Bakpao Bakar</a></li>
+<li><a href="/resep-bakwan-paling-enak">Resep Bakwan Paling Enak</a></li>
+<li><a href="/goreng-bakwan">Goreng Bakwan</a></li>
+<li><a href="/bakpia-yang-paling-enak">Bakpia Yang Paling Enak</a></li>
+<li><a href="/bakpao-pandan-coklat-lumer">Bakpao Pandan Coklat Lumer</a></li>
+<li><a href="/resep-jagung-crispy">Resep Jagung Crispy</a></li>
+<li><a href="/bakpia-pathok-kencana">Bakpia Pathok Kencana</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

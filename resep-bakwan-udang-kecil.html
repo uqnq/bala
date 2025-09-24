@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Udang Kecil Enak & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue - warna cerah sejuk */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #5f9ea0; /* CadetBlue - variasi sejuk */
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        .recipe-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e0ffff; /* LightCyan - latar belakang detail sejuk */
+            border-radius: 8px;
+        }
+        .recipe-details p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #008080; /* Teal - warna teks detail sejuk */
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .ingredients strong, .instructions strong {
+            color: #008080;
+        }
+        .tips {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #b0e0e6; /* PowderBlue - latar belakang tips sejuk */
+            border-radius: 8px;
+        }
+        .tips h3 {
+            color: #4682b4;
+            margin-top: 0;
+        }
+        .tips p {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-details {
+                flex-direction: column;
+                align-items: center;
+            }
+            .recipe-details p {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- Gambar SVG untuk Header -->
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 10px auto; fill: #4682b4;">
+                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm0-10a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-4c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2z"/>
+                <path d="M18.364 5.636l-1.414 1.414a7.973 7.973 0 0 0-10.544 1.037l-1.414-1.414A9.996 9.996 0 0 1 12 4c-.313 0-.624.027-.934.081l1.414 1.414A7.974 7.974 0 0 0 18.364 5.636z"/>
+                <path d="M5.636 5.636a7.973 7.973 0 0 1 10.544 1.037l1.414-1.414A9.996 9.996 0 0 0 12 4a9.996 9.996 0 0 0-3.421.581l1.414 1.414z"/>
+                <path d="M12 14.5a2.5 2.5 0 0 1 2.5 2.5H12v-2.5zm0-5a2.5 2.5 0 0 1 2.5 2.5H12V9zm0 7.5a2.5 2.5 0 0 1-2.5-2.5H12v5zm0 0a2.5 2.5 0 0 1-2.5-2.5H12v5z"/>
+            </svg>
+            <h1>Resep Bakwan Udang Kecil Nikmat</h1>
+            <p style="text-align: center; font-size: 1.1em; color: #008080;">Camilan renyah dan gurih yang disukai semua kalangan, cocok untuk teman santai atau hidangan pelengkap.</p>
+        </header>
+
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400' fill='none'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%23ADD8E6'/%3E%3Cstop offset='100%25' stop-color='%2387CEEB'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23g1)'/%3E%3Cpath d='M150 100 L250 200 L150 300 L50 200 Z' fill='%23ffffff' stroke='%23008080' stroke-width='5'/%3E%3Ccircle cx='200' cy='200' r='30' fill='%23FFA07A'/%3E%3Ccircle cx='100' cy='200' r='20' fill='%23FFA07A'/%3E%3Ccircle cx='300' cy='200' r='20' fill='%23FFA07A'/%3E%3Ccircle cx='175' cy='150' r='15' fill='%23FFA07A'/%3E%3Ccircle cx='225' cy='150' r='15' fill='%23FFA07A'/%3E%3Ccircle cx='175' cy='250' r='15' fill='%23FFA07A'/%3E%3Ccircle cx='225' cy='250' r='15' fill='%23FFA07A'/%3E%3Ctext x='350' y='150' font-family='Arial' font-size='20' fill='%23008080' text-anchor='middle'%3EBakwan%3C/text%3E%3Ctext x='350' y='180' font-family='Arial' font-size='20' fill='%23008080' text-anchor='middle'%3EUdang%3C/text%3E%3Ctext x='350' y='210' font-family='Arial' font-size='20' fill='%23008080' text-anchor='middle'%3EKecil%3C/text%3E%3C/svg%3E" alt="Ilustrasi Bakwan Udang Kecil yang Renyah">
+
+        <div class="recipe-details">
+            <p>Persiapan: 15 menit</p>
+            <p>Masak: 20 menit</p>
+            <p>Porsi: 4-6 orang</p>
+        </div>
+
+        <h2>Bahan-bahan:</h2>
+        <div class="ingredients">
+            <ul>
+                <li><strong>Udang kecil:</strong> 250 gram, kupas, sisakan ekornya jika suka</li>
+                <li><strong>Tepung terigu serbaguna:</strong> 150 gram</li>
+                <li><strong>Tepung beras:</strong> 50 gram (untuk kerenyahan ekstra)</li>
+                <li><strong>Daun bawang:</strong> 2 batang, iris tipis</li>
+                <li><strong>Wortel:</strong> 1 buah ukuran sedang, parut kasar atau iris korek api halus</li>
+                <li><strong>Tauge:</strong> 1 genggam (opsional, jika suka)</li>
+                <li><strong>Bumbu halus:</strong></li>
+                <ul>
+                    <li>Bawang putih: 3 siung</li>
+                    <li>Bawang merah: 2 siung</li>
+                    <li>Ketumbar bubuk: 1 sendok teh</li>
+                    <li>Lada bubuk: 1/2 sendok teh</li>
+                    <li>Garam: 1 sendok teh (sesuai selera)</li>
+                    <li>Kaldu bubuk (opsional): 1/2 sendok teh</li>
+                </ul>
+                <li><strong>Telur:</strong> 1 butir, kocok lepas</li>
+                <li><strong>Air es:</strong> sekitar 150-200 ml (atau secukupnya hingga adonan pas)</li>
+                <li><strong>Minyak goreng:</strong> secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat:</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Siapkan Adonan Tepung:</strong> Dalam wadah besar, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+                <li><strong>Masukkan Bumbu dan Sayuran:</strong> Tambahkan bumbu halus ke dalam campuran tepung. Masukkan irisan daun bawang, parutan wortel, dan tauge (jika menggunakan). Aduk hingga semua bahan tercampur rata.</li>
+                <li><strong>Tambahkan Telur dan Air Es:</strong> Tuangkan telur yang sudah dikocok lepas. Perlahan tambahkan air es sambil terus diaduk hingga adonan mengental namun tidak terlalu encer. Konsistensi adonan harus bisa menempel pada udang.</li>
+                <li><strong>Campurkan Udang:</strong> Masukkan udang kecil ke dalam adonan. Pastikan seluruh udang terbalut adonan dengan baik.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li><strong>Goreng Bakwan:</strong> Ambil adonan menggunakan sendok atau tangan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga bakwan berwarna cokelat keemasan dan matang sempurna di kedua sisinya. Jangan terlalu banyak memasukkan bakwan dalam satu penggorengan agar tidak saling menempel dan matang merata.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan saringan atau tisu dapur penyerap minyak.</li>
+                <li><strong>Sajikan:</strong> Sajikan bakwan udang kecil selagi hangat dengan cabai rawit, sambal, atau saus kesukaan Anda.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h3>Tips Agar Bakwan Makin Lezat:</h3>
+            <p><strong>1. Gunakan Air Es:</strong> Air es membantu adonan menjadi lebih renyah saat digoreng.</p>
+            <p><strong>2. Jangan Terlalu Banyak Bumbu:</strong> Pastikan bumbu halus tidak terlalu banyak agar rasa asli udang tetap terasa.</p>
+            <p><strong>3. Goreng Hingga Matang Sempurna:</strong> Pastikan bagian tengah bakwan matang agar tidak lembek.</p>
+            <p><strong>4. Perhatikan Suhu Minyak:</strong> Gunakan api sedang cenderung kecil saat menggoreng agar bakwan matang merata hingga ke dalam tanpa cepat gosong di luar.</p>
+            <p><strong>5. Tambahkan Bahan Lain:</strong> Anda bisa menambahkan irisan kol atau buncis untuk variasi isian.</p>
+        </div>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi.</p>
+        </footer>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakteri-anaerob-adalah">Bakteri Anaerob Adalah</a></li>
+<li><a href="/cara-membuat-bakwan-telo">Cara Membuat Bakwan Telo</a></li>
+<li><a href="/harga-nasi-bogana">Harga Nasi Bogana</a></li>
+<li><a href="/bakso-beranak-yang-enak">Bakso Beranak Yang Enak</a></li>
+<li><a href="/buat-perkedel-jagung-yang-enak">Buat Perkedel Jagung Yang Enak</a></li>
+<li><a href="/cara-buat-ote2-sederhana">Cara Buat Ote2 Sederhana</a></li>
+<li><a href="/bumbu-dadar-jagung-enak-gurih">Bumbu Dadar Jagung Enak Gurih</a></li>
+<li><a href="/bakpia-balong-solo-harga">Bakpia Balong Solo Harga</a></li>
+<li><a href="/bakso-beranak-mercon-jumbo">Bakso Beranak Mercon Jumbo</a></li>
+<li><a href="/goreng-bakwan-agar-renyah">Goreng Bakwan Agar Renyah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

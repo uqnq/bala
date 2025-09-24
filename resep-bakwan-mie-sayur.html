@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Mie Sayur Lezat & Sehat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #333;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna cerah menawan */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hero-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content p, .content ul, .content ol {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .content ul, .content ol {
+            padding-left: 20px;
+        }
+        .recipe-section {
+            background-color: #f0f8ff; /* Warna sedikit berbeda untuk bagian resep */
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .recipe-section h2 {
+            color: #00695c;
+            margin-top: 0;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+        }
+        .ingredients strong, .steps strong {
+            color: #00796b;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero-image">
+            <!-- SVG Gambar Bakwan Mie Sayur -->
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffe082;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#fff9c4;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                        <feOffset dx="2" dy="2" result="shadowOffset"/>
+                        <feMerge>
+                            <feMergeNode in="shadowOffset"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grad1)" rx="15" ry="15"/>
+                <!-- Bakwan Base -->
+                <path d="M 50 100 Q 70 80 100 90 T 150 100 Q 170 80 200 90 T 250 100 Q 270 80 300 90 T 350 100 L 350 200 Q 300 220 250 200 T 150 200 Q 100 220 50 200 Z" fill="#f5f5f5" filter="url(#shadow)"/>
+                <!-- Mie -->
+                <g fill="#ffcc80" stroke="#e69d00" stroke-width="1">
+                    <path d="M 70 110 Q 80 100 90 110 T 110 110" />
+                    <path d="M 100 120 Q 110 110 120 120 T 140 120" />
+                    <path d="M 130 130 Q 140 120 150 130 T 170 130" />
+                    <path d="M 160 115 Q 170 105 180 115 T 200 115" />
+                    <path d="M 190 125 Q 200 115 210 125 T 230 125" />
+                    <path d="M 220 135 Q 230 125 240 135 T 260 135" />
+                    <path d="M 250 110 Q 260 100 270 110 T 290 110" />
+                    <path d="M 280 120 Q 290 110 300 120 T 320 120" />
+                    <path d="M 310 130 Q 320 120 330 130 T 350 130" />
+                </g>
+                <!-- Sayuran -->
+                <g fill="#66bb6a">
+                    <ellipse cx="80" cy="95" rx="10" ry="5"/>
+                    <ellipse cx="120" cy="85" rx="12" ry="6"/>
+                    <ellipse cx="160" cy="90" rx="8" ry="4"/>
+                    <ellipse cx="200" cy="95" rx="10" ry="5"/>
+                    <ellipse cx="240" cy="85" rx="12" ry="6"/>
+                    <ellipse cx="280" cy="90" rx="8" ry="4"/>
+                    <ellipse cx="320" cy="95" rx="10" ry="5"/>
+                </g>
+                 <g fill="#ef5350">
+                    <circle cx="90" cy="105" r="5"/>
+                    <circle cx="130" cy="115" r="6"/>
+                    <circle cx="170" cy="100" r="4"/>
+                    <circle cx="210" cy="105" r="5"/>
+                    <circle cx="250" cy="115" r="6"/>
+                    <circle cx="290" cy="100" r="4"/>
+                    <circle cx="330" cy="105" r="5"/>
+                </g>
+                <text x="50%" y="30" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" font-weight="bold" filter="url(#shadow)">Bakwan Mie Sayur</text>
+            </svg>
+            <p style="font-style: italic; color: #00796b;">Kelezatan Garing di Setiap Gigitan</p>
+        </div>
+
+        <h1>Resep Bakwan Mie Sayur Lezat & Sehat</h1>
+
+        <div class="content">
+            <p>Siapa yang tidak suka bakwan? Camilan renyah ini selalu menjadi favorit banyak orang, baik saat santai maupun menemani nasi. Kali ini, kita akan berkreasi dengan resep bakwan yang lebih kaya nutrisi dengan tambahan mie dan aneka sayuran segar. Bakwan mie sayur ini menawarkan tekstur yang luar biasa garing di luar dan lembut di dalam, diperkaya dengan serat dari sayuran serta karbohidrat dari mie yang membuatnya lebih mengenyangkan.</p>
+
+            <p>Membuat bakwan mie sayur sendiri di rumah ternyata tidak sulit, lho. Dengan bahan-bahan yang mudah didapat dan langkah-langkah yang sederhana, Anda bisa menyajikan camilan lezat ini kapan saja. Variasi sayuran yang digunakan bisa disesuaikan dengan selera Anda. Wortel, kol, tauge, dan daun bawang adalah pilihan klasik yang selalu cocok, namun Anda juga bisa menambahkan buncis iris tipis, brokoli cincang, atau bahkan sawi hijau.</p>
+
+            <p>Keistimewaan dari bakwan mie sayur ini bukan hanya pada rasanya, tetapi juga pada kandungan gizinya yang lebih seimbang. Mie memberikan sumber energi, sementara aneka sayuran menyumbangkan vitamin, mineral, dan serat yang penting untuk kesehatan pencernaan. Protein nabati dari tepung juga turut melengkapi nutrisi dalam hidangan ini. Bakwan ini cocok dinikmati hangat-hangat bersama keluarga, ditemani secangkir teh atau kopi.</p>
+
+            <p>Proses pembuatan bakwan mie sayur ini sebenarnya sangat mirip dengan membuat bakwan pada umumnya. Kunci dari bakwan yang lezat adalah adonan yang pas dan teknik menggoreng yang benar. Pastikan adonan tidak terlalu encer agar bakwan bisa menempel dan tidak mudah pecah saat digoreng. Minyak yang panas namun tidak berlebihan juga menjadi kunci agar bakwan matang merata dan tetap renyah tanpa menyerap terlalu banyak minyak.</p>
+
+            <div class="recipe-section">
+                <h2>Bahan-bahan Utama:</h2>
+                <ul class="ingredients">
+                    <li>150 gram tepung terigu serbaguna</li>
+                    <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                    <li>1 bungkus mie instan (pilih rasa favorit, buang bumbunya, atau gunakan mie telur kering yang direbus sebentar)</li>
+                    <li>1 buah wortel ukuran sedang, serut kasar atau iris korek api tipis</li>
+                    <li>100 gram kol, iris tipis</li>
+                    <li>50 gram tauge, siangi</li>
+                    <li>2 batang daun bawang, iris halus</li>
+                    <li>1 batang seledri, iris halus (opsional)</li>
+                    <li>150 ml air dingin (sesuaikan kekentalan adonan)</li>
+                    <li>Garam, merica, dan penyedap rasa secukupnya</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h2>Bumbu Halus:</h2>
+                <ul class="ingredients">
+                    <li>3 siung bawang putih</li>
+                    <li>2 butir kemiri, sangrai</li>
+                    <li>1/2 sendok teh ketumbar bubuk</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h2>Cara Membuat Bakwan Mie Sayur:</h2>
+                <ol class="steps">
+                    <li>Jika menggunakan mie instan, rebus mie sebentar hingga setengah matang, tiriskan, dan potong-potong agar lebih mudah dicampur. Jika menggunakan mie telur, rebus hingga matang, tiriskan, dan potong-potong.</li>
+                    <li>Dalam wadah besar, campurkan tepung terigu, tepung beras, garam, merica, dan penyedap rasa. Aduk rata.</li>
+                    <li>Masukkan bumbu halus ke dalam campuran tepung, aduk rata.</li>
+                    <li>Masukkan irisan wortel, kol, tauge, daun bawang, dan seledri ke dalam wadah berisi tepung. Aduk rata hingga semua sayuran terbalut tepung.</li>
+                    <li>Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan memiliki kekentalan yang pas. Adonan tidak boleh terlalu encer, namun juga tidak terlalu kental.</li>
+                    <li>Masukkan mie yang sudah dipotong-potong ke dalam adonan. Aduk perlahan hingga mie tercampur rata dengan adonan sayuran.</li>
+                    <li>Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</li>
+                    <li>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga semua sisi bakwan berwarna kuning keemasan dan matang merata. Anda bisa menggoreng beberapa buah sekaligus, namun jangan terlalu banyak agar bakwan tidak saling menempel dan matang sempurna.</li>
+                    <li>Angkat bakwan yang sudah matang dan tiriskan di atas kertas tisu agar kelebihan minyak terserap.</li>
+                    <li>Sajikan bakwan mie sayur selagi hangat dengan cabai rawit atau saus sambal favorit Anda.</li>
+                </ol>
+            </div>
+
+            <p>Bakwan mie sayur ini adalah pilihan camilan yang cerdas, menggabungkan kenikmatan rasa, kerenyahan tekstur, dan kebaikan nutrisi dari sayuran. Selamat mencoba resep ini dan nikmati kelezatannya bersama orang terkasih!</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/perkedel-jagung-pakai-telur">Perkedel Jagung Pakai Telur</a></li>
+<li><a href="/bakpia-putri-jawa">Bakpia Putri Jawa</a></li>
+<li><a href="/cara-buat-dadar-jagung">Cara Buat Dadar Jagung</a></li>
+<li><a href="/bakpia-ahmad">Bakpia Ahmad</a></li>
+<li><a href="/bakwan-mpasi">Bakwan Mpasi</a></li>
+<li><a href="/bakso-lava-mercon-terdekat">Bakso Lava Mercon Terdekat</a></li>
+<li><a href="/balasan-thayyib">Balasan Thayyib</a></li>
+<li><a href="/pentol-goreng-mercon">Pentol Goreng Mercon</a></li>
+<li><a href="/bakwan-daun-kelor">Bakwan Daun Kelor</a></li>
+<li><a href="/perkedel-jagung-dengan-tepung-bumbu-sajiku">Perkedel Jagung Dengan Tepung Bumbu Sajiku</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

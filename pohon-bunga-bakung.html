@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pohon Bunga Bakung: Keindahan Abadi di Taman</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --warna-latar: #f0f8ff; /* AliceBlue */
+            --warna-teks-utama: #333;
+            --warna-aksen-cerah: #87ceeb; /* SkyBlue */
+            --warna-aksen-lembut: #add8e6; /* LightBlue */
+            --warna-bingkai-gambar: #b0e0e6; /* PowderBlue */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--warna-latar);
+            color: var(--warna-teks-utama);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--warna-aksen-cerah);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--warna-aksen-lembut);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .gambar-utama {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            border-radius: 8px;
+            border: 5px solid var(--warna-bingkai-gambar);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .caption-gambar {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+
+        .svg-konten {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .svg-konten svg {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+            background-color: var(--warna-aksen-lembut);
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .gambar-utama {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pohon Bunga Bakung: Keindahan Abadi di Taman Anda</h1>
+
+        <div class="svg-konten">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad-leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#90ee90; stop-opacity:1" /> <!-- LightGreen -->
+                        <stop offset="100%" style="stop-color:#32cd32; stop-opacity:1" /> <!-- LimeGreen -->
+                    </linearGradient>
+                    <linearGradient id="grad-petal" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffffff; stop-opacity:1" /> <!-- White -->
+                        <stop offset="100%" style="stop-color:#f5f5dc; stop-opacity:1" /> <!-- Beige -->
+                    </linearGradient>
+                    <linearGradient id="grad-stamen" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#ffd700; stop-opacity:1" /> <!-- Gold -->
+                        <stop offset="50%" style="stop-color:#ffec8b; stop-opacity:1" /> <!-- LightGoldenrodYellow -->
+                        <stop offset="100%" style="stop-color:#ffd700; stop-opacity:1" /> <!-- Gold -->
+                    </linearGradient>
+                </defs>
+
+                <!-- Batang Pohon -->
+                <rect x="45" y="60" width="10" height="40" fill="#8b4513" /> <!-- SaddleBrown -->
+
+                <!-- Daun -->
+                <path d="M 30 55 q -15 -20 -5 -40 h 10 q 10 20 5 40 z" fill="url(#grad-leaf)" transform="rotate(-20 40 30)"/>
+                <path d="M 50 55 q -15 -20 -5 -40 h 10 q 10 20 5 40 z" fill="url(#grad-leaf)" transform="rotate(20 60 30)"/>
+                <path d="M 70 55 q -15 -20 -5 -40 h 10 q 10 20 5 40 z" fill="url(#grad-leaf)" transform="rotate(-10 70 30)"/>
+
+                <!-- Bunga (Bakung Style) -->
+                <g transform="translate(50, 30) scale(0.8)">
+                    <!-- Kelopak 1 -->
+                    <path d="M 0 -20 q 10 -10 20 0 q 10 10 0 20 q -10 10 -20 0 q -10 -10 0 -20 z" fill="url(#grad-petal)" stroke="#eee" stroke-width="1" transform="rotate(0)" />
+                    <!-- Kelopak 2 -->
+                    <path d="M 0 -20 q 10 -10 20 0 q 10 10 0 20 q -10 10 -20 0 q -10 -10 0 -20 z" fill="url(#grad-petal)" stroke="#eee" stroke-width="1" transform="rotate(72)" />
+                    <!-- Kelopak 3 -->
+                    <path d="M 0 -20 q 10 -10 20 0 q 10 10 0 20 q -10 10 -20 0 q -10 -10 0 -20 z" fill="url(#grad-petal)" stroke="#eee" stroke-width="1" transform="rotate(144)" />
+                    <!-- Kelopak 4 -->
+                    <path d="M 0 -20 q 10 -10 20 0 q 10 10 0 20 q -10 10 -20 0 q -10 -10 0 -20 z" fill="url(#grad-petal)" stroke="#eee" stroke-width="1" transform="rotate(216)" />
+                    <!-- Kelopak 5 -->
+                    <path d="M 0 -20 q 10 -10 20 0 q 10 10 0 20 q -10 10 -20 0 q -10 -10 0 -20 z" fill="url(#grad-petal)" stroke="#eee" stroke-width="1" transform="rotate(288)" />
+
+                    <!-- Benang Sari -->
+                    <g transform="translate(0, -5) scale(0.7)">
+                        <circle cx="0" cy="0" r="5" fill="url(#grad-stamen)" />
+                        <circle cx="8" cy="0" r="3" fill="#ffa500" /> <!-- Orange -->
+                        <circle cx="-8" cy="0" r="3" fill="#ffa500" />
+                        <circle cx="0" cy="8" r="3" fill="#ffa500" />
+                        <circle cx="0" cy="-8" r="3" fill="#ffa500" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <p>
+            Kehadiran pohon bunga bakung, atau yang lebih dikenal dengan nama ilmiah *Lilium*, selalu berhasil memancarkan aura keanggunan dan ketenangan di setiap taman. Berbeda dengan tanaman bunga bakung yang tumbuh di air, pohon bunga bakung merujuk pada varietas bakung yang memiliki batang tegak dan tumbuh di darat, seringkali menjadi pusat perhatian dengan bunga-bunganya yang megah dan beraroma semerbak. Keindahan mereka bukan sekadar warna-warni kelopak yang memukau, melainkan juga bentuknya yang unik dan strukturnya yang kokoh, menjadikan mereka pilihan favorit bagi para pencinta keindahan alam.
+        </p>
+
+        <h2>Sejarah dan Simbolisme yang Kaya</h2>
+        <p>
+            Bunga bakung memiliki sejarah panjang yang terbentang lintas peradaban. Sejak zaman kuno, bunga ini telah digunakan dalam berbagai ritual, simbolisme, dan seni. Di berbagai budaya, bunga bakung sering diasosiasikan dengan kemurnian, kecantikan, kesucian, dan kebangkitan. Keberadaannya dalam lukisan, ukiran, dan teks-teks kuno menunjukkan betapa istimewanya posisi bunga bakung di mata manusia sepanjang masa. Setiap warna bunga bakung pun memiliki makna tersendiri; misalnya, bakung putih melambangkan kemurnian, sementara bakung oranye dapat melambangkan semangat dan keinginan.
+        </p>
+
+        <h2>Merawat Keindahan Bunga Bakung</h2>
+        <p>
+            Menanam dan merawat pohon bunga bakung bukanlah tugas yang rumit, asalkan Anda memahami kebutuhan dasarnya. Bunga bakung umumnya menyukai tanah yang gembur, kaya akan bahan organik, dan memiliki drainase yang baik. Lokasi yang terkena sinar matahari penuh atau sebagian adalah ideal untuk pertumbuhan optimal. Penyiraman yang konsisten sangat penting, terutama selama periode pertumbuhan aktif dan pembungaan, namun hindari genangan air yang dapat menyebabkan busuk akar. Pemberian pupuk khusus untuk bunga bakung dapat membantu menunjang kesehatan tanaman dan kemegahan bunganya. Perlu diingat juga bahwa sebagian besar jenis bunga bakung tumbuh dari umbi, sehingga penanaman umbi pada kedalaman yang tepat menjadi kunci awal keberhasilan.
+        </p>
+
+        <h2>Keanekaragaman Varietas</h2>
+        <p>
+            Dunia bunga bakung sangatlah luas, menawarkan beragam jenis dengan karakteristik uniknya masing-masing. Mulai dari bakung oriental yang memiliki aroma paling kuat dan kelopak besar berwarna putih atau pink, hingga bakung asiatic yang lebih mudah beradaptasi dan menawarkan warna-warna cerah seperti kuning, oranye, dan merah. Ada pula bakung trumpet yang memiliki bentuk bunga menyerupai terompet panjang, serta bakung martagon dengan kelopak yang tertekuk ke belakang. Keanekaragaman ini memungkinkan setiap orang untuk menemukan pohon bunga bakung yang sesuai dengan selera dan kondisi taman mereka, menambah dimensi visual yang luar biasa pada lanskap.
+        </p>
+
+        <p>
+            Dengan perawatan yang tepat, pohon bunga bakung dapat tumbuh subur dan memberikan pertunjukan bunga yang spektakuler setiap tahunnya. Keindahan abadi, aroma yang memikat, dan simbolisme yang mendalam menjadikan pohon bunga bakung sebagai investasi berharga bagi siapa saja yang ingin mempercantik huniannya dengan sentuhan alam yang elegan dan penuh makna.
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi. Jelajahi keindahan alam.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-gorengan-bala-bala-renyah">Cara Membuat Gorengan Bala Bala Renyah</a></li>
+<li><a href="/bumbu-halus-bakwan">Bumbu Halus Bakwan</a></li>
+<li><a href="/bakpia-arka">Bakpia Arka</a></li>
+<li><a href="/harga-bakpia-pathok-025">Harga Bakpia Pathok 025</a></li>
+<li><a href="/bakwan-jagung-enak-dan-gurih">Bakwan Jagung Enak Dan Gurih</a></li>
+<li><a href="/resep-bumbu-kacang-bakwan-sayur">Resep Bumbu Kacang Bakwan Sayur</a></li>
+<li><a href="/bakpao-pandan-coklat-lumer">Bakpao Pandan Coklat Lumer</a></li>
+<li><a href="/cara-buat-bakwan-udang-renyah">Cara Buat Bakwan Udang Renyah</a></li>
+<li><a href="/bahan2-bakwan-sayur">Bahan2 Bakwan Sayur</a></li>
+<li><a href="/bakpao-jepit">Bakpao Jepit</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

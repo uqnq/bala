@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Heci Udang: Lezat & Mudah Dibuat!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue - warna biru sejuk */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #add8e6; /* LightBlue - garis bawah cerah */
+            padding-bottom: 10px;
+        }
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 500px; /* Batasi lebar gambar agar tidak terlalu besar */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #20b2aa; /* LightSeaGreen - warna hijau laut cerah */
+        }
+        .ingredients {
+            background-color: #e0ffff; /* LightCyan - latar belakang bahan sejuk */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            background-color: #f5fffa; /* MintCream - latar belakang instruksi sejuk */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .call-to-action {
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+            color: #5f9ea0; /* CadetBlue - warna biru kehijauan */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Heci Udang: Kelezatan Sederhana yang Menggugah Selera</h1>
+
+        <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi heci udang yang lezat">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" /> <!-- SkyBlue -->
+                    <stop offset="100%" style="stop-color:#b0e0e6;stop-opacity:1" /> <!-- PowderBlue -->
+                </linearGradient>
+            </defs>
+            <rect width="600" height="400" rx="15" fill="url(#grad1)" />
+
+            <!-- Udang -->
+            <g transform="translate(100, 150)">
+                <path d="M0,0 C30,-20 70,-20 100,0 C120,30 120,70 100,100 C70,120 30,120 0,100 C-20,70 -20,30 0,0 Z" fill="#ff6347" /> <!-- Tomato -->
+                <circle cx="20" cy="30" r="10" fill="#ffffff" />
+                <circle cx="35" cy="30" r="7" fill="#ffffff" />
+                <path d="M0,0 L20,-15 L40,0" stroke="#ff6347" stroke-width="3" fill="none" /> <!-- Ekor -->
+            </g>
+             <g transform="translate(200, 160)">
+                <path d="M0,0 C30,-20 70,-20 100,0 C120,30 120,70 100,100 C70,120 30,120 0,100 C-20,70 -20,30 0,0 Z" fill="#ff6347" /> <!-- Tomato -->
+                <circle cx="20" cy="30" r="10" fill="#ffffff" />
+                <circle cx="35" cy="30" r="7" fill="#ffffff" />
+                <path d="M0,0 L20,-15 L40,0" stroke="#ff6347" stroke-width="3" fill="none" /> <!-- Ekor -->
+            </g>
+             <g transform="translate(300, 140)">
+                <path d="M0,0 C30,-20 70,-20 100,0 C120,30 120,70 100,100 C70,120 30,120 0,100 C-20,70 -20,30 0,0 Z" fill="#ff6347" /> <!-- Tomato -->
+                <circle cx="20" cy="30" r="10" fill="#ffffff" />
+                <circle cx="35" cy="30" r="7" fill="#ffffff" />
+                <path d="M0,0 L20,-15 L40,0" stroke="#ff6347" stroke-width="3" fill="none" /> <!-- Ekor -->
+            </g>
+             <g transform="translate(400, 170)">
+                <path d="M0,0 C30,-20 70,-20 100,0 C120,30 120,70 100,100 C70,120 30,120 0,100 C-20,70 -20,30 0,0 Z" fill="#ff6347" /> <!-- Tomato -->
+                <circle cx="20" cy="30" r="10" fill="#ffffff" />
+                <circle cx="35" cy="30" r="7" fill="#ffffff" />
+                <path d="M0,0 L20,-15 L40,0" stroke="#ff6347" stroke-width="3" fill="none" /> <!-- Ekor -->
+            </g>
+
+            <!-- Piring -->
+            <ellipse cx="300" cy="350" rx="250" ry="40" fill="#d3d3d3" opacity="0.5" /> <!-- LightGrey -->
+        </svg>
+
+        <p>Heci udang adalah salah satu hidangan laut yang paling dicari karena rasanya yang gurih, teksturnya yang renyah, dan proses pembuatannya yang relatif mudah. Hidangan ini sangat cocok dinikmati sebagai lauk pendamping nasi hangat atau sebagai camilan yang mengenyangkan. Bagi para pencinta kuliner, terutama yang menyukai olahan udang, resep heci udang wajib dicoba di rumah.</p>
+
+        <p>Membuat heci udang di rumah tidak sesulit yang dibayangkan. Dengan bahan-bahan yang mudah didapatkan dan langkah-langkah yang jelas, Anda bisa menyajikan hidangan istimewa ini kapan saja. Kunci dari heci udang yang lezat terletak pada kesegaran udang yang digunakan dan bumbu yang meresap sempurna.</p>
+
+        <h2>Bahan-Bahan</h2>
+        <div class="ingredients">
+            <ul>
+                <li><strong>500 gram</strong> udang segar, kupas kulit dan sisakan ekornya</li>
+                <li><strong>150 gram</strong> tepung terigu</li>
+                <li><strong>50 gram</strong> tepung maizena</li>
+                <li><strong>1 sendok teh</strong> garam</li>
+                <li><strong>1/2 sendok teh</strong> lada bubuk</li>
+                <li><strong>1/4 sendok teh</strong> bubuk ketumbar</li>
+                <li><strong>1 butir</strong> telur, kocok lepas</li>
+                <li><strong>100 ml</strong> air es (atau secukupnya)</li>
+                <li><strong>Minyak goreng</strong> secukupnya untuk menggoreng</li>
+                <li><strong>Bumbu tambahan (opsional):</strong></li>
+                <ul>
+                    <li>1 siung bawang putih, haluskan</li>
+                    <li>1 cm jahe, parut</li>
+                    <li>Sedikit bubuk cabai (jika suka pedas)</li>
+                </ul>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Persiapan Udang:</strong> Cuci bersih udang yang sudah dikupas. Tiriskan dan lumuri sedikit garam serta lada. Sisihkan. Jika menggunakan bumbu tambahan, campurkan bawang putih halus dan jahe parut ke dalam udang, aduk rata.</li>
+                <li><strong>Membuat Adonan Tepung:</strong> Dalam wadah besar, campurkan tepung terigu, tepung maizena, garam, lada bubuk, dan bubuk ketumbar. Aduk rata.</li>
+                <li><strong>Mencampur Adonan Basah:</strong> Tuangkan telur kocok dan air es sedikit demi sedikit ke dalam campuran tepung sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer, tapi juga tidak terlalu kental. Konsistensinya mirip adonan pisang goreng. Jika menggunakan bubuk cabai, masukkan pada tahap ini.</li>
+                <li><strong>Melapisi Udang:</strong> Masukkan udang satu per satu ke dalam adonan tepung. Pastikan setiap udang terlapisi rata oleh adonan. Biarkan sebentar agar adonan menempel sempurna.</li>
+                <li><strong>Menggoreng Heci Udang:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak sudah cukup panas sebelum memasukkan udang.</li>
+                <li><strong>Proses Penggorengan:</strong> Goreng udang yang sudah berbalut adonan secara bertahap agar tidak saling menempel dan suhu minyak tidak turun drastis. Goreng hingga udang berwarna kuning keemasan dan teksturnya renyah.</li>
+                <li><strong>Meniriskan:</strong> Angkat udang yang sudah matang dan tiriskan minyaknya menggunakan saringan atau tisu dapur agar tidak terlalu berminyak.</li>
+                <li><strong>Penyajian:</strong> Sajikan heci udang selagi hangat. Heci udang sangat lezat disantap dengan saus sambal, saus tomat, atau mayones.</li>
+            </ol>
+        </div>
+
+        <p>Heci udang tidak hanya menawarkan rasa yang menggugah selera, tetapi juga nilai gizi yang baik. Udang kaya akan protein, omega-3, dan berbagai vitamin serta mineral penting. Proses penggorengan dengan balutan tepung yang renyah menjadikannya pilihan hidangan yang disukai semua kalangan, dari anak-anak hingga orang dewasa.</p>
+
+        <p>Tips tambahan untuk mendapatkan heci udang yang sempurna adalah menggunakan udang yang segar, tidak terlalu lama mengaduk adonan tepung agar tidak mengembang berlebihan, dan menggorengnya dengan minyak yang cukup panas agar cepat renyah di luar namun tetap juicy di dalam. Jangan menggoreng terlalu banyak udang sekaligus agar suhu minyak tetap stabil.</p>
+
+        <p>Menciptakan momen makan yang menyenangkan bersama keluarga bisa dimulai dari hidangan sederhana namun istimewa seperti heci udang ini. Selamat mencoba resep heci udang yang lezat ini di dapur Anda!</p>
+
+        <p class="call-to-action">Bagikan kelezatan heci udang ini kepada orang terkasih!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bumbu-bakwan-yang-enak">Bumbu Bakwan Yang Enak</a></li>
+<li><a href="/bakpao-ketan-hitam">Bakpao Ketan Hitam</a></li>
+<li><a href="/resep-kuah-ketupat-kandangan">Resep Kuah Ketupat Kandangan</a></li>
+<li><a href="/resep-bakwan-jagung-empuk-tanpa-telur">Resep Bakwan Jagung Empuk Tanpa Telur</a></li>
+<li><a href="/cara-membuat-bakpao-kukus-takaran-sendok">Cara Membuat Bakpao Kukus Takaran Sendok</a></li>
+<li><a href="/bakpia-tugu-kukus-terdekat">Bakpia Tugu Kukus Terdekat</a></li>
+<li><a href="/resep-perkedel-jagung-halus">Resep Perkedel Jagung Halus</a></li>
+<li><a href="/makanan-bakso-mercon">Makanan Bakso Mercon</a></li>
+<li><a href="/ferrero-rocher-baklava">Ferrero Rocher Baklava</a></li>
+<li><a href="/bakpao-minipao">Bakpao Minipao</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Yenny: Gurihnya Jajanan Favorit!</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        :root {
+            --primary-color: #66cc99; /* Warna hijau muda cerah */
+            --secondary-color: #a0d9b2; /* Warna hijau sedikit lebih tua */
+            --text-color: #333333; /* Warna teks gelap */
+            --background-color: #f0fff0; /* Latar belakang putih kehijauan */
+            --accent-color: #ffcc66; /* Warna kuning cerah untuk aksen */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        img.main-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border: 3px solid var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--secondary-color);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .features-list li {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .features-list li:hover {
+            transform: translateY(-3px);
+            background-color: var(--primary-color);
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .call-to-action a {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .call-to-action a:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            .call-to-action a {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nikmati Kelezatan Bakwan Yenny yang Menggugah Selera!</h1>
+
+        <svg class="main-image" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:var(--secondary-color);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="300" fill="url(#grad1)" rx="15"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="40" font-weight="bold">Bakwan Yenny</text>
+            <circle cx="100" cy="100" r="30" fill="var(--accent-color)" />
+            <circle cx="500" cy="200" r="40" fill="white" fill-opacity="0.7" />
+            <path d="M 200 250 Q 250 200 300 250 T 400 250" stroke="white" stroke-width="5" fill="none" />
+        </svg>
+
+        <div class="section">
+            <p>Di tengah hiruk pikuk aktivitas sehari-hari, terkadang kita merindukan camilan sederhana namun penuh cita rasa. Bakwan Yenny hadir sebagai solusi sempurna untuk memanjakan lidah dan mengembalikan semangat Anda. Lebih dari sekadar gorengan biasa, Bakwan Yenny menawarkan pengalaman kuliner yang unik dengan perpaduan bahan-bahan segar dan bumbu rahasia yang membuatnya begitu istimewa.</p>
+
+            <p>Setiap gigitan Bakwan Yenny terasa renyah di luar dan lembut di dalam, dengan aroma gurih yang langsung menyeruak memenuhi indra penciuman. Kerenyahan ekstra pada lapisan luarnya adalah salah satu daya tarik utama, hasil dari adonan yang dibuat dengan takaran pas dan digoreng menggunakan teknik terbaik. Ini bukan sembarang bakwan; ini adalah karya seni kuliner yang dibuat dengan cinta dan perhatian terhadap detail.</p>
+        </div>
+
+        <div class="section">
+            <h2>Kenapa Bakwan Yenny Begitu Istimewa?</h2>
+            <p>Keistimewaan Bakwan Yenny tidak hanya terletak pada teksturnya yang memikat, tetapi juga pada kualitas bahan yang digunakan. Kami hanya memilih sayuran paling segar, seperti wortel, kol, tauge, dan daun bawang, yang dipotong dengan presisi untuk memastikan setiap bakwan memiliki komposisi yang sempurna. Campuran bumbu rempah-rempah pilihan juga memberikan <span class="highlight">kedalaman rasa</span> yang sulit ditandingi, menjadikannya pilihan favorit bagi banyak orang.</p>
+            <p>Tekstur yang <span class="highlight">renyah di luar dan lembut di dalam</span> adalah janji kami. Proses penggorengan yang terkontrol dengan baik memastikan bakwan matang merata tanpa menjadi terlalu berminyak, menghasilkan camilan yang nikmat untuk dinikmati kapan saja. Rasanya yang <span class="highlight">gurih</span> sangat pas untuk menemani waktu santai Anda, sekadar bersantai di rumah, atau sebagai hidangan pendamping saat berkumpul bersama keluarga dan teman.</p>
+        </div>
+
+        <div class="section">
+            <h2>Variasi dan Pilihan Menarik</h2>
+            <p>Bakwan Yenny tidak hanya hadir dalam satu jenis. Kami bangga mempersembahkan berbagai varian yang bisa Anda pilih sesuai selera:</p>
+            <ul class="features-list">
+                <li>Bakwan Sayur Klasik</li>
+                <li>Bakwan Udang Renyah</li>
+                <li>Bakwan Jagung Manis</li>
+                <li>Bakwan Jamur Gurih</li>
+            </ul>
+            <p>Setiap varian menawarkan cita rasa uniknya sendiri, namun tetap mempertahankan standar kualitas dan kelezatan yang menjadi ciri khas Bakwan Yenny. Baik Anda penggemar sayuran, pencinta seafood, atau penikmat rasa manis alami jagung, pasti ada Bakwan Yenny yang cocok untuk Anda.</p>
+        </div>
+
+        <div class="section">
+            <h2>Temukan Bakwan Yenny di Dekat Anda</h2>
+            <p>Mencari camilan lezat kini semakin mudah. Bakwan Yenny telah hadir di berbagai lokasi strategis, siap memanjakan Anda kapan saja Anda menginginkannya. Kunjungi gerai terdekat atau cari kami di aplikasi pesan antar makanan favorit Anda. Jangan lewatkan kesempatan untuk mencicipi kelezatan <span class="highlight">Bakwan Yenny</span> yang akan membuat Anda ketagihan.</p>
+            <p>Ayo, segera rasakan sensasi renyah dan gurihnya Bakwan Yenny yang telah menjadi legenda di hati para penikmat kuliner. Dijamin, pengalaman makan Anda akan menjadi lebih berwarna dan menyenangkan.</p>
+        </div>
+
+        <div class="call-to-action">
+            <a href="#">Pesan Sekarang & Rasakan Kelezatannya!</a>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/hayat-baku">Hayat Baku</a></li>
+<li><a href="/resep-bakwan-daun-kelor">Resep Bakwan Daun Kelor</a></li>
+<li><a href="/pemilik-bakpao-chik-yen">Pemilik Bakpao Chik Yen</a></li>
+<li><a href="/membuat-bakpia">Membuat Bakpia</a></li>
+<li><a href="/cara-membuat-pentol-pedas-mercon">Cara Membuat Pentol Pedas Mercon</a></li>
+<li><a href="/bakpia-modern">Bakpia Modern</a></li>
+<li><a href="/oleh-oleh-bakpia-kukus">Oleh Oleh Bakpia Kukus</a></li>
+<li><a href="/cara-membuat-bakwan-kawi-kering">Cara Membuat Bakwan Kawi Kering</a></li>
+<li><a href="/cara-membuat-dadar-jagung-crispy">Cara Membuat Dadar Jagung Crispy</a></li>
+<li><a href="/klub-bale-sekarang">Klub Bale Sekarang</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

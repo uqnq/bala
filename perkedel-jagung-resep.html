@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Perkedel Jagung Manis dan Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* Alice Blue */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #4682b4; /* Steel Blue */
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #5f9ea0; /* Cadet Blue */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            text-align: left;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            text-align: left;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .image-container {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .recipe-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #e0ffff; /* Light Cyan */
+            border-radius: 10px;
+        }
+        .detail-item {
+            background-color: #f0fff0; /* Honeydew */
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+        }
+        .detail-item span {
+            display: block;
+            font-weight: bold;
+            color: #20b2aa; /* Light Sea Green */
+            font-size: 1.1em;
+        }
+        .detail-item p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .cta {
+            display: inline-block;
+            background-color: #ffb6c1; /* Light Pink */
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .cta:hover {
+            background-color: #ff69b4; /* Hot Pink */
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 15px;
+            }
+            .recipe-details {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Perkedel Jagung Manis dan Renyah</h1>
+
+        <div class="image-container">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background gradient for a bright feel -->
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#a0d2eb;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#c0e8f8;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="400" height="250" fill="url(#grad1)" />
+
+                <!-- Simple stylized corn kernels -->
+                <circle cx="50" cy="100" r="5" fill="#ffd700" />
+                <circle cx="70" cy="105" r="5" fill="#ffd700" />
+                <circle cx="90" cy="95" r="5" fill="#ffd700" />
+                <circle cx="110" cy="100" r="5" fill="#ffd700" />
+                <circle cx="60" cy="120" r="5" fill="#ffd700" />
+                <circle cx="80" cy="125" r="5" fill="#ffd700" />
+                <circle cx="100" cy="115" r="5" fill="#ffd700" />
+                <circle cx="120" cy="120" r="5" fill="#ffd700" />
+
+                <circle cx="150" cy="100" r="5" fill="#ffd700" />
+                <circle cx="170" cy="105" r="5" fill="#ffd700" />
+                <circle cx="190" cy="95" r="5" fill="#ffd700" />
+                <circle cx="210" cy="100" r="5" fill="#ffd700" />
+                <circle cx="160" cy="120" r="5" fill="#ffd700" />
+                <circle cx="180" cy="125" r="5" fill="#ffd700" />
+                <circle cx="200" cy="115" r="5" fill="#ffd700" />
+                <circle cx="220" cy="120" r="5" fill="#ffd700" />
+
+                <!-- Stylized perkedel shapes -->
+                <path d="M250 150 Q260 130 270 150 T300 150 T320 170 T300 200 Q280 190 270 170 T250 150 Z" fill="#ffdab9" stroke="#ff7f50" stroke-width="2"/>
+                <path d="M330 160 Q340 140 350 160 T370 160 T380 180 T360 210 Q340 190 350 170 T330 160 Z" fill="#ffdab9" stroke="#ff7f50" stroke-width="2"/>
+
+                <!-- Small text overlay hint -->
+                <text x="200" y="230" font-family="Verdana" font-size="12" fill="#ffffff" text-anchor="middle">Perkedel Jagung Lezat</text>
+            </svg>
+            <p style="font-style: italic; font-size: 0.9em; color: #666;">Ilustrasi Perkedel Jagung Manis</p>
+        </div>
+
+        <p>Siapa yang tidak suka camilan gurih dan renyah? Perkedel jagung adalah salah satu jajanan pasar yang selalu digemari oleh semua kalangan. Teksturnya yang empuk di dalam dan renyah di luar, berpadu dengan rasa manis jagung yang alami, menjadikannya teman sempurna untuk ngopi sore atau sekadar pelepas dahaga di sela-sela kesibukan.</p>
+
+        <p>Membuat perkedel jagung ternyata tidak sesulit yang dibayangkan. Dengan bahan-bahan yang mudah didapat dan langkah-langkah yang sederhana, Anda bisa menyajikan camilan lezat ini di rumah kapan saja. Resep perkedel jagung yang akan dibagikan kali ini adalah resep andalan yang menghasilkan perkedel dengan rasa yang kaya, tidak terlalu berminyak, dan pastinya anti gagal.</p>
+
+        <div class="recipe-details">
+            <div class="detail-item">
+                <span>Mudah</span>
+                <p>Tingkat Kesulitan</p>
+            </div>
+            <div class="detail-item">
+                <span>20 Menit</span>
+                <p>Waktu Persiapan</p>
+            </div>
+            <div class="detail-item">
+                <span>25 Menit</span>
+                <p>Waktu Memasak</p>
+            </div>
+            <div class="detail-item">
+                <span>10-12 Buah</span>
+                <p>Porsi Sajian</p>
+            </div>
+        </div>
+
+        <h2>Bahan-Bahan Utama:</h2>
+        <ul>
+            <li>2 buah jagung manis ukuran sedang, pipil (atau sekitar 200-250 gram)</li>
+            <li>80-100 gram tepung terigu serbaguna</li>
+            <li>2 sendok makan tepung beras (untuk ekstra renyah)</li>
+            <li>1 batang daun bawang, iris tipis</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh garam</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            <li>1 butir telur ayam</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Cara Membuat Perkedel Jagung:</h2>
+        <ol>
+            <li><strong>Persiapan Jagung:</strong> Pipil jagung manis. Anda bisa memipilnya dengan pisau secara langsung atau menggunakan alat bantu pemipil jagung. Sisihkan.</li>
+            <li><strong>Membuat Adonan:</strong> Dalam sebuah wadah, campurkan jagung pipil, tepung terigu, tepung beras, irisan daun bawang, bawang putih halus, garam, merica bubuk, dan kaldu bubuk (jika pakai). Aduk rata hingga semua bahan tercampur.</li>
+            <li><strong>Tambahkan Telur:</strong> Pecahkan telur ayam ke dalam campuran jagung dan tepung. Aduk kembali hingga adonan benar-benar rata dan adonan sedikit lengket. Jangan khawatir jika adonan terlihat agak basah, ini wajar karena jagung mengandung air.</li>
+            <li><strong>Menggoreng Perkedel:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+            <li><strong>Membentuk dan Menggoreng:</strong> Ambil satu sendok makan adonan, bentuk pipih dengan punggung sendok, lalu masukkan perlahan ke dalam minyak panas. Goreng perkedel secukupnya agar tidak saling menempel dan matang merata. Balik perkedel sesekali hingga berwarna kuning keemasan di kedua sisinya.</li>
+            <li><strong>Tiriskan:</strong> Angkat perkedel yang sudah matang, tiriskan minyaknya menggunakan tisu dapur agar tidak terlalu berminyak.</li>
+            <li><strong>Sajikan:</strong> Perkedel jagung siap disajikan selagi hangat. Cocok disantap dengan nasi hangat, sambal kecap, atau cabai rawit hijau.</li>
+        </ol>
+
+        <h2>Tips Tambahan untuk Perkedel Sempurna:</h2>
+        <ul>
+            <li><strong>Jenis Jagung:</strong> Gunakan jagung manis untuk rasa yang lebih enak. Jika suka, Anda bisa menambahkan sedikit jagung manis kalengan yang sudah ditiriskan.</li>
+            <li><strong>Ekstra Renyah:</strong> Penggunaan tepung beras sangat membantu menciptakan tekstur yang lebih renyah. Jangan ragu untuk menambahkan sedikit jika Anda menyukai perkedel yang sangat garing.</li>
+            <li><strong>Suhu Minyak:</strong> Pastikan minyak benar-benar panas saat menggoreng. Jika minyak kurang panas, perkedel akan menyerap banyak minyak dan menjadi lembek.</li>
+            <li><strong>Jangan Terlalu Banyak Mengaduk:</strong> Setelah adonan masuk ke wajan, jangan terlalu sering diaduk. Biarkan satu sisi matang terlebih dahulu sebelum dibalik agar bentuknya tidak hancur.</li>
+            <li><strong>Variasi Rasa:</strong> Anda bisa menambahkan sedikit parutan wortel untuk warna dan tekstur tambahan, atau sejumput gula jika ingin rasa manis yang lebih kuat.</li>
+        </ul>
+
+        <p>Membuat perkedel jagung tidak hanya sekadar memasak, tetapi juga sebuah seni menciptakan rasa dan kenangan. Dengan mengikuti resep perkedel jagung ini, Anda akan mendapatkan hasil yang memuaskan dan pasti membuat keluarga ketagihan. Selamat mencoba!</p>
+
+        <a href="#top" class="cta">Kembali ke Atas</a>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakteri-ekolik">Bakteri Ekolik</a></li>
+<li><a href="/cara-menggoreng-bakwan-dengan-cetakan">Cara Menggoreng Bakwan Dengan Cetakan</a></li>
+<li><a href="/cara-membuat-bakpao-takaran-sendok">Cara Membuat Bakpao Takaran Sendok</a></li>
+<li><a href="/bakpia-muria">Bakpia Muria</a></li>
+<li><a href="/bakwan-jagung-dan-wortel">Bakwan Jagung Dan Wortel</a></li>
+<li><a href="/resep-dadar-jagung-kencur">Resep Dadar Jagung Kencur</a></li>
+<li><a href="/bakpao-lompobattang">Bakpao Lompobattang</a></li>
+<li><a href="/resep-kuah-bakwan-kampung">Resep Kuah Bakwan Kampung</a></li>
+<li><a href="/cara-membuat-tacupiang">Cara Membuat Tacupiang</a></li>
+<li><a href="/bakwan-teri-basah">Bakwan Teri Basah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

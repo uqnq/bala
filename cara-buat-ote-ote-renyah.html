@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Buat Ote Ote Renyah & Gurih</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang biru muda cerah */
+            color: #004d40; /* Warna teks hijau tua */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff; /* Latar belakang konten putih bersih */
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 77, 64, 0.1); /* Bayangan lembut */
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul hijau toska */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #00695c; /* Warna teks tebal hijau gelap */
+        }
+        .recipe-image {
+            display: block;
+            margin: 25px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 77, 64, 0.15);
+        }
+        .ingredients, .instructions {
+            background-color: #f0f8ff; /* Latar belakang sedikit lebih gelap untuk bagian resep */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .ingredients h2, .instructions h2 {
+            text-align: left;
+            margin-bottom: 15px;
+            color: #00796b;
+        }
+        .step {
+            margin-bottom: 15px;
+        }
+        .step strong {
+            display: inline-block;
+            margin-right: 10px;
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .tips {
+            background-color: #e8f5e9; /* Latar belakang hijau muda untuk tips */
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+        .tips h3 {
+            margin-top: 0;
+            color: #00695c;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #455a64;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Buat Ote Ote Renyah dan Menggugah Selera</h1>
+
+        <svg class="recipe-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi ote-ote renyah berwarna keemasan dengan sayuran di dalamnya">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffe082;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ffb300;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="400" height="250" rx="15" fill="#fff9c4" />
+            <circle cx="70" cy="70" r="50" fill="url(#grad1)" stroke="#f57c00" stroke-width="3" />
+            <circle cx="150" cy="100" r="50" fill="url(#grad1)" stroke="#f57c00" stroke-width="3" />
+            <circle cx="230" cy="70" r="50" fill="url(#grad1)" stroke="#f57c00" stroke-width="3" />
+            <circle cx="310" cy="100" r="50" fill="url(#grad1)" stroke="#f57c00" stroke-width="3" />
+            <text x="50%" y="180" text-anchor="middle" font-size="20" fill="#e65100">Ote Ote Renyah!</text>
+            <path d="M 50 200 Q 150 230 250 200 T 400 200" stroke="#f57c00" stroke-width="2" fill="none" />
+            <circle cx="100" cy="80" r="10" fill="#8bc34a" />
+            <circle cx="180" cy="120" r="10" fill="#8bc34a" />
+            <circle cx="260" cy="80" r="10" fill="#8bc34a" />
+            <circle cx="340" cy="120" r="10" fill="#8bc34a" />
+        </svg>
+
+        <p>Ote-ote, camilan tradisional Indonesia yang juga dikenal sebagai bakwan, adalah favorit banyak orang. Kelezatannya terletak pada kombinasi tekstur renyah di luar dan isian sayuran segar yang lembut di dalam. Siapa sangka membuat ote-ote renyah di rumah ternyata tidak sesulit yang dibayangkan. Dengan beberapa trik sederhana, Anda bisa menyajikan camilan istimewa yang disukai seluruh keluarga.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan untuk Ote Ote Renyah</h2>
+            <ul>
+                <li>200 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 butir telur</li>
+                <li>150-200 ml air dingin (secukupnya, sesuaikan kekentalan adonan)</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>Sayuran pelengkap: wortel (serut kasar), kol (iris halus), tauge (buang akarnya), daun bawang (iris tipis). Gunakan sesuai selera.</li>
+                <li>Minyak goreng secukupnya, untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Langkah-Langkah Membuat Ote Ote Renyah</h2>
+            <ol>
+                <li class="step">
+                    <strong>1. Siapkan Adonan Dasar:</strong>
+                    Dalam sebuah wadah, campurkan tepung terigu dan tepung beras. Tambahkan garam, merica bubuk, dan kaldu bubuk (jika menggunakan). Aduk rata.
+                </li>
+                <li class="step">
+                    <strong>2. Masukkan Telur dan Air:</strong>
+                    Masukkan telur ke dalam campuran tepung. Aduk rata menggunakan whisk atau garpu hingga berbutir. Tuangkan air dingin sedikit demi sedikit sambil terus diaduk. Uleni hingga adonan halus dan tidak bergerindil. Kekentalan adonan harus pas, tidak terlalu encer dan tidak terlalu kental, agar sayuran bisa menempel sempurna.
+                </li>
+                <li class="step">
+                    <strong>3. Tambahkan Sayuran:</strong>
+                    Masukkan semua sayuran yang sudah disiapkan ke dalam adonan. Aduk perlahan hingga semua sayuran terbalut rata oleh adonan. Jangan terlalu banyak mengaduk agar sayuran tidak terlalu layu.
+                </li>
+                <li class="step">
+                    <strong>4. Panaskan Minyak:</strong>
+                    Siapkan wajan dan isi dengan minyak goreng secukupnya. Panaskan minyak dengan api sedang cenderung besar hingga benar-benar panas. Kunci kerenyahan ote-ote salah satunya adalah penggunaan minyak yang cukup banyak dan panas saat menggoreng.
+                </li>
+                <li class="step">
+                    <strong>5. Goreng Ote-Ote:</strong>
+                    Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Jangan terlalu banyak memasukkan adonan dalam satu waktu agar suhu minyak tidak turun drastis. Goreng ote-ote hingga berwarna kuning keemasan dan matang merata. Balik sesekali agar matang sempurna di kedua sisinya.
+                </li>
+                <li class="step">
+                    <strong>6. Tiriskan dan Sajikan:</strong>
+                    Angkat ote-ote yang sudah matang dan tiriskan minyaknya menggunakan saringan atau tisu dapur. Sajikan selagi hangat bersama cabai rawit atau saus sambal favorit Anda.
+                </li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h3>Tips Agar Ote Ote Lebih Renyah Tahan Lama</h3>
+            <ul>
+                <li><strong>Gunakan Air Dingin:</strong> Air dingin membantu adonan tetap dingin, menghasilkan ote-ote yang lebih renyah.</li>
+                <li><strong>Tambahkan Tepung Beras:</strong> Kombinasi tepung terigu dan tepung beras adalah kunci kerenyahan. Tepung beras memberikan tekstur yang lebih garing.</li>
+                <li><strong>Jangan Terlalu Banyak Mengaduk Adonan:</strong> Mengaduk berlebihan bisa membuat gluten dalam tepung terigu berkembang, menghasilkan ote-ote yang keras dan tidak renyah.</li>
+                <li><strong>Goreng dengan Minyak Panas:</strong> Pastikan minyak benar-benar panas saat adonan dimasukkan. Ini akan membuat ote-ote langsung mengembang dan terbentuk lapisan luar yang garing.</li>
+                <li><strong>Jangan Terlalu Penuh Saat Menggoreng:</strong> Memasukkan terlalu banyak adonan sekaligus akan menurunkan suhu minyak, membuat ote-ote menyerap minyak lebih banyak dan jadi lembek.</li>
+                <li><strong>Tiriskan dengan Baik:</strong> Pastikan minyak benar-benar tiris setelah diangkat dari penggorengan.</li>
+            </ul>
+        </div>
+
+        <p>Membuat ote-ote renyah di rumah adalah cara yang menyenangkan untuk menikmati camilan klasik ini. Dengan bahan yang mudah didapat dan langkah yang sederhana, Anda bisa menciptakan kelezatan yang tak tertandingi. Selamat mencoba dan nikmati sensasi renyah di setiap gigitan!</p>
+
+        <footer>
+            Artikel ini berisi panduan membuat ote-ote renyah.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-ubi">Bakwan Ubi</a></li>
+<li><a href="/bakpia-5555-harga">Bakpia 5555 Harga</a></li>
+<li><a href="/perkedel-jagung-tepung-sajiku">Perkedel Jagung Tepung Sajiku</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-crispy">Cara Membuat Bakwan Sayur Crispy</a></li>
+<li><a href="/cara-membuat-makanan-dari-tahu-putih">Cara Membuat Makanan Dari Tahu Putih</a></li>
+<li><a href="/bakwan-udang">Bakwan Udang</a></li>
+<li><a href="/resep-bakso-mercon-daun-jeruk">Resep Bakso Mercon Daun Jeruk</a></li>
+<li><a href="/cara-membuat-gorengan-jagung-renyah">Cara Membuat Gorengan Jagung Renyah</a></li>
+<li><a href="/bakpao-dari">Bakpao Dari</a></li>
+<li><a href="/cara-membentuk-bakpao">Cara Membentuk Bakpao</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

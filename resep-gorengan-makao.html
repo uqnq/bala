@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Gorengan Makao: Gurih & Renyah!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Alice Blue */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2 {
+            color: #007bff; /* Bright Blue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #28a745; /* Green */
+        }
+        .recipe-section {
+            width: 100%;
+        }
+        .ingredients-list {
+            background-color: #e0f7fa; /* Light Cyan */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .instructions-list {
+            background-color: #fff9c4; /* Light Yellow */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .tips-section {
+            background-color: #ffebee; /* Light Red */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #d32f2f; /* Dark Red */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="hero-image" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc">
+            <title id="title">Ilustrasi gorengan makao yang lezat</title>
+            <desc id="desc">Gambar yang menggambarkan beberapa buah makao yang digoreng keemasan dengan tekstur renyah.</desc>
+            <!-- Background Gradient -->
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#fdd835;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#fbc02d;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="1000" height="500" fill="url(#grad1)"/>
+
+            <!-- Makao 1 -->
+            <path d="M200,350 C220,300 280,250 350,250 C420,250 480,300 450,350 C420,400 350,400 320,370 Z" fill="#e65100" stroke="#bf360c" stroke-width="5"/>
+            <circle cx="280" cy="310" r="15" fill="#fdd835"/>
+            <circle cx="350" cy="290" r="15" fill="#fdd835"/>
+            <circle cx="420" cy="310" r="15" fill="#fdd835"/>
+
+            <!-- Makao 2 -->
+            <path d="M550,360 C570,310 630,260 700,260 C770,260 830,310 800,360 C770,410 700,410 670,380 Z" fill="#e65100" stroke="#bf360c" stroke-width="5"/>
+            <circle cx="630" cy="320" r="15" fill="#fdd835"/>
+            <circle cx="700" cy="300" r="15" fill="#fdd835"/>
+            <circle cx="770" cy="320" r="15" fill="#fdd835"/>
+
+            <!-- Makao 3 -->
+            <path d="M350,100 C370,50 430,0 500,0 C570,0 630,50 600,100 C570,150 500,150 470,120 Z" fill="#e65100" stroke="#bf360c" stroke-width="5"/>
+            <circle cx="430" cy="60" r="15" fill="#fdd835"/>
+            <circle cx="500" cy="40" r="15" fill="#fdd835"/>
+            <circle cx="570" cy="60" r="15" fill="#fdd835"/>
+
+            <!-- Highlight/Shadow -->
+            <ellipse cx="350" cy="380" rx="100" ry="20" fill="rgba(0,0,0,0.1)" transform="rotate(5 350 380)"/>
+            <ellipse cx="700" cy="390" rx="100" ry="20" fill="rgba(0,0,0,0.1)" transform="rotate(-5 700 390)"/>
+            <ellipse cx="500" cy="130" rx="100" ry="20" fill="rgba(0,0,0,0.1)" transform="rotate(2 500 130)"/>
+
+            <!-- Text Overlay -->
+            <text x="500" y="50" font-family="Verdana, Geneva, sans-serif" font-size="50" fill="#ffffff" text-anchor="middle" font-weight="bold" stroke="#bf360c" stroke-width="2">Makao Goreng</text>
+        </svg>
+
+        <h1>Resep Gorengan Makao Gurih dan Renyah</h1>
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Gorengan makao adalah salah satu jajanan tradisional yang semakin populer karena kelezatannya yang unik. Dengan cita rasa manis legit dari buah makao yang berpadu sempurna dengan balutan tepung yang renyah, camilan ini cocok dinikmati kapan saja, baik saat santai bersama keluarga maupun saat berkumpul bersama teman.</p>
+        <p>Membuat gorengan makao sendiri di rumah ternyata tidak sesulit yang dibayangkan. Dengan bahan-bahan yang mudah didapat dan langkah-langkah yang sederhana, Anda bisa menyajikan kudapan istimewa ini tanpa harus repot mencarinya di luar. Kunci kelezatan gorengan makao terletak pada pemilihan buah makao yang matang sempurna dan adonan tepung yang pas sehingga menghasilkan tekstur yang kriuk di luar dan lembut di dalam.</p>
+
+        <div class="recipe-section">
+            <h2>Bahan-bahan yang Dibutuhkan</h2>
+            <div class="ingredients-list">
+                <ul>
+                    <li><strong>Buah Makao:</strong> 5-7 buah, pilih yang matang tapi tidak terlalu lembek.</li>
+                    <li><strong>Tepung Terigu:</strong> 150 gram.</li>
+                    <li><strong>Tepung Beras:</strong> 50 gram (untuk menambah kerenyahan).</li>
+                    <li><strong>Gula Pasir:</strong> 2 sendok makan (sesuaikan selera).</li>
+                    <li><strong>Garam:</strong> 1/2 sendok teh.</li>
+                    <li><strong>Vanili Bubuk:</strong> 1/4 sendok teh (opsional, untuk aroma).</li>
+                    <li><strong>Air Dingin:</strong> Sekitar 150-200 ml (hingga kekentalan pas).</li>
+                    <li><strong>Minyak Goreng:</strong> Secukupnya untuk menggoreng.</li>
+                </ul>
+            </div>
+
+            <h2>Cara Membuat yang Mudah</h2>
+            <div class="instructions-list">
+                <ol>
+                    <li><strong>Persiapan Makao:</strong> Kupas kulit buah makao, lalu belah menjadi dua atau empat bagian sesuai ukurannya. Buang bijinya jika ada. Sisihkan.</li>
+                    <li><strong>Membuat Adonan Tepung:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras, gula pasir, garam, dan vanili bubuk. Aduk rata.</li>
+                    <li><strong>Tambahkan Air:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kental dan licin. Hindari adonan yang terlalu encer atau terlalu kental. Kekentalan yang pas akan membuat adonan menempel sempurna pada buah makao.</li>
+                    <li><strong>Mendiamkan Adonan:</strong> Diamkan adonan selama kurang lebih 15-20 menit agar tepung benar-benar meresap air.</li>
+                    <li><strong>Proses Menggoreng:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar makao terendam seluruhnya.</li>
+                    <li><strong>Balur Makao:</strong> Ambil potongan buah makao, balurkan ke dalam adonan tepung hingga terlapisi merata.</li>
+                    <li><strong>Goreng Hingga Keemasan:</strong> Masukkan makao yang sudah berbalut adonan ke dalam minyak panas. Goreng hingga warnanya berubah menjadi kuning keemasan dan teksturnya renyah. Jangan terlalu lama agar tidak gosong.</li>
+                    <li><strong>Tiriskan:</strong> Angkat gorengan makao, tiriskan minyaknya menggunakan saringan atau tisu dapur agar tidak terlalu berminyak.</li>
+                    <li><strong>Sajikan:</strong> Gorengan makao siap disajikan selagi hangat untuk menikmati kerenyahannya yang maksimal.</li>
+                </ol>
+            </div>
+
+            <div class="tips-section">
+                <h2>Tips Tambahan untuk Hasil Sempurna</h2>
+                <ul>
+                    <li>Penggunaan tepung beras sangat penting untuk mendapatkan kerenyahan ekstra pada gorengan makao Anda.</li>
+                    <li>Pastikan minyak goreng dalam keadaan panas saat makao dimasukkan, ini akan membuat adonan langsung "mengunci" dan menjadi renyah.</li>
+                    <li>Jangan menggoreng terlalu banyak makao sekaligus dalam satu wajan agar suhu minyak tetap stabil dan matang merata.</li>
+                    <li>Jika suka, Anda bisa menambahkan sedikit parutan kulit jeruk nipis ke dalam adonan tepung untuk aroma yang lebih segar.</li>
+                </ul>
+            </div>
+        </div>
+
+        <p>Gorengan makao ini adalah bukti bahwa camilan sederhana bisa memberikan kebahagiaan tersendiri. Nikmati setiap gigitan renyahnya yang memanjakan lidah. Selamat mencoba dan berkreasi di dapur Anda!</p>
+
+        <div class="footer">
+            Semoga artikel ini bermanfaat untuk Anda menemukan resep gorengan makao yang sempurna.
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-patuk-75">Bakpia Patuk 75</a></li>
+<li><a href="/bikin-bakwan-jagung-yang-renyah">Bikin Bakwan Jagung Yang Renyah</a></li>
+<li><a href="/bakteri-leptospira">Bakteri Leptospira</a></li>
+<li><a href="/bakwan-tahu-resep">Bakwan Tahu Resep</a></li>
+<li><a href="/nutrient-broth-adalah">Nutrient Broth Adalah</a></li>
+<li><a href="/bakpao-bulat">Bakpao Bulat</a></li>
+<li><a href="/bakso-beranak-ala-chef">Bakso Beranak Ala Chef</a></li>
+<li><a href="/cara-mengatasi-cetakan-bakwan-yang-lengket">Cara Mengatasi Cetakan Bakwan Yang Lengket</a></li>
+<li><a href="/resep-bakwan-kelor">Resep Bakwan Kelor</a></li>
+<li><a href="/bakwan-milu">Bakwan Milu</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

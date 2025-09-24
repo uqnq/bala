@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Simpel & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Biru muda cerah */
+            color: #004d40; /* Hijau tua sejuk */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 77, 64, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Hijau toska */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #009688; /* Hijau cerah */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .gambar-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .gambar-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 77, 64, 0.05);
+        }
+        .bahan, .langkah {
+            background-color: #f0f8ff; /* Biru sangat muda */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 5px solid #009688; /* Garis hijau cerah */
+        }
+        .bahan p, .langkah p {
+            text-align: left;
+        }
+        .bahan ul li::before, .langkah ol li::before {
+            content: '• ';
+            color: #00796b; /* Hijau toska */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .langkah ol li::before {
+            content: counter(item) '. ';
+            counter-increment: item;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.7em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Membuat Bakwan Simpel dan Lezat di Rumah</h1>
+
+        <div class="gambar-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakwan renyah dengan sayuran">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#8BC34A;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" rx="15" ry="15" fill="#fff"/>
+                <!-- Bakwan Base -->
+                <path d="M 150 150 Q 200 120 250 150 T 350 150 Q 400 180 350 210 T 250 210 Q 200 180 150 150 Z" fill="url(#grad1)" stroke="#388E3C" stroke-width="3"/>
+                <path d="M 200 160 Q 250 140 300 160 T 400 160 Q 450 190 400 220 T 300 220 Q 250 190 200 160 Z" fill="url(#grad1)" stroke="#388E3C" stroke-width="3"/>
+                <!-- Sayuran (Wortel & Kol) -->
+                <ellipse cx="180" cy="130" rx="15" ry="8" fill="#FF9800" transform="rotate(20 180 130)"/> <!-- Wortel -->
+                <ellipse cx="220" cy="110" rx="12" ry="6" fill="#2E7D32"/> <!-- Kol -->
+                <ellipse cx="280" cy="120" rx="14" ry="7" fill="#FF9800" transform="rotate(-15 280 120)"/> <!-- Wortel -->
+                <ellipse cx="320" cy="100" rx="10" ry="5" fill="#2E7D32"/> <!-- Kol -->
+                <ellipse cx="370" cy="130" rx="13" ry="6" fill="#FF9800" transform="rotate(30 370 130)"/> <!-- Wortel -->
+                <ellipse cx="420" cy="110" rx="11" ry="5" fill="#2E7D32"/> <!-- Kol -->
+
+                <!-- Sayuran (Daun Bawang) -->
+                <path d="M 170 170 q 10 -20 20 -30" stroke="#4CAF50" stroke-width="3" fill="none"/>
+                <path d="M 230 175 q 15 -25 25 -35" stroke="#4CAF50" stroke-width="3" fill="none"/>
+                <path d="M 290 180 q 12 -22 22 -32" stroke="#4CAF50" stroke-width="3" fill="none"/>
+                <path d="M 350 185 q 18 -28 28 -38" stroke="#4CAF50" stroke-width="3" fill="none"/>
+
+                <!-- Detail Garing -->
+                <circle cx="220" cy="130" r="3" fill="#E65100" opacity="0.6"/>
+                <circle cx="280" cy="140" r="3" fill="#E65100" opacity="0.6"/>
+                <circle cx="330" cy="120" r="2" fill="#E65100" opacity="0.5"/>
+                <circle cx="380" cy="150" r="3" fill="#E65100" opacity="0.6"/>
+                <circle cx="190" cy="170" r="2" fill="#E65100" opacity="0.5"/>
+
+                <!-- Teks "Bakwan" -->
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="30" fill="#FFFFFF" font-weight="bold" stroke="#388E3C" stroke-width="1">Bakwan</text>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak suka bakwan? Camilan renyah dengan aneka sayuran ini selalu menjadi favorit. Cocok disantap kapan saja, baik sebagai teman minum teh sore, pelengkap nasi, atau sekadar pengusir lapar. Membuat bakwan sendiri di rumah ternyata sangat mudah, lho! Dengan resep simpel ini, Anda bisa menyajikan bakwan yang lezat dan menggugah selera tanpa perlu repot.</p>
+
+        <div class="bahan">
+            <h2>Bahan-Bahan Utama</h2>
+            <p>Untuk membuat bakwan yang simpel, Anda hanya memerlukan beberapa bahan dasar yang mudah didapatkan. Kunci kelezatan bakwan terletak pada kesegaran bahan dan bumbu yang pas.</p>
+            <ul>
+                <li>250 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk tekstur lebih renyah)</li>
+                <li>1 batang wortel, iris tipis memanjang seperti korek api</li>
+                <li>1/4 bonggol kol, iris tipis</li>
+                <li>2 batang daun bawang, iris tipis</li>
+                <li>1 batang seledri, iris tipis (opsional, menambah aroma)</li>
+                <li>Air secukupnya (sekitar 150-200 ml, sesuaikan adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="bahan">
+            <h2>Bumbu Halus</h2>
+            <p>Bumbu halus inilah yang akan memberikan rasa gurih dan sedikit pedas pada bakwan Anda.</p>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh kaldu bubuk (ayam/sapi/jamur, sesuai selera)</li>
+            </ul>
+        </div>
+
+        <div class="langkah">
+            <h2>Cara Membuat Bakwan Simpel</h2>
+            <p>Ikuti langkah-langkah mudah berikut untuk menciptakan bakwan yang sempurna:</p>
+            <ol>
+                <li><strong>Persiapan Adonan:</strong> Dalam sebuah wadah, campurkan tepung terigu dan tepung beras (jika menggunakan).</li>
+                <li><strong>Haluskan Bumbu:</strong> Ulek atau blender bawang putih, garam, merica bubuk, dan kaldu bubuk hingga halus.</li>
+                <li><strong>Campurkan Bumbu:</strong> Masukkan bumbu halus ke dalam campuran tepung. Aduk rata.</li>
+                <li><strong>Masukkan Sayuran:</strong> Tambahkan irisan wortel, kol, daun bawang, dan seledri ke dalam wadah berisi campuran tepung. Aduk rata hingga semua sayuran terbalur tepung.</li>
+                <li><strong>Tambahkan Air:</strong> Tuang air sedikit demi sedikit sambil terus diaduk hingga adonan mengental dan pas. Jangan terlalu encer agar bakwan tidak lembek, namun juga jangan terlalu kental agar tidak keras. Adonan harus bisa melapisi sayuran dengan baik.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak sudah benar-benar panas agar bakwan matang merata dan renyah.</li>
+                <li><strong>Goreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga berwarna cokelat keemasan dan matang di kedua sisinya. Balik sesekali agar matang merata.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan saringan atau alas tisu dapur.</li>
+                <li><strong>Sajikan:</strong> Bakwan simpel siap disajikan selagi hangat bersama cabai rawit, sambal, atau lontong.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan untuk Bakwan Lebih Nikmat</h2>
+        <p>Agar hasil bakwan Anda semakin istimewa, perhatikan beberapa tips berikut:</p>
+        <ul>
+            <li>Gunakan sayuran yang masih segar untuk rasa yang maksimal.</li>
+            <li>Jangan menggoreng bakwan terlalu banyak sekaligus dalam satu wajan. Ini akan menurunkan suhu minyak dan membuat bakwan menyerap banyak minyak serta menjadi lembek.</li>
+            <li>Untuk mendapatkan tekstur yang lebih renyah tahan lama, Anda bisa menambahkan sedikit margarin cair atau air es ke dalam adonan.</li>
+            <li>Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+        </ul>
+
+        <p>Membuat bakwan sendiri memang memberikan kepuasan tersendiri. Selain bisa mengatur porsi dan kualitas bahan, Anda juga bisa berkreasi dengan tambahan sayuran lain seperti tauge, buncis, atau bahkan udang untuk variasi rasa. Selamat mencoba resep cara membuat bakwan simpel ini dan nikmati kelezatannya bersama keluarga!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-jagung-resep-koki">Bakwan Jagung Resep Koki</a></li>
+<li><a href="/bakpia-ku">Bakpia Ku</a></li>
+<li><a href="/bakpao-lembut">Bakpao Lembut</a></li>
+<li><a href="/bakpia-kacang-hijau-basah">Bakpia Kacang Hijau Basah</a></li>
+<li><a href="/bakwan-tahu-udang">Bakwan Tahu Udang</a></li>
+<li><a href="/bakpia-999">Bakpia 999</a></li>
+<li><a href="/bahan-dan-bumbu-yang-digunakan-untuk-membuat-bakwan-jagung-adalah">Bahan Dan Bumbu Yang Digunakan Untuk Membuat Bakwan Jagung Adalah</a></li>
+<li><a href="/pia-pia-balong">Pia Pia Balong</a></li>
+<li><a href="/daftar-harga-bakpia-kenes">Daftar Harga Bakpia Kenes</a></li>
+<li><a href="/membuat-bakwan-jagung-crispy">Membuat Bakwan Jagung Crispy</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Buat Dadar Jagung Sederhana & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e8f5e9; /* Warna latar belakang hijau sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2e7d32; /* Warna hijau tua untuk judul utama */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #4caf50; /* Warna hijau cerah untuk subjudul */
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .recipe-section {
+            background-color: #f1f8e9; /* Latar belakang bagian resep lebih terang */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 5px solid #66bb6a; /* Garis pemisah hijau */
+        }
+        .recipe-section h3 {
+            margin-top: 0;
+            color: #388e3c; /* Warna hijau gelap untuk judul bagian resep */
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .ingredients li::before {
+            content: '✔ ';
+            color: #81c784; /* Tanda centang hijau muda */
+            font-weight: bold;
+        }
+        .instructions li::before {
+            content: counter(list-item) '. ';
+            color: #81c784;
+            font-weight: bold;
+        }
+        .instructions {
+            counter-reset: list-item;
+        }
+        .instructions li {
+            counter-increment: list-item;
+        }
+        img.main-image {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        .svg-icon {
+            display: block;
+            width: 50px; /* Ukuran ikon */
+            height: 50px;
+            margin: 10px auto;
+            fill: #4caf50; /* Warna ikon hijau */
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #757575;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Buat Dadar Jagung Sederhana & Lezat</h1>
+
+        <svg class="svg-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M13,17h-2v-2h2V17z M13,13h-2V7h2V13z"/>
+            <title>Ikon Jagung</title>
+        </svg>
+
+        <p>Dadar jagung, atau sering juga disebut bakwan jagung, adalah camilan atau lauk pauk yang sangat populer di Indonesia. Terbuat dari bahan-bahan sederhana yang mudah ditemukan, dadar jagung memiliki cita rasa manis gurih yang pas di lidah. Cocok dinikmati kapan saja, baik saat santai bersama keluarga maupun sebagai pendamping nasi hangat. Membuatnya pun tidak memerlukan keahlian khusus, bahkan bagi pemula sekalipun. Artikel ini akan memandu Anda langkah demi langkah untuk membuat dadar jagung yang renyah di luar dan lembut di dalam.</p>
+
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIyIDRsLTggNGwtOC00TDQgN2wyIDIgMC44OSAxLjdjLTAuMTkuMTEtMC4zNS4yNC0wLjUuMzhoMTRjLTAuMTUtMC4xNC0wLjMxLTAuMjctMC41LTAuMzhsMC44OS0xLjdsLTItMiAwLTMuOTktOC00YTQgNCAwIDAgMC04IDBsNC00IDIgMiAwLTMuOTk4IDggNCA0IDQgNS0yIDAgOC00IDAtOC00IDEuMjEtLjEyIDEuNzctLjM2IDEuNjItLjQ2LTEuOTMtLjk3LTQuMTEtMS44OS02LjQ0LTJhNCA0IDAgMCAxIDMgMS44OWwtNC00WiIvPjxwYXRoIGQ9Ik0yMCAxMGwtOC00LTguOCA0TDcgMTRsNy0yLjMxTDQgMTlsOC00IDEyIDBsLTQgMGwtNi03LjY5WiIvPjxwYXRoIGQ9Ik0xNCAxMmw0IDJsLTggNCA0LTJsLTQuLTJsLTggNCA0LTJsLTQgMGwtOC00IDQgMGw0LTJsLTQuLTJsLTQgMGw0LTJsLTQuMGw4LTQgNC00bDQtNCA0LTJsLTQtNCIvPjxwYXRoIGQ9Ik0xMiA4Yy0yLjIgMC00IDEuOC00IDQgMCAyLjIgMS44IDQgNCA0IDIgMCA0LTEuOCA0LTQgMC0yLjItMS44LTQtNCA0eiIvPjxwYXRoIGQ9Ik0xMyAxOGgtMmMwLTIuMjEgMS43OS00IDQtNCAyLjIxIDAgNCAxLjggNCA0ek0xMS41IDE1SDExdi0yLjVIMTB2LjhIMTAuNXYyLjVoMS41IDB6bTEzLjUgMFYzLjVIMTkuNWw1LjUgMTEuMTZaIi8+PHBhdGggZD0iTTYuNSA2LjVIMTBoMTRsLTItNC0yLTQuLTItNGwtMTAgMGE0IDQgMCAwIDAtOCAwTDQgMGwtMi00LTIuNS0uODlMNi41IDMuNTR6TTUuMjEgNC42NmwzLjI5IDMuMg0sLTEuMjEgMi43MmMtMC41My0wLjEzLTEuMTItMC4yLTEuODQtMC4xNC0xLjUgMC0yLjguNTEtMy41IDEuMzVsMS40MS0zLjM2Yy0wLjExLTAuMjQtMC4yMS0wLjQ4LTAuMjEtMC43NHoiLz48cGF0aCBkPSJNMTcgMTBsLTUtMmwtNS0yIDUtMiA1IDIgNS0yIDUtMnoiLz48L3N2Zz4=" alt="Ilustrasi Jagung untuk Dadar Jagung" class="main-image">
+
+        <h2>Bahan Utama yang Anda Butuhkan</h2>
+        <div class="recipe-section">
+            <h3>Bahan-bahan:</h3>
+            <ul class="ingredients">
+                <li>2 buah jagung manis, pipil atau serut</li>
+                <li>5 sendok makan tepung terigu</li>
+                <li>2 sendok makan tepung beras (opsional, untuk tekstur lebih renyah)</li>
+                <li>1 butir telur</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya (opsional, jika jagung kurang manis)</li>
+                <li>Daun bawang secukupnya, iris tipis</li>
+                <li>Cabai rawit secukupnya, iris tipis (opsional, jika suka pedas)</li>
+                <li>Air secukupnya</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Dadar Jagung Sederhana</h2>
+        <div class="recipe-section">
+            <ol class="instructions">
+                <li><strong>Persiapan Jagung:</strong> Pipil atau serut jagung manis hingga habis. Jika menggunakan jagung pipil, Anda bisa sedikit menghaluskan sebagian jagung pipil dengan ulekan atau blender sebentar agar adonan lebih menyatu.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam sebuah wadah, campurkan jagung pipil/serut, tepung terigu, tepung beras (jika pakai), telur, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan gula (jika pakai).</li>
+                <li><strong>Menambahkan Air:</strong> Tuang air sedikit demi sedikit sambil diaduk hingga adonan mengental, tidak terlalu encer dan tidak terlalu kental. Konsistensi adonan harus pas agar dadar tidak pecah saat digoreng dan bumbunya merata.</li>
+                <li><strong>Menambahkan Daun Bawang dan Cabai:</strong> Masukkan irisan daun bawang dan cabai rawit (jika pakai) ke dalam adonan. Aduk kembali hingga tercampur rata.</li>
+                <li><strong>Menggoreng Dadar Jagung:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Setelah minyak panas, ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam wajan. Ratakan sedikit agar bentuknya seperti dadar.</li>
+                <li><strong>Memasak Hingga Matang:</strong> Goreng dadar jagung hingga salah satu sisinya berwarna kuning keemasan. Balik dengan hati-hati, lalu goreng sisi lainnya hingga matang merata dan berwarna cokelat keemasan.</li>
+                <li><strong>Tiriskan:</strong> Angkat dadar jagung yang sudah matang, tiriskan minyaknya menggunakan tisu dapur agar tidak terlalu berminyak.</li>
+                <li><strong>Sajikan:</strong> Dadar jagung siap disajikan selagi hangat. Nikmati dengan sambal atau cabai rawit hijau untuk rasa yang lebih mantap.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan untuk Dadar Jagung Sempurna</h2>
+        <p>Untuk mendapatkan hasil dadar jagung yang lebih maksimal, ada beberapa tips sederhana yang bisa Anda coba:</p>
+        <ul>
+            <li>Gunakan jagung manis yang masih segar untuk rasa manis alami yang terbaik.</li>
+            <li>Jika Anda suka tekstur yang lebih "nendang", jangan haluskan semua jagung. Biarkan sebagian tetap utuh.</li>
+            <li>Pastikan minyak goreng sudah benar-benar panas sebelum memasukkan adonan agar dadar jagung tidak menyerap banyak minyak dan hasilnya renyah.</li>
+            <li>Gunakan api sedang saat menggoreng agar dadar matang merata hingga bagian dalamnya tanpa gosong di luar.</li>
+            <li>Jangan terlalu banyak memasukkan adonan ke dalam wajan agar dadar bisa matang sempurna dan mudah dibalik.</li>
+        </ul>
+
+        <p>Membuat dadar jagung memang sangat mudah dan menyenangkan. Dengan resep sederhana ini, Anda bisa menyajikan camilan lezat yang disukai seluruh keluarga. Selamat mencoba!</p>
+
+        <footer>
+            <p>&copy; Hak Cipta Konten.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bumbu-membuat-dadar-jagung">Bumbu Membuat Dadar Jagung</a></li>
+<li><a href="/bakwan-jagung-wortel-kol">Bakwan Jagung Wortel Kol</a></li>
+<li><a href="/bakpao-tang-ling-pao">Bakpao Tang Ling Pao</a></li>
+<li><a href="/bakpao-pandan-mandala">Bakpao Pandan Mandala</a></li>
+<li><a href="/bakwan-geprek">Bakwan Geprek</a></li>
+<li><a href="/bumbu-dadar-jagung-enak">Bumbu Dadar Jagung Enak</a></li>
+<li><a href="/bumbu-halus-bakwan">Bumbu Halus Bakwan</a></li>
+<li><a href="/cara-buat-perkedel-jagung-manis">Cara Buat Perkedel Jagung Manis</a></li>
+<li><a href="/harga-bakso-cak-kar">Harga Bakso Cak Kar</a></li>
+<li><a href="/cara-agar-bakwan-tetap-renyah">Cara Agar Bakwan Tetap Renyah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

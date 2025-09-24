@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Jagung Diah Didi: Resep Lezat!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f9f0; /* Warna hijau muda yang sejuk */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        h1, h2 {
+            color: #4CAF50; /* Warna hijau cerah untuk judul */
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 1.6em;
+            margin-top: 30px;
+            border-bottom: 2px solid #e0f2e9; /* Garis bawah yang halus */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .recipe-steps ol {
+            padding-left: 25px;
+        }
+        .recipe-steps li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #388E3C; /* Warna hijau yang lebih gelap untuk penekanan */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakwan Jagung Diah Didi: Sensasi Renyah nan Manis!</h1>
+
+        <div class="image-container">
+            <!-- SVG untuk Bakwan Jagung -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakwan jagung yang lezat">
+                <defs>
+                    <linearGradient id="grad-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFDA63;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFC107;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad-green" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#8BC34A;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#66BB6A;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Latar belakang yang cerah -->
+                <rect width="600" height="300" rx="15" fill="#FFF9C4" />
+
+                <!-- Beberapa butir jagung -->
+                <circle cx="100" cy="150" r="15" fill="#FFEB3B"/>
+                <circle cx="120" cy="130" r="14" fill="#FFEB3B"/>
+                <circle cx="80" cy="170" r="13" fill="#FFEB3B"/>
+                <circle cx="110" cy="190" r="15" fill="#FFEB3B"/>
+
+                <!-- Bakwan Jagung utama (bentuk oval/bulat) -->
+                <ellipse cx="300" cy="150" rx="100" ry="80" fill="url(#grad-yellow)" stroke="#E65100" stroke-width="3"/>
+
+                <!-- Detail butiran jagung di bakwan -->
+                <g fill="#FFEB3B">
+                    <circle cx="250" cy="100" r="10"/>
+                    <circle cx="220" cy="130" r="8"/>
+                    <circle cx="280" cy="130" r="9"/>
+                    <circle cx="310" cy="150" r="11"/>
+                    <circle cx="350" cy="120" r="10"/>
+                    <circle cx="380" cy="150" r="9"/>
+                    <circle cx="360" cy="180" r="10"/>
+                    <circle cx="320" cy="190" r="8"/>
+                    <circle cx="280" cy="170" r="11"/>
+                    <circle cx="240" cy="150" r="10"/>
+                    <circle cx="260" cy="180" r="9"/>
+                </g>
+
+                <!-- Adonan yang menggoreng (sedikit bertekstur) -->
+                <g fill="rgba(255, 213, 79, 0.6)">
+                    <path d="M200 120 Q 230 110 250 100 Q 280 90 310 100 Q 340 110 350 120 Q 330 100 300 90 Q 270 100 250 110 Q 230 120 200 120 Z" />
+                    <path d="M220 160 Q 250 150 270 140 Q 300 130 330 140 Q 350 150 340 160 Q 320 150 290 160 Q 260 170 220 160 Z" />
+                </g>
+
+                <!-- Sedikit kilauan/highlight -->
+                <ellipse cx="320" cy="130" rx="20" ry="10" fill="rgba(255, 255, 255, 0.3)" transform="rotate(20 320 130)"/>
+                <ellipse cx="280" cy="170" rx="15" ry="7" fill="rgba(255, 255, 255, 0.2)" transform="rotate(-10 280 170)"/>
+
+                <!-- Daun bawang atau sejenisnya yang hijau -->
+                <path d="M450 100 Q 460 120 450 140 Q 440 120 450 100 Z" fill="url(#grad-green)" transform="rotate(15 450 120)"/>
+                <path d="M470 120 Q 480 140 470 160 Q 460 140 470 120 Z" fill="url(#grad-green)" transform="rotate(-10 470 140)"/>
+            </svg>
+        </div>
+
+        <p>
+            Siapa yang tidak suka camilan renyah, gurih, dan sedikit manis? Bakwan jagung, atau sering juga disebut perkedel jagung, adalah salah satu jajanan tradisional Indonesia yang selalu berhasil menggugah selera. Kelezatan bakwan jagung ini semakin legendaris berkat resep-resep yang diwariskan dari generasi ke generasi. Salah satu sumber inspirasi yang populer adalah resep bakwan jagung dari <strong>Diah Didi</strong>, yang dikenal memiliki cita rasa otentik dan tekstur yang pas.
+        </p>
+
+        <p>
+            Resep bakwan jagung Diah Didi ini seringkali menjadi favorit karena kesederhanaannya namun tetap menghasilkan bakwan yang luar biasa nikmat. Rahasianya terletak pada pemilihan bahan yang tepat dan sedikit sentuhan bumbu yang membuatnya berbeda. Jagung manis segar adalah bintang utama di sini. Dipotong atau diserut kasar, jagung memberikan rasa manis alami dan tekstur renyah yang khas saat digigit.
+        </p>
+
+        <h2>Bahan-Bahan Utama yang Sederhana</h2>
+        <p>
+            Untuk membuat bakwan jagung ala Diah Didi yang lezat, Anda hanya membutuhkan beberapa bahan dasar yang mudah ditemukan:
+        </p>
+        <ul>
+            <li><strong>Jagung Manis:</strong> 2-3 buah, serut atau potong kasar.</li>
+            <li><strong>Tepung Terigu:</strong> Sekitar 10-12 sendok makan.</li>
+            <li><strong>Tepung Beras:</strong> 2-3 sendok makan (untuk menambah kerenyahan).</li>
+            <li><strong>Telur:</strong> 1 butir.</li>
+            <li><strong>Bawang Merah:</strong> 3-4 siung, cincang halus.</li>
+            <li><strong>Bawang Putih:</strong> 2 siung, haluskan.</li>
+            <li><strong>Daun Bawang:</strong> 1-2 batang, iris tipis.</li>
+            <li><strong>Garam:</strong> Secukupnya.</li>
+            <li><strong>Gula Pasir:</strong> Sedikit (jika jagung kurang manis).</li>
+            <li><strong>Merica Bubuk:</strong> Secukupnya.</li>
+            <li><strong>Ketumbar Bubuk:</strong> 1/2 sendok teh (opsional, untuk aroma).</li>
+            <li><strong>Air Es:</strong> Sedikit, jika adonan terlalu kental.</li>
+            <li><strong>Minyak Goreng:</strong> Secukupnya untuk menggoreng.</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bakwan Jagung yang Sempurna</h2>
+        <div class="recipe-steps">
+            <ol>
+                <li><strong>Persiapan Jagung:</strong> Serut atau potong kasar jagung manis. Sisihkan sebagian kecil butiran jagung utuh jika suka, untuk memberikan sensasi gigitan yang lebih jelas.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam wadah, campurkan tepung terigu, tepung beras, telur, bawang merah cincang, bawang putih halus, irisan daun bawang, garam, gula pasir, merica bubuk, dan ketumbar bubuk (jika pakai). Aduk rata.</li>
+                <li><strong>Tambahkan Jagung:</strong> Masukkan serutan jagung ke dalam adonan tepung. Aduk hingga semua jagung terbalut rata dengan adonan. Jangan terlalu banyak mengaduk agar bakwan tidak keras. Jika adonan terasa terlalu kental, bisa tambahkan sedikit air es.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam jumlah yang cukup banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Ambil satu sendok makan adonan, lalu goreng dalam minyak panas. Beri jarak antar bakwan agar matang merata dan tidak lengket satu sama lain. Goreng hingga berwarna kuning keemasan dan matang di kedua sisinya.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan jagung yang sudah matang, tiriskan di atas kertas tisu atau rak kawat untuk menghilangkan kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan jagung Diah Didi siap disajikan selagi hangat. Nikmati kelezatannya bersama nasi hangat, sambal, atau sebagai camilan pendamping teh.</li>
+            </ol>
+        </div>
+
+        <p>
+            Keunggulan resep bakwan jagung Diah Didi ini adalah fleksibilitasnya. Anda bisa menambahkan sedikit udang cincang, sayuran lain seperti wortel parut, atau bahkan sedikit cabai jika suka rasa pedas. Namun, inti dari resep ini adalah kesederhanaan bahan dan rasa jagung yang dominan, dibalut adonan gurih yang renyah di luar dan lembut di dalam.
+        </p>
+
+        <p>
+            Tekstur renyah pada bakwan jagung seringkali menjadi kunci kepuasan. Penggunaan tepung beras dan menggoreng dengan minyak yang cukup panas membantu menciptakan lapisan luar yang garing. Sementara itu, bagian dalamnya tetap empuk dengan rasa manis jagung yang meledak di mulut. Resep ini adalah bukti bahwa masakan rumahan yang lezat tidak harus rumit. Dengan sedikit usaha, Anda bisa menyajikan hidangan bakwan jagung yang disukai seluruh keluarga, terinspirasi dari resep klasik yang telah teruji kelezatannya. Selamat mencoba membuat bakwan jagung Diah Didi versi Anda sendiri!
+        </p>
+
+        <footer>
+            Artikel ini memberikan panduan resep bakwan jagung yang terinspirasi dari gaya Diah Didi.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakteri-streptomyces">Bakteri Streptomyces</a></li>
+<li><a href="/bumbu-bakso-mercon-pedas">Bumbu Bakso Mercon Pedas</a></li>
+<li><a href="/cara-membuat-bakpao-labu-kuning">Cara Membuat Bakpao Labu Kuning</a></li>
+<li><a href="/bakpia-srikandi">Bakpia Srikandi</a></li>
+<li><a href="/bakpia-kukus-tugu-solo">Bakpia Kukus Tugu Solo</a></li>
+<li><a href="/jamur-enoki-yang-dilarang">Jamur Enoki Yang Dilarang</a></li>
+<li><a href="/bakpia-145">Bakpia 145</a></li>
+<li><a href="/cara-menyimpan-bakpia-basah">Cara Menyimpan Bakpia Basah</a></li>
+<li><a href="/membuat-bakwan-yang-enak">Membuat Bakwan Yang Enak</a></li>
+<li><a href="/resep-bumbu-bala-bala">Resep Bumbu Bala Bala</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Daun Singkong: Resep Lezat & Sehat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Biru muda cerah */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px; /* Max width for content */
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            color: #00796b; /* Teal gelap */
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            text-align: left;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 30px;
+            text-align: left;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .recipe-step {
+            background-color: #f0f8ff; /* Biru sangat muda */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 5px solid #00796b;
+        }
+        .recipe-step p {
+            margin-bottom: 0; /* Remove bottom margin for the last paragraph in a step */
+        }
+        .cta {
+            display: inline-block;
+            background-color: #4caf50; /* Hijau cerah */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 25px;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #388e3c; /* Hijau lebih tua saat hover */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .hero-image {
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakwan Daun Singkong: Camilan Gurih, Sehat, dan Mudah Dibuat</h1>
+
+        <!-- SVG Gambar Bakwan Daun Singkong -->
+        <svg class="hero-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feMerge>
+                        <feMergeNode in="offsetblur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <!-- Background -->
+            <rect width="600" height="400" fill="#e0f2f1"/>
+
+            <!-- Tumpukan Bakwan -->
+            <g transform="translate(50, 250) scale(0.8)">
+                <path d="M 0,0 Q 50,-20 100,0 T 200,0 T 300,0 T 400,0 T 500,0 T 600,0 V 50 Q -50,30 -100,50 T -200,50 T -300,50 T -400,50 T -500,50 T -600,50 Z" fill="#a5d6a7" filter="url(#shadow)"/>
+                <path d="M 0,0 Q 50,-20 100,0 T 200,0 T 300,0 T 400,0 T 500,0 T 600,0 V 50 Q -50,30 -100,50 T -200,50 T -300,50 T -400,50 T -500,50 T -600,50 Z" fill="#81c784" transform="translate(30, 20) scale(0.95)" filter="url(#shadow)"/>
+                <path d="M 0,0 Q 50,-20 100,0 T 200,0 T 300,0 T 400,0 T 500,0 T 600,0 V 50 Q -50,30 -100,50 T -200,50 T -300,50 T -400,50 T -500,50 T -600,50 Z" fill="#66bb6a" transform="translate(60, 40) scale(0.9)" filter="url(#shadow)"/>
+            </g>
+
+            <!-- Daun Singkong (representatif) -->
+            <g transform="translate(250, 100) rotate(-20)">
+                <path d="M 0 0 C 20 10, 40 20, 60 20 C 80 20, 100 10, 120 0 C 100 -10, 80 -20, 60 -20 C 40 -20, 20 -10, 0 0 Z" fill="#4caf50" opacity="0.8"/>
+                <path d="M 0 0 C 15 8, 30 15, 45 15 C 60 15, 75 8, 90 0 C 75 -8, 60 -15, 45 -15 C 30 -15, 15 -8, 0 0 Z" fill="#66bb6a" opacity="0.7"/>
+            </g>
+             <g transform="translate(300, 120) rotate(15)">
+                <path d="M 0 0 C 20 10, 40 20, 60 20 C 80 20, 100 10, 120 0 C 100 -10, 80 -20, 60 -20 C 40 -20, 20 -10, 0 0 Z" fill="#4caf50" opacity="0.8"/>
+                <path d="M 0 0 C 15 8, 30 15, 45 15 C 60 15, 75 8, 90 0 C 75 -8, 60 -15, 45 -15 C 30 -15, 15 -8, 0 0 Z" fill="#66bb6a" opacity="0.7"/>
+            </g>
+
+            <!-- Teks Judul -->
+            <text x="50%" y="370" dominant-baseline="middle" text-anchor="middle" fill="#004d40" font-size="24" font-weight="bold">Camilan Sehat & Lezat</text>
+        </svg>
+
+        <p>Siapa sangka, daun singkong yang sering dianggap sebagai makanan sederhana justru bisa diolah menjadi camilan yang luar biasa nikmat. Bakwan daun singkong adalah jawabannya! Hidangan ini tidak hanya menggugah selera dengan tekstur renyahnya di luar dan lembut di dalam, tetapi juga menawarkan nilai gizi yang tak kalah penting. Daun singkong kaya akan vitamin A, C, B1, zat besi, dan kalsium, menjadikannya pilihan camilan yang cerdas bagi siapa saja.</p>
+
+        <p>Membuat bakwan daun singkong di rumah ternyata sangat mudah. Dengan bahan-bahan yang mudah ditemukan dan langkah-langkah yang sederhana, Anda bisa menyajikan hidangan istimewa ini kapan saja. Rasanya yang gurih berpadu sempurna dengan sedikit rasa pahit khas daun singkong yang justru menyeimbangkan kekayaan bumbu. Cocok dinikmati selagi hangat bersama keluarga atau teman.</p>
+
+        <h2>Rahasia Kelezatan Bakwan Daun Singkong</h2>
+        <p>Kunci utama kelezatan bakwan daun singkong terletak pada kesegaran bahan dan proporsi adonan yang tepat. Daun singkong segar akan memberikan rasa terbaik. Pastikan daun singkong sudah direbus sebentar hingga agak lunak sebelum diiris dan dicampur dengan adonan tepung. Proses perebusan ini tidak hanya membuat daun lebih mudah dimakan, tetapi juga mengurangi rasa pahitnya.</p>
+        <p>Adonan tepung yang digunakan biasanya terdiri dari tepung terigu, tepung beras, bumbu halus seperti bawang putih, ketumbar, garam, dan merica. Beberapa orang menambahkan sedikit kaldu bubuk untuk memperkaya rasa. Sedikit tambahan tepung beras akan memberikan tekstur yang lebih renyah pada bakwan. Tips penting lainnya adalah menggoreng bakwan dengan minyak yang cukup panas agar hasil luarnya renyah sempurna dan tidak menyerap banyak minyak.</p>
+
+        <h2>Manfaat Kesehatan di Balik Lezatnya Bakwan Daun Singkong</h2>
+        <p>Selain kenikmatannya, bakwan daun singkong juga menyimpan segudang manfaat kesehatan:</p>
+        <ul>
+            <li><strong>Kaya Vitamin dan Mineral:</strong> Daun singkong adalah sumber vitamin A untuk kesehatan mata, vitamin C untuk daya tahan tubuh, serta zat besi yang penting untuk mencegah anemia.</li>
+            <li><strong>Serat Pangan:</strong> Kandungan seratnya membantu melancarkan pencernaan dan memberikan rasa kenyang lebih lama.</li>
+            <li><strong>Rendah Lemak (jika diolah dengan benar):</strong> Dibandingkan camilan gorengan lainnya, bakwan daun singkong bisa menjadi pilihan yang lebih sehat jika tidak terlalu banyak menyerap minyak saat digoreng.</li>
+            <li><strong>Sumber Energi:</strong> Karbohidrat dari tepung memberikan energi bagi tubuh.</li>
+        </ul>
+
+        <h2>Resep Sederhana Bakwan Daun Singkong</h2>
+        <div class="recipe-step">
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>2 ikat daun singkong, rebus sebentar hingga lunak, iris tipis</li>
+                <li>150 gr tepung terigu</li>
+                <li>50 gr tepung beras</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Merica bubuk secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air secukupnya</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+        <div class="recipe-step">
+            <h3>Cara Membuat:</h3>
+            <p><strong>1. Campurkan Bahan Kering:</strong> Dalam wadah, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, garam, merica, dan kaldu bubuk (jika pakai). Aduk rata.</p>
+            <p><strong>2. Buat Adonan:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan tidak terlalu kental atau encer. Konsistensinya harus pas agar bisa melapisi daun singkong dengan baik.</p>
+            <p><strong>3. Masukkan Daun Singkong:</strong> Masukkan irisan daun singkong yang sudah ditiriskan ke dalam adonan tepung. Aduk perlahan hingga seluruh irisan daun singkong terbalut adonan.</p>
+            <p><strong>4. Goreng:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Ambil adonan daun singkong menggunakan sendok atau tangan, lalu goreng hingga berwarna kuning keemasan dan matang sempurna. Angkat dan tiriskan minyaknya.</p>
+            <p><strong>5. Sajikan:</strong> Bakwan daun singkong siap dinikmati selagi hangat. Cocok disantap sebagai camilan pendamping teh atau kopi.</p>
+        </div>
+
+        <p>Dengan resep sederhana ini, Anda bisa menyajikan bakwan daun singkong yang renyah, gurih, dan penuh nutrisi di rumah. Selamat mencoba dan nikmati kelezatannya!</p>
+
+        <a href="#top" class="cta">Kembali ke Atas</a>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-terdekat">Bakpia Terdekat</a></li>
+<li><a href="/resep-buat-bala-bala-enak">Resep Buat Bala Bala Enak</a></li>
+<li><a href="/resep-bakwan-air-fryer">Resep Bakwan Air Fryer</a></li>
+<li><a href="/bahan-bumbu-bakso-mercon">Bahan Bumbu Bakso Mercon</a></li>
+<li><a href="/harga-bakpia-pojok-bu-prapti">Harga Bakpia Pojok Bu Prapti</a></li>
+<li><a href="/resep-cabe-bakwan">Resep Cabe Bakwan</a></li>
+<li><a href="/lactobacillus-sp-untuk-membuat">Lactobacillus Sp Untuk Membuat</a></li>
+<li><a href="/resep-membuat-bakwan-sederhana">Resep Membuat Bakwan Sederhana</a></li>
+<li><a href="/oleh-oleh-bakpia-pathok">Oleh Oleh Bakpia Pathok</a></li>
+<li><a href="/bakwan-goreng-enak">Bakwan Goreng Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

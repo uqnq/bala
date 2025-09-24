@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Mie Bihun Lezat | Resep Viral</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #FFC107; /* Kuning cerah */
+            --background-color: #E0F2F1; /* Biru kehijauan sejuk */
+            --text-color: #333;
+            --heading-color: #2E7D32;
+            --card-background: #FFFFFF;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 16px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .recipe-card {
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .recipe-card h2 {
+            color: var(--heading-color);
+            margin-top: 0;
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .recipe-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            background-color: var(--secondary-color); /* Placeholder background */
+        }
+
+        .recipe-card h3 {
+            color: var(--primary-color);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .recipe-card ul,
+        .recipe-card ol {
+            padding-left: 25px;
+        }
+
+        .recipe-card li {
+            margin-bottom: 10px;
+        }
+
+        .ingredients li::before,
+        .instructions li::before {
+            content: "\2022";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .instructions li::before {
+            content: counter(instruction-counter) ". ";
+            color: var(--secondary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.5em;
+            counter-increment: instruction-counter;
+        }
+
+        .instructions ol {
+            counter-reset: instruction-counter;
+        }
+
+        .note {
+            font-style: italic;
+            color: #666;
+            margin-top: 15px;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        @media (min-width: 600px) {
+            .recipe-card {
+                padding: 30px;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bakwan Mie Bihun Lezat: Resep Mudah dan Enak!</h1>
+        </header>
+
+        <div class="recipe-card">
+            <svg class="recipe-image" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#81C784;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFC107;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFD54F;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="var(--background-color)" rx="20" ry="20"/>
+
+                <!-- Garnish Elements -->
+                <circle cx="100" cy="150" r="30" fill="var(--secondary-color)" opacity="0.7"/>
+                <circle cx="200" cy="200" r="25" fill="var(--primary-color)" opacity="0.7"/>
+                <circle cx="600" cy="100" r="35" fill="var(--secondary-color)" opacity="0.7"/>
+                <circle cx="700" cy="250" r="40" fill="var(--primary-color)" opacity="0.7"/>
+
+                <!-- Abstract Shape resembling cooked bakwan -->
+                <path d="M 300 100 Q 400 50 500 100 T 700 150 Q 600 250 500 250 T 300 200 Q 200 150 300 100 Z" fill="var(--card-background)" stroke="var(--heading-color)" stroke-width="8" />
+                <path d="M 350 120 Q 420 80 480 120 T 580 150 Q 500 220 420 200 T 350 120 Z" fill="var(--card-background)" stroke="var(--heading-color)" stroke-width="6" opacity="0.8"/>
+
+                <!-- Text Overlay (Conceptual) -->
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="var(--heading-color)" font-size="40" font-weight="bold" opacity="0.7">
+                    Bakwan Bihun
+                </text>
+            </svg>
+            <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan mie bihun adalah pilihan sempurna untuk dinikmati saat santai, berkumpul bersama keluarga, atau sekadar teman ngopi. Perpaduan renyahnya adonan tepung dengan tekstur lembut mie bihun yang digoreng keemasan pasti akan membuat ketagihan. Membuatnya pun sangat mudah, bahkan bagi pemula sekalipun. Yuk, simak cara membuat bakwan mie bihun yang lezat ini!</p>
+
+            <h3>Bahan-Bahan:</h3>
+            <ul class="ingredients">
+                <li>200 gram mie bihun, rendam air panas hingga lunak, tiriskan, potong-potong</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1 sendok teh garam (sesuai selera)</li>
+                <li>1/4 sendok teh penyedap rasa (opsional)</li>
+                <li>150-200 ml air dingin (sesuaikan kekentalan adonan)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+
+            <h3>Langkah-Langkah Membuat:</h3>
+            <ol class="instructions">
+                <li>
+                    Dalam sebuah wadah, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan penyedap rasa jika menggunakan. Aduk rata.
+                </li>
+                <li>
+                    Masukkan potongan mie bihun yang sudah ditiriskan ke dalam campuran tepung. Aduk perlahan agar mie bihun terbalut rata dengan tepung.
+                </li>
+                <li>
+                    Tuangkan air dingin sedikit demi sedikit sambil terus diaduk. Pastikan adonan memiliki kekentalan yang pas, tidak terlalu encer dan tidak terlalu kental. Adonan yang baik adalah saat diciduk sendok, adonan jatuh perlahan dan masih menempel pada mie.
+                </li>
+                <li>
+                    Masukkan irisan daun bawang ke dalam adonan, aduk rata.
+                </li>
+                <li>
+                    Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.
+                </li>
+                <li>
+                    Ambil adonan menggunakan sendok atau tangan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga bakwan berwarna kuning keemasan dan matang merata. Balik sesekali agar matang sempurna di kedua sisi.
+                </li>
+                <li>
+                    Angkat bakwan mie bihun yang sudah matang, tiriskan di atas tisu dapur untuk menyerap kelebihan minyak.
+                </li>
+                <li>
+                    Sajikan bakwan mie bihun selagi hangat. Sangat nikmat disantap dengan cabai rawit hijau, saus sambal, atau cocolan favorit lainnya.
+                </li>
+            </ol>
+
+            <h3>Tips Tambahan:</h3>
+            <p>Untuk mendapatkan bakwan yang lebih renyah tahan lama, gunakan air es untuk adonan. Anda juga bisa menambahkan sayuran lain seperti irisan wortel atau kol tipis untuk variasi rasa dan tekstur.</p>
+            <p class="note">Selamat mencoba resep bakwan mie bihun yang mudah dan lezat ini!</p>
+        </div>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi. Semoga resep ini bermanfaat.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-kurnia-sari-tahan-berapa-hari">Bakpia Kurnia Sari Tahan Berapa Hari</a></li>
+<li><a href="/bakwan-jagung-pake-telur">Bakwan Jagung Pake Telur</a></li>
+<li><a href="/cara-membuat-weci-sederhana">Cara Membuat Weci Sederhana</a></li>
+<li><a href="/cara-mencetak-bakso-mercon">Cara Mencetak Bakso Mercon</a></li>
+<li><a href="/balasan-puasa-ramadhan">Balasan Puasa Ramadhan</a></li>
+<li><a href="/bakpia-145-malioboro">Bakpia 145 Malioboro</a></li>
+<li><a href="/resep-bakwan-keladi">Resep Bakwan Keladi</a></li>
+<li><a href="/bakso-mercon-paling-enak">Bakso Mercon Paling Enak</a></li>
+<li><a href="/bakteri-berbahaya">Bakteri Berbahaya</a></li>
+<li><a href="/resep-bakwan-sayur-kriuk">Resep Bakwan Sayur Kriuk</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

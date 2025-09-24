@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakpao Oven: Kelembutan Menggoda, Aroma Memikat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --warna-utama: #a8dadc; /* Biru muda pastel */
+            --warna-pendukung: #f1faee; /* Krem terang */
+            --warna-aksen: #457b9d; /* Biru laut tenang */
+            --warna-teks-gelap: #1d3557; /* Biru tua */
+            --warna-teks-terang: #f8f9fa; /* Putih keabu-abuan */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--warna-pendukung);
+            color: var(--warna-teks-gelap);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--warna-teks-terang);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: var(--warna-aksen);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.7em;
+            margin-top: 30px;
+            border-bottom: 2px solid var(--warna-utama);
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #6c757d;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: var(--warna-aksen);
+            color: var(--warna-teks-terang);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--warna-utama);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            .hero-image {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Keajaiban Bakpao Oven: Kenikmatan Hangat yang Tak Tertandingi</h1>
+
+        <!-- SVG Gambar Bakpao Oven -->
+        <svg class="hero-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradient-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f0f8ff; stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#e0ffff; stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feComponentTransfer>
+                        <feFuncA type="linear" slope="0.5"/>
+                    </feComponentTransfer>
+                    <feMerge>
+                        <feMergeNode/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect width="600" height="400" rx="10" fill="url(#gradient-bg)" filter="url(#shadow)" />
+
+            <!-- Bakpao 1 -->
+            <ellipse cx="150" cy="250" rx="60" ry="40" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+            <ellipse cx="150" cy="210" rx="50" ry="35" fill="#f8f8f8" />
+            <circle cx="150" cy="200" r="10" fill="#d4af37" /> <!-- Isian emas -->
+            <path d="M140 195 Q 150 185 160 195" stroke="#999999" stroke-width="2" fill="none"/>
+
+            <!-- Bakpao 2 -->
+            <ellipse cx="300" cy="230" rx="70" ry="50" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+            <ellipse cx="300" cy="190" rx="60" ry="45" fill="#f8f8f8" />
+            <circle cx="300" cy="180" r="12" fill="#a0522d" /> <!-- Isian coklat -->
+            <path d="M290 185 Q 300 175 310 185" stroke="#999999" stroke-width="2" fill="none"/>
+
+            <!-- Bakpao 3 -->
+            <ellipse cx="450" cy="260" rx="55" ry="35" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+            <ellipse cx="450" cy="225" rx="45" ry="30" fill="#f8f8f8" />
+            <circle cx="450" cy="215" r="9" fill="#ff6347" /> <!-- Isian stroberi -->
+            <path d="M445 220 Q 450 210 455 220" stroke="#999999" stroke-width="2" fill="none"/>
+
+            <!-- Garis Aksen -->
+            <line x1="0" y1="350" x2="600" y2="350" stroke="#457b9d" stroke-width="5" />
+            <line x1="50" y1="360" x2="550" y2="360" stroke="#a8dadc" stroke-width="3" />
+
+            <!-- Teks Sederhana -->
+            <text x="300" y="50" font-size="30" fill="#1d3557" text-anchor="middle" font-weight="bold">Bakpao Oven</text>
+            <text x="300" y="90" font-size="18" fill="#457b9d" text-anchor="middle">Kelembutan & Aroma</text>
+        </svg>
+        <p class="image-caption">Ilustrasi bakpao oven yang menggugah selera dengan berbagai isian.</p>
+
+        <div class="section">
+            <h2>Apa Itu Bakpao Oven?</h2>
+            <p>Bakpao, makanan tradisional yang identik dengan kukusan, kini hadir dengan inovasi yang tak kalah lezat: bakpao oven. Berbeda dari bakpao kukus yang memiliki tekstur lembut dan sedikit basah, bakpao oven menawarkan sensasi yang berbeda. Kulitnya menjadi lebih renyah di bagian luar namun tetap lembut dan empuk di dalamnya, menciptakan kontras rasa dan tekstur yang unik dan memanjakan lidah. Proses pemanggangan dalam oven menghasilkan aroma yang lebih kaya dan sedikit aroma gosong yang khas, menambah kompleksitas cita rasa.</p>
+        </div>
+
+        <div class="section">
+            <h2>Keistimewaan Bakpao Oven</h2>
+            <p>Banyak alasan mengapa bakpao oven patut dicoba. Pertama, variasi teksturnya. Perpaduan kulit yang sedikit garing di luar dan super lembut di dalam adalah daya tarik utamanya. Kedua, aroma panggangannya yang khas. Panas dari oven mengeluarkan aroma yang berbeda, lebih intens dan memikat, apalagi jika dipadukan dengan isian yang manis atau gurih.</p>
+            <p>Proses pembuatannya pun menjadi lebih praktis bagi sebagian orang. Tidak perlu repot mengukus berulang kali, cukup masukkan ke dalam oven dan tunggu hingga matang sempurna. Hasilnya adalah bakpao dengan tampilan yang lebih menarik, seringkali berwarna keemasan di bagian permukaannya, memberikan kesan premium dan menggugah selera. Keserbagunaannya juga menjadi nilai tambah. Bakpao oven bisa dinikmati sebagai sarapan ringan, camilan sore, atau bahkan hidangan penutup.</p>
+        </div>
+
+        <div class="section">
+            <h2>Tips Membuat Bakpao Oven Sempurna</h2>
+            <p>Untuk menghasilkan bakpao oven yang sempurna, ada beberapa hal yang perlu diperhatikan. Gunakan resep adonan roti yang baik agar mendapatkan kelembutan yang diinginkan. Kunci utamanya adalah proses fermentasi yang tepat, baik saat menguleni maupun saat proses <em>proofing</em>.</p>
+            <p>Saat memanggang, perhatikan suhu dan waktu. Suhu oven yang terlalu tinggi bisa membuat kulit gosong sebelum bagian dalamnya matang, sementara suhu yang terlalu rendah akan menghasilkan bakpao yang kurang matang atau kering. Gunakan suhu sedang (sekitar 180-190°C) dan panggang hingga permukaan bakpao berwarna keemasan dan matang sempurna. Jangan lupa untuk mendinginkannya sebentar sebelum disajikan agar teksturnya lebih stabil.</p>
+        </div>
+
+        <div class="section">
+            <h2>Variasi Isian yang Menggoda</h2>
+            <p>Sama seperti bakpao kukus, bakpao oven juga bisa diisi dengan berbagai macam isian favorit. Isian klasik seperti kacang hijau, cokelat, atau daging cincang tetap menjadi pilihan populer. Namun, jangan ragu untuk berkreasi! Coba isian keju leleh, sosis, ayam pedas, bahkan isian manis seperti selai buah atau krim custard. Kombinasi isian yang tepat dengan kulit bakpao oven yang khas akan menciptakan pengalaman kuliner yang tak terlupakan.</p>
+        </div>
+
+        <a href="#" class="cta-button">Coba Resep Bakpao Oven Sekarang!</a>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-perkedel-jagung-enak-dan-renyah">Resep Perkedel Jagung Enak Dan Renyah</a></li>
+<li><a href="/bakwan-jagung-campur-sayuran">Bakwan Jagung Campur Sayuran</a></li>
+<li><a href="/bakwan-enggal">Bakwan Enggal</a></li>
+<li><a href="/pia-tugu-terdekat">Pia Tugu Terdekat</a></li>
+<li><a href="/cara-membuat-pia-coklat-lumer">Cara Membuat Pia Coklat Lumer</a></li>
+<li><a href="/cara-membuat-pao-kukus">Cara Membuat Pao Kukus</a></li>
+<li><a href="/bakpao-karakter-ayam">Bakpao Karakter Ayam</a></li>
+<li><a href="/bakso-beranak-krian">Bakso Beranak Krian</a></li>
+<li><a href="/balado-daging">Balado Daging</a></li>
+<li><a href="/bahan-bumbu-bakso-mercon">Bahan Bumbu Bakso Mercon</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

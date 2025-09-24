@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Bakwan Jagung Terdekat & Lezat!</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - Warna sejuk cerah */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            min-height: 100vh; /* Ensure it takes at least full viewport height */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px; /* Limit width for better readability on larger screens */
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 30px; /* Add some space from the top */
+            margin-bottom: 30px; /* Add some space at the bottom */
+        }
+
+        h1 {
+            color: #0077cc; /* Biru cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #33a0ff; /* Biru lebih cerah */
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #ff8c00; /* Orange - Memberi aksen cerah */
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: #20b2aa; /* LightSeaGreen - Warna cerah dan sejuk */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(32, 178, 170, 0.3); /* Shadow for the button */
+        }
+
+        .cta-button:hover {
+            background-color: #2e8b57; /* SeaGreen - Warna sedikit lebih gelap saat hover */
+        }
+
+        .search-tip {
+            background-color: #e0ffff; /* LightCyan - Warna sejuk untuk tips */
+            padding: 15px;
+            border-left: 5px solid #4682b4; /* SteelBlue */
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .search-tip p {
+            margin-bottom: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .cta-button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Temukan Bakwan Jagung Terlezat di Sekitar Anda!</h1>
+
+        <div class="image-container">
+            <!-- SVG Image: A stylized bakwan jagung with a bright, cheerful feel -->
+            <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" /> <!-- Gold -->
+                        <stop offset="100%" style="stop-color:#ffae42;stop-opacity:1" /> <!-- Bright Orange -->
+                    </linearGradient>
+                    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                        <feOffset dx="2" dy="2" result="shadowOffset"/>
+                        <feMerge>
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <!-- Base shape of bakwan -->
+                <ellipse cx="100" cy="75" rx="80" ry="55" fill="url(#grad1)" filter="url(#shadow)"/>
+
+                <!-- Jagung kernels (simplified) -->
+                <g fill="#ffa500"> <!-- Orange for kernels -->
+                    <circle cx="50" cy="50" r="4"/>
+                    <circle cx="70" cy="40" r="4"/>
+                    <circle cx="90" cy="35" r="4"/>
+                    <circle cx="110" cy="35" r="4"/>
+                    <circle cx="130" cy="40" r="4"/>
+                    <circle cx="150" cy="50" r="4"/>
+                    <circle cx="40" cy="70" r="4"/>
+                    <circle cx="60" cy="60" r="4"/>
+                    <circle cx="80" cy="55" r="4"/>
+                    <circle cx="100" cy="55" r="4"/>
+                    <circle cx="120" cy="55" r="4"/>
+                    <circle cx="140" cy="60" r="4"/>
+                    <circle cx="160" cy="70" r="4"/>
+                    <circle cx="35" cy="90" r="4"/>
+                    <circle cx="55" cy="75" r="4"/>
+                    <circle cx="75" cy="70" r="4"/>
+                    <circle cx="95" cy="70" r="4"/>
+                    <circle cx="115" cy="70" r="4"/>
+                    <circle cx="135" cy="75" r="4"/>
+                    <circle cx="155" cy="90" r="4"/>
+                    <circle cx="40" cy="110" r="4"/>
+                    <circle cx="60" cy="95" r="4"/>
+                    <circle cx="80" cy="90" r="4"/>
+                    <circle cx="100" cy="90" r="4"/>
+                    <circle cx="120" cy="90" r="4"/>
+                    <circle cx="140" cy="95" r="4"/>
+                    <circle cx="160" cy="110" r="4"/>
+                    <circle cx="50" cy="120" r="4"/>
+                    <circle cx="70" cy="110" r="4"/>
+                    <circle cx="90" cy="105" r="4"/>
+                    <circle cx="110" cy="105" r="4"/>
+                    <circle cx="130" cy="110" r="4"/>
+                    <circle cx="150" cy="120" r="4"/>
+                </g>
+                <!-- Outline of a leaf element (optional for garnish) -->
+                <path d="M20,80 Q30,100 60,120 T120,130 T180,110 Q170,90 150,85" fill="#90ee90" stroke="#32cd32" stroke-width="2"/> <!-- Light green with darker green outline -->
+            </svg>
+            <p><small>Ilustrasi bakwan jagung yang menggugah selera!</small></p>
+        </div>
+
+        <p>Apakah Anda sedang mendambakan camilan gurih yang renyah di luar dan lembut di dalam? Sesuatu yang pas dinikmati kapan saja, baik saat bersantai di rumah, bertemu teman, atau sekadar mengisi perut di tengah aktivitas padat? Jika jawabannya "ya", maka <span class="highlight">bakwan jagung</span> adalah pilihan yang sempurna!</p>
+
+        <p>Makanan ringan tradisional Indonesia ini memiliki daya tarik universal. Terbuat dari campuran jagung manis segar, tepung terigu, telur, dan berbagai bumbu rempah, setiap gigitan bakwan jagung menawarkan ledakan rasa yang manis dan gurih. Teksturnya yang khas – garing di luar berkat proses penggorengan yang tepat, namun tetap lembut dan sedikit 'meleleh' di dalam – menjadikannya favorit banyak orang.</p>
+
+        <h2>Mencari Bakwan Jagung Terdekat Menjadi Lebih Mudah</h2>
+
+        <p>Di era serba cepat ini, kenyamanan adalah kunci. Anda tidak perlu lagi berkeliling kota mencari warung atau restoran yang menyajikan bakwan jagung berkualitas. Dengan teknologi yang ada, menemukan <span class="highlight">bakwan jagung terdekat</span> kini dapat dilakukan hanya dengan beberapa ketukan atau klik.</p>
+
+        <p>Baik Anda menggunakan peta digital di ponsel atau situs web pencarian kuliner, cukup masukkan frasa "bakwan jagung terdekat" di kolom pencarian Anda. Anda akan disajikan daftar tempat makan yang direkomendasikan di area Anda, lengkap dengan informasi seperti alamat, jam buka, dan bahkan ulasan dari pelanggan lain. Ini sangat membantu Anda memilih tempat yang paling sesuai dengan preferensi Anda, memastikan Anda mendapatkan pengalaman kuliner yang memuaskan.</p>
+
+        <div class="search-tip">
+            <p><strong>Tips Mencari:</strong> Saat mencari, perhatikan juga rating dan ulasan dari pengguna lain. Ini bisa memberi gambaran tentang kualitas dan rasa bakwan jagung di tempat tersebut.</p>
+        </div>
+
+        <h2>Kenapa Bakwan Jagung Selalu Jadi Pilihan?</h2>
+
+        <p>Keunggulan bakwan jagung tidak hanya terletak pada rasanya yang lezat. Makanan ini juga relatif terjangkau dan mudah ditemukan di berbagai jenis tempat makan, mulai dari pedagang kaki lima, warung makan sederhana, hingga restoran-restoran yang lebih modern. Fleksibilitas ini membuatnya dapat diakses oleh siapa saja, kapan saja.</p>
+
+        <p>Selain itu, bakwan jagung juga bisa menjadi pilihan yang lebih sehat jika diolah dengan benar. Menggunakan jagung segar berkualitas, tidak menggorengnya terlalu lama, dan menyajikannya dengan pendamping yang tepat seperti cabai rawit atau sambal kecap dapat menambah kenikmatan tanpa perlu khawatir berlebihan.</p>
+
+        <p>Jadi, kapan terakhir kali Anda menikmati semangkuk bakwan jagung hangat yang baru digoreng? Jika sudah lama, jangan tunda lagi! Gunakan kemudahan teknologi untuk mencari <span class="highlight">bakwan jagung terdekat</span> Anda sekarang juga. Nikmati sensasi renyah dan gurihnya yang akan membuat hari Anda menjadi lebih cerah!</p>
+
+        <a href="#" class="cta-button">Cari Bakwan Jagung Sekarang!</a>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/harga-bakpia-jogjaku">Harga Bakpia Jogjaku</a></li>
+<li><a href="/makanan-mirip-bakpao">Makanan Mirip Bakpao</a></li>
+<li><a href="/penyakit-pada-jagung-yang-disebabkan-oleh-bakteri">Penyakit Pada Jagung Yang Disebabkan Oleh Bakteri</a></li>
+<li><a href="/membuat-ote-ote">Membuat Ote Ote</a></li>
+<li><a href="/resep-bakwan-wortel-renyah">Resep Bakwan Wortel Renyah</a></li>
+<li><a href="/bakpia-kurnia-sari-jl-godean">Bakpia Kurnia Sari Jl Godean</a></li>
+<li><a href="/baklava-grecia">Baklava Grecia</a></li>
+<li><a href="/harga-bakpia-wong">Harga Bakpia Wong</a></li>
+<li><a href="/harga-bakwan-kapasari">Harga Bakwan Kapasari</a></li>
+<li><a href="/cara-masak-bakwan-jagung-yang-enak">Cara Masak Bakwan Jagung Yang Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

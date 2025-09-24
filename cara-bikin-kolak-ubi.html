@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Bikin Kolak Ubi Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        :root {
+            --warna-utama: #80CED9; /* Biru muda cerah */
+            --warna-sekunder: #90EE90; /* Hijau muda cerah */
+            --warna-teks-gelap: #333;
+            --warna-teks-terang: #fff;
+            --warna-border: #ADD8E6; /* Biru sangat muda */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F0FFF0; /* Krem sangat muda */
+            color: var(--warna-teks-gelap);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px; /* Padding atas untuk memberi ruang */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: var(--warna-teks-terang);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--warna-utama);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--warna-sekunder);
+            border-bottom: 2px solid var(--warna-border);
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        p, ul, ol {
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid var(--warna-border);
+        }
+
+        .instructions, .ingredients {
+            background-color: #E0FFFF; /* Biru pucat */
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px dashed var(--warna-utama);
+        }
+
+        .ingredients ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .ingredients li {
+            font-weight: bold;
+        }
+
+        .steps ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        .steps li {
+            margin-bottom: 15px;
+        }
+
+        strong {
+            color: var(--warna-utama);
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.7em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" aria-labelledby="kolakTitle">
+                <title id="kolakTitle">Ilustrasi Kolak Ubi dalam Mangkuk</title>
+                <defs>
+                    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFB300;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFD54F;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad-coconut" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#E0E0E0;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#F5F5F5;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Background -->
+                <rect width="100%" height="100%" fill="#FFF8DC"/>
+
+                <!-- Mangkuk -->
+                <ellipse cx="250" cy="240" rx="200" ry="30" fill="#A0522D"/>
+                <path d="M 50 230 Q 250 150 450 230 L 450 240 L 50 240 Z" fill="#D2B48C"/>
+
+                <!-- Ubi -->
+                <ellipse cx="180" cy="150" rx="40" ry="60" fill="url(#grad-orange)" transform="rotate(-10 180 150)"/>
+                <ellipse cx="320" cy="160" rx="45" ry="55" fill="url(#grad-orange)" transform="rotate(15 320 160)"/>
+                <ellipse cx="250" cy="140" rx="35" ry="50" fill="url(#grad-orange)" transform="rotate(-5 250 140)"/>
+
+                <!-- Kuah Santan -->
+                <path d="M 50 180 Q 250 120 450 180 L 450 230 Q 250 190 50 230 Z" fill="#F0FFF0" opacity="0.8"/>
+                <path d="M 50 190 Q 250 130 450 190 L 450 230 Q 250 200 50 230 Z" fill="url(#grad-coconut)" opacity="0.6"/>
+
+                <!-- Daun Pandan (stylized) -->
+                <path d="M 100 90 Q 120 70 140 90 L 130 110 Q 120 100 100 110 Z" fill="#32CD32" opacity="0.8"/>
+                <path d="M 150 80 Q 170 60 190 80 L 180 100 Q 170 90 150 100 Z" fill="#2E8B57" opacity="0.7"/>
+                <path d="M 350 100 Q 370 80 390 100 L 380 120 Q 370 110 350 120 Z" fill="#32CD32" opacity="0.8"/>
+            </svg>
+        </div>
+
+        <h1>Cara Bikin Kolak Ubi Lezat & Menggugah Selera</h1>
+        <p>Kolak ubi adalah salah satu hidangan penutup tradisional Indonesia yang sangat populer, terutama saat bulan Ramadan. Kombinasi manisnya santan, gula merah, dan ubi yang lembut menjadikannya pilihan sempurna untuk berbuka puasa atau sekadar camilan manis di sore hari. Jangan khawatir, membuatnya di rumah ternyata sangat mudah dan tidak memerlukan bahan-bahan yang sulit ditemukan.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan Utama</h2>
+            <ul>
+                <li><strong>Ubi jalar:</strong> 500 gram, pilih yang berwarna oranye atau kuning agar warnanya cantik. Kupas dan potong dadu ukuran sedang.</li>
+                <li><strong>Santan:</strong> 700 ml, bisa menggunakan santan instan yang dicampur air atau santan segar. Gunakan santan kental dan santan encer jika perlu pemisahan.</li>
+                <li><strong>Gula merah:</strong> 150-200 gram, sisir halus. Sesuaikan tingkat kemanisannya dengan selera.</li>
+                <li><strong>Daun pandan:</strong> 2-3 lembar, ikat simpul.</li>
+                <li><strong>Gula pasir:</strong> 2-3 sendok makan (opsional, jika kurang manis).</li>
+                <li><strong>Garam:</strong> ½ sendok teh, untuk menyeimbangkan rasa.</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Langkah-langkah Membuat Kolak Ubi</h2>
+            <ol>
+                <li><strong>Persiapan Ubi:</strong> Setelah ubi dikupas dan dipotong dadu, cuci bersih. Jika ubi yang Anda gunakan agak berair, Anda bisa merebusnya terlebih dahulu sebentar hingga setengah matang untuk mengurangi getahnya. Tiriskan.</li>
+                <li><strong>Merebus Santan dan Gula Merah:</strong> Siapkan panci, masukkan santan, gula merah yang sudah disisir, dan garam. Aduk rata. Masak dengan api sedang sambil terus diaduk agar santan tidak pecah.</li>
+                <li><strong>Memasak Ubi:</strong> Setelah gula merah larut dan santan mulai mendidih, masukkan potongan ubi. Tambahkan daun pandan yang sudah disimpul. Kecilkan api.</li>
+                <li><strong>Memasak Hingga Matang:</strong> Masak kolak hingga ubi benar-benar empuk dan matang. Aduk sesekali agar ubi tidak hancur berantakan dan bagian bawah panci tidak gosong. Jika Anda menggunakan santan kental dan santan encer, masukkan santan encer terlebih dahulu bersama ubi, lalu tambahkan santan kental menjelang akhir agar rasa gurihnya tetap terjaga dan tidak mudah pecah.</li>
+                <li><strong>Pengecekan Rasa:</strong> Cicipi kuahnya. Jika dirasa kurang manis, tambahkan gula pasir sesuai selera. Pastikan rasa manis, gurih, dan sedikit asinnya berpadu harmonis.</li>
+                <li><strong>Penyajian:</strong> Angkat kolak ubi dari kompor. Sajikan selagi hangat dalam mangkuk. Anda juga bisa mendinginkannya terlebih dahulu di lemari es jika lebih suka kolak dingin.</li>
+            </ol>
+        </div>
+
+        <p>Tips tambahan untuk membuat kolak ubi Anda semakin spesial:</p>
+        <ul>
+            <li>Anda bisa menambahkan potongan pisang kepok atau kolang-kaling ke dalam kolak untuk variasi tekstur.</li>
+            <li>Pastikan ubi yang digunakan berkualitas baik, tidak terlalu lembek atau berair.</li>
+            <li>Jangan memasak kolak dengan api terlalu besar setelah santan mendidih agar santan tidak pecah.</li>
+        </ul>
+        <p>Menikmati semangkuk kolak ubi hangat buatan sendiri pasti akan memberikan kehangatan tersendiri. Selamat mencoba resep sederhana ini!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-65">Bakpao 65</a></li>
+<li><a href="/harga-bakpia-pathok-234">Harga Bakpia Pathok 234</a></li>
+<li><a href="/profil-bakpia-pathok-25">Profil Bakpia Pathok 25</a></li>
+<li><a href="/bakso-mercon-ayasya">Bakso Mercon Ayasya</a></li>
+<li><a href="/bala-bala-sayur">Bala Bala Sayur</a></li>
+<li><a href="/bakso-beranak-terdekat-dari-sini">Bakso Beranak Terdekat Dari Sini</a></li>
+<li><a href="/bala-net">Bala Net</a></li>
+<li><a href="/resep-ote2-empuk">Resep Ote2 Empuk</a></li>
+<li><a href="/perkedel-jagung-pakai-telur">Perkedel Jagung Pakai Telur</a></li>
+<li><a href="/bakteri-pseudomonas-sp">Bakteri Pseudomonas Sp</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

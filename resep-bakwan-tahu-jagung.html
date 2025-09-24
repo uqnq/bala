@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Tahu Jagung Super Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna judul cerah */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #009688; /* Warna sub-judul cerah */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #b2dfdb;
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .resep-detail {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-around;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f0f8ff; /* Latar detail yang sedikit berbeda */
+            border-radius: 8px;
+        }
+        .resep-detail span {
+            font-weight: bold;
+            color: #00796b;
+        }
+        .bahan, .cara-membuat {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+        .bahan li, .cara-membuat li {
+            margin-bottom: 10px;
+        }
+        .gambar-resep {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .gambar-resep svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .tips {
+            background-color: #fff9c4; /* Latar tips yang cerah */
+            padding: 15px;
+            border-left: 5px solid #fbc02d;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+        .tips h3 {
+            margin-top: 0;
+            color: #f57f17;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .resep-detail {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gambar-resep">
+            <svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#4caf50;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="500" height="200" rx="10" fill="url(#grad1)" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="35" fill="#ffffff" font-weight="bold">
+                    Bakwan Tahu Jagung
+                </text>
+                <path d="M 50 150 Q 100 120 150 150 T 250 150 T 350 150 T 450 150" stroke="#ffeb3b" stroke-width="4" fill="none" />
+                <circle cx="100" cy="140" r="5" fill="#ffeb3b" />
+                <circle cx="200" cy="140" r="5" fill="#ffeb3b" />
+                <circle cx="300" cy="140" r="5" fill="#ffeb3b" />
+                <circle cx="400" cy="140" r="5" fill="#ffeb3b" />
+                <rect x="220" y="70" width="60" height="60" rx="5" fill="#fbc02d" transform="rotate(15 250 100)" />
+                <text x="250" y="105" text-anchor="middle" font-size="12" fill="#333">Gurih</text>
+            </svg>
+        </div>
+        <h1>Resep Bakwan Tahu Jagung Super Renyah</h1>
+        <p>
+            Siapa yang bisa menolak kelezatan bakwan? Terutama jika bakwan tersebut terbuat dari kombinasi tahu yang lembut dan jagung manis yang juicy, lalu digoreng hingga super renyah. Resep bakwan tahu jagung ini adalah pilihan sempurna untuk camilan sore bersama keluarga atau hidangan pendamping saat makan. Sangat mudah dibuat dan bahan-bahannya pun mudah didapatkan, menjadikannya favorit banyak orang. Mari kita mulai petualangan kuliner menciptakan bakwan tahu jagung yang menggugah selera ini!
+        </p>
+
+        <div class="resep-detail">
+            <span>Waktu Persiapan: 15 menit</span>
+            <span>Waktu Memasak: 20 menit</span>
+            <span>Porsi: 4-6 orang</span>
+        </div>
+
+        <h2>Bahan-bahan</h2>
+        <ul class="bahan">
+            <li>2 buah tahu putih ukuran sedang, haluskan kasar</li>
+            <li>1 buah jagung manis, pipil atau serut kasar</li>
+            <li>5 sdm tepung terigu serbaguna</li>
+            <li>2 sdm tepung beras (untuk kerahasiaan renyah ekstra)</li>
+            <li>1 batang daun bawang, iris tipis</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sdt ketumbar bubuk</li>
+            <li>1/4 sdt merica bubuk</li>
+            <li>Garam secukupnya</li>
+            <li>Kaldu bubuk secukupnya (opsional)</li>
+            <li>Air secukupnya (sekitar 50-75 ml, sesuaikan kekentalan)</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Cara Membuat</h2>
+        <ul class="cara-membuat">
+            <li>Dalam sebuah wadah, campurkan tahu yang sudah dihaluskan, jagung pipil/serut, irisan daun bawang, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+            <li>Masukkan tepung terigu dan tepung beras ke dalam campuran tahu jagung. Aduk kembali hingga tercampur merata.</li>
+            <li>Tambahkan air sedikit demi sedikit sambil terus diaduk. Adonan yang ideal adalah tidak terlalu encer namun juga tidak terlalu kental, sehingga bisa menempel pada tahu dan jagung saat digoreng.</li>
+            <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam sempurna.</li>
+            <li>Setelah minyak panas, ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Bentuk bulat pipih sesuai selera. Lakukan hingga wajan terisi secukupnya, jangan terlalu penuh agar bakwan matang merata.</li>
+            <li>Goreng bakwan hingga satu sisi berwarna cokelat keemasan. Balikkan dan goreng sisi satunya hingga matang merata dan renyah.</li>
+            <li>Angkat bakwan dan tiriskan di atas kertas tisu dapur untuk menyerap kelebihan minyak.</li>
+            <li>Sajikan bakwan tahu jagung selagi hangat bersama cabai rawit hijau, sambal kecap, atau saus favorit Anda.</li>
+        </ul>
+
+        <div class="tips">
+            <h3>Tips Membuat Bakwan Tahu Jagung Lebih Renyah</h3>
+            <p>
+                Untuk hasil bakwan yang ekstra renyah, ada beberapa trik yang bisa Anda coba. Pertama, jangan terlalu banyak menggunakan air saat mengencerkan adonan. Konsistensi yang pas adalah kunci. Kedua, penggunaan tepung beras selain tepung terigu sangat direkomendasikan karena pati beras membantu menciptakan tekstur yang lebih garing. Ketiga, pastikan minyak benar-benar panas sebelum menggoreng dan gunakan api sedang agar bagian dalam matang sempurna sementara luarnya tetap renyah. Jangan menggoreng terlalu banyak bakwan dalam satu waktu agar suhu minyak tetap stabil.
+            </p>
+        </div>
+
+        <p>
+            Bakwan tahu jagung ini adalah camilan serbaguna yang bisa dinikmati kapan saja. Kelembutan tahu berpadu dengan sensasi kriuk manis dari jagung akan memberikan pengalaman rasa yang berbeda. Cocok sekali disantap saat cuaca dingin atau saat berkumpul bersama orang-orang tersayang. Selamat mencoba dan nikmati kelezatannya!
+        </p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-kedaton-jalan-magelang">Bakpia Kedaton Jalan Magelang</a></li>
+<li><a href="/bakpia-pia-pia">Bakpia Pia Pia</a></li>
+<li><a href="/bakwan-jagung-pakai-tepung-beras">Bakwan Jagung Pakai Tepung Beras</a></li>
+<li><a href="/cara-membuat-bakpao-coklat-takaran-sendok">Cara Membuat Bakpao Coklat Takaran Sendok</a></li>
+<li><a href="/resep-bakso-mercon-enak">Resep Bakso Mercon Enak</a></li>
+<li><a href="/cara-membuat-bakpao-agar-tidak-keriput">Cara Membuat Bakpao Agar Tidak Keriput</a></li>
+<li><a href="/kalori-baklava">Kalori Baklava</a></li>
+<li><a href="/resep-buat-bakwan">Resep Buat Bakwan</a></li>
+<li><a href="/bakwan-nasi-mpasi">Bakwan Nasi Mpasi</a></li>
+<li><a href="/cara-membuat-bala-bala-kol">Cara Membuat Bala Bala Kol</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

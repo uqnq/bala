@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Tahu Mie: Lezat & Mudah Dibuat!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #8ECDDD; /* Biru sejuk */
+            --secondary-color: #F9D5A8; /* Kuning cerah */
+            --text-color: #333;
+            --background-color: #F0FFFF; /* Biru muda kehijauan */
+            --accent-color: #6BBF59; /* Hijau cerah */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 768px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .ingredients ul, .instructions ol {
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+
+        .ingredients strong, .instructions strong {
+            color: var(--accent-color);
+        }
+
+        .tips {
+            background-color: var(--secondary-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+
+        .tips h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.3em;
+        }
+
+        .tips p {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" aria-label="Ilustrasi bakwan tahu mie yang lezat dengan taburan daun bawang dan cabai">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--accent-color);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="400" rx="15" fill="var(--background-color)"/>
+                <!-- Tahu -->
+                <path d="M150 150 H350 V250 H150 Z" fill="#FFDDAA" stroke="#E0C090" stroke-width="3"/>
+                <path d="M160 160 H340 V240 H160 Z" fill="#FFF8E1"/>
+                <path d="M250 170 L230 190 L250 210 L270 190 Z" fill="#E0C090"/>
+                <path d="M250 210 L230 230 L250 250 L270 230 Z" fill="#E0C090"/>
+
+                <!-- Mie -->
+                <g stroke="var(--secondary-color)" stroke-width="2" fill="none">
+                    <path d="M450 160 Q460 150 470 160 T490 160" />
+                    <path d="M450 180 Q460 170 470 180 T490 180" />
+                    <path d="M450 200 Q460 190 470 200 T490 200" />
+                    <path d="M450 220 Q460 210 470 220 T490 220" />
+                </g>
+                <circle cx="480" cy="170" r="5" fill="#FF6B6B" />
+                <circle cx="480" cy="190" r="5" fill="#FF6B6B" />
+                <circle cx="480" cy="210" r="5" fill="#FF6B6B" />
+
+                <!-- Daun Bawang -->
+                <g>
+                    <path d="M550 150 L560 130 L570 150 Z" fill="#6BBF59" />
+                    <path d="M560 130 L570 110 L580 130 Z" fill="#6BBF59" />
+                    <path d="M560 150 L550 170 L570 160 Z" fill="#6BBF59" />
+                </g>
+                <g>
+                    <path d="M650 140 L660 120 L670 140 Z" fill="#6BBF59" />
+                    <path d="M660 120 L670 100 L680 120 Z" fill="#6BBF59" />
+                    <path d="M660 140 L650 160 L670 150 Z" fill="#6BBF59" />
+                </g>
+
+                <!-- Teks Judul -->
+                <text x="400" y="60" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="var(--primary-color)" text-anchor="middle">Bakwan Tahu Mie</text>
+            </svg>
+        </div>
+
+        <h1>Resep Bakwan Tahu Mie: Kombinasi Unik yang Menggugah Selera!</h1>
+
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan adalah salah satu camilan favorit keluarga Indonesia. Namun, pernahkah Anda mencoba variasi bakwan yang sedikit berbeda? Bakwan Tahu Mie hadir sebagai solusi bagi Anda yang ingin menikmati sesuatu yang baru namun tetap akrab di lidah. Perpaduan lembutnya tahu, tekstur unik mie, dan kerenyahan adonan bakwan menciptakan pengalaman rasa yang tak terlupakan. Hidangan ini sangat cocok dinikmati saat santai bersama keluarga, teman, atau bahkan sebagai bekal makan siang yang praktis.</p>
+
+        <p>Membuat bakwan tahu mie ternyata tidak serumit yang dibayangkan. Dengan bahan-bahan yang mudah ditemukan di pasar atau supermarket, Anda bisa menyajikan hidangan lezat ini di rumah. Proses pembuatannya pun cukup sederhana, menjadikannya pilihan yang ideal bahkan bagi Anda yang masih pemula dalam dunia memasak. Cukup ikuti langkah-langkah berikut, dan nikmati kelezatan bakwan tahu mie buatan sendiri.</p>
+
+        <h2>Bahan-Bahan yang Anda Perlukan</h2>
+        <div class="ingredients">
+            <ul>
+                <li><strong>Tahu</strong>: 4-5 buah tahu putih, haluskan atau potong dadu kecil.</li>
+                <li><strong>Mie</strong>: 1 bungkus mie instan (rasa apa saja sesuai selera), seduh sebentar lalu potong-potong agar lebih mudah dicampur.</li>
+                <li><strong>Tepung terigu</strong>: 150 gram.</li>
+                <li><strong>Tepung beras</strong>: 50 gram (opsional, untuk menambah kerenyahan).</li>
+                <li><strong>Telur</strong>: 1 butir, kocok lepas.</li>
+                <li><strong>Daun bawang</strong>: 2 batang, iris tipis.</li>
+                <li><strong>Bumbu Halus</strong>: 3 siung bawang putih, 1/2 sendok teh merica bubuk, 1/2 sendok teh ketumbar bubuk, garam secukupnya, penyedap rasa (opsional).</li>
+                <li><strong>Air</strong>: Secukupnya, untuk membuat adonan.</li>
+                <li><strong>Minyak goreng</strong>: Secukupnya, untuk menggoreng.</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Bakwan Tahu Mie</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Persiapan Tahu dan Mie</strong>: Jika menggunakan tahu putih, hancurkan hingga halus atau potong dadu kecil. Jika ingin tekstur yang lebih beragam, tahu bisa dipotong dadu kecil lalu sedikit dihancurkan. Untuk mie instan, seduh dengan air panas sebentar, tiriskan, lalu potong-potong menjadi ukuran yang lebih pendek.</li>
+                <li><strong>Membuat Adonan Bakwan</strong>: Dalam wadah yang cukup besar, campurkan tepung terigu dan tepung beras (jika menggunakan). Masukkan bumbu halus (bawang putih, merica, ketumbar, garam, penyedap rasa). Aduk rata.</li>
+                <li><strong>Menambahkan Bahan Lain</strong>: Masukkan tahu yang sudah dihaluskan/dipotong, mie yang sudah dipotong, telur kocok, dan irisan daun bawang ke dalam campuran tepung. Aduk semua bahan hingga tercampur rata.</li>
+                <li><strong>Mengatur Kekentalan Adonan</strong>: Tambahkan air sedikit demi sedikit sambil terus diaduk hingga adonan bakwan memiliki kekentalan yang pas. Adonan tidak boleh terlalu encer agar tidak mudah hancur saat digoreng, namun juga tidak terlalu kental agar hasilnya renyah. Kekentalan yang ideal adalah seperti adonan pisang goreng.</li>
+                <li><strong>Proses Menggoreng</strong>: Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum memasukkan adonan. Ambil satu sendok adonan, lalu goreng hingga berwarna kuning keemasan dan matang merata di kedua sisinya. Angkat dan tiriskan.</li>
+                <li><strong>Sajikan</strong>: Bakwan Tahu Mie siap disajikan selagi hangat. Nikmati dengan cabai rawit hijau atau sambal favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h3>Tips Tambahan untuk Bakwan Sempurna</h3>
+            <p>Agar bakwan Anda semakin lezat dan renyah:</p>
+            <ul>
+                <li>Gunakan perbandingan tepung terigu dan tepung beras yang tepat. Tepung beras sangat membantu memberikan tekstur garing.</li>
+                <li>Jangan menggoreng bakwan dalam minyak yang kurang panas, karena akan membuat bakwan menyerap banyak minyak dan menjadi lembek.</li>
+                <li>Goreng bakwan dalam jumlah yang tidak terlalu banyak dalam satu waktu agar suhu minyak tetap stabil dan bakwan matang merata.</li>
+                <li>Pastikan bumbu halusnya benar-benar halus agar rasa merata.</li>
+                <li>Anda bisa menambahkan sayuran lain seperti wortel parut atau kol iris tipis untuk variasi rasa dan nutrisi.</li>
+            </ul>
+        </div>
+
+        <p>Bakwan Tahu Mie adalah bukti bahwa kreasi kuliner sederhana bisa menghasilkan rasa yang luar biasa. Dengan sedikit sentuhan kreativitas, bahan-bahan dasar bisa diolah menjadi camilan yang istimewa. Sajikan sebagai hidangan pembuka saat ada acara keluarga, atau sebagai teman ngopi sore yang nikmat. Dijamin, semua anggota keluarga akan menyukainya!</p>
+
+    </div>
+
+    <footer>
+        <p>Selamat mencoba resep bakwan tahu mie yang lezat ini!</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-mematikan-kuman-tbc">Cara Mematikan Kuman Tbc</a></li>
+<li><a href="/bakpao-cookpad">Bakpao Cookpad</a></li>
+<li><a href="/bakpia-pathok-pratama">Bakpia Pathok Pratama</a></li>
+<li><a href="/bakpia-kukus-tugu-malioboro">Bakpia Kukus Tugu Malioboro</a></li>
+<li><a href="/membuat-bakwan-tahu">Membuat Bakwan Tahu</a></li>
+<li><a href="/balasan-orang-yang-senang-bersedekah">Balasan Orang Yang Senang Bersedekah</a></li>
+<li><a href="/cara-membuat-bakwan-lembut-dan-gurih">Cara Membuat Bakwan Lembut Dan Gurih</a></li>
+<li><a href="/bakpia-tugu-tahan-berapa-hari">Bakpia Tugu Tahan Berapa Hari</a></li>
+<li><a href="/bakso-mercon-yang-pedas">Bakso Mercon Yang Pedas</a></li>
+<li><a href="/resep-bakwan-crispy">Resep Bakwan Crispy</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

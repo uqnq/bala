@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebek Goreng Kremes: Lezat & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Penting untuk border-radius pada gambar */
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .hero-image {
+            width: 100%;
+            max-height: 300px; /* Batasi tinggi agar tidak terlalu mendominasi */
+            object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+            border-radius: 10px;
+            margin-bottom: 25px;
+            display: block; /* Menghilangkan spasi di bawah gambar */
+        }
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #5f9ea0; /* CadetBlue */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #777;
+            width: 100%;
+            background-color: #e6f7ff; /* Light Cyan */
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .hero-image {
+                max-height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNNDcuNSAzMC42bC0yMC0xMi45Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0yMCAxMi45YzAtMC4yLTAuMi0wLjQtMC4yLTAuNmMwLTAuNSAwLjItMS4xIDAuNS0xLjRsMjAuNS0xMy4zYzAuNS0wLjMgMS4xLTAuNSAxLjctMC41czEuMSAwLjIgMS43IDAuNWwxOC40IDExLjljMC4zIDAuMiAwLjUgMC40IDAuNSAwLjVjMCAwLjEtMC4xIDAuMi0wLjIgMC4zcy0wLjIgMC4yLTAuMyAwLjRsLTE3LjUgMTEuMWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMjAuNS0xMy4zYy0wLjItMC4xLTAuNC0wLjItMC42LTAuM2gtMjAuNWwxNS45IDkuOXoiIGZpbGw9IiNmY2U0ZmYiLz48cGF0aCBkPSJNNDguMiA1MGwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0x3.4C0.5-0.3-1.1-0.5-1.7-0.5C-0.6 0-1.1 0.2-1.7 0.5L-18.6 12C-0.1 0.1-0.2 0.2-0.3 0.3h-20.5l15.9 9.9c0.1 0.1 0.2 0.2 0.3 0.3c0.1 0 0.1 0.1 0.2 0.3c0.2 0.1 0.4 0.1 0.6 0.2l20.5-13.3c0.2-0.1 0.3-0.2 0.5-0.3c0.1-0.1 0.2-0.2 0.2-0.3S70.2 48.9 70 48.8L52.3 35.5c-0.5-0.3-1.1-0.5-1.7-0.5c-0.6 0-1.1 0.2-1.7 0.5L20.8 48.8c-0.1 0.1-0.2 0.2-0.3 0.3H0.5V100h99V0H0.5V100z" fill="#fce4f7"/>
+        <div class="section">
+            <h1>Bebek Goreng Kremes: Kenikmatan Renyah Tiada Tara</h1>
+            <p>Bebek goreng kremes telah menjelma menjadi hidangan favorit banyak orang di Indonesia. Kombinasi unik antara daging bebek yang gurih dengan lapisan tepung kremes yang renyah menciptakan sensasi rasa dan tekstur yang tak terlupakan di setiap gigitannya. Hidangan ini tidak hanya memanjakan lidah, tetapi juga menghadirkan kehangatan dan kebersamaan saat disantap bersama keluarga atau teman.</p>
+
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj48cGF0aCBkPSJNMTIzLjUgMTM4LjhjLTAuMy0wLjEtMC42LTAuMi0wLjktMC4zLTAuMi0wLjEgMC4yLTAuMiAwLjQtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjQtMC4zYzAuNS0wLjMgMS4xLTAuNSAxLjctMC41czEuMSAwLjIgMS43IDAuNWwxOC40IDExLjljMC4zIDAuMiAwLjUgMC40IDAuNSAwLjVjMCAwLjEtMC4xIDAuMi0wLjIgMC4zcy0wLjIgMC4yLTAuMyAwLjRsLTE3LjUgMTEuMWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMjAuNS0xMy4zYy0wLjItMC4xLTAuNC0wLjItMC42LTAuM2gtMjAuNWwxNS45IDkuOXoiIGZpbGw9IiNmZWZlZTAiLz48cGF0aCBkPSJNMTI1LjcgMTUzLjhsMTUuOSAzLjRjMC4xIDAuMSAwLjIgMC4yIDAuMyAwLjNjMC4xIDAuMSAwLjIgMC4yIDAuMyAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMTcuNSAxMS4xYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOW0xMjUtNTcuMWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOW0xMjUtMjkuN2wxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy43YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOWMwLjEgMC4xIDAuMiAwLjIgMC4zIDAuM2MwLjEgMCAwLjEgMC4xIDAuMiAwLjNjMC4yIDAuMSAwLjQgMC4xIDAuNiAwLjJsMjAuNS0xMy4zYzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zczAuMS0wLjIgMC4xLTAuMmwwLjUtMC40YzAuMi0wLjEgMC4zLTAuMiAwLjUtMC4zYzAuMS0wLjEgMC4yLTAuMiAwLjItMC4zcy0wLjEgMC4xLTAuMiAwLjRsLTE4LjQgMTEuOWwtMjEuNy0xMy40Yy0wLjUtMC4zLTEuMS0wLjUtMS43LTAuNWMtMC42IDAtMS4xIDAuMi0xLjcgMC41bC0xOC42IDEyYy0wLjEgMC4xLTAuMiAwLjItMC4zIDAuM2gtMjAuNWwxNS45IDkuOW0xMjUtMC4zYzAuNi0wLjMgMS4xLTAuNSAxLjctMC41czEuMSAwLjIgMS43IDAuNWwxOC40IDExLjljMC4zIDAuMiAwLjUgMC40IDAuNSAwLjVjMCAwLjEtMC4xIDAuMi0wLjIgMC4zcy0wLjIgMC4yLTAuMyAwLjRsLTE3LjUgMTEuMWMtMC41IDAuMy0xLjEgMC41LTEuNyAwLjVzLTEuMS0wLjItMS43LTAuNWwtMjAuNS0xMy4zYy0wLjItMC4xLTAuNC0wLjItMC42LTAuM2gtMjAuNWwxNS45IDkuOXoiIGZpbGw9IiNkMzg4YzQiLz48L3N2Zz4=" alt="Ilustrasi Bebek Goreng Kremes yang Menggugah Selera" class="hero-image">
+
+            <h2>Mengapa Bebek Goreng Kremes Begitu Spesial?</h2>
+            <p>Keunikan bebek goreng kremes terletak pada proses pembuatannya yang teliti. Daging bebek pilihan direbus dengan bumbu rempah tradisional hingga empuk, lalu digoreng hingga berwarna keemasan. Yang membuat hidangan ini istimewa adalah taburan 'kremes' di atasnya. Kremes ini terbuat dari adonan tepung yang dicampur kaldu rebusan bebek dan bumbu rahasia, lalu digoreng terpisah hingga menghasilkan tekstur renyah yang khas.</p>
+
+            <p>Saat digigit, Anda akan merasakan kriuk dari kremes yang berpadu sempurna dengan lembutnya daging bebek. Aroma rempah yang meresap dalam daging semakin menambah kenikmatan. Hidangan ini biasanya disajikan dengan nasi putih hangat, sambal pedas, lalapan segar seperti selada, timun, dan kol, serta tahu atau tempe goreng.</p>
+        </div>
+
+        <div class="section">
+            <h2>Tips Menikmati Bebek Goreng Kremes Sempurna</h2>
+            <p>Agar pengalaman menikmati bebek goreng kremes semakin maksimal, ada beberapa tips yang bisa Anda terapkan:</p>
+            <ul>
+                <li><strong>Pilih Tempat yang Tepat:</strong> Cari warung atau restoran yang reputasinya baik dalam mengolah bebek goreng kremes. Kualitas daging dan kekhasan bumbu sangat menentukan.</li>
+                <li><strong>Sajikan Selagi Hangat:</strong> Bebek goreng kremes paling nikmat disantap selagi hangat agar tekstur kremesnya tetap renyah.</li>
+                <li><strong>Nikmati dengan Sambal Favorit:</strong> Tingkat kepedasan sambal bisa disesuaikan dengan selera. Sambal bawang, sambal terasi, atau sambal ijo adalah beberapa pilihan populer yang cocok.</li>
+                <li><strong>Jangan Lupakan Lalapan:</strong> Kesegaran lalapan akan menyeimbangkan rasa gurih dan sedikit 'berat' dari bebek goreng, serta memberikan sensasi 'clean palate' di setiap suapan.</li>
+                <li><strong>Pesan Nasi Tambahan:</strong> Perpaduan bebek goreng kremes dan nasi putih hangat adalah kombinasi klasik yang sulit ditolak.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Lebih Dari Sekadar Makanan</h2>
+            <p>Bebek goreng kremes bukan sekadar menu makanan, melainkan sebuah pengalaman kuliner yang kaya rasa dan budaya. Keberadaannya yang tersebar luas di berbagai daerah di Indonesia, dengan sedikit variasi bumbu lokal, menunjukkan betapa hidangan ini telah menjadi bagian tak terpisahkan dari kuliner Nusantara. Setiap suapan adalah cerita tentang kekayaan rempah, keahlian memasak, dan kehangatan tradisi.</p>
+            <p>Bagi Anda yang mencari hidangan lezat dengan cita rasa otentik Indonesia, bebek goreng kremes adalah pilihan yang tepat. Coba segera dan rasakan sensasi renyah serta gurih yang akan membuat Anda ketagihan!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Hak Cipta Dilindungi.</p>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-pentol-mercon-sederhana">Resep Pentol Mercon Sederhana</a></li>
+<li><a href="/bakpao-yen">Bakpao Yen</a></li>
+<li><a href="/bumbu-bakwan-renyah-dan-tidak-lembek">Bumbu Bakwan Renyah Dan Tidak Lembek</a></li>
+<li><a href="/bakpia-juwara-satoe-stasiun-tugu">Bakpia Juwara Satoe Stasiun Tugu</a></li>
+<li><a href="/bala-bala-jagung-crispy">Bala Bala Jagung Crispy</a></li>
+<li><a href="/frozen-food-bakpao">Frozen Food Bakpao</a></li>
+<li><a href="/cara-membuat-bakwan-goreng-renyah">Cara Membuat Bakwan Goreng Renyah</a></li>
+<li><a href="/bale-cr7">Bale Cr7</a></li>
+<li><a href="/cara-bikin-gorengan-jagung">Cara Bikin Gorengan Jagung</a></li>
+<li><a href="/harga-bakso-beranak-jumbo">Harga Bakso Beranak Jumbo</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

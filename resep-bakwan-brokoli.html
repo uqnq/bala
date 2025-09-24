@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Brokoli Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e8f5e9; /* Hijau mint yang sejuk */
+            color: #2e7d32; /* Hijau tua untuk teks */
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Agar konten tidak terpaku di tengah vertikal */
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Teks rata kiri untuk keterbacaan */
+        }
+        h1 {
+            color: #1b5e20; /* Hijau yang lebih gelap untuk judul */
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #388e3c; /* Hijau cerah untuk sub-judul */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #424242; /* Abu-abu gelap untuk paragraf */
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            color: #424242;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .recipe-image svg {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            display: block; /* Agar margin auto bekerja */
+            margin: 0 auto;
+        }
+        .ingredients, .instructions {
+            background-color: #f1f8e9; /* Hijau sangat muda untuk latar belakang bagian resep */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .ingredients h3, .instructions h3 {
+            color: #1b5e20;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .ingredients ul li, .instructions ol li {
+            color: #424242;
+        }
+        .tips {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 5px solid #388e3c;
+            margin-top: 25px;
+            color: #2e7d32;
+            font-style: italic;
+        }
+        .tips p {
+            margin-bottom: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .recipe-image svg {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <!-- Background Circle -->
+                <circle cx="50" cy="50" r="45" fill="#c8e6c9" />
+                <!-- Broccolis -->
+                <g transform="translate(20, 30) scale(0.8)">
+                    <path fill="#4CAF50" d="M20,0 C10,0 0,10 0,20 C0,30 10,40 20,40 C30,40 40,30 40,20 C40,10 30,0 20,0 Z M10,15 C12,12 15,12 18,13 C20,11 22,10 24,10 C25,12 24,14 23,16 C25,17 27,17 29,16 C28,18 27,20 27,22 C29,23 31,23 33,22 C32,24 31,26 31,28 C33,29 35,29 37,28 C36,30 35,32 35,34 C37,35 39,35 41,34 C40,36 39,38 39,40 C41,41 43,41 45,40 C44,42 43,44 43,46 C45,47 47,47 49,46 C48,48 47,50 47,52 C49,53 51,53 53,52 C52,54 51,56 51,58 C53,59 55,59 57,58 C56,60 55,62 55,64 C57,65 59,65 61,64 C60,66 59,68 59,70 C61,71 63,71 65,70 C64,72 63,74 63,76 C65,77 67,77 69,76 C68,78 67,80 67,82 C69,83 71,83 73,82 C72,84 71,86 71,88 C73,89 75,89 77,88 C76,90 75,92 75,94 C77,95 79,95 81,94 C80,96 79,98 79,100 L75,100 C75,96 73,94 71,92 C69,94 67,96 65,98 C63,96 61,94 59,92 C57,94 55,96 53,98 C51,96 49,94 47,92 C45,94 43,96 41,98 C39,96 37,94 35,92 C33,94 31,96 29,98 C27,96 25,94 23,92 C21,94 19,96 17,98 C15,96 13,94 11,92 C9,94 7,96 5,98 C3,96 1,94 0,92 L0,70 C1,68 3,66 5,64 C3,62 1,60 0,58 C2,56 4,54 6,52 C4,50 2,48 0,46 C2,44 4,42 6,40 C4,38 2,36 0,34 C2,32 4,30 6,28 C4,26 2,24 0,22 C2,20 4,18 6,16 C4,14 2,12 0,10 C1,8 3,6 5,4 C3,2 5,0 7,0 C9,0 11,0 13,0 C15,0 17,0 19,0 C21,0 23,0 25,0 C27,0 29,0 31,0 C33,0 35,0 37,0 C39,0 41,0 43,0 C45,0 47,0 49,0 C51,0 53,0 55,0 C57,0 59,0 61,0 C63,0 65,0 67,0 C69,0 71,0 73,0 C75,0 77,0 79,0 C81,0 83,0 85,0 C87,0 89,0 91,0 C93,0 95,0 97,0 C99,0 99,100 L0,100 Z" />
+                </g>
+                <g transform="translate(60, 20) scale(0.7)">
+                    <path fill="#4CAF50" d="M20,0 C10,0 0,10 0,20 C0,30 10,40 20,40 C30,40 40,30 40,20 C40,10 30,0 20,0 Z M10,15 C12,12 15,12 18,13 C20,11 22,10 24,10 C25,12 24,14 23,16 C25,17 27,17 29,16 C28,18 27,20 27,22 C29,23 31,23 33,22 C32,24 31,26 31,28 C33,29 35,29 37,28 C36,30 35,32 35,34 C37,35 39,35 41,34 C40,36 39,38 39,40 C41,41 43,41 45,40 C44,42 43,44 43,46 C45,47 47,47 49,46 C48,48 47,50 47,52 C49,53 51,53 53,52 C52,54 51,56 51,58 C53,59 55,59 57,58 C56,60 55,62 55,64 C57,65 59,65 61,64 C60,66 59,68 59,70 C61,71 63,71 65,70 C64,72 63,74 63,76 C65,77 67,77 69,76 C68,78 67,80 67,82 C69,83 71,83 73,82 C72,84 71,86 71,88 C73,89 75,89 77,88 C76,90 75,92 75,94 C77,95 79,95 81,94 C80,96 79,98 79,100 L75,100 C75,96 73,94 71,92 C69,94 67,96 65,98 C63,96 61,94 59,92 C57,94 55,96 53,98 C51,96 49,94 47,92 C45,94 43,96 41,98 C39,96 37,94 35,92 C33,94 31,96 29,98 C27,96 25,94 23,92 C21,94 19,96 17,98 C15,96 13,94 11,92 C9,94 7,96 5,98 C3,96 1,94 0,92 L0,70 C1,68 3,66 5,64 C3,62 1,60 0,58 C2,56 4,54 6,52 C4,50 2,48 0,46 C2,44 4,42 6,40 C4,38 2,36 0,34 C2,32 4,30 6,28 C4,26 2,24 0,22 C2,20 4,18 6,16 C4,14 2,12 0,10 C1,8 3,6 5,4 C3,2 5,0 7,0 C9,0 11,0 13,0 C15,0 17,0 19,0 C21,0 23,0 25,0 C27,0 29,0 31,0 C33,0 35,0 37,0 C39,0 41,0 43,0 C45,0 47,0 49,0 C51,0 53,0 55,0 C57,0 59,0 61,0 C63,0 65,0 67,0 C69,0 71,0 73,0 C75,0 77,0 79,0 C81,0 83,0 85,0 C87,0 89,0 91,0 C93,0 95,0 97,0 C99,0 99,100 L0,100 Z" />
+                </g>
+                <text x="50" y="70" font-family="Verdana" font-size="12" fill="#1b5e20" text-anchor="middle">Bakwan Brokoli</text>
+            </svg>
+        </div>
+
+        <h1>Resep Bakwan Brokoli Lezat & Praktis</h1>
+
+        <p>Siapa bilang sayuran itu membosankan? Dengan resep bakwan brokoli ini, Anda bisa menyajikan camilan sehat dan lezat yang disukai seluruh keluarga. Bakwan brokoli adalah alternatif yang lebih bergizi dibandingkan bakwan sayur biasa, namun tetap renyah di luar dan lembut di dalam. Rasanya yang gurih dengan sentuhan manis alami dari brokoli membuat camilan ini jadi favorit.</p>
+
+        <p>Proses pembuatannya pun sangat sederhana, cocok untuk Anda yang sibuk atau baru belajar memasak. Anda hanya memerlukan beberapa bahan dasar yang mudah ditemukan di dapur. Brokoli yang kaya akan vitamin C, serat, dan antioksidan membuatnya menjadi pilihan bahan makanan yang sangat baik. Mengolahnya menjadi bakwan adalah cara cerdas untuk meningkatkan asupan sayuran anak-anak yang mungkin picky eater.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan</h2>
+            <ul>
+                <li>1 bonggol brokoli ukuran sedang, potong per kuntum kecil</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 butir telur ayam</li>
+                <li>1 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>Air secukupnya (sekitar 100-150 ml)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li>Cuci bersih brokoli, tiriskan, dan potong per kuntum kecil agar mudah tercampur adonan.</li>
+                <li>Dalam wadah, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+                <li>Masukkan telur, bawang putih halus, garam, merica bubuk, dan kaldu bubuk (jika pakai).</li>
+                <li>Tuang air sedikit demi sedikit sambil diaduk hingga membentuk adonan kental yang licin. Pastikan tidak ada gumpalan tepung.</li>
+                <li>Masukkan potongan brokoli ke dalam adonan. Aduk rata hingga semua kuntum brokoli terlapisi adonan dengan baik.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam saat digoreng.</li>
+                <li>Ambil satu per satu kuntum brokoli yang sudah terbalut adonan, masukkan hati-hati ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan matang di kedua sisinya.</li>
+                <li>Angkat bakwan brokoli yang sudah matang, tiriskan minyaknya dengan baik menggunakan tisu dapur agar tidak terlalu berminyak.</li>
+                <li>Sajikan bakwan brokoli selagi hangat dengan saus sambal, cabai rawit, atau cocolan favorit Anda.</li>
+            </ol>
+        </div>
+
+        <p>Bakwan brokoli ini sangat cocok dinikmati sebagai camilan sore hari, lauk pendamping nasi, atau bahkan sebagai bagian dari bekal anak. Kerenyahannya akan terjaga jika tidak ditutup rapat saat masih panas, namun kelembutan brokoli di dalamnya tetap terasa. Aroma gurih dari bumbu yang meresap akan menggugah selera makan Anda.</p>
+
+        <div class="tips">
+            <p><strong>Tips Tambahan:</strong></p>
+            <ul>
+                <li>Pastikan brokoli sudah benar-benar kering setelah dicuci sebelum dicampur adonan agar adonan menempel sempurna.</li>
+                <li>Jangan terlalu banyak memasukkan brokoli ke dalam wajan sekaligus agar suhu minyak tidak turun drastis dan bakwan matang merata serta renyah.</li>
+                <li>Anda bisa menambahkan irisan wortel tipis atau jagung manis pipil ke dalam adonan untuk variasi rasa dan warna.</li>
+                <li>Jika suka aroma yang lebih sedap, Anda bisa menambahkan sedikit irisan daun bawang ke dalam adonan.</li>
+            </ul>
+        </div>
+
+        <p>Menikmati makanan sehat tidak harus rumit. Dengan resep bakwan brokoli yang mudah ini, Anda telah melakukan pilihan yang cerdas untuk kesehatan keluarga Anda tanpa mengorbankan kenikmatan rasa. Selamat mencoba dan nikmati kelezatan bakwan brokoli yang istimewa!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-empuk-dan-renyah">Bakwan Empuk Dan Renyah</a></li>
+<li><a href="/bakwan-jagung-udang">Bakwan Jagung Udang</a></li>
+<li><a href="/resep-membuat-heci">Resep Membuat Heci</a></li>
+<li><a href="/bumbu-bikin-bakso-mercon">Bumbu Bikin Bakso Mercon</a></li>
+<li><a href="/resep-perkedel-jagung-xanderskitchen">Resep Perkedel Jagung Xanderskitchen</a></li>
+<li><a href="/cara-buat-bakpao-kukus">Cara Buat Bakpao Kukus</a></li>
+<li><a href="/bakpia-susu">Bakpia Susu</a></li>
+<li><a href="/resep-sanjai-balado">Resep Sanjai Balado</a></li>
+<li><a href="/cara-membuat-pia-basah">Cara Membuat Pia Basah</a></li>
+<li><a href="/bakpia-basah">Bakpia Basah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

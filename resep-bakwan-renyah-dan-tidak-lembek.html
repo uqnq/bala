@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Renyah Anti Lembek</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #8EC5FC; /* Biru muda cerah */
+            --color-secondary: #E0C3FC; /* Ungu muda lembut */
+            --color-accent: #FEEBA3; /* Kuning cerah */
+            --color-text: #333;
+            --color-background: #f8f8f8;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Agar konten mengisi ruang */
+        }
+
+        h1, h2 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            color: var(--color-primary);
+            font-weight: bold;
+        }
+
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Ukuran gambar yang lebih cocok untuk mobile */
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ingredients li, .steps li {
+            background: var(--color-secondary);
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .ingredients {
+            background-color: var(--color-accent);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: var(--color-primary);
+            color: white;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                margin: 15px auto;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .recipe-image {
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="recipe-image" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakwan renyah berwarna emas">
+            <defs>
+                <linearGradient id="gradient-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#FFC107;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient-green" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#90EE90;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#32CD32;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <!-- Background -->
+            <rect width="100%" height="100%" fill="#f0f8ff"/>
+
+            <!-- Bakwan 1 -->
+            <path d="M100 150 Q 120 130, 150 130 Q 180 130, 200 150 Q 180 170, 150 170 Q 120 170, 100 150 Z" fill="url(#gradient-yellow)" stroke="#DAA520" stroke-width="2"/>
+            <path d="M110 145 Q 125 135, 145 135 Q 165 135, 175 145 Q 165 155, 145 155 Q 125 155, 110 145 Z" fill="url(#gradient-yellow)" stroke="#DAA520" stroke-width="1"/>
+            <circle cx="130" cy="140" r="5" fill="url(#gradient-green)" stroke="#2E8B57" stroke-width="1"/>
+            <circle cx="160" cy="145" r="4" fill="url(#gradient-green)" stroke="#2E8B57" stroke-width="1"/>
+
+            <!-- Bakwan 2 -->
+            <path d="M250 120 Q 270 100, 300 100 Q 330 100, 350 120 Q 330 140, 300 140 Q 270 140, 250 120 Z" fill="url(#gradient-yellow)" stroke="#DAA520" stroke-width="2"/>
+            <path d="M260 115 Q 275 105, 295 105 Q 315 105, 325 115 Q 315 125, 295 125 Q 275 125, 260 115 Z" fill="url(#gradient-yellow)" stroke="#DAA520" stroke-width="1"/>
+            <circle cx="280" cy="115" r="5" fill="url(#gradient-green)" stroke="#2E8B57" stroke-width="1"/>
+            <circle cx="310" cy="120" r="6" fill="url(#gradient-green)" stroke="#2E8B57" stroke-width="1"/>
+            <circle cx="330" cy="118" r="4" fill="url(#gradient-green)" stroke="#2E8B57" stroke-width="1"/>
+
+            <!-- Bakwan 3 -->
+            <path d="M380 160 Q 400 140, 430 140 Q 460 140, 480 160 Q 460 180, 430 180 Q 400 180, 380 160 Z" fill="url(#gradient-yellow)" stroke="#DAA520" stroke-width="2"/>
+            <path d="M390 155 Q 405 145, 425 145 Q 445 145, 455 155 Q 445 165, 425 165 Q 405 165, 390 155 Z" fill="url(#gradient-yellow)" stroke="#DAA520" stroke-width="1"/>
+            <circle cx="410" cy="150" r="5" fill="url(#gradient-green)" stroke="#2E8B57" stroke-width="1"/>
+            <circle cx="440" cy="158" r="4" fill="url(#gradient-green)" stroke="#2E8B57" stroke-width="1"/>
+        </svg>
+
+        <h1>Resep Bakwan Renyah dan Tidak Lembek</h1>
+        <p>Siapa yang tidak suka bakwan? Camilan gurih ini seringkali menjadi primadona di setiap kesempatan, baik saat santai di rumah, teman ngopi, atau bahkan hidangan pelengkap saat makan. Namun, seringkali kita dihadapkan pada dilema bakwan yang kurang renyah, bahkan cenderung lembek di bagian dalamnya. Jangan khawatir! Dengan beberapa trik sederhana dan resep yang tepat, Anda bisa menciptakan bakwan yang super renyah, tahan lama, dan tentunya lezat.</p>
+
+        <p>Kunci utama untuk mendapatkan bakwan yang renyah terletak pada beberapa hal: adonan yang pas, pemilihan bahan yang segar, teknik menggoreng, serta penggunaan bahan tambahan yang tepat. Resep ini akan memandu Anda langkah demi langkah untuk menciptakan bakwan impian Anda.</p>
+
+        <h2>Bahan-Bahan</h2>
+        <div class="ingredients">
+            <p><strong>Bahan Utama:</strong></p>
+            <ul>
+                <li>250 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (ini kunci kerenyahan!)</li>
+                <li>1 sdt kaldu bubuk (rasa ayam/sapi sesuai selera)</li>
+                <li>1/2 sdt garam (sesuaikan selera)</li>
+                <li>1/4 sdt merica bubuk</li>
+                <li>1 butir telur, kocok lepas</li>
+                <li>Sekitar 200-250 ml air dingin (gunakan air es untuk hasil maksimal)</li>
+            </ul>
+            <p><strong>Isian Bakwan (Pilih salah satu atau kombinasi):</strong></p>
+            <ul>
+                <li>1 buah wortel ukuran sedang, iris korek api tipis</li>
+                <li>1/4 kol ukuran kecil, iris tipis</li>
+                <li>2 batang daun bawang, iris tipis</li>
+                <li>Udang atau bakso iris tipis (opsional)</li>
+            </ul>
+            <p><strong>Bahan Pelengkap:</strong></p>
+            <ul>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat</h2>
+        <ol class="steps">
+            <li><strong>Persiapan Adonan Kering:</strong> Dalam sebuah wadah besar, campurkan tepung terigu, tepung beras, kaldu bubuk, garam, dan merica bubuk. Aduk rata semua bahan kering.</li>
+            <li><strong>Tambahkan Bahan Basah:</strong> Masukkan telur yang sudah dikocok lepas ke dalam campuran tepung. Aduk perlahan.</li>
+            <li><strong>Campurkan Sayuran:</strong> Masukkan irisan wortel, kol, daun bawang, dan bahan isian lainnya (jika menggunakan). Aduk rata dengan bumbu kering agar sayuran terlapisi tepung.</li>
+            <li><strong>Tuang Air Dingin Sedikit Demi Sedikit:</strong> Perlahan-lahan tuangkan air dingin sambil terus diaduk. Konsistensi adonan yang diinginkan adalah kental namun masih bisa mengalir. Jangan terlalu encer agar tidak lembek, dan jangan terlalu kental agar tidak keras. Adonan harus cukup membalut sayuran dengan baik.</li>
+            <li><strong>Panaskan Minyak:</strong> Siapkan wajan, tuangkan minyak goreng secukupnya dan panaskan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam saat digoreng.</li>
+            <li><strong>Goreng Bakwan:</strong> Ambil sesendok sayur adonan, lalu masukkan ke dalam minyak panas. Goreng hingga bakwan berwarna cokelat keemasan dan terlihat garing. Balik sisi lainnya agar matang merata.</li>
+            <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan saringan atau tisu dapur khusus makanan agar minyak berlebih terserap.</li>
+            <li><strong>Sajikan:</strong> Bakwan renyah siap disajikan selagi hangat. Nikmati bersama cabai rawit hijau, saus sambal, atau lontong.</li>
+        </ol>
+
+        <h2>Tips Agar Bakwan Makin Renyah dan Tahan Lama</h2>
+        <ul>
+            <li><span class="highlight">Gunakan tepung beras:</span> Ini adalah rahasia utama kerenyahan bakwan yang tahan lama.</li>
+            <li><span class="highlight">Pakai air es/air dingin:</span> Suhu dingin membantu menciptakan tekstur yang lebih renyah saat digoreng.</li>
+            <li><span class="highlight">Jangan terlalu banyak adonan:</span> Ambil adonan secukupnya agar bakwan matang merata dan tidak lembek di tengah.</li>
+            <li><span class="highlight">Goreng dengan minyak panas:</span> Pastikan minyak sudah benar-benar panas sebelum memasukkan adonan. Ini membantu bakwan cepat mengeras di luar dan mencegah menyerap banyak minyak.</li>
+            <li><span class="highlight">Jangan menggoreng terlalu banyak sekaligus:</span> Masukkan bakwan secukupnya ke dalam wajan agar suhu minyak tidak turun drastis.</li>
+            <li><span class="highlight">Tiriskan dengan baik:</span> Pastikan minyak berlebih benar-benar hilang agar bakwan tetap renyah.</li>
+        </ul>
+
+        <p>Dengan resep dan tips ini, Anda kini bisa menikmati bakwan renyah kapan saja. Selamat mencoba dan selamat menikmati camilan lezat buatan sendiri!</p>
+    </div>
+    <footer>
+        <p>&copy; Resep Lezat</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-dadar-jagung-untuk-jualan">Resep Dadar Jagung Untuk Jualan</a></li>
+<li><a href="/bakpao-dari">Bakpao Dari</a></li>
+<li><a href="/resep-aneka-bakwan">Resep Aneka Bakwan</a></li>
+<li><a href="/resep-bakwan-teri">Resep Bakwan Teri</a></li>
+<li><a href="/harga-bakpia-99">Harga Bakpia 99</a></li>
+<li><a href="/bakpao-ubi">Bakpao Ubi</a></li>
+<li><a href="/bakwan-jagung-kriuk-tanpa-telur">Bakwan Jagung Kriuk Tanpa Telur</a></li>
+<li><a href="/harga-bakpia-5555-jambon">Harga Bakpia 5555 Jambon</a></li>
+<li><a href="/bakpia-mini-kurnia-sari">Bakpia Mini Kurnia Sari</a></li>
+<li><a href="/bakpia-pia-pia">Bakpia Pia Pia</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

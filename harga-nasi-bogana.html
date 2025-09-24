@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harga Nasi Bogana Terjangkau & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Agar border-radius diterapkan dengan baik */
+        }
+        h1, h2 {
+            color: #00838f; /* Warna judul yang cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            color: #006064; /* Warna aksen yang sedikit lebih gelap */
+            font-weight: bold;
+        }
+        .price-section {
+            background-color: #b2ebf2; /* Warna latar belakang bagian harga yang kontras */
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .price-section h3 {
+            color: #004d40;
+            text-align: center;
+            margin-top: 0;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+        .price-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .price-list li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        .price-list strong {
+            color: #00796b;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .price-section {
+                padding: 20px;
+            }
+            .price-section h3 {
+                font-size: 1.4em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .price-list li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="image-container">
+            <svg class="main-image" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title-svg">
+                <title id="title-svg">Ilustrasi Nasi Bogana dengan berbagai lauk di atasnya</title>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#80cbc4;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="400" fill="url(#grad1)" />
+
+                <!-- Nasi -->
+                <ellipse cx="400" cy="280" rx="250" ry="120" fill="#fffaf0" />
+
+                <!-- Daun Pisang -->
+                <path d="M250 200 q 100 -100 200 0 q 100 100 200 0 L650 350 Q 500 380 350 350 Z" fill="#a5d6a7" opacity="0.8" />
+                <path d="M200 220 q 100 -80 150 0 q 100 80 150 0 L500 330 Q 400 360 300 330 Z" fill="#80cbc4" opacity="0.7" />
+
+                <!-- Lauk Pauk -->
+                <!-- Ayam -->
+                <ellipse cx="200" cy="220" rx="50" ry="30" fill="#e57373" transform="rotate(-15 200 220)" />
+                <circle cx="190" cy="215" r="15" fill="#ffccbc" />
+
+                <!-- Telur -->
+                <ellipse cx="350" cy="180" rx="40" ry="25" fill="#fff9c4" transform="rotate(10 350 180)" />
+                <circle cx="345" cy="175" r="10" fill="#ffab91" />
+
+                <!-- Sambal -->
+                <ellipse cx="500" cy="200" rx="30" ry="20" fill="#f44336" transform="rotate(-5 500 200)" />
+
+                <!-- Kering Tempe -->
+                <path d="M600 240 h 60 v 30 h -60 Z" fill="#bf360c" />
+
+                <!-- Krupuk -->
+                <ellipse cx="150" cy="320" rx="30" ry="15" fill="#f5f5f5" />
+                <ellipse cx="180" cy="330" rx="25" ry="12" fill="#e0e0e0" />
+
+                <!-- Teks Judul -->
+                <text x="50%" y="50" font-size="30" font-weight="bold" fill="#004d40" text-anchor="middle" dominant-baseline="middle">
+                    Nasi Bogana Lezat
+                </text>
+            </svg>
+        </div>
+
+        <h1>Harga Nasi Bogana Terjangkau dan Berkualitas</h1>
+
+        <p>
+            Nasi Bogana, hidangan khas Indonesia yang kaya akan rasa dan aroma, kini semakin populer di kalangan masyarakat. Perpaduan nasi gurih yang dibungkus daun pisang dengan beragam lauk pauk seperti ayam suwir bumbu, telur pindang, sambal goreng ati, kering tempe, dan kerupuk, menjadikannya pilihan favorit untuk berbagai acara, mulai dari santap siang sehari-hari hingga perayaan istimewa. Keunikan nasi bogana terletak pada cara penyajiannya yang khas, membangkitkan selera dan memberikan pengalaman kuliner yang autentik.
+        </p>
+
+        <p>
+            Pertanyaan mengenai <span class="highlight">harga nasi bogana</span> seringkali menjadi pertimbangan utama bagi banyak orang yang ingin menikmati hidangan lezat ini. Memang, variasi harga nasi bogana dapat sedikit berbeda tergantung pada beberapa faktor. Faktor-faktor tersebut meliputi kualitas bahan baku yang digunakan, kelengkapan jenis lauk pauk yang disajikan, ukuran porsi, serta lokasi atau penyedia jasa katering yang Anda pilih. Namun, secara umum, nasi bogana menawarkan nilai yang sangat baik mengingat kekayaan rasa dan kepraktisan penyajiannya.
+        </p>
+
+        <div class="price-section">
+            <h2>Perkiraan Harga Nasi Bogana</h2>
+            <p>
+                Sebagai gambaran awal, berikut adalah perkiraan rentang harga untuk nasi bogana yang umum ditemui di pasaran. Perlu diingat bahwa ini adalah kisaran, dan harga aktual dapat bervariasi.
+            </p>
+            <ul class="price-list">
+                <li><strong>Nasi Bogana Porsi Reguler (untuk 1 orang):</strong> Mulai dari Rp 20.000 hingga Rp 35.000. Porsi ini biasanya sudah mencakup nasi, ayam suwir, telur pindang, kering tempe, dan sambal.</li>
+                <li><strong>Nasi Bogana Porsi Komplit/Spesial:</strong> Mulai dari Rp 30.000 hingga Rp 50.000. Porsi ini seringkali menawarkan tambahan lauk seperti abon sapi, udang goreng, atau rendang, serta porsi yang lebih besar.</li>
+                <li><strong>Nasi Bogana untuk Acara (Per Pax):</strong> Untuk pemesanan dalam jumlah besar atau untuk acara seperti rapat, pesta, atau syukuran, harga per pak biasanya lebih ekonomis, berkisar antara Rp 18.000 hingga Rp 40.000, tergantung pada kesepakatan dan jenis lauk yang dipilih.</li>
+            </ul>
+        </div>
+
+        <p>
+            Banyak penjual nasi bogana yang menawarkan fleksibilitas dalam menu. Anda bisa saja memesan nasi bogana dengan lauk yang lebih sederhana untuk mendapatkan <span class="highlight">harga nasi bogana</span> yang lebih terjangkau, atau sebaliknya, meminta penambahan lauk premium untuk pengalaman yang lebih istimewa. Jasa katering dan restoran yang spesialis nasi bogana seringkali memiliki paket-paket menarik yang sudah disesuaikan dengan berbagai kebutuhan dan anggaran.
+        </p>
+
+        <p>
+            Saat mencari <span class="highlight">harga nasi bogana</span>, jangan ragu untuk membandingkan beberapa pilihan. Kunjungi penjual lokal, periksa menu di restoran, atau hubungi penyedia jasa katering untuk mendapatkan penawaran terbaik. Pastikan untuk menanyakan detail lauk apa saja yang termasuk dalam setiap paket harga. Kualitas rasa dan kesegaran bahan tentu saja harus tetap menjadi prioritas, bahkan ketika Anda mencari penawaran harga yang paling menarik. Nasi bogana yang lezat dengan harga yang bersahabat adalah kombinasi sempurna untuk memanjakan lidah Anda.
+        </p>
+
+        <p>
+            Secara keseluruhan, <span class="highlight">harga nasi bogana</span> sangat bervariasi, namun selalu ada pilihan yang sesuai dengan anggaran Anda. Dengan kekayaan rasa dan nutrisinya, nasi bogana tetap menjadi pilihan kuliner yang sangat direkomendasikan, memberikan kepuasan maksimal dalam setiap suapannya. Nikmati kelezatan nasi bogana tanpa perlu khawatir menguras kantong!
+        </p>
+
+    </div>
+
+    <footer>
+        Artikel tentang kuliner Indonesia.
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-ayam-bumbu-bebek-madura">Resep Ayam Bumbu Bebek Madura</a></li>
+<li><a href="/harga-bakpia-145-ibu-sri-astuti">Harga Bakpia 145 Ibu Sri Astuti</a></li>
+<li><a href="/cara-membuat-kolak-ubi-singkong">Cara Membuat Kolak Ubi Singkong</a></li>
+<li><a href="/cara-membuat-ote-ote-sayuran">Cara Membuat Ote Ote Sayuran</a></li>
+<li><a href="/bakpao-siubie">Bakpao Siubie</a></li>
+<li><a href="/bakpia-putra-882">Bakpia Putra 882</a></li>
+<li><a href="/balasan-ucapan-yaumul-milad-barakallah-fii-umrik">Balasan Ucapan Yaumul Milad Barakallah Fii Umrik</a></li>
+<li><a href="/cara-memasak-pentol-mercon">Cara Memasak Pentol Mercon</a></li>
+<li><a href="/bakpao-halal-terdekat">Bakpao Halal Terdekat</a></li>
+<li><a href="/resep-bakwan-ubi-jalar">Resep Bakwan Ubi Jalar</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Weci Sayur Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Warna hijau muda yang sejuk */
+            color: #2e7d32; /* Warna teks hijau tua yang kontras */
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1, h2 {
+            color: #1b5e20; /* Warna judul hijau lebih gelap */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-top: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            border-bottom: 2px solid #a5d6a7; /* Garis bawah berwarna hijau muda */
+            padding-bottom: 10px;
+        }
+        p, li {
+            margin-bottom: 15px;
+            color: #33691e; /* Warna teks paragraf dan daftar yang sedikit lebih terang */
+        }
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .ingredients, .instructions {
+            padding: 15px;
+            background-color: #f1f8e9; /* Latar belakang yang sedikit berbeda untuk bagian resep */
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #2e7d32;
+        }
+        .tip {
+            background-color: #fff9c4; /* Warna kuning muda untuk tips */
+            border-left: 5px solid #fbc02d; /* Garis pinggir kuning */
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 5px;
+            color: #3e2723; /* Warna teks coklat tua */
+        }
+        .tip p {
+            margin-bottom: 0;
+            color: #3e2723;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .hero-image svg {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Membuat Weci Sayur Renyah dan Menggugah Selera</h1>
+
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <rect width="600" height="300" rx="15" ry="15" fill="url(#grad1)" />
+
+                <!-- Sayuran -->
+                <g transform="translate(50, 100)">
+                    <circle cx="40" cy="40" r="20" fill="#f06292" filter="url(#shadow)"/> <!-- Wortel -->
+                    <text x="40" y="45" font-size="12" text-anchor="middle" fill="#fff" font-weight="bold">Wortel</text>
+                    <rect x="80" y="20" width="50" height="40" fill="#a5d6a7" rx="5" ry="5" filter="url(#shadow)"/> <!-- Kol -->
+                    <text x="105" y="45" font-size="12" text-anchor="middle" fill="#fff" font-weight="bold">Kol</text>
+                    <circle cx="130" cy="40" r="15" fill="#b0bec5" filter="url(#shadow)"/> <!-- Tauge -->
+                    <text x="130" y="45" font-size="12" text-anchor="middle" fill="#fff" font-weight="bold">Tauge</text>
+                </g>
+
+                <!-- Adonan -->
+                <path d="M 200 100 Q 250 50 300 100 T 350 100 L 350 150 Q 250 200 200 150 Z" fill="#ffcc80" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/>
+                <text x="275" y="120" font-size="16" text-anchor="middle" fill="#e65100" font-weight="bold">Adonan</text>
+
+                <!-- Proses Goreng -->
+                <g transform="translate(400, 80)">
+                    <circle cx="0" cy="0" r="30" fill="#f44336" opacity="0.7" filter="url(#shadow)"/> <!-- Minyak Panas -->
+                    <circle cx="15" cy="15" r="25" fill="#ffab91" opacity="0.7" filter="url(#shadow)"/>
+                    <circle cx="5" cy="5" r="20" fill="#ff8a65" opacity="0.7" filter="url(#shadow)"/>
+                </g>
+                <text x="430" y="180" font-size="12" text-anchor="middle" fill="#bf360c">Menggoreng...</text>
+            </svg>
+        </div>
+
+        <p>Weci sayur, atau bakwan sayur, adalah camilan gorengan yang sangat populer di Indonesia. Kelezatannya tak diragukan lagi, dengan tekstur renyah di luar dan isian sayuran lembut di dalam. Membuat weci sayur sendiri di rumah ternyata tidaklah sulit, bahkan bagi pemula sekalipun. Dengan mengikuti langkah-langkah yang tepat, Anda bisa menyajikan weci sayur yang lezat dan menggoda selera untuk keluarga.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <ul>
+                <li><strong>Sayuran:</strong> 1 buah wortel ukuran sedang (serut kasar), 1/4 kol ukuran kecil (iris tipis), 1 batang daun bawang (iris tipis), 50 gram tauge (opsional).</li>
+                <li><strong>Tepung Terigu:</strong> 150 gram (sekitar 15 sendok makan).</li>
+                <li><strong>Tepung Beras:</strong> 50 gram (sekitar 5 sendok makan), untuk menambah kerenyahan.</li>
+                <li><strong>Air:</strong> Sekitar 200-250 ml, atau secukupnya hingga adonan kental tapi tidak terlalu padat.</li>
+                <li><strong>Bumbu Halus:</strong> 3 siung bawang putih, 1/2 sendok teh ketumbar bubuk, garam secukupnya, merica bubuk secukupnya, kaldu bubuk secukupnya (opsional).</li>
+                <li><strong>Minyak Goreng:</strong> Secukupnya untuk menggoreng.</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Pembuatan</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Persiapan Sayuran:</strong> Cuci bersih semua sayuran. Serut kasar wortel, iris tipis kol, dan iris halus daun bawang. Jika menggunakan tauge, cukup disiram air panas sebentar lalu tiriskan.</li>
+                <li><strong>Menyiapkan Bumbu:</strong> Haluskan bawang putih, ketumbar, garam, merica, dan kaldu bubuk jika menggunakan.</li>
+                <li><strong>Membuat Adonan Tepung:</strong> Dalam sebuah wadah, campurkan tepung terigu dan tepung beras. Masukkan bumbu halus ke dalam campuran tepung. Aduk rata.</li>
+                <li><strong>Menguleni Adonan:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan tidak ada gumpalan. Pastikan adonan memiliki kekentalan yang pas, tidak terlalu encer agar tidak mudah lepas saat digoreng, namun juga tidak terlalu kental agar sayuran bisa terlapisi dengan baik.</li>
+                <li><strong>Mencampurkan Sayuran:</strong> Masukkan irisan wortel, kol, dan daun bawang ke dalam adonan tepung. Aduk perlahan hingga semua sayuran terlapisi rata oleh adonan. Jika menggunakan tauge, masukkan terakhir dan aduk sebentar saja agar tidak hancur.</li>
+                <li><strong>Proses Menggoreng:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+                <li><strong>Membentuk Weci:</strong> Ambil satu sendok sayur adonan, lalu tuangkan perlahan ke dalam minyak panas. Usahakan membentuknya agak pipih agar matang merata. Goreng hingga satu sisi berwarna kuning keemasan, lalu balik dan goreng sisi lainnya hingga matang dan renyah. Jangan terlalu banyak memasukkan weci sekaligus agar suhu minyak tetap stabil dan weci matang sempurna.</li>
+                <li><strong>Meniriskan:</strong> Angkat weci sayur yang sudah matang dan tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Weci sayur siap disajikan selagi hangat. Sangat nikmat disantap bersama cabai rawit hijau atau saus sambal.</li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <h3>Tips Tambahan untuk Weci Super Renyah:</h3>
+            <p>Untuk mendapatkan weci yang lebih renyah tahan lama, tambahkan sedikit tepung maizena (sekitar 1-2 sendok makan) ke dalam campuran tepung. Pastikan juga minyak benar-benar panas saat menggoreng dan jangan terlalu sering membolak-balik weci.</p>
+        </div>
+
+        <p>Membuat weci sayur ini adalah cara yang menyenangkan untuk menikmati sayuran dengan cara yang berbeda. Cocok sebagai teman minum teh di sore hari atau sebagai pelengkap hidangan nasi.</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-kukus-baim-wong">Bakpia Kukus Baim Wong</a></li>
+<li><a href="/bakpao-kura-kura">Bakpao Kura Kura</a></li>
+<li><a href="/cara-bikin-bakwan-jagung-yang-enak-dan-renyah">Cara Bikin Bakwan Jagung Yang Enak Dan Renyah</a></li>
+<li><a href="/bumbu-untuk-bakwan-jagung">Bumbu Untuk Bakwan Jagung</a></li>
+<li><a href="/bakteri-simbion-adalah">Bakteri Simbion Adalah</a></li>
+<li><a href="/bumbu-bakwan-renyah">Bumbu Bakwan Renyah</a></li>
+<li><a href="/bikin-bakwan-goreng">Bikin Bakwan Goreng</a></li>
+<li><a href="/isian-ayam-bakpao">Isian Ayam Bakpao</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-kangkung">Cara Membuat Bakwan Sayur Kangkung</a></li>
+<li><a href="/cara-membuat-bakpao-yang-mudah">Cara Membuat Bakpao Yang Mudah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

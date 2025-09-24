@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Ote Ote Lezat & Mudah Dibuat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007bff; /* Biru cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p, li {
+            margin-bottom: 15px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        .ingredients ul, .steps ol {
+            padding-left: 20px;
+        }
+        .ingredients li::before, .steps li::before {
+            content: '• ';
+            color: #28a745; /* Hijau cerah */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .steps li::before {
+            content: counter(step) '. ';
+            color: #dc3545; /* Merah cerah */
+        }
+        .steps ol {
+            counter-reset: step;
+        }
+        .steps li {
+            counter-increment: step;
+        }
+        strong {
+            color: #6f42c1; /* Ungu cerah */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Ote Ote Gurih & Renyah</h1>
+
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 20px auto;">
+            <circle cx="50" cy="50" r="45" stroke="#FFC107" stroke-width="8" fill="#FFEB3B"/>
+            <path d="M50 15 L60 35 L80 35 L65 45 L70 65 L50 55 L30 65 L35 45 L20 35 L40 35 Z" fill="#FFA000"/>
+            <circle cx="40" cy="40" r="5" fill="#FFFFFF"/>
+            <circle cx="60" cy="40" r="5" fill="#FFFFFF"/>
+        </svg>
+        <p style="text-align: center; font-style: italic;">Siapa yang tidak suka camilan renyah nan gurih? Ote-ote, atau bakwan sayur dalam dialek Jawa Timur, adalah salah satu jajanan pasar yang digemari banyak kalangan. Rasanya yang gurih, teksturnya yang renyah di luar dan lembut di dalam, menjadikannya teman setia saat bersantai atau bahkan hidangan pembuka yang lezat. Membuat ote-ote sendiri di rumah ternyata tidak sulit, lho! Dengan resep ote ote yang tepat, Anda bisa menyajikan camilan rumahan yang tak kalah nikmat dari yang dijual di pasaran.</p>
+
+        <h2>Kenapa Memilih Resep Ote Ote Ini?</h2>
+        <p>Resep ote ote ini difokuskan pada kemudahan proses pembuatannya tanpa mengurangi cita rasa otentiknya. Kami akan memandu Anda langkah demi langkah, mulai dari persiapan bahan hingga teknik menggoreng agar hasilnya sempurna. Anda akan menemukan tips untuk mendapatkan ote-ote yang renyah tahan lama dan isian yang matang merata.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <ul>
+                <li><strong>Tepung Terigu:</strong> 250 gram</li>
+                <li><strong>Tepung Beras:</strong> 50 gram (untuk kerenyahan ekstra)</li>
+                <li><strong>Sayuran:</strong> 150 gram wortel (iris korek api), 100 gram kol (iris tipis), 50 gram tauge (opsional)</li>
+                <li><strong>Udang atau Ebi:</strong> 100 gram (opsional, untuk aroma dan rasa gurih)</li>
+                <li><strong>Daun Bawang:</strong> 2 batang, iris tipis</li>
+                <li><strong>Bumbu Halus:</strong> 3 siung bawang putih, 1/2 sendok teh merica bubuk, 1 sendok teh garam, 1/4 sendok teh kaldu bubuk (opsional), sedikit ketumbar bubuk (opsional)</li>
+                <li><strong>Air Es:</strong> Sekitar 200-250 ml (sesuaikan kekentalan adonan)</li>
+                <li><strong>Minyak Goreng:</strong> Secukupnya, untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-langkah Membuat Ote Ote</h2>
+        <div class="steps">
+            <ol>
+                <li><strong>Persiapan Adonan Kering:</strong> Dalam wadah besar, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+                <li><strong>Persiapan Bumbu:</strong> Haluskan bawang putih, merica, garam, kaldu bubuk (jika pakai), dan ketumbar bubuk (jika pakai).</li>
+                <li><strong>Membuat Adonan Basah:</strong> Tuangkan bumbu halus ke dalam campuran tepung. Perlahan-lahan tambahkan air es sambil terus diaduk hingga terbentuk adonan yang kental namun masih bisa dituang. Jangan terlalu encer agar ote-ote tidak menyerap banyak minyak.</li>
+                <li><strong>Campurkan Isian:</strong> Masukkan irisan wortel, kol, daun bawang, dan tauge (jika pakai) ke dalam adonan. Jika menggunakan udang, campurkan udang yang sudah dibersihkan. Aduk hingga semua sayuran tercampur rata dengan adonan.</li>
+                <li><strong>Pemanasan Minyak:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar ote-ote terendam saat digoreng.</li>
+                <li><strong>Menggoreng Ote Ote:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Bentuknya akan menyebar sendiri. Goreng hingga salah satu sisi berwarna kuning keemasan. Balik dan goreng sisi lainnya hingga matang dan renyah.</li>
+                <li><strong>Tiriskan:</strong> Angkat ote-ote yang sudah matang menggunakan saringan, tiriskan minyaknya agar tidak terlalu berminyak saat disajikan.</li>
+                <li><strong>Sajikan:</strong> Ote-ote siap dinikmati selagi hangat. Sajikan dengan sambal kecap, cabai rawit, atau saus favorit Anda.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Agar Ote Ote Makin Lezat</h2>
+        <ul>
+            <li><strong>Air Es:</strong> Penggunaan air es membantu adonan tetap dingin, yang berkontribusi pada kerenyahan ote-ote setelah digoreng.</li>
+            <li><strong>Kekentalan Adonan:</strong> Pastikan adonan tidak terlalu encer. Adonan yang pas akan melapisi sayuran dengan baik dan menghasilkan tekstur yang diinginkan.</li>
+            <li><strong>Api Sedang:</strong> Menggoreng dengan api sedang mencegah bagian luar gosong sebelum bagian dalamnya matang sempurna.</li>
+            <li><strong>Udang/Ebi:</strong> Tambahan udang segar atau ebi yang dihaluskan akan memberikan dimensi rasa umami yang lebih kaya pada ote-ote Anda.</li>
+            <li><strong>Variasi Sayuran:</strong> Anda bisa menambahkan sayuran lain seperti buncis iris tipis atau sedikit irisan ayam untuk variasi isian.</li>
+        </ul>
+
+        <p>Membuat resep ote ote ini di rumah adalah cara yang menyenangkan untuk menyajikan camilan sehat dan lezat bagi keluarga. Selamat mencoba!</p>
+
+        <footer>
+            Artikel ini membagikan panduan lengkap untuk membuat ote-ote yang lezat.
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-rebus">Resep Bakwan Rebus</a></li>
+<li><a href="/resep-bakwan-udang-wortel">Resep Bakwan Udang Wortel</a></li>
+<li><a href="/bakpia-pathok-24-jam">Bakpia Pathok 24 Jam</a></li>
+<li><a href="/bakpia-di-stasiun-lempuyangan">Bakpia Di Stasiun Lempuyangan</a></li>
+<li><a href="/bakpao-hitam">Bakpao Hitam</a></li>
+<li><a href="/pentol-mercon-mika">Pentol Mercon Mika</a></li>
+<li><a href="/bakteri-tetanus">Bakteri Tetanus</a></li>
+<li><a href="/aneka-resep-bakwan-jagung">Aneka Resep Bakwan Jagung</a></li>
+<li><a href="/bakwan-sayur-untuk-jualan">Bakwan Sayur Untuk Jualan</a></li>
+<li><a href="/dadar-jagung-tepung-sajiku">Dadar Jagung Tepung Sajiku</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

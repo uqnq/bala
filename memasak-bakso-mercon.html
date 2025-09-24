@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakso Mercon Pedas Mantap</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #89CFF0; /* Biru Langit Cerah */
+            --color-secondary: #FFD700; /* Kuning Keemasan */
+            --color-background: #f0f8ff; /* Alice Blue */
+            --color-text: #333;
+            --color-accent: #FF6347; /* Tomato Merah Cerah */
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 25px;
+            color: var(--color-accent);
+        }
+
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--color-accent);
+        }
+
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Batasi lebar gambar agar tidak terlalu besar di layar mobile */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .ingredients, .instructions {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients {
+            background-color: var(--color-secondary);
+            opacity: 0.8; /* Sedikit transparan agar warna background terlihat */
+        }
+
+        .instructions {
+            background-color: var(--color-background);
+            border: 1px solid var(--color-primary);
+        }
+
+        .recipe-section {
+            margin-top: 25px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lezatnya Sensasi Pedas: Memasak Bakso Mercon di Rumah</h1>
+
+        <!-- Gambar SVG untuk Hero Image -->
+        <svg class="hero-image" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FF6347;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="500" height="300" fill="var(--color-background)" />
+            <!-- Siluet bakso -->
+            <circle cx="150" cy="150" r="70" fill="#fff" stroke="var(--color-primary)" stroke-width="5" />
+            <circle cx="160" cy="140" r="10" fill="var(--color-accent)" />
+            <circle cx="140" cy="160" r="10" fill="var(--color-accent)" />
+            <circle cx="170" cy="160" r="8" fill="var(--color-accent)" />
+
+            <!-- Siluet cabai -->
+            <path d="M 350 100 Q 370 80 400 90 T 430 120 Q 400 150 370 140 Z" fill="var(--color-accent)" transform="rotate(30 350 100)" />
+            <path d="M 380 120 Q 400 100 430 110 T 460 140 Q 430 170 400 160 Z" fill="var(--color-accent)" transform="rotate(-20 380 120)" />
+
+            <!-- Gumpalan kuah -->
+            <path d="M 250 200 Q 300 220 350 200 T 400 220 L 350 260 Q 300 280 250 260 Z" fill="rgba(255, 99, 71, 0.3)" />
+
+            <!-- Teks kecil -->
+            <text x="250" y="280" font-family="Segoe UI" font-size="20" fill="var(--color-primary)" text-anchor="middle">Bakso Mercon</text>
+        </svg>
+        <p>Siapa yang bisa menolak godaan rasa pedas yang membakar lidah namun tetap bikin nagih? Bakso mercon, hidangan yang semakin populer di kalangan pencinta kuliner pedas, kini bisa Anda buat sendiri di rumah. Mengolah bakso mercon bukanlah hal yang sulit, asalkan Anda memiliki resep yang tepat dan sedikit kesabaran. Sensasi pedasnya yang dahsyat berasal dari melimpahnya cabai rawit dan bumbu pedas lainnya, berpadu sempurna dengan kenyalnya bakso. Mari kita selami bagaimana cara memasak bakso mercon yang cita rasanya luar biasa!</p>
+
+        <section class="recipe-section">
+            <h2>Bahan-Bahan Utama</h2>
+            <div class="ingredients">
+                <ul>
+                    <li>500 gram bakso sapi berkualitas (bisa bakso bulat polos atau urat)</li>
+                    <li>15-25 buah cabai rawit merah (sesuai selera pedas Anda)</li>
+                    <li>5 buah cabai merah keriting</li>
+                    <li>4 siung bawang putih</li>
+                    <li>6 siung bawang merah</li>
+                    <li>2 cm jahe, memarkan</li>
+                    <li>2 batang serai, memarkan</li>
+                    <li>3 lembar daun jeruk, buang tulang daunnya</li>
+                    <li>2 lembar daun salam</li>
+                    <li>1 sendok teh gula pasir</li>
+                    <li>1 sendok teh garam (atau sesuai selera)</li>
+                    <li>1/2 sendok teh penyedap rasa (opsional)</li>
+                    <li>200 ml air atau kaldu sapi</li>
+                    <li>Minyak goreng secukupnya untuk menumis</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="recipe-section">
+            <h2>Langkah-Langkah Memasak Bakso Mercon</h2>
+            <div class="instructions">
+                <ol>
+                    <li><strong>Persiapan Bumbu Halus:</strong> Haluskan cabai rawit merah, cabai merah keriting, bawang putih, dan bawang merah menggunakan blender atau ulekan. Jika menggunakan blender, tambahkan sedikit minyak agar lebih mudah halus.</li>
+                    <li><strong>Tumis Bumbu:</strong> Panaskan sedikit minyak goreng dalam wajan. Tumis bumbu halus hingga harum dan matang. Masukkan jahe, serai, daun jeruk, dan daun salam. Aduk rata dan masak hingga bumbu benar-benar matang dan tidak langu.</li>
+                    <li><strong>Masukkan Bakso:</strong> Masukkan bakso sapi yang sudah Anda siapkan ke dalam tumisan bumbu. Aduk perlahan hingga semua bakso terbalut rata dengan bumbu.</li>
+                    <li><strong>Tambahkan Cairan dan Bumbu:</strong> Tuangkan air atau kaldu sapi. Masukkan gula pasir, garam, dan penyedap rasa jika menggunakan. Aduk kembali.</li>
+                    <li><strong>Proses Memasak:</strong> Masak dengan api sedang hingga air menyusut dan bumbu meresap ke dalam bakso. Cicipi rasanya, tambahkan garam atau gula jika diperlukan. Jika Anda menginginkan kuah yang lebih kental, masak hingga air agak menyusut. Jika suka berkuah, tambahkan sedikit air lagi.</li>
+                    <li><strong>Penyajian:</strong> Angkat bakso mercon dan sajikan selagi hangat. Bakso mercon ini sangat cocok dinikmati bersama nasi putih hangat, lontong, atau bahkan sebagai lauk pendamping mi instan.</li>
+                </ol>
+            </div>
+        </section>
+
+        <p>Memasak bakso mercon ini memang membutuhkan sedikit "keberanian" dalam menggunakan cabai, namun hasilnya akan sebanding dengan usaha Anda. Kunci dari bakso mercon yang enak adalah keseimbangan rasa pedas, gurih, dan sedikit manis. Pastikan Anda menumis bumbu hingga benar-benar matang agar tidak ada rasa langu yang mengganggu. Penggunaan jahe dan serai tidak hanya menambah aroma, tetapi juga memberikan sentuhan segar yang menyeimbangkan rasa pedasnya.</p>
+
+        <p>Bagi Anda yang tidak terlalu suka pedas, jumlah cabai rawit bisa disesuaikan. Anda juga bisa menambahkan sedikit kecap manis untuk memberikan warna dan rasa manis yang lebih kompleks. Bakso mercon buatan sendiri ini adalah solusi sempurna untuk menikmati hidangan pedas favorit tanpa harus keluar rumah. Selamat mencoba petualangan rasa pedas yang memikat ini di dapur Anda!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bahan-buat-bakwan-goreng">Bahan Buat Bakwan Goreng</a></li>
+<li><a href="/bakpao-unti-kelapa">Bakpao Unti Kelapa</a></li>
+<li><a href="/resep-bakwan-padang">Resep Bakwan Padang</a></li>
+<li><a href="/bakwan-untuk-jualan">Bakwan Untuk Jualan</a></li>
+<li><a href="/bakso-mercon-enak-terdekat">Bakso Mercon Enak Terdekat</a></li>
+<li><a href="/bakteri-diare">Bakteri Diare</a></li>
+<li><a href="/cara-membuat-bakwan-milu">Cara Membuat Bakwan Milu</a></li>
+<li><a href="/cara-membuat-bakwan-mudah-dan-praktis">Cara Membuat Bakwan Mudah Dan Praktis</a></li>
+<li><a href="/perkedel-sayur">Perkedel Sayur</a></li>
+<li><a href="/perkedel-jagung-tepung-sajiku">Perkedel Jagung Tepung Sajiku</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

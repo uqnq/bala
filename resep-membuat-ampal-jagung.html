@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Ampal Jagung: Camilan Manis Nikmat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+        h1, h2, h3 {
+            color: #007bff; /* Primary Blue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.6em;
+            border-bottom: 2px solid #e0f7fa; /* Light Cyan */
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .recipe-image {
+            display: block;
+            margin: 30px auto;
+            width: 80%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .ingredients span, .instructions span {
+            font-weight: bold;
+            color: #0056b3; /* Darker Blue */
+        }
+        .highlight {
+            background-color: #e6f7ff; /* Very Light Blue */
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #007bff;
+        }
+        .keyword {
+            color: #28a745; /* Green */
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666;
+            background-color: #e0f7fa; /* Light Cyan */
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-image {
+                width: 100%;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Ampal Jagung Manis dan Gurih</h1>
+
+        <svg class="recipe-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" aria-label="Ilustrasi ampal jagung yang menggugah selera">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" /> <!-- Gold -->
+                    <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:1" /> <!-- Lighter Gold -->
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feMerge>
+                        <feMergeNode in="offsetblur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <!-- Jagung -->
+            <g transform="translate(50, 100)">
+                <path d="M0,0 C0,50 50,50 50,0 C50,-50 0,-50 0,0 Z" fill="url(#grad1)" filter="url(#shadow)"/>
+                <rect x="10" y="5" width="30" height="10" fill="#f0ad4e"/> <!-- Kernel -->
+                <rect x="15" y="15" width="30" height="10" fill="#f0ad4e"/>
+                <rect x="20" y="25" width="30" height="10" fill="#f0ad4e"/>
+                <rect x="25" y="35" width="30" height="10" fill="#f0ad4e"/>
+                <rect x="30" y="45" width="30" height="10" fill="#f0ad4e"/>
+                <rect x="15" y="-5" width="30" height="10" fill="#f0ad4e"/>
+                <rect x="20" y="-15" width="30" height="10" fill="#f0ad4e"/>
+                <rect x="25" y="-25" width="30" height="10" fill="#f0ad4e"/>
+                <rect x="30" y="-35" width="30" height="10" fill="#f0ad4e"/>
+                <rect x="35" y="-45" width="30" height="10" fill="#f0ad4e"/>
+            </g>
+            <!-- Ampal -->
+            <g transform="translate(200, 150) rotate(-15)">
+                <path d="M0,0 C0,30 30,30 30,0 C30,-30 0,-30 0,0 Z" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+                <circle cx="10" cy="10" r="4" fill="#ffebcd"/> <!-- Cookie crumb -->
+                <circle cx="20" cy="5" r="3" fill="#ffebcd"/>
+                <circle cx="15" cy="20" r="5" fill="#ffebcd"/>
+                <circle cx="25" cy="15" r="3" fill="#ffebcd"/>
+                <circle cx="5" cy="25" r="4" fill="#ffebcd"/>
+                <circle cx="0" cy="0" r="2" fill="#ffebcd"/>
+                <circle cx="30" cy="0" r="2" fill="#ffebcd"/>
+                <circle cx="15" cy="28" r="2" fill="#ffebcd"/>
+                <circle cx="10" cy="-5" r="3" fill="#ffebcd"/>
+                <circle cx="20" cy="-10" r="4" fill="#ffebcd"/>
+            </g>
+             <g transform="translate(350, 120) rotate(10)">
+                <path d="M0,0 C0,30 30,30 30,0 C30,-30 0,-30 0,0 Z" fill="#ffffff" stroke="#cccccc" stroke-width="2"/>
+                <circle cx="10" cy="10" r="4" fill="#ffebcd"/> <!-- Cookie crumb -->
+                <circle cx="20" cy="5" r="3" fill="#ffebcd"/>
+                <circle cx="15" cy="20" r="5" fill="#ffebcd"/>
+                <circle cx="25" cy="15" r="3" fill="#ffebcd"/>
+                <circle cx="5" cy="25" r="4" fill="#ffebcd"/>
+                <circle cx="0" cy="0" r="2" fill="#ffebcd"/>
+                <circle cx="30" cy="0" r="2" fill="#ffebcd"/>
+                <circle cx="15" cy="28" r="2" fill="#ffebcd"/>
+                <circle cx="10" cy="-5" r="3" fill="#ffebcd"/>
+                <circle cx="20" cy="-10" r="4" fill="#ffebcd"/>
+            </g>
+            <!-- Background elements -->
+            <circle cx="550" cy="350" r="20" fill="#87ceeb" opacity="0.5"/> <!-- Sky blue -->
+            <circle cx="50" cy="350" r="30" fill="#add8e6" opacity="0.4"/> <!-- Light blue -->
+        </svg>
+
+        <p>Ampal jagung, camilan tradisional yang kini semakin populer, menawarkan kombinasi rasa manis dari jagung dan gurih yang membuat ketagihan. Teksturnya yang kenyal dengan sedikit renyah membuatnya disukai oleh berbagai kalangan usia. Membuat ampal jagung sendiri di rumah ternyata tidak sesulit yang dibayangkan, lho!</p>
+
+        <div class="highlight">
+            <p>Dalam artikel ini, kita akan membahas secara mendalam mengenai <span class="keyword">resep membuat ampal jagung</span> yang mudah diikuti, mulai dari pemilihan bahan hingga tips agar hasilnya sempurna.</p>
+        </div>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <ul>
+                <li><span>Jagung Manis</span>: 2 buah ukuran sedang, pipil halus. Gunakan jagung manis segar untuk rasa terbaik.</li>
+                <li><span>Tepung Ketan</span>: 150 gram. Tepung ketan memberikan tekstur lengket dan kenyal.</li>
+                <li><span>Gula Pasir</span>: 75-100 gram (sesuai selera).</li>
+                <li><span>Santan Kental</span>: 100 ml. Santan memberikan aroma dan kekayaan rasa.</li>
+                <li><span>Garam</span>: ½ sendok teh. Untuk menyeimbangkan rasa manis.</li>
+                <li><span>Daun Pandan</span>: 1 lembar (opsional), ikat simpul. Untuk aroma harum.</li>
+                <li><span>Kelapa Parut</span>: secukupnya (untuk taburan, kukus sebentar dengan sedikit garam).</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Ampal Jagung</h2>
+        <div class="instructions">
+            <ol>
+                <li>
+                    <span>Persiapan Jagung</span>: Pipil halus jagung manis. Anda bisa memblender sebentar jagung pipil hingga agak halus, tapi jangan sampai menjadi bubur agar teksturnya tetap terasa.
+                </li>
+                <li>
+                    <span>Memasak Jagung</span>: Campurkan jagung pipil halus dengan santan, gula pasir, garam, dan daun pandan (jika menggunakan) dalam wajan. Masak dengan api sedang sambil terus diaduk hingga mendidih dan agak mengental. Angkat dan buang daun pandannya. Biarkan agak dingin.
+                </li>
+                <li>
+                    <span>Mencampur Bahan Kering</span>: Dalam wadah terpisah, campurkan tepung ketan. Tuang adonan jagung yang sudah agak dingin ke dalam tepung ketan. Aduk rata menggunakan spatula atau tangan hingga semua bahan tercampur dan adonan kalis serta bisa dibentuk. Jika adonan terlalu kering, tambahkan sedikit santan. Jika terlalu basah, tambahkan sedikit tepung ketan.
+                </li>
+                <li>
+                    <span>Membentuk Ampal</span>: Ambil sedikit adonan, lalu bentuk bulat-bulat kecil atau lonjong sesuai selera.
+                </li>
+                <li>
+                    <span>Mengukus Ampal</span>: Siapkan kukusan yang sudah panas. Tata ampal jagung di atas loyang yang sudah dialasi daun pisang atau diolesi sedikit minyak agar tidak lengket. Kukus selama kurang lebih 15-20 menit hingga matang dan kenyal.
+                </li>
+                <li>
+                    <span>Penyajian</span>: Setelah matang, keluarkan ampal jagung dari kukusan. Gulingkan ampal jagung selagi hangat ke dalam kelapa parut yang sudah dikukus. Sajikan ampal jagung selagi hangat atau dingin.
+                </li>
+            </ol>
+        </div>
+
+        <h2>Tips Sukses Membuat Ampal Jagung</h2>
+        <div class="highlight">
+            <p>
+                1. <strong>Pilih Jagung Berkualitas</strong>: Gunakan jagung manis segar yang manis alami untuk rasa terbaik. Hindari jagung yang sudah tua karena rasanya kurang manis dan teksturnya bisa keras.
+                2. <strong>Konsistensi Adonan</strong>: Kunci kelezatan ampal jagung terletak pada konsistensi adonan. Adonan harus kalis namun tetap lembut. Jika terlalu lembek, sulit dibentuk. Jika terlalu keras, hasilnya akan alot. Sesuaikan jumlah tepung ketan dan santan sedikit demi sedikit.
+                3. <strong>Jangan Terlalu Lama Mengukus</strong>: Mengukus terlalu lama bisa membuat ampal menjadi lembek dan mudah hancur. Cukup kukus hingga matang dan kenyal.
+                4. <strong>Gunakan Kelapa Parut Segar</strong>: Kelapa parut segar yang dikukus sebentar dengan sedikit garam akan memberikan rasa gurih yang seimbang dan aroma yang lebih nikmat.
+                5. <strong>Variasi Rasa</strong>: Anda bisa menambahkan sedikit parutan keju ke dalam adonan atau sedikit ekstrak pandan untuk aroma yang lebih kuat.
+            </p>
+        </div>
+
+        <p>Membuat <span class="keyword">resep membuat ampal jagung</span> ini sangat cocok dijadikan ide camilan untuk keluarga atau bahkan untuk dijual. Aroma manis jagung yang berpadu dengan gurihnya kelapa parut pasti akan disukai siapa saja. Selamat mencoba!</p>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/membuat-bakpao-lembut">Membuat Bakpao Lembut</a></li>
+<li><a href="/cocolan-gorengan">Cocolan Gorengan</a></li>
+<li><a href="/resep-bakwan-jepang">Resep Bakwan Jepang</a></li>
+<li><a href="/bakteri-di-lambung">Bakteri Di Lambung</a></li>
+<li><a href="/resep-ote2">Resep Ote2</a></li>
+<li><a href="/bakwan-batu">Bakwan Batu</a></li>
+<li><a href="/cara-buat-air-cabe-bakwan">Cara Buat Air Cabe Bakwan</a></li>
+<li><a href="/resep-bakwan-sayur-jagung">Resep Bakwan Sayur Jagung</a></li>
+<li><a href="/bakwan-malang-rhestu">Bakwan Malang Rhestu</a></li>
+<li><a href="/bikin-bakwan-jagung-yang-renyah">Bikin Bakwan Jagung Yang Renyah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Kol Sederhana & Enak</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Alice Blue - warna sejuk */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2 {
+            color: #4682b4; /* Steel Blue - warna cerah dan sejuk */
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 {
+            font-size: 1.6em;
+            border-bottom: 2px solid #add8e6; /* Light Blue - sentuhan warna */
+            padding-bottom: 10px;
+            text-align: left;
+        }
+        .recipe-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+        .ingredients, .instructions {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 20px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .ingredients strong, .instructions strong {
+            color: #007bff; /* Biru cerah untuk penekanan */
+        }
+        .note {
+            font-style: italic;
+            color: #666;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e0ffff; /* Light Cyan - warna sejuk tambahan */
+            border-left: 5px solid #87ceeb; /* Sky Blue */
+            border-radius: 5px;
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                margin: 10px auto;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Kol Sederhana yang Menggugah Selera</h1>
+
+        <!-- SVG Image -->
+        <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#add8e6;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="400" rx="15" fill="url(#grad1)" />
+            <path d="M50 100 L150 100 L150 200 L50 200 Z" fill="#ffffff" stroke="#007bff" stroke-width="5"/>
+            <path d="M180 100 L280 100 L280 200 L180 200 Z" fill="#ffffff" stroke="#007bff" stroke-width="5"/>
+            <path d="M310 100 L410 100 L410 200 L310 200 Z" fill="#ffffff" stroke="#007bff" stroke-width="5"/>
+            <circle cx="70" cy="120" r="15" fill="#ffdab9" /> <!-- Jagung -->
+            <circle cx="200" cy="120" r="15" fill="#ffdab9" />
+            <circle cx="330" cy="120" r="15" fill="#ffdab9" />
+            <circle cx="90" cy="160" r="15" fill="#90ee90" /> <!-- Wortel -->
+            <circle cx="220" cy="160" r="15" fill="#90ee90" />
+            <circle cx="350" cy="160" r="15" fill="#90ee90" />
+            <text x="50%" y="250" font-family="Arial, sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">Bakwan Kol Sederhana</text>
+            <path d="M200 300 Q300 350 400 300" stroke="#ff7f50" stroke-width="10" fill="none" /> <!-- Garis keriting -->
+            <text x="50%" y="330" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">Gurih & Renyah!</text>
+        </svg>
+        <p>Bakwan, jajanan gorengan yang populer di Indonesia, kini hadir dalam versi paling sederhana dan ramah di kantong: Bakwan Kol. Cocok dinikmati sebagai camilan sore atau teman makan nasi, bakwan kol ini menawarkan rasa gurih yang pas dengan tekstur renyah di luar dan lembut di dalam. Membuatnya pun sangat mudah, bahkan bagi pemula sekalipun. Tak perlu bahan-bahan yang sulit dicari, semua bisa Anda temukan di dapur atau pasar terdekat.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <ul>
+                <li><strong>Kol:</strong> Sekitar 1/4 buah kol ukuran sedang, iris tipis memanjang.</li>
+                <li><strong>Tepung Terigu:</strong> 150 gram (sekitar 1.5 gelas belimbing).</li>
+                <li><strong>Tepung Beras:</strong> 50 gram (sekitar 0.5 gelas belimbing) - opsional, untuk menambah kerenyahan.</li>
+                <li><strong>Bumbu Halus:</strong>
+                    <ul>
+                        <li>Bawang putih: 3 siung.</li>
+                        <li>Ketumbar bubuk: 1 sendok teh.</li>
+                        <li>Garam: Secukupnya (sekitar 1 sendok teh, sesuaikan selera).</li>
+                        <li>Merica bubuk: Secukupnya (sekitar 1/2 sendok teh, sesuaikan selera).</li>
+                        <li>Kaldu bubuk (jika suka): 1/2 sendok teh.</li>
+                    </ul>
+                </li>
+                <li><strong>Air:</strong> Sekitar 150-200 ml (sesuaikan kekentalan adonan).</li>
+                <li><strong>Minyak Goreng:</strong> Secukupnya untuk menggoreng.</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Pembuatan</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Persiapan Kol:</strong> Cuci bersih irisan kol, tiriskan hingga tidak ada air yang tersisa. Hal ini penting agar adonan tidak terlalu encer.</li>
+                <li><strong>Haluskan Bumbu:</strong> Ulek atau blender bawang putih, ketumbar, garam, merica, dan kaldu bubuk (jika menggunakan) hingga halus.</li>
+                <li><strong>Campurkan Adonan:</strong> Dalam sebuah wadah, campurkan tepung terigu dan tepung beras (jika pakai). Masukkan bumbu halus, aduk rata.</li>
+                <li><strong>Tambahkan Air:</strong> Tuang air sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan sebaiknya tidak terlalu kental dan tidak terlalu encer, cukup bisa melapisi irisan kol.</li>
+                <li><strong>Masukkan Kol:</strong> Masukkan irisan kol ke dalam adonan. Aduk rata hingga seluruh irisan kol terbalut adonan.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam jumlah cukup banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum mulai menggoreng.</li>
+                <li><strong>Goreng Bakwan:</strong> Ambil adonan kol menggunakan sendok atau tangan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan matang di kedua sisinya.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang, tiriskan di atas kertas tisu atau rak kawat agar minyaknya berkurang dan tetap renyah.</li>
+                <li><strong>Sajikan:</strong> Bakwan kol siap disajikan selagi hangat. Nikmati dengan cabai rawit, saus sambal, atau cocolan favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="note">
+            <strong>Tips Tambahan:</strong>
+            <ul>
+                <li>Untuk hasil lebih renyah, Anda bisa menambahkan sedikit irisan daun bawang ke dalam adonan.</li>
+                <li>Jangan terlalu banyak memasukkan kol ke dalam adonan agar bakwan matang merata dan tidak lembek.</li>
+                <li>Goreng bakwan dalam minyak yang benar-benar panas agar tidak menyerap banyak minyak.</li>
+                <li>Jika suka, Anda bisa menambahkan parutan wortel atau tauge untuk variasi isian.</li>
+            </ul>
+        </div>
+
+        <p>Membuat bakwan kol sendiri di rumah tidak hanya lebih hemat, tetapi juga memastikan kebersihan dan kualitas bahan yang digunakan. Dengan resep sederhana ini, Anda bisa menyajikan camilan lezat kapan saja tanpa repot. Selamat mencoba dan semoga berhasil!</p>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi.</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-udang-bakwan">Resep Udang Bakwan</a></li>
+<li><a href="/pergerakan-bakteri">Pergerakan Bakteri</a></li>
+<li><a href="/bakso-mercon-ayasya">Bakso Mercon Ayasya</a></li>
+<li><a href="/balasan-untuk-orang-yang-licik">Balasan Untuk Orang Yang Licik</a></li>
+<li><a href="/resep-gorengan-bakwan-jagung">Resep Gorengan Bakwan Jagung</a></li>
+<li><a href="/resep-bakwan-jagung-yang-enak-dan-gurih">Resep Bakwan Jagung Yang Enak Dan Gurih</a></li>
+<li><a href="/bakteri-rumen">Bakteri Rumen</a></li>
+<li><a href="/contoh-antibakteri">Contoh Antibakteri</a></li>
+<li><a href="/bakpia-pathok-vita">Bakpia Pathok Vita</a></li>
+<li><a href="/bakso-mercon-rumahan">Bakso Mercon Rumahan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

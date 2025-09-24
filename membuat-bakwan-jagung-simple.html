@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Jagung Simple: Resep Cepat & Enak</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Agar konten mulai dari atas */
+            min-height: 100vh;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px; /* Batas lebar maksimum untuk tampilan desktop */
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; /* Pastikan padding dan border masuk dalam lebar */
+        }
+        h1 {
+            color: #00796b; /* Warna judul yang cerah */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #009688;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-bottom: 2px solid #80cbc4;
+            padding-bottom: 5px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .recipe-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .ingredients, .instructions {
+            background-color: #f0f9fa; /* Latar belakang sedikit berbeda untuk bagian resep */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .ingredients ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+        .instructions ol {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+        strong {
+            color: #00796b;
+        }
+
+        /* Media Queries untuk Tampilan Mobile */
+        @media (max-width: 768px) {
+            .container {
+                width: 98%;
+                margin: 10px auto;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p, ul li, ol li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="recipe-image">
+            <!-- SVG Gambar Bakwan Jagung -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" aria-label="Ilustrasi bakwan jagung renyah berwarna keemasan">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f4d03f;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="400" height="250" rx="15" ry="15" fill="#fffaf0"/>
+                
+                <!-- Jagung -->
+                <circle cx="100" cy="120" r="40" fill="#f1c40f"/>
+                <circle cx="120" cy="140" r="35" fill="#f39c12"/>
+                <circle cx="80" cy="100" r="30" fill="#f4d03f"/>
+                
+                <circle cx="200" cy="100" r="45" fill="#f1c40f"/>
+                <circle cx="220" cy="120" r="40" fill="#f39c12"/>
+                <circle cx="180" cy="80" r="35" fill="#f4d03f"/>
+
+                <circle cx="300" cy="130" r="35" fill="#f1c40f"/>
+                <circle cx="320" cy="150" r="30" fill="#f39c12"/>
+                <circle cx="280" cy="110" r="25" fill="#f4d03f"/>
+
+                <!-- Adonan Tepung Bakwan -->
+                <path d="M 50 180 Q 150 250 250 180 T 350 180 Q 250 280 150 220 T 50 180 Z" fill="url(#grad1)" opacity="0.8"/>
+                <circle cx="70" cy="200" r="25" fill="url(#grad1)" opacity="0.7"/>
+                <circle cx="180" cy="210" r="30" fill="url(#grad1)" opacity="0.7"/>
+                <circle cx="280" cy="190" r="20" fill="url(#grad1)" opacity="0.7"/>
+                <circle cx="360" cy="200" r="25" fill="url(#grad1)" opacity="0.7"/>
+
+                <!-- Detil Renyah -->
+                <path d="M 70 190 L 80 180 L 90 195 Z" fill="#e0e0e0" opacity="0.5"/>
+                <path d="M 180 220 L 190 210 L 200 225 Z" fill="#e0e0e0" opacity="0.5"/>
+                <path d="M 280 200 L 290 190 L 300 205 Z" fill="#e0e0e0" opacity="0.5"/>
+                <path d="M 360 210 L 370 200 L 380 215 Z" fill="#e0e0e0" opacity="0.5"/>
+            </svg>
+        </div>
+
+        <h1>Membuat Bakwan Jagung Simple: Lezat dan Cepat</h1>
+
+        <p>Siapa yang tidak suka bakwan jagung? Camilan renyah yang gurih ini selalu menjadi favorit, baik sebagai teman ngopi sore maupun pelengkap makan nasi. Membuat bakwan jagung sendiri di rumah ternyata jauh lebih mudah dari yang Anda bayangkan, bahkan bagi pemula sekalipun. Dengan bahan-bahan sederhana yang mudah didapat, Anda bisa menyajikan bakwan jagung <em>simple</em> yang lezat dalam waktu singkat. Artikel ini akan memandu Anda langkah demi langkah untuk menciptakan kelezatan ini.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan Utama</h2>
+            <ul>
+                <li>2-3 buah jagung manis, pipil atau serut</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (agar lebih renyah)</li>
+                <li>1 butir telur ayam</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air secukupnya (sekitar 50-100 ml, sesuaikan adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Langkah-Langkah Membuat Bakwan Jagung Simple</h2>
+            <ol>
+                <li><strong>Persiapan Jagung:</strong> Pipil atau serut jagung manis. Jika menggunakan jagung pipil, Anda bisa menghancurkan sebagian jagung dengan ulekan atau <em>food processor</em> agar adonan lebih menyatu, namun tetap sisakan beberapa bulir utuh agar tekstur jagung terasa saat digigit.</li>
+                <li><strong>Campurkan Bahan Kering:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li><strong>Tambahkan Bumbu Halus dan Telur:</strong> Masukkan bawang putih yang sudah dihaluskan dan telur ke dalam campuran tepung. Aduk hingga tercampur rata.</li>
+                <li><strong>Masukkan Jagung dan Daun Bawang:</strong> Masukkan jagung pipil/serut dan irisan daun bawang ke dalam adonan. Aduk perlahan.</li>
+                <li><strong>Atur Kekentalan Adonan:</strong> Tuang air sedikit demi sedikit sambil terus diaduk hingga adonan mengental namun tidak terlalu padat. Adonan yang baik adalah yang bisa menempel pada jagung dan tidak terlalu encer, agar bakwan tidak melebar saat digoreng.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam dan matang merata.</li>
+                <li><strong>Goreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Goreng beberapa buah bakwan sekaligus, jangan terlalu penuh agar suhunya stabil.</li>
+                <li><strong>Balik dan Angkat:</strong> Goreng hingga sisi bawah berwarna keemasan, lalu balik dan goreng hingga sisi lainnya matang dan berwarna coklat keemasan. Angkat bakwan dan tiriskan minyaknya menggunakan kertas tisu atau saringan kawat.</li>
+                <li><strong>Sajikan:</strong> Bakwan jagung siap disajikan selagi hangat. Cocok dinikmati dengan cabai rawit, sambal, atau saus favorit Anda.</li>
+            </ol>
+        </div>
+
+        <p>Membuat bakwan jagung <em>simple</em> tidak memerlukan teknik khusus. Kuncinya ada pada kualitas bahan dan pengaturan api saat menggoreng. Penggunaan tepung beras sangat disarankan untuk mendapatkan tekstur yang lebih renyah dan tahan lama. Jangan ragu untuk menyesuaikan jumlah bumbu sesuai selera Anda. Tambahan sedikit cabai rawit yang diiris halus ke dalam adonan juga bisa memberikan sensasi pedas yang menggugah selera. Selamat mencoba resep bakwan jagung yang mudah ini dan nikmati kelezatannya bersama keluarga!</p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-kukus-solo">Bakpia Kukus Solo</a></li>
+<li><a href="/bakpao-ikan">Bakpao Ikan</a></li>
+<li><a href="/cara-buat-sambal-bakso-mercon">Cara Buat Sambal Bakso Mercon</a></li>
+<li><a href="/bakpia-kukus-keju">Bakpia Kukus Keju</a></li>
+<li><a href="/bakwan-jagung-tahu">Bakwan Jagung Tahu</a></li>
+<li><a href="/negara-gareth-bale">Negara Gareth Bale</a></li>
+<li><a href="/bakpia-ana">Bakpia Ana</a></li>
+<li><a href="/bakpia-pathok-kencana">Bakpia Pathok Kencana</a></li>
+<li><a href="/membuat-bakwan-sayur-kriuk">Membuat Bakwan Sayur Kriuk</a></li>
+<li><a href="/bakwan-mie-tanpa-telur">Bakwan Mie Tanpa Telur</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikin Bakwan Goreng Enak & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #004d40; /* Warna teks gelap */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul yang lebih tegas */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .recipe-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f0f8ff; /* Latar belakang bagian resep yang lebih lembut */
+            border-radius: 8px;
+        }
+        .recipe-section h2 {
+            color: #00695c;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #004d40;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .cta a {
+            display: inline-block;
+            background-color: #009688; /* Tombol aksi warna cerah */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta a:hover {
+            background-color: #00796b;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Yuk, Bikin Bakwan Goreng Renyah Nan Lezat!</h1>
+
+        <svg width="100%" height="200" viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <!-- Background gradient -->
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#80cbc4;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#26a69a;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grad1)"/>
+
+            <!-- Food elements -->
+            <g transform="translate(100, 150) scale(0.8)">
+                <path d="M0 0 L50 100 L100 0 Z" fill="#fbc02d" stroke="#e65100" stroke-width="5"/>
+                <circle cx="50" cy="30" r="20" fill="#4caf50" stroke="#388e3c" stroke-width="3"/>
+                <ellipse cx="25" cy="70" rx="15" ry="10" fill="#ffcc80" stroke="#f57c00" stroke-width="3"/>
+                <ellipse cx="75" cy="70" rx="15" ry="10" fill="#ffcc80" stroke="#f57c00" stroke-width="3"/>
+                <text x="50" y="160" font-family="Arial, sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">BAKWAN</text>
+            </g>
+        </svg>
+        <p>Siapa yang tidak suka dengan camilan renyah dan gurih saat berkumpul bersama keluarga atau teman? Bakwan goreng adalah salah satu jajanan tradisional Indonesia yang selalu jadi favorit. Dengan kulit luar yang garing sempurna dan isian sayuran yang lembut, bakwan goreng bisa jadi teman setia saat santai. Ingin tahu bagaimana cara bikin bakwan goreng yang tidak hanya enak tapi juga renyah tahan lama? Mari kita simak resep sederhana dan tipsnya!</p>
+
+        <div class="recipe-section">
+            <h2>Bahan-Bahan untuk Bikin Bakwan Goreng</h2>
+            <ul>
+                <li>200 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (agar lebih renyah)</li>
+                <li>1 buah wortel, iris korek api tipis</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>50 gram tauge (opsional, tambahkan sedikit saja untuk tekstur)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air secukupnya untuk adonan</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Cara Bikin Bakwan Goreng yang Renyah</h2>
+            <ol>
+                <li><strong>Persiapan Adonan:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk jika menggunakan. Aduk rata.</li>
+                <li><strong>Tambahkan Air:</strong> Tuang air sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan jangan terlalu encer agar tidak lembek, tapi juga jangan terlalu kental agar sayuran bisa menempel.</li>
+                <li><strong>Masukkan Sayuran:</strong> Masukkan irisan wortel, kol, tauge (jika pakai), dan irisan daun bawang ke dalam adonan. Aduk perlahan hingga semua sayuran terbalut rata dengan adonan.</li>
+                <li><strong>Memanaskan Minyak:</strong> Panaskan minyak goreng dalam jumlah cukup banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng agar bakwan langsung kokoh dan renyah.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga semua sisi bakwan berwarna kuning keemasan dan matang sempurna. Usahakan jangan terlalu banyak memasukkan bakwan sekaligus agar suhu minyak tidak turun drastis.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang dan tiriskan minyaknya menggunakan saringan atau letakkan di atas tisu dapur agar sisa minyak terserap.</li>
+                <li><strong>Sajikan:</strong> Sajikan bakwan goreng selagi hangat bersama cabai rawit hijau atau saus sambal kesukaan.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Bikin Bakwan Goreng Renyah Tahan Lama</h2>
+            <ul>
+                <li><strong>Gunakan Tepung Beras:</strong> Menambahkan tepung beras ke dalam adonan tepung terigu akan memberikan tekstur yang lebih renyah dan ringan pada bakwan.</li>
+                <li><strong>Adonan Jangan Terlalu Kental:</strong> Adonan yang terlalu kental akan membuat bakwan jadi tebal dan kurang renyah di bagian dalam. Sebaliknya, adonan yang terlalu encer akan membuat sayuran sulit menempel dan bakwan mudah hancur.</li>
+                <li><strong>Minyak Panas:</strong> Pastikan minyak goreng sudah benar-benar panas sebelum memasukkan adonan bakwan. Ini kunci utama agar bakwan bisa langsung kokoh dan renyah saat digoreng.</li>
+                <li><strong>Goreng dengan Api Sedang:</strong> Setelah minyak panas, kecilkan api sedikit menjadi sedang agar bakwan matang sempurna hingga ke dalam tanpa gosong di luar.</li>
+                <li><strong>Jangan Terlalu Sering Dibalik:</strong> Balik bakwan secukupnya saja agar bumbu dan tekstur renyahnya tidak rusak.</li>
+                <li><strong>Tiriskan dengan Baik:</strong> Gunakan saringan atau tisu dapur untuk meniriskan minyak agar bakwan tidak lembek karena terlalu banyak menyerap minyak.</li>
+            </ul>
+        </div>
+
+        <p>Bikin bakwan goreng ternyata tidak sulit, kan? Dengan sedikit trik dan bahan yang tepat, Anda bisa menciptakan bakwan goreng rumahan yang tak kalah nikmat dari bakwan yang dijual di luar. Selamat mencoba resep bikin bakwan goreng ini dan nikmati camilan lezat Anda!</p>
+
+        <div class="cta">
+            <a href="#">Yuk, Coba Resep Lainnya!</a>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-pentol-bakso-beranak">Cara Membuat Pentol Bakso Beranak</a></li>
+<li><a href="/balasan-ucapan-idul-fitri-dari-non-muslim">Balasan Ucapan Idul Fitri Dari Non Muslim</a></li>
+<li><a href="/cara-buat-bakwan-kawi">Cara Buat Bakwan Kawi</a></li>
+<li><a href="/balasan-assalamualaikum">Balasan Assalamualaikum</a></li>
+<li><a href="/harga-bakpia-pathok-234">Harga Bakpia Pathok 234</a></li>
+<li><a href="/bakwan-wortel-tauge">Bakwan Wortel Tauge</a></li>
+<li><a href="/cara-membuat-bakso-mercon-dan-bahan-bahannya">Cara Membuat Bakso Mercon Dan Bahan Bahannya</a></li>
+<li><a href="/bakso-radja-paman-mercon">Bakso Radja Paman Mercon</a></li>
+<li><a href="/oleh-oleh-bakpia-kukus">Oleh Oleh Bakpia Kukus</a></li>
+<li><a href="/resep-bakwan-sayur-untuk-jualan">Resep Bakwan Sayur Untuk Jualan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Ayam Cabe Merah Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #81C784; /* Hijau sejuk */
+            --secondary-color: #AED581; /* Hijau cerah */
+            --text-color: #333;
+            --light-text-color: #777;
+            --background-color: #F9FBE7; /* Kuning pucat sejuk */
+            --accent-color: #FF8A65; /* Merah lembut cerah */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: white;
+        }
+
+        main {
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        h2, h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .content-block {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .content-block p, .content-block ul, .content-block ol {
+            margin-bottom: 15px;
+            color: var(--light-text-color);
+        }
+
+        .content-block ul, .content-block ol {
+            padding-left: 20px;
+        }
+
+        .content-block li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .recipe-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            .content-block {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayam Cabe Merah: Kelezatan Pedas Manis yang Menggugah Selera</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="content-block">
+                <div class="recipe-image">
+                    <!-- SVG Gambar Ayam Cabe Merah -->
+                    <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi ayam goreng dengan bumbu cabe merah">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F44336;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#E57373;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFB74D;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFD54F;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Latar belakang lembut -->
+                        <rect width="600" height="400" fill="#FFF9C4" />
+
+                        <!-- Ayam Goreng -->
+                        <path d="M150 150 C 180 120, 250 120, 280 150 C 310 180, 250 250, 200 250 C 150 250, 120 180, 150 150 Z" fill="#ffe0b2" stroke="#bf360c" stroke-width="2"/>
+                        <path d="M280 150 C 310 120, 380 120, 410 150 C 440 180, 380 250, 330 250 C 280 250, 250 180, 280 150 Z" fill="#ffe0b2" stroke="#bf360c" stroke-width="2"/>
+                        <path d="M200 250 C 220 280, 280 280, 300 250 C 320 220, 250 180, 200 250 Z" fill="#ffe0b2" stroke="#bf360c" stroke-width="2"/>
+
+                        <!-- Bumbu Cabe Merah -->
+                        <path d="M200 150 Q 220 100, 250 120 Q 280 100, 300 150 Q 330 180, 300 200 Q 280 230, 250 200 Q 220 230, 200 200 Z" fill="url(#grad1)" stroke="red" stroke-width="1.5" />
+                        <circle cx="250" cy="130" r="15" fill="url(#grad1)" stroke="red" stroke-width="1"/>
+                        <circle cx="270" cy="110" r="10" fill="url(#grad1)" stroke="red" stroke-width="1"/>
+                        <circle cx="230" cy="110" r="10" fill="url(#grad1)" stroke="red" stroke-width="1"/>
+                        <circle cx="250" cy="170" r="12" fill="url(#grad1)" stroke="red" stroke-width="1"/>
+
+                        <!-- Cabai Rawit Sederhana -->
+                        <path d="M240 80 Q 235 70, 240 60 Q 245 70, 240 80 Z" fill="#d32f2f" />
+                        <path d="M260 80 Q 255 70, 260 60 Q 265 70, 260 80 Z" fill="#d32f2f" />
+
+                        <!-- Potongan Daun Bawang/Seledri -->
+                        <path d="M160 160 L 170 150 L 180 160 Z" fill="#81C784" />
+                        <path d="M380 160 L 370 150 L 360 160 Z" fill="#81C784" />
+                        <path d="M250 270 L 260 260 L 270 270 Z" fill="#81C784" />
+
+                        <!-- Detail Bumbu Halus -->
+                        <circle cx="230" cy="140" r="3" fill="#f4511e" />
+                        <circle cx="270" cy="140" r="3" fill="#f4511e" />
+                        <circle cx="250" cy="160" r="3" fill="#f4511e" />
+                        <circle cx="210" cy="170" r="3" fill="#f4511e" />
+                        <circle cx="290" cy="170" r="3" fill="#f4511e" />
+                    </svg>
+                </div>
+
+                <p>Siapa yang bisa menolak kelezatan <strong class="highlight">ayam cabe merah</strong>? Hidangan ini adalah favorit banyak keluarga Indonesia, memadukan tekstur ayam yang empuk dengan bumbu pedas, manis, dan gurih yang meresap sempurna. Aroma menggoda dari tumisan bawang, cabai, dan rempah-rempah lainnya membuat hidangan ini selalu dinanti di setiap santap.</p>
+
+                <p>Membuat ayam cabe merah di rumah ternyata tidak sesulit yang dibayangkan. Dengan panduan yang tepat, Anda bisa menyajikan hidangan istimewa ini kapan saja. Kuncinya terletak pada pemilihan bahan yang segar dan cara mengolah bumbu agar menghasilkan rasa yang seimbang. Warna merah cerah dari cabai yang dominan tidak hanya memanjakan mata tetapi juga menjanjikan cita rasa yang kuat.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Mengapa Ayam Cabe Merah Begitu Disukai?</h2>
+                <p>Kombinasi rasa pedas dari cabai, manis dari gula atau kecap, serta gurih dari ayam dan rempah-rempah adalah daya tarik utama <strong class="highlight">ayam cabe merah</strong>. Hidangan ini cocok disajikan dengan nasi putih hangat, menjadikannya pilihan lauk yang selalu pas untuk makan siang maupun makan malam. Selain itu, variasi resepnya pun beragam, mulai dari yang menggunakan potongan ayam utuh, fillet, hingga yang lebih simpel dengan ayam goreng tepung.</p>
+                <p>Kepopuleran ayam cabe merah juga karena fleksibilitasnya. Anda bisa menyesuaikan tingkat kepedasan sesuai selera. Bagi pencinta pedas, bisa menambahkan lebih banyak cabai rawit. Sementara itu, bagi yang kurang terbiasa pedas, jumlah cabai bisa dikurangi dan diperbanyak penggunaan cabai merah besar yang rasanya lebih ringan.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Tips Membuat Ayam Cabe Merah yang Sempurna</h2>
+                <p>Untuk hasil terbaik, perhatikan beberapa tips berikut saat mengolah <strong class="highlight">ayam cabe merah</strong>:</p>
+                <ul>
+                    <li><strong>Pilih Ayam Berkualitas:</strong> Gunakan potongan ayam segar yang masih baik kualitasnya. Ayam kampung cenderung lebih gurih, sementara ayam broiler lebih cepat empuk.</li>
+                    <li><strong>Marinasi Ayam:</strong> Sebelum diolah, marinasi ayam dengan garam, merica, dan sedikit jeruk nipis untuk menghilangkan bau amis dan menambah kelezatan.</li>
+                    <li><strong>Goreng Ayam Hingga Matang:</strong> Goreng ayam hingga berwarna kuning keemasan dan matang sempurna di bagian dalamnya. Ini akan memberikan tekstur yang lebih renyah sebelum dicampur dengan bumbu.</li>
+                    <li><strong>Haluskan Bumbu dengan Baik:</strong> Pastikan bumbu halus seperti bawang merah, bawang putih, dan cabai benar-benar halus. Anda bisa menggunakan blender atau ulekan.</li>
+                    <li><strong>Tumis Bumbu Hingga Matang:</strong> Tumis bumbu halus dengan api sedang hingga benar-benar matang dan harum. Ini penting agar rasa langu dari cabai hilang dan bumbu lebih sedap.</li>
+                    <li><strong>Seimbangkan Rasa:</strong> Saat menambahkan kecap manis, saus sambal (jika menggunakan), gula, dan garam, cicipi dan sesuaikan rasanya. Keseimbangan manis, pedas, dan gurih adalah kunci.</li>
+                    <li><strong>Tambahkan Sedikit Air:</strong> Sedikit air atau kaldu ayam bisa membantu bumbu lebih meresap ke dalam ayam dan menciptakan saus yang lebih kental dan nikmat.</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h2>Mari Coba Resep Dasar Ayam Cabe Merah</h2>
+                <p>Berikut adalah resep sederhana untuk Anda coba di rumah:</p>
+                <h3>Bahan Utama:</h3>
+                <ul>
+                    <li>500 gram potongan ayam (paha/sayap)</li>
+                    <li>1 batang serai, memarkan</li>
+                    <li>2 lembar daun salam</li>
+                    <li>2 cm lengkuas, memarkan</li>
+                    <li>Garam, gula, merica secukupnya</li>
+                    <li>2-3 sendok makan kecap manis</li>
+                    <li>1-2 sendok makan saus sambal (opsional)</li>
+                    <li>Minyak goreng secukupnya</li>
+                    <li>Sedikit air atau kaldu ayam</li>
+                </ul>
+                <h3>Bumbu Halus:</h3>
+                <ul>
+                    <li>5-7 buah cabai merah keriting (sesuaikan selera)</li>
+                    <li>2-3 buah cabai rawit merah (jika suka lebih pedas)</li>
+                    <li>5 siung bawang merah</li>
+                    <li>3 siung bawang putih</li>
+                    <li>1 cm jahe</li>
+                </ul>
+                <h3>Cara Membuat:</h3>
+                <ol>
+                    <li>Cuci bersih ayam, marinasi dengan garam dan merica. Goreng ayam dalam minyak panas hingga matang dan berkulit. Sisihkan.</li>
+                    <li>Panaskan sedikit minyak, tumis bumbu halus hingga harum dan matang. Masukkan serai, daun salam, dan lengkuas. Aduk rata.</li>
+                    <li>Masukkan kecap manis, saus sambal (jika pakai), gula, dan garam. Aduk rata.</li>
+                    <li>Tuang sedikit air atau kaldu ayam, masak hingga bumbu mendidih dan sedikit mengental.</li>
+                    <li>Masukkan ayam goreng ke dalam tumisan bumbu. Aduk rata hingga semua potongan ayam terbalut bumbu.</li>
+                    <li>Masak sebentar hingga bumbu meresap sempurna.</li>
+                    <li>Sajikan <strong class="highlight">ayam cabe merah</strong> selagi hangat dengan nasi putih.</li>
+                </ol>
+            </div>
+
+            <div class="content-block">
+                <p>Selamat mencoba resep <strong class="highlight">ayam cabe merah</strong> ini! Semoga hidangan ini membawa kehangatan dan keceriaan di meja makan Anda.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-buat-bakpao-yang-praktis">Cara Buat Bakpao Yang Praktis</a></li>
+<li><a href="/bakpia-telo-lawang">Bakpia Telo Lawang</a></li>
+<li><a href="/cetakan-gorengan-bakwan">Cetakan Gorengan Bakwan</a></li>
+<li><a href="/sasa-bakwan">Sasa Bakwan</a></li>
+<li><a href="/bakwan-sayur-ebi">Bakwan Sayur Ebi</a></li>
+<li><a href="/resep-membuat-bakwan-enak">Resep Membuat Bakwan Enak</a></li>
+<li><a href="/bakteri-gram-positif-dan-negatif">Bakteri Gram Positif Dan Negatif</a></li>
+<li><a href="/baku-1">Baku 1</a></li>
+<li><a href="/bakso-beranak-terbesar-di-dunia">Bakso Beranak Terbesar Di Dunia</a></li>
+<li><a href="/bakpia-25-asli">Bakpia 25 Asli</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

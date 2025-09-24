@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Rumahan: Kelezatan Sederhana yang Selalu Dirindu</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #60A5FA; /* Biru sejuk */
+            --color-secondary: #34D399; /* Hijau cerah */
+            --color-background: #F0F9FF; /* Latar belakang biru muda sangat pucat */
+            --color-text-dark: #1F2937; /* Teks gelap untuk kontras */
+            --color-text-light: #FFFFFF; /* Teks terang untuk elemen tombol/highlight */
+            --font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --spacing-unit: 16px;
+        }
+
+        body {
+            font-family: var(--font-family-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: var(--spacing-unit);
+            background-color: var(--color-background);
+            color: var(--color-text-dark);
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 768px; /* Lebar maksimum untuk tampilan yang lebih baik di layar besar */
+            background-color: var(--color-text-light);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            padding: calc(var(--spacing-unit) * 2);
+            text-align: center;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: var(--color-text-light);
+        }
+
+        main {
+            padding: calc(var(--spacing-unit) * 2);
+            flex-grow: 1;
+        }
+
+        h2 {
+            color: var(--color-secondary);
+            margin-top: calc(var(--spacing-unit) * 1.5);
+            margin-bottom: var(--spacing-unit);
+        }
+
+        p {
+            margin-bottom: var(--spacing-unit);
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .recipe-section {
+            background-color: #f9fafb; /* Sedikit lebih gelap dari background */
+            padding: var(--spacing-unit);
+            border-radius: 8px;
+            margin-bottom: var(--spacing-unit);
+        }
+
+        .recipe-section h3 {
+            color: var(--color-primary);
+            margin-top: 0;
+            margin-bottom: var(--spacing-unit);
+        }
+
+        .recipe-section ul,
+        .recipe-section ol {
+            padding-left: calc(var(--spacing-unit) * 1.5);
+        }
+
+        .recipe-section li {
+            margin-bottom: calc(var(--spacing-unit) / 2);
+        }
+
+        footer {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            text-align: center;
+            padding: var(--spacing-unit);
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.7em;
+            }
+            main {
+                padding: var(--spacing-unit);
+            }
+            .image-container {
+                margin-bottom: var(--spacing-unit);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bakwan Rumahan: Kelezatan Sederhana yang Selalu Dirindu</h1>
+        </header>
+
+        <main>
+            <div class="image-container">
+                <!-- SVG Gambar Bakwan -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" aria-label="Ilustrasi Bakwan renyah berwarna cokelat keemasan dengan sayuran terlihat di dalamnya">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#D4A017;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#grad1)" stroke="#A0522D" stroke-width="3" d="M 20 20
+                             C 30 10, 50 10, 60 20
+                             Q 70 30, 60 40
+                             C 50 50, 30 50, 20 40
+                             Q 10 30, 20 20 Z" />
+                    <path fill="url(#grad1)" stroke="#A0522D" stroke-width="3" d="M 80 30
+                             C 90 20, 110 20, 120 30
+                             Q 130 40, 120 50
+                             C 110 60, 90 60, 80 50
+                             Q 70 40, 80 30 Z" />
+                    <path fill="url(#grad1)" stroke="#A0522D" stroke-width="3" d="M 40 60
+                             C 50 50, 70 50, 80 60
+                             Q 90 70, 80 80
+                             C 70 90, 50 90, 40 80
+                             Q 30 70, 40 60 Z" />
+                    <!-- Sayuran -->
+                    <circle cx="35" cy="35" r="5" fill="#32CD32" /> <!-- Wortel -->
+                    <circle cx="70" cy="25" r="4" fill="#98FB98" /> <!-- Daun Bawang -->
+                    <circle cx="95" cy="45" r="6" fill="#2E8B57" /> <!-- Kol -->
+                    <circle cx="50" cy="70" r="5" fill="#32CD32" /> <!-- Wortel -->
+                    <circle cx="110" cy="75" r="4" fill="#98FB98" /> <!-- Daun Bawang -->
+                    <rect x="150" y="30" width="40" height="20" rx="5" ry="5" fill="#D4A017" stroke="#A0522D" stroke-width="2"/>
+                    <rect x="160" y="40" width="30" height="15" rx="3" ry="3" fill="#B8860B" stroke="#A0522D" stroke-width="2"/>
+                    <circle cx="175" cy="47" r="4" fill="#98FB98" />
+                    <circle cx="155" cy="40" r="3" fill="#32CD32" />
+                </svg>
+            </div>
+
+            <p>Siapa yang bisa menolak kehangatan dan renyahnya bakwan rumahan? Camilan sederhana namun kaya rasa ini selalu berhasil menghadirkan senyum di setiap gigitan. Di Indonesia, bakwan bukan sekadar gorengan, melainkan bagian dari tradisi kuliner yang tak lekang oleh waktu, seringkali menjadi primadona saat berkumpul bersama keluarga atau teman.</p>
+
+            <p>Keindahan bakwan rumahan terletak pada kesederhanaannya. Bahan-bahan yang digunakan mudah didapat, dan proses pembuatannya pun relatif cepat. Namun, di balik kesederhanaan itu, tersimpan kelezatan yang sulit ditandingi. Adonan tepung yang berpadu dengan aneka sayuran segar seperti wortel, kol, tauge, dan daun bawang, kemudian digoreng hingga keemasan, menciptakan tekstur yang garing di luar namun tetap lembut di dalam.</p>
+
+            <h2>Rahasia Mengapa Bakwan Rumahan Selalu Spesial</h2>
+            <p>Ada beberapa elemen yang membuat bakwan rumahan begitu istimewa:</p>
+            <ul>
+                <li><strong>Kesegaran Bahan:</strong> Penggunaan sayuran yang baru dipotong dan berkualitas baik sangat memengaruhi rasa akhir. Krenyesnya sayuran segar menambah dimensi pada bakwan.</li>
+                <li><strong>Adonan yang Pas:</strong> Keseimbangan antara tepung terigu, tepung beras (opsional, untuk menambah kerenyahan), bumbu, dan air adalah kunci. Tidak terlalu encer sehingga mudah hancur, tidak juga terlalu kental sehingga terasa 'berat'.</li>
+                <li><strong>Teknik Menggoreng:</strong> Minyak yang cukup panas namun tidak berasap menjadi krusial. Menggoreng dalam jumlah yang tidak terlalu banyak sekaligus juga memastikan bakwan matang merata dan tetap renyah.</li>
+                <li><strong>Sentuhan Bumbu Rumahan:</strong> Kadang, hanya dengan sedikit bawang putih halus, ketumbar bubuk, garam, dan merica, sudah cukup untuk membangkitkan cita rasa otentik.</li>
+            </ul>
+
+            <div class="recipe-section">
+                <h3>Tips Membuat Bakwan Rumahan Sempurna</h3>
+                <ol>
+                    <li><strong>Pilih Sayuran Tepat:</strong> Kombinasi wortel iris tipis, kol iris halus, tauge, dan daun bawang adalah yang paling umum. Anda juga bisa menambahkan buncis atau udang cincang.</li>
+                    <li><strong>Jangan Terlalu Banyak Sayuran:</strong> Pastikan adonan tepung cukup untuk melapisi sayuran, agar tidak mudah patah saat digoreng.</li>
+                    <li><strong>Suhu Minyak:</strong> Panaskan minyak dengan api sedang-besar. Tes dengan sedikit adonan; jika langsung mengapung dan berbuih, minyak siap digunakan.</li>
+                    <li><strong>Goreng Bertahap:</strong> Jangan memasukkan terlalu banyak adonan sekaligus ke dalam wajan agar suhu minyak tidak turun drastis.</li>
+                    <li><strong>Tiriskan dengan Baik:</strong> Gunakan saringan atau tisu dapur untuk menyerap kelebihan minyak setelah digoreng.</li>
+                </ol>
+            </div>
+
+            <p>Bakwan rumahan paling nikmat disantap selagi hangat, ditemani secangkir teh manis atau kopi. Sambal kacang, sambal cabai rawit, atau sekadar cabai rawit utuh bisa menjadi pelengkap yang sempurna untuk menambah sensasi rasa. Aroma harumnya yang menggoda saat digoreng pun sudah cukup untuk membangkitkan selera.</p>
+
+            <p>Lebih dari sekadar makanan, bakwan rumahan adalah simbol kehangatan keluarga dan kesederhanaan yang membahagiakan. Ia mengingatkan kita pada momen-momen kecil yang penuh kebersamaan, rasa aman, dan cinta. Jadi, kapan terakhir kali Anda menikmati atau membuat bakwan rumahan? Mungkin inilah saat yang tepat untuk menghadirkan kembali kelezatan sederhana ini di meja makan Anda.</p>
+        </main>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-djoe">Bakpia Djoe</a></li>
+<li><a href="/kue-bakwan">Kue Bakwan</a></li>
+<li><a href="/harga-bakpia-pathok-52">Harga Bakpia Pathok 52</a></li>
+<li><a href="/bakteri-psikotropik-adalah">Bakteri Psikotropik Adalah</a></li>
+<li><a href="/resep-ote-ote-sayur-empuk">Resep Ote Ote Sayur Empuk</a></li>
+<li><a href="/pia-kacang-merah">Pia Kacang Merah</a></li>
+<li><a href="/bakso-bogem-mercon">Bakso Bogem Mercon</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-renyah">Cara Membuat Bakwan Sayur Renyah</a></li>
+<li><a href="/wales-ke-piala-dunia-2022">Wales Ke Piala Dunia 2022</a></li>
+<li><a href="/bakpao-macan">Bakpao Macan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

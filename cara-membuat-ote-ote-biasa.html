@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Ote Ote Biasa yang Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #FFC107; /* Kuning cerah */
+            --background-color: #E8F5E9; /* Hijau pastel muda */
+            --text-color: #333;
+            --heading-color: #2E7D32; /* Hijau tua */
+            --card-background: #FFFFFF;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        h1, h2, h3 {
+            color: var(--heading-color);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px var(--shadow-color);
+        }
+
+        .content-section {
+            margin-bottom: 25px;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+        }
+
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+
+        .ingredients strong, .instructions strong {
+            color: var(--primary-color);
+        }
+
+        .step-highlight {
+            background-color: var(--secondary-color);
+            padding: 8px 12px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 0.9em;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .hero-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-image">
+            <!-- SVG Image: Ilustrasi Ote Ote -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi ote ote goreng yang renyah">
+                <defs>
+                    <linearGradient id="grad-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFEB3B;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFA000;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad-green" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81C784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#388E3C;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <!-- Background -->
+                <rect width="600" height="300" fill="#E8F5E9"/>
+
+                <!-- Ote Ote 1 -->
+                <ellipse cx="200" cy="150" rx="80" ry="60" fill="url(#grad-yellow)" stroke="#BF360C" stroke-width="3"/>
+                <circle cx="230" cy="110" r="15" fill="#FF9800"/>
+                <circle cx="170" cy="120" r="12" fill="#FF9800"/>
+                <circle cx="250" cy="170" r="10" fill="#FF9800"/>
+                <circle cx="160" cy="170" r="14" fill="#FF9800"/>
+
+                <!-- Ote Ote 2 -->
+                <ellipse cx="400" cy="150" rx="90" ry="70" fill="url(#grad-yellow)" stroke="#BF360C" stroke-width="4"/>
+                <circle cx="440" cy="110" r="18" fill="#FF9800"/>
+                <circle cx="360" cy="130" r="15" fill="#FF9800"/>
+                <circle cx="460" cy="180" r="12" fill="#FF9800"/>
+                <circle cx="350" cy="190" r="16" fill="#FF9800"/>
+                <circle cx="410" cy="90" r="10" fill="#FF9800"/>
+
+                <!-- Ote Ote 3 (dengan sedikit sayuran) -->
+                <ellipse cx="300" cy="250" rx="70" ry="50" fill="url(#grad-yellow)" stroke="#BF360C" stroke-width="3"/>
+                <circle cx="320" cy="210" r="10" fill="#FF9800"/>
+                <circle cx="280" cy="230" r="8" fill="#FF9800"/>
+                <rect x="290" y="235" width="15" height="5" fill="#4CAF50" rx="2"/>
+                <rect x="265" y="245" width="12" height="4" fill="#4CAF50" rx="1.5"/>
+            </svg>
+        </div>
+
+        <h1>Cara Membuat Ote Ote Biasa yang Lezat</h1>
+
+        <div class="content-section">
+            <h2>Pengantar</h2>
+            <p>Ote-ote, atau yang sering juga disebut bakwan sayur, adalah camilan gorengan favorit banyak orang di Indonesia. Teksturnya yang renyah di luar dan lembut di dalam, dipadukan dengan aneka sayuran segar, menjadikannya pilihan sempurna untuk dinikmati kapan saja. Membuat ote-ote sendiri di rumah ternyata tidaklah sulit. Dengan panduan yang tepat, Anda bisa menyajikan ote-ote yang lezat dan menggugah selera untuk keluarga.</p>
+        </div>
+
+        <div class="content-section ingredients">
+            <h2>Bahan-Bahan</h2>
+            <ul>
+                <li><strong>Tepung Terigu:</strong> 250 gram</li>
+                <li><strong>Tepung Beras:</strong> 50 gram (untuk kerenyahan ekstra)</li>
+                <li><strong>Air Es:</strong> Sekitar 300-350 ml (sesuaikan kekentalan adonan)</li>
+                <li><strong>Sayuran:</strong>
+                    <ul>
+                        <li>Wortel: 1 buah ukuran sedang, parut kasar atau iris korek api tipis</li>
+                        <li>Kubis/Kol: 1/4 bonggol kecil, iris tipis</li>
+                        <li>Tauge: 50 gram (opsional)</li>
+                        <li>Daun Bawang: 2 batang, iris tipis</li>
+                    </ul>
+                </li>
+                <li><strong>Bumbu Halus:</strong>
+                    <ul>
+                        <li>Bawang Putih: 3 siung</li>
+                        <li>Merica Bubuk: 1/2 sendok teh</li>
+                        <li>Garam: Secukupnya (sekitar 1 sendok teh)</li>
+                        <li>Kaldu Bubuk (opsional): 1/2 sendok teh</li>
+                    </ul>
+                </li>
+                <li><strong>Minyak Goreng:</strong> Secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="content-section instructions">
+            <h2>Langkah-Langkah Pembuatan</h2>
+            <p>Berikut adalah cara membuat ote-ote biasa yang mudah diikuti:</p>
+            <ol>
+                <li>
+                    <span class="step-highlight">Langkah 1:</span>
+                    <strong>Persiapan Adonan Tepung</strong>
+                    Campurkan tepung terigu dan tepung beras dalam sebuah wadah. Masukkan bumbu halus (bawang putih, merica, garam, kaldu bubuk jika pakai). Aduk rata.
+                </li>
+                <li>
+                    <span class="step-highlight">Langkah 2:</span>
+                    <strong>Pengadonan</strong>
+                    Tuangkan air es sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kental tetapi masih bisa dituang. Adonan tidak boleh terlalu encer agar tidak meleber saat digoreng, namun juga tidak terlalu kental agar tidak keras. Konsistensi yang pas adalah seperti adonan dadar yang agak kental.
+                </li>
+                <li>
+                    <span class="step-highlight">Langkah 3:</span>
+                    <strong>Memasukkan Sayuran</strong>
+                    Masukkan semua sayuran yang sudah diiris atau diparut ke dalam adonan tepung. Tambahkan irisan daun bawang. Aduk rata hingga semua sayuran tercampur merata dengan adonan.
+                </li>
+                <li>
+                    <span class="step-highlight">Langkah 4:</span>
+                    <strong>Pemanasan Minyak</strong>
+                    Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Minyak harus benar-benar panas sebelum Anda mulai menggoreng. Anda bisa mengetesnya dengan mencelupkan sedikit adonan, jika langsung berbuih berarti minyak sudah siap.
+                </li>
+                <li>
+                    <span class="step-highlight">Langkah 5:</span>
+                    <strong>Menggoreng Ote-Ote</strong>
+                    Ambil satu sendok sayur penuh adonan sayuran, lalu tuang perlahan ke dalam minyak panas. Jangan terlalu banyak memasukkan adonan sekaligus agar suhu minyak tidak turun drastis dan ote-ote matang merata. Goreng hingga satu sisi berwarna kuning keemasan dan renyah, lalu balik dan goreng sisi satunya lagi hingga matang sempurna.
+                </li>
+                <li>
+                    <span class="step-highlight">Langkah 6:</span>
+                    <strong>Tiriskan dan Sajikan</strong>
+                    Angkat ote-ote yang sudah matang dan tiriskan minyaknya di atas rak kawat atau tisu dapur agar tetap renyah. Sajikan ote-ote selagi hangat dengan cabai rawit atau saus sambal kesukaan Anda.
+                </li>
+            </ol>
+        </div>
+
+        <div class="content-section">
+            <h2>Tips Tambahan</h2>
+            <p>Untuk hasil ote-ote yang lebih maksimal, perhatikan beberapa tips berikut:</p>
+            <ul>
+                <li>Gunakan air es untuk adonan agar menghasilkan tekstur yang lebih renyah.</li>
+                <li>Jangan terlalu banyak memasukkan sayuran ke dalam adonan, karena bisa membuat ote-ote sulit matang merata.</li>
+                <li>Pastikan minyak benar-benar panas sebelum menggoreng. Ini kunci utama agar ote-ote tidak menyerap banyak minyak dan menjadi renyah.</li>
+                <li>Goreng dengan api sedang cenderung kecil setelah ote-ote masuk agar bagian dalamnya matang sempurna tanpa gosong di luar.</li>
+                <li>Untuk variasi, Anda bisa menambahkan udang kecil atau irisan bakso ke dalam adonan.</li>
+            </ul>
+            <p>Selamat mencoba membuat ote-ote biasa di rumah. Camilan lezat ini pasti akan disukai keluarga!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Resep Khas Nusantara</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakso-sambal-pedas">Resep Bakso Sambal Pedas</a></li>
+<li><a href="/cara-buat-adonan-bakpao">Cara Buat Adonan Bakpao</a></li>
+<li><a href="/bakpao-mr-oey">Bakpao Mr Oey</a></li>
+<li><a href="/harga-bakpia-145">Harga Bakpia 145</a></li>
+<li><a href="/bakwan-resep">Bakwan Resep</a></li>
+<li><a href="/cara-membuat-dadar-jagung-crispy">Cara Membuat Dadar Jagung Crispy</a></li>
+<li><a href="/bakpao-ubi-jalar">Bakpao Ubi Jalar</a></li>
+<li><a href="/bakpia-enak-di-malioboro">Bakpia Enak Di Malioboro</a></li>
+<li><a href="/bikin-bakwan-jagung-yang-renyah">Bikin Bakwan Jagung Yang Renyah</a></li>
+<li><a href="/minipao-kacang-hijau">Minipao Kacang Hijau</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Goreng Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Biru muda sejuk */
+            color: #004d40; /* Hijau tua untuk kontras */
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* Latar belakang putih bersih */
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 77, 64, 0.1); /* Bayangan lembut dengan warna tema */
+        }
+        h1, h2 {
+            color: #00796b; /* Biru kehijauan cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        img.main-image {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 77, 64, 0.1);
+        }
+        .ingredients, .instructions {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #f0f9f9; /* Latar belakang sedikit lebih gelap untuk bagian */
+            border-radius: 10px;
+            border-left: 5px solid #00796b;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 20px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .recipe-note {
+            font-style: italic;
+            color: #004d40;
+            margin-top: 20px;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            img.main-image {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Goreng Renyah dan Menggugah Selera</h1>
+
+        <!-- SVG Image -->
+        <svg class="main-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00bcd4;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="400" height="250" rx="10" ry="10" fill="url(#grad1)" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="30" font-weight="bold">Bakwan Lezat</text>
+            <circle cx="100" cy="150" r="30" fill="#ffb74d" />
+            <circle cx="150" cy="180" r="25" fill="#ffcc80" />
+            <circle cx="200" cy="140" r="35" fill="#80cbc4" />
+            <path d="M 280 100 Q 320 120 300 180 Q 280 200 250 170 Z" fill="#e0e0e0" stroke="#004d40" stroke-width="2"/>
+        </svg>
+
+        <p>Bakwan goreng adalah salah satu camilan klasik Indonesia yang selalu digemari. Camilan ini menawarkan kombinasi tekstur renyah di luar dan lembut di dalam, dengan cita rasa gurih yang pas di lidah. Proses membuatnya pun relatif mudah, menjadikannya pilihan favorit untuk dinikmati saat santai, berkumpul bersama keluarga, atau bahkan sebagai pendamping hidangan utama.</p>
+
+        <p>Siapa yang bisa menolak kelezatan bakwan goreng? Gigitan pertama yang renyah, diikuti oleh rasa sayuran yang matang sempurna dan bumbu yang meresap, sungguh memanjakan. Rahasia kelezatan bakwan goreng terletak pada adonan yang pas dan proses penggorengan yang tepat. Dengan resep sederhana ini, Anda bisa menciptakan bakwan goreng yang super renyah dan lezat di rumah.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan</h2>
+            <ul>
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+                <li>1 buah wortel ukuran sedang, iris tipis korek api</li>
+                <li>1/4 kol ukuran kecil, iris tipis</li>
+                <li>50 gram tauge (opsional)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>1 batang seledri, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1 sendok teh garam (sesuai selera)</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+                <li>Sekitar 150-180 ml air dingin (secukupnya hingga adonan kental tapi tidak terlalu cair)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li>Siapkan wadah, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+                <li>Masukkan bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan).</li>
+                <li>Tuang air dingin sedikit demi sedikit sambil terus diaduk hingga menjadi adonan yang kental namun masih bisa dituang. Jangan terlalu encer agar bakwan tidak lembek.</li>
+                <li>Masukkan irisan wortel, kol, daun bawang, dan seledri ke dalam adonan. Jika menggunakan tauge, masukkan terakhir agar tidak terlalu hancur. Aduk hingga semua sayuran terbalut rata dengan adonan.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum mulai menggoreng agar bakwan renyah.</li>
+                <li>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan matang.</li>
+                <li>Balik bakwan agar matang merata di kedua sisinya.</li>
+                <li>Angkat bakwan yang sudah matang dan tiriskan di atas tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li>Ulangi proses hingga semua adonan habis.</li>
+            </ol>
+        </div>
+
+        <p class="recipe-note">Sajikan bakwan goreng selagi hangat bersama cabai rawit hijau, sambal kecap, atau saus favorit Anda. Nikmati kerenyahan dan kelezatannya!</p>
+
+        <p>Membuat bakwan goreng di rumah tidak hanya menyenangkan, tetapi juga memberikan kepuasan tersendiri. Anda bisa menyesuaikan jenis sayuran sesuai selera, menambahkan udang atau daging cincang untuk variasi rasa, atau bahkan menggunakan tepung tapioka sedikit untuk tekstur yang berbeda. Kunci utama untuk mendapatkan bakwan yang renyah adalah penggunaan air dingin saat membuat adonan dan memastikan minyak benar-benar panas saat menggoreng. Jangan menggoreng terlalu banyak dalam satu waktu agar suhu minyak tetap stabil dan bakwan matang sempurna.</p>
+
+        <p>Resep dasar ini sangat fleksibel. Jika Anda suka pedas, tambahkan irisan cabai rawit ke dalam adonan. Untuk aroma yang lebih khas, sedikit parutan lengkuas atau jahe juga bisa ditambahkan. Bakwan adalah camilan yang sempurna untuk segala suasana. Aroma harum saat menggorengnya saja sudah cukup menggugah selera. Segera coba resep ini dan buat hari Anda lebih ceria dengan bakwan goreng buatan sendiri!</p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bumbu-jadi-bakwan-jagung">Bumbu Jadi Bakwan Jagung</a></li>
+<li><a href="/bumbu-sayur-kepala-kakap">Bumbu Sayur Kepala Kakap</a></li>
+<li><a href="/cara-membuat-toge-anti-gagal">Cara Membuat Toge Anti Gagal</a></li>
+<li><a href="/bakpia-merah">Bakpia Merah</a></li>
+<li><a href="/bakpao-bogasari">Bakpao Bogasari</a></li>
+<li><a href="/bakteri-apatogen">Bakteri Apatogen</a></li>
+<li><a href="/cara-menghilangkan-bakteri-salmonella-dalam-tubuh">Cara Menghilangkan Bakteri Salmonella Dalam Tubuh</a></li>
+<li><a href="/harga-bakpia-juwara-1">Harga Bakpia Juwara 1</a></li>
+<li><a href="/cara-membuat-bakpao-kukus-takaran-sendok">Cara Membuat Bakpao Kukus Takaran Sendok</a></li>
+<li><a href="/bakpia-pathok-livia">Bakpia Pathok Livia</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

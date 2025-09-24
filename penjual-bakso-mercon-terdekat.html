@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Penjual Bakso Mercon Terdekat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #004d40; /* Warna teks gelap */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 77, 64, 0.1);
+        }
+        h1, h2, h3 {
+            color: #00796b; /* Warna judul yang lebih menonjol */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .highlight {
+            color: #00796b;
+            font-weight: bold;
+        }
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: #00796b;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #004d40;
+        }
+        .svg-icon {
+            display: block;
+            margin: 30px auto;
+            width: 150px; /* Ukuran ikon */
+            height: 150px; /* Ukuran ikon */
+        }
+        .search-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #b2ebf2; /* Warna latar belakang yang kontras tapi tetap sejuk */
+            border-radius: 8px;
+        }
+        .search-section input[type="text"] {
+            padding: 10px 15px;
+            width: 70%;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-right: 10px;
+        }
+        .search-section button {
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .search-section button:hover {
+            background-color: #004d40;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            .svg-icon {
+                width: 100px;
+                height: 100px;
+            }
+            .search-section input[type="text"] {
+                width: 60%;
+                margin-bottom: 10px;
+            }
+            .search-section button {
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-1-5h2v2h-2v-2zm0-7h2v4h-2V8z" fill="#00796b"/>
+            <path d="M12 10a2 2 0 100 4 2 2 0 000-4z" fill="#00796b"/>
+            <path d="M11.5 14.5h1v-3h-1v3z" fill="#00796b"/>
+            <path d="M12 16a2 2 0 100-4 2 2 0 000 4z" fill="#00796b"/>
+        </svg>
+        <h1>Nikmati Sensasi Pedas Bakso Mercon!</h1>
+        <p>Siapa yang tidak tergoda dengan kelezatan bakso yang berpadu dengan tendangan pedas yang menggigit? Bagi para pecinta kuliner pedas, menemukan <span class="highlight">penjual bakso mercon terdekat</span> adalah sebuah kenikmatan tersendiri. Sensasi gurih dari bakso berkualitas berpadu sempurna dengan racikan bumbu mercon yang kaya rempah dan cabai pilihan, menciptakan pengalaman makan yang tak terlupakan.</p>
+
+        <p>Di era digital ini, mencari kuliner favorit menjadi semakin mudah. Anda tidak perlu lagi berkeliling kota secara fisik untuk menemukan <span class="highlight">penjual bakso mercon terdekat</span>. Cukup gunakan gawai Anda, dan berbagai pilihan penjual terdekat akan tersaji di layar. Mulai dari warung legendaris hingga gerai modern, semuanya bisa Anda temukan dengan cepat.</p>
+
+        <div class="search-section">
+            <h2>Cari Bakso Mercon Sekarang!</h2>
+            <p>Masukkan lokasi Anda atau nama penjual yang Anda cari:</p>
+            <input type="text" id="location-input" placeholder="Contoh: Jakarta Selatan atau Bakso Samudra">
+            <button onclick="searchBaksoMercon()">Cari</button>
+        </div>
+
+        <h2>Mengapa Bakso Mercon Begitu Istimewa?</h2>
+        <p>Bakso mercon bukan sekadar bakso biasa. Keistimewaannya terletak pada penggunaan sambal mercon yang dibuat dari campuran cabai rawit segar, bawang, dan berbagai rempah rahasia yang menghasilkan tingkat kepedasan luar biasa namun tetap memiliki kedalaman rasa. Tingkat kepedasan ini seringkali disesuaikan dengan selera pelanggan, mulai dari yang "sedikit pedas" hingga "super pedas" yang hanya untuk pemberani.</p>
+        <p>Proses pembuatan bakso mercon yang autentik biasanya melibatkan pemilihan daging sapi berkualitas tinggi, dipadukan dengan tepung tapioka dan bumbu-bumbu alami lainnya. Hasilnya adalah bakso yang kenyal, gurih, dan memiliki aroma menggugah selera. Ketika disajikan dengan kuah kaldu yang gurih dan berempah, ditambah taburan bawang goreng serta seledri, kenikmatannya semakin paripurna. Momen menikmati kuah pedasnya, apalagi saat cuaca sedang dingin, sungguh menghangatkan dan menyegarkan.</p>
+
+        <h2>Tips Menemukan Penjual Bakso Mercon Terbaik</h2>
+        <p>Ketika mencari <span class="highlight">penjual bakso mercon terdekat</span>, ada beberapa hal yang bisa Anda pertimbangkan:</p>
+        <ul>
+            <li><span class="highlight">Ulasan dan Rating:</span> Perhatikan ulasan dari pelanggan lain. Ulasan yang positif mengenai rasa, kebersihan, dan pelayanan biasanya menjadi indikator yang baik.</li>
+            <li><span class="highlight">Bahan Berkualitas:</span> Penjual yang baik biasanya tidak ragu untuk menyebutkan bahwa mereka menggunakan daging sapi asli dan bahan-bahan segar untuk bakso serta sambal mercon mereka.</li>
+            <li><span class="highlight">Variasi Menu:</span> Beberapa penjual mungkin menawarkan variasi bakso mercon, seperti bakso urat mercon, bakso halus mercon, atau bahkan tambahan topping seperti tetelan atau telur puyuh.</li>
+            <li><span class="highlight">Kebersihan Tempat:</span> Kebersihan tempat makan adalah faktor penting. Pastikan penjual menjaga standar kebersihan yang baik.</li>
+        </ul>
+
+        <p>Jadi, jika Anda sedang mencari sesuatu yang pedas, gurih, dan mengenyangkan, jangan ragu untuk mencari <span class="highlight">penjual bakso mercon terdekat</span> di sekitar Anda. Nikmati sensasi pedas yang menggugah selera dan buat perut Anda bahagia!</p>
+
+        <a href="#" class="cta-button">Temukan Bakso Mercon Favorit Anda!</a>
+    </div>
+
+    <script>
+        function searchBaksoMercon() {
+            const locationInput = document.getElementById('location-input').value;
+            if (locationInput) {
+                // Di sini Anda bisa mengintegrasikan dengan API peta atau layanan pencarian.
+                // Untuk contoh sederhana, kita akan mengarahkan ke Google Maps dengan query pencarian.
+                const query = encodeURIComponent(`penjual bakso mercon terdekat ${locationInput}`);
+                window.open(`https://www.google.com/maps/search/${query}`, '_blank');
+            } else {
+                alert('Mohon masukkan lokasi atau nama penjual terlebih dahulu.');
+            }
+        }
+    </script>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-mercon-beranak-ibu-jannah">Bakso Mercon Beranak Ibu Jannah</a></li>
+<li><a href="/resep-bikin-bakwan-goreng">Resep Bikin Bakwan Goreng</a></li>
+<li><a href="/cara-bikin-bakwan-jagung-krispi">Cara Bikin Bakwan Jagung Krispi</a></li>
+<li><a href="/resep-bakwan-jagung-pakai-tepung-sajiku">Resep Bakwan Jagung Pakai Tepung Sajiku</a></li>
+<li><a href="/bakteri-mycoplasma">Bakteri Mycoplasma</a></li>
+<li><a href="/bakung-bunga">Bakung Bunga</a></li>
+<li><a href="/bakwan-pak-cipto">Bakwan Pak Cipto</a></li>
+<li><a href="/pia-basah">Pia Basah</a></li>
+<li><a href="/pecel-bakwan">Pecel Bakwan</a></li>
+<li><a href="/resep-membuat-bakwan-sederhana">Resep Membuat Bakwan Sederhana</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakpao Custard Lembut & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Biru muda cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 768px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00bcd4; /* Biru laut cerah */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #0097a7; /* Biru laut sedikit lebih gelap */
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        .highlight {
+            color: #00796b; /* Hijau toska */
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .recipe-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .step-number {
+            background-color: #00bcd4; /* Biru laut cerah */
+            color: white;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .step-description {
+            flex-grow: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            .recipe-step {
+                flex-direction: column;
+                align-items: center;
+            }
+            .step-number {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sensasi Lembut & Manis Bakpao Custard</h1>
+
+        <div class="image-container">
+            <!-- SVG Image: Ilustrasi Bakpao Custard yang Menggugah Selera -->
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="bakpaoCustardTitle">
+                <title id="bakpaoCustardTitle">Ilustrasi bakpao custard yang lembut dengan isian kuning cerah</title>
+                <defs>
+                    <linearGradient id="custardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fff3e0; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffe0b2; stop-opacity:1" />
+                    </linearGradient>
+                    <radialGradient id="steamGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:rgba(255,255,255,0.8); stop-opacity:0" />
+                        <stop offset="100%" style="stop-color:rgba(255,255,255,0.2); stop-opacity:1" />
+                    </radialGradient>
+                </defs>
+
+                <!-- Bakpao 1 -->
+                <ellipse cx="120" cy="150" rx="55" ry="45" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="2"/>
+                <ellipse cx="120" cy="120" rx="30" ry="15" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1"/>
+                <!-- Custard Filling -->
+                <path d="M120 120 Q 140 135, 120 150 Q 100 135, 120 120 Z" fill="url(#custardGradient)" />
+
+                <!-- Bakpao 2 -->
+                <ellipse cx="250" cy="160" rx="60" ry="50" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="2"/>
+                <ellipse cx="250" cy="125" rx="35" ry="20" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1"/>
+                <!-- Custard Filling -->
+                <path d="M250 125 Q 280 145, 250 160 Q 220 145, 250 125 Z" fill="url(#custardGradient)" />
+
+                <!-- Steam -->
+                <g opacity="0.6">
+                    <circle cx="150" cy="80" r="15" fill="url(#steamGradient)" />
+                    <circle cx="170" cy="70" r="12" fill="url(#steamGradient)" />
+                    <circle cx="190" cy="85" r="18" fill="url(#steamGradient)" />
+                    <circle cx="280" cy="90" r="20" fill="url(#steamGradient)" />
+                    <circle cx="300" cy="80" r="15" fill="url(#steamGradient)" />
+                </g>
+
+                <!-- Detail Genggaman -->
+                <path d="M120 195 C 110 205, 105 220, 115 230 L 125 230 C 135 220, 130 205, 120 195 Z" fill="#e0e0e0" />
+                <path d="M250 210 C 240 220, 235 235, 245 245 L 255 245 C 265 235, 260 220, 250 210 Z" fill="#e0e0e0" />
+
+            </svg>
+        </div>
+
+        <p>Bakpao custard adalah salah satu jajanan tradisional yang selalu berhasil menggoda lidah. Perpaduan antara kelembutan kulit bakpao yang empuk dan isian custard yang lumer di mulut menciptakan harmoni rasa yang tak terlupakan. Cocok dinikmati sebagai teman minum teh di sore hari, bekal sekolah anak, atau sekadar camilan pengganjal lapar.</p>
+
+        <p>Membuat bakpao custard di rumah ternyata tidak sesulit yang dibayangkan. Dengan mengikuti langkah-langkah yang tepat, Anda bisa menciptakan bakpao yang sempurna, selembut awan dan sekaya rasanya.</p>
+
+        <h2>Bahan-Bahan:</h2>
+
+        <h3>Untuk Kulit Bakpao:</h3>
+        <ul>
+            <li>250 gram tepung terigu protein rendah</li>
+            <li>50 gram tepung terigu protein sedang</li>
+            <li>50 gram gula pasir</li>
+            <li>1 sendok teh ragi instan</li>
+            <li>1/4 sendok teh garam</li>
+            <li>130 ml susu cair hangat</li>
+            <li>2 sendok makan minyak sayur</li>
+        </ul>
+
+        <h3>Untuk Isian Custard:</h3>
+        <ul>
+            <li>2 kuning telur</li>
+            <li>50 gram gula pasir</li>
+            <li>25 gram tepung maizena</li>
+            <li>200 ml susu cair</li>
+            <li>1/4 sendok teh vanili bubuk</li>
+            <li>1 sendok makan margarin (opsional, untuk kilau)</li>
+        </ul>
+
+        <h2>Cara Membuat:</h2>
+
+        <h3>Membuat Isian Custard Terlebih Dahulu:</h3>
+        <ol>
+            <li>Dalam panci, campurkan kuning telur dan gula pasir. Aduk rata hingga gula larut.</li>
+            <li>Masukkan tepung maizena, aduk kembali hingga tidak ada gumpalan.</li>
+            <li>Tuang susu cair sedikit demi sedikit sambil terus diaduk.</li>
+            <li>Masak di atas api kecil sambil terus diaduk hingga adonan mengental dan meletup-letup.</li>
+            <li>Tambahkan vanili bubuk dan margarin (jika menggunakan). Aduk rata hingga margarin meleleh dan tercampur sempurna.</li>
+            <li>Angkat dari api, pindahkan ke wadah. Tutup permukaan custard dengan plastik wrap menempel langsung agar tidak terbentuk kulit. Dinginkan.</li>
+        </ol>
+
+        <h3>Membuat Kulit Bakpao:</h3>
+        <div class="recipe-step">
+            <div class="step-number">1</div>
+            <div class="step-description">
+                <p>Dalam wadah besar, campurkan tepung terigu (protein rendah dan sedang), gula pasir, ragi instan, dan garam. Aduk rata.</p>
+            </div>
+        </div>
+        <div class="recipe-step">
+            <div class="step-number">2</div>
+            <div class="step-description">
+                <p>Tuang susu cair hangat sedikit demi sedikit sambil diuleni hingga adonan setengah kalis.</p>
+            </div>
+        </div>
+        <div class="recipe-step">
+            <div class="step-number">3</div>
+            <div class="step-description">
+                <p>Masukkan minyak sayur, teruskan menguleni hingga adonan menjadi kalis elastis. Adonan yang baik akan terasa lembut dan tidak lengket di tangan.</p>
+            </div>
+        </div>
+        <div class="recipe-step">
+            <div class="step-number">4</div>
+            <div class="step-description">
+                <p>Bulatkan adonan, letakkan dalam wadah yang sudah diolesi sedikit minyak. Tutup dengan kain lembap atau plastik wrap. Diamkan selama ± 45 menit hingga mengembang dua kali lipat.</p>
+            </div>
+        </div>
+        <div class="recipe-step">
+            <div class="step-number">5</div>
+            <div class="step-description">
+                <p>Setelah mengembang, kempiskan adonan untuk mengeluarkan udaranya. Bagi adonan menjadi beberapa bagian (sekitar 8-10 buah).</p>
+            </div>
+        </div>
+        <div class="recipe-step">
+            <div class="step-number">6</div>
+            <div class="step-description">
+                <p>Ambil satu bagian adonan, pipihkan. Beri isian custard secukupnya di tengahnya. Lipat dan rapatkan adonan hingga isian tertutup sempurna. Bentuk bulat.</p>
+            </div>
+        </div>
+        <div class="recipe-step">
+            <div class="step-number">7</div>
+            <div class="step-description">
+                <p>Letakkan bakpao di atas kertas roti yang sudah dipotong kotak. Beri jarak antar bakpao karena akan mengembang lagi.</p>
+            </div>
+        </div>
+        <div class="recipe-step">
+            <div class="step-number">8</div>
+            <div class="step-description">
+                <p>Diamkan kembali selama ± 15-20 menit hingga bakpao mengembang dan terasa ringan.</p>
+            </div>
+        </div>
+        <div class="recipe-step">
+            <div class="step-number">9</div>
+            <div class="step-description">
+                <p>Siapkan kukusan yang sudah mendidih airnya. Masukkan bakpao, kukus dengan api sedang selama ± 10-12 menit. Pastikan kukusan dilapisi kain agar air tidak menetes ke bakpao.</p>
+            </div>
+        </div>
+        <div class="recipe-step">
+            <div class="step-number">10</div>
+            <div class="step-description">
+                <p>Angkat bakpao custard yang sudah matang. Sajikan selagi hangat.</p>
+            </div>
+        </div>
+
+        <p>Nikmati kelembutan <span class="highlight">bakpao custard</span> buatan sendiri yang pasti akan disukai seluruh keluarga. Selamat mencoba!</p>
+
+    </div>
+
+    <footer>
+        <p>Resep ini dibuat untuk memberikan panduan membuat bakpao custard yang lezat.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-futri-djawa">Bakpia Futri Djawa</a></li>
+<li><a href="/uji-salmonella">Uji Salmonella</a></li>
+<li><a href="/kue-bakwan-jagung">Kue Bakwan Jagung</a></li>
+<li><a href="/resep-bumbu-ote-ote">Resep Bumbu Ote Ote</a></li>
+<li><a href="/c-pao-bakpao">C Pao Bakpao</a></li>
+<li><a href="/bakpao-oatmeal">Bakpao Oatmeal</a></li>
+<li><a href="/cara-membuat-bakwan-goreng-udang">Cara Membuat Bakwan Goreng Udang</a></li>
+<li><a href="/cara-membuat-bakpao-1-kg">Cara Membuat Bakpao 1 Kg</a></li>
+<li><a href="/buat-bakwan-udang-enak">Buat Bakwan Udang Enak</a></li>
+<li><a href="/bakpia-jeane">Bakpia Jeane</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

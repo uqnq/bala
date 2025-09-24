@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakso Sapi Mercon Mamah Nizam: Pedas Nikmat!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #76c7c0; /* Warna sejuk yang cerah */
+            --secondary-color: #f9f9f9; /* Warna latar belakang cerah */
+            --text-color: #333;
+            --heading-color: #005f73;
+            --accent-color: #e76f51; /* Sedikit sentuhan cerah */
+            --footer-bg: #264653; /* Warna sejuk gelap */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden; /* Mencegah scroll horizontal */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Memastikan konten mengambil ruang yang tersedia */
+        }
+
+        h1 {
+            color: var(--heading-color);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .call-to-action a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .call-to-action a:hover {
+            color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: var(--footer-bg);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .call-to-action {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hero-image">
+            <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#76c7c0;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e76f51;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+                        <feOffset dx="5" dy="5" result="offsetblur"/>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <rect width="600" height="300" rx="20" fill="url(#grad1)" filter="url(#shadow)" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="45" font-weight="bold" filter="url(#shadow)">
+                    Bakso Sapi Mercon
+                </text>
+                <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="bold" filter="url(#shadow)">
+                    Mamah Nizam
+                </text>
+            </svg>
+            <p style="font-size: 0.9em; color: #666;">Ilustrasi bakso pedas yang menggugah selera.</p>
+        </div>
+
+        <h1>Sensasi Pedas Nikmat Bakso Sapi Mercon Mamah Nizam</h1>
+
+        <p>Siapa yang tidak tergiur dengan kelezatan bakso? Apalagi jika bakso tersebut memiliki sentuhan pedas yang membangkitkan selera, seperti <strong>bakso sapi mercon Mamah Nizam</strong>. Hidangan ini bukan sekadar makanan biasa, melainkan sebuah pengalaman kuliner yang menghadirkan perpaduan sempurna antara rasa gurih daging sapi pilihan dan sensasi pedas membara dari racikan bumbu rempah khas. Setiap gigitannya akan membuat Anda ketagihan.</p>
+
+        <h2>Kualitas Terjamin, Rasa Juara</h2>
+
+        <p>Mamah Nizam memahami betul pentingnya kualitas bahan baku. Bakso sapi mercon ini dibuat dari daging sapi segar pilihan, diproses secara higienis dengan resep turun-temurun yang telah teruji rasa. Perpaduan daging sapi berkualitas tinggi dengan cabai pilihan, bawang, dan rempah-rempah otentik menciptakan cita rasa yang khas dan mendalam. Tingkat kepedasan yang pas, tidak terlalu menyiksa namun cukup menggigit, menjadikan bakso sapi mercon Mamah Nizam pilihan favorit bagi para pecinta pedas.</p>
+
+        <h2>Lebih Dari Sekadar Lezat</h2>
+
+        <p>Bakso sapi mercon Mamah Nizam hadir bukan hanya untuk memanjakan lidah, tetapi juga untuk menemani setiap momen berharga Anda. Bayangkan menyantap semangkuk hangat bakso mercon ini saat hujan, berkumpul bersama keluarga, atau sekadar melepas lelah setelah beraktivitas. Aroma menggoda dan rasa pedas nikmatnya akan membuat suasana menjadi lebih hangat dan menyenangkan. Kelezatannya yang khas menjadikannya pilihan sempurna untuk camilan atau bahkan lauk utama yang mengenyangkan.</p>
+
+        <p>Kami percaya bahwa makanan enak adalah salah satu cara terbaik untuk menciptakan kebahagiaan. Oleh karena itu, Mamah Nizam selalu berusaha menyajikan produk terbaik untuk Anda. Proses pembuatan yang teliti, mulai dari pemilihan daging hingga pengemasan, memastikan bahwa setiap bulir bakso sapi mercon yang sampai ke tangan Anda memiliki kualitas terbaik. Rasakan sensasi pedas yang berbeda, pedas yang tidak hanya membakar lidah, tetapi juga menghangatkan hati.</p>
+
+        <div class="call-to-action">
+            Penasaran dengan <span class="highlight">bakso sapi mercon Mamah Nizam</span>?
+            <br>
+            <a href="#">Pesan Sekarang dan Rasakan Sensasinya!</a>
+        </div>
+
+        <h2>Tips Menikmati Bakso Sapi Mercon</h2>
+
+        <p>Untuk pengalaman menikmati bakso sapi mercon Mamah Nizam yang maksimal, Anda bisa menambahkan beberapa pelengkap. Kuah kaldu sapi yang gurih dapat diperkaya dengan sedikit kecap manis, saus sambal, atau sambal rawit jika Anda menginginkan tingkat kepedasan ekstra. Jangan lupa tambahkan sedikit cuka untuk sentuhan rasa asam segar yang seimbang. Beberapa irisan sawi hijau atau tauge rebus juga akan menambah tekstur dan kesegaran pada hidangan Anda. Sempurnakan dengan taburan bawang goreng renyah dan seledri cincang untuk aroma yang lebih menggugah selera.</p>
+
+        <p>Bakso sapi mercon ini juga sangat cocok disajikan bersama nasi hangat bagi Anda yang menginginkan santapan lebih berat. Fleksibilitasnya membuatnya dapat dinikmati dalam berbagai suasana dan selera. Kualitas daging sapi pilihan yang empuk berpadu dengan bumbu mercon yang meresap sempurna menjadikan setiap suapan begitu memuaskan. Ini adalah pilihan tepat bagi Anda yang mencari hidangan lezat, pedas, dan autentik.</p>
+
+    </div>
+
+    <footer>
+        © 2024 Bakso Sapi Mercon Mamah Nizam. Semua hak dilindungi.
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-red-velvet">Bakpia Red Velvet</a></li>
+<li><a href="/ucapan-balasan-doa-baik">Ucapan Balasan Doa Baik</a></li>
+<li><a href="/bumbu-gorengan-bala-bala">Bumbu Gorengan Bala Bala</a></li>
+<li><a href="/cara-membuat-isian-keju-untuk-bakpia">Cara Membuat Isian Keju Untuk Bakpia</a></li>
+<li><a href="/balasan-bersedekah">Balasan Bersedekah</a></li>
+<li><a href="/bakwan-sayur-devina-hermawan">Bakwan Sayur Devina Hermawan</a></li>
+<li><a href="/bunga-bakung-orange">Bunga Bakung Orange</a></li>
+<li><a href="/bakpia-kukus-tugu-lempuyangan">Bakpia Kukus Tugu Lempuyangan</a></li>
+<li><a href="/bakteri-merah">Bakteri Merah</a></li>
+<li><a href="/pangsit-mie-bakwan">Pangsit Mie Bakwan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Jagung Sederhana Tanpa Telur</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Alice Blue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4682b4; /* Steel Blue - warna sejuk */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #add8e6; /* Light Blue - aksen cerah */
+            padding-bottom: 5px;
+            font-size: 1.5em;
+        }
+        .intro {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .recipe-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients ul,
+        .instructions ol {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+        .ingredients li,
+        .instructions li {
+            margin-bottom: 10px;
+        }
+        .ingredients strong,
+        .instructions strong {
+            color: #20b2aa; /* Light Sea Green - warna cerah */
+        }
+        .note {
+            background-color: #e0ffff; /* Light Cyan - warna sejuk cerah */
+            border-left: 5px solid #00ced1; /* Dark Turquoise - aksen */
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-style: italic;
+            color: #006400; /* Dark Green - untuk keterbacaan */
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .intro {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Jagung Sederhana Tanpa Telur</h1>
+        <p class="intro">Siapa bilang bakwan jagung harus pakai telur agar renyah dan lezat? Dengan resep sederhana ini, Anda bisa membuat bakwan jagung yang nikmat, renyah di luar, dan lembut di dalam, tanpa perlu menggunakan telur sama sekali. Sangat cocok untuk Anda yang sedang menghindari telur, memiliki alergi, atau sekadar ingin mencoba variasi baru.</p>
+
+        <!-- Gambar SVG Bakwan Jagung -->
+        <svg class="recipe-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakwan jagung renyah">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f0f8ff;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#fffacd;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feMerge>
+                        <feMergeNode in="offsetblur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <!-- Latar belakang piring -->
+            <ellipse cx="200" cy="220" rx="180" ry="25" fill="#d3d3d3" opacity="0.6" filter="url(#shadow)"/>
+            <!-- Jagung -->
+            <g transform="translate(50, 80)">
+                <rect x="0" y="0" width="100" height="100" fill="#ffe4b5" rx="5" ry="5"/>
+                <path d="M 0 0 L 100 0 L 50 50 Z" fill="#ffdead"/>
+                <circle cx="50" cy="45" r="10" fill="#ffb347"/>
+                <circle cx="30" cy="30" r="5" fill="#ffb347"/>
+                <circle cx="70" cy="30" r="5" fill="#ffb347"/>
+                <circle cx="20" cy="60" r="5" fill="#ffb347"/>
+                <circle cx="80" cy="60" r="5" fill="#ffb347"/>
+                <circle cx="50" cy="70" r="5" fill="#ffb347"/>
+                <rect x="30" y="80" width="40" height="20" fill="#d2b48c"/>
+            </g>
+            <!-- Bakwan Jagung 1 -->
+            <ellipse cx="150" cy="150" rx="60" ry="40" fill="#ffdab9" transform="rotate(-10 150 150)"/>
+            <circle cx="140" cy="140" r="8" fill="#ffa07a"/>
+            <circle cx="160" cy="130" r="6" fill="#ffa07a"/>
+            <circle cx="120" cy="150" r="7" fill="#ffa07a"/>
+            <circle cx="180" cy="160" r="5" fill="#ffa07a"/>
+            <circle cx="160" cy="170" r="6" fill="#ffa07a"/>
+            <!-- Bakwan Jagung 2 -->
+            <ellipse cx="250" cy="160" rx="55" ry="35" fill="#ffdab9" transform="rotate(15 250 160)"/>
+            <circle cx="240" cy="150" r="7" fill="#ffa07a"/>
+            <circle cx="260" cy="140" r="5" fill="#ffa07a"/>
+            <circle cx="220" cy="160" r="6" fill="#ffa07a"/>
+            <circle cx="280" cy="170" r="5" fill="#ffa07a"/>
+            <!-- Bakwan Jagung 3 -->
+            <ellipse cx="320" cy="150" rx="50" ry="30" fill="#ffdab9" transform="rotate(-5 320 150)"/>
+            <circle cx="310" cy="140" r="6" fill="#ffa07a"/>
+            <circle cx="330" cy="130" r="4" fill="#ffa07a"/>
+            <circle cx="290" cy="150" r="5" fill="#ffa07a"/>
+            <circle cx="350" cy="160" r="4" fill="#ffa07a"/>
+        </svg>
+
+        <h2>Kenapa Tanpa Telur?</h2>
+        <p>Menghilangkan telur dari resep bakwan jagung bukan berarti mengurangi kelezatannya. Justru, ini bisa menjadi solusi bagi Anda yang memiliki intoleransi telur, menjalani pola makan vegan, atau sekadar ingin beralih ke alternatif yang lebih ringan. Kunci kerenyahan bakwan tanpa telur terletak pada perbandingan tepung yang tepat dan proses penggorengan yang benar.</p>
+
+        <h2>Bahan-Bahan (Untuk ± 10-15 Buah)</h2>
+        <div class="ingredients">
+            <ul>
+                <li><strong>2 buah</strong> jagung manis, pipil atau serut</li>
+                <li><strong>100 gram</strong> tepung terigu serbaguna</li>
+                <li><strong>30 gram</strong> tepung beras (untuk tambahan kerenyahan)</li>
+                <li><strong>1 batang</strong> daun bawang, iris tipis</li>
+                <li><strong>2 siung</strong> bawang putih, haluskan</li>
+                <li><strong>1/2 sendok teh</strong> ketumbar bubuk</li>
+                <li><strong>1/4 sendok teh</strong> merica bubuk</li>
+                <li><strong>1/2 sendok teh</strong> garam (sesuaikan selera)</li>
+                <li><strong>1/4 sendok teh</strong> kaldu bubuk (opsional, jika suka)</li>
+                <li><strong>± 100 ml</strong> air es (atau secukupnya hingga adonan pas)</li>
+                <li><strong>Minyak goreng</strong> secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Siapkan Jagung:</strong> Pipil atau serut jagung manis. Jika menggunakan jagung utuh, pipil hingga terlepas dari bonggolnya.</li>
+                <li><strong>Campur Bahan Kering:</strong> Dalam wadah, campurkan tepung terigu, tepung beras, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li><strong>Masukkan Jagung dan Bumbu:</strong> Masukkan jagung pipil, irisan daun bawang, dan bawang putih halus ke dalam campuran tepung. Aduk hingga semua bahan terbalut rata.</li>
+                <li><strong>Buat Adonan:</strong> Tuangkan air es sedikit demi sedikit sambil terus diaduk. Hentikan penambahan air jika adonan sudah cukup kental dan menyelimuti jagung dengan baik. Adonan tidak boleh terlalu encer agar bakwan tidak menyebar saat digoreng. Konsistensi yang diinginkan adalah sedikit lebih kental dari adonan pisang goreng.</li>
+                <li><strong>Goreng Bakwan:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+                <li><strong>Bentuk dan Goreng:</strong> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga satu sisi berwarna kuning keemasan. Balik bakwan, dan goreng sisi lainnya hingga matang sempurna dan renyah.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan jagung yang sudah matang, tiriskan minyaknya menggunakan tisu dapur atau saringan agar tidak terlalu berminyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan jagung sederhana tanpa telur siap disajikan selagi hangat. Nikmati dengan cabai rawit, sambal, atau saus kesukaan Anda.</li>
+            </ol>
+        </div>
+
+        <div class="note">
+            <strong>Tips Tambahan:</strong>
+            <p>Agar bakwan lebih renyah, pastikan minyak benar-benar panas saat menggoreng. Penggunaan tepung beras juga sangat membantu menciptakan tekstur renyah yang tahan lama. Jangan menggoreng terlalu banyak adonan sekaligus agar suhu minyak tidak turun drastis. Jika adonan terasa terlalu kering, tambahkan sedikit air es, dan jika terlalu basah, tambahkan sedikit tepung terigu.</p>
+        </div>
+
+        <footer>
+            <p>Selamat mencoba resep bakwan jagung sederhana tanpa telur ini! Camilan gurih dan renyah yang pasti disukai keluarga.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-bakpia-coklat">Cara Membuat Bakpia Coklat</a></li>
+<li><a href="/resep-bakwan-mudah">Resep Bakwan Mudah</a></li>
+<li><a href="/baklava-zade">Baklava Zade</a></li>
+<li><a href="/bakpao-tang-ling-pao">Bakpao Tang Ling Pao</a></li>
+<li><a href="/cara-membuat-pia-kacang">Cara Membuat Pia Kacang</a></li>
+<li><a href="/resep-bakso-mercon-pedas-gila">Resep Bakso Mercon Pedas Gila</a></li>
+<li><a href="/bakpia-djava-laksda-adisucipto">Bakpia Djava Laksda Adisucipto</a></li>
+<li><a href="/bakpia-kering-juwara-satoe">Bakpia Kering Juwara Satoe</a></li>
+<li><a href="/resep-kentang-mustofa-balado">Resep Kentang Mustofa Balado</a></li>
+<li><a href="/bakwan-panggang-teflon">Bakwan Panggang Teflon</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

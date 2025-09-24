@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Sayur Empuk Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang biru muda */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul hijau toska */
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #80cbc4; /* Garis bawah hijau muda */
+            padding-bottom: 8px;
+            text-align: left;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients, .instructions {
+            background-color: #f0f8ff; /* Warna latar belakang daftar bahan/instruksi biru sangat muda */
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .ingredients li, .instructions li {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            border-left: 5px solid #4db6ac; /* Garis tepi hijau */
+        }
+        .ingredients li strong, .instructions li strong {
+            color: #00695c; /* Warna teks tebal hijau tua */
+        }
+        .tip {
+            background-color: #fff9c4; /* Warna latar belakang tips kuning muda */
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #fbc02d; /* Garis tepi kuning */
+            color: #424242;
+            font-style: italic;
+            text-align: left;
+        }
+        .tip strong {
+            color: #f57f17; /* Warna teks tebal kuning */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Resep Bakwan Sayur Empuk dan Renyah</h1>
+
+        <p>Siapa yang tidak suka bakwan sayur? Camilan gurih ini menjadi favorit banyak orang, baik dinikmati saat santai maupun sebagai pendamping makan nasi. Kunci dari bakwan sayur yang lezat adalah teksturnya yang empuk di dalam namun tetap renyah di luar. Jangan khawatir, membuat bakwan sayur yang sempurna ternyata tidak sesulit yang dibayangkan. Dengan resep dan tips yang tepat, Anda bisa menyajikan hidangan ini kapan saja.</p>
+
+        <!-- Gambar SVG untuk bakwan sayur -->
+        <svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="recipe-image" alt="Ilustrasi bakwan sayur yang menggugah selera">
+            <circle cx="50" cy="50" r="45" fill="#ffecb3" stroke="#ffcc80" stroke-width="3"/> <!-- Lingkaran dasar warna kuning pucat -->
+            <path d="M30 30 Q 50 20 70 30 L 70 70 Q 50 80 30 70 Z" fill="#a5d6a7"/> <!-- Sisi kiri bakwan hijau muda -->
+            <path d="M70 30 Q 50 20 30 30 L 30 70 Q 50 80 70 70 Z" fill="#a5d6a7"/> <!-- Sisi kanan bakwan hijau muda -->
+            <rect x="35" y="40" width="10" height="15" fill="#81c784"/> <!-- Potongan wortel -->
+            <rect x="55" y="40" width="10" height="15" fill="#81c784"/> <!-- Potongan wortel -->
+            <rect x="45" y="55" width="10" height="15" fill="#e0e0e0"/> <!-- Potongan kol -->
+            <rect x="45" y="65" width="10" height="15" fill="#e0e0e0"/> <!-- Potongan kol -->
+            <circle cx="45" cy="45" r="5" fill="#c8e6c9"/> <!-- Detail sayuran -->
+            <circle cx="55" cy="55" r="5" fill="#c8e6c9"/> <!-- Detail sayuran -->
+            <circle cx="60" cy="45" r="5" fill="#c8e6c9"/> <!-- Detail sayuran -->
+            <text x="50" y="55" font-size="10" text-anchor="middle" fill="#616161" font-weight="bold">Bakwan</text>
+        </svg>
+
+        <p>Membuat bakwan sayur yang lezat dan bertekstur sempurna bukanlah misteri. Dengan bahan-bahan segar dan beberapa trik sederhana, Anda bisa menghadirkan kelezatan ini di meja makan Anda. Mari kita simak resep lengkapnya.</p>
+
+        <div class="ingredients">
+            <h2>Bahan Utama</h2>
+            <ul>
+                <li>200 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 buah wortel ukuran sedang, iris tipis memanjang atau serut kasar</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>50 gram tauge (opsional, jika suka)</li>
+                <li>1 buah telur ayam</li>
+                <li>200-250 ml air dingin (sesuaikan kekentalan adonan)</li>
+            </ul>
+            <h2>Bumbu Halus</h2>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>1/2 sendok teh merica butiran</li>
+                <li>1 sendok teh garam (atau sesuai selera)</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li><strong>Persiapan Sayuran:</strong> Cuci bersih semua sayuran. Iris tipis wortel, kol, dan daun bawang. Jika menggunakan tauge, cukup cuci bersih.</li>
+                <li><strong>Membuat Adonan Tepung:</strong> Dalam wadah, campurkan tepung terigu dan tepung beras.</li>
+                <li><strong>Haluskan Bumbu:</strong> Ulek atau blender bawang putih, merica, garam, dan kaldu bubuk hingga halus.</li>
+                <li><strong>Campurkan Semua Bahan:</strong> Masukkan bumbu halus ke dalam campuran tepung. Tambahkan telur, aduk rata.</li>
+                <li><strong>Tambahkan Sayuran:</strong> Masukkan irisan wortel, kol, daun bawang, dan tauge (jika pakai) ke dalam adonan tepung. Aduk rata hingga semua sayuran terbalut tepung.</li>
+                <li><strong>Atur Kekentalan Adonan:</strong> Tuang air dingin sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer agar sayuran menempel, namun juga tidak terlalu kental agar hasilnya tidak keras.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng secukupnya dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Ambil adonan menggunakan sendok sayur atau tangan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga kedua sisinya berwarna kuning keemasan dan matang merata. Balik sekali saja agar tidak menyerap terlalu banyak minyak.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang, tiriskan minyaknya dengan baik menggunakan tisu dapur atau saringan.</li>
+                <li><strong>Sajikan:</strong> Bakwan sayur siap dinikmati selagi hangat. Cocok disantap dengan cabai rawit hijau, saus sambal, atau lontong.</li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <h2>Tips Agar Bakwan Empuk dan Renyah</h2>
+            <ul>
+                <li><strong>Gunakan Air Dingin:</strong> Penggunaan air dingin untuk adonan dapat membantu menciptakan tekstur yang lebih renyah saat digoreng.</li>
+                <li><strong>Jangan Terlalu Banyak Mengaduk:</strong> Setelah tepung tercampur dengan sayuran, jangan terlalu lama mengaduk adonan karena bisa membuat gluten berkembang dan bakwan menjadi keras. Aduk secukupnya hingga sayuran terbalut rata.</li>
+                <li><strong>Goreng dalam Minyak Panas:</strong> Pastikan minyak sudah benar-benar panas saat adonan dimasukkan. Ini akan membantu bakwan cepat matang di luar dan renyah, sementara bagian dalamnya tetap empuk.</li>
+                <li><strong>Jangan Menggoreng Terlalu Penuh:</strong> Menggoreng bakwan terlalu banyak sekaligus dalam satu waktu akan menurunkan suhu minyak. Akibatnya, bakwan akan menyerap banyak minyak dan menjadi kurang renyah.</li>
+                <li><strong>Tambahkan Tepung Beras:</strong> Campuran tepung beras dengan tepung terigu memberikan kerenyahan tambahan yang signifikan.</li>
+            </ul>
+        </div>
+
+        <p>Dengan mengikuti langkah-langkah di atas dan menerapkan tips yang diberikan, Anda dijamin bisa membuat bakwan sayur yang empuk, lezat, dan disukai oleh seluruh anggota keluarga. Selamat mencoba dan nikmati kelezatan bakwan buatan sendiri!</p>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-jengkol-krispi">Bakwan Jengkol Krispi</a></li>
+<li><a href="/bakpao-telo">Bakpao Telo</a></li>
+<li><a href="/cara-membuat-bala-jagung">Cara Membuat Bala Jagung</a></li>
+<li><a href="/pentol-pedas-mercon">Pentol Pedas Mercon</a></li>
+<li><a href="/resep-pentol-mercon-simple">Resep Pentol Mercon Simple</a></li>
+<li><a href="/bakso-bakar-mercon">Bakso Bakar Mercon</a></li>
+<li><a href="/bakwan-kemiri">Bakwan Kemiri</a></li>
+<li><a href="/cara-membuat-bakwan-sederhana-rumahan">Cara Membuat Bakwan Sederhana Rumahan</a></li>
+<li><a href="/resep-perkedel-jagung-enak-dan-renyah">Resep Perkedel Jagung Enak Dan Renyah</a></li>
+<li><a href="/cara-buat-bakwan-kriuk">Cara Buat Bakwan Kriuk</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

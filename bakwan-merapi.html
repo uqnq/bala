@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Merapi: Sensasi Renyah di Lereng Gunung</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Hijau pucat sejuk */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1b5e20; /* Hijau tua yang cerah */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #2e7d32; /* Hijau lebih muda */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        img.hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            display: block;
+        }
+        .svg-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #c8e6c9; /* Hijau sangat pucat */
+            border-radius: 8px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #1b5e20;
+            font-style: italic;
+            font-size: 1.2em;
+            text-align: center;
+            overflow: hidden; /* Penting untuk SVG */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; /* Agar footer tetap di bawah */
+            background-color: #a5d6a7; /* Hijau sedang */
+            color: #1b5e20;
+            font-size: 0.9em;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        /* Responsivitas untuk tampilan mobile */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Bakwan Merapi: Sensasi Renyah di Lereng Gunung yang Mempesona</h1>
+
+        <div class="svg-placeholder">
+            <svg width="100%" height="100%" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Deskripsi SVG: Pemandangan lereng gunung dengan asap tipis, dan di depan ada bakwan renyah -->
+                <defs>
+                    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81d4fa;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e1f5fe;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#2e7d32;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#388e3c;stop-opacity:1" />
+                    </linearGradient>
+                     <linearGradient id="bakwanGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f57c00;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffb300;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Langit -->
+                <rect width="100%" height="100%" fill="url(#skyGradient)"/>
+
+                <!-- Gunung -->
+                <path d="M0 150 L300 0 L600 150 Z" fill="url(#mountainGradient)"/>
+                <!-- Asap tipis -->
+                <ellipse cx="300" cy="50" rx="70" ry="20" fill="rgba(255,255,255,0.5)"/>
+                 <ellipse cx="280" cy="40" rx="50" ry="15" fill="rgba(255,255,255,0.4)"/>
+
+                <!-- Bakwan (representasi sederhana) -->
+                <g transform="translate(150, 130) scale(0.8)">
+                    <path d="M0 0 C20 -20, 40 -20, 60 0 S80 40, 60 60 S20 40, 0 0 Z" fill="url(#bakwanGradient)"/>
+                    <circle cx="25" cy="25" r="8" fill="#e65100"/>
+                    <circle cx="35" cy="35" r="7" fill="#e65100"/>
+                    <circle cx="15" cy="35" r="6" fill="#e65100"/>
+                    <circle cx="45" cy="20" r="5" fill="#e65100"/>
+                </g>
+                 <g transform="translate(250, 120) scale(0.7)">
+                    <path d="M0 0 C20 -20, 40 -20, 60 0 S80 40, 60 60 S20 40, 0 0 Z" fill="url(#bakwanGradient)"/>
+                    <circle cx="25" cy="25" r="8" fill="#e65100"/>
+                    <circle cx="35" cy="35" r="7" fill="#e65100"/>
+                    <circle cx="15" cy="35" r="6" fill="#e65100"/>
+                    <circle cx="45" cy="20" r="5" fill="#e65100"/>
+                </g>
+                 <g transform="translate(350, 135) scale(0.6)">
+                    <path d="M0 0 C20 -20, 40 -20, 60 0 S80 40, 60 60 S20 40, 0 0 Z" fill="url(#bakwanGradient)"/>
+                    <circle cx="25" cy="25" r="8" fill="#e65100"/>
+                    <circle cx="35" cy="35" r="7" fill="#e65100"/>
+                    <circle cx="15" cy="35" r="6" fill="#e65100"/>
+                    <circle cx="45" cy="20" r="5" fill="#e65100"/>
+                </g>
+
+                <text x="50%" y="95%" dominant-baseline="middle" text-anchor="middle" fill="#1b5e20" font-size="18" font-weight="bold">Bakwan Merapi: Kelezatan Legendaris</text>
+            </svg>
+            <div class="alt-text">Ilustrasi pemandangan lereng Gunung Merapi dengan beberapa bakwan renyah di bagian depan.</div>
+        </div>
+
+        <p>Terletak di lereng salah satu gunung berapi paling aktif di Indonesia, tersaji sebuah kelezatan kuliner yang tak boleh terlewatkan: <strong>Bakwan Merapi</strong>. Jajanan tradisional ini bukan sekadar gorengan biasa; ia adalah perpaduan sempurna antara tekstur renyah di luar, lembut di dalam, serta cita rasa gurih yang menggugah selera, seolah membawa kehangatan dan semangat pegunungan yang khas.</p>
+
+        <h2>Lebih dari Sekadar Gorengan</h2>
+
+        <p>Bakwan Merapi memiliki daya tarik tersendiri yang membedakannya dari bakwan pada umumnya. Penggunaan bahan-bahan segar, terutama aneka sayuran seperti kol, wortel, tauge, dan terkadang udang atau ayam, dipotong halus dan dicampur dengan adonan tepung yang pas. Kunci kelezatannya terletak pada proses penggorengan yang tepat, menghasilkan kulit luar yang kriuk luar biasa tahan lama, sementara bagian dalamnya tetap empuk dan matang sempurna. Aroma harumnya yang keluar saat digoreng saja sudah mampu menggoda siapa saja untuk segera mencicipinya.</p>
+
+        <h2>Pengalaman Kuliner di Ketinggian</h2>
+
+        <p>Menikmati Bakwan Merapi paling nikmat adalah saat masih hangat, ditemani semilir angin pegunungan dan pemandangan alam yang menyejukkan mata. Warung-warung bakwan yang tersebar di sepanjang jalur menuju Gunung Merapi, atau bahkan di kawasan kaki gunungnya, seringkali menjadi destinasi favorit para wisatawan. Sensasi makan bakwan sambil menikmati udara segar dan panorama alam yang memukau menciptakan pengalaman kuliner yang tak terlupakan. Kehangatan bakwan yang baru saja diangkat dari wajan seolah berpadu dengan kehangatan sambutan penduduk lokal.</p>
+
+        <h2>Variasi dan Pelengkap yang Menggoda</h2>
+
+        <p>Meskipun bakwan polos sudah sangat lezat, Bakwan Merapi juga seringkali disajikan dengan berbagai pilihan pelengkap yang semakin memperkaya rasa. Sambal kacang pedas manis yang khas, sambal kecap dengan irisan cabai dan bawang, atau sekadar saus sambal botolan, semuanya bisa menjadi teman setia bakwan renyah ini. Beberapa penjual bahkan menawarkan variasi tambahan isian seperti potongan cumi atau bakso, memberikan dimensi rasa yang berbeda. Kekhasan lain adalah cara penyajiannya yang biasanya dibungkus kertas koran atau daun pisang, menambah kesan tradisionalnya.</p>
+
+        <p>Bagi Anda yang berencana melakukan pendakian atau sekadar menikmati keindahan alam Gunung Merapi, mencicipi Bakwan Merapi adalah sebuah keharusan. Ini adalah cara sederhana namun otentik untuk merasakan kekayaan rasa lokal dan kehangatan keramahan masyarakat di kaki gunung yang megah. Jangan lupa siapkan diri Anda untuk tergoda oleh kerenyahan dan kelezatannya yang legendaris.</p>
+
+    </div>
+
+    <footer>
+        Temukan kelezatan otentik di setiap gigitan.
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-mie-goreng">Bakwan Mie Goreng</a></li>
+<li><a href="/bakteri-p-aeruginosa">Bakteri P Aeruginosa</a></li>
+<li><a href="/bakpao-hijau-lumer">Bakpao Hijau Lumer</a></li>
+<li><a href="/cara-membuat-bakwan-tempe">Cara Membuat Bakwan Tempe</a></li>
+<li><a href="/resep-bakwan-rumahan">Resep Bakwan Rumahan</a></li>
+<li><a href="/bakwan-babi-sinyo">Bakwan Babi Sinyo</a></li>
+<li><a href="/contoh-bakteri-anaerob">Contoh Bakteri Anaerob</a></li>
+<li><a href="/daerah-balikpapan">Daerah Balikpapan</a></li>
+<li><a href="/bakwan-sosis">Bakwan Sosis</a></li>
+<li><a href="/perkedel-bakwan">Perkedel Bakwan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

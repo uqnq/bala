@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Kentang Wortel: Gurih Renyah!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #4682b4; /* SteelBlue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hero-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            display: block; /* Agar margin auto bekerja */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            color: #5f9ea0; /* CadetBlue */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0ffff; /* LightCyan */
+            padding-bottom: 5px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #2e8b57; /* SeaGreen */
+        }
+        .recipe-section {
+            width: 100%;
+            background-color: #e0ffff; /* LightCyan */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+        }
+        .recipe-section h2 {
+            color: #4682b4; /* SteelBlue */
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: none;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 20px;
+        }
+        .ingredients li::before {
+            content: "✅ ";
+            margin-right: 8px;
+            color: #32cd32; /* LimeGreen */
+        }
+        .instructions li::before {
+            content: "▶️ ";
+            margin-right: 8px;
+            color: #ffa500; /* Orange */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .hero-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Kentang Wortel: Gurih Renyah di Setiap Gigitan!</h1>
+
+        <svg class="hero-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc">
+            <title id="title">Ilustrasi Bakwan Kentang Wortel yang Menggugah Selera</title>
+            <desc id="desc">Gambar kartun berwarna cerah menampilkan beberapa bakwan kentang wortel yang renyah di atas piring dengan taburan daun seledri.</desc>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffdead;" />
+                    <stop offset="100%" style="stop-color:#deb887;" />
+                </linearGradient>
+            </defs>
+            <rect width="400" height="250" rx="15" fill="#f8f8ff" />
+            <path d="M 50 200 Q 100 180 150 200 T 250 200 T 350 200 V 240 H 50 Z" fill="#8b4513" /> <!-- Dasar piring -->
+
+            <!-- Bakwan 1 -->
+            <ellipse cx="120" cy="150" rx="50" ry="40" fill="url(#grad1)" stroke="#a0522d" stroke-width="3"/>
+            <circle cx="100" cy="130" r="15" fill="#ffd700"/> <!-- Wortel -->
+            <circle cx="140" cy="120" r="15" fill="#ffd700"/> <!-- Wortel -->
+            <circle cx="80" cy="160" r="12" fill="#ffd700"/> <!-- Kentang -->
+            <path d="M 110 155 Q 120 145 130 155 L 120 170 Z" fill="#deb887" /> <!-- Sedikit tekstur -->
+
+            <!-- Bakwan 2 -->
+            <ellipse cx="250" cy="160" rx="55" ry="45" fill="url(#grad1)" stroke="#a0522d" stroke-width="3"/>
+            <circle cx="230" cy="140" r="17" fill="#ffd700"/> <!-- Wortel -->
+            <circle cx="270" cy="130" r="17" fill="#ffd700"/> <!-- Wortel -->
+            <circle cx="210" cy="170" r="15" fill="#ffd700"/> <!-- Kentang -->
+            <circle cx="290" cy="175" r="15" fill="#ffd700"/> <!-- Kentang -->
+            <path d="M 240 165 Q 250 155 260 165 L 250 180 Z" fill="#deb887" /> <!-- Sedikit tekstur -->
+
+            <!-- Bakwan 3 -->
+            <ellipse cx="180" cy="180" rx="45" ry="35" fill="url(#grad1)" stroke="#a0522d" stroke-width="3"/>
+            <circle cx="160" cy="170" r="13" fill="#ffd700"/> <!-- Wortel -->
+            <circle cx="200" cy="160" r="13" fill="#ffd700"/> <!-- Wortel -->
+            <circle cx="140" cy="190" r="10" fill="#ffd700"/> <!-- Kentang -->
+
+            <!-- Taburan -->
+            <text x="220" y="190" font-family="Verdana" font-size="18" fill="#2e8b57" transform="rotate(-10 220 190)">
+                &#x273F;
+            </text>
+            <text x="150" y="200" font-family="Verdana" font-size="18" fill="#2e8b57" transform="rotate(15 150 200)">
+                &#x273F;
+            </text>
+             <text x="280" y="150" font-family="Verdana" font-size="18" fill="#2e8b57" transform="rotate(-5 280 150)">
+                &#x273F;
+            </text>
+        </svg>
+
+        <p>Siapa yang tidak suka bakwan? Camilan renyah yang sering hadir di meja makan ini memang tak pernah gagal memanjakan lidah. Kali ini, mari kita coba kreasi yang sedikit berbeda namun tetap klasik: <strong>Bakwan Kentang Wortel</strong>. Perpaduan manis alami kentang dan wortel dengan adonan tepung yang renyah menciptakan harmoni rasa yang sempurna. Cocok dinikmati kapan saja, baik sebagai teman minum teh sore atau hidangan pelengkap saat makan utama.</p>
+
+        <p>Membuat bakwan sendiri di rumah ternyata tidak sesulit yang dibayangkan. Dengan bahan-bahan sederhana yang mudah ditemukan di dapur, Anda bisa menciptakan camilan lezat ini. Rahasia utama dari bakwan yang sempurna adalah adonan yang tepat, sayuran yang diiris tipis agar cepat matang dan renyah, serta teknik menggoreng yang benar. Jangan khawatir jika Anda pemula, resep ini dirancang agar mudah diikuti oleh siapa saja.</p>
+
+        <h2>Kenapa Memilih Bakwan Kentang Wortel?</h2>
+        <ul>
+            <li><strong>Lezat dan Mengenyangkan:</strong> Kombinasi kentang dan wortel memberikan rasa manis alami dan tekstur yang unik.</li>
+            <li><strong>Kaya Vitamin:</strong> Wortel dikenal sebagai sumber vitamin A yang baik untuk kesehatan mata, sementara kentang menyediakan karbohidrat sebagai sumber energi.</li>
+            <li><strong>Mudah Dibuat:</strong> Bahan-bahan yang minimalis dan proses yang sederhana membuatnya ideal untuk camilan cepat.</li>
+            <li><strong>Fleksibel:</strong> Anda bisa menambahkan sayuran lain seperti kol atau tauge sesuai selera.</li>
+        </ul>
+
+        <div class="recipe-section">
+            <h2>Resep Bakwan Kentang Wortel Spesial</h2>
+
+            <div class="ingredients">
+                <h3>Bahan-bahan:</h3>
+                <ul>
+                    <li>2 buah kentang ukuran sedang, kupas dan parut kasar/iris tipis</li>
+                    <li>1 buah wortel ukuran sedang, kupas dan parut kasar/iris tipis</li>
+                    <li>100 gram tepung terigu serbaguna</li>
+                    <li>50 gram tepung beras (untuk hasil lebih renyah)</li>
+                    <li>1 batang daun bawang, iris halus</li>
+                    <li>2 siung bawang putih, haluskan</li>
+                    <li>1/2 sendok teh ketumbar bubuk</li>
+                    <li>1/4 sendok teh merica bubuk</li>
+                    <li>Garam secukupnya</li>
+                    <li>Gula pasir sejumput (opsional, untuk menyeimbangkan rasa)</li>
+                    <li>Air secukupnya (sekitar 100-150 ml, jangan terlalu encer)</li>
+                    <li>Minyak goreng secukupnya</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h3>Cara Membuat:</h3>
+                <ol>
+                    <li>Campurkan kentang parut, wortel parut, dan daun bawang iris dalam sebuah mangkuk besar.</li>
+                    <li>Masukkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan sejumput gula pasir (jika menggunakan). Aduk rata.</li>
+                    <li>Tuang air sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan kental yang pas. Adonan tidak boleh terlalu encer agar tidak lembek saat digoreng.</li>
+                    <li>Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</li>
+                    <li>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Pipihkan sedikit agar matang merata. Goreng hingga berwarna kuning keemasan dan renyah di kedua sisinya.</li>
+                    <li>Angkat bakwan yang sudah matang dan tiriskan di atas rak kawat atau tisu dapur agar minyak berlebih terserap.</li>
+                    <li>Ulangi langkah menggoreng hingga semua adonan habis.</li>
+                    <li>Sajikan bakwan kentang wortel selagi hangat bersama cabai rawit hijau, sambal, atau saus favorit Anda.</li>
+                </ol>
+            </div>
+        </div>
+
+        <h2>Tips Tambahan untuk Bakwan Sempurna:</h2>
+        <p>Untuk mendapatkan bakwan yang super renyah dan tidak lembek, beberapa tips berikut bisa Anda terapkan. Pertama, pastikan kentang dan wortel diparut atau diiris sangat tipis agar lebih cepat matang dan memberikan tekstur garing. Jangan mencampur adonan terlalu lama sebelum digoreng, karena air dari sayuran akan membuat adonan menjadi lebih encer. Selain itu, gunakan api sedang saat menggoreng agar bakwan matang merata hingga ke dalam dan tidak gosong di luar.</p>
+
+        <p>Menambahkan sedikit tepung beras ke dalam adonan tepung terigu adalah kunci untuk mendapatkan kerenyahan ekstra yang tahan lama. Anda juga bisa bereksperimen dengan menambahkan bumbu lain seperti sedikit bubuk kunyit untuk warna yang lebih menarik atau sedikit terasi untuk aroma gurih yang khas. Pastikan minyak goreng benar-benar panas sebelum memasukkan adonan agar bakwan bisa mengembang sempurna dan menghasilkan tekstur luar yang garing.</p>
+
+        <p>Selamat mencoba resep bakwan kentang wortel ini di rumah! Nikmati kelezatan dan kerenyahannya bersama keluarga tercinta.</p>
+
+        <footer>
+            Terima kasih telah berkunjung!
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-legendbaozi">Bakpao Legendbaozi</a></li>
+<li><a href="/resep-kue-bakwan">Resep Kue Bakwan</a></li>
+<li><a href="/bakteri-perut">Bakteri Perut</a></li>
+<li><a href="/resep-bakwan-sayur-yang-enak">Resep Bakwan Sayur Yang Enak</a></li>
+<li><a href="/cara-bikin-bumbu-pentol-mercon">Cara Bikin Bumbu Pentol Mercon</a></li>
+<li><a href="/daftar-harga-bakpia-juwara-satoe">Daftar Harga Bakpia Juwara Satoe</a></li>
+<li><a href="/bakwan-jagung-kol">Bakwan Jagung Kol</a></li>
+<li><a href="/bakwan-renyah-gurih">Bakwan Renyah Gurih</a></li>
+<li><a href="/bahan-bikin-bakwan-goreng">Bahan Bikin Bakwan Goreng</a></li>
+<li><a href="/bumbu-untuk-bakwan-sayur">Bumbu Untuk Bakwan Sayur</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

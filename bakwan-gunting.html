@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Gunting: Renyah, Gurih, Khas & Bikin Nagih!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8; /* Warna latar belakang sejuk lembut */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px; /* Batasan lebar untuk tampilan desktop, namun tetap responsif */
+            background-color: #ffffff; /* Latar belakang konten cerah */
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        h1 {
+            color: #2c7a7b; /* Warna judul sejuk cerah */
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        .subtitle {
+            color: #4a5568; /* Warna subjudul lebih lembut */
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .content-image {
+            width: 100%;
+            max-width: 500px; /* Ukuran gambar yang proporsional */
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            display: block; /* Agar gambar berada di tengah */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {
+            text-align: left;
+            margin-bottom: 18px;
+            font-size: 1.1em;
+        }
+        strong {
+            color: #2c7a7b; /* Menekankan kata kunci dengan warna aksen */
+        }
+        .section-title {
+            color: #38a169; /* Warna judul bagian yang cerah */
+            font-size: 1.6em;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        ul {
+            text-align: left;
+            margin-bottom: 18px;
+            font-size: 1.1em;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .call-to-action {
+            background-color: #48bb78; /* Warna tombol ajakan yang cerah */
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .call-to-action:hover {
+            background-color: #38a169;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .subtitle {
+                font-size: 1em;
+            }
+            .section-title {
+                font-size: 1.3em;
+            }
+            p, li {
+                font-size: 1em;
+            }
+            .call-to-action {
+                font-size: 1.1em;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakwan Gunting: Cemilan Khas yang Tak Lekang Waktu</h1>
+        <p class="subtitle">Renya di luar, lembut di dalam, dengan aroma menggoda yang selalu dirindukan.</p>
+
+        <!-- SVG Gambar Bakwan Gunting -->
+        <svg class="content-image" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakwan gunting yang renyah dan menggugah selera">
+            <!-- Base of the bakwan -->
+            <path fill="#e0e0e0" d="M250,280 Q200,200 150,150 Q100,100 50,100 Q80,150 120,200 Q170,250 250,280 Z"/>
+            <path fill="#e0e0e0" d="M250,280 Q300,200 350,150 Q400,100 450,100 Q420,150 380,200 Q330,250 250,280 Z"/>
+
+            <!-- Crispy edges -->
+            <path fill="#ffe0b2" d="M230,270 Q200,200 160,160 Q120,120 80,120 Q110,170 140,220 Q180,260 230,270 Z" opacity="0.8"/>
+            <path fill="#ffe0b2" d="M270,270 Q300,200 340,160 Q380,120 420,120 Q390,170 360,220 Q320,260 270,270 Z" opacity="0.8"/>
+
+            <!-- Veggies peeking out -->
+            <circle cx="170" cy="130" r="15" fill="#81c784" /> <!-- Wortel -->
+            <rect x="185" y="120" width="10" height="15" fill="#81c784" rx="2"/>
+            <circle cx="330" cy="130" r="12" fill="#c5e1a5" /> <!-- Daun Bawang -->
+            <rect x="345" y="125" width="8" height="12" fill="#c5e1a5" rx="1"/>
+
+            <!-- Highlights and texture -->
+            <path d="M250,150 Q200,120 150,130 Q180,160 250,150 Z" fill="rgba(255,255,255,0.2)" />
+            <path d="M250,150 Q300,120 350,130 Q320,160 250,150 Z" fill="rgba(255,255,255,0.2)" />
+
+            <!-- Gunting lines -->
+            <line x1="240" y1="180" x2="260" y2="180" stroke="#d32f2f" stroke-width="4" stroke-linecap="round"/>
+            <line x1="250" y1="190" x2="250" y2="210" stroke="#d32f2f" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+
+        <p>Siapa yang tidak kenal dengan bakwan? Makanan ringan gurih ini bisa ditemukan di berbagai sudut jalan, warung, hingga restoran. Namun, ada satu varian bakwan yang memiliki cara penyajian unik dan cita rasa khas yang tak kalah menggoda, yaitu <strong>bakwan gunting</strong>.</p>
+
+        <p>Berbeda dengan bakwan pada umumnya yang dibentuk bulat atau pipih, bakwan gunting memiliki tekstur yang lebih beragam berkat pemotongannya menggunakan gunting. Proses ini menghasilkan sisi-sisi yang lebih runcing dan area permukaan yang lebih luas, menciptakan renyah yang lebih intens saat digigit. Aroma khas dari sayuran segar seperti kol, wortel, dan daun bawang yang berpadu dengan adonan tepung yang digoreng sempurna, membuat <strong>bakwan gunting</strong> menjadi pilihan cemilan yang tak pernah salah.</p>
+
+        <h2 class="section-title">Sensasi Renyah yang Berbeda</h2>
+        <p>Kelebihan utama dari <strong>bakwan gunting</strong> terletak pada teksturnya. Adonan yang diiris-iris kecil sebelum digoreng memberikan lebih banyak sudut untuk menjadi renyah. Bayangkan gigitan pertama yang menghasilkan bunyi "kriuk" yang memuaskan, disusul dengan sensasi lembut di bagian dalam. Kombinasi ini sangat cocok dinikmati saat santai, ditemani secangkir teh hangat atau kopi.</p>
+
+        <p>Proses pemotongan dengan gunting juga memungkinkan pedagang untuk mengontrol ukuran dan bentuk bakwan sesuai keinginan. Hal ini tidak hanya menambah estetika, tetapi juga memastikan bahwa setiap potongan matang merata dan memiliki kerenyahan yang konsisten. <strong>Bakwan gunting</strong> seringkali disajikan dengan sambal kacang yang manis pedas atau cabai rawit hijau segar, menambah dimensi rasa yang semakin kaya.</p>
+
+        <h2 class="section-title">Keunikan dalam Kesederhanaan</h2>
+        <p>Kesuksesan <strong>bakwan gunting</strong> tidak lepas dari kesederhanaan bahan dan proses pembuatannya. Bahan utamanya adalah campuran tepung terigu, sedikit tepung beras untuk kerenyahan ekstra, air, garam, merica, serta aneka sayuran seperti irisan kol tipis, parutan wortel, dan irisan daun bawang. Kadang-kadang, sedikit udang cincang atau ikan teri juga ditambahkan untuk variasi rasa.</p>
+
+        <p>Awalnya mungkin terlihat seperti bakwan biasa, namun ketika dipotong-potong secara vertikal atau miring dengan gunting saat masih setengah matang, barulah ia bertransformasi menjadi bakwan gunting. Proses ini menghasilkan "sirip-sirip" renyah yang menjadi ciri khasnya. Camilan ini menjadi favorit karena harganya yang terjangkau, mudah didapat, dan rasanya yang otentik.</p>
+
+        <h2 class="section-title">Cara Menikmati Bakwan Gunting</h2>
+        <p>Nikmati <strong>bakwan gunting</strong> selagi hangat untuk mendapatkan kerenyahan maksimal. Beberapa cara menikmatinya antara lain:</p>
+        <ul>
+            <li>Secara langsung sebagai camilan pendamping obrolan santai.</li>
+            <li>Ditemani sambal kecap pedas yang ditambahkan irisan cabai dan bawang.</li>
+            <li>Disajikan dengan saus sambal favorit Anda.</li>
+            <li>Sebagai pelengkap nasi hangat untuk makan malam yang ringan.</li>
+        </ul>
+
+        <p>Keberadaan <strong>bakwan gunting</strong> membuktikan bahwa inovasi bisa datang dari hal-hal sederhana. Dengan sedikit sentuhan unik, makanan jajanan pasar yang sudah akrab di lidah masyarakat Indonesia ini bisa tampil dengan daya tarik baru yang tak kalah memikat. Kapan terakhir kali Anda menikmati sensasi renyah dari bakwan gunting?</p>
+
+        <a href="#" class="call-to-action">Coba Resep Bakwan Gunting!</a>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-bayam-wortel">Resep Bakwan Bayam Wortel</a></li>
+<li><a href="/bakpao-kekinian">Bakpao Kekinian</a></li>
+<li><a href="/resep-ote2-renyah">Resep Ote2 Renyah</a></li>
+<li><a href="/membuat-bakwan-jagung-tanpa-telur">Membuat Bakwan Jagung Tanpa Telur</a></li>
+<li><a href="/resep-bakwan-jagung-tepung-terigu">Resep Bakwan Jagung Tepung Terigu</a></li>
+<li><a href="/masak-bakwan-jagung-renyah">Masak Bakwan Jagung Renyah</a></li>
+<li><a href="/peranan-bakteri-lactobacillus-casei">Peranan Bakteri Lactobacillus Casei</a></li>
+<li><a href="/resep-bakwan-jagung-ala-restoran">Resep Bakwan Jagung Ala Restoran</a></li>
+<li><a href="/bale-negara">Bale Negara</a></li>
+<li><a href="/bakpao-hijau">Bakpao Hijau</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Bayam Renyah & Enak!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 768px; /* Max width for larger screens */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px; /* Add some top margin */
+            margin-bottom: 20px; /* Add some bottom margin */
+        }
+        h1, h2, h3 {
+            color: #0077cc; /* DodgerBlue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 25px;
+            border-bottom: 2px solid #add8e6; /* LightBlue */
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #4682b4; /* SteelBlue */
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .intro {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .ingredients li, .instructions li {
+            background-color: #e0f7fa; /* Cyan lighten */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .ingredients {
+            background-color: #f0f8ff; /* AliceBlue */
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px dashed #00bcd4; /* Cyan */
+        }
+        .instructions {
+            background-color: #fff9c4; /* Yellow lighten */
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px dashed #ffeb3b; /* Yellow */
+        }
+        strong {
+            color: #0056b3; /* Darker Blue */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            h3 {
+                font-size: 1.1em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p, ul, ol {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNkY2U4ZmYiLz48cGF0aCBkPSJNIDUwIDAgQyA3Ny42IDAgMTAwIDExLjggMTAwIDM3LjVzLTIyLjQgMzcuNS01MCAzNy41QyAyMi40IDc1IDAgNjMuMiAwIDM3LjVTMjIuNCAwIDUwIDBaTTUwIDIzLjdDNDIgMjMuNyAzNSAzMC43IDM1IDM3LjVzNy43IDEzLjggMTUgMTMuOEM1OCA1MS4zIDY1IDQ0LjMgNjUgMzcuNUM2NSAzMC43IDU4IDI3IDU4IDI2LjJDNTggMjYgNTUgMjMuNyA1MCAyMy43WiBNNzcgMjMuN0wxOS41IDU2LjJDMTguNyA1Ni45IDE5IDU3LjcgMTkuNyA1OC40TDM2LjYgNjkuM0MxOS41IDc5LjIgOC44IDY5LjEgMTkuNSA1NkwtMzYgMjMuN0M0MiAyMy43IDUwIDMwLjcgNTAgMzcuNUM1MCA0NC43IDQyIDUxLjcgNDIgNTEuN0w1Ny45IDM3LjVMMzYgMjMuN0w1MCAxMS44TDc3IDI4LjRMNzcgMjMuN0wiIGZpbGw9IiMxZmM1ZTAiLz48L3N2Zz4=" alt="Ilustrasi bakwan bayam hijau renyah">
+
+        <h1>Resep Bakwan Bayam Renyah Sempurna!</h1>
+        <p class="intro">Siapa yang tidak suka bakwan? Camilan gurih ini semakin nikmat dengan tambahan bayam yang sehat. Ikuti resep mudah ini untuk menghasilkan bakwan bayam yang super renyah di luar, lembut di dalam, dan pasti disukai keluarga.</p>
+
+        <h2>Mengapa Bakwan Bayam?</h2>
+        <p>Bakwan bayam bukan hanya sekadar camilan. Bayam kaya akan vitamin A, C, K, zat besi, dan serat. Mengolahnya menjadi bakwan adalah cara menyenangkan untuk menambah asupan sayuran hijau, terutama bagi anak-anak yang mungkin kurang menyukai sayuran. Ditambah lagi, tekstur renyahnya membuat ketagihan!</p>
+
+        <h2>Kunci Bakwan Bayam Renyah</h2>
+        <p>Rahasianya terletak pada adonan yang pas dan teknik menggoreng yang tepat. Jangan takut untuk bereksperimen dengan bumbu, namun jangan lupa bahan utama yang akan membuat bakwan Anda luar biasa:</p>
+
+        <div class="ingredients">
+            <h3>Bahan-Bahan Utama:</h3>
+            <ul class="ingredients">
+                <li>1 ikat bayam segar, siangi daunnya, cuci bersih, tiriskan</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+                <li>1 butir telur ayam</li>
+                <li>150-200 ml air dingin (atau secukupnya)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <div class="ingredients">
+            <h3>Bumbu Halus:</h3>
+            <ul class="ingredients">
+                <li>3 siung bawang putih</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh garam (sesuai selera)</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat Bakwan Bayam Renyah:</h2>
+            <ol class="instructions">
+                <li><strong>Persiapan Bayam:</strong> Potong-potong daun bayam yang sudah dicuci bersih agar lebih mudah menyatu dengan adonan. Sisihkan.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam wadah, campurkan tepung terigu, tepung beras, telur, bumbu halus (bawang putih, ketumbar, merica, garam, kaldu bubuk jika pakai). Aduk rata.</li>
+                <li><strong>Tambahkan Air:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang licin, tidak terlalu kental, dan tidak terlalu encer. Pastikan tidak ada gumpalan tepung. Gunakan air dingin agar bakwan lebih renyah.</li>
+                <li><strong>Campurkan Bayam:</strong> Masukkan potongan daun bayam ke dalam adonan. Aduk perlahan hingga semua bayam terlapisi adonan secara merata. Jangan terlalu lama mengaduk agar bayam tidak lemas.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Minyak yang cukup panas adalah kunci agar bakwan tidak menyerap terlalu banyak minyak.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Jangan terlalu banyak memasukkan adonan dalam sekali menggoreng agar bakwan matang merata dan tidak saling menempel.</li>
+                <li><strong>Balik dan Tiriskan:</strong> Goreng bakwan hingga satu sisi berwarna keemasan. Balik perlahan, goreng sisi satunya hingga matang sempurna dan berwarna cokelat keemasan yang menggugah selera. Angkat dan tiriskan di atas tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan bayam renyah siap disajikan selagi hangat. Nikmati dengan sambal favorit Anda atau sebagai pelengkap hidangan utama.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan:</h2>
+        <ul>
+            <li><strong>Bayam Segar:</strong> Pastikan bayam benar-benar segar dan kering setelah dicuci.</li>
+            <li><strong>Tepung Beras:</strong> Penggunaan tepung beras sangat krusial untuk mendapatkan tekstur yang sangat renyah.</li>
+            <li><strong>Air Dingin:</strong> Air es atau air dingin membuat adonan lebih stabil dan menghasilkan kerenyahan ekstra.</li>
+            <li><strong>Suhu Minyak:</strong> Jaga suhu minyak tetap stabil. Jika terlalu panas, bakwan cepat gosong di luar tapi mentah di dalam. Jika kurang panas, bakwan akan berminyak.</li>
+            <li><strong>Jangan Over-mix:</strong> Aduk adonan seperlunya setelah bayam masuk agar kerenyahannya terjaga.</li>
+        </ul>
+
+        <p>Dengan resep sederhana ini, Anda bisa menyajikan bakwan bayam renyah yang lezat kapan saja. Cocok untuk teman ngopi sore, bekal, atau camilan keluarga yang sehat dan ekonomis. Selamat mencoba!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-145-jalan-solo">Bakpia 145 Jalan Solo</a></li>
+<li><a href="/ukuran-bakteri">Ukuran Bakteri</a></li>
+<li><a href="/bakso-beranak-bintara">Bakso Beranak Bintara</a></li>
+<li><a href="/bakteri-legionella">Bakteri Legionella</a></li>
+<li><a href="/cara-membuat-kuah-bakwan">Cara Membuat Kuah Bakwan</a></li>
+<li><a href="/cara-agar-adonan-bakwan-tidak-cepat-basi">Cara Agar Adonan Bakwan Tidak Cepat Basi</a></li>
+<li><a href="/bakwan-ikan-teri-basah">Bakwan Ikan Teri Basah</a></li>
+<li><a href="/perkedel-jagung-tepung-sajiku">Perkedel Jagung Tepung Sajiku</a></li>
+<li><a href="/bakso-goreng-mercon">Bakso Goreng Mercon</a></li>
+<li><a href="/bikin-dadar-jagung-manis">Bikin Dadar Jagung Manis</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

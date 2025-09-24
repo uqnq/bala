@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuah Bakwan Pedas Manis Nikmat!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --main-bg: #e0f7fa; /* Warna dasar sejuk terang */
+            --text-color: #004d40; /* Warna teks gelap sejuk */
+            --accent-color: #00bcd4; /* Warna aksen cerah */
+            --secondary-text: #4db6ac; /* Warna teks sekunder */
+            --card-bg: #ffffff;
+            --shadow-color: rgba(0, 77, 64, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--main-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px var(--shadow-color);
+            overflow: hidden; /* Pastikan sudut membulat berlaku */
+            padding: 25px;
+        }
+
+        h1, h2 {
+            color: var(--accent-color);
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 25px auto;
+            border-radius: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-color);
+        }
+
+        .recipe-section {
+            background-color: var(--main-bg);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .recipe-section h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .recipe-section ol {
+            margin-left: 25px;
+            padding-left: 0;
+        }
+
+        .recipe-section li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: var(--secondary-text);
+            width: 100%;
+            background-color: var(--main-bg);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 92%;
+                margin: 15px auto;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kuah Bakwan: Kombinasi Sempurna Pedas Manis yang Menggugah Selera</h1>
+
+        <svg class="hero-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Latar belakang gradien sejuk -->
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#b2ebf2;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="600" height="400" fill="url(#grad1)" />
+
+          <!-- Garis-garis halus yang abstrak -->
+          <g stroke="#ffffff" stroke-width="2" fill="none">
+            <path d="M 0 0 L 600 400" />
+            <path d="M 600 0 L 0 400" />
+            <path d="M 300 0 L 300 400" />
+            <path d="M 0 200 L 600 200" />
+          </g>
+
+          <!-- Bentuk abstrak menyerupai gelembung atau percikan kuah -->
+          <circle cx="100" cy="150" r="30" fill="#ffcc80" opacity="0.7"/>
+          <circle cx="250" cy="250" r="25" fill="#ff8a65" opacity="0.6"/>
+          <circle cx="400" cy="100" r="40" fill="#80cbc4" opacity="0.7"/>
+          <circle cx="500" cy="280" r="20" fill="#4dd0e1" opacity="0.5"/>
+
+          <!-- Teks sederhana di atas gradien -->
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="bold">
+            Bakwan Lezat
+          </text>
+        </svg>
+        <p>
+            Siapa yang bisa menolak kelezatan bakwan yang renyah di luar dan lembut di dalam? Makanan ringan favorit banyak orang ini terasa semakin istimewa ketika disajikan dengan kuah yang tepat. Dan di antara berbagai variasi kuah, <span class="highlight">kuah bakwan pedas manis</span> selalu menjadi primadona. Kombinasi rasa pedas yang menggelitik lidah berpadu sempurna dengan manis yang menenangkan, menciptakan harmoni rasa yang tak terlupakan.
+        </p>
+
+        <p>
+            Kuah bakwan pedas manis bukan sekadar pelengkap, melainkan elemen krusial yang dapat mengubah pengalaman makan bakwan dari biasa menjadi luar biasa. Sensasi pedasnya membangkitkan selera, sementara sentuhan manisnya menyeimbangkan dan menambah kedalaman rasa. Perpaduan ini ideal untuk dinikmati kapan saja, baik sebagai teman ngopi di sore hari, camilan saat bercengkerama, atau bahkan sebagai hidangan pembuka sebelum santap utama.
+        </p>
+
+        <h2>Mengapa Kuah Bakwan Pedas Manis Begitu Menggoda?</h2>
+        <p>
+            Keunikan kuah ini terletak pada keseimbangan rasa yang kompleks namun mudah diterima oleh lidah banyak orang. Sifatnya yang fleksibel memungkinkan penyesuaian tingkat kepedasan dan kemanisan sesuai selera individu. Penggunaan rempah-rempah pilihan juga berkontribusi pada aroma yang menggoda dan rasa yang kaya. Kuah ini tidak hanya memanjakan lidah, tetapi juga memberikan sensasi hangat yang nyaman saat disantap, terutama di kala cuaca dingin atau hujan.
+        </p>
+
+        <h2>Rahasia Membuat Kuah Bakwan Pedas Manis yang Sempurna</h2>
+        <p>
+            Membuat kuah bakwan pedas manis yang lezat ternyata tidak serumit yang dibayangkan. Kuncinya terletak pada pemilihan bahan-bahan berkualitas dan teknik memasak yang tepat. Berikut adalah beberapa komponen penting dan tips untuk menciptakan kuah yang istimewa:
+        </p>
+
+        <div class="recipe-section">
+            <h3>Bahan Utama yang Diperlukan</h3>
+            <ul>
+                <li><strong>Cabai Merah Keriting</strong> dan <strong>Cabai Rawit</strong>: Untuk tingkat kepedasan yang diinginkan.</li>
+                <li><strong>Bawang Merah</strong> dan <strong>Bawang Putih</strong>: Memberikan aroma dan rasa dasar yang gurih.</li>
+                <li><strong>Gula Merah</strong> atau <strong>Gula Pasir</strong>: Menghadirkan rasa manis yang khas.</li>
+                <li><strong>Asam Jawa</strong>: Memberikan sentuhan asam segar yang menyeimbangkan rasa manis dan pedas.</li>
+                <li><strong>Saus Tomat</strong> dan <strong>Saus Sambal</strong>: Meningkatkan warna, rasa, dan sedikit kekentalan.</li>
+                <li><strong>Garam</strong> dan <strong>Kaldu Bubuk</strong>: Sebagai penyedap rasa.</li>
+                <li><strong>Air</strong>: Sebagai kuah dasar.</li>
+                <li><strong>Tepung Maizena</strong> (opsional): Untuk mengentalkan kuah jika diinginkan.</li>
+            </ul>
+
+            <h3>Langkah-Langkah Sederhana Membuat Kuah</h3>
+            <ol>
+                <li>Haluskan cabai merah keriting, cabai rawit, bawang merah, dan bawang putih.</li>
+                <li>Tumis bumbu halus hingga harum dan matang.</li>
+                <li>Masukkan gula merah, asam jawa, saus tomat, dan saus sambal. Aduk rata.</li>
+                <li>Tuangkan air secukupnya, lalu bumbui dengan garam dan kaldu bubuk.</li>
+                <li>Masak hingga mendidih dan bumbu meresap. Cicipi dan sesuaikan rasa pedas, manis, asam, dan asinnya.</li>
+                <li>Jika ingin kuah lebih kental, larutkan sedikit tepung maizena dengan air, lalu masukkan ke dalam kuah sambil terus diaduk hingga mengental.</li>
+                <li>Sajikan kuah hangat bersama bakwan kesukaan Anda.</li>
+            </ol>
+        </div>
+
+        <p>
+            Dengan mengikuti langkah-langkah ini, Anda dapat menciptakan kuah bakwan pedas manis yang tidak hanya memanjakan lidah tetapi juga menghadirkan kehangatan dan kebahagiaan di setiap suapan. Selamat mencoba dan nikmati sensasi <span class="highlight">kuah bakwan pedas manis</span> yang tiada duanya!
+        </p>
+    </div>
+    <footer>
+        Terima kasih telah mengunjungi.
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-mercon-pak-roso">Bakso Mercon Pak Roso</a></li>
+<li><a href="/bala-bala-singkong">Bala Bala Singkong</a></li>
+<li><a href="/harga-bakpia-1-kotak">Harga Bakpia 1 Kotak</a></li>
+<li><a href="/pewarnaan-bakteri-tahan-asam">Pewarnaan Bakteri Tahan Asam</a></li>
+<li><a href="/bunga-bakung-biru">Bunga Bakung Biru</a></li>
+<li><a href="/bakwan-telur">Bakwan Telur</a></li>
+<li><a href="/bakpia-mumboel">Bakpia Mumboel</a></li>
+<li><a href="/resep-bakwan-krenyes">Resep Bakwan Krenyes</a></li>
+<li><a href="/dadar-jagung-pedas">Dadar Jagung Pedas</a></li>
+<li><a href="/cara-buat-bakpao-mini">Cara Buat Bakpao Mini</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

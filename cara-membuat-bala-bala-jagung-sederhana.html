@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bala Bala Jagung Sederhana</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - Warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        h1, h2 {
+            color: #007bff; /* Biru cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 25px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            padding-left: 5px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #28a745; /* Hijau cerah */
+            font-weight: bold;
+        }
+        .ingredients li, .steps li {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%2328a745" class="bi bi-check-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.364a.75.75 0 1 0-1.06 1.06l2.375 2.375a.75.75 0 0 0 1.08-.022l5.708-5.708a.75.75 0 0 0-.022-1.08z"/></svg>') no-repeat left center;
+            padding-left: 25px;
+            background-size: 18px;
+        }
+        .img-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .img-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            font-size: 0.9em;
+            color: #6c757d;
+            width: 100%;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Membuat Bala Bala Jagung Sederhana</h1>
+
+        <div class="img-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ADD8E6;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <rect width="100%" height="100%" rx="20" fill="url(#grad1)"/>
+                <!-- Illustration of corn fritters -->
+                <g transform="translate(150, 100)">
+                    <circle cx="50" cy="50" r="30" fill="#FFD700" filter="url(#shadow)"/>
+                    <circle cx="100" cy="70" r="35" fill="#FFD700" filter="url(#shadow)"/>
+                    <circle cx="150" cy="50" r="32" fill="#FFD700" filter="url(#shadow)"/>
+                    <circle cx="200" cy="80" r="38" fill="#FFD700" filter="url(#shadow)"/>
+                    <circle cx="250" cy="60" r="30" fill="#FFD700" filter="url(#shadow)"/>
+
+                    <!-- Corn kernels detail -->
+                    <g fill="#f0e68c">
+                        <circle cx="50" cy="40" r="3"/> <circle cx="60" cy="35" r="3"/> <circle cx="70" cy="45" r="3"/>
+                        <circle cx="40" cy="55" r="3"/> <circle cx="45" cy="65" r="3"/> <circle cx="55" cy="70" r="3"/>
+                        <circle cx="100" cy="60" r="3"/> <circle cx="110" cy="55" r="3"/> <circle cx="120" cy="65" r="3"/>
+                        <circle cx="90" cy="75" r="3"/> <circle cx="95" cy="85" r="3"/> <circle cx="105" cy="80" r="3"/>
+                        <circle cx="150" cy="40" r="3"/> <circle cx="160" cy="35" r="3"/> <circle cx="170" cy="45" r="3"/>
+                        <circle cx="140" cy="55" r="3"/> <circle cx="145" cy="65" r="3"/> <circle cx="155" cy="70" r="3"/>
+                        <circle cx="200" cy="70" r="3"/> <circle cx="210" cy="65" r="3"/> <circle cx="220" cy="75" r="3"/>
+                        <circle cx="190" cy="85" r="3"/> <circle cx="195" cy="95" r="3"/> <circle cx="205" cy="90" r="3"/>
+                        <circle cx="250" cy="50" r="3"/> <circle cx="260" cy="45" r="3"/> <circle cx="270" cy="55" r="3"/>
+                        <circle cx="240" cy="65" r="3"/> <circle cx="245" cy="75" r="3"/> <circle cx="255" cy="70" r="3"/>
+                    </g>
+                    <!-- Text - simplified -->
+                    <text x="50%" y="95%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold" filter="url(#shadow)">Bala-Bala Jagung</text>
+                </g>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak suka camilan gurih dan renyah? Bala bala jagung, atau yang juga dikenal sebagai bakwan jagung, adalah salah satu camilan favorit banyak orang di Indonesia. Dibuat dari bahan dasar jagung manis yang dicampur dengan adonan tepung sederhana, bala bala jagung menawarkan rasa manis jagung yang berpadu dengan gurihnya bumbu dan tekstur yang kriuk di luar namun tetap lembut di dalam. Membuatnya pun sangat mudah, cocok untuk camilan sore hari bersama keluarga atau sebagai pendamping hidangan utama.</p>
+
+        <p>Artikel ini akan memandu Anda langkah demi langkah untuk membuat bala bala jagung yang sederhana namun lezat. Dengan bahan-bahan yang mudah didapatkan dan proses yang tidak rumit, Anda bisa menyajikan camilan istimewa ini kapan saja. Kunci dari bala bala jagung yang enak adalah kesegaran jagung dan keseimbangan bumbu yang digunakan.</p>
+
+        <h2>Bahan-Bahan yang Dibutuhkan</h2>
+        <ul class="ingredients">
+            <li>2-3 buah jagung manis segar, pipil atau serut kasar</li>
+            <li>100 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (opsional, untuk hasil lebih renyah)</li>
+            <li>1/2 sendok teh garam (atau sesuai selera)</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+            <li>1 siung bawang putih, haluskan</li>
+            <li>1-2 batang daun bawang, iris tipis</li>
+            <li>1 batang seledri, iris tipis (opsional)</li>
+            <li>100-150 ml air (sesuaikan konsistensi adonan)</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Langkah-Langkah Membuat Bala Bala Jagung</h2>
+        <ol class="steps">
+            <li><strong>Persiapan Jagung:</strong> Pipil jagung manis dari bonggolnya. Anda bisa memipilnya menggunakan pisau, atau jika ingin tekstur yang lebih kasar dan rasa jagung yang lebih kuat, Anda bisa menyerutnya menggunakan parutan. Sisihkan.</li>
+            <li><strong>Membuat Adonan:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras (jika menggunakan), garam, merica bubuk, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+            <li><strong>Menambahkan Bumbu dan Jagung:</strong> Masukkan bawang putih halus, irisan daun bawang, dan seledri (jika menggunakan) ke dalam campuran tepung. Kemudian, masukkan jagung pipil atau serut ke dalam adonan.</li>
+            <li><strong>Mengatur Kekentalan Adonan:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan kekentalannya pas. Adonan tidak boleh terlalu kental agar tidak keras, namun juga tidak boleh terlalu encer agar tidak mudah hancur saat digoreng. Kekentalan yang ideal adalah seperti adonan pisang goreng.</li>
+            <li><strong>Memanaskan Minyak:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan agar bala bala jagung tidak menyerap banyak minyak.</li>
+            <li><strong>Menggoreng Bala Bala:</strong> Ambil satu sendok adonan, lalu goreng satu per satu ke dalam minyak panas. Jangan terlalu banyak memasukkan adonan sekaligus agar suhu minyak tetap stabil dan bala bala jagung matang merata.</li>
+            <li><strong>Membalik dan Mematangkan:</strong> Goreng hingga satu sisi berwarna keemasan, lalu balik bala bala jagung dan goreng sisi lainnya hingga matang sempurna dan berwarna cokelat keemasan.</li>
+            <li><strong>Meniriskan:</strong> Angkat bala bala jagung yang sudah matang, tiriskan di atas kertas tisu atau rak kawat untuk menyerap kelebihan minyak.</li>
+            <li><strong>Sajikan:</strong> Bala bala jagung siap disajikan selagi hangat. Nikmati dengan cabai rawit hijau atau saus sambal untuk sensasi rasa yang lebih nendang.</li>
+        </ol>
+
+        <p>Membuat bala bala jagung sendiri di rumah memang memberikan kepuasan tersendiri. Anda bisa mengatur sendiri tingkat kemanisan, kegurihan, dan kerenyahan sesuai selera. Selain itu, bahan-bahan yang digunakan lebih fresh dan terjamin kebersihannya. Percayalah, resep sederhana ini akan menjadi favorit baru di keluarga Anda!</p>
+
+        <p class="footer">&copy; Resep Sederhana</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-sawi">Bakwan Sawi</a></li>
+<li><a href="/bakpia-malioboro">Bakpia Malioboro</a></li>
+<li><a href="/isian-bakpao-manis">Isian Bakpao Manis</a></li>
+<li><a href="/dadar-jagung-krispi">Dadar Jagung Krispi</a></li>
+<li><a href="/alat-untuk-membuat-bakwan-jagung">Alat Untuk Membuat Bakwan Jagung</a></li>
+<li><a href="/bakpia-anb">Bakpia Anb</a></li>
+<li><a href="/resep-bakso-sosis-mercon">Resep Bakso Sosis Mercon</a></li>
+<li><a href="/tahu-bakso-mercon">Tahu Bakso Mercon</a></li>
+<li><a href="/cara-membuat-bakwan-simple">Cara Membuat Bakwan Simple</a></li>
+<li><a href="/bikin-bakwan-jagung-yang-enak">Bikin Bakwan Jagung Yang Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

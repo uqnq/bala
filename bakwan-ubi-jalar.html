@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Ubi Jalar: Camilan Sehat & Lezat</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .highlight {
+            color: #5f9ea0; /* CadetBlue */
+            font-weight: bold;
+        }
+        .ingredients, .steps {
+            margin-top: 25px;
+            padding-left: 20px;
+        }
+        .ingredients ul, .steps ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+            width: 100%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 20px;
+            }
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bakwan Ubi Jalar: Camilan Lezat Penuh Nutrisi</h1>
+
+        <!-- SVG Gambar Bakwan Ubi Jalar -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" style="background-color: #e0ffff; /* LightCyan */">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffdab9; stop-opacity:1" /> <!-- PeachPuff -->
+                    <stop offset="100%" style="stop-color:#f5deb3; stop-opacity:1" /> <!-- Wheat -->
+                </linearGradient>
+            </defs>
+            <!-- Ubi Jalar Bentuk Bulat -->
+            <circle cx="150" cy="150" r="70" fill="url(#grad1)" stroke="#d2b48c" stroke-width="3"/>
+            <ellipse cx="160" cy="140" rx="40" ry="15" fill="#daa520" transform="rotate(-20 160 140)"/> <!-- Sorotan -->
+
+            <!-- Adonan Bakwan -->
+            <path d="M230 120 C 250 90, 300 90, 320 120 S 340 180, 300 200 C 260 220, 210 190, 230 120 Z" fill="#f8f8ff" stroke="#e6e6fa" stroke-width="2"/> <!-- Lavender -->
+            <ellipse cx="240" cy="110" rx="30" ry="20" fill="#fff8dc" transform="rotate(10 240 110)"/> <!-- Cornsilk -->
+            <ellipse cx="280" cy="140" rx="25" ry="15" fill="#fffacd" transform="rotate(-15 280 140)"/> <!-- LemonChiffon -->
+
+            <!-- Bentuk Gorengan -->
+            <path d="M220 80 C 240 60, 290 60, 310 80 C 330 100, 330 150, 310 170 C 290 190, 240 190, 220 170 C 200 150, 200 100, 220 80 Z" fill="#ffd700" stroke="#b8860b" stroke-width="3"/> <!-- Gold & DarkGoldenrod -->
+            <ellipse cx="230" cy="75" rx="20" ry="10" fill="#eee8aa" transform="rotate(15 230 75)"/> <!-- PaleGoldenrod -->
+            <ellipse cx="270" cy="90" rx="25" ry="12" fill="#f0e68c" transform="rotate(-10 270 90)"/> <!-- Khaki -->
+
+            <!-- Detail Permukaan -->
+            <circle cx="240" cy="100" r="5" fill="#f5cba7"/> <!-- LightCoral -->
+            <circle cx="270" cy="120" r="4" fill="#f5cba7"/>
+            <circle cx="290" cy="150" r="3" fill="#f5cba7"/>
+
+            <!-- Simbol Daun (opsional) -->
+            <path d="M130 180 Q 110 170, 100 190 T 130 210 Z" fill="#2e8b57"/> <!-- SeaGreen -->
+            <path d="M140 170 Q 120 160, 110 180 T 140 200 Z" fill="#3cb371"/> <!-- MediumSeaGreen -->
+        </svg>
+        <p>
+            Di tengah hiruk pikuk kuliner Indonesia, ada satu camilan yang selalu berhasil memikat hati dan lidah: bakwan. Namun, kali ini kita akan membahas varian yang lebih istimewa dan kaya nutrisi, yaitu <span class="highlight">bakwan ubi jalar</span>. Siapa sangka, umbi-umbian yang sering dianggap sederhana ini bisa bertransformasi menjadi hidangan yang begitu menggugah selera, dengan tekstur renyah di luar dan lembut di dalam, serta rasa manis alami yang unik.
+        </p>
+        <p>
+            Ubi jalar, atau yang lebih dikenal sebagai <span class="highlight">sweet potato</span> dalam bahasa Inggris, memiliki berbagai manfaat kesehatan yang luar biasa. Kaya akan vitamin A (dalam bentuk beta-karoten), vitamin C, mangan, serta serat, ubi jalar adalah pilihan bahan makanan yang cerdas. Mengolahnya menjadi bakwan tidak hanya membuat camilan ini semakin lezat, tetapi juga memberikan sentuhan rasa manis alami yang khas tanpa perlu banyak tambahan gula. Warna jingga atau ungu dari ubi jalar juga menambah daya tarik visual pada hidangan ini.
+        </p>
+
+        <h2>Kenapa Memilih Bakwan Ubi Jalar?</h2>
+        <p>
+            Ada banyak alasan mengapa <span class="highlight">bakwan ubi jalar</span> patut Anda coba dan jadikan camilan favorit. Pertama, <span class="highlight">rasa</span>nya yang unik, perpaduan manis legit ubi jalar dengan gurihnya bumbu, menciptakan harmoni rasa yang sulit dilupakan. Kedua, <span class="highlight">tekstur</span>nya yang renyah di luar berkat adonan tepung dan cara menggorengnya, kontras dengan bagian dalam yang lembut dan empuk. Ketiga, <span class="highlight">kandungan nutrisi</span>nya yang lebih unggul dibandingkan bakwan sayuran biasa. Serat yang tinggi membantu pencernaan, sementara vitamin A baik untuk kesehatan mata. Terakhir, <span class="highlight">kemudahannya dalam pembuatan</span>. Bahan-bahannya mudah didapat dan prosesnya tidak memakan waktu lama, menjadikannya pilihan sempurna untuk camilan di sore hari atau hidangan pendamping.
+        </p>
+
+        <h2>Cara Membuat Bakwan Ubi Jalar Sederhana</h2>
+        <p>
+            Membuat bakwan ubi jalar di rumah ternyata tidak sulit, lho! Berikut adalah panduan sederhana untuk menciptakan camilan lezat ini:
+        </p>
+
+        <div class="ingredients">
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>250 gram ubi jalar, kupas dan parut kasar</li>
+                <li>100 gram tepung terigu</li>
+                <li>30 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Merica bubuk secukupnya</li>
+                <li>Air secukupnya (sekitar 50-70 ml)</li>
+                <li>Minyak goreng secukupnya</li>
+                <li>Daun bawang iris tipis (opsional, untuk aroma)</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h3>Langkah-langkah Pembuatan:</h3>
+            <ol>
+                <li>Dalam sebuah wadah, campurkan ubi jalar parut, tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, garam, dan merica. Aduk rata.</li>
+                <li>Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan kental dan semua bahan tercampur rata. Adonan tidak boleh terlalu encer agar bakwan tidak lembek. Jika menggunakan daun bawang, masukkan pada tahap ini.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan.</li>
+                <li>Ambil satu sendok adonan, bentuk agak pipih, lalu masukkan ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan renyah. Jangan terlalu banyak memasukkan bakwan sekaligus agar matang merata.</li>
+                <li>Angkat bakwan ubi jalar yang sudah matang, tiriskan minyaknya di atas kertas tisu.</li>
+                <li>Sajikan bakwan ubi jalar selagi hangat bersama cabai rawit atau saus sambal favorit Anda.</li>
+            </ol>
+        </div>
+
+        <p>
+            Bakwan ubi jalar adalah bukti nyata bahwa makanan sederhana bisa menjadi luar biasa. Dengan sentuhan kreativitas dan bahan-bahan berkualitas, Anda bisa menciptakan hidangan yang tidak hanya memanjakan lidah tetapi juga menyehatkan. Selamat mencoba dan nikmati kelezatan <span class="highlight">bakwan ubi jalar</span> di rumah Anda!
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/adonan-weci">Adonan Weci</a></li>
+<li><a href="/resep-bakso-mercon-pedas">Resep Bakso Mercon Pedas</a></li>
+<li><a href="/ayam-isian-bakpao">Ayam Isian Bakpao</a></li>
+<li><a href="/outlet-bakpia-pathok-25">Outlet Bakpia Pathok 25</a></li>
+<li><a href="/al-jaza-min-jinsil-amal-bahasa-arab">Al Jaza Min Jinsil Amal Bahasa Arab</a></li>
+<li><a href="/bakpao-tiong-sim-muara-karang">Bakpao Tiong Sim Muara Karang</a></li>
+<li><a href="/cara-bikin-bakso-mercon">Cara Bikin Bakso Mercon</a></li>
+<li><a href="/bakpia-28">Bakpia 28</a></li>
+<li><a href="/cara-memanaskan-bakpao-frozen">Cara Memanaskan Bakpao Frozen</a></li>
+<li><a href="/harga-kurnia-sari-bakpia">Harga Kurnia Sari Bakpia</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

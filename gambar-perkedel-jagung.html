@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Perkedel Jagung Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk */
+            color: #004d40; /* Warna teks gelap kehijauan */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 77, 64, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul lebih cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img.main-image {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 77, 64, 0.2);
+        }
+        .recipe-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f0f9fa; /* Latar belakang bagian resep lebih terang */
+            border-radius: 8px;
+        }
+        .recipe-section h3 {
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        .recipe-section ul,
+        .recipe-section ol {
+            padding-left: 25px;
+        }
+        .recipe-section li {
+            margin-bottom: 8px;
+        }
+        .tip {
+            font-style: italic;
+            color: #004d40;
+            background-color: #e8f5e9; /* Warna tip sejuk */
+            padding: 10px;
+            border-left: 5px solid #4caf50; /* Garis pinggir tip hijau */
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #004d40;
+        }
+
+        /* Responsif untuk Mobile */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            img.main-image {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Gambar SVG Perkedel Jagung -->
+            <svg class="main-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#81c784;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <!-- Latar belakang piring -->
+                <circle cx="200" cy="200" r="140" fill="#ffffff" filter="url(#shadow)"/>
+                <ellipse cx="200" cy="215" rx="130" ry="10" fill="#eeeeee" opacity="0.7"/>
+
+                <!-- Jagung -->
+                <g transform="translate(100, 80) scale(0.8)">
+                    <path d="M 50 0 L 100 20 L 80 80 L 20 80 L 0 20 Z" fill="#f0ad4e" />
+                    <path d="M 50 0 L 60 25 L 40 25 Z" fill="#fbc02d" />
+                    <circle cx="50" cy="30" r="15" fill="#fbc02d" />
+                    <circle cx="40" cy="45" r="12" fill="#fbc02d" />
+                    <circle cx="60" cy="45" r="12" fill="#fbc02d" />
+                    <circle cx="30" cy="55" r="10" fill="#fbc02d" />
+                    <circle cx="70" cy="55" r="10" fill="#fbc02d" />
+                    <circle cx="50" cy="65" r="9" fill="#fbc02d" />
+                    <circle cx="25" cy="65" r="9" fill="#fbc02d" />
+                    <circle cx="75" cy="65" r="9" fill="#fbc02d" />
+                </g>
+
+                <!-- Perkedel Jagung -->
+                <g transform="translate(160, 160) rotate(-10)">
+                    <ellipse cx="0" cy="0" rx="40" ry="25" fill="url(#grad1)" />
+                    <ellipse cx="0" cy="0" rx="35" ry="20" fill="#ffffff" opacity="0.3" transform="rotate(45 0 0)"/>
+                    <!-- Detail biji jagung di permukaan -->
+                    <circle cx="15" cy="-10" r="3" fill="#fbc02d" />
+                    <circle cx="-15" cy="10" r="3" fill="#fbc02d" />
+                    <circle cx="0" cy="-20" r="3" fill="#fbc02d" />
+                    <circle cx="0" cy="20" r="3" fill="#fbc02d" />
+                    <circle cx="25" cy="5" r="3" fill="#fbc02d" />
+                    <circle cx="-25" cy="-5" r="3" fill="#fbc02d" />
+                </g>
+                <g transform="translate(240, 170) rotate(15)">
+                    <ellipse cx="0" cy="0" rx="40" ry="25" fill="url(#grad1)" />
+                    <ellipse cx="0" cy="0" rx="35" ry="20" fill="#ffffff" opacity="0.3" transform="rotate(-30 0 0)"/>
+                    <circle cx="15" cy="-10" r="3" fill="#fbc02d" />
+                    <circle cx="-15" cy="10" r="3" fill="#fbc02d" />
+                    <circle cx="0" cy="-20" r="3" fill="#fbc02d" />
+                    <circle cx="0" cy="20" r="3" fill="#fbc02d" />
+                    <circle cx="25" cy="5" r="3" fill="#fbc02d" />
+                    <circle cx="-25" cy="-5" r="3" fill="#fbc02d" />
+                </g>
+                <g transform="translate(200, 230) rotate(-5)">
+                    <ellipse cx="0" cy="0" rx="35" ry="22" fill="url(#grad1)" />
+                    <ellipse cx="0" cy="0" rx="30" ry="17" fill="#ffffff" opacity="0.3" transform="rotate(20 0 0)"/>
+                     <circle cx="10" cy="-8" r="3" fill="#fbc02d" />
+                    <circle cx="-10" cy="8" r="3" fill="#fbc02d" />
+                    <circle cx="0" cy="-15" r="3" fill="#fbc02d" />
+                    <circle cx="0" cy="15" r="3" fill="#fbc02d" />
+                    <circle cx="20" cy="3" r="3" fill="#fbc02d" />
+                    <circle cx="-20" cy="-3" r="3" fill="#fbc02d" />
+                </g>
+
+                <!-- Dekorasi daun -->
+                <path d="M 120 120 Q 110 140 100 160 L 115 150 Z" fill="#66bb6a" transform="rotate(-30 160 160)"/>
+                <path d="M 280 120 Q 290 140 300 160 L 285 150 Z" fill="#66bb6a" transform="rotate(30 240 170)"/>
+            </svg>
+            <h1>Resep Perkedel Jagung Lezat & Mudah</h1>
+            <p style="text-align: center; color: #00695c;">Nikmati kelezatan perkedel jagung buatan sendiri yang renyah di luar dan lembut di dalam. Sempurna sebagai camilan atau lauk pendamping.</p>
+        </header>
+
+        <div class="recipe-section">
+            <h2>Tentang Perkedel Jagung</h2>
+            <p>Perkedel jagung, atau bakwan jagung, adalah hidangan tradisional Indonesia yang terbuat dari campuran jagung manis yang diserut atau dicincang, tepung terigu, telur, dan bumbu-bumbu rempah. Teksturnya yang unik, renyah di bagian luar berkat proses penggorengan, serta rasa manis alami dari jagung yang berpadu dengan gurihnya adonan, menjadikannya favorit banyak orang. Hidangan ini sangat fleksibel, bisa dinikmati kapan saja, baik sebagai pengisi perut saat santai, teman makan nasi hangat, atau pelengkap hidangan utama.</p>
+            <p>Membuat perkedel jagung sendiri di rumah ternyata tidaklah sulit. Dengan bahan-bahan yang mudah didapatkan dan langkah-langkah yang sederhana, Anda bisa menyajikan camilan lezat ini untuk keluarga tercinta. Kunci kelezatan perkedel jagung terletak pada kesegaran jagung yang digunakan dan keseimbangan bumbu yang pas.</p>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Bahan-Bahan</h2>
+            <ul>
+                <li>2 bonggol jagung manis, pipil atau serut kasar</li>
+                <li>100 gram tepung terigu</li>
+                <li>50 gram tepung beras (opsional, untuk menambah kerenyahan)</li>
+                <li>1 butir telur ayam</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>3 siung bawang merah, iris tipis</li>
+                <li>2 buah cabai rawit merah, iris tipis (sesuai selera)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh ketumbar bubuk</li>
+                <li>Sejumput gula pasir</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li><strong>Persiapan Jagung:</strong> Pipil atau serut kasar jagung manis. Jika menggunakan jagung utuh, Anda bisa menyerutnya menggunakan pisau atau parutan khusus jagung.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam sebuah wadah, campurkan tepung terigu dan tepung beras (jika menggunakan). Masukkan telur, bawang putih halus, bawang merah iris, cabai rawit iris, daun bawang iris, garam, merica bubuk, ketumbar bubuk, dan gula pasir.</li>
+                <li><strong>Menambahkan Jagung:</strong> Masukkan jagung yang sudah disiapkan ke dalam campuran tepung. Aduk rata hingga semua bahan tercampur dan membentuk adonan yang cukup kental untuk menempel pada jagung. Jika adonan terasa terlalu kering, Anda bisa menambahkan sedikit air (sekitar 1-2 sendok makan), namun jangan terlalu encer agar perkedel tidak lembek.</li>
+                <li><strong>Menggoreng Perkedel:</strong> Panaskan minyak goreng secukupnya dalam wajan dengan api sedang. Setelah minyak panas, ambil satu sendok makan adonan perkedel, pipihkan sedikit, lalu masukkan ke dalam wajan. Goreng beberapa perkedel sekaligus, jangan terlalu banyak agar matang merata.</li>
+                <li><strong>Memasak Hingga Matang:</strong> Goreng perkedel hingga berwarna kuning keemasan dan matang di kedua sisinya. Gunakan api sedang agar bagian dalam matang sempurna tanpa gosong di luar.</li>
+                <li><strong>Menyajikan:</strong> Angkat perkedel jagung yang sudah matang dan tiriskan minyaknya. Sajikan selagi hangat.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Membuat Perkedel Jagung Sempurna</h2>
+            <div class="tip">
+                <p><strong>1. Pilihan Jagung:</strong> Gunakan jagung manis yang masih segar. Jagung yang masih muda akan menghasilkan rasa manis alami yang lebih kuat dan tekstur yang lebih lembut.</p>
+                <p><strong>2. Tingkat Kekentalan Adonan:</strong> Pastikan adonan tidak terlalu encer. Adonan yang pas akan membuat perkedel renyah dan tidak menyerap terlalu banyak minyak.</p>
+                <p><strong>3. Suhu Minyak:</strong> Jaga suhu minyak tetap stabil. Minyak yang terlalu panas akan membuat perkedel cepat gosong di luar namun belum matang di dalam. Minyak yang kurang panas akan membuat perkedel menyerap banyak minyak dan menjadi lembek.</p>
+                <p><strong>4. Jangan Terlalu Sering Dibalik:</strong> Goreng perkedel hingga satu sisi cukup kokoh sebelum dibalik. Ini membantu menjaga bentuknya tetap bagus.</p>
+                <p><strong>5. Tambahan Tekstur:</strong> Untuk variasi, Anda bisa menambahkan irisan daun seledri atau sedikit parutan wortel ke dalam adonan.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Resep Lezat. Hak cipta dilindungi.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-takaran-gelas">Bakpao Takaran Gelas</a></li>
+<li><a href="/bakpia-77">Bakpia 77</a></li>
+<li><a href="/resep-bakwan-jagung-pedas-crispy">Resep Bakwan Jagung Pedas Crispy</a></li>
+<li><a href="/harga-bakpao-chik-yen">Harga Bakpao Chik Yen</a></li>
+<li><a href="/resep-bakwan-jagung-udang">Resep Bakwan Jagung Udang</a></li>
+<li><a href="/agar-bakpao-tidak-keras-saat-dingin">Agar Bakpao Tidak Keras Saat Dingin</a></li>
+<li><a href="/bakwan-krispi">Bakwan Krispi</a></li>
+<li><a href="/resep-bakwan-goreng-sayur">Resep Bakwan Goreng Sayur</a></li>
+<li><a href="/cara-buat-bakwan-yang-enak-dan-gurih">Cara Buat Bakwan Yang Enak Dan Gurih</a></li>
+<li><a href="/resep-bakwan-ikan">Resep Bakwan Ikan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

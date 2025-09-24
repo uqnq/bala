@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Buat Bakwan Bulat Renyah dan Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna biru muda sejuk */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #00796b; /* Warna hijau toska cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #009688; /* Warna hijau toska sedikit lebih gelap */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0f7fa;
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #00796b;
+        }
+        .recipe-image {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients, .instructions {
+            width: 100%;
+        }
+        .ingredients ul, .instructions ol {
+            background-color: #f0f8ff; /* Warna biru muda langit */
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .note {
+            background-color: #fff9c4; /* Warna kuning muda cerah */
+            border-left: 5px solid #fbc02d;
+            padding: 10px 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+            font-style: italic;
+            color: #333;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .recipe-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Buat Bakwan Bulat Renyah dan Lezat Sempurna</h1>
+
+        <svg class="recipe-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" aria-label="Ilustrasi bakwan bulat emas renyah">
+            <defs>
+                <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:#fff9c4;stop-opacity:1" />
+                    <stop offset="70%" style="stop-color:#ffecb3;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ffcc80;stop-opacity:1" />
+                </radialGradient>
+                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feFlood flood-color="#000" flood-opacity="0.2"/>
+                    <feComposite in2="offsetblur" operator="in"/>
+                    <feMerge>
+                        <feMergeNode in="shadow"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <!-- Base shape of the bakwan -->
+            <circle cx="200" cy="125" r="100" fill="url(#grad1)" filter="url(#shadow)"/>
+
+            <!-- Textures and details to make it look round and crispy -->
+            <g fill="none" stroke="#ffab40" stroke-width="1.5" stroke-linecap="round">
+                <!-- Random lines for crispiness -->
+                <path d="M100 125 Q 150 80 200 125 T 300 125" stroke-width="1"/>
+                <path d="M150 160 Q 200 200 250 160" stroke-width="1"/>
+                <path d="M120 90 Q 160 50 200 90 T 280 90" stroke-width="0.8"/>
+                <path d="M170 190 Q 200 230 230 190" stroke-width="1"/>
+                <path d="M100 160 Q 80 125 120 90" stroke-width="0.8"/>
+                <path d="M300 160 Q 320 125 280 90" stroke-width="0.8"/>
+            </g>
+            <!-- A subtle hint of vegetables -->
+            <path d="M180 110 L 190 100 L 195 115 Z" fill="#a5d6a7" stroke="#81c784" stroke-width="0.5"/>
+            <path d="M210 110 L 220 100 L 215 115 Z" fill="#a5d6a7" stroke="#81c784" stroke-width="0.5"/>
+            <path d="M190 140 L 200 130 L 205 145 Z" fill="#f48fb1" stroke="#e91e63" stroke-width="0.5"/>
+            <path d="M205 140 L 215 130 L 220 145 Z" fill="#f48fb1" stroke="#e91e63" stroke-width="0.5"/>
+        </svg>
+
+        <p>Siapa yang tidak suka bakwan? Camilan gorengan yang renyah di luar dan lembut di dalam ini memang selalu berhasil menggugah selera. Berbeda dengan bakwan sayur yang cenderung pipih, kali ini kita akan belajar <strong>cara buat bakwan bulat</strong> yang unik dan menggoda. Bentuknya yang bulat membuat bakwan ini tidak hanya enak disantap, tapi juga menarik untuk disajikan.</p>
+
+        <p>Membuat bakwan bulat sebenarnya tidak jauh berbeda dengan bakwan biasa, hanya saja kita perlu sedikit teknik agar adonan bisa membentuk bola-bola sempurna saat digoreng. Rahasianya terletak pada kekentalan adonan dan cara menggorengnya. Dengan sedikit kesabaran dan mengikuti panduan langkah demi langkah, Anda pasti bisa menghasilkan bakwan bulat yang kriuk tahan lama.</p>
+
+        <h2>Bahan-Bahan untuk Bakwan Bulat</h2>
+        <div class="ingredients">
+            <ul>
+                <li>250 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+                <li>1 buah wortel, parut kasar atau potong dadu kecil</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>50 gram tauge (opsional, jika suka)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air secukupnya untuk adonan</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Bakwan Bulat</h2>
+        <div class="instructions">
+            <ol>
+                <li><strong>Persiapan Adonan Kering:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata semua bahan kering.</li>
+                <li><strong>Masukkan Sayuran:</strong> Masukkan wortel, kol, daun bawang, dan tauge ke dalam campuran tepung. Aduk rata agar semua sayuran terbalut tepung.</li>
+                <li><strong>Membuat Adonan Basah:</strong> Tuang air sedikit demi sedikit ke dalam campuran sayuran dan tepung. Aduk perlahan hingga terbentuk adonan yang kental, tetapi tidak terlalu encer. Konsistensi adonan yang kental penting agar bakwan bisa membentuk bola saat digoreng. Jika terlalu encer, sayuran akan lepas dan bakwan tidak bulat sempurna.</li>
+                <li><strong>Panaskan Minyak:</strong> Siapkan wajan dengan minyak goreng secukupnya. Panaskan minyak dengan api sedang hingga benar-benar panas. Api yang pas akan membuat bakwan matang merata dan renyah.</li>
+                <li><strong>Membentuk Bakwan Bulat:</strong> Ambil satu sendok sayur penuh adonan. Tuangkan adonan ke dalam minyak panas dengan cara sedikit merapatkan adonan di sendok agar bentuknya lebih padat dan bulat. Anda bisa menggunakan bantuan sendok lain untuk mendorong adonan agar jatuh rapi ke dalam wajan. Goreng beberapa buah bakwan sekaligus, jangan terlalu penuh agar matang merata.</li>
+                <li><strong>Proses Menggoreng:</strong> Goreng bakwan hingga satu sisi berwarna kecoklatan. Balik bakwan dengan hati-hati menggunakan saringan atau penjepit. Lanjutkan menggoreng hingga seluruh permukaan bakwan berwarna coklat keemasan dan matang sempurna.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang dan tiriskan di atas rak kawat atau tisu dapur agar minyak berlebih terserap. Lakukan langkah ini hingga semua adonan habis.</li>
+            </ol>
+        </div>
+
+        <div class="note">
+            <strong>Tips Tambahan:</strong> Agar bakwan bulat lebih kokoh, Anda bisa mencampurkan sedikit telur ke dalam adonan. Pastikan juga minyak benar-benar panas saat mulai menggoreng agar bakwan bisa membentuk dan tidak menyebar. Untuk kerenyahan ekstra, goreng bakwan dalam dua tahap: goreng setengah matang terlebih dahulu, angkat, dinginkan, lalu goreng kembali hingga kecoklatan sebelum disajikan.
+        </div>
+
+        <p>Bakwan bulat siap dinikmati selagi hangat bersama saus sambal, cabai rawit, atau bahkan lontong. Bentuknya yang unik pasti akan jadi favorit keluarga, terutama anak-anak. Selamat mencoba <strong>cara buat bakwan bulat</strong> yang lezat ini!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-day-cirebon">Bakwan Day Cirebon</a></li>
+<li><a href="/juwara-satoe-tugu">Juwara Satoe Tugu</a></li>
+<li><a href="/bakpia-makanan-khas">Bakpia Makanan Khas</a></li>
+<li><a href="/perkedel-jagung-bahan">Perkedel Jagung Bahan</a></li>
+<li><a href="/alat-dan-bahan-membuat-perkedel-jagung">Alat Dan Bahan Membuat Perkedel Jagung</a></li>
+<li><a href="/bakpia-ariza">Bakpia Ariza</a></li>
+<li><a href="/resep-membuat-bakso-mercon-simple">Resep Membuat Bakso Mercon Simple</a></li>
+<li><a href="/uji-bakteri">Uji Bakteri</a></li>
+<li><a href="/cara-memasak-nasi-jagung-instan">Cara Memasak Nasi Jagung Instan</a></li>
+<li><a href="/cara-membuat-jagung-crispy">Cara Membuat Jagung Crispy</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

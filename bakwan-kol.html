@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Kol: Resep Lezat & Renyah Sederhana</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Warna Sejuk Cerah */
+        :root {
+            --color-primary: #4CAF50; /* Hijau cerah */
+            --color-secondary: #8BC34A; /* Hijau kekuningan */
+            --color-accent: #FFC107; /* Kuning cerah */
+            --color-text-dark: #333;
+            --color-text-light: #fff;
+            --color-background: #E8F5E9; /* Hijau sangat muda */
+            --color-card-background: #F1F8E9; /* Hijau muda pucat */
+            --color-border: #C8E6C9; /* Hijau muda */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--color-card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 500px; /* Batasi lebar gambar agar tidak terlalu besar di layar kecil */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .recipe-steps ol {
+            padding-left: 20px;
+        }
+
+        .recipe-steps li {
+            margin-bottom: 10px;
+        }
+
+        .ingredients ul {
+            padding-left: 20px;
+        }
+
+        .ingredients li {
+            margin-bottom: 8px;
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: var(--color-accent);
+            color: var(--color-text-dark);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 10px rgba(255, 193, 7, 0.5);
+        }
+
+        .cta-button:hover {
+            background-color: var(--color-secondary);
+            color: var(--color-text-light);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            img {
+                max-width: 95%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+            <header>
+                <h1>Bakwan Kol: Gigitan Renyah Gurih yang Bikin Ketagihan</h1>
+                <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 20px auto;">
+                    <!-- Latar belakang hijau cerah -->
+                    <rect width="200" height="150" fill="#8BC34A" rx="10"/>
+                    <!-- Bentuk kol -->
+                    <path d="M 100 20 C 80 20 60 30 60 50 C 60 70 80 90 100 90 C 120 90 140 70 140 50 C 140 30 120 20 100 20 Z M 100 30 C 90 30 85 40 85 50 C 85 60 90 70 100 70 C 110 70 115 60 115 50 C 115 40 110 30 100 30 Z M 100 40 C 95 40 92 45 92 50 C 92 55 95 60 100 60 C 105 60 108 55 108 50 C 108 45 105 40 100 40 Z" fill="#F1F8E9" stroke="#C8E6C9" stroke-width="2"/>
+                    <!-- Daun kol -->
+                    <path d="M 70 60 Q 60 75 65 90 L 75 80 Q 70 70 70 60 Z" fill="#4CAF50" stroke="#C8E6C9" stroke-width="1"/>
+                    <path d="M 130 60 Q 140 75 135 90 L 125 80 Q 130 70 130 60 Z" fill="#4CAF50" stroke="#C8E6C9" stroke-width="1"/>
+                    <path d="M 100 70 Q 90 85 95 100 L 105 90 Q 100 80 100 70 Z" fill="#4CAF50" stroke="#C8E6C9" stroke-width="1"/>
+                    <!-- Slogan 'Renyah' -->
+                    <text x="100" y="130" font-family="Segoe UI, sans-serif" font-size="14" fill="#FFC107" text-anchor="middle" font-weight="bold">Renyah!</text>
+                </svg>
+                <p>Siapa yang bisa menolak kelezatan bakwan? Apalagi jika dibuat dengan kol segar yang diiris tipis, dibalut adonan tepung gurih, lalu digoreng hingga keemasan dan super renyah. Bakwan kol adalah camilan klasik yang selalu berhasil memikat lidah siapa saja. Cocok disantap sebagai teman minum teh sore, pelengkap nasi hangat, atau bahkan dinikmati begitu saja saat sedang santai.</p>
+            </header>
+
+            <section class="content">
+                <h2>Mengapa Bakwan Kol Begitu Istimewa?</h2>
+                <p>Kelezatan bakwan kol terletak pada kesederhanaannya. Bahan-bahannya mudah didapat, proses pembuatannya pun tidak rumit, namun hasilnya selalu memuaskan. Irisan kol yang tipis memberikan tekstur yang unik, sedikit manis alami dari sayuran berpadu sempurna dengan gurihnya adonan tepung. Kunci utamanya adalah menggoreng dengan minyak panas yang cukup agar bakwan mengembang sempurna dan menghasilkan kerenyahan yang tahan lama.</p>
+                <p>Selain rasanya yang enak, bakwan kol juga menawarkan sensasi menggigit yang memuaskan. Suara "kres" saat pertama kali menggigitnya adalah bagian dari kenikmatan itu sendiri. Bayangkan, adonan tepung yang renyah di luar, namun tetap lembut di dalam, berpadu dengan sensasi segar dari kol yang sedikit layu karena digoreng. Kombinasi tekstur ini yang membuat bakwan kol sulit untuk dilupakan.</p>
+
+                <h2>Tips Membuat Bakwan Kol Sempurna</h2>
+                <p>Agar bakwan kol Anda tidak hanya enak tapi juga luar biasa renyah, ada beberapa tips yang bisa diikuti:</p>
+                <div class="ingredients">
+                    <h3>Bahan Utama:</h3>
+                    <ul>
+                        <li>1 buah kol ukuran sedang, iris tipis</li>
+                        <li>200 gram tepung terigu serbaguna</li>
+                        <li>50 gram tepung beras (untuk tambahan kerenyahan)</li>
+                        <li>1 batang daun bawang, iris tipis</li>
+                        <li>1 batang seledri, iris tipis (opsional)</li>
+                        <li>Air secukupnya</li>
+                        <li>Minyak goreng secukupnya</li>
+                    </ul>
+                </div>
+                <div class="ingredients">
+                    <h3>Bumbu Halus:</h3>
+                    <ul>
+                        <li>3 siung bawang putih</li>
+                        <li>1/2 sendok teh merica butiran</li>
+                        <li>1 sendok teh garam</li>
+                        <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+                    </ul>
+                </div>
+                <div class="recipe-steps">
+                    <h3>Cara Membuat:</h3>
+                    <ol>
+                        <li>Campurkan tepung terigu, tepung beras, daun bawang, seledri, dan bumbu halus dalam sebuah wadah. Aduk rata.</li>
+                        <li>Tuang air sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang kental namun tidak terlalu padat. Kekentalan adonan sangat menentukan kerenyahan bakwan.</li>
+                        <li>Masukkan irisan kol ke dalam adonan. Aduk perlahan hingga semua irisan kol terlapisi adonan dengan merata.</li>
+                        <li>Panaskan minyak goreng dalam jumlah banyak dengan api sedang cenderung besar. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                        <li>Ambil satu sendok sayur adonan, lalu masukkan ke dalam minyak panas. Bentuk agak melebar agar matang merata dan renyah. Jangan terlalu banyak memasukkan adonan dalam satu waktu agar suhu minyak tidak turun drastis.</li>
+                        <li>Goreng hingga bakwan berwarna kuning keemasan dan matang merata. Balik sesekali agar matang sempurna di kedua sisi.</li>
+                        <li>Angkat bakwan kol dan tiriskan di atas tisu dapur untuk menyerap kelebihan minyak.</li>
+                        <li>Sajikan bakwan kol selagi hangat untuk mendapatkan kerenyahan maksimal. Nikmati bersama cabai rawit hijau atau saus sambal favorit Anda.</li>
+                    </ol>
+                </div>
+
+                <p>Dengan mengikuti langkah-langkah di atas, Anda bisa menciptakan bakwan kol yang lezat, renyah, dan pastinya disukai seluruh keluarga. Selamat mencoba dan nikmati kelezatan sederhana dari dapur Anda!</p>
+
+                <a href="#download-recipe" class="cta-button">Unduh Resep Lengkap</a>
+            </section>
+        </article>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-marugame-udon">Bakwan Marugame Udon</a></li>
+<li><a href="/bakwan-udang-simple">Bakwan Udang Simple</a></li>
+<li><a href="/bakpia-solo-09">Bakpia Solo 09</a></li>
+<li><a href="/resep-bakwan-untuk-jualan">Resep Bakwan Untuk Jualan</a></li>
+<li><a href="/bakteri-yakult">Bakteri Yakult</a></li>
+<li><a href="/cara-membuat-pentol-bakso-mercon">Cara Membuat Pentol Bakso Mercon</a></li>
+<li><a href="/doa-balasan-adzan">Doa Balasan Adzan</a></li>
+<li><a href="/resep-bala-bala-enak">Resep Bala Bala Enak</a></li>
+<li><a href="/cara-buat-bakwan-sayur-yg-renyah">Cara Buat Bakwan Sayur Yg Renyah</a></li>
+<li><a href="/makanan-weci">Makanan Weci</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

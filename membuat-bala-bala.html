@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bala Bala Renyah dan Nikmat</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        :root {
+            --color-primary: #4FC3F7; /* Light Blue */
+            --color-secondary: #81C784; /* Light Green */
+            --color-accent: #FFD54F; /* Light Yellow */
+            --color-text-dark: #333;
+            --color-text-light: #fff;
+            --background-color: #f8f9fa; /* Very light gray */
+            --card-background: var(--color-text-light);
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        h1 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--color-secondary);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--color-accent);
+            padding-bottom: 5px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        .ingredients, .steps {
+            background-color: var(--card-background);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .ingredients h2 {
+            color: var(--color-secondary);
+            border-bottom-color: var(--color-accent);
+        }
+
+        .steps h2 {
+            color: var(--color-primary);
+            border-bottom-color: var(--color-accent);
+        }
+
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .step-number {
+            background-color: var(--color-accent);
+            color: var(--color-text-dark);
+            font-weight: bold;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-description {
+            flex-grow: 1;
+        }
+
+        .recipe-image {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .recipe-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .tip {
+            background-color: var(--color-accent);
+            color: var(--color-text-dark);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-style: italic;
+            border-left: 5px solid var(--color-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .step-number {
+                width: 25px;
+                height: 25px;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mau Cilung Lezat? Yuk, Coba Cara Membuat Bala Bala Renyah Ini!</h1>
+
+        <div class="recipe-image">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-svg-bala-bala">
+                <title id="title-svg-bala-bala">Ilustrasi Bala Bala yang Lezat</title>
+                <defs>
+                    <linearGradient id="grad-main" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFB74D;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFECB3;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad-outline" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#EF6C00;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFCA28;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="400" height="250" rx="15" fill="#FFF9C4"/>
+                <path d="M 50 150 Q 70 120 100 150 T 150 150 T 200 150 T 250 150 Q 270 120 300 150 T 350 150 T 400 150 V 250 H 0 Z" fill="url(#grad-main)" stroke="url(#grad-outline)" stroke-width="3"/>
+                <circle cx="100" cy="150" r="20" fill="#FFF9C4" stroke="#EF6C00" stroke-width="2"/>
+                <circle cx="180" cy="140" r="15" fill="#FFF9C4" stroke="#EF6C00" stroke-width="2"/>
+                <circle cx="250" cy="160" r="22" fill="#FFF9C4" stroke="#EF6C00" stroke-width="2"/>
+                <circle cx="320" cy="145" r="18" fill="#FFF9C4" stroke="#EF6C00" stroke-width="2"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="20" font-weight="bold">
+                    Bala Bala
+                </text>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Bala bala, atau bakwan sayur, adalah salah satu jajanan pasar favorit banyak orang di Indonesia. Teksturnya yang garing di luar dan lembut di dalam, berpadu dengan rasa gurih dari adonan tepung dan sayuran segar, membuatnya tak pernah gagal menggugah selera. Membuat bala bala sendiri di rumah ternyata tidak sesulit yang dibayangkan, lho. Dengan sedikit panduan, Anda bisa menyajikan camilan lezat ini kapan saja.</p>
+
+        <p>Artikel ini akan memandu Anda langkah demi langkah untuk membuat bala bala yang sempurna, mulai dari pemilihan bahan hingga tips menggoreng agar hasilnya renyah tahan lama. Persiapkan diri Anda untuk aroma harum yang akan memenuhi dapur saat proses menggoreng nanti!</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan Utama</h2>
+            <ul>
+                <li>1 buah wortel ukuran sedang, iris korek api tipis</li>
+                <li>1/4 kol ukuran kecil, iris tipis memanjang</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk ekstra renyah)</li>
+                <li>150-200 ml air es (sesuaikan kekentalan adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+            <h2>Bumbu Halus</h2>
+            <ul>
+                <li>2 siung bawang putih</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Langkah-langkah Membuat Bala Bala</h2>
+            <ol>
+                <li class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-description">
+                        <p><strong>Persiapkan Sayuran:</strong> Cuci bersih semua sayuran. Iris wortel dan kol tipis-tipis memanjang. Iris daun bawang. Sisihkan.</p>
+                    </div>
+                </li>
+                <li class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-description">
+                        <p><strong>Buat Adonan Tepung:</strong> Dalam mangkuk besar, campurkan tepung terigu dan tepung beras (jika menggunakan). Masukkan bumbu halus (bawang putih, garam, merica, kaldu bubuk).</p>
+                    </div>
+                </li>
+                <li class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-description">
+                        <p><strong>Uleni Adonan:</strong> Tuangkan air es sedikit demi sedikit sambil diaduk hingga adonan tercampur rata dan membentuk pasta yang tidak terlalu kental atau encer. Kekentalan adonan sangat penting untuk hasil gorengan yang baik.</p>
+                    </div>
+                </li>
+                <li class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-description">
+                        <p><strong>Campurkan Sayuran:</strong> Masukkan irisan wortel, kol, dan daun bawang ke dalam adonan tepung. Aduk rata hingga semua sayuran terbalut adonan.</p>
+                    </div>
+                </li>
+                <li class="step-item">
+                    <div class="step-number">5</div>
+                    <div class="step-description">
+                        <p><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</p>
+                    </div>
+                </li>
+                <li class="step-item">
+                    <div class="step-number">6</div>
+                    <div class="step-description">
+                        <p><strong>Goreng Bala Bala:</strong> Ambil satu sendok sayur adonan yang sudah tercampur sayuran, lalu tuang perlahan ke dalam minyak panas. Goreng hingga semua sisi berwarna kuning keemasan dan matang merata. Balik sesekali agar matang sempurna.</p>
+                    </div>
+                </li>
+                <li class="step-item">
+                    <div class="step-number">7</div>
+                    <div class="step-description">
+                        <p><strong>Tiriskan dan Sajikan:</strong> Angkat bala bala yang sudah matang, tiriskan dari minyak berlebih menggunakan saringan atau tisu dapur. Sajikan selagi hangat dengan sambal favorit Anda.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <h2>Tips untuk Bala Bala yang Super Renyah:</h2>
+            <ul>
+                <li>Gunakan air es untuk adonan agar tekstur bala bala lebih renyah.</li>
+                <li>Jangan terlalu banyak mengaduk adonan setelah dicampur sayuran, agar sayuran tidak mengeluarkan terlalu banyak air.</li>
+                <li>Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li>Goreng dalam jumlah secukupnya agar suhu minyak tidak turun drastis.</li>
+                <li>Tambahkan sedikit tepung beras untuk hasil yang lebih garing.</li>
+            </ul>
+        </div>
+
+        <p>Membuat bala bala sendiri di rumah adalah cara yang menyenangkan untuk menikmati camilan favorit ini dengan kualitas terjamin. Dengan bahan-bahan segar dan sedikit sentuhan resep ini, Anda bisa menjadi ahli pembuat bala bala di keluarga Anda. Selamat mencoba dan selamat menikmati kelezatan bala bala buatan sendiri!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-kacang">Bakpao Kacang</a></li>
+<li><a href="/bakpia-pathok-kering">Bakpia Pathok Kering</a></li>
+<li><a href="/resep-aneka-bakwan">Resep Aneka Bakwan</a></li>
+<li><a href="/pentol-mercon-kemasan">Pentol Mercon Kemasan</a></li>
+<li><a href="/bakpia-kotak-hijau">Bakpia Kotak Hijau</a></li>
+<li><a href="/bakpia-kering-tahan-berapa-hari">Bakpia Kering Tahan Berapa Hari</a></li>
+<li><a href="/baklava-mozzarella">Baklava Mozzarella</a></li>
+<li><a href="/kuman-dalam-perut">Kuman Dalam Perut</a></li>
+<li><a href="/isian-keju-untuk-bakpao">Isian Keju Untuk Bakpao</a></li>
+<li><a href="/bakpia-murni-101">Bakpia Murni 101</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

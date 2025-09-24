@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Perkedel Jagung Sederhana</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #a8dadc; /* Biru sejuk */
+            --color-secondary: #f1faee; /* Putih bersih */
+            --color-accent: #457b9d; /* Biru gelap sedikit lebih pekat */
+            --color-text: #1d3557; /* Teks gelap agar mudah dibaca */
+            --font-primary: 'Arial', sans-serif; /* Font umum yang rapi */
+        }
+
+        body {
+            font-family: var(--font-primary);
+            margin: 0;
+            padding: 1rem;
+            background-color: var(--color-secondary);
+            color: var(--color-text);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--color-secondary);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        img.main-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 1rem auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .ingredients li, .steps li {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .ingredients li::before, .steps li::before {
+            content: '✓'; /* Atau simbol lain yang Anda suka */
+            position: absolute;
+            left: 0;
+            color: var(--color-primary);
+            font-weight: bold;
+        }
+
+        .steps li::before {
+            content: counter(step-counter) '.';
+            counter-increment: step-counter;
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .recipe-details {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .recipe-details span {
+            margin: 0 10px;
+            font-weight: bold;
+            color: var(--color-accent);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 1.5rem auto;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--color-primary);
+            color: var(--color-text);
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            background-color: var(--color-accent);
+            color: var(--color-secondary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            font-size: 0.85em;
+            color: #777;
+        }
+
+        /* Styling khusus untuk gambar SVG */
+        .svg-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .svg-container svg {
+            max-width: 150px; /* Ukuran SVG */
+            height: auto;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cara Membuat Perkedel Jagung Sederhana Nan Lezat</h1>
+        </header>
+
+        <div class="recipe-details">
+            <span>Mudah</span> | <span>Cepat</span> | <span>Gurih</span>
+        </div>
+
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4">
+                <title>Ikon Perkedel Jagung</title>
+                <circle cx="50" cy="50" r="40" stroke="var(--color-primary)" fill="var(--color-secondary)"/>
+                <circle cx="35" cy="35" r="8" fill="var(--color-accent)"/>
+                <circle cx="65" cy="35" r="8" fill="var(--color-accent)"/>
+                <circle cx="35" cy="65" r="8" fill="var(--color-accent)"/>
+                <circle cx="65" cy="65" r="8" fill="var(--color-accent)"/>
+                <path d="M50 30 Q 60 40 50 50 Q 40 40 50 30 Z" fill="var(--color-accent)" transform="rotate(15 50 50)"/>
+                <path d="M50 70 Q 60 60 50 50 Q 40 60 50 70 Z" fill="var(--color-accent)" transform="rotate(-15 50 50)"/>
+            </svg>
+        </div>
+
+        <p>Siapa yang bisa menolak kelezatan perkedel jagung? Camilan renyah di luar dan lembut di dalam ini selalu jadi favorit. Membuatnya sendiri di rumah ternyata sangat mudah, lho! Tidak perlu bahan yang rumit atau teknik khusus. Resep sederhana ini cocok untuk Anda yang ingin menyajikan kudapan lezat tanpa repot, baik untuk teman minum teh di sore hari maupun lauk pendamping nasi.</p>
+
+        <h2>Bahan-bahan yang Anda Butuhkan:</h2>
+        <ul class="ingredients">
+            <li>2 buah jagung manis, pipil</li>
+            <li>50 gram tepung terigu</li>
+            <li>2 sendok makan tepung beras</li>
+            <li>1 butir telur</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh garam</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>Sedikit gula pasir (opsional, untuk menyeimbangkan rasa)</li>
+            <li>Daun bawang secukupnya, iris tipis (opsional)</li>
+            <li>Minyak goreng secukupnya</li>
+        </ul>
+
+        <h2>Langkah-langkah Membuat Perkedel Jagung</h2>
+        <ol class="steps">
+            <li>
+                <strong>Persiapan Jagung:</strong> Pipil jagung manis dari bonggolnya. Anda bisa menggunakan pisau tajam atau memarutnya jika suka tekstur yang lebih halus. Jika menggunakan biji jagung utuh, blender sebentar hingga sedikit hancur namun tidak sampai halus sekali, sisakan sedikit tekstur agar perkedel tetap terasa 'gigitan' jagungnya.
+            </li>
+            <li>
+                <strong>Membuat Adonan:</strong> Dalam sebuah wadah, campurkan jagung pipil/halus, tepung terigu, tepung beras, telur, bawang putih halus, garam, merica bubuk, dan gula pasir jika menggunakan. Aduk rata hingga semua bahan tercampur sempurna. Jika menggunakan daun bawang, masukkan pada tahap ini.
+            </li>
+            <li>
+                <strong>Menggoreng Perkedel:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak sudah cukup panas sebelum memasukkan adonan.
+            </li>
+            <li>
+                <strong>Membentuk dan Menggoreng:</strong> Ambil satu sendok makan adonan, lalu goreng langsung ke dalam minyak panas. Lakukan hingga wajan terisi secukupnya, jangan terlalu penuh agar perkedel matang merata dan tidak saling menempel.
+            </li>
+            <li>
+                <strong>Membalik dan Mengangkat:</strong> Goreng perkedel hingga satu sisinya berwarna kuning keemasan, lalu balik. Lanjutkan menggoreng hingga kedua sisi matang dan berwarna kecoklatan. Angkat perkedel dan tiriskan minyaknya di atas tisu dapur.
+            </li>
+            <li>
+                <strong>Penyajian:</strong> Perkedel jagung siap disajikan selagi hangat. Cocok dinikmati sebagai camilan atau teman makan nasi.
+            </li>
+        </ol>
+
+        <p>Variasi sederhana bisa Anda tambahkan, misalnya dengan sedikit parutan wortel untuk warna dan nutrisi tambahan, atau sedikit bubuk cabai jika suka rasa pedas. Kunci dari perkedel jagung yang enak adalah keseimbangan rasa manis dari jagung, gurih dari bumbu, dan tekstur renyah di luar. Pastikan menggoreng dengan api yang pas agar matang merata tanpa gosong di luar tapi mentah di dalam.</p>
+
+        <p>Membuat perkedel jagung adalah kegiatan menyenangkan yang bisa dilakukan bersama keluarga. Aroma harum saat menggorengnya pasti akan menggugah selera seluruh anggota keluarga. Dengan panduan cara membuat perkedel jagung sederhana ini, Anda bisa dengan mudah menyajikan camilan lezat kapan saja.</p>
+
+        <a href="#" class="cta-button">Coba Resepnya Sekarang!</a>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-isian-kacang-tanah-untuk-bakpao">Cara Membuat Isian Kacang Tanah Untuk Bakpao</a></li>
+<li><a href="/resep-bakwan-tahu-putih">Resep Bakwan Tahu Putih</a></li>
+<li><a href="/cara-membuat-tahu-bakwan">Cara Membuat Tahu Bakwan</a></li>
+<li><a href="/bumbu-membuat-dadar-jagung">Bumbu Membuat Dadar Jagung</a></li>
+<li><a href="/masak-pentol-mercon">Masak Pentol Mercon</a></li>
+<li><a href="/bakwan-bayam-sederhana">Bakwan Bayam Sederhana</a></li>
+<li><a href="/resep-bakwan-tauge-renyah">Resep Bakwan Tauge Renyah</a></li>
+<li><a href="/pewarnaan-bakteri-pdf">Pewarnaan Bakteri Pdf</a></li>
+<li><a href="/bakso-kerucut-mercon">Bakso Kerucut Mercon</a></li>
+<li><a href="/pewarnaan-gram-positif-dan-negatif">Pewarnaan Gram Positif Dan Negatif</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

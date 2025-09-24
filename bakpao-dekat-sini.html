@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Bakpao Terdekat: Temukan Lezatnya!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #66D2D6; /* Biru laut cerah */
+            --color-secondary: #FFB6C1; /* Merah muda lembut */
+            --color-background: #F0FFFF; /* Biru langit pucat */
+            --color-text: #333;
+            --color-accent: #FFD700; /* Emas lembut */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: var(--color-secondary);
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: var(--color-accent);
+            transform: translateY(-2px);
+        }
+
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 12px 15px;
+            width: 70%;
+            max-width: 400px;
+            border: 2px solid var(--color-primary);
+            border-radius: 25px;
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-bar input[type="text"]:focus {
+            border-color: var(--color-accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            background-color: var(--color-primary);
+            color: white;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .cta-button {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+            .search-bar input[type="text"] {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero-image">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Bakpao sederhana dengan efek cerah -->
+                <circle cx="100" cy="100" r="70" fill="#FFDAB9" stroke="#E0A070" stroke-width="3"/>
+                <path d="M 70 80 Q 50 60 30 80 T 70 120 Z" fill="#FFC0CB" stroke="#FF69B4" stroke-width="2"/>
+                <path d="M 130 80 Q 150 60 170 80 T 130 120 Z" fill="#FFC0CB" stroke="#FF69B4" stroke-width="2"/>
+
+                <!-- Teks "Bakpao" sederhana -->
+                <text x="250" y="100" font-family="Verdana, Geneva, sans-serif" font-size="40" fill="#66D2D6" text-anchor="middle" font-weight="bold">Bakpao</text>
+                <text x="250" y="150" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#FFB6C1" text-anchor="middle">Enak & Hangat</text>
+
+                <!-- Detail cerah lainnya -->
+                <circle cx="250" cy="50" r="10" fill="#FFD700" opacity="0.7"/>
+                <circle cx="300" cy="70" r="8" fill="#ADD8E6" opacity="0.6"/>
+                <circle cx="280" cy="140" r="7" fill="#90EE90" opacity="0.5"/>
+            </svg>
+            <p>Temukan kelezatan bakpao favorit Anda!</p>
+        </div>
+
+        <h1>Mencari Bakpao Lezat di Sekitar Anda?</h1>
+
+        <p>Ketika rasa ngidam bakpao melanda, hal terakhir yang Anda inginkan adalah kebingungan mencari tempat terbaik. Kini, menemukan <strong>bakpao dekat sini</strong> menjadi lebih mudah dari sebelumnya. Bayangkan hangatnya adonan lembut yang membungkus isian gurih atau manis, siap menggoyang lidah kapan saja.</p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Masukkan lokasi Anda atau 'bakpao'">
+        </div>
+
+        <p>Apakah Anda sedang mencari bakpao ayam yang gurih, bakpao coklat lumer yang menggoda, atau mungkin bakpao keju yang klasik? Apapun selera Anda, kami hadir untuk membantu Anda menemukan penjual bakpao terdekat yang siap menyajikan kelezatan tak tertahankan. Dengan sedikit sentuhan pencarian, Anda bisa langsung mengetahui ke mana harus melangkah untuk mendapatkan kudapan yang sempurna.</p>
+
+        <h2>Mengapa Bakpao Begitu Dicintai?</h2>
+
+        <p>Bakpao, dengan bentuknya yang bulat menggemaskan dan teksturnya yang kenyal, telah menjadi favorit banyak orang lintas usia. Keunggulannya terletak pada keserbagunaannya. Ia bisa menjadi sarapan ringan, camilan pengganjal lapar di sore hari, atau bahkan teman setia saat bersantai. Sensasi hangat saat menggigit bakpao yang baru dikukus memberikan kenyamanan tersendiri, seolah membawa pulang rasa nostalgia.</p>
+
+        <p>Proses pembuatan bakpao sendiri melibatkan keahlian dalam mengolah adonan hingga menghasilkan tekstur yang empuk dan tidak bantat. Kemudian, isiannya yang beraneka ragam menjadi daya tarik utama. Dari daging cincang berbumbu, sayuran segar, hingga aneka rasa manis seperti kacang merah, coklat, keju, bahkan durian, setiap gigitan menawarkan pengalaman rasa yang berbeda.</p>
+
+        <p>Pencarian <strong>bakpao dekat sini</strong> kini menjadi solusi praktis bagi Anda yang ingin menikmati hidangan lezat ini tanpa perlu repot. Cukup ketikkan kata kunci Anda dan biarkan teknologi membantu Anda menemukan surga bakpao di kota Anda. Jangan biarkan keinginan Anda tertunda, temukan kenikmatan bakpao terdekat sekarang juga!</p>
+
+        <a href="#" class="cta-button">Temukan Bakpao Terdekat Sekarang!</a>
+    </div>
+
+    <footer>
+        <p>&copy; Solusi Kuliner Anda</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-buat-dadar-jagung-manis">Cara Buat Dadar Jagung Manis</a></li>
+<li><a href="/bumbu-bakwan-goreng-enak">Bumbu Bakwan Goreng Enak</a></li>
+<li><a href="/resep-bakwan-sayur-devina-hermawan">Resep Bakwan Sayur Devina Hermawan</a></li>
+<li><a href="/cara-membuat-bakwan-simple">Cara Membuat Bakwan Simple</a></li>
+<li><a href="/bakteri-dalam-yakult">Bakteri Dalam Yakult</a></li>
+<li><a href="/bahan-bahan-membuat-bakso-mercon">Bahan Bahan Membuat Bakso Mercon</a></li>
+<li><a href="/perkedel-jagung-telur">Perkedel Jagung Telur</a></li>
+<li><a href="/bunga-bakung-ungu">Bunga Bakung Ungu</a></li>
+<li><a href="/bakso-mercon-frozen">Bakso Mercon Frozen</a></li>
+<li><a href="/resep-weci-enak-renyah">Resep Weci Enak Renyah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Bawang Merah Sederhana & Lezat</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        :root {
+            --primary-color: #66bb6a; /* Warna hijau sejuk cerah */
+            --secondary-color: #ffe082; /* Warna kuning cerah untuk aksen */
+            --text-color: #333;
+            --bg-color: #e8f5e9; /* Latar belakang sangat terang */
+            --card-bg: #ffffff;
+            --border-color: #a5d6a7;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-intro, .ingredients, .instructions, .tips {
+            margin-bottom: 30px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .step {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .tips p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta a {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta a:hover {
+            background-color: #fbc02d; /* Warna kuning lebih gelap saat hover */
+        }
+
+        /* Media Queries untuk tampilan mobile */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bakwan Bawang Merah: Renyah, Gurih, dan Penuh Aroma</h1>
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 20px auto; display: block;">
+                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm0-10c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z" fill="#66bb6a"/>
+                <path d="M12 12c0-1.105.895-2 2-2h3c.552 0 1 .448 1 1s-.448 1-1 1h-2v3c0 .552-.448 1-1 1s-1-.448-1-1v-3z" fill="#ffe082"/>
+            </svg>
+            <p style="text-align: center; font-size: 1.1em;">Siapa yang bisa menolak kerenyahan bakwan yang gurih dengan aroma khas bawang merah yang menggoda? Camilan tradisional ini selalu jadi favorit, baik dinikmati saat santai maupun sebagai lauk pendamping. Mari kita buat bakwan bawang merah yang renyah sempurna di luar dan lembut di dalam dengan resep sederhana berikut ini.</p>
+        </header>
+
+        <section class="recipe-intro">
+            <h2>Mengapa Bakwan Bawang Merah Begitu Istimewa?</h2>
+            <p>Bawang merah tidak hanya menjadi bumbu dapur yang esensial, namun juga mampu memberikan cita rasa manis alami dan aroma harum yang khas ketika digoreng. Kombinasi bawang merah dengan adonan tepung yang pas akan menghasilkan bakwan yang renyah dan kaya rasa. Sajikan selagi hangat dengan sambal kacang atau cabai rawit, kenikmatannya tak tertandingi!</p>
+        </section>
+
+        <section class="ingredients">
+            <h2>Bahan-Bahan Sederhana</h2>
+            <ul>
+                <li>250 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>150-200 gram bawang merah, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh kunyit bubuk (opsional, untuk warna)</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>Kurang lebih 200-250 ml air dingin (sesuaikan konsistensi adonan)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </section>
+
+        <section class="instructions">
+            <h2>Langkah-Langkah Membuat Bakwan Bawang Merah</h2>
+            <ol>
+                <li>
+                    <span class="step">Langkah 1:</span>
+                    Dalam wadah besar, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, kunyit bubuk (jika menggunakan), garam, dan merica bubuk. Aduk rata.
+                </li>
+                <li>
+                    <span class="step">Langkah 2:</span>
+                    Masukkan irisan bawang merah dan daun bawang ke dalam campuran tepung. Aduk rata hingga semua bahan terbalut tepung.
+                </li>
+                <li>
+                    <span class="step">Langkah 3:</span>
+                    Tuangkan air dingin sedikit demi sedikit sambil terus diaduk. Adonan jangan terlalu encer agar bakwan tidak lembek, namun juga tidak terlalu kental. Konsistensi yang diinginkan mirip adonan pisang goreng, bisa diceritakan sedikit tapi tidak jatuh terburai.
+                </li>
+                <li>
+                    <span class="step">Langkah 4:</span>
+                    Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.
+                </li>
+                <li>
+                    <span class="step">Langkah 5:</span>
+                    Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Jangan terlalu banyak memasukkan adonan dalam satu waktu agar bakwan matang merata dan tetap renyah.
+                </li>
+                <li>
+                    <span class="step">Langkah 6:</span>
+                    Goreng bakwan hingga berwarna coklat keemasan dan matang sempurna di kedua sisinya. Angkat dan tiriskan minyaknya di atas rak kawat atau tisu dapur.
+                </li>
+                <li>
+                    <span class="step">Langkah 7:</span>
+                    Sajikan bakwan bawang merah selagi hangat. Nikmati dengan cocolan favorit Anda!
+                </li>
+            </ol>
+        </section>
+
+        <section class="tips">
+            <h2>Tips Mendapatkan Bakwan yang Super Renyah</h2>
+            <p>
+                <ul>
+                    <li>Gunakan air dingin atau air es untuk adonan. Suhu dingin membantu menciptakan efek 'kaget' pada tepung saat bertemu minyak panas, menghasilkan tekstur yang lebih renyah.</li>
+                    <li>Menambahkan sedikit tepung beras akan membuat bakwan lebih renyah tahan lama.</li>
+                    <li>Jangan terlalu banyak mengaduk adonan setelah dicampur air. Aduk secukupnya hingga rata saja.</li>
+                    <li>Pastikan minyak benar-benar panas saat menggoreng. Gunakan api sedang agar bagian dalam matang merata tanpa gosong di luar.</li>
+                    <li>Tiriskan bakwan dengan baik setelah digoreng. Meniriskan di atas rak kawat lebih efektif daripada tisu dapur karena sirkulasi udara tetap terjaga.</li>
+                </ul>
+            </p>
+        </section>
+
+        <div class="cta">
+            <p>Sudah siap mencoba resep bakwan bawang merah yang lezat ini?</p>
+            <a href="#resep-selesai">Buat Sekarang!</a>
+        </div>
+        <div id="resep-selesai" style="height: 50px;"></div> <!-- Anchor untuk CTA -->
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-masak-bakwan-yang-enak">Cara Masak Bakwan Yang Enak</a></li>
+<li><a href="/isian-bakwan-sayur">Isian Bakwan Sayur</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-untuk-jualan">Cara Membuat Bakwan Sayur Untuk Jualan</a></li>
+<li><a href="/jenis-tanaman-bakung">Jenis Tanaman Bakung</a></li>
+<li><a href="/bakwan-malang-nonik">Bakwan Malang Nonik</a></li>
+<li><a href="/bakso-mercon-besar">Bakso Mercon Besar</a></li>
+<li><a href="/resep-bakwan-tahu-tanpa-telur">Resep Bakwan Tahu Tanpa Telur</a></li>
+<li><a href="/resep-bakwan-jagung-super-renyah">Resep Bakwan Jagung Super Renyah</a></li>
+<li><a href="/bakwan-toge">Bakwan Toge</a></li>
+<li><a href="/bakpia-pathok-yang-paling-enak">Bakpia Pathok Yang Paling Enak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

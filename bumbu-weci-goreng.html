@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumbu Weci Goreng Nikmat dan Gurih</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-color: #f0f8ff; /* AliceBlue - Warna latar yang sejuk */
+            --text-color: #333;
+            --primary-color: #4682b4; /* SteelBlue - Warna primer cerah */
+            --accent-color: #87ceeb; /* SkyBlue - Aksen yang cerah */
+            --footer-bg-color: #add8e6; /* LightBlue - Warna latar footer */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: block; /* Menghilangkan spasi ekstra di bawah gambar */
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--accent-color);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .recipe-step {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .ingredients-list, .steps-list {
+            padding-left: 20px;
+        }
+
+        .ingredients-list li, .steps-list li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: var(--footer-bg-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .hero-image {
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+                border-radius: 0;
+                margin: 0;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .hero-image {
+                height: 150px;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Rahasia Bumbu Weci Goreng Renyah dan Lezat</h1>
+            <svg width="100%" height="200" viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid slice" class="hero-image" aria-label="Ilustrasi weci goreng yang menggugah selera dengan bumbu tabur.">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#4682b4;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+                        <feOffset in="blur" dx="5" dy="5" result="offsetblur"/>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <!-- Bentuk weci goreng yang sederhana -->
+                <circle cx="250" cy="200" r="80" fill="#f5deb3" filter="url(#shadow)"/>
+                <circle cx="450" cy="200" r="80" fill="#f5deb3" filter="url(#shadow)"/>
+                <circle cx="650" cy="200" r="80" fill="#f5deb3" filter="url(#shadow)"/>
+                <circle cx="850" cy="200" r="80" fill="#f5deb3" filter="url(#shadow)"/>
+
+                <!-- Bumbu tabur dengan gradien -->
+                <g filter="url(#shadow)">
+                    <path d="M200 150 L220 130 L240 150 Z" fill="url(#grad1)" transform="rotate(-15 220 150)"/>
+                    <path d="M400 150 L420 130 L440 150 Z" fill="url(#grad1)" transform="rotate(10 420 150)"/>
+                    <path d="M600 150 L620 130 L640 150 Z" fill="url(#grad1)" transform="rotate(-20 620 150)"/>
+                    <path d="M800 150 L820 130 L840 150 Z" fill="url(#grad1)" transform="rotate(5 820 150)"/>
+                    <text x="500" y="80" font-family="Verdana" font-size="30" fill="var(--primary-color)" text-anchor="middle" font-weight="bold">Weci Goreng</text>
+                </g>
+            </svg>
+        </header>
+
+        <section class="section">
+            <h2>Kenikmatan Weci Goreng</h2>
+            <p>
+                Weci goreng, siapa yang tak kenal jajanan renyah dan gurih ini? Sering kali ditemukan di pinggir jalan hingga menjadi bintang di acara keluarga, weci goreng menawarkan sensasi gigitan yang memuaskan. Kerenyahannya bukan hanya soal tekstur, namun juga bagaimana ia berpadu sempurna dengan bumbu-bumbu yang meresap. Mendapatkan weci goreng yang pas memang memerlukan trik tersendiri, terutama dalam hal peracikan bumbu. Bumbu yang tepat dapat mengubah weci goreng biasa menjadi luar biasa, memanjakan lidah siapa pun yang mencicipinya. Artikel ini akan mengupas tuntas rahasia di balik bumbu weci goreng yang membuatnya begitu disukai, mulai dari bahan-bahan yang mudah didapat hingga cara membuatnya agar renyah tahan lama.
+            </p>
+            <p>
+                Kunci utama dari kelezatan weci goreng terletak pada komposisi bumbu yang digunakan. Bumbu ini tidak hanya memberikan rasa gurih, tetapi juga aroma yang menggugah selera. Banyak variasi bumbu yang bisa Anda coba, namun ada beberapa bahan dasar yang selalu menjadi favorit. Perpaduan yang harmonis antara rempah-rempah segar dan bumbu dapur umum menjadi fondasi utama untuk menciptakan rasa yang kaya dan mendalam. Jangan ragu untuk bereksperimen, karena bumbu weci goreng adalah kanvas kosong yang siap Anda lukis dengan cita rasa impian.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Bahan-Bahan untuk Adonan Weci</h2>
+            <ul class="ingredients-list">
+                <li>250 gram tepung beras</li>
+                <li>50 gram tepung tapioka (untuk kerenyahan ekstra)</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>Air secukupnya (sekitar 200-250 ml, sesuaikan kekentalan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Bumbu Weci Goreng Paling Populer</h2>
+            <p>
+                Ada berbagai macam pilihan bumbu tabur yang bisa Anda gunakan setelah weci goreng matang. Pilihlah yang paling sesuai dengan selera Anda dan keluarga.
+            </p>
+            <h3>1. Bumbu Bawang Putih Gurih</h3>
+            <p>
+                Ini adalah salah satu bumbu klasik yang selalu digemari. Kombinasi bawang putih yang digoreng garing dengan sedikit garam dan kaldu bubuk memberikan rasa gurih yang kuat dan aroma yang khas.
+            </p>
+            <ul class="ingredients-list">
+                <li>3-4 siung bawang putih, cincang halus</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh kaldu bubuk (jika suka)</li>
+                <li>1 sendok makan minyak untuk menggoreng bawang putih</li>
+            </ul>
+            <p class="recipe-step">Cara Membuat:</p>
+            <ol class="steps-list">
+                <li>Panaskan sedikit minyak, masukkan bawang putih cincang. Goreng dengan api kecil hingga kecoklatan dan renyah. Hati-hati jangan sampai gosong.</li>
+                <li>Angkat bawang putih, tiriskan minyaknya.</li>
+                <li>Haluskan bawang putih goreng, campurkan dengan garam dan kaldu bubuk. Aduk rata.</li>
+                <li>Taburkan di atas weci goreng selagi hangat.</li>
+            </ol>
+
+            <h3>2. Bumbu Cabe Pedas Manis</h3>
+            <p>
+                Bagi pencinta rasa pedas, bumbu ini adalah pilihan yang tepat. Keseimbangan antara rasa pedas dari cabai dan sedikit manis dari gula menciptakan cita rasa yang unik.
+            </p>
+            <ul class="ingredients-list">
+                <li>2 sendok makan bubuk cabai (sesuaikan selera pedas)</li>
+                <li>1 sendok makan gula pasir halus</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            </ul>
+            <p class="recipe-step">Cara Membuat:</p>
+            <ol class="steps-list">
+                <li>Campurkan semua bahan dalam wadah kecil.</li>
+                <li>Aduk rata hingga semua bumbu tercampur sempurna.</li>
+                <li>Taburkan di atas weci goreng.</li>
+            </ol>
+
+            <h3>3. Bumbu Keju Gurih</h3>
+            <p>
+                Sentuhan keju memberikan rasa gurih yang berbeda dan disukai anak-anak.
+            </p>
+            <ul class="ingredients-list">
+                <li>2 sendok makan keju parmesan bubuk</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            </ul>
+            <p class="recipe-step">Cara Membuat:</p>
+            <ol class="steps-list">
+                <li>Campurkan semua bahan.</li>
+                <li>Aduk rata dan taburkan di atas weci goreng.</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>Tips Mendapatkan Weci Goreng Renyah</h2>
+            <ul class="steps-list">
+                <li><strong>Gunakan Tepung yang Tepat:</strong> Kombinasi tepung beras dan tapioka sangat ideal untuk mendapatkan tekstur yang renyah.</li>
+                <li><strong>Adonan Jangan Terlalu Kental:</strong> Adonan yang terlalu kental akan membuat weci menjadi alot. Sesuaikan kekentalan agar mudah disemprotkan atau dicetak.</li>
+                <li><strong>Minyak Panas:</strong> Pastikan minyak goreng sudah benar-benar panas sebelum menggoreng weci.</li>
+                <li><strong>Jangan Terlalu Penuh:</strong> Goreng weci dalam jumlah secukupnya agar suhunya tetap stabil dan matang merata.</li>
+                <li><strong>Tiriskan dengan Baik:</strong> Setelah digoreng, tiriskan weci di atas kertas tisu untuk menyerap kelebihan minyak.</li>
+                <li><strong>Bumbui Saat Hangat:</strong> Bumbu akan lebih menempel dan meresap jika ditaburkan saat weci masih dalam kondisi hangat.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi. Semua hak cipta dan kekayaan intelektual terkait konten ini adalah milik pembuatnya.</p>
+        </footer>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-bintang">Bakwan Bintang</a></li>
+<li><a href="/bakwan-jagung-dengan-tepung-bakwan">Bakwan Jagung Dengan Tepung Bakwan</a></li>
+<li><a href="/bakwan-tanpa-air">Bakwan Tanpa Air</a></li>
+<li><a href="/resep-bakwan-kubis">Resep Bakwan Kubis</a></li>
+<li><a href="/resep-bala-bala-abang-gorengan">Resep Bala Bala Abang Gorengan</a></li>
+<li><a href="/cara-buat-jagung-goreng-renyah">Cara Buat Jagung Goreng Renyah</a></li>
+<li><a href="/bakpia-basah-25">Bakpia Basah 25</a></li>
+<li><a href="/harga-bakpia-pathok-nayla">Harga Bakpia Pathok Nayla</a></li>
+<li><a href="/bakwan-nangka">Bakwan Nangka</a></li>
+<li><a href="/penyebab-bakpao-keriput">Penyebab Bakpao Keriput</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

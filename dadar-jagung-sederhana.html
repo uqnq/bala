@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dadar Jagung Sederhana: Gurih, Renyah, Mudah!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        h1 {
+            color: #007bff; /* Bright Blue */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #28a745; /* Green */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            font-size: 1.1em;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .ingredients, .instructions {
+            background-color: #e8f5e9; /* Light Green background for sections */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .ingredients h2, .instructions h2 {
+            color: #1b5e20; /* Darker Green for section titles */
+            margin-top: 0;
+        }
+        .call-to-action {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #dc3545; /* Red */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            p, li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dadar Jagung Sederhana: Kelezatan Rumahan dalam Sekejap</h1>
+
+        <div class="image-container">
+            <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background gradient -->
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#87CEFA;stop-opacity:1" /> <!-- Light Sky Blue -->
+                        <stop offset="100%" style="stop-color:#ADD8E6;stop-opacity:1" /> <!-- Light Blue -->
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" fill="url(#grad1)" />
+
+                <!-- Sun or Brightness element -->
+                <circle cx="500" cy="70" r="40" fill="#FFDA57" /> <!-- Bright Yellow -->
+                <line x1="500" y1="30" x2="500" y2="50" stroke="#FFDA57" stroke-width="3"/>
+                <line x1="470" y1="50" x2="450" y2="50" stroke="#FFDA57" stroke-width="3"/>
+                <line x1="530" y1="50" x2="550" y2="50" stroke="#FFDA57" stroke-width="3"/>
+                <line x1="470" y1="90" x2="450" y2="90" stroke="#FFDA57" stroke-width="3"/>
+                <line x1="530" y1="90" x2="550" y2="90" stroke="#FFDA57" stroke-width="3"/>
+
+
+                <!-- Abstract representation of corn kernels -->
+                <g fill="#FFB300" opacity="0.9"> <!-- Amber -->
+                    <ellipse cx="150" cy="180" rx="15" ry="8" transform="rotate(-15 150 180)"/>
+                    <ellipse cx="180" cy="195" rx="12" ry="7" transform="rotate(10 180 195)"/>
+                    <ellipse cx="210" cy="185" rx="14" ry="7" transform="rotate(-5 210 185)"/>
+                    <ellipse cx="120" cy="200" rx="10" ry="6" transform="rotate(20 120 200)"/>
+                    <ellipse cx="240" cy="205" rx="13" ry="7" transform="rotate(5 240 205)"/>
+                </g>
+                 <g fill="#FFB300" opacity="0.8"> <!-- Slightly less opaque Amber -->
+                    <ellipse cx="130" cy="160" rx="16" ry="9" transform="rotate(5 130 160)"/>
+                    <ellipse cx="200" cy="150" rx="15" ry="8" transform="rotate(-10 200 150)"/>
+                    <ellipse cx="220" cy="170" rx="11" ry="6" transform="rotate(15 220 170)"/>
+                    <ellipse cx="250" cy="165" rx="13" ry="7" transform="rotate(-20 250 165)"/>
+                    <ellipse cx="280" cy="180" rx="10" ry="6" transform="rotate(8 280 180)"/>
+                </g>
+
+                 <!-- Abstract representation of a frying pan -->
+                <path d="M 350 200 Q 450 180 550 200 L 545 230 Q 450 245 355 230 Z" fill="#8B4513" opacity="0.7"/> <!-- Saddle Brown -->
+                <rect x="545" y="195" width="20" height="40" fill="#A0522D" /> <!-- Sienna -->
+            </svg>
+            <p><em>Lezatnya dadar jagung yang renyah dan gurih.</em></p>
+        </div>
+
+        <p>Siapa yang tidak suka camilan gurih dan renyah? Dadar jagung, atau bakwan jagung, adalah salah satu jajanan pasar yang digemari banyak orang. Rasanya yang manis dari jagung berpadu dengan bumbu yang meresap, serta teksturnya yang renyah di luar dan lembut di dalam, menjadikannya teman ngopi atau sekadar pengganjal lapar yang sempurna. Keistimewaan dadar jagung adalah kemudahannya dibuat. Dengan bahan-bahan yang mudah ditemukan dan langkah yang ringkas, Anda bisa menyajikan camilan lezat ini kapan saja.</p>
+
+        <p>Membuat dadar jagung sederhana tidak memerlukan keahlian khusus. Resep dasar ini bisa Anda modifikasi sesuai selera, misalnya dengan menambahkan sedikit cabai iris untuk rasa pedas, atau daun bawang cincang untuk aroma yang lebih segar. Kuncinya adalah menggunakan jagung manis yang segar dan tidak terlalu tua, agar rasa manis alaminya keluar maksimal. Tepung terigu sebagai bahan pengikat dan sedikit bumbu dasar seperti bawang putih, garam, dan merica sudah cukup untuk menciptakan cita rasa yang nikmat.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan</h2>
+            <ul>
+                <li>2 buah jagung manis, pipil atau serut</li>
+                <li>100 gram tepung terigu</li>
+                <li>1 butir telur ayam</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Air secukupnya (sekitar 50-75 ml)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li>Campurkan jagung pipil/serut, tepung terigu, telur, bawang putih halus, merica bubuk, garam, dan kaldu bubuk (jika pakai) dalam sebuah wadah.</li>
+                <li>Aduk rata semua bahan. Tambahkan air sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer agar tidak meleber saat digoreng, namun juga tidak terlalu kental agar dadar tidak keras.</li>
+                <li>Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</li>
+                <li>Ambil satu sendok sayur adonan, lalu masukkan ke dalam minyak panas. Pipihkan sedikit agar matangnya merata. Lakukan hingga wajan terisi secukupnya, jangan terlalu penuh agar dadar bisa matang sempurna dan tidak saling menempel.</li>
+                <li>Goreng hingga dadar jagung berwarna kuning keemasan dan renyah di kedua sisinya. Angkat dan tiriskan.</li>
+                <li>Sajikan dadar jagung selagi hangat dengan nasi putih, sambal, atau sebagai camilan pendamping.</li>
+            </ol>
+        </div>
+
+        <p>Kehangatan dan aroma dadar jagung yang baru matang memang selalu menggoda selera. Camilan sederhana ini membuktikan bahwa makanan lezat tidak harus rumit. Dengan sedikit usaha, Anda bisa menciptakan kebahagiaan kuliner di rumah. Cocok disajikan untuk sarapan, makan siang bersama lauk pendamping, atau sekadar cemilan sore yang menyenangkan. Nikmati setiap gigitan renyahnya!</p>
+
+        <p class="call-to-action">Selamat mencoba membuat dadar jagung sederhana Anda sendiri!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bumbu-bala-bala-gurih">Bumbu Bala Bala Gurih</a></li>
+<li><a href="/harga-bakpia-pathok-mutiara-jogja">Harga Bakpia Pathok Mutiara Jogja</a></li>
+<li><a href="/bakteri-diare">Bakteri Diare</a></li>
+<li><a href="/bakso-beranak-stasiun-sudirman">Bakso Beranak Stasiun Sudirman</a></li>
+<li><a href="/bakpia-bro-kiss">Bakpia Bro Kiss</a></li>
+<li><a href="/pengkristalan-bakteri">Pengkristalan Bakteri</a></li>
+<li><a href="/bakpao-sientho">Bakpao Sientho</a></li>
+<li><a href="/bakpia-ku">Bakpia Ku</a></li>
+<li><a href="/bakpia-edamame">Bakpia Edamame</a></li>
+<li><a href="/bakpao-anti-kempes">Bakpao Anti Kempes</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

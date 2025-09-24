@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Perkedel Jagung Manis Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #87CEEB; /* Warna biru langit cerah */
+            --secondary-color: #FFD700; /* Warna kuning emas cerah */
+            --background-color: #F0FFFF; /* Warna putih kebiruan yang sejuk */
+            --text-color: #333;
+            --heading-color: #000080; /* Warna biru tua untuk judul */
+            --card-background: #FFFFFF;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-background);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        h1 {
+            color: var(--heading-color);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            font-size: 1.5em;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--shadow-color);
+        }
+
+        .ingredients, .instructions {
+            background-color: var(--background-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients ul li, .instructions ol li {
+            background-color: var(--card-background);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .tip {
+            background-color: var(--secondary-color);
+            color: var(--heading-color);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.7em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .recipe-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Resep Perkedel Jagung Manis Renyah Sempurna</h1>
+
+        <svg class="recipe-image" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="recipeTitle">
+            <title id="recipeTitle">Ilustrasi Perkedel Jagung Manis Renyah</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:var(--secondary-color);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="300" height="200" fill="var(--background-color)" rx="10"/>
+            <!-- Jagung -->
+            <g transform="translate(50, 70)">
+                <path d="M0 0 L20 20 L40 0 Z" fill="var(--secondary-color)" transform="rotate(0, 20, 0)"/>
+                <circle cx="20" cy="20" r="15" fill="#FFEC8B" />
+                <path d="M15 10 Q 20 5 25 10" fill="#FFEC8B" />
+                <path d="M15 15 Q 20 10 25 15" fill="#FFEC8B" />
+                <path d="M15 20 Q 20 15 25 20" fill="#FFEC8B" />
+            </g>
+            <!-- Perkedel -->
+            <g transform="translate(120, 80)">
+                <ellipse cx="30" cy="20" rx="30" ry="20" fill="var(--primary-color)" />
+                <circle cx="20" cy="10" r="5" fill="#F0E68C" />
+                <circle cx="40" cy="10" r="5" fill="#F0E68C" />
+                <circle cx="15" cy="25" r="5" fill="#F0E68C" />
+                <circle cx="45" cy="25" r="5" fill="#F0E68C" />
+                <circle cx="30" cy="30" r="5" fill="#F0E68C" />
+            </g>
+            <g transform="translate(180, 70)">
+                <ellipse cx="30" cy="20" rx="30" ry="20" fill="var(--primary-color)" />
+                <circle cx="20" cy="10" r="5" fill="#F0E68C" />
+                <circle cx="40" cy="10" r="5" fill="#F0E68C" />
+                <circle cx="15" cy="25" r="5" fill="#F0E68C" />
+                <circle cx="45" cy="25" r="5" fill="#F0E68C" />
+                <circle cx="30" cy="30" r="5" fill="#F0E68C" />
+            </g>
+            <!-- Garis renyah -->
+            <path d="M110 60 L100 50 M130 55 L120 45 M200 50 L190 40 M220 60 L210 50" stroke="var(--secondary-color)" stroke-width="2" fill="none"/>
+        </svg>
+
+        <p>Siapa yang bisa menolak kelezatan perkedel jagung yang manis dan renyah? Camilan tradisional Indonesia ini selalu menjadi favorit di setiap suasana, mulai dari teman makan nasi hingga sekadar kudapan di sore hari. Kunci dari perkedel jagung yang sempurna terletak pada keseimbangan rasa manis jagung, gurih bumbu, dan tentu saja, tekstur renyah di setiap gigitan. Membuatnya sendiri di rumah ternyata tidak sulit, lho! Dengan resep sederhana ini, Anda bisa menyajikan perkedel jagung manis renyah yang disukai seluruh keluarga.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan</h2>
+            <ul>
+                <li>2 buah jagung manis, pipil atau serut kasar</li>
+                <li>80 gram tepung terigu serbaguna</li>
+                <li>30 gram tepung beras (ini kunci kerenyahannya!)</li>
+                <li>1 butir telur ayam</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya (sesuaikan selera manisnya)</li>
+                <li>Air secukupnya (jika adonan terlalu kental)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li>Dalam sebuah wadah, campurkan jagung manis pipil/serut, tepung terigu, tepung beras, telur, bawang putih halus, ketumbar bubuk, merica bubuk, irisan daun bawang, garam, dan gula pasir.</li>
+                <li>Aduk semua bahan hingga tercampur rata. Adonan seharusnya tidak terlalu encer, namun cukup lengket agar jagung menempel. Jika terlalu kental, tambahkan sedikit air.</li>
+                <li>Panaskan minyak goreng dalam jumlah yang cukup banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li>Ambil satu sendok makan adonan perkedel, lalu masukkan perlahan ke dalam minyak panas. Jangan terlalu banyak menggoreng sekaligus agar perkedel tidak saling menempel dan matang merata.</li>
+                <li>Goreng perkedel hingga berwarna kuning keemasan dan matang di kedua sisinya. Balik sesekali agar matangnya sempurna.</li>
+                <li>Angkat perkedel jagung yang sudah matang dan tiriskan minyaknya di atas tisu dapur atau rak kawat agar tetap renyah.</li>
+                <li>Sajikan perkedel jagung manis renyah selagi hangat. Nikmati bersama nasi hangat, sambal, atau sebagai camilan.</li>
+            </ol>
+        </div>
+
+        <p>Membuat perkedel jagung yang renyah memang memiliki beberapa trik. Penggunaan tepung beras bersama tepung terigu adalah langkah penting untuk mendapatkan tekstur luar yang garing. Pastikan juga jagung yang digunakan adalah jagung manis segar agar rasa manis alaminya keluar maksimal. Jika Anda menyukai aroma yang lebih kaya, bisa ditambahkan sedikit irisan seledri ke dalam adonan.</p>
+
+        <p>Untuk variasi rasa, Anda bisa menambahkan sedikit parutan keju chedar ke dalam adonan untuk memberikan sentuhan gurih yang berbeda. Tingkat kemanisan bisa disesuaikan dengan selera masing-masing. Ada orang yang suka manis legit, ada pula yang lebih suka sedikit rasa gurih yang mendominasi. Jangan takut untuk bereksperimen dengan bumbu.</p>
+
+        <div class="tip">
+            <p>Tips agar perkedel jagung tetap renyah: Pastikan minyak benar-benar panas sebelum menggoreng dan gunakan perbandingan tepung terigu dan tepung beras yang tepat. Tiriskan minyak dengan baik setelah digoreng!</p>
+        </div>
+
+        <p>Perkedel jagung ini sangat cocok dinikmati kapan saja. Saat cuaca dingin, seporsi perkedel jagung hangat bisa menjadi penghangat yang nikmat. Saat berkumpul bersama keluarga, camilan ini pasti akan ludes dalam sekejap. Selamat mencoba resep perkedel jagung manis renyah ini dan rasakan kelezatannya!</p>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/balasan-orang-yang-senang-bersedekah">Balasan Orang Yang Senang Bersedekah</a></li>
+<li><a href="/jenis-bakwan">Jenis Bakwan</a></li>
+<li><a href="/bakpia-mino-803">Bakpia Mino 803</a></li>
+<li><a href="/cara-membuat-bakwan-rebus">Cara Membuat Bakwan Rebus</a></li>
+<li><a href="/bakso-mercon-cup-200ml">Bakso Mercon Cup 200Ml</a></li>
+<li><a href="/resep-bakwan-kawi">Resep Bakwan Kawi</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-tanpa-telur">Cara Membuat Bakwan Jagung Tanpa Telur</a></li>
+<li><a href="/bakpao-terenak">Bakpao Terenak</a></li>
+<li><a href="/bakteri-pada-tanah">Bakteri Pada Tanah</a></li>
+<li><a href="/bakwan-tahu">Bakwan Tahu</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

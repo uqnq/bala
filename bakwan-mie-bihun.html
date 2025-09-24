@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Mie Bihun: Camilan Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 {
+            font-size: 1.6em;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .ingredients, .instructions {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #004d40; /* Warna teks yang sedikit lebih pekat untuk penekanan */
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lezatnya Bakwan Mie Bihun: Camilan Renyah Penuh Kelezatan</h1>
+
+        <div class="image-container">
+            <!-- SVG untuk Bakwan Mie Bihun -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakwan mie bihun yang menggugah selera">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffcc80;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffab40;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- Latar Belakang Coklat Keemasan -->
+                <rect width="600" height="300" fill="url(#grad1)" filter="url(#shadow)"/>
+
+                <!-- Bentuk Bakwan (Lingkaran Tidak Beraturan) -->
+                <ellipse cx="300" cy="150" rx="180" ry="140" fill="#f57c00" filter="url(#shadow)"/>
+                <ellipse cx="250" cy="120" rx="120" ry="100" fill="#f9a825" filter="url(#shadow)"/>
+                <ellipse cx="350" cy="180" rx="130" ry="110" fill="#fb8c00" filter="url(#shadow)"/>
+
+                <!-- Detail Mie Bihun -->
+                <g stroke="#fff" stroke-width="2" fill="none">
+                    <!-- Garis-garis halus untuk tekstur bihun -->
+                    <path d="M200,100 Q250,80 300,100 T400,120" />
+                    <path d="M220,130 Q270,110 320,130 T420,150" />
+                    <path d="M240,160 Q290,140 340,160 T440,180" />
+                    <path d="M260,190 Q310,170 360,190 T460,210" />
+                    <path d="M280,220 Q330,200 380,220 T480,240" />
+                    <path d="M180,150 Q230,130 280,150 T380,170" />
+                    <path d="M160,180 Q210,160 260,180 T360,200" />
+                </g>
+
+                <!-- Bentuk Daun Bawang (Hijau) -->
+                <g fill="#4CAF50">
+                    <path d="M250,80 L260,70 L270,80 L260,90 Z"/>
+                    <path d="M280,90 L290,80 L300,90 L290,100 Z"/>
+                    <path d="M310,100 L320,90 L330,100 L320,110 Z"/>
+                    <path d="M270,120 L280,110 L290,120 L280,130 Z"/>
+                </g>
+
+                 <!-- Tekstur kecil seperti remahan -->
+                <g fill="#e65100" opacity="0.3">
+                    <circle cx="280" cy="110" r="3"/>
+                    <circle cx="320" cy="140" r="2"/>
+                    <circle cx="260" cy="160" r="4"/>
+                    <circle cx="350" cy="100" r="3"/>
+                </g>
+
+                <!-- Cahaya -->
+                <circle cx="220" cy="100" r="40" fill="#fff" opacity="0.2" transform="rotate(-20 220 100)"/>
+                 <circle cx="380" cy="150" r="30" fill="#fff" opacity="0.15" transform="rotate(30 380 150)"/>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak suka camilan yang renyah di luar dan lembut di dalam? Bakwan adalah salah satu jajanan favorit masyarakat Indonesia yang selalu berhasil menggugah selera. Kali ini, kita akan menjelajahi variasi bakwan yang tak kalah menarik, yaitu <span class="highlight">bakwan mie bihun</span>. Kombinasi tekstur gurih dari adonan bakwan dengan sensasi kenyal dari mie bihun menciptakan pengalaman kuliner yang unik dan memuaskan.</p>
+
+        <p>Bakwan mie bihun bukan sekadar camilan biasa. Ia adalah perpaduan sempurna antara kesederhanaan dan kelezatan. Memasaknya pun relatif mudah, menjadikannya pilihan ideal untuk dinikmati saat santai bersama keluarga, teman, atau bahkan sebagai bekal yang praktis. Aroma gurih yang menguar saat menggorengnya saja sudah cukup membuat perut keroncongan.</p>
+
+        <h2>Mengapa Bakwan Mie Bihun Begitu Spesial?</h2>
+        <p>Keistimewaan bakwan mie bihun terletak pada dua komponen utamanya. Pertama, <span class="highlight">mie bihun</span> yang direbus sebentar memberikan tekstur kenyal dan sedikit 'gigitan' yang kontras dengan kerenyahan adonan bakwan. Penggunaan bihun yang tipis dan lembut memastikan ia mudah menyatu dengan adonan tepung dan sayuran, serta matang sempurna saat digoreng.</p>
+        <p>Kedua, adonan bakwan itu sendiri. Tepung terigu yang dicampur dengan bumbu rempah yang pas, sayuran segar seperti wortel dan kol, serta tentu saja, mie bihun yang sudah disiapkan. Kunci kerenyahan bakwan seringkali terletak pada penggunaan adonan yang tidak terlalu kental dan teknik menggoreng yang tepat. Hasilnya adalah bakwan yang berwarna coklat keemasan, renyah sempurna di setiap gigitannya, dan gurih meresap.</p>
+
+        <h2>Resep Sederhana Bakwan Mie Bihun</h2>
+        <p>Tertarik untuk mencoba membuatnya di rumah? Berikut adalah panduan mudahnya:</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan:</h2>
+            <ul>
+                <li>100 gram <span class="highlight">mie bihun</span> kering, rendam air panas hingga lunak, tiriskan, potong-potong</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk menambah kerenyahan)</li>
+                <li>1 buah wortel ukuran sedang, serut kasar</li>
+                <li>1/4 kol ukuran kecil, iris tipis</li>
+                <li>2 batang daun bawang, iris halus</li>
+                <li>1 batang seledri, iris halus (opsional)</li>
+                <li>150 ml air dingin (atau secukupnya)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+            <h3>Bumbu Halus:</h3>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat:</h2>
+            <ol>
+                <li>Campurkan tepung terigu dan tepung beras (jika menggunakan) dalam wadah besar. Masukkan bumbu halus, garam, merica, ketumbar, dan kaldu bubuk. Aduk rata.</li>
+                <li>Masukkan wortel serut, kol iris, daun bawang, dan seledri ke dalam campuran tepung. Aduk hingga sayuran terlapisi rata.</li>
+                <li>Masukkan potongan <span class="highlight">mie bihun</span> yang sudah ditiriskan ke dalam adonan sayuran. Aduk perlahan agar bihun tidak hancur.</li>
+                <li>Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan mengental dan dapat dicetak. Jangan terlalu cair agar bakwan tidak lembek saat digoreng.</li>
+                <li>Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</li>
+                <li>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga semua sisi berwarna coklat keemasan dan matang sempurna. Balik sesekali agar matang merata.</li>
+                <li>Angkat bakwan mie bihun yang sudah matang, tiriskan minyaknya menggunakan saringan atau tisu dapur.</li>
+                <li>Sajikan bakwan mie bihun selagi hangat dengan sambal favorit Anda, seperti saus sambal botolan atau sambal kecap.</li>
+            </ol>
+        </div>
+
+        <p>Bakwan mie bihun adalah camilan yang sangat fleksibel. Anda bisa menambahkan bahan lain seperti udang cincang atau sedikit daging ayam cincang untuk variasi rasa yang lebih kaya. Kuncinya adalah eksperimen dan menyesuaikan rasa sesuai selera Anda.</p>
+
+        <p>Jadi, jika Anda mencari ide camilan yang mudah, lezat, dan memiliki tekstur yang menarik, jangan ragu untuk mencoba <span class="highlight">bakwan mie bihun</span>. Dijamin, camilan ini akan menjadi favorit baru di rumah Anda!</p>
+
+        <footer>
+            <p>Selamat mencoba!</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-sederhana">Bakwan Sederhana</a></li>
+<li><a href="/bakpia-tugu-klepon">Bakpia Tugu Klepon</a></li>
+<li><a href="/bakwan-dan-mie-santun">Bakwan Dan Mie Santun</a></li>
+<li><a href="/bakwan-sederhana-dan-enak">Bakwan Sederhana Dan Enak</a></li>
+<li><a href="/bakpia-nayla">Bakpia Nayla</a></li>
+<li><a href="/nasi-bakso-mercon">Nasi Bakso Mercon</a></li>
+<li><a href="/bakpia-green-tea">Bakpia Green Tea</a></li>
+<li><a href="/bakwan-arema-king">Bakwan Arema King</a></li>
+<li><a href="/resep-bakwan-jagung-enak-dan-renyah">Resep Bakwan Jagung Enak Dan Renyah</a></li>
+<li><a href="/cara-memasak-tomyam-ayam">Cara Memasak Tomyam Ayam</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harga Bakso Beranak Terdekat & Enak!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Font & Warna Dasar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Biru muda cerah */
+            color: #004d40; /* Hijau toska gelap */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 77, 64, 0.1); /* Bayangan lembut */
+        }
+
+        h1, h2, h3 {
+            color: #00796b; /* Hijau toska lebih cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #00695c; /* Hijau toska gelap untuk penekanan */
+            font-weight: bold;
+        }
+
+        /* Gambar SVG */
+        .bakso-icon {
+            display: block;
+            margin: 30px auto;
+            width: 150px; /* Ukuran gambar */
+            height: 150px;
+        }
+
+        /* Bagian Harga & Rekomendasi */
+        .price-section {
+            background-color: #b2ebf2; /* Biru muda lebih terang */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .price-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .price-item {
+            background-color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 77, 64, 0.08);
+            text-align: center;
+            flex: 1 1 200px; /* Fleksibel, minimal lebar 200px */
+        }
+
+        .price-item strong {
+            display: block;
+            font-size: 1.2em;
+            color: #00796b;
+            margin-bottom: 5px;
+        }
+
+        .price-item span {
+            font-size: 1.1em;
+            color: #004d40;
+        }
+
+        /* Bagian CTA (Call to Action) */
+        .cta-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px 20px;
+            background-color: #80deea; /* Biru toska terang */
+            border-radius: 10px;
+        }
+
+        .cta-section h2 {
+            color: #00695c;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            font-size: 1.1em;
+            color: #004d40;
+            margin-bottom: 25px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 77, 64, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #004d40;
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .bakso-icon {
+                width: 120px;
+                height: 120px;
+            }
+
+            .price-item {
+                flex: 1 1 150px; /* Lebih kecil di layar kecil */
+            }
+
+            .cta-button {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #00796b;
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- SVG Icon Bakso Beranak -->
+            <svg class="bakso-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#00796b"/>
+                <circle cx="12" cy="12" r="4" fill="#004d40"/>
+                <circle cx="9" cy="10" r="1" fill="#ffffff"/>
+                <circle cx="15" cy="10" r="1" fill="#ffffff"/>
+                <circle cx="12" cy="14" r="1" fill="#ffffff"/>
+            </svg>
+            <h1>Sensasi Lezat Bakso Beranak</h1>
+        </header>
+
+        <p>Mencari hidangan yang kaya rasa, mengenyangkan, dan membuat ketagihan? Bakso beranak adalah jawabannya! Dikenal dengan isian bakso yang lebih kecil di dalamnya, sajian ini menawarkan kejutan lezat di setiap gigitannya. Kini, menemukan <span class="highlight">harga bakso beranak terdekat</span> menjadi lebih mudah untuk memanjakan lidah Anda.</p>
+
+        <h2>Mengapa Bakso Beranak Begitu Spesial?</h2>
+        <p>Keunikan bakso beranak terletak pada inovasinya. Dalam satu bola bakso utama, tersembunyi beberapa bola bakso berukuran lebih kecil, bahkan terkadang ada bakso yang berisi telur puyuh atau urat. Kombinasi tekstur yang padat dari bakso utama dan sensasi "kejutan" dari isiannya menjadikan pengalaman makan bakso ini jauh lebih seru. Kuahnya yang gurih dan kaya kaldu, ditambah dengan topping seperti mie, pangsit, dan tahu, semakin menyempurnakan kenikmatannya.</p>
+
+        <p>Bagi para pecinta kuliner, bakso beranak bukan sekadar makanan, melainkan sebuah petualangan rasa. Sensasi membelah bakso utama untuk menemukan "anak-anaknya" menjadi daya tarik tersendiri yang disukai berbagai kalangan, mulai dari anak-anak hingga dewasa. Ini adalah cara sempurna untuk menikmati bakso dengan porsi yang lebih memuaskan dan rasa yang lebih kompleks.</p>
+
+        <div class="price-section">
+            <h2>Estimasi Harga Bakso Beranak</h2>
+            <p>Mengetahui <span class="highlight">harga bakso beranak terdekat</span> adalah kunci untuk perencanaan kuliner Anda. Harga dapat bervariasi tergantung lokasi, ukuran porsi, dan variasi isian yang ditawarkan oleh setiap warung atau restoran. Namun, sebagai gambaran umum, berikut adalah estimasi kisaran harga yang mungkin Anda temui:</p>
+            <ul class="price-list">
+                <li class="price-item">
+                    <strong>Paket Hemat</strong>
+                    <span>Rp 15.000 - Rp 20.000</span>
+                    <small>(Bakso beranak standar, kuah, mie/bihun)</small>
+                </li>
+                <li class="price-item">
+                    <strong>Paket Spesial</strong>
+                    <span>Rp 22.000 - Rp 30.000</span>
+                    <small>(Bakso beranak jumbo, isian ekstra, topping lengkap)</small>
+                </li>
+                <li class="price-item">
+                    <strong>Paket Komplit</strong>
+                    <span>Rp 30.000 - Rp 45.000</span>
+                    <small>(Ukuran sangat besar, isian beragam, bisa untuk sharing)</small>
+                </li>
+            </ul>
+            <p><small><em>Catatan: Harga di atas adalah estimasi dan dapat berubah sewaktu-waktu. Selalu cek harga langsung di tempat makan.</em></small></p>
+        </div>
+
+        <div class="cta-section">
+            <h2>Siap Menikmati Kelezatannya?</h2>
+            <p>Jangan tunda lagi keinginan Anda untuk mencicipi bakso beranak yang lezat dan sesuai dengan anggaran Anda. Gunakan peta atau aplikasi pencari kuliner Anda untuk menemukan <span class="highlight">harga bakso beranak terdekat</span> di area Anda.</p>
+            <a href="#" class="cta-button">Cari Bakso Beranak Sekarang!</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Nikmati setiap suapan lezatnya!</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-dan-mie-santun">Bakwan Dan Mie Santun</a></li>
+<li><a href="/cara-membuat-bakwan-yang-enak-dan-praktis">Cara Membuat Bakwan Yang Enak Dan Praktis</a></li>
+<li><a href="/bakpia-tugu-brownies">Bakpia Tugu Brownies</a></li>
+<li><a href="/pentol-bakar-mercon">Pentol Bakar Mercon</a></li>
+<li><a href="/expired-bakpia-kukus">Expired Bakpia Kukus</a></li>
+<li><a href="/resep-bakso-sosis-mercon">Resep Bakso Sosis Mercon</a></li>
+<li><a href="/bakpao-atha-naufal">Bakpao Atha Naufal</a></li>
+<li><a href="/bumbu-buat-dadar-jagung">Bumbu Buat Dadar Jagung</a></li>
+<li><a href="/cara-membuat-pelas-jagung">Cara Membuat Pelas Jagung</a></li>
+<li><a href="/bakpia-35">Bakpia 35</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

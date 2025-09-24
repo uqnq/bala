@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Ote Ote Sayur Lezat & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang biru muda sejuk */
+            color: #004d40; /* Warna teks hijau tua yang kontras */
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffffff; /* Latar belakang konten putih bersih */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 77, 64, 0.1); /* Bayangan lembut */
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul hijau kebiruan cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .hero-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .recipe-section {
+            background-color: #f1f8e9; /* Latar belakang bagian resep hijau muda */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4caf50; /* Garis pembatas hijau cerah */
+        }
+        .ingredients, .instructions {
+            font-size: 1.1em;
+        }
+        .ingredients strong, .instructions strong {
+            color: #388e3c; /* Warna teks tebal hijau tua */
+        }
+        .note {
+            font-style: italic;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        /* Media Query untuk tampilan mobile yang lebih baik */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .ingredients, .instructions {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" fill="url(#grad1)" />
+                <circle cx="150" cy="150" r="60" fill="#ffffff" stroke="#00796b" stroke-width="5"/>
+                <text x="150" y="165" font-family="Verdana" font-size="20" fill="#00796b" text-anchor="middle">Ote Ote</text>
+                <text x="150" y="190" font-family="Verdana" font-size="20" fill="#00796b" text-anchor="middle">Sayur</text>
+                <path d="M 250 100 L 270 120 L 250 140 Z" fill="#ffb74d"/>
+                <path d="M 250 160 L 270 180 L 250 200 Z" fill="#ffb74d"/>
+                <path d="M 350 120 L 370 140 L 350 160 Z" fill="#ffb74d"/>
+                <path d="M 350 180 L 370 200 L 350 220 Z" fill="#ffb74d"/>
+                <circle cx="450" cy="150" r="40" fill="#fff9c4" stroke="#fbc02d" stroke-width="3"/>
+            </svg>
+            <p style="font-size: 0.8em; color: #555;">Ilustrasi Ote Ote Sayur yang Menggugah Selera</p>
+        </div>
+
+        <h1>Resep Ote Ote Sayur Lezat dan Renyah</h1>
+
+        <p>Siapa yang bisa menolak kelezatan ote ote sayur? Camilan tradisional Indonesia ini selalu berhasil menghangatkan suasana, baik dinikmati saat santai bersama keluarga maupun saat berkumpul dengan teman. Kerenyahan di luar dan lembutnya isian sayuran di dalam menjadikannya favorit sepanjang masa. Membuat ote ote sayur sendiri di rumah ternyata tidak sesulit yang dibayangkan, lho! Dengan resep yang tepat dan sedikit sentuhan cinta, Anda bisa menghasilkan ote ote sayur yang tak kalah nikmat dari buatan pedagang kaki lima.</p>
+
+        <div class="recipe-section ingredients">
+            <h2>Bahan-Bahan</h2>
+            <p>Untuk membuat ote ote sayur yang sempurna, siapkan bahan-bahan berikut:</p>
+            <ul>
+                <li>250 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 batang wortel ukuran sedang, parut kasar atau potong korek api tipis</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>50 gram tauge (opsional, jika suka)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya (sejumput untuk menyeimbangkan rasa)</li>
+                <li>1 butir telur ayam (untuk perekat adonan)</li>
+                <li>Sekitar 150-200 ml air dingin (sesuaikan konsistensi adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section instructions">
+            <h2>Langkah-Langkah Membuat Ote Ote Sayur</h2>
+            <ol>
+                <li><strong>Persiapan Adonan Tepung:</strong> Dalam sebuah wadah, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan gula pasir. Aduk rata.</li>
+                <li><strong>Tambahkan Sayuran:</strong> Masukkan irisan wortel, kol, tauge (jika menggunakan), dan daun bawang ke dalam campuran tepung. Aduk rata hingga semua sayuran terbalut tepung.</li>
+                <li><strong>Campurkan Telur:</strong> Kocok lepas telur, lalu masukkan ke dalam campuran sayuran dan tepung. Aduk kembali.</li>
+                <li><strong>Tuang Air Dingin:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk menggunakan sendok atau whisk. Penting untuk menggunakan air dingin agar ote ote lebih renyah. Adonan jangan terlalu encer atau terlalu kental. Konsistensinya harus cukup untuk melapisi sayuran dan bisa disendokkan.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar ote ote terendam saat digoreng.</li>
+                <li><strong>Menggoreng Ote Ote:</strong> Setelah minyak panas, ambil adonan menggunakan satu sendok makan, lalu masukkan perlahan ke dalam minyak panas. Goreng beberapa buah sekaligus, jangan terlalu penuh agar tidak lengket satu sama lain.</li>
+                <li><strong>Balik dan Tiriskan:</strong> Goreng hingga berwarna kuning keemasan dan matang di satu sisi, lalu balik dan goreng sisi lainnya hingga merata. Angkat ote ote yang sudah matang dan tiriskan di atas kertas tisu untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Ote ote sayur siap disajikan selagi hangat. Nikmati dengan cabai rawit, sambal kecap, atau saus favorit Anda.</li>
+            </ol>
+        </div>
+
+        <p class="note">Tips: Anda bisa menambahkan sedikit udang cincang atau ebi yang dihaluskan ke dalam adonan untuk variasi rasa yang lebih kaya.</p>
+
+        <p>Ote ote sayur adalah camilan yang memadukan kesederhanaan bahan dengan kelezatan yang tiada tara. Kunci dari ote ote yang renyah adalah penggunaan air dingin dalam adonan dan menggorengnya dengan minyak panas yang cukup. Jangan ragu untuk bereksperimen dengan jenis sayuran lain yang Anda suka, seperti buncis iris atau jagung pipil. Selamat mencoba dan selamat menikmati!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-putri-jawa">Bakpia Putri Jawa</a></li>
+<li><a href="/harga-tahu-bakso-mercon">Harga Tahu Bakso Mercon</a></li>
+<li><a href="/tottenham-bale">Tottenham Bale</a></li>
+<li><a href="/perkedel-udang-rebon">Perkedel Udang Rebon</a></li>
+<li><a href="/bakteri-selulolitik">Bakteri Selulolitik</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-dengan-tepung-sajiku">Cara Membuat Bakwan Jagung Dengan Tepung Sajiku</a></li>
+<li><a href="/resep-gimbal-jagung-sederhana">Resep Gimbal Jagung Sederhana</a></li>
+<li><a href="/bakpia-pathok-52">Bakpia Pathok 52</a></li>
+<li><a href="/resep-bakwan-rebon-basah">Resep Bakwan Rebon Basah</a></li>
+<li><a href="/bakso-beranak-dan-bakso-urat">Bakso Beranak Dan Bakso Urat</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

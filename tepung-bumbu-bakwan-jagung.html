@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Jagung Empuk & Gurih | Tepung Bumbu</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang biru muda yang sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna judul hijau kebiruan cerah */
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #b2dfdb; /* Garis bawah halus */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-image {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+        .ingredients, .instructions {
+            background-color: #f0fefd; /* Latar belakang agak lebih terang untuk bagian resep */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 30px;
+        }
+        .ingredients li::before {
+            content: "✓ ";
+            color: #4caf50; /* Warna hijau untuk penanda */
+            font-weight: bold;
+        }
+        .instructions li::before {
+            content: counter(instruction-counter) ". ";
+            color: #ff9800; /* Warna oranye untuk nomor instruksi */
+            font-weight: bold;
+        }
+        .instructions ol {
+            counter-reset: instruction-counter;
+        }
+        .instructions li {
+            counter-increment: instruction-counter;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .recipe-image {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nikmatnya Bakwan Jagung Crispy dengan Tepung Bumbu</h1>
+
+        <!-- Gambar SVG -->
+        <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#4db6ac;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="400" rx="15" ry="15" fill="url(#grad1)" />
+
+            <!-- Jagung -->
+            <g transform="translate(50, 100)">
+                <ellipse cx="50" cy="100" rx="30" ry="50" fill="#ffb300" /> <!-- Kulit luar jagung -->
+                <rect x="30" y="60" width="40" height="80" rx="5" ry="5" fill="#f9a825" /> <!-- Bentuk biji -->
+                <circle cx="50" cy="80" r="5" fill="#fdd835" />
+                <circle cx="35" cy="90" r="4" fill="#fdd835" />
+                <circle cx="65" cy="90" r="4" fill="#fdd835" />
+                <circle cx="25" cy="100" r="3" fill="#fdd835" />
+                <circle cx="75" cy="100" r="3" fill="#fdd835" />
+                <circle cx="40" cy="110" r="3" fill="#fdd835" />
+                <circle cx="60" cy="110" r="3" fill="#fdd835" />
+                <path d="M40 60 Q 50 50 60 60" stroke="#a08a37" stroke-width="2" fill="none" /> <!-- Rambut jagung -->
+            </g>
+
+            <!-- Tepung -->
+            <g transform="translate(200, 150)">
+                <path d="M0 0 L50 0 L75 50 L25 50 Z" fill="#fff9c4" opacity="0.8" />
+                <text x="37.5" y="30" font-family="Verdana" font-size="12" fill="#fbc02d" text-anchor="middle" transform="rotate(10 37.5 30)">Tepung</text>
+            </g>
+
+            <!-- Potongan Bakwan -->
+            <g transform="translate(350, 180)">
+                <path d="M0 0 L30 0 L40 20 L10 30 Z" fill="#f9a825" />
+                <rect x="0" y="0" width="30" height="20" fill="#ffe082" />
+                <circle cx="15" cy="10" r="3" fill="#fdd835" />
+                <circle cx="25" cy="15" r="2" fill="#fdd835" />
+                <text x="15" y="12" font-family="Verdana" font-size="8" fill="#e65100" text-anchor="middle">Crispy</text>
+            </g>
+        </svg>
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan jagung, atau sering juga disebut perkedel jagung, adalah salah satu jajanan pasar favorit yang bisa dinikmati kapan saja. Kunci kelezatan bakwan jagung terletak pada teksturnya yang renyah di luar dan lembut di dalam, serta rasa manis jagung yang berpadu sempurna dengan bumbu. Dan tahukah Anda? Rahasia membuat bakwan jagung yang sempurna seringkali berasal dari penggunaan tepung bumbu yang tepat.</p>
+
+        <h2>Mengapa Tepung Bumbu Penting?</h2>
+        <p>Memilih tepung bumbu yang berkualitas adalah langkah awal yang krusial. Tepung bumbu yang dirancang khusus untuk gorengan biasanya sudah mengandung kombinasi rempah dan pengembang yang pas. Ini tidak hanya memudahkan proses memasak, tetapi juga memastikan kerenyahan yang tahan lama dan rasa yang kaya tanpa perlu repot meracik bumbu dari nol. Tepung bumbu yang baik akan melapisi adonan dengan sempurna, menciptakan lapisan renyah saat digoreng dan mencegah bakwan menyerap terlalu banyak minyak.</p>
+
+        <h2>Resep Bakwan Jagung Crispy Sederhana</h2>
+        <div class="ingredients">
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>2-3 buah jagung manis, pipil atau serut kasar</li>
+                <li>100 gram tepung bumbu serbaguna (pilih yang khusus untuk gorengan)</li>
+                <li>50 gram tepung terigu</li>
+                <li>1 butir telur</li>
+                <li>50 ml air dingin (atau secukupnya)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>1/2 sendok teh garam (jika tepung bumbu kurang asin)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h3>Cara Membuat:</h3>
+            <ol>
+                <li>Campurkan jagung pipil/serut, telur, daun bawang, serta garam (jika perlu) dalam sebuah wadah. Aduk rata.</li>
+                <li>Masukkan tepung bumbu dan tepung terigu ke dalam campuran jagung. Aduk perlahan hingga tercampur rata, jangan terlalu kuat agar tekstur jagung tetap terasa.</li>
+                <li>Tuang air dingin sedikit demi sedikit sambil terus diaduk hingga adonan kental dan semua bahan tercampur. Pastikan adonan tidak terlalu encer agar tidak pecah saat digoreng.</li>
+                <li>Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</li>
+                <li>Ambil satu sendok makan adonan, lalu masukkan ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan matang. Balik sesekali agar matang merata.</li>
+                <li>Angkat bakwan jagung yang sudah matang, tiriskan minyaknya.</li>
+                <li>Sajikan bakwan jagung selagi hangat. Nikmati dengan cabai rawit, sambal, atau saus kesukaan Anda.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan untuk Bakwan Sempurna</h2>
+        <p>Untuk hasil yang lebih renyah, pastikan minyak goreng benar-benar panas sebelum memasukkan adonan. Menggunakan air dingin untuk adonan juga membantu menciptakan tekstur yang lebih garing. Jika Anda ingin variasi rasa, tambahkan sedikit irisan cabai rawit atau ketumbar bubuk ke dalam adonan. Tepung bumbu akan menjadi pondasi rasa, namun sentuhan bumbu tambahan dapat membuat bakwan jagung Anda semakin istimewa.</p>
+
+        <p>Bakwan jagung adalah camilan yang sangat fleksibel. Cocok dinikmati saat santai, sebagai teman nasi, atau bahkan disajikan saat kumpul keluarga. Dengan bantuan tepung bumbu yang tepat, membuat camilan lezat ini menjadi sangat mudah dan menyenangkan. Selamat mencoba dan nikmati kelezatan bakwan jagung buatan sendiri!</p>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta.</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-perkedel-jagung-tanpa-telur">Cara Membuat Perkedel Jagung Tanpa Telur</a></li>
+<li><a href="/resep-bakwan-sayur-renyah-cookpad">Resep Bakwan Sayur Renyah Cookpad</a></li>
+<li><a href="/contoh-bakteri-anaerob">Contoh Bakteri Anaerob</a></li>
+<li><a href="/balasan-untuk-ucapan-barakallah-fii-umrik">Balasan Untuk Ucapan Barakallah Fii Umrik</a></li>
+<li><a href="/bakpia-kacang-hijau-kering">Bakpia Kacang Hijau Kering</a></li>
+<li><a href="/bakpao-karakter-hello-kitty">Bakpao Karakter Hello Kitty</a></li>
+<li><a href="/kacang-hitam-untuk-bakpao">Kacang Hitam Untuk Bakpao</a></li>
+<li><a href="/pia-kencana">Pia Kencana</a></li>
+<li><a href="/bakwan-goreng-ayam">Bakwan Goreng Ayam</a></li>
+<li><a href="/bakso-mercon-besar">Bakso Mercon Besar</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

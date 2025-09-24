@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakpia MM: Kenikmatan Khas Jogja Penuh Cerita</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4ecdc4; /* Biru toska muda */
+            --secondary-color: #f7fff7; /* Hijau mint sangat muda */
+            --text-color: #333;
+            --header-color: #1b4f7c; /* Biru tua cerah */
+            --footer-color: #c4f0e2; /* Hijau toska cerah */
+            --button-bg: #f5a623; /* Oranye cerah */
+            --button-text: #ffffff;
+            --card-bg: #ffffff;
+            --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+
+        h1, h2, h3 {
+            color: var(--header-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.7em;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 20px;
+        }
+
+        .hero-section h1 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .hero-section p {
+            font-size: 1.1em;
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+        }
+
+        .svg-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .content-section h2 {
+            text-align: left;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: var(--header-color);
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        .feature-card p {
+            font-size: 0.95em;
+            text-align: center;
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background-color: var(--footer-color);
+            border-radius: 10px;
+        }
+
+        .call-to-action h2 {
+            color: var(--header-color);
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e0941b; /* Oranye lebih gelap */
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: var(--footer-color);
+            color: var(--header-color);
+            font-size: 0.9em;
+            border-radius: 0 0 10px 10px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 10px;
+            }
+
+            .hero-section h1 {
+                font-size: 2em;
+            }
+
+            .hero-section p {
+                font-size: 1em;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <h1>Bakpia MM</h1>
+        <p>Rasakan Keajaiban Khas Jogja di Setiap Gigitan.</p>
+    </div>
+
+    <div class="container">
+        <div class="svg-container">
+            <svg width="150" height="150" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm4.318-9.937l-3.246 3.246-1.516-1.516c-.39-.39-.906-.603-1.445-.603-.539 0-1.055.213-1.445.603l-3.246 3.246a.993.993 0 0 0-1.407 1.407l4.162 4.162c.39.39.907.603 1.445.603s1.055-.213 1.445-.603l5.083-5.083a.993.993 0 0 0-1.407-1.407z" fill="#4ECDC4"/>
+                <circle cx="12" cy="12" r="2" fill="#FF6B6B"/>
+            </svg>
+            <p><em>Simbol kebahagiaan dan kualitas</em></p>
+        </div>
+
+        <div class="content-section">
+            <h2>Jelajahi Kelezatan Bakpia MM</h2>
+            <p>
+                Indonesia kaya akan kuliner tradisional yang memanjakan lidah, dan salah satunya adalah bakpia. Di jantung Daerah Istimewa Yogyakarta, hadir sebuah nama yang tak asing lagi bagi para pecinta jajanan khas: Bakpia MM. Lebih dari sekadar kue kering berisi isian manis, Bakpia MM adalah sebuah perpaduan harmonis antara resep warisan turun-temurun dan inovasi rasa yang tak pernah berhenti. Setiap gigitan bakpia MM membangkitkan nostalgia akan cita rasa asli Jogja, sambil menawarkan pengalaman baru yang segar dan memikat. Kami percaya bahwa setiap bakpia yang kami hasilkan adalah sebuah cerita, cerita tentang ketelitian dalam pengolahan, kebaikan bahan baku, dan kebahagiaan yang ingin kami bagikan kepada setiap pelanggan.
+            </p>
+            <p>
+                Bakpia MM hadir dengan berbagai pilihan rasa yang menggugah selera. Mulai dari isian klasik seperti kacang hijau yang lembut dan manis, hingga varian modern yang tak kalah menarik, seperti cokelat, keju, durian, dan bahkan rasa-rasa unik lainnya yang terus kami kembangkan. Kami menggunakan bahan-bahan pilihan terbaik, mulai dari tepung berkualitas tinggi, mentega berkualitas premium, hingga isian yang melimpah dan beraroma khas. Proses pembuatan kami dilakukan dengan standar kebersihan yang tinggi dan sentuhan tangan para pengrajin yang berpengalaman, memastikan setiap bakpia MM memiliki tekstur yang renyah di luar namun lembut dan lumer di dalam.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>Mengapa Memilih Bakpia MM?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Rasa Autentik & Inovatif</h3>
+                    <p>Menghadirkan cita rasa klasik Jogja yang otentik, serta terus berinovasi dengan varian rasa terbaru yang kekinian.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Bahan Baku Berkualitas</h3>
+                    <p>Hanya menggunakan bahan-bahan segar dan pilihan terbaik untuk menjamin kualitas rasa dan aroma yang sempurna.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Tekstur Sempurna</h3>
+                    <p>Kulit yang renyah berpadu harmonis dengan isian yang lembut dan lumer di mulut, menciptakan sensasi kenikmatan tiada tara.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Oleh-oleh Khas Terbaik</h3>
+                    <p>Menjadi pilihan utama sebagai buah tangan dari Jogja yang disukai semua kalangan, memberikan kesan manis pada setiap kunjungan.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Lebih dari Sekadar Jajanan</h2>
+            <p>
+                Bakpia MM bukan hanya sekadar jajanan atau oleh-oleh. Kami melihatnya sebagai jembatan budaya yang menghubungkan Anda dengan kehangatan dan keramahan Jogja. Setiap bakpia MM yang Anda bawa pulang adalah representasi dari keindahan tradisi kuliner Indonesia yang patut dibanggakan. Kami berkomitmen untuk terus menjaga kualitas dan memberikan pengalaman terbaik bagi setiap pelanggan. Baik untuk dinikmati sendiri sebagai teman bersantai, dibagi bersama keluarga tercinta, atau sebagai hadiah istimewa untuk orang terkasih, Bakpia MM selalu menjadi pilihan yang tepat. Mari ciptakan momen manis bersama Bakpia MM, cicipi kelezatannya, dan bawa pulang cerita Jogja yang tak terlupakan.
+            </p>
+        </div>
+
+        <div class="call-to-action">
+            <h2>Siap Mencicipi Kelezatan Bakpia MM?</h2>
+            <p>Kunjungi kami atau pesan secara online untuk merasakan keajaiban rasa khas Jogja!</p>
+            <a href="#" class="cta-button">Pesan Sekarang</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-jengkol">Resep Bakwan Jengkol</a></li>
+<li><a href="/cara-membuat-bakwan-bola">Cara Membuat Bakwan Bola</a></li>
+<li><a href="/cara-bikin-bakwan-jagung-pakai-telur">Cara Bikin Bakwan Jagung Pakai Telur</a></li>
+<li><a href="/resep-bakwan-jagung-crispy-ncc">Resep Bakwan Jagung Crispy Ncc</a></li>
+<li><a href="/bakteri-fakultatif-adalah">Bakteri Fakultatif Adalah</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-bayam">Cara Membuat Bakwan Sayur Bayam</a></li>
+<li><a href="/taman-bunga-bakung">Taman Bunga Bakung</a></li>
+<li><a href="/bakpia-tugu-jalan-magelang">Bakpia Tugu Jalan Magelang</a></li>
+<li><a href="/bakpia-bu-sri-8">Bakpia Bu Sri 8</a></li>
+<li><a href="/bakso-mercon-cak-man">Bakso Mercon Cak Man</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

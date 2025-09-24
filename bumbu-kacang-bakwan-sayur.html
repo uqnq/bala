@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumbu Kacang Bakwan Sayur Spesial</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Warna latar belakang hijau muda yang sejuk */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff; /* Latar belakang putih bersih untuk konten */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        h1 {
+            color: #4caf50; /* Warna hijau cerah untuk judul */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #66bb6a; /* Warna hijau sedikit lebih gelap untuk sub-judul */
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        img.main-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Tinggi maksimum gambar */
+            object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .ingredients-list {
+            list-style: disc;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .ingredients-list li {
+            margin-bottom: 8px;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #81c784; /* Warna hijau cerah sebagai tombol CTA */
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #5cb860; /* Warna hijau sedikit lebih gelap saat hover */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bumbu Kacang Bakwan Sayur Spesial: Kunci Kelezatan Tak Terlupakan</h1>
+
+        <!-- Gambar SVG Bakwan Sayur dengan Bumbu Kacang -->
+        <svg class="main-image" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#66bb6a;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="#fff" />
+            <!-- Bakwan Sayur -->
+            <path d="M 150 250 q -30 0 -30 -30 l 0 -100 q 0 -30 30 -30 l 100 0 q 30 0 30 30 l 0 50 q 0 30 -30 30 l -70 0 Z" fill="#fdd835" stroke="#f9a825" stroke-width="3"/>
+            <path d="M 220 230 q -20 0 -20 -20 l 0 -80 q 0 -20 20 -20 l 80 0 q 20 0 20 20 l 0 40 q 0 20 -20 20 l -50 0 Z" fill="#ffe082" stroke="#fbc02d" stroke-width="2"/>
+            <circle cx="180" cy="180" r="10" fill="#f9a825"/>
+            <circle cx="230" cy="160" r="8" fill="#f9a825"/>
+            <circle cx="260" cy="190" r="12" fill="#f9a825"/>
+
+            <!-- Bumbu Kacang -->
+            <path d="M 450 280 q -40 0 -40 -40 l 0 -120 q 0 -40 40 -40 l 120 0 q 40 0 40 40 l 0 80 q 0 40 -40 40 l -80 0 Z" fill="url(#grad1)" stroke="#388e3c" stroke-width="3"/>
+            <path d="M 500 260 q -30 0 -30 -30 l 0 -100 q 0 -30 30 -30 l 100 0 q 30 0 30 30 l 0 60 q 0 30 -30 30 l -70 0 Z" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="2"/>
+            <circle cx="520" cy="220" r="8" fill="#c8e6c9"/>
+            <circle cx="560" cy="190" r="6" fill="#c8e6c9"/>
+            <circle cx="590" cy="230" r="9" fill="#c8e6c9"/>
+            <path d="M 550 200 l 10 10 l -5 -10 Z" fill="#ffccbc"/> <!-- Cabai -->
+            <path d="M 580 180 l 5 15 l -8 -5 Z" fill="#ffccbc"/> <!-- Cabai -->
+            <path d="M 510 240 l 5 5 l -3 -5 Z" fill="#f44336"/> <!-- Cabai -->
+
+            <!-- Keterangan Teks -->
+            <text x="150" y="100" font-family="Arial" font-size="20" fill="#333" text-anchor="middle">Bakwan Sayur</text>
+            <text x="550" y="110" font-family="Arial" font-size="20" fill="#333" text-anchor="middle">Bumbu Kacang</text>
+        </svg>
+
+        <p>Siapa yang tidak suka bakwan sayur? Camilan renyah dengan aneka sayuran ini selalu menjadi favorit. Namun, kelezatan bakwan sayur akan semakin maksimal ketika disajikan dengan bumbu kacang yang pas. Bumbu kacang yang kental, gurih, dan sedikit pedas adalah pasangan sempurna yang membuat setiap gigitan bakwan menjadi pengalaman kuliner yang tak terlupakan.</p>
+
+        <p>Membuat bumbu kacang yang lezat sebenarnya tidaklah sulit. Kunci utamanya terletak pada pemilihan bahan-bahan berkualitas dan proporsi yang tepat. Aroma kacang tanah sangrai yang khas berpadu dengan sentuhan manis dari gula merah dan pedasnya cabai menciptakan harmoni rasa yang menggugah selera. Bumbu ini tidak hanya cocok untuk bakwan, tetapi juga bisa menjadi cocolan untuk tahu isi, siomay, atau bahkan sebagai saus untuk berbagai hidangan lain.</p>
+
+        <h2>Rahasia Bumbu Kacang Bakwan Sayur yang Menggugah Selera</h2>
+
+        <p>Untuk menghasilkan bumbu kacang yang istimewa, persiapkan bahan-bahan berikut:</p>
+        <ul class="ingredients-list">
+            <li>250 gram kacang tanah goreng, haluskan</li>
+            <li>5 siung bawang putih, goreng sebentar</li>
+            <li>3-5 buah cabai merah keriting (sesuai selera pedas), goreng</li>
+            <li>2 buah cabai rawit (opsional, untuk rasa lebih pedas), goreng</li>
+            <li>50 gram gula merah, sisir halus</li>
+            <li>1 sendok teh garam</li>
+            <li>500 ml air (atau secukupnya, hingga kekentalan yang diinginkan)</li>
+            <li>2 lembar daun jeruk (opsional, untuk aroma lebih wangi)</li>
+            <li>1 sendok makan air asam jawa (untuk rasa segar)</li>
+        </ul>
+
+        <h2>Langkah-Langkah Pembuatan</h2>
+
+        <p>Proses pembuatan bumbu kacang ini patut dicoba di rumah. Ikuti langkah-langkah sederhana berikut:</p>
+        <ol>
+            <li>Haluskan kacang tanah yang sudah digoreng hingga mendapatkan tekstur yang diinginkan. Anda bisa menggunakan blender atau cobek.</li>
+            <li>Haluskan bawang putih dan cabai yang sudah digoreng bersama. Jika menggunakan cobek, Anda bisa menghaluskan bersama kacang.</li>
+            <li>Dalam panci, campurkan kacang yang sudah dihaluskan, bumbu halus (bawang putih dan cabai), gula merah, garam, dan daun jeruk (jika menggunakan).</li>
+            <li>Tuangkan air sedikit demi sedikit sambil terus diaduk agar tidak menggumpal. Masak dengan api sedang sambil terus diaduk hingga bumbu mendidih dan mengental.</li>
+            <li>Setelah bumbu mengental, tambahkan air asam jawa. Aduk rata dan masak sebentar lagi. Koreksi rasa, tambahkan garam atau gula jika perlu.</li>
+            <li>Angkat dan biarkan bumbu kacang dingin sebelum disajikan. Bumbu kacang ini akan semakin nikmat saat dinikmati bersama bakwan sayur yang masih hangat dan renyah.</li>
+        </ol>
+
+        <p>Bumbu kacang yang lezat ini akan memberikan dimensi rasa yang berbeda pada bakwan sayur Anda. Jangan ragu untuk menyesuaikan tingkat kepedasan dan kemanisan sesuai dengan preferensi keluarga. Kekayaan rasa dari bumbu kacang ini menjadikannya pendamping setia yang tidak pernah mengecewakan, bahkan bisa menjadi daya tarik utama bagi siapapun yang mencicipinya.</p>
+
+        <p>Menyajikan bakwan sayur dengan bumbu kacang buatan sendiri adalah cara yang sangat memuaskan. Anda tidak hanya mendapatkan rasa yang otentik, tetapi juga dapat mengontrol bahan-bahan yang digunakan, memastikan hidangan yang lebih sehat untuk keluarga tercinta. Selamat mencoba dan nikmati kelezatan bakwan sayur dengan bumbu kacang spesial!</p>
+    </div>
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/8992736225401">8992736225401</a></li>
+<li><a href="/amerika-serikat-vs-wales">Amerika Serikat Vs Wales</a></li>
+<li><a href="/cara-mengukus-bakpao-yang-benar">Cara Mengukus Bakpao Yang Benar</a></li>
+<li><a href="/bakpao-karakter-terdekat">Bakpao Karakter Terdekat</a></li>
+<li><a href="/bakwan-sayur-in-english">Bakwan Sayur In English</a></li>
+<li><a href="/metanogen">Metanogen</a></li>
+<li><a href="/bumbu-ulek-bakwan-sayur">Bumbu Ulek Bakwan Sayur</a></li>
+<li><a href="/bakpia-lie-tan">Bakpia Lie Tan</a></li>
+<li><a href="/resep-bakso-bakar-mercon">Resep Bakso Bakar Mercon</a></li>
+<li><a href="/cara-buat-bakwan-sayur-yg-renyah">Cara Buat Bakwan Sayur Yg Renyah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

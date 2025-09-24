@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Piya Piya Udang: Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #74b9ff; /* Warna biru cerah sejuk */
+            --secondary-color: #0984e3; /* Warna biru lebih tua untuk kontras */
+            --background-color: #f1f2f6; /* Warna latar belakang sejuk */
+            --text-color: #2d3436; /* Warna teks gelap */
+            --accent-color: #ffeaa7; /* Warna kuning cerah untuk aksen */
+            --border-color: #dfe6e9; /* Warna border */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-section {
+            margin-bottom: 30px;
+        }
+
+        .ingredients-list, .instructions-list {
+            padding-left: 20px;
+        }
+
+        .ingredients-list li, .instructions-list li {
+            margin-bottom: 10px;
+        }
+
+        .ingredients-list strong {
+            color: var(--secondary-color);
+        }
+
+        .highlight {
+            background-color: var(--accent-color);
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resep Piya Piya Udang: Kelezatan Segar di Meja Anda</h1>
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle">
+                <title id="logoTitle">Ikon Udang Lezat</title>
+                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" fill="var(--primary-color)"/>
+                <path d="M10.5 8a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-1 0v1.5a.5.5 0 0 0 .5.5zM14.5 8a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-1 0v1.5a.5.5 0 0 0 .5.5zM11.5 14h1v1h-1v-1zM11 15.5a.5.5 0 0 0 .5-.5 1.5 1.5 0 0 0-3 0 .5.5 0 0 0 .5.5h2z" fill="var(--secondary-color)"/>
+                <path d="M12 10c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm0 2c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3z" fill="var(--accent-color)"/>
+                <path d="M16.764 7.176a.5.5 0 0 0-.354-.818.5.5 0 0 0-.531.293l-1.732 3a.5.5 0 0 0 .212.663.5.5 0 0 0 .51.037l.658-.317 1.082 1.874a.5.5 0 0 0 .876-.212l1.732-3a.5.5 0 0 0-.212-.663z" fill="var(--secondary-color)"/>
+                <path d="M7.236 7.176a.5.5 0 0 0-.354-.818.5.5 0 0 0-.531.293l-1.732 3a.5.5 0 0 0 .212.663.5.5 0 0 0 .51.037l.658-.317 1.082 1.874a.5.5 0 0 0 .876-.212l1.732-3a.5.5 0 0 0-.212-.663z" fill="var(--secondary-color)"/>
+            </svg>
+        </header>
+
+        <div class="recipe-section">
+            <h2>Pengantar</h2>
+            <p>
+                Siapa yang bisa menolak kelezatan hidangan laut yang segar? Terutama jika diolah menjadi sesuatu yang istimewa dan menggugah selera. Resep <span class="highlight">piya piya udang</span> hadir sebagai jawaban bagi Anda yang mencari hidangan lezat, mudah dibuat, dan kaya rasa. Konon, istilah "piya piya" merujuk pada cara masak yang menghasilkan tekstur sedikit renyah di luar namun tetap juicy di dalam, dengan bumbu yang meresap sempurna. Hidangan ini sangat cocok disajikan sebagai lauk utama saat makan malam bersama keluarga, atau bahkan sebagai sajian istimewa saat ada tamu.
+            </p>
+            <p>
+                Kombinasi rasa manis dari udang segar, sedikit pedas dari cabai, gurih dari bawang putih dan rempah lainnya, serta aroma harum dari bumbu-bumbu segar, akan membuat siapapun ketagihan. Selain rasanya yang luar biasa, resep piya piya udang juga relatif cepat dimasak, menjadikannya pilihan ideal bagi Anda yang memiliki kesibukan namun tetap ingin menyajikan hidangan berkualitas. Mari kita mulai petualangan kuliner Anda dengan resep yang akan kami bagikan.
+            </p>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Bahan-Bahan</h2>
+            <ul class="ingredients-list">
+                <li><strong>Udang</strong>: 500 gram, ukuran sedang atau besar, kupas kulit dan buang kotorannya (sisakan ekor untuk tampilan lebih menarik).</li>
+                <li><strong>Bawang Putih</strong>: 4-5 siung, cincang halus.</li>
+                <li><strong>Cabai Merah Keriting</strong>: 3-5 buah, iris serong (sesuaikan tingkat kepedasan).</li>
+                <li><strong>Cabai Rawit Merah</strong>: 2-3 buah, iris tipis (opsional, untuk rasa pedas ekstra).</li>
+                <li><strong>Bawang Bombay</strong>: ½ buah, iris memanjang.</li>
+                <li><strong>Jahe</strong>: 1 ruas jari, geprek atau cincang halus.</li>
+                <li><strong>Saus Tiram</strong>: 2 sendok makan.</li>
+                <li><strong>Kecap Manis</strong>: 1 sendok makan.</li>
+                <li><strong>Garam</strong>: Secukupnya.</li>
+                <li><strong>Gula Pasir</strong>: ½ sendok teh (opsional, untuk menyeimbangkan rasa).</li>
+                <li><strong>Lada Bubuk</strong>: ½ sendok teh.</li>
+                <li><strong>Minyak Goreng</strong>: Secukupnya untuk menumis.</li>
+                <li><strong>Daun Bawang</strong>: 1 batang, iris serong untuk taburan.</li>
+                <li><strong>Air Jeruk Nipis</strong>: 1 sendok makan (untuk marinasi udang).</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Cara Membuat</h2>
+            <ol class="instructions-list">
+                <li>
+                    <strong>Persiapan Udang</strong>: Cuci bersih udang yang sudah dikupas. Lumuri dengan air jeruk nipis dan sedikit garam, diamkan selama kurang lebih 10-15 menit untuk menghilangkan bau amis. Setelah itu, bilas kembali dengan air bersih dan tiriskan.
+                </li>
+                <li>
+                    <strong>Tumis Bumbu</strong>: Panaskan sedikit minyak goreng dalam wajan dengan api sedang. Tumis bawang putih dan jahe hingga harum dan sedikit kecoklatan. Masukkan irisan cabai merah keriting dan cabai rawit (jika menggunakan), tumis sebentar hingga layu.
+                </li>
+                <li>
+                    <strong>Masukkan Udang</strong>: Masukkan udang ke dalam wajan. Aduk rata bersama bumbu. Masak hingga udang berubah warna menjadi kemerahan dan setengah matang. Penting untuk tidak memasak udang terlalu lama agar tidak alot.
+                </li>
+                <li>
+                    <strong>Tambahkan Saus dan Bumbu Lain</strong>: Masukkan bawang bombay, saus tiram, kecap manis, garam, gula pasir (jika pakai), dan lada bubuk. Aduk rata dan masak hingga semua bumbu tercampur sempurna dan udang matang sepenuhnya. Jika dirasa terlalu kering, bisa ditambahkan sedikit air (sekitar 2-3 sendok makan).
+                </li>
+                <li>
+                    <strong>Sentuhan Akhir</strong>: Cicipi rasa, sesuaikan jika perlu. Terakhir, masukkan irisan daun bawang, aduk sebentar, lalu angkat.
+                </li>
+                <li>
+                    <strong>Sajikan</strong>: Piya piya udang siap disajikan selagi hangat. Sangat nikmat disantap dengan nasi putih hangat.
+                </li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Tambahan</h2>
+            <p>
+                Untuk mendapatkan tekstur "piya piya" yang khas, pastikan saat menumis udang tidak terlalu banyak air dan udang dimasak dengan api yang cukup besar pada tahap akhir agar sedikit tergoreng dan keluar aroma khasnya. Anda juga bisa menambahkan sedikit tepung maizena yang dilarutkan dengan air jika ingin kuah yang lebih kental.
+            </p>
+            <p>
+                Kreativitas dalam bumbu juga sangat dihargai. Jangan ragu menambahkan sedikit perasan lemon atau jeruk nipis di akhir masakan untuk memberikan kesegaran ekstra. Beberapa orang juga suka menambahkan sedikit wijen sangrai atau potongan paprika untuk variasi warna dan rasa.
+            </p>
+        </div>
+
+    </div>
+    <footer>
+        Terima kasih telah berkunjung! Selamat mencoba resep piya piya udang.
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-jagung-pakai-telur">Resep Bakwan Jagung Pakai Telur</a></li>
+<li><a href="/cara-membuat-pentol-mercon-untuk-jualan">Cara Membuat Pentol Mercon Untuk Jualan</a></li>
+<li><a href="/bakpia-kurnia-sari-jalan-godean">Bakpia Kurnia Sari Jalan Godean</a></li>
+<li><a href="/pia-crispy">Pia Crispy</a></li>
+<li><a href="/bakso-beranak-suroboyo">Bakso Beranak Suroboyo</a></li>
+<li><a href="/bakwan-ahem">Bakwan Ahem</a></li>
+<li><a href="/bakpao-tek-kie">Bakpao Tek Kie</a></li>
+<li><a href="/bakpia-pathok-969">Bakpia Pathok 969</a></li>
+<li><a href="/bakwan-kates">Bakwan Kates</a></li>
+<li><a href="/bakpia-kencana-kumbu-hitam">Bakpia Kencana Kumbu Hitam</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

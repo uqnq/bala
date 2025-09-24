@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahan Bakso Mercon Pedas & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #f08080; /* Warna dasar sejuk cerah (coral) */
+            --secondary-color: #ffb6c1; /* Warna aksen sejuk cerah (light pink) */
+            --text-color: #333;
+            --background-color: #fffaf0; /* Warna latar belakang krem lembut */
+            --card-background: #ffffff;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto 30px auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .ingredients-list, .spice-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li, .spice-list li {
+            background-color: var(--background-color);
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 5px;
+            border-left: 4px solid var(--secondary-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .ingredients-list li:hover, .spice-list li:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .note {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Membuat Bakso Mercon yang Menggugah Selera</h1>
+
+        <svg class="hero-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+            <!-- Latar belakang gradien cerah -->
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FFC0CB;stop-opacity:1" /> <!-- Pink lembut -->
+                    <stop offset="100%" style="stop-color:#ADD8E6;stop-opacity:1" /> <!-- Biru muda -->
+                </linearGradient>
+            </defs>
+            <rect width="600" height="400" fill="url(#grad1)" />
+
+            <!-- Ilustrasi bakso dan cabai -->
+            <circle cx="200" cy="200" r="80" fill="#F08080" /> <!-- Bakso (coral) -->
+            <circle cx="220" cy="180" r="70" fill="#F8F8FF" /> <!-- Cahaya bakso -->
+
+            <g transform="translate(350, 150) rotate(20)">
+                <path d="M 0 -50 L 20 10 L -20 10 Z" fill="#DC143C" /> <!-- Cabai merah -->
+                <circle cx="0" cy="-60" r="10" fill="#FF6347" /> <!-- Ujung cabai -->
+            </g>
+            <g transform="translate(400, 250) rotate(-10)">
+                <path d="M 0 -40 L 15 5 L -15 5 Z" fill="#DC143C" /> <!-- Cabai merah -->
+                <circle cx="0" cy="-45" r="8" fill="#FF6347" />
+            </g>
+             <g transform="translate(300, 280) rotate(30)">
+                <path d="M 0 -30 L 10 3 L -10 3 Z" fill="#DC143C" /> <!-- Cabai merah -->
+                <circle cx="0" cy="-33" r="6" fill="#FF6347" />
+            </g>
+
+            <!-- Teks judul utama -->
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="bold" stroke="#333" stroke-width="1">Bakso Mercon</text>
+        </svg>
+        <p>Bakso mercon, hidangan populer yang menawarkan sensasi pedas membara berpadu dengan gurihnya daging sapi, memang selalu berhasil menggugah selera. Kelezatannya tidak hanya bergantung pada kesegaran daging, tetapi juga pada racikan bumbu yang tepat dan tentu saja, cabai yang melimpah. Bagi Anda yang ingin mencoba membuat sendiri di rumah, memahami bahan-bahan yang dibutuhkan adalah langkah pertama yang krusial. Berikut adalah daftar lengkap bahan-bahan untuk membuat bakso mercon yang lezat dan pedasnya pas.</p>
+
+        <h2>Bahan Utama untuk Bakso</h2>
+        <ul class="ingredients-list">
+            <li>500 gram daging sapi segar, giling halus (pilih bagian yang sedikit lemak agar tekstur bakso kenyal)</li>
+            <li>100 gram tepung tapioka atau sagu</li>
+            <li>50 gram tepung terigu</li>
+            <li>1 butir telur ayam</li>
+            <li>150 ml air es</li>
+            <li>2 sendok teh garam</li>
+            <li>1 sendok teh gula pasir</li>
+            <li>1 sendok teh kaldu bubuk sapi (opsional)</li>
+        </ul>
+
+        <h2>Bumbu Halus untuk Adonan Bakso</h2>
+        <ul class="ingredients-list">
+            <li>5 siung bawang putih, goreng sebentar hingga harum</li>
+            <li>1 sendok teh merica butiran atau bubuk</li>
+            <li>1/2 sendok teh pala bubuk</li>
+            <li>1/4 sendok teh penyedap rasa (opsional)</li>
+        </ul>
+
+        <h2>Bahan Isian Mercon (Tingkat Kepedasan Bisa Disesuaikan)</h2>
+        <ul class="spice-list">
+            <li>200 gram daging sapi cincang kasar (opsional, untuk variasi isian)</li>
+            <li>50-100 gram cabai rawit merah, iris halus atau blender kasar (sesuaikan dengan tingkat kepedasan yang diinginkan)</li>
+            <li>2-3 buah cabai merah besar, buang bijinya, iris halus</li>
+            <li>5 siung bawang merah, iris halus</li>
+            <li>3 siung bawang putih, cincang halus</li>
+            <li>1 batang serai, memarkan</li>
+            <li>2 lembar daun salam</li>
+            <li>1 cm jahe, memarkan</li>
+            <li>Garam secukupnya</li>
+            <li>Gula pasir secukupnya</li>
+            <li>Minyak goreng secukupnya untuk menumis</li>
+        </ul>
+
+        <p>Membuat isian bakso mercon membutuhkan perhatian khusus pada bumbu tumisannya. Tumis bumbu halus (bawang merah, bawang putih, cabai rawit, cabai merah) hingga harum dan matang. Masukkan daging sapi cincang (jika menggunakan), masak hingga berubah warna. Bumbui dengan garam, gula, serai, daun salam, dan jahe. Masak hingga bumbu meresap dan isian agak kering. Angkat dan dinginkan sebelum digunakan untuk isian bakso.</p>
+
+        <h2>Bahan Kuah Bakso Mercon</h2>
+        <ul class="ingredients-list">
+            <li>2 liter air</li>
+            <li>Tulang sapi (sumsum atau iga) untuk kaldu (opsional, tapi sangat disarankan)</li>
+            <li>5 siung bawang putih, geprek dan cincang halus</li>
+            <li>1/2 buah bawang bombay, iris</li>
+            <li>2 batang daun bawang, iris (pisahkan bagian putih dan hijau)</li>
+            <li>Garam secukupnya</li>
+            <li>Gula pasir secukupnya</li>
+            <li>Kaldu bubuk sapi (opsional)</li>
+            <li>Merica bubuk secukupnya</li>
+            <li>Seledri secukupnya, iris (untuk taburan)</li>
+            <li>Bawang goreng secukupnya (untuk taburan)</li>
+        </ul>
+
+        <p>Kunci dari kuah bakso yang nikmat adalah penggunaan kaldu yang berkualitas. Rebus tulang sapi bersama air selama beberapa jam agar sari kaldunya keluar maksimal. Setelah mendidih, masukkan bawang putih geprek dan bawang bombay. Bumbui dengan garam, gula, merica, dan kaldu bubuk. Masukkan irisan bagian putih daun bawang untuk menambah aroma. Masak hingga semua bumbu tercampur rata.</p>
+
+        <div class="note">
+            Tips: Anda bisa menambahkan <span class="highlight">tahu pong</span> atau <span class="highlight">kulit pangsit</span> yang digoreng renyah sebagai pelengkap saji bakso mercon. Untuk kuah yang lebih pedas, Anda bisa menambahkan beberapa irisan cabai rawit langsung ke dalam kuah atau menyajikannya terpisah.
+        </div>
+
+        <p>Dengan daftar bahan yang lengkap ini, Anda kini siap untuk menciptakan hidangan bakso mercon yang tidak hanya menggoda selera tetapi juga sesuai dengan preferensi pedas Anda. Selamat mencoba dan nikmati sensasi pedas gurihnya!</p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-nastar">Bakpia Nastar</a></li>
+<li><a href="/cara-pembuatan-bakso-mercon">Cara Pembuatan Bakso Mercon</a></li>
+<li><a href="/tomcir">Tomcir</a></li>
+<li><a href="/bakpia-red-velvet">Bakpia Red Velvet</a></li>
+<li><a href="/cara-buat-bakwan-sayur-kriuk">Cara Buat Bakwan Sayur Kriuk</a></li>
+<li><a href="/bakpao-manis">Bakpao Manis</a></li>
+<li><a href="/aerob-bakteri">Aerob Bakteri</a></li>
+<li><a href="/cara-buat-bakwan-simple">Cara Buat Bakwan Simple</a></li>
+<li><a href="/bakwan-teri-asin">Bakwan Teri Asin</a></li>
+<li><a href="/cara-bikin-gorengan-jagung">Cara Bikin Gorengan Jagung</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

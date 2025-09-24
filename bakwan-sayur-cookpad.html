@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Sayur Cookpad: Renyah & Nikmat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Warna hijau cerah segar */
+            --secondary-color: #8BC34A; /* Warna hijau muda cerah */
+            --text-color: #333;
+            --background-color: #F8FBF7; /* Latar belakang agak kehijauan lembut */
+            --card-background: #FFFFFF;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+
+        img.hero-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px var(--shadow-color);
+        }
+
+        .content {
+            margin-bottom: 25px;
+        }
+
+        .content h2 {
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .recipe-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: var(--background-color);
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 5px;
+        }
+
+        .recipe-section h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .keyword {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .conclusion {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed var(--secondary-color);
+        }
+
+        /* Responsif untuk mobile */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .content h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 20px auto;">
+            <circle cx="50" cy="50" r="45" stroke="#4CAF50" stroke-width="6" fill="#8BC34A"/>
+            <path d="M35 35 L65 65" stroke="white" stroke-width="5" stroke-linecap="round"/>
+            <path d="M35 65 L65 35" stroke="white" stroke-width="5" stroke-linecap="round"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="18" font-weight="bold" dy=".3em">BV</text>
+        </svg>
+        <h1>Nikmatnya <span class="keyword">Bakwan Sayur Cookpad</span>: Rahasia Renyah dan Lezat!</h1>
+
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMTAwIDY2LjY2MDAwMSI+CiAgPHJlY3Qgd2lkdGg9IjEwMCINCiAgICBoZWlnaHQ9IjY2LjY2MDAwMSINCiAgICBmaWxsPSIjRThGNEU4Ii8+CiAgPHBhdGggZD0iTTAsMzMuMzM2QzAsMjAuNjA5LDcuNDYsMTIuNTM5LDIzLjU5NSwxMi41MzlDMTUuNzI4LDcuNjQ2LDYuNTkxLDYuNTI3LDcuMjQ1LDUuOTM0QzEyLjc2NSw0LjA0OCwyNS4xMzcsNi45OTYsMjYuNzY4LDkuNTM2QzIzLjIyNCw4LjA0NSwxOC45NjUsOS43MTQsMTkuNTgzLDEyLjUyN0MxNy45NDEsMTEuMzI0LDE4LjA3MSwxNC4wOTksMjEuMTEsMTYuMDA2QzI2LjYyOCwxMS41MzcsMzQuMjIxLDEzLjQwNSwzNy44NCwxNS4yMzZDNDMuNjE0LDExLjQ4LDQ1LjgyMSw4LjUwMSw0Ni4xMTQsNy42NzZDNDcuMzQyLDguMTA0LDQ5LjUxNiw5LjY4LDQ5LjgyNywxMS44MzVDNDUuMjQ1LDkuNTI5LDQzLjIzOCwxMC4zMzcsNDEuMDIsMTIuMzEzQzQwLjAzLDE0LjQ1OCwzNy4wNjcsMTUuODk0LDM1Ljk4LDE3LjQ4MUMzNS4yNjksMTYuODI0LDMxLjIyOCwxNi45NywzMC4wMDYsMTcuNzBDNDMuOTkzLDIyLjM2MSw0OC4xNjEsMjkuMDA1LDQ1LjMxLDM0LjY0NUM0NS4zMTksMzQuNjQ0LDQ0LjQ4MSwzNS42ODgsNDQuMjgzLDM2LjQ0QzQ1LjE5MSwzNS45ODcsNDcuNzUxLDM0LjU3Niw1MC4wMDgsMzMuMzM2QzUxLjMxOSwzMS43NDcsNTIuMTAxLDMwLjExNyw1Mi43NTYsMjguOTM2QzUzLjA0OSwzMS44MzMsNTQuMjM0LDMyLjY5OSw1NC42MDksMzMuMzM2QzU0LjM0NywzMi45NjgsNTMuNjA5LDMxLjcwOSw1My4zMjEsMzEuMDA2QzU0LjQyNywyOC41MDEsNTUuMjI1LDI1LjI1OCw1NS44OTUsMjIuNzVDNTMuMDc0LDI1LjQ4NSw1MC4wNzYsMjUuODk1LDQ3LjEwMywyNS40NzhDNzcuOTkzLDQ1LjU3OCw5Ni45MDYsNDUsMTAwLDMzLjMzNkM5Mi42NzQsNDIuMzMzLDgwLjM3OSw1MC40MTYsNjQuMDQyLDUwLjQxNkM1Ni43MTMsNDMuOTMsNTcuNzQ1LDMxLjM0MSw1OC4yMDgsMjcuODY1QzU2LjgyNSwyOC40ODQsNTMuOTkzLDMwLjM0MSw1My4xMjUsMzQuNjQ0QzU1LjAzMSwzNy4xOTMsNTcuNjEzLDQwLjAzMSw1OC43MTMsNDAuNTQ4QzU3LjY3OCw0MS41NjQsNTYuOTQxLDQxLjMwMSw1Ni40MDYsNDAuOTM0QzU4LjY1Niw0MC44MjcsNjAuNTY0LDQwLjU0OCw2Mi40ODEsNDAuMzM2QzY1LjU3LDQ2LjIxOCw3MS43NDQsNDguMDYxLDc0LjgzOCw0Ni4yMzlDNzUuOTM0LDQ0LjY1Nyw3Ni42NDQsNDMuNTY0LDc3LjE3OCw0My4zMzZDODAuNDYxLDQ1LjAxOSw4OC42Nyw0OS4wMDYsOTEuODU1LDQ3LjE2OEM5MC4xMTMsNDYuNjM1LDg4LjE4MSw0NS45MjksODUuNjQ5LDQ2LjA4NEM3Ny45MjksNDQuODEsNjYuNzc4LDQwLjUxMSw2MC43MTEsMzQuNjQ0QzYyLjk3NCwzMS44MjQsNjMuODE4LDMwLjAyMSw2NC40ODEsMjcuODY1QzY2LjA2NSwyOC41NDksNjcuNTMzLDMwLjY4NCw2Ny42MzIsMzQuNjQ0QzY2LjUxOCwzNS42NTcsNjUuOTE0LDM3LjMxNSw2NS41NjEsMzguNjM2QzY0LjgwNCwzOS4yOTksNjMuMzY1LDQwLjU0OCw2Mi43NDcsNDEuMTU3QzU4LjAyNSw0MC45MzQsNTQuODIxLDQxLjY4NCw1MS4xMjUsNDEuNDc4QzQ3LjUzOCw0MS42ODQsNDQuNzQxLDQzLjA1NCw0Mi4xMTMsNDQuNjQ0QzM5LjcxOSw0My44NTQsMzYuODkxLDQyLjQ4NCwzNC4zMjEsNDEuMTU3QzMzLjMzNiw0MC40MzQsMzIuMTU0LDQwLjcxOSwzMS44MjQsMzkuNjM2QzMzLjA2OSwzOC43NTUsMzQuMjUyLDM3LjUzNCwzNC42NDQsMzYuNDQ0QzM0LjE2NSwzNS40NzUsMzMuNDQ0LDM1LjAyNSwzMi43NjUsMzQuNTE2QzMyLjA0OSwzMy4zMzYsMzMuMzM2LDMwLjE0OSwzNS42NTcsMjUuNTE2QzI4LjU0OSwyNS43MTQsMjMuMjMzLDI4LjY1NywxOS41ODQsMzQuNjQ0QzE3LjU4LDMxLjM0MSwxNS40OTUsMjcuNjQsMTQuMjE3LDMyLjQ4MkM4LjM3OSwyNi41MjUsMC41MjQsMTkuNjQ1LDAsMTIuNTM5QzAuNTEyLDExLjc3OCwxLjA1LDExLjQ1OCw0LjIyNSwxMi41MzZDNTEuMTU3LDIzLjIxOCw0OC4wNjEsMzEuNzQxLDQ1LjQzNCwzNC42NDRDNDcuMTk0LDM1LjY1Nyw0OC44MjEsMzcuNTkzLDQ4LjIzOCw0MC41NDhDNzcuOTMyLDQyLjQ4MSw4Ny40OTEsNDQuNjQ0LDkxLjAxOSw0Ni42MzVDOTAuNjM1LDQ1LjkxOSw4OS43MzQsNDQuMDgzLDg4LjAxOSw0My4zMzZDODguMjYyLDQzLjU3Niw5MC45OTQsNDQuNjQ0LDkyLjAxOSw0NC44MzhDODguODQxLDQzLjQwNSw4OC41OTcsNDMuMTQ5LDg4LjIxNCw0Mi43NjVDODAuNjc4LDQwLjM3OSw3My4xMzcsMzguMjM2LDY1LjU4LDQwLjMzNkM2NS43MjQsNDMuNjQ0LDY3LjU3LDQ2LjY1Nyw2OC41MzEsNDcuNzU1QzY4LjUwMSw0OC4zMjQsNjcuNjYxLDQ3LjUwMSw2Ni44NDYsNDcuMTk0QzY5LjUyNSw0Ni42NTcsNzIuMzM2LDQ1LjM4LDc0LjY0NCw0My44NTJDNzMuNzY1LDQzLjYxNCw3My4zNjUsNDQuMjEzLDczLjEyNSw0NC42NDRDNzUuNjI1LDQ2LjA4NCw4MC4yNTQsNDcuMTk0LDgzLjUxNiw0NS44MzhDODMuMzM2LDQ1LjYwNCw4My4zNjUsNDQuNjc4LDgzLjYxNCw0NC4wODVDNzkuMDAyLDQyLjQ5OSw3NC44MjEsNDAuMzM2LDcxLjIxNCwzOC42MzZDNDYuNTk3LDM1LjY1Nyw0MC43MTksMzQuMjA1LDMzLjQ4NCwzNC42NDRDNDAuMzM2LDQwLjU0OCw0Ni41MjUsNDIuMTk0LDQ4LjIwNSw0My44NTJDNDEuMTU3LDQ1LjY1NywzNi4zNjUsNDYuOTk0LDMyLjgyNCw0OC4yMzhDMzIuOTkxLDQ4LjA0OCwzMi42NTcsNDguMDYzLDMyLjYzNSw0OC4yMzhDMzcuMzEzLDQ3LjMyNCw0Mi41NDgsNDQuNjQ0LDQ1LjM4LDQyLjExM0M0MC45MzQsNDEuMTU3LDMzLjIzOCwzOC42MjgsMzIuNTA4LDM1LjY0NEMzNC4wMDYsMzQuMjM4LDQwLjAwNiwzMS44NjQsNDYuMTEyLDMwLjAwNkM0NS42MjEsMzEuNDg2LDQ1LjM0MSwzMi42OTksNDUuMTI1LDMzLjMzNkM0NC4yMTMsMzMuMTM4LDQzLjMwOCwzMi43NjUsNDMuMjMxLDMyLjUzNkM0OC43NjUsMjkuMjExLDQ5LjY0NCwyNS4yNDEsNDkuNDQ0LDIyLjUzNkM1MS4xMDUsMjEuMzM2LDUyLjEwOSwyMS4zMzYsNTIuMTM4LDMxLjAwNkM0OS4yOTEsMzQuNjQ0LDQ0LjY0NCw0MS4xNTcsMzkuMDgzLDQ0LjQ1OEM0MC45MzQsNDIuMzk1LDQyLjUxNSw0MC44MjUsNDQuNDg0LDQyLjExM0M0Ny40OTEsNDMuMjQxLDQ5LjAxOSw0NC42NTcsNTEuMTU3LDQ1LjIwNUM1MC4xMzgsNDUuMTEyLDQ4LjIxNCw0NC44MzgsNDYuMzM2LDQ0LjY1N0M1MC42MDUsNDQuMjQxLDUyLjIyNSw0My41NzgsNTMuNDg0LDQyLjIzOEM1MC4yNDEsNDEuMTU3LDQ1LjMzNiwzOC4zOTUsNDYuMzM2LDM1LjY0NEM0Ni40NTQsMzQuMjM4LDQ3LjE0OSwzNC4yMjgsNDcuNzU1LDMyLjkzNkM0OC4xMDksMzEuNTg0LDQ2LjMzOCwyOC44NjUsNDQuNjQ0LDMxLjMzNkM0MC44MjUsMjYuMTMxLDMyLjE1NCwxOS42NDUsMjQuMDA2LDE4LjY1N0MxNS41NTYsMjAuNTEyLDcuMjMxLDI1LjM0MSw0LjUyNCwzNC42NDRDMC4xOTEsMzMuMzM2LDAsNDMuOTUzLDAsMzMuMzM2IgZmlsbD0iIzRkZWRhZiIvPgogIDxwYXRoIGQ9Ik0zNy40MTIsNDguNjQ0QzMzLjY4NCw0NC42NDQsMjcuOTk0LDQ0LjU1NiwzMS4xNTcsNDAuNjQ0QzI3LjQ4NCwzNy43MjUsMjYuNjMxLDMzLjYxNCwyOC41NDksMzEuMDA2QzIzLjQ3NSwyNi43NDYsMTguMDI1LDI2LjIxOCwxMy41MzYsMzEuMDA2QzE0LjY1NywzMy4zMzYsMTUuMDM5LDMzLjM2NSwxNS4xNTcsMzMuMzM2QzE3LjQ4MSwzMi42OTksMjMuNDc1LDMyLjU4LDMxLjAwNiwzNC42NDRDNDEuMTU3LDQwLjU0OCw0MC44MjUsNDguNzc4LDM3LjQxMiw0OC42NDRaIiBmaWxsPSIjOTBkZGYzIi8+CiAgPHBhdGggZD0iTTUyLjQwOCw0OC42NDRDMzguMjUzLDQ0LjY0NCwzMi42NzQsMzEuMDk0LDM1LjM4LDMyLjMxNkM0MC4wMjEsMzMuOTk0LDQxLjAwNiwzOC41NTQsNDAuOTM0LDQ0LjY0NEw1Mi40MDgsNDguNjQ0WiIgb3ZlcmZsb3c9InZpc2libGUiIGZpbGw9IiM5ZGRkYzMiLz4KICA8cGF0aCBkPSJNNDAuMDA2LDM4LjY0NEM0My4yNDEsMzkuMzMxLDQ0LjMwOCw0NC42NDQsNDAuOTM0LDQ4LjY0NEwzNy40MTIsNDguNjQ0QzMzLjIxNCw0NC42NDQsMzQuMTEyLDM4LjYzNiw0MC4wMDYsMzguNjQ0WiIgb3ZlcmZsb3c9InZpc2libGUiIGZpbGw9IiM5N2QyOWUiLz4KICA8cGF0aCBkPSJNNDcuODUyLDM4LjY0NEM1MC44MjUsMzkuMzMxLDUyLjE0OSw0NC42NDQsNDguNzY1LDQ4LjY0NEw0Ni43ODgsNDguNjQ0QzQ0LjY0NCw0NC42NDQsNDMuMjM4LDQ0LjI0MSw0MC43ODUsMzguNjQ0TDQ3Ljg1MiwzOC42NDRaIiBmaWxsPSIjOWVlY2E0Ii8+Cjwvc3ZnPg==" alt="Ilustrasi bakwan sayur yang lezat dan berwarna-warni" class="hero-image">
+
+        <div class="content">
+            <p>Siapa yang bisa menolak kelezatan <span class="keyword">bakwan sayur</span>? Camilan renyah yang cocok dinikmati kapan saja ini selalu menjadi favorit banyak orang. Terutama saat disantap selagi hangat dengan cocolan sambal atau saus favorit, kenikmatannya semakin berlipat ganda. Di platform <span class="keyword">Cookpad</span>, Anda bisa menemukan berbagai variasi resep bakwan sayur yang mudah diikuti dan dijamin anti gagal.</p>
+
+            <h2>Mengapa Bakwan Sayur Begitu Disukai?</h2>
+            <p>Bakwan sayur adalah hidangan yang memadukan kesederhanaan dengan kekayaan rasa. Campuran tepung terigu, air, dan bumbu dasar seperti bawang putih dan garam menjadi fondasi utamanya. Kemudian, berbagai macam sayuran segar seperti kol, wortel, tauge, buncis, dan daun bawang ditambahkan untuk memberikan tekstur, warna, serta nutrisi yang lebih kaya. Proses menggoreng hingga renyah menjadi kunci kelezatannya yang tak tertandingi.</p>
+
+            <div class="recipe-section">
+                <h3>Tips Mendapatkan Bakwan yang Renyah Sempurna</h3>
+                <ul>
+                    <li><strong>Gunakan Air Dingin:</strong> Air es atau air dingin akan membantu menghasilkan adonan yang lebih renyah saat digoreng.</li>
+                    <li><strong>Jangan Terlalu Lama Mengaduk:</strong> Mengaduk adonan berlebihan dapat membuat gluten berkembang terlalu banyak, menghasilkan bakwan yang keras. Cukup aduk hingga semua bahan tercampur rata.</li>
+                    <li><strong>Suhu Minyak yang Tepat:</strong> Pastikan minyak goreng cukup panas sebelum memasukkan adonan. Minyak yang kurang panas akan membuat bakwan menyerap banyak minyak dan menjadi lembek.</li>
+                    <li><strong>Tiriskan dengan Baik:</strong> Setelah matang, tiriskan bakwan di atas rak kawat atau tisu dapur untuk menghilangkan kelebihan minyak.</li>
+                    <li><strong>Tambahkan Tepung Beras/Maizena:</strong> Sebagian resep menambahkan sedikit tepung beras atau maizena ke dalam adonan tepung terigu untuk menambah kerenyahan.</li>
+                </ul>
+            </div>
+
+            <h2>Variasi Bakwan Sayur di Cookpad</h2>
+            <p>Kreativitas para pengguna <span class="keyword">Cookpad</span> tak ada habisnya. Anda bisa menemukan resep bakwan sayur dengan tambahan udang cincang untuk rasa gurih yang lebih kaya, bakwan sayur udang rebon, bahkan bakwan sayur yang lebih sehat dengan menggunakan sedikit tepung gandum. Beberapa pengguna juga membagikan trik khusus untuk membuat bumbu yang meresap sempurna, sehingga setiap gigitan bakwan terasa nikmat.</p>
+
+            <p>Mencari resep di <span class="keyword">Cookpad</span> sangatlah mudah. Cukup ketikkan "bakwan sayur Cookpad" di kolom pencarian, dan Anda akan disuguhkan ribuan hasil. Anda bisa memfilter berdasarkan rating, jumlah orang yang mencoba resep, atau bahkan melihat foto-foto hasil masakan pengguna lain untuk mendapatkan inspirasi. Hal ini sangat membantu bagi Anda yang baru belajar memasak atau ingin mencoba variasi baru dari hidangan favorit ini.</p>
+
+            <div class="recipe-section">
+                <h3>Bahan-bahan Umum Resep Bakwan Sayur Cookpad</h3>
+                <ul>
+                    <li>Tepung terigu</li>
+                    <li>Tepung beras (opsional, untuk kerenyahan ekstra)</li>
+                    <li>Sayuran segar (kol, wortel, tauge, buncis, daun bawang)</li>
+                    <li>Bumbu halus (bawang putih, bawang merah, merica, ketumbar)</li>
+                    <li>Garam dan penyedap rasa secukupnya</li>
+                    <li>Air dingin</li>
+                    <li>Minyak goreng secukupnya</li>
+                </ul>
+            </div>
+
+            <p>Membuat bakwan sayur sendiri di rumah tidak hanya lebih hemat, tetapi juga memberikan kepuasan tersendiri. Anda bisa mengatur sendiri tingkat kerenyahan dan kekayaan bumbu sesuai selera keluarga. Dengan panduan resep dari <span class="keyword">Cookpad</span>, mewujudkan bakwan sayur yang lezat dan menggugah selera menjadi semakin mudah. Selamat mencoba dan nikmati kelezatannya!</p>
+        </div>
+
+        <div class="conclusion">
+            <p>Temukan lebih banyak inspirasi resep <span class="keyword">bakwan sayur</span> dan hidangan lezat lainnya hanya di <span class="keyword">Cookpad</span>!</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/sayur-buat-bakwan">Sayur Buat Bakwan</a></li>
+<li><a href="/cara-membuat-bakwan-jamur-tiram">Cara Membuat Bakwan Jamur Tiram</a></li>
+<li><a href="/tanaman-bakung-merah">Tanaman Bakung Merah</a></li>
+<li><a href="/bakwan-tempe-pedas">Bakwan Tempe Pedas</a></li>
+<li><a href="/pewarnaan-gram">Pewarnaan Gram</a></li>
+<li><a href="/bakpia-kukus-tugu-jogja-kaliurang">Bakpia Kukus Tugu Jogja Kaliurang</a></li>
+<li><a href="/pia-juwara-satoe">Pia Juwara Satoe</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-telur">Cara Membuat Bakwan Jagung Telur</a></li>
+<li><a href="/cara-membuat-bakwan-batang-brokoli">Cara Membuat Bakwan Batang Brokoli</a></li>
+<li><a href="/cara-membuat-adonan-bakwan-jagung">Cara Membuat Adonan Bakwan Jagung</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

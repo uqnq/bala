@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Wortel Kol Sederhana & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #60A5FA; /* Biru sejuk */
+            --secondary-color: #93C5FD; /* Biru lebih muda */
+            --accent-color: #F9FAFB; /* Abu-abu sangat terang */
+            --text-color: #1F2937; /* Abu-abu gelap */
+            --bg-color: #FFFFFF; /* Putih bersih */
+            --card-bg: #F3F4F6; /* Abu-abu muda */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: var(--bg-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 200px;
+            background-color: var(--secondary-color);
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .hero-image svg {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            background-color: var(--accent-color);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-description {
+            flex-grow: 1;
+        }
+
+        .ingredients-list li, .instructions-list li {
+            background-color: var(--card-bg);
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .tips {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px;
+            border-radius: 6px;
+            font-style: italic;
+        }
+
+        .tips strong {
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #6B7280;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .container {
+                padding: 15px;
+            }
+            .hero-image {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Wortel Kol Sederhana & Lezat</h1>
+
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"></path>
+                <path d="M10 8v4l3 1.5"></path>
+                <path d="M12 16l1.5-3"></path>
+                <path d="M12 16l-1.5-3"></path>
+            </svg>
+        </div>
+
+        <div class="section">
+            <h2>Deskripsi</h2>
+            <p>Bakwan, camilan goreng renyah yang digemari banyak orang, bisa dibuat dengan mudah di rumah. Kali ini kita akan mencoba resep bakwan yang kaya akan serat dan nutrisi dari wortel dan kol. Perpaduan sayuran segar dengan adonan tepung yang pas menciptakan rasa gurih dan tekstur renyah yang bikin ketagihan. Resep ini cocok untuk dinikmati sebagai teman minum teh atau kopi, atau sekadar mengganjal perut di sela-sela kesibukan.</p>
+        </div>
+
+        <div class="section">
+            <h2>Bahan-Bahan</h2>
+            <ul class="ingredients-list">
+                <li>2 buah wortel ukuran sedang, parut kasar atau potong korek api tipis</li>
+                <li>1/4 buah kol ukuran sedang, iris tipis</li>
+                <li>2 batang daun bawang, iris tipis</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 butir telur ayam</li>
+                <li>150 ml air dingin (sesuaikan konsistensi adonan)</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya (opsional, untuk penyeimbang rasa)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Cara Membuat</h2>
+            <ol class="instructions-list">
+                <li class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-description">Campurkan semua sayuran (wortel, kol, daun bawang) dalam sebuah wadah besar.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-description">Dalam wadah terpisah, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan gula pasir (jika pakai). Aduk rata.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-description">Kocok telur, lalu masukkan ke dalam campuran tepung. Aduk rata.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-description">Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan memiliki kekentalan yang pas. Adonan tidak boleh terlalu encer agar sayuran terbalut sempurna, tapi juga jangan terlalu kental.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-description">Masukkan campuran sayuran ke dalam adonan tepung. Aduk perlahan hingga semua sayuran terlumuri adonan secara merata.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-description">Panaskan minyak goreng dalam jumlah yang cukup banyak di wajan dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum menggoreng.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-description">Ambil satu sendok sayur adonan, lalu goreng perlahan ke dalam minyak panas. Goreng beberapa buah bakwan sekaligus, jangan terlalu penuh agar matang merata.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">8</div>
+                    <div class="step-description">Goreng hingga bakwan berwarna kuning keemasan dan matang sempurna. Balik agar matangnya merata di kedua sisi.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">9</div>
+                    <div class="step-description">Angkat bakwan dan tiriskan minyaknya dengan baik menggunakan saringan atau tisu dapur.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">10</div>
+                    <div class="step-description">Sajikan bakwan wortel kol selagi hangat. Nikmati dengan saus sambal, cabai rawit, atau cocolan kesukaan Anda.</div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="section tips">
+            <h2>Tips Tambahan</h2>
+            <ul>
+                <li>Untuk kerenyahan ekstra, gunakan perbandingan tepung terigu dan tepung beras seperti yang tertera.</li>
+                <li>Pastikan minyak benar-benar panas sebelum menggoreng. Ini kunci agar bakwan tidak menyerap banyak minyak dan menjadi renyah.</li>
+                <li>Jangan memasukkan terlalu banyak bakwan sekaligus ke dalam wajan agar suhu minyak tetap stabil.</li>
+                <li>Jika ingin rasa yang lebih kaya, Anda bisa menambahkan sedikit kaldu bubuk ke dalam adonan.</li>
+                <li>Untuk variasi, tambahkan sedikit udang cincang atau tauge ke dalam adonan.</li>
+            </ul>
+        </div>
+
+        <footer>
+            Selamat mencoba resep bakwan wortel kol yang sehat dan nikmat ini!
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-singkong-parut">Bakwan Singkong Parut</a></li>
+<li><a href="/outlet-bakpia-tugu">Outlet Bakpia Tugu</a></li>
+<li><a href="/balasan-orang-munafik-adalah">Balasan Orang Munafik Adalah</a></li>
+<li><a href="/bakpia-tugu-awet-berapa-lama">Bakpia Tugu Awet Berapa Lama</a></li>
+<li><a href="/bakpia-tugu-kaliurang">Bakpia Tugu Kaliurang</a></li>
+<li><a href="/bakso-raksasa-beranak">Bakso Raksasa Beranak</a></li>
+<li><a href="/bakwan-bayam-jagung">Bakwan Bayam Jagung</a></li>
+<li><a href="/cara-buat-ote2">Cara Buat Ote2</a></li>
+<li><a href="/bakpia-pathok-asli">Bakpia Pathok Asli</a></li>
+<li><a href="/bakwan-resep">Bakwan Resep</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

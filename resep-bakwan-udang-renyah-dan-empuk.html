@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Udang Renyah & Empuk</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang biru muda */
+            color: #004d40; /* Warna teks hijau tua */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 77, 64, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul hijau toska */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.6em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 77, 64, 0.2);
+        }
+        .highlight {
+            font-weight: bold;
+            color: #00695c; /* Hijau tua sedikit lebih pekat */
+        }
+        .recipe-section {
+            background-color: #f0f8ff; /* Latar belakang biru sangat muda untuk bagian resep */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .recipe-section h3 {
+            color: #00796b;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #00695c;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="image-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakwan udang renyah">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#80cbc4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#4db6ac;stop-opacity:1" />
+                    </linearGradient>
+                    <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:#ffe0b2;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffcc80;stop-opacity:1" />
+                    </radialGradient>
+                </defs>
+                <rect width="600" height="300" rx="15" fill="#f0f0f0" />
+                
+                <!-- Tumpukan Bakwan -->
+                <g transform="translate(50, 100)">
+                    <path d="M 0 0 C 20 -20 50 -20 70 0 S 120 -20 140 0 S 190 -20 210 0 S 260 -20 280 0 S 330 -20 350 0 S 400 -20 420 0 S 470 -20 490 0 S 540 -20 560 0 L 560 80 C 540 60 510 60 490 80 S 440 60 420 80 S 370 60 350 80 S 300 60 280 80 S 230 60 210 80 S 160 60 140 80 S 90 60 70 80 S 20 60 0 80 Z" fill="url(#grad1)" stroke="#00796b" stroke-width="2"/>
+                    <path d="M 10 10 C 25 -10 55 -10 75 10 S 125 -10 145 10 S 195 -10 215 10 S 265 -10 285 10 S 335 -10 355 10 S 405 -10 425 10 S 475 -10 495 10 S 545 -10 565 10 L 565 70 C 545 50 515 50 495 70 S 445 50 425 70 S 375 50 355 70 S 305 50 285 70 S 235 50 215 70 S 165 50 145 70 S 95 50 75 70 S 25 50 10 70 Z" fill="url(#grad1)" stroke="#00796b" stroke-width="1.5" opacity="0.8"/>
+                    <path d="M 20 20 C 30 -5 50 -5 60 20 S 80 -5 90 20 S 110 -5 120 20 S 140 -5 150 20 S 170 -5 180 20 S 200 -5 210 20 S 230 -5 240 20 S 260 -5 270 20 S 290 -5 300 20 S 320 -5 330 20 S 350 -5 360 20 S 380 -5 390 20 S 410 -5 420 20 S 440 -5 450 20 S 470 -5 480 20 S 500 -5 510 20 S 530 -5 540 20 L 540 60 C 530 40 510 40 500 60 S 470 40 460 60 S 430 40 420 60 S 390 40 380 60 S 350 40 340 60 S 310 40 300 60 S 270 40 260 60 S 230 40 220 60 S 190 40 180 60 S 150 40 140 60 S 110 40 100 60 S 70 40 60 60 S 30 40 20 60 Z" fill="url(#grad1)" stroke="#00796b" stroke-width="1" opacity="0.7"/>
+                </g>
+
+                <!-- Udang -->
+                <g transform="translate(180, 190) rotate(-20)">
+                    <path d="M 0 0 Q 20 -10 40 0 T 80 0 Q 70 15 60 30 T 40 30 T 20 15 Z" fill="#ff8a65" stroke="#e65100" stroke-width="1"/>
+                    <circle cx="10" cy="10" r="3" fill="#ffcc80"/> <!-- Mata 1 -->
+                    <circle cx="30" cy="10" r="3" fill="#ffcc80"/> <!-- Mata 2 -->
+                </g>
+                 <g transform="translate(250, 180) rotate(20)">
+                    <path d="M 0 0 Q 20 -10 40 0 T 80 0 Q 70 15 60 30 T 40 30 T 20 15 Z" fill="#ff8a65" stroke="#e65100" stroke-width="1"/>
+                    <circle cx="10" cy="10" r="3" fill="#ffcc80"/> <!-- Mata 1 -->
+                    <circle cx="30" cy="10" r="3" fill="#ffcc80"/> <!-- Mata 2 -->
+                </g>
+                 <g transform="translate(320, 195) rotate(-15)">
+                    <path d="M 0 0 Q 20 -10 40 0 T 80 0 Q 70 15 60 30 T 40 30 T 20 15 Z" fill="#ff8a65" stroke="#e65100" stroke-width="1"/>
+                    <circle cx="10" cy="10" r="3" fill="#ffcc80"/> <!-- Mata 1 -->
+                    <circle cx="30" cy="10" r="3" fill="#ffcc80"/> <!-- Mata 2 -->
+                </g>
+            </svg>
+        </div>
+
+        <h1>Resep Bakwan Udang: Renyah di Luar, Empuk di Dalam</h1>
+
+        <p>
+            Bakwan udang adalah salah satu camilan favorit banyak orang. Perpaduan tekstur renyah di luar dan kelembutan adonan di dalam, ditambah aroma udang yang khas, membuatnya selalu menggugah selera. Membuat bakwan udang yang sempurna ternyata tidak sulit, lho! Kuncinya ada pada pemilihan bahan dan teknik menggoreng yang tepat. Artikel ini akan memandu Anda langkah demi langkah untuk menghasilkan bakwan udang yang renyah, empuk, dan pastinya lezat.
+        </p>
+
+        <p>
+            Bagi Anda yang ingin menyajikan kudapan sehat dan nikmat untuk keluarga atau sekadar teman ngopi sore, resep bakwan udang renyah dan empuk ini bisa menjadi pilihan yang tepat. Dengan bahan-bahan yang mudah didapat dan cara membuat yang simpel, Anda bisa menciptakan kelezatan ala restoran di rumah. Mari kita mulai petualangan kuliner ini!
+        </p>
+
+        <h2>Mengapa Bakwan Udang Menjadi Favorit?</h2>
+
+        <p>
+            Keistimewaan bakwan udang terletak pada kombinasi rasa dan teksturnya. Adonan tepung yang digoreng hingga keemasan memberikan sensasi renyah yang memuaskan di setiap gigitan. Sementara itu, di dalamnya tersembunyi udang segar yang empuk dan sedikit manis, berpadu dengan sayuran yang memberikan kesegaran. Tambahan bumbu-bumbu sederhana pun sudah cukup untuk mengeluarkan cita rasa terbaik dari bahan-bahan utamanya. Bakwan udang sangat cocok dinikmati selagi hangat, ditemani sambal kecap atau cabai rawit untuk sensasi pedas yang menggugah.
+        </p>
+
+        <div class="recipe-section">
+            <h2>Resep Bakwan Udang Renyah dan Empuk</h2>
+
+            <h3>Bahan-bahan:</h3>
+            <ul class="ingredients">
+                <li>250 gram udang segar, kupas kulit dan buang kotoran punggungnya</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk menambah kerenyahan)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>1 batang seledri, iris halus (opsional)</li>
+                <li>1 buah wortel kecil, serut kasar atau potong korek api tipis</li>
+                <li>100 gram kol/kubis, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1 sendok teh garam (sesuai selera)</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional)</li>
+                <li>Sekitar 150-200 ml air dingin (sesuaikan konsistensi adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+
+            <h3>Cara Membuat:</h3>
+            <ol class="instructions">
+                <li>
+                    <strong>Persiapan Udang:</strong> Potong-potong udang menjadi ukuran yang lebih kecil sesuai selera. Anda bisa memotongnya menjadi dua atau tiga bagian jika udangnya berukuran besar.
+                </li>
+                <li>
+                    <strong>Buat Adonan Tepung:</strong> Dalam sebuah wadah, campurkan tepung terigu dan tepung beras. Tambahkan bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata.
+                </li>
+                <li>
+                    <strong>Tambahkan Sayuran dan Udang:</strong> Masukkan irisan daun bawang, seledri (jika pakai), wortel serut, dan irisan kol ke dalam campuran tepung. Aduk sebentar agar sayuran terbalur sedikit tepung.
+                </li>
+                <li>
+                    <strong>Masukkan Udang:</strong> Tambahkan potongan udang ke dalam adonan. Campur rata kembali.
+                </li>
+                <li>
+                    <strong>Tuang Air Dingin:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan memiliki kekentalan yang pas. Adonan tidak boleh terlalu kental (akan keras) dan tidak boleh terlalu encer (akan susah menempel dan mudah hancur saat digoreng). Konsistensinya seperti adonan untuk menggoreng pisang atau bakwan pada umumnya.
+                </li>
+                <li>
+                    <strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum adonan dimasukkan.
+                </li>
+                <li>
+                    <strong>Goreng Bakwan:</strong> Ambil satu sendok sayur adonan bakwan, lalu tuangkan perlahan ke dalam minyak panas. Goreng hingga satu sisi berwarna kuning kecoklatan dan agak kokoh, baru kemudian dibalik. Lakukan hingga semua adonan habis. Goreng hingga bakwan matang merata dan berwarna keemasan.
+                </li>
+                <li>
+                    <strong>Tiriskan dan Sajikan:</strong> Angkat bakwan udang yang sudah matang, tiriskan dari minyak berlebih menggunakan saringan atau tisu dapur. Sajikan selagi hangat.
+                </li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan untuk Bakwan Super Renyah dan Empuk</h2>
+
+        <p>
+            Untuk mendapatkan hasil yang maksimal, ada beberapa tips yang bisa Anda terapkan:
+        </p>
+        <ul>
+            <li>
+                <strong>Gunakan Air Dingin:</strong> Penggunaan air dingin sangat penting untuk menciptakan tekstur bakwan yang renyah. Air dingin membantu membuat adonan tepung tidak cepat gluten, sehingga hasil gorengannya lebih garing.
+            </li>
+            <li>
+                <strong>Jangan Terlalu Lama Mengaduk:</strong> Aduk adonan secukupnya saja hingga semua bahan tercampur rata. Mengaduk terlalu lama akan membuat adonan menjadi lembek dan kurang renyah.
+            </li>
+            <li>
+                <strong>Goreng dengan Minyak Panas:</strong> Pastikan minyak benar-benar panas sebelum Anda menggoreng bakwan. Ini membantu bakwan terbentuk kokoh seketika dan menjadi renyah. Gunakan api sedang cenderung besar saat menggoreng agar bagian luar matang sempurna tanpa membakar bagian dalamnya.
+            </li>
+            <li>
+                <strong>Goreng Bertahap:</strong> Jangan menggoreng bakwan terlalu banyak dalam satu waktu. Hal ini dapat menurunkan suhu minyak, membuat bakwan menyerap banyak minyak, dan menjadi kurang renyah.
+            </li>
+            <li>
+                <strong>Kombinasi Tepung:</strong> Menggunakan campuran tepung terigu dan tepung beras terbukti ampuh untuk menghasilkan bakwan yang lebih renyah.
+            </li>
+        </ul>
+
+        <p>
+            Selamat mencoba resep bakwan udang renyah dan empuk ini di rumah! Nikmati kelezatannya bersama keluarga tercinta.
+        </p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakso-bogem-mercon">Resep Bakso Bogem Mercon</a></li>
+<li><a href="/membuat-bakwan-jagung-renyah-dan-enak">Membuat Bakwan Jagung Renyah Dan Enak</a></li>
+<li><a href="/resep-bakwan-sayur-crispy">Resep Bakwan Sayur Crispy</a></li>
+<li><a href="/bakpao-ayam-kota-tepian">Bakpao Ayam Kota Tepian</a></li>
+<li><a href="/cara-membuat-kuah-cuko-bakwan">Cara Membuat Kuah Cuko Bakwan</a></li>
+<li><a href="/gambar-bakwan-jagung-manis">Gambar Bakwan Jagung Manis</a></li>
+<li><a href="/cara-membuat-bakwan-dengan-tepung-sajiku">Cara Membuat Bakwan Dengan Tepung Sajiku</a></li>
+<li><a href="/bumbu-pentol-mercon-daun-jeruk">Bumbu Pentol Mercon Daun Jeruk</a></li>
+<li><a href="/resep-bala-bala-renyah-kriuk">Resep Bala Bala Renyah Kriuk</a></li>
+<li><a href="/isian-coklat-bakpao">Isian Coklat Bakpao</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

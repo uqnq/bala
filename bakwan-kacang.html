@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Kacang: Camilan Gurih, Nikmat & Mudah Dibuat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 2px solid #add8e6; /* LightBlue */
+            padding-bottom: 8px;
+        }
+        img.main-image {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+        p, ul {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .highlight {
+            color: #20b2aa; /* LightSeaGreen */
+            font-weight: bold;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0ffff; /* LightCyan */
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGl0bGU+YmFrd2FuLWthY2FuZzE8L3RpdGxlPjxwYXRoIGQ9Ik01MCwxMCBDNjAuNTMsMTAgNzAsMTkuNDcgNzAsMzAgQzcwLDQwLjUzIDYwLjUzLDUwIDUwLDUwIEMzOS40Nyw1MCAzMCwzOS40NyAzMCwzMCBDMzAsMjUuMjIgMzEuMzQsMjAuNjcgMzQuMDYsMTYuNkM0MC44MSwxMC4yMSA0NC44NSw5LjY4IDUwLDEwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMDAyIC0wLjAwMSkiIGZpbGw9IiNlNDZhNTciLz48cGF0aCBkPSJNODYsNjguMThMNzguNjQsNzUuNjRjLTAuMzYuMy0wLjgzLDAuNTMtMS4zMywwLjUzSDQxLjUyYy0wLjM2LDAgLTAuNzEtMC4wOS0xLjAzLTAuMzZMMTQsNjguMThDMTMuNjQsNjcuODIgMTMuNDEgNjcuMzcgMTMuNDEsNjYuODhWNDQuMzJjMC0wLjQ5LDAuMjQtMC45NCwwLjY0LTEuM0wzNC44OCwzNS43MkMzNC41NiwyNi43MSA0MC43OSwxOC45OCA0OC44OSwxOC45OGMwLjI5LDAsMC41OCwwLjAyLDAuODcsMC4wNmM1LjU3LTAuMTcsMTEuMDktMC4yMiwxNi42My0wLjE2YzQuNjYsMC4wNCw5LjI2LDAuMjQsMTMuNzYsMC42NGwxMC4xNCwxMC4xNGMwLjM2LDAuMzYsMC42NCwwLjgxLDAuNzQsMS4zMWwwLjU5LDExLjkxYzAuMDcsMS4wOS0wLjA3LDIuMjUtMC4zNSwzLjI4bC01LjAyLDEwLjI0Qzk0LjgyLDc0LjgwIDk0LjI4LDc2LjUwIDk0Ljk1LDc3bDE2LjgsMC42MmMwLjI1LDAsMC41LDAtMC42Mi0wLjQxTDUwLDEwQzQ0LjQ0LDkuNjgsMzguNjUsOS44NSwzNC45MSwxMC44OWwtMzMuNzYsMTkuNzFjMC4zNiwwLjM1LDAuNTcsMC44MiwwLjU3LDEuMzNWODMuMTRjMCwwLjQ5LTAuMjQsMC45NC0wLjY0LDEuM0wxMC4zMSw5MS42OWMtMC4zNiwwLjM1LDAuNTYsMC44MiwwLjU2LDEuMzNWOTguMDhjMCwwLjQ5LTAuMjQsMC45NC0wLjY0LDEuM0w1LjgsOTQuODVjMC4zNiwwLjM1LDAuNTYsMC44MiwwLjU2LDEuMzVWOTcuOTVsMS40NCwwLjQxYzAuNzYsMC4yMSwxLjU4LDAuMzYsMi40LDAuMzhsMjAuNy0wLjgzYy0wLjM5LTAuMzYtMC43OC0wLjcxLTEuMTktMS4wN0w0Ni40OCw4Mi43NmMwLjM2LDAuMzYsMC43NywwLjY1LDEuMjEsMC44NGwxMi41LDAuNDljMS40NiwwLjA1LDMuMDMtMC4xMyw0LjUyLTAuNTNjMC40OC0wLjExLDAuOTMtMC4yNywxLjM1LTAuNTJMMzAuMDYsNjUuOTFjMC4zNy0wLjMxLDAuOTQtMC40OCwxLjU1LTAuNDdoMjEuMzdjMC42MiwwLDEuMTksMC4xNywxLjU2LDAuNDdsMzMuNjksMjMuMDhjMC4xNywwLjEyLDAuMzcsMC4xOCwwLjU3LDAuMTlsMTguMi0wLjc0Yy0wLjM2LTAuMzUtMC43MS0wLjcxLTEuMDUtMS4wNmwtMTAuNTEtMTAuNTFjLTAuNjMtMC42NC0xLjU1LTAuNjQtMi4xOCwwbC0xMy42NywxMy42N2MwLjM5LDAuMzMsMC44OCwwLjQ3LDEuMzYsMC40N2wxOC40My0wLjc4Yy0wLjQ5LTAuMzUtMC45OS0wLjcwLTEuNDMtMS4wNkw2MC40Nyw3NS40OGwwLjIxLTAuMjVjMC41Mi0wLjU3LDEuMjQtMC42NywxLjgyLTAuNDFsMTAuMDgsMTAuMDhsLTE3LjM4LTAuNzNjLTAuOTQsLTAuMDgtMS43Mi0wLjUyLTEuNzItMS40M0M1MSw3OC45OCw0OS45OCw3Ny45NCw1MCw3N0M1MCw3NS4yNyw1MC4xMyw3NS4xMyw1MC4xOCw3NS4wOWwtMjMuOTMsLTIzLjE3Yy0wLjMxLTAuMjctMC43NS0wLjQ3LTEuMjEtMC40N0gxNy44YzAuMzYsMC4zNSwwLjY4LDAuNzEsMC45MiwxLjA3bDcuMjUsNy4yNWMwLjM2LDAuMzYsMC42NCwwLjQ0LDAuNzEsMC40NHoiIGZpbGw9IiNmZmRiZWMiLz48cGF0aCBkPSJNODQuNDQsNTcuMjFsLTYuMjQsOS43MmwtNi4xMS0xMC4wN2wtNC44NS03Ljc4bDYuNzMtMTAuNzNsOC41LDAuNzRsNy41MSw0Ljc5TDk0LDUzLjQ1TDg0LjQ0LDU3LjIxaDB6IiBmaWxsPSIjZmZmZWVhIi8+PHBhdGggZD0iTTc3LjQ5LDYwLjI3bC0zLjQ0LDYuMzdMNzQuNDcsNjRsLTMuNzItNS43TDY3LjksNjQuMzNsLTMuNjktNS41bDYuNDUtOC43MUw3MC44Myw0OS41bDYuNDcsOC40MUw3Ny40OSw2MC4yN3oiIGZpbGw9IiNmZmZmZWEiLz48cGF0aCBkPSJNNDYuNjMsNTguNDRsLTYuOTgsMTFsLTYuMzYtOC40NWwtNS45MS04LjExTDQ0LjQ0LDQ1LjkybDYuOTgsMTEuMzdMNDYuNjMsNTguNDR6IiBmaWxsPSIjZmZmZmVhIi8+PHBhdGggZD0iTTMyLjM0LDU5LjE4bC02LjU1LDkuNTNsLTYuMDktOC41bDQuNDItNi45OUwzMC44OCw0Ni40OGw2LjU1LDkuNjFsLTAuOTksMC41M2MtMy41NSwwLjM3LTQuNTQsMi4xNi00LjU0LDQuNTJIMzIuMzRaIiBmaWxsPSIjZmZmZmVhIi8+PHBhdGggZD0iTTc2LjQzLDQ5LjEzYy01LjI0LDAtOS40OS00LjI1LTkuNDktOS40OVYzNS40NmMwLTUuMjQsNC4yNS05LjQ5LDkuNDktOS40OWMyLjMxLDAgNC40MywxLjQ4LDUuMjQsMy41OWwtMC45Myw1LjUyYy0wLjY5LTEuMzEtMS42NS0yLjQ3LTIuODktMy4yMWMtMi4yNC0xLjQ1LTUuMDktMS4xNy03LjQ0LDAuNzlMNTguMTksMzMuMThsMTkuMzcsNS42NmMwLjM5LDAsMC43NCwwLjE2LDEuMDQsMC40MWMwLjQsMC40NSwwLjU5LDEuMDYsMC41NCwxLjY4VzQ0LjkxQzgwLjMzLDQ0LjQ2LDc2LjcxLDQ0LjIxLDc2LjQzLDQ0LjIxWiIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkIi8+PHBhdGggZD0iTTI1Ljc3LDQ0LjYzYzUuMjQsMCw5LjQ5LDQuMjUsOS40OSw5LjQ5VjYwLjM4YzAsNS4yNC00LjI1LDkuNDktOS40OSw5LjQ5Yy0yLjMxLDAtNC40My0xLjQ4LTUuMjQtMy41OWwwLjktNS41MmMwLjY5LDEuMzEsMS42NSwyLjQ3LDIuODksMy4yMWMxLjQ1LDAuOTEsMy4xNiwyLjIzLDQuMjgsMi44N0wzMy40OCw2NC43NWwxOS4zNy01LjY2Yy0wLjM5LDAtMC43NC0wLjE2LTEuMDQtMC40MWMtMC40LTAuNDUtMC41OS0xLjA2LTAuNTQtMS42OFY0OS40N0MyNi45NSw0NC43NSwyNi4xNyw0NC40NCwyNS43Nyw0NC42M1oiIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZCIvPjxwYXRoIGQ9Ik0yNS44Myw0MC45OWwtMjEuOC0yNC42N2MwLjQ0LTAuNzUsMS4xOC0xLjI4LDIuMDctMS4xOGwxMy41NywxLjA3bDIxLjE0LTEyLjMyYzAuNTUtMC4zMSwxLjI1LTAuMTksMS42NywwLjMxYzAuMzYsMC40NCwwLjU0LDEuMDYsMC41LDEuNjVWMTUuMjdjMCwwLjY1LTAuMjUsMS4yOS0wLjcxLDEuNzVMMjUuODMsNDAuOTlaIiBmaWxsPSIjZTNmMGZkIi8+PHBhdGggZD0iTTQ3LjQ1LDMwLjMzYzEuNjktMS40NCwzLjQ1LTEuNTUsNS4yMi0wLjgyYzAuNzYsMC4zMSwxLjU1LDAuNzIsMi4xNCwxLjI3YzAuNDcsMC40NCwwLjUyLDEuMDYsMC41NywxLjY4VzM1YzAsMC41MS0wLjE1LDAuOTktMC40MywxLjM3bC0xNS42OSw5LjE1YzAuMDMtMC4wNy0wLjAyLTAuMTctMC4wMi0wLjI0YzAtMS44Ny0wLjgzLTMuNTMtMi4yMS00LjQ0QzQ0LjM0LDMxLjIyLDQ1LjQ3LDMwLjUyLDQ3LjQ1LDMwLjMzWiIgc3R5bGU9ImZpbGwtdG9vb2dmaWxsOiMzODRmNGQiLz48cGF0aCBkPSJNNDMuNDEsMjMuMjVsLTE3Ljk4LDkuNjljMC40NSwwLjQ1LDAuNzMsMC45NSwxLjA5LDEuNTNsMTUuOTctOS4yMmMwLjM0LTAuMzQtMC45NS0xLjI5LTEuMDctMS44NFoiIGZpbGw9IiNkNGVjZGYiLz48cGF0aCBkPSJNNDguOTgsMzcuODhjMC43Ny0wLjMxLDEuNTktMC41NSwyLjQ0LTAuNjVjMi42OS0wLjM0LDYuODMtMC40NSwxMC40MS0wLjQ1YzEuODQsMCwzLjY4LDAuMTMsNS40NSwwLjQ0YzAuNTcsMC4wOSwwLjQxLDAuNzItMC43MSwxLjA3bC0xMS4xMSw2LjUyYy0wLjY3LDAuMzktMS4zOSwwLjcxLTIuMTUsMS4wM2MtMS42MSwwLjcxLTMuMzIsMS4xNS01LjE3LDEuMjhMNDUuODMsMzEuMzZsLTEyLjY4LDUuMDdjLTAuNjQsMC4yNC0xLjI1LDAuNTQtMS43NiwwLjgyQzQxLjAxLDM2Ljg3LDQ0LjQ4LDM3LjQ1LDQ4Ljk4LDM3Ljg4WiIgc3R5bGU9ImZpbGwtdG9vb2dmaWxsOiMzODRmNGQiLz48cGF0aCBkPSJNNDUuOTUsMzEuMjRsLTQuNTksMy41OWMtMC45Mi0xLjEzLTEuNzMtMS44Ny0yLjYyLTIuNTJMNjAsMjAuODRsOC4xLDQuNzljMC40LDAuMjMsMC43MywwLjUzLDAuOTksMC44N2MwLjMxLDAuNDQsMC42MSwxLjI0LDAuMTUsMS45N0w2NS42LDMyLjM4Yy0wLjgzLDAuNTUtMS43NCwwLjkyLTIuNjQsMS4zNGMtMC43NiwwLjM3LTEuNTIsMC42OS0yLjMyLDAuOTJMMTQuNyw0Ni45OEMxNS41MSw0NC45MywxNy42OSw0My40NywzMCw0My40N2MwLjUxLDAsMS4xNSwwLjA2LDEuNjksMC4xM2wxNi4xMSw2LjE2YzEuNTUsMC41OCwyLjU3LDEuMDksNC4xMiwyLjEyYzAuNTcsMC4zOCwxLjE0LDAuNzQsMS43NSwxLjA0bDE3LjM4LTYuMzNjMC41My0wLjE5LDAuOTUtMC4zOSwxLjQ0LTAuNTdsMTYuNjctNS45NmMwLjI2LTAuMDksMC4yNC0wLjQyLTEuMzYtNy4zN0wxOS4xOSw0MS4zQzIyLjcyLDQwLjU3LDI2LjIxLDM5LjUyLDMwLDM5LjUyYzIuMTYsMCw0LjQzLDAuNjQsNi4xNSwxLjQ5YzAuNjMsMC4yOSwxLjIzLDAuNjQsMS43NiwwLjk4bDE2LjMzLDUuNzNjMC40OSwwLjE3LDAuNzMsMC40LDAuOTEsMC42N2wtMTkuOTItNy41OGMwLjA2LTAuMTYtMC4xOS0wLjUyLTAuMzQtMC42N0wyNy43MSwzNi45MWMtMC40Ny0wLjM3LTEuMTMtMC42My0xLjkyLTAuNjhMMTMuNTYsMjkuNDFjLTEuMzItMC40Mi0yLjM2LTEuMDItMy4xMy0xLjc1TDEwLjY4LDI0bDEzLjQyLDIuNDljMC42NywxLjA1LDEuNDYsMS45OCwyLjMsMi43N0wtMC41LDMyLjU4bDUuNzUsMTUuNTJjMC42NiwwLjIxLDEuMzMsMC40NCwyLDAuNjlsMjAuODUtNi41N0MxOS4zNSw0MC42NSwxNy45NSwzOC44LDMwLjE3LDM4LjU5Yy00LjcyLDAuMi04LjUyLDAuNzctMTIuNjgsMS42MkMyNi43NSwzOS40MSwyMy45OSwzNy45MSwyMC4zOCwzNy4xNkM1LjE1LDMzLjg1LDI3LjEsMjUuMjEsMzMuNDYsMjMuMzRMNjMuMTgsMTQuMmwxMS43NiwyLjM0Yy0wLjQ5LDAuMzktMC43OCwwLjg0LTEuMDksMS4yM2wtMTYuMzYsNS43OWwtMS4xMS0wLjA2Yy0yLjQzLTAuMDQtNC44OS0wLjQ2LTcuMjQtMS40M2wtNi4yNi0yLjQ2Yy0wLjIzLTAuMDktMC41NC0wLjEzLTAuNzQtMC4wOWwtMDMuNzUsMS44QzQyLjI0LDIyLjQ0LDQyLjY1LDIyLjcyLDQ1LjA3LDIzLjMxTDQ1LjgzLDMxLjIzYy0yLjE3LTAuNTQtNC4zMy0xLjEzLTYuMjktMi4xNGwtMjUuNjUsOS45M2MwLjQ5LDAuMzYsMC45OCwwLjcyLDEuNDksMS4wOWwyMi45NSw4LjIzYzAuNzQsMC4yNiwxLjUxLDAuNDEsMi4yNiwwLjQ4bDY0LjcxLTIzLjIxYy0wLjU4LTAuMTEtMS4xNi0wLjIzLTEuNzUtMC4zN0w1MCwxMC4zN0M0NC40Nyw5LjgyLDM4LjY2LDkuOTgsMzQuOTEsMTAuOTRsLTM0LjM3LDE5Ljg4Yy0wLjM5LDAuMjMtMC42OCwwLjQ3LTEuMDEsMC43NWwtNS40OCwzLjIzYzAuMzYsMC4zNSwwLjY5LDAuNzEsMC45OSwxLjA3bDUuMjcsMy4xNGMtMC4zNy0wLjMxLTAuNzEtMC42MS0xLjAyLTAuOTFsLTguNTEsNC45OEM0LjcxLDY1Ljg3LDEuMTksNTcuMDQtMC41LDU0LjQ2TDUwLDEwQzM5LjQ3LDEwLDMwLDQwLjQ3LDMwLDQ5LjQ3QzMwLDQ5Ljc0LDMwLjA3LDQ5LjcyLDMwLjEzLDQ5LjQ3bDI4Ljc3LTEzLjgzYzAuNjMtMC4zOSwxLjQ2LTAuNTksMi4xMy0wLjQ3bDIwLjEyLDYuOTNjMC41NSwwLjE5LDAuNzYsMC40NSwwLjgzLDAuNzVjMC41NywwLjMyLDAuODgsMC44NCwxLjIxLDEuMzhMODkuMjcsNTguMDVsMTMuNDQtNC45M2MtMC43MS0wLjQyLTEuNDQtMC43OC0yLjE3LTEuMDFMNzguNDEsNDkuNjNjLTIuNDYtMS4xMi01LjI0LTEuNzUtOC40My0xLjU2bDI4Ljk4LDkuMTljMC42NSwwLjIxLDEuNDItMC4wNSwxLjYyLTAuNzVMODkuMjcsNDkuNjNjMC41NS0wLjE5LDAuOTYtMC40OCwxLjUzLTAuNzhMMTA1LjU1LDQyLjYyYy0wLjQ0LTAuNDEtMC43MS0wLjk1LTAuNzctMS41bC01LjE1LTE3LjYzYy0wLjA1LTAuNjUtMC40MS0xLjI0LTEuMDUtMS42MWwtNy4zNS0yLjg4QzEwMC41LDMxLjgsMTAwLjgsMzEsOTguNjMsMzEuMkwxMDEuNzIsMzMuNTZjMC40MywwLjI4LDAuNTUsMC43NiwwLjY3LDEuMjJsLTIyLjE3LDcuMDdjMC42Ny0wLjM5LDEuNDEtMC43NCwyLjEzLTEuMDVsMjQuNTgtOC44MmMwLjU1LTAuMTksMS4xMS0wLjM3LDEuNjctMC41MkM5OS42LDAuNjUsMTAwLjYsMC40NSwxMDEuOCwwLjI1TDEwMi4yOCwxLjA0QzE4LjM2LDUsMTguMzYsNSwxOC4zNiwyMWMxLjI0LDMuNjYsNC4yNSw1LjI1LDYuNyw1LjJsMTAuNC0xLjY5YzAuNjMtMC4xLDMuMjgtMC4xLDQuMjUsMC4wOWw4LjQ4LDEuMjdjMS4xMSwwLjE3LDIuMDgsMC4zMSwyLjY2LDAuNDhMNTAsMTAuMzdaIiBmaWxsPSIjY2M5ZThhIi8+PHBhdGggZD0iTTQ2LjU3LDQwLjUyYzEuNjksMS4xMywyLjY3LDIuNjksMy42LDQuMjVsLTE2LjUyLDkuNzFjLTEuNjEtMS41MS0yLjU2LTIuOTEtMy41NS00LjM1TDM4LjUyLDM2LjEzYy0xLjU5LDAuNzMtMy4zOCwxLjE4LTUuMTQsMS4zOUwzMCwzMGMtMC4zNC0wLjcxLTAuNjYtMS40Ni0wLjkxLTEuNzFMNjUsMTkuMDdsOC45OSw1LjE5Yy0wLjUyLDAuMzQtMC43NiwwLjkyLTAuNzMsMS40MWwtMTIuMzgsNi45YzAuMzQsMC40MywwLjY4LDAuODQsMC45OSwxLjIxYzAuNzUsMC43OCwxLjQ2LDEuNTUsMi4xNiwyLjM0Yy0wLjM2LDAuMjEtMC43MSwwLjM5LTEuMDYsMC41M0wzMC42NCwzOC4yNGwtMjYuMTQsOS43M2MtMC40NCwwLjEyLTAuNzYsMC40MS0xLjAyLDAuNzVsLTEyLjgyLDcuMTdjMC41OCwwLjQ3LDEuMDIsMC44OCwxLjQ5LDEuMjRjMC43OCwwLjYxLDEuNjIsMC44OSwyLjQ5LDBsMjUuNTItOS44M2MwLjMzLTAuMjctMC42Ni0wLjUyLTEuMDItMC43N2wtMjYuNDQtOS40NGMtMC42MS0wLjIxLTEuMjEtMC40MS0xLjgyLTAuNTVsMjguNjgtMTAuMjdjMS4zMi0wLjQ2LDMuMzctMC43Myw0LjQxLTAuMzVsMTkuOTUsNi43MWMwLjQ1LDAuMTYsMC43OSwwLjQ1LDEuMTIsMC43N2wwLjUwLTAuMjVsLTQuODgtNy41NGwtNi42Ny0zLjI3VzMyLjg1bC0xMS40OS02LjkxYzEuMDctMC43NywxLjgyLTEuNjMsMi41Ny0yLjQ3TDY5LjYsMzIuNGwtMTIuNjktNi4zMmwtMTUuNyw5LjEyYy0wLjIzLTAuMjItMC40Ny0wLjQzLTAuNzEtMC42M2wtMTIuNjUtNy40OGMtMS40My0wLjktMy4wMy0xLjU5LTQuNDktMi4xM2wtMjYuMTUtOS4xOGMtMC4zOS0wLjEzLTAuNzctMC4yNC0xLjE2LTAuMzJsLTE0LjE1LDcuNzFjLTAuODYsMC40Ni0xLjU0LDEuMTMtMS44NSwyLjEyTDUwLDEwQzQ0LjQ3LDkuNjcsMzguNjcsOS44NSwzNC45MSwxMC45NEwzNC45MSwzMS44MkM0MC43NSwzMC40Nyw0My41NywyOC4zMiw0Ni41Nyw0MC41MloiIGZpbGw9IiNlM2E4OTIiLz48cGF0aCBkPSJNNDguMTUsMjkuMDVsLTQuNTksMy41OWwtMC44LTAuODFjLTAuMjQtMC4yMS0wLjYyLTAuMjEtMC44NiwwbC0xLjQyLDEuNDJDNDAuNDYsMzQuNzUsNDEuMDcsMzYuNTYsNDEuNjcsMzguNGwtMy4yMS0yLjE5Yy0wLjIyLTAuMTUtMC41NS0wLjExLTAuNzUsMGMtMC44OCwwLjQ2LTEuNTMsMS4zMS0xLjkyLDQuMzZsLTMuMjEtMi4zMWMtMC4xNS0wLjE0LTAuNDQtMC4zNi0wLjcyLTAuMjJMNzguMzksMjkuMDRjMC43Ni0wLjU5LDEuNTUtMC45Niw4LjQ0LDIuNDdjMC41NS0wLjM0LDEuMTUtMC42NCwxLjc1LTAuODJMNzYuOTQsMjUuNjVsLTIwLjMxLDExLjQzVjQxLjE5bDE5LjM3LDcuNjVjMC41Ni0wLjMzLDQuMzEtMC40Niw1LjQxLDAuNDNMNDguMTUsMjkuMDVaIiBmaWxsPSIjZmZiZWMiLz48L3N2Zz4=" alt="Ilustrasi Bakwan Kacang yang renyah dan menggugah selera" class="main-image">
+
+        <h1>Bakwan Kacang: Kelezatan Sederhana yang Bikin Ketagihan</h1>
+
+        <p>Siapa yang tidak suka camilan gurih dan renyah? Di antara berbagai macam pilihan, bakwan kacang hadir sebagai salah satu primadona yang selalu dinanti. Kombinasi sempurna antara adonan tepung yang kriuk dengan isian kacang tanah yang gurih memberikan sensasi rasa yang unik dan memanjakan lidah. Tak hanya lezat, bakwan kacang juga tergolong camilan yang mudah dibuat, menjadikannya pilihan tepat untuk disajikan di berbagai suasana, mulai dari teman minum teh sore hari, teman nonton film, hingga suguhan saat berkumpul bersama keluarga dan sahabat.</p>
+
+        <h2>Kenapa Bakwan Kacang Begitu Istimewa?</h2>
+
+        <p>Keistimewaan bakwan kacang terletak pada kesederhanaannya namun kaya akan rasa. Kacang tanah, yang merupakan bahan utamanya, memiliki rasa gurih alami yang khas. Ketika dipadukan dengan adonan tepung terigu yang digoreng hingga keemasan dan renyah, terciptalah sebuah harmoni rasa yang harmonis. Teksturnya yang garing di luar dan isian kacang yang tetap terasa kenya di dalam menjadi daya tarik utama yang membuat banyak orang ketagihan.</p>
+
+        <p>Selain itu, proses pembuatannya yang tidak rumit menjadikan bakwan kacang pilihan favorit bagi para pemula dalam dunia masak. Bahan-bahannya pun mudah ditemukan di pasar tradisional maupun supermarket. Anda bisa menambahkan sedikit bumbu seperti bawang putih, ketumbar, dan garam untuk memperkaya cita rasa adonannya. Variasi lain juga bisa dicoba, misalnya menambahkan sedikit irisan daun bawang atau seledri untuk memberikan aroma segar.</p>
+
+        <h2>Resep Bakwan Kacang Gurih dan Renyah</h2>
+
+        <p>Tertarik untuk mencoba membuat sendiri di rumah? Berikut adalah resep dasar bakwan kacang yang bisa Anda ikuti:</p>
+
+        <h3>Bahan-bahan:</h3>
+        <ul class="ingredients">
+            <li>200 gram kacang tanah mentah, rendam air panas sebentar lalu tiriskan</li>
+            <li>150 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (opsional, untuk tambahan kerenyahan)</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh ketumbar bubuk</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>Garam secukupnya</li>
+            <li>Air secukupnya untuk adonan</li>
+            <li>Minyak goreng secukupnya</li>
+        </ul>
+
+        <h3>Cara Membuat:</h3>
+        <ol class="steps">
+            <li>Dalam wadah, campurkan tepung terigu, tepung beras (jika pakai), bawang putih halus, ketumbar bubuk, merica bubuk, dan garam. Aduk rata.</li>
+            <li>Masukkan kacang tanah yang sudah ditiriskan ke dalam campuran tepung. Aduk hingga semua kacang terbalut rata dengan tepung.</li>
+            <li>Tambahkan air sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang kental dan bisa menutupi kacang. Jangan terlalu cair agar tidak mudah lepas saat digoreng.</li>
+            <li>Panaskan minyak goreng dalam wajan dengan api sedang.</li>
+            <li>Ambil sesendok adonan kacang dan masukkan ke dalam minyak panas. Goreng hingga bakwan berwarna keemasan dan matang merata. Balik sesekali agar matangnya sempurna.</li>
+            <li>Angkat bakwan kacang yang sudah matang dan tiriskan minyaknya di atas tisu dapur.</li>
+            <li>Sajikan bakwan kacang selagi hangat bersama saus sambal atau cabai rawit hijau sebagai pelengkap.</li>
+        </ol>
+
+        <p>Nikmati <span class="highlight">bakwan kacang</span> buatan Anda yang renyah di luar dan gurih di dalam. Camilan ini sangat cocok untuk menemani waktu santai Anda.</p>
+
+        <h2>Tips Agar Bakwan Lebih Renyah Tahan Lama</h2>
+
+        <p>Untuk mendapatkan bakwan kacang yang renyah tahan lama, perhatikan beberapa tips berikut:</p>
+        <ul>
+            <li>Gunakan perbandingan tepung terigu dan tepung beras yang tepat. Tepung beras akan memberikan tambahan kerenyahan yang signifikan.</li>
+            <li>Pastikan minyak goreng benar-benar panas sebelum memasukkan adonan. Ini membantu bakwan cepat matang di luar dan terbentuk lapisan garing.</li>
+            <li>Jangan menggoreng terlalu banyak adonan sekaligus dalam satu wajan. Hal ini bisa menurunkan suhu minyak dan membuat bakwan menjadi lembek.</li>
+            <li>Setelah digoreng, tiriskan bakwan di atas rak kawat agar uap panasnya bisa keluar dan tidak menumpuk di bagian bawah, yang bisa membuatnya lembek.</li>
+            <li>Jika ingin menyimpan sisa bakwan untuk digoreng lagi, pastikan benar-benar dingin terlebih dahulu.</li>
+        </ul>
+
+        <p>Dengan sedikit perhatian pada teknik menggoreng dan pemilihan bahan, Anda bisa menciptakan bakwan kacang yang selalu renyah dan nikmat kapanpun Anda inginkan.</p>
+
+        <div class="footer">
+            <p>Selamat mencoba resep bakwan kacang ini!</p>
+        </div>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-jagung-renyah-dan-tidak-lembek-tanpa-telur">Resep Bakwan Jagung Renyah Dan Tidak Lembek Tanpa Telur</a></li>
+<li><a href="/bakso-beranak-jumbo">Bakso Beranak Jumbo</a></li>
+<li><a href="/bumbu-bakwan-sayur-jawa">Bumbu Bakwan Sayur Jawa</a></li>
+<li><a href="/harga-bakpia-145-sri-astuti">Harga Bakpia 145 Sri Astuti</a></li>
+<li><a href="/resep-ceker-bakso-mercon">Resep Ceker Bakso Mercon</a></li>
+<li><a href="/bakwan-goreng-resep">Bakwan Goreng Resep</a></li>
+<li><a href="/resep-bakwan-renyah-diluar-lembut-didalam">Resep Bakwan Renyah Diluar Lembut Didalam</a></li>
+<li><a href="/cara-membuat-bakwan-telur">Cara Membuat Bakwan Telur</a></li>
+<li><a href="/bakpia-88">Bakpia 88</a></li>
+<li><a href="/resep-bakwan-jagung-tepung-sajiku">Resep Bakwan Jagung Tepung Sajiku</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

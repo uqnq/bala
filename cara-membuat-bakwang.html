@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #00796b; /* Warna judul yang menenangkan */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #b2dfdb;
+            padding-bottom: 5px;
+            font-size: 22px;
+        }
+        .content-section img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #00796b;
+        }
+        .recipe-steps ol {
+            counter-reset: step-counter;
+        }
+        .recipe-steps li {
+            counter-increment: step-counter;
+            position: relative;
+            padding-left: 30px;
+        }
+        .recipe-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #80cbc4; /* Warna aksen cerah */
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .ingredients-list li::before {
+            content: "•";
+            color: #4db6ac;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Styling untuk SVG */
+        .svg-icon {
+            display: block;
+            margin: 20px auto;
+            width: 100px; /* Sesuaikan ukuran jika perlu */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cara Membuat Bakwan Renyah dan Lezat</h1>
+
+        <div class="content-section">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#00796b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                <path d="M2 12v5l10 5 10-5v-5"></path>
+            </svg>
+            <p>Bakwan, atau sering juga disebut bala-bala, adalah camilan gorengan tradisional Indonesia yang sangat populer. Terbuat dari campuran sayuran yang digoreng dalam adonan tepung, bakwan menawarkan tekstur renyah di luar dan lembut di dalam, dengan cita rasa gurih yang nikmat. Kelezatan bakwan membuatnya cocok dinikmati kapan saja, baik sebagai teman minum teh di sore hari, lauk pendamping, atau sekadar camilan pengganjal perut.</p>
+
+            <p>Membuat bakwan yang sempurna ternyata tidak sulit. Kuncinya terletak pada pemilihan bahan yang segar, komposisi adonan yang tepat, dan teknik menggoreng yang benar. Artikel ini akan memandu Anda langkah demi langkah untuk menghasilkan bakwan yang renyah, gurih, dan disukai keluarga.</p>
+
+            <h2>Bahan-Bahan yang Diperlukan</h2>
+            <p>Untuk membuat bakwan sayur yang lezat, Anda memerlukan bahan-bahan sebagai berikut:</p>
+            <ul class="ingredients-list">
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk menambah kerenyahan)</li>
+                <li>1 batang wortel, iris korek api halus</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>1 buah jagung manis, pipil</li>
+                <li>50 gram tauge (opsional)</li>
+                <li>2 batang daun bawang, iris halus</li>
+                <li>Air secukupnya (sekitar 200-250 ml atau sesuai kebutuhan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+
+            <h3>Bumbu Halus:</h3>
+            <ul class="ingredients-list">
+                <li>3 siung bawang putih</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh garam (sesuaikan selera)</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+            </ul>
+
+            <h2>Langkah-Langkah Membuat Bakwan Renyah</h2>
+            <p>Ikuti langkah-langkah berikut untuk menciptakan bakwan yang sempurna:</p>
+            <ol class="recipe-steps">
+                <li><strong>Persiapan Sayuran:</strong> Cuci bersih semua sayuran. Iris wortel tipis seperti korek api, iris kol tipis, pipil jagung manis, dan iris daun bawang. Jika menggunakan tauge, pastikan sudah dicuci bersih dan tiriskan.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam wadah, campurkan tepung terigu dan tepung beras (jika pakai). Masukkan bumbu halus (bawang putih, ketumbar, merica, garam, dan kaldu bubuk). Aduk rata.</li>
+                <li><strong>Menambahkan Air:</strong> Tuang air sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang kental namun masih bisa mengalir. Jangan terlalu encer agar bakwan tidak lembek, dan jangan terlalu kental agar mudah menempel pada sayuran.</li>
+                <li><strong>Mencampur Sayuran:</strong> Masukkan irisan wortel, kol, pipilan jagung, dan irisan daun bawang ke dalam adonan tepung. Jika menggunakan tauge, masukkan terakhir agar tidak mudah hancur. Aduk perlahan hingga semua sayuran terbalut rata oleh adonan.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng dalam wajan dengan api sedang cenderung besar. Pastikan minyak sudah benar-benar panas agar bakwan langsung kokoh dan renyah.</li>
+                <li><strong>Membentuk dan Menggoreng:</strong> Ambil satu sendok makan adonan beserta isian sayuran, lalu masukkan perlahan ke dalam minyak panas. Goreng beberapa buah bakwan sekaligus, jangan terlalu penuh agar matangnya merata.</li>
+                <li><strong>Membalik dan Mematangkan:</strong> Goreng hingga sisi bawah bakwan berwarna kuning kecoklatan dan kokoh. Balik bakwan dan goreng sisi lainnya hingga matang sempurna dan berwarna keemasan.</li>
+                <li><strong>Meniriskan:</strong> Angkat bakwan yang sudah matang dan tiriskan minyaknya menggunakan saringan atau letakkan di atas tisu dapur untuk menyerap sisa minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan siap disajikan selagi hangat. Nikmati bersama cabai rawit hijau, saus sambal, atau lontong sebagai teman bersantap.</li>
+            </ol>
+
+            <h2>Tips untuk Bakwan yang Lebih Renyah</h2>
+            <p>Agar bakwan Anda selalu renyah dan menggoda selera, perhatikan tips berikut:</p>
+            <ul>
+                <li><strong>Tepung Beras:</strong> Menambahkan sedikit tepung beras ke dalam adonan dapat memberikan ekstra kerenyahan.</li>
+                <li><strong>Adonan Jangan Terlalu Kental:</strong> Adonan yang terlalu kental akan membuat bakwan terasa berat dan kurang renyah.</li>
+                <li><strong>Minyak Panas:</strong> Pastikan minyak benar-benar panas saat menggoreng. Minyak yang kurang panas akan membuat bakwan menyerap banyak minyak dan menjadi lembek.</li>
+                <li><strong>Jangan Terlalu Sering Dibalik:</strong> Goreng satu sisi hingga kokoh sebelum dibalik untuk menghindari bakwan pecah.</li>
+                <li><strong>Goreng Secukupnya:</strong> Jangan menggoreng terlalu banyak bakwan dalam satu waktu karena akan menurunkan suhu minyak, yang berakibat bakwan menjadi kurang renyah.</li>
+                <li><strong>Tiriskan dengan Baik:</strong> Tiriskan bakwan hingga minyaknya benar-benar hilang untuk menjaga kerenyahannya.</li>
+            </ul>
+
+            <p>Dengan mengikuti panduan ini, Anda kini dapat membuat bakwan sendiri di rumah dengan hasil yang memuaskan. Selamat mencoba dan menikmati kelezatan bakwan buatan sendiri!</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2023</p>
+        </footer>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-jagung-sarang-oci">Bakwan Jagung Sarang Oci</a></li>
+<li><a href="/bakwan-tempe-pedas">Bakwan Tempe Pedas</a></li>
+<li><a href="/pia-cap-mangkok-harga">Pia Cap Mangkok Harga</a></li>
+<li><a href="/bakpia-kering-kacang-hijau">Bakpia Kering Kacang Hijau</a></li>
+<li><a href="/bakpao-selatan">Bakpao Selatan</a></li>
+<li><a href="/contoh-bakteri-dalam-darah">Contoh Bakteri Dalam Darah</a></li>
+<li><a href="/bakpia-kencana-cokroaminoto">Bakpia Kencana Cokroaminoto</a></li>
+<li><a href="/resep-bakwan-goreng-sayur">Resep Bakwan Goreng Sayur</a></li>
+<li><a href="/bakwan">Bakwan</a></li>
+<li><a href="/bakpao-kentang">Bakpao Kentang</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

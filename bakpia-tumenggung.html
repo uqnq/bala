@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakpia Tumenggung: Kenikmatan Khas Yogyakarta</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --main-bg-color: #e0f7fa; /* Biru muda sejuk */
+            --text-color: #004d40; /* Hijau tua gelap untuk kontras */
+            --accent-color: #00bcd4; /* Cyan cerah untuk aksen */
+            --secondary-text-color: #424242; /* Abu-abu gelap untuk teks sekunder */
+            --card-bg-color: #ffffff; /* Putih bersih untuk kartu */
+            --shadow-color: rgba(0, 77, 64, 0.1); /* Bayangan hijau tua transparan */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: var(--card-bg-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        h1, h2, h3 {
+            color: var(--accent-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        img.hero-image {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--secondary-text-color);
+            text-align: justify;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .flavor-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .flavor-item {
+            background-color: var(--main-bg-color);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 77, 64, 0.08);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .flavor-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .flavor-item h3 {
+            color: var(--text-color);
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .flavor-item p {
+            font-size: 0.95em;
+            color: var(--secondary-text-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: var(--secondary-text-color);
+        }
+
+        /* SVG Icon */
+        .svg-icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: currentColor;
+            margin-right: 5px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            img.hero-image {
+                max-width: 100%;
+            }
+            .flavor-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bakpia Tumenggung: Kenikmatan Sejati dari Jantung Yogyakarta</h1>
+        </header>
+
+        <!-- SVG Image -->
+        <svg class="hero-image" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakpia yang lezat dengan sentuhan tradisional Yogyakarta">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FFEB3B;stop-opacity:1" /> <!-- Kuning cerah -->
+                    <stop offset="100%" style="stop-color:#FFC107;stop-opacity:1" /> <!-- Kuning keemasan -->
+                </linearGradient>
+                 <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#76FF03;stop-opacity:1" /> <!-- Hijau terang -->
+                    <stop offset="100%" style="stop-color:#1DE9B6;stop-opacity:1" /> <!-- Teal terang -->
+                </linearGradient>
+            </defs>
+            <rect width="600" height="300" rx="15" ry="15" fill="var(--main-bg-color)"/>
+
+            <!-- Bentuk Bakpia Kuno -->
+            <path d="M 100 150 q 50 -70 100 0 q 50 70 100 0 q 50 -70 100 0 q 50 70 100 0" fill="url(#grad1)" stroke="var(--accent-color)" stroke-width="3"/>
+            <circle cx="150" cy="150" r="25" fill="var(--accent-color)" />
+            <circle cx="250" cy="150" r="25" fill="var(--accent-color)" />
+            <circle cx="350" cy="150" r="25" fill="var(--accent-color)" />
+            <circle cx="450" cy="150" r="25" fill="var(--accent-color)" />
+
+            <!-- Elemen Tradisional -->
+            <polygon points="50,280 150,280 100,250" fill="var(--accent-color)"/>
+            <path d="M 500 280 q 20 -20 40 0" fill="none" stroke="var(--accent-color)" stroke-width="3"/>
+            <text x="300" y="290" font-family="Arial, sans-serif" font-size="18" fill="#004d40" text-anchor="middle" font-weight="bold">YOGYAKARTA</text>
+        </svg>
+
+
+        <p>Yogyakarta, kota yang kaya akan budaya dan sejarah, tidak hanya menawarkan pesona wisata yang memukau, tetapi juga kekayaan kuliner yang menggugah selera. Salah satu ikon kuliner yang tak boleh dilewatkan saat berkunjung ke kota istimewa ini adalah <span class="highlight">bakpia</span>. Dan ketika berbicara tentang bakpia berkualitas, nama <span class="highlight">Bakpia Tumenggung</span> selalu muncul sebagai pilihan utama para penikmatnya.</p>
+
+        <p>Bakpia Tumenggung telah menjelma menjadi legenda di dunia bakpia. Dengan resep turun-temurun yang dijaga ketat dan komitmen terhadap kualitas bahan baku, setiap gigitan bakpia dari merek ini menghadirkan pengalaman rasa yang otentik dan memuaskan. Keistimewaan Bakpia Tumenggung terletak pada keseimbangan sempurna antara kulit bakpia yang renyah di luar namun lembut di dalam, serta isian yang melimpah dan beraroma khas.</p>
+
+        <h2>Ragam Pilihan Rasa yang Menggoda</h2>
+
+        <p>Salah satu daya tarik utama Bakpia Tumenggung adalah variasi rasa yang ditawarkannya. Mulai dari rasa tradisional yang klasik hingga inovasi rasa modern, semuanya tersaji untuk memanjakan lidah Anda. Pilihan-pilihan ini menjadikan Bakpia Tumenggung cocok dinikmati oleh semua kalangan, dari mereka yang menyukai cita rasa klasik hingga yang penasaran dengan kreasi rasa baru.</p>
+
+        <div class="flavor-list">
+            <div class="flavor-item">
+                <h3>Kacang Hijau Klasik</h3>
+                <p>Rasa autentik yang menjadi ciri khas bakpia sejak dulu, dengan isian kacang hijau halus yang manis dan legit.</p>
+            </div>
+            <div class="flavor-item">
+                <h3>Keju Modern</h3>
+                <p>Perpaduan unik antara gurihnya keju dan manisnya adonan bakpia, menciptakan cita rasa yang tak terlupakan.</p>
+            </div>
+            <div class="flavor-item">
+                <h3>Cokelat Melimpah</h3>
+                <p>Bagi pecinta cokelat, isian cokelat pekat yang lumer di mulut akan memberikan sensasi kenikmatan tiada tara.</p>
+            </div>
+             <div class="flavor-item">
+                <h3>Ubi Ungu Eksotis</h3>
+                <p>Warna dan rasa alami dari ubi ungu yang manis alami, memberikan sentuhan kesehatan dan keunikan tersendiri.</p>
+            </div>
+             <div class="flavor-item">
+                <h3>Durian Premium</h3>
+                <p>Bagi para pemberani rasa durian, varian ini menawarkan aroma dan rasa durian asli yang kuat dan otentik.</p>
+            </div>
+        </div>
+
+        <h2>Kualitas dan Keaslian yang Terjamin</h2>
+
+        <p>Bakpia Tumenggung tidak hanya menawarkan rasa yang luar biasa, tetapi juga menjunjung tinggi kualitas dan keaslian produknya. Pemilihan bahan baku dilakukan dengan sangat hati-hati, mulai dari kacang hijau pilihan, tepung berkualitas tinggi, hingga penggunaan gula murni tanpa pemanis buatan yang berlebihan. Proses produksi yang higienis dan dikelola oleh tenaga ahli memastikan setiap bakpia yang dihasilkan aman dan lezat untuk dikonsumsi.</p>
+
+        <p>Keaslian Bakpia Tumenggung tercermin dari cita rasa yang konsisten dari waktu ke waktu. Ini adalah hasil dari dedikasi untuk mempertahankan resep warisan sembari terus berinovasi dalam penyempurnaan. Ketika Anda memilih Bakpia Tumenggung, Anda tidak hanya membeli sebuah camilan, tetapi juga membawa pulang sepotong kebanggaan kuliner Yogyakarta yang asli.</p>
+
+        <h2>Oleh-Oleh Khas yang Tak Terlupakan</h2>
+
+        <p>Membawa pulang oleh-oleh dari Yogyakarta rasanya belum lengkap tanpa menyertakan Bakpia Tumenggung. Kemasan yang menarik dan varian rasa yang beragam menjadikannya pilihan sempurna untuk dibagikan kepada keluarga, kerabat, atau kolega. Kelezatan bakpia ini akan menjadi kenangan manis dari perjalanan Anda di Yogyakarta, membangkitkan kerinduan untuk kembali mencicipinya.</p>
+
+        <p>Jadi, ketika Anda berada di Yogyakarta atau merindukan cita rasa otentik bakpia, jangan ragu untuk menjadikan <span class="highlight">Bakpia Tumenggung</span> sebagai pilihan utama Anda. Nikmati setiap kelezatannya dan rasakan sendiri mengapa bakpia ini begitu dicintai.</p>
+
+        <footer>
+            Terima kasih telah mengunjungi halaman ini. Nikmati kelezatan Bakpia Tumenggung!
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-bintang-malang">Bakwan Bintang Malang</a></li>
+<li><a href="/bakwan-kungkung">Bakwan Kungkung</a></li>
+<li><a href="/bakso-beranak-69">Bakso Beranak 69</a></li>
+<li><a href="/bakpao-pandan">Bakpao Pandan</a></li>
+<li><a href="/bakpao-aeng-cemara-asri">Bakpao Aeng Cemara Asri</a></li>
+<li><a href="/bakpao-tanpa-ulen">Bakpao Tanpa Ulen</a></li>
+<li><a href="/bakwan-teri-asin">Bakwan Teri Asin</a></li>
+<li><a href="/cara-membuat-isian-bakpao-coklat">Cara Membuat Isian Bakpao Coklat</a></li>
+<li><a href="/cara-membuat-bakpao-empuk-dan-lembut">Cara Membuat Bakpao Empuk Dan Lembut</a></li>
+<li><a href="/cara-buat-goreng-bakwan">Cara Buat Goreng Bakwan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Sayur Krispi Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #4CAF50; /* Hijau sejuk */
+            --color-secondary: #FFC107; /* Kuning cerah */
+            --color-accent: #8BC34A; /* Hijau muda cerah */
+            --color-background: #F1F8E9; /* Hijau pucat */
+            --color-text: #333;
+            --color-white: #fff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--color-white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--color-accent);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .ingredients, .instructions {
+            margin-bottom: 25px;
+        }
+
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: var(--color-secondary);
+            font-weight: bold;
+        }
+
+        .tips {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .tips p {
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .tips p:last-child {
+            margin-bottom: 0;
+        }
+
+        .recipe-details {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .detail-item {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .detail-item span {
+            display: block;
+            font-weight: bold;
+            color: var(--color-primary);
+            font-size: 1.1em;
+        }
+
+        /* SVG Icon */
+        .icon-vegetable {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .recipe-details {
+                flex-direction: column;
+                align-items: center;
+            }
+            .detail-item {
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 5px;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Sayur Krispi Menggoda</h1>
+
+        <!-- SVG Gambar Bakwan Sayur -->
+        <svg class="hero-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--color-accent);stop-opacity:0.8" />
+                    <stop offset="100%" style="stop-color:var(--color-primary);stop-opacity:0.6" />
+                </linearGradient>
+            </defs>
+            <rect width="400" height="300" rx="15" fill="url(#grad-bg)" />
+
+            <!-- Bakwan 1 -->
+            <ellipse cx="120" cy="150" rx="40" ry="35" fill="#FFD54F" stroke="#E6B32E" stroke-width="3"/>
+            <path d="M 120 115 Q 100 100 90 80 T 85 50 Q 95 35 110 40 T 130 60 Q 140 80 130 100 T 120 115 Z" fill="#FFE082" stroke="#E6B32E" stroke-width="2"/>
+            <circle cx="90" cy="80" r="15" fill="#C8E6C9" />
+            <circle cx="110" cy="65" r="12" fill="#C8E6C9" />
+            <circle cx="130" cy="85" r="10" fill="#C8E6C9" />
+
+            <!-- Bakwan 2 -->
+            <ellipse cx="250" cy="170" rx="45" ry="40" fill="#FFD54F" stroke="#E6B32E" stroke-width="3"/>
+            <path d="M 250 130 Q 230 110 220 90 T 215 60 Q 225 45 240 50 T 260 70 Q 270 90 260 110 T 250 130 Z" fill="#FFE082" stroke="#E6B32E" stroke-width="2"/>
+            <circle cx="220" cy="90" r="18" fill="#F0F4C3" />
+            <circle cx="240" cy="75" r="15" fill="#F0F4C3" />
+            <circle cx="260" cy="95" r="13" fill="#F0F4C3" />
+
+            <!-- Sayuran (simbolik) -->
+            <path d="M 140 170 l 10 20 l -15 5 z" fill="#81C784"/>
+            <path d="M 160 160 l 5 15 l -10 10 z" fill="#81C784"/>
+            <path d="M 280 190 l 15 5 l -5 15 z" fill="#81C784"/>
+            <path d="M 300 180 l 10 15 l -15 5 z" fill="#81C784"/>
+
+            <!-- Awan Minyak (simbolik) -->
+            <circle cx="80" cy="220" r="20" fill="#E0E0E0" opacity="0.5"/>
+            <circle cx="95" cy="240" r="15" fill="#E0E0E0" opacity="0.5"/>
+            <circle cx="60" cy="245" r="18" fill="#E0E0E0" opacity="0.5"/>
+
+            <text x="50%" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#757575">Bakwan Krispi</text>
+        </svg>
+
+        <p>Siapa yang tidak suka <span class="highlight">bakwan sayur krispi</span>? Camilan renyah dan gurih ini selalu menjadi primadona di berbagai suasana, mulai dari teman ngopi santai, pelengkap hidangan utama, hingga jajanan saat berkumpul bersama keluarga. Membuat bakwan sayur yang sempurna, yaitu renyah di luar dan lembut di dalam, ternyata tidaklah sulit. Dengan resep yang tepat dan sedikit sentuhan rahasia, Anda bisa menyajikan bakwan sayur krispi seenak buatan restoran.</p>
+
+        <div class="recipe-details">
+            <div class="detail-item">
+                <span class="icon-vegetable">🥕</span> Waktu Persiapan
+                <br>15 Menit
+            </div>
+            <div class="detail-item">
+                <span class="icon-vegetable">🍳</span> Waktu Memasak
+                <br>20 Menit
+            </div>
+            <div class="detail-item">
+                <span class="icon-vegetable">👨‍🍳</span> Porsi
+                <br>4-6 Orang
+            </div>
+        </div>
+
+        <h2>Bahan-Bahan</h2>
+        <div class="ingredients">
+            <ul>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (ini kunci kerenyahannya!)</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional, untuk rasa lebih gurih)</li>
+                <li>1 butir telur</li>
+                <li>200-250 ml air dingin (gunakan air sangat dingin untuk hasil terbaik)</li>
+                <li>1 buah wortel ukuran sedang, iris tipis korek api</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>50 gram tauge, siangi</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat</h2>
+        <div class="instructions">
+            <ol>
+                <li>Dalam wadah, campurkan tepung terigu, tepung beras, garam, merica bubuk, dan kaldu bubuk. Aduk rata.</li>
+                <li>Masukkan telur ke dalam campuran tepung, lalu kocok lepas.</li>
+                <li>Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan licin dan tidak bergerindil. Kekentalan adonan harus pas, tidak terlalu encer dan tidak terlalu kental.</li>
+                <li>Masukkan irisan wortel, kol, tauge, dan daun bawang ke dalam adonan. Aduk rata hingga semua sayuran terbalut adonan.</li>
+                <li>Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li>Ambil satu sendok sayur adonan, lalu tuangkan perlahan ke dalam minyak panas. Ratakan sedikit agar bentuknya tidak terlalu tebal.</li>
+                <li>Goreng bakwan hingga berwarna cokelat keemasan dan matang sempurna di kedua sisinya. Pastikan seluruh bagian bakwan terendam minyak agar matang merata dan menjadi krispi.</li>
+                <li>Angkat bakwan dan tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak. Lakukan hal yang sama hingga semua adonan habis.</li>
+                <li>Sajikan bakwan sayur krispi selagi hangat dengan sambal favorit Anda, cabai rawit, atau acar.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h2>Tips Agar Bakwan Makin Krispi</h2>
+            <p><span class="highlight">Kunci Utama</span>: Penggunaan tepung beras dan air es adalah rahasia utama untuk mendapatkan tekstur bakwan yang super krispi dan tahan lama.</p>
+            <p><span class="highlight">Minyak Panas</span>: Pastikan minyak benar-benar panas sebelum memasukkan adonan. Jika minyak kurang panas, bakwan akan menyerap banyak minyak dan menjadi lembek.</p>
+            <p><span class="highlight">Jangan Terlalu Penuh</span>: Jangan menggoreng bakwan terlalu banyak dalam satu waktu agar suhu minyak tidak turun drastis dan bakwan bisa matang merata.</p>
+            <p><span class="highlight">Tiriskan Dengan Benar</span>: Meniriskan bakwan di atas rak kawat akan membantu sirkulasi udara sehingga bakwan tetap krispi dan tidak lembab.</p>
+        </div>
+
+        <p>Membuat bakwan sayur krispi ini adalah cara menyenangkan untuk menikmati sayuran. Dengan perpaduan rasa gurih dari adonan dan manis alami dari sayuran segar, serta tekstur yang renyah menggoda, bakwan ini pasti akan menjadi favorit keluarga. Selamat mencoba resep <span class="highlight">bakwan sayur krispi</span> ini dan nikmati kerenyahannya!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bakwan-oncom">Resep Bakwan Oncom</a></li>
+<li><a href="/bakpia-monjali">Bakpia Monjali</a></li>
+<li><a href="/cara-mengobati-balanitis-secara-alami">Cara Mengobati Balanitis Secara Alami</a></li>
+<li><a href="/harga-bakpao-lompobattang">Harga Bakpao Lompobattang</a></li>
+<li><a href="/bakpia-tugu-di-mall-malioboro">Bakpia Tugu Di Mall Malioboro</a></li>
+<li><a href="/cara-mencegah-penyakit-balanitis">Cara Mencegah Penyakit Balanitis</a></li>
+<li><a href="/harga-bakso-cak-kar">Harga Bakso Cak Kar</a></li>
+<li><a href="/harga-cetakan-bakpao">Harga Cetakan Bakpao</a></li>
+<li><a href="/bakso-mercon-mas-gendut">Bakso Mercon Mas Gendut</a></li>
+<li><a href="/resep-buat-bakwan-enak-dan-gurih">Resep Buat Bakwan Enak Dan Gurih</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

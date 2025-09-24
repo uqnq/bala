@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opor Ayam Santan: Resep Mudah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang biru muda */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 800px;
+            width: 95%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        h1 {
+            color: #00796b; /* Warna hijau toska untuk judul */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #009688; /* Warna hijau teal untuk subjudul */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.6em;
+            border-bottom: 2px solid #b2dfdb; /* Garis bawah berwarna hijau muda */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #00796b;
+        }
+        .hero-image {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .recipe-section {
+            background-color: #f0fefc; /* Latar belakang sedikit lebih terang untuk bagian resep */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 25px auto;
+            padding: 12px 25px;
+            background-color: #009688; /* Warna tombol hijau teal */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .cta-button:hover {
+            background-color: #00796b; /* Warna saat hover */
+        }
+        /* Media query untuk tampilan mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero-image">
+            <!-- SVG Image: Opor Ayam Santan -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none" stroke="#00796b" stroke-width="2">
+                <defs>
+                    <linearGradient id="gradient-ayam" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffcc80; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffe0b2; stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="gradient-santan" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#e0f2f1; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#b2dfdb; stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Ayam -->
+                <path d="M100,150 Q150,100 200,150 Q150,200 100,150 Z" fill="url(#gradient-ayam)" stroke="none"/>
+                <path d="M200,150 Q250,100 300,150 Q250,200 200,150 Z" fill="url(#gradient-ayam)" stroke="none"/>
+                <path d="M300,150 Q350,100 400,150 Q350,200 300,150 Z" fill="url(#gradient-ayam)" stroke="none"/>
+                <path d="M400,150 Q450,100 500,150 Q450,200 400,150 Z" fill="url(#gradient-ayam)" stroke="none"/>
+
+                <!-- Kuah Santan -->
+                <ellipse cx="300" cy="250" rx="280" ry="50" fill="url(#gradient-santan)" opacity="0.8"/>
+
+                <!-- Bumbu (simbol sederhana) -->
+                <circle cx="150" cy="120" r="5" fill="#ff8f00" opacity="0.7"/>
+                <circle cx="250" cy="80" r="5" fill="#ef6c00" opacity="0.7"/>
+                <circle cx="350" cy="80" r="5" fill="#ef6c00" opacity="0.7"/>
+                <circle cx="450" cy="120" r="5" fill="#ff8f00" opacity="0.7"/>
+                <rect x="100" y="100" width="10" height="10" fill="#d84315" opacity="0.6"/>
+                <rect x="500" y="100" width="10" height="10" fill="#d84315" opacity="0.6"/>
+            </svg>
+            <!-- Alt text untuk gambar SVG -->
+            <p style="font-size: 0.8em; color: #555;">Ilustrasi lezatnya opor ayam dengan kuah santan kental.</p>
+        </div>
+
+        <h1>Cara Membuat Opor Ayam Santan</h1>
+
+        <p>Opor ayam santan adalah salah satu hidangan klasik Indonesia yang selalu dinantikan, terutama saat hari raya. Perpaduan ayam yang lembut dengan kuah santan gurih dan kaya rempah menjadikannya favorit banyak orang. Membuat opor ayam santan di rumah ternyata tidak sesulit yang dibayangkan. Dengan resep yang tepat dan langkah-langkah yang jelas, Anda bisa menyajikan hidangan istimewa ini untuk keluarga tercinta.</p>
+
+        <h2>Mengapa Opor Ayam Begitu Istimewa?</h2>
+        <p>Keistimewaan opor ayam terletak pada proses pembuatannya yang menggunakan beragam rempah pilihan seperti lengkuas, serai, daun salam, dan ketumbar. Santan kelapa memberikan rasa gurih dan tekstur kental yang membalut setiap potongan ayam. Aroma harum yang menguar saat dimasak pun mampu menggugah selera siapa saja yang menciumnya.</p>
+
+        <h2>Bahan-Bahan yang Dibutuhkan</h2>
+        <p>Untuk membuat opor ayam santan yang lezat, siapkan bahan-bahan berikut:</p>
+        <ul>
+            <li>1 ekor ayam, potong menjadi 8-10 bagian</li>
+            <li>2 batang serai, memarkan</li>
+            <li>4 lembar daun salam</li>
+            <li>3 cm lengkuas, memarkan</li>
+            <li>2 cm jahe, memarkan</li>
+            <li>1.5 liter santan (dari 1 butir kelapa atau santan instan 200ml + air)</li>
+            <li>Garam secukupnya</li>
+            <li>Gula pasir secukupnya (opsional, untuk menyeimbangkan rasa)</li>
+            <li>Minyak goreng secukupnya untuk menumis</li>
+        </ul>
+
+        <h2>Bumbu Halus</h2>
+        <p>Haluskan bahan-bahan berikut:</p>
+        <ul>
+            <li>8 siung bawang merah</li>
+            <li>4 siung bawang putih</li>
+            <li>3 butir kemiri, sangrai</li>
+            <li>1 sendok teh ketumbar bubuk</li>
+            <li>½ sendok teh merica bubuk</li>
+            <li>½ sendok teh jintan bubuk (opsional)</li>
+            <li>3 cm kunyit, bakar terlebih dahulu</li>
+        </ul>
+
+        <div class="recipe-section">
+            <h2>Langkah-Langkah Membuat Opor Ayam Santan</h2>
+            <p>Ikuti panduan ini untuk menciptakan opor ayam yang sempurna:</p>
+            <ol>
+                <li><strong>Persiapan Ayam:</strong> Cuci bersih potongan ayam, lumuri dengan sedikit air jeruk nipis jika suka (untuk mengurangi bau amis), lalu tiriskan.</li>
+                <li><strong>Menumis Bumbu:</strong> Panaskan sedikit minyak goreng dalam wajan. Tumis bumbu halus hingga harum dan matang. Masukkan serai, daun salam, lengkuas, dan jahe. Aduk rata hingga rempah layu dan aromanya keluar.</li>
+                <li><strong>Memasak Ayam:</strong> Masukkan potongan ayam ke dalam tumisan bumbu. Aduk rata hingga seluruh permukaan ayam terbalut bumbu. Masak sebentar hingga ayam berubah warna.</li>
+                <li><strong>Menambahkan Santan:</strong> Tuangkan santan sedikit demi sedikit sambil terus diaduk agar santan tidak pecah. Masak dengan api sedang cenderung kecil.</li>
+                <li><strong>Proses Memasak Opor:</strong> Setelah mendidih, kecilkan api. Bumbui dengan garam secukupnya dan gula pasir jika menggunakan. Aduk perlahan.</li>
+                <li><strong>Mengentalkan Kuah:</strong> Terus masak opor ayam dengan api kecil hingga bumbu meresap sempurna, ayam empuk, dan kuah mengental sesuai selera. Jangan lupa untuk sesekali mengaduk agar dasar wajan tidak gosong.</li>
+                <li><strong>Koreksi Rasa:</strong> Cicipi kuah opor. Sesuaikan rasa garam dan manisnya.</li>
+                <li><strong>Sajikan:</strong> Angkat opor ayam yang sudah matang. Sajikan selagi hangat dengan nasi putih, lontong, atau ketupat. Taburan bawang goreng akan menambah kenikmatan tersendiri.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan untuk Opor yang Lebih Lezat</h2>
+        <p>Beberapa trik sederhana bisa membuat opor ayam Anda semakin istimewa:</p>
+        <ul>
+            <li><strong>Pilih Ayam Berkualitas:</strong> Gunakan ayam kampung atau ayam pejantan untuk hasil yang lebih gurih dan tekstur yang lebih kenyal.</li>
+            <li><strong>Santan Segar:</strong> Menggunakan santan segar dari parutan kelapa akan memberikan rasa yang lebih otentik dan kaya.</li>
+            <li><strong>Jangan Terburu-buru:</strong> Proses memasak dengan api kecil hingga bumbu meresap sempurna adalah kunci kelezatan opor.</li>
+            <li><strong>Variasi:</strong> Anda bisa menambahkan telur rebus ke dalam opor saat proses memasak agar lebih variatif.</li>
+        </ul>
+
+        <p>Menyajikan opor ayam santan yang lezat di meja makan bukan lagi impian. Dengan panduan ini, Anda siap menciptakan kehangatan dan kebahagiaan keluarga melalui hidangan istimewa ini. Selamat mencoba!</p>
+
+        <a href="#" class="cta-button">Coba Resep Ini Sekarang!</a>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-bikin-perkedel-jagung-manis">Cara Bikin Perkedel Jagung Manis</a></li>
+<li><a href="/bakteri-jahat-dan-bakteri-baik">Bakteri Jahat Dan Bakteri Baik</a></li>
+<li><a href="/bakpia-bw">Bakpia Bw</a></li>
+<li><a href="/sultan-tatlisi-karisik-baklava">Sultan Tatlisi Karisik Baklava</a></li>
+<li><a href="/bakwan-kelor">Bakwan Kelor</a></li>
+<li><a href="/cara-membuat-ote-ote-renyah-dan-gurih">Cara Membuat Ote Ote Renyah Dan Gurih</a></li>
+<li><a href="/bakso-beranak-citra-raya-cikupa">Bakso Beranak Citra Raya Cikupa</a></li>
+<li><a href="/resep-bakwan-empuk-tanpa-telur">Resep Bakwan Empuk Tanpa Telur</a></li>
+<li><a href="/bakpiamutiara">Bakpiamutiara</a></li>
+<li><a href="/resep-bakwan-goreng-ayam">Resep Bakwan Goreng Ayam</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

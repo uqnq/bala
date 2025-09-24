@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Buat Bakwan Tahu Telur Enak dan Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna dasar biru muda yang sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna hijau toska cerah untuk judul */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #004d40; /* Warna hijau toska lebih gelap untuk sub-judul */
+            border-bottom: 2px solid #80cbc4; /* Garis bawah warna hijau muda */
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients, .steps {
+            background-color: #f0f8ff; /* Warna latar sedikit berbeda untuk bahan dan langkah */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .ingredients h3, .steps h3 {
+            color: #00695c;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #d32f2f; /* Warna merah cerah untuk penekanan */
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Cara Buat Bakwan Tahu Telur Lezat untuk Camilan Sore</h1>
+
+        <div class="image-container">
+            <!-- SVG Gambar Bakwan Tahu Telur -->
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffccbc;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <!-- Background Dough -->
+                <rect x="10" y="20" width="380" height="230" rx="15" fill="url(#grad1)" filter="url(#shadow)"/>
+
+                <!-- Bakwan 1 -->
+                <path d="M 70 100 Q 60 120 80 140 T 120 130 Q 130 110 100 90 T 70 100 Z" fill="#fff9c4" stroke="#fbc02d" stroke-width="2"/>
+                <circle cx="90" cy="115" r="10" fill="#ffe0b2" stroke="#f57c00" stroke-width="1"/>
+
+                <!-- Bakwan 2 -->
+                <path d="M 150 90 Q 140 110 160 130 T 200 120 Q 210 100 180 80 T 150 90 Z" fill="#fff9c4" stroke="#fbc02d" stroke-width="2"/>
+                <circle cx="170" cy="105" r="12" fill="#ffe0b2" stroke="#f57c00" stroke-width="1"/>
+
+                <!-- Bakwan 3 -->
+                <path d="M 230 110 Q 220 130 240 150 T 280 140 Q 290 120 260 100 T 230 110 Z" fill="#fff9c4" stroke="#fbc02d" stroke-width="2"/>
+                <circle cx="250" cy="125" r="8" fill="#ffe0b2" stroke="#f57c00" stroke-width="1"/>
+
+                <!-- Tahu Potongan -->
+                <rect x="90" y="160" width="40" height="30" fill="#e0e0e0" stroke="#757575" stroke-width="1.5" rx="3"/>
+                <rect x="160" y="170" width="45" height="35" fill="#e0e0e0" stroke="#757575" stroke-width="1.5" rx="3"/>
+                <rect x="240" y="155" width="50" height="30" fill="#e0e0e0" stroke="#757575" stroke-width="1.5" rx="3"/>
+
+                <!-- Telur Orak-arik -->
+                <g transform="translate(120, 190) rotate(15)">
+                    <ellipse cx="0" cy="0" rx="20" ry="15" fill="#fffde7" stroke="#ffeb3b" stroke-width="1.5"/>
+                    <path d="M -10 -5 Q 0 5 10 0 T -10 -5 Z" fill="#fffde7" stroke="#ffeb3b" stroke-width="1.5"/>
+                </g>
+                 <g transform="translate(190, 200) rotate(-10)">
+                    <ellipse cx="0" cy="0" rx="22" ry="17" fill="#fffde7" stroke="#ffeb3b" stroke-width="1.5"/>
+                    <path d="M -12 -7 Q 0 7 12 0 T -12 -7 Z" fill="#fffde7" stroke="#ffeb3b" stroke-width="1.5"/>
+                </g>
+
+                <!-- Deskripsi Singkat -->
+                <text x="200" y="40" font-family="Segoe UI" font-size="14" fill="#00695c" text-anchor="middle" font-weight="bold">Bakwan Tahu Telur</text>
+                <text x="200" y="60" font-family="Segoe UI" font-size="12" fill="#00796b" text-anchor="middle">Camilan Gurih & Bergizi</text>
+            </svg>
+            <p style="font-size: 0.9em; color: #666;">Ilustrasi Bakwan Tahu Telur yang menggugah selera</p>
+        </div>
+
+        <p>Siapa yang tidak suka dengan camilan renyah dan gurih? Bakwan tahu telur adalah salah satu primadona camilan rumahan yang digemari banyak orang. Perpaduan tekstur lembut tahu, kenyal telur, dan balutan tepung krispi menjadikannya pilihan sempurna untuk teman minum teh atau kopi di sore hari. Membuatnya pun ternyata tidak sesulit yang dibayangkan. Dengan beberapa bahan sederhana dan langkah yang tepat, Anda bisa menciptakan bakwan tahu telur yang lezat dan memuaskan.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan Utama</h2>
+            <ul>
+                <li>2 buah tahu putih ukuran sedang, haluskan</li>
+                <li>1 butir telur ayam</li>
+                <li>2 batang daun bawang, iris halus</li>
+                <li>1 batang seledri, iris halus (opsional, untuk aroma lebih segar)</li>
+                <li>1 buah wortel kecil, parut halus (opsional, untuk tambahan warna dan nutrisi)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+            <h3>Bumbu Halus:</h3>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>1/2 sendok teh merica butiran</li>
+                <li>Garam secukupnya</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+            </ul>
+            <h3>Bahan Adonan Tepung:</h3>
+            <ul>
+                <li>4-5 sendok makan tepung terigu serbaguna</li>
+                <li>2 sendok makan tepung beras (agar lebih renyah)</li>
+                <li>Air secukupnya (sekitar 50-75 ml, sesuaikan kekentalan)</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Langkah-Langkah Membuat Bakwan Tahu Telur</h2>
+            <ol>
+                <li><strong>Persiapan Tahu:</strong> Pastikan tahu benar-benar halus. Anda bisa menghaluskannya dengan garpu atau ulekan. Tiriskan sedikit jika tahu terlalu basah untuk menghindari adonan terlalu lembek.</li>
+                <li><strong>Campurkan Bahan Isian:</strong> Dalam wadah, campurkan tahu yang sudah dihaluskan, telur, irisan daun bawang, seledri (jika pakai), dan wortel parut (jika pakai).</li>
+                <li><strong>Tambahkan Bumbu Halus:</strong> Ulek bawang putih, merica, garam, dan kaldu bubuk hingga halus. Masukkan bumbu halus ke dalam campuran tahu, aduk rata hingga semua bahan tercampur sempurna. Cicipi sedikit adonan untuk memastikan rasa sudah pas.</li>
+                <li><strong>Buat Adonan Tepung:</strong> Dalam wadah terpisah, campurkan tepung terigu dan tepung beras. Tuangkan air sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer atau terlalu kental. Teksturnya seharusnya cukup untuk melapisi tahu.</li>
+                <li><strong>Campurkan Semua:</strong> Masukkan adonan tahu ke dalam adonan tepung. Aduk perlahan hingga tahu terbalut rata oleh adonan tepung. Jangan terlalu banyak mengaduk agar bakwan tidak bantat.</li>
+                <li><strong>Proses Menggoreng:</strong> Panaskan minyak goreng dalam jumlah yang cukup banyak dengan api sedang. Pastikan minyak sudah benar-benar panas sebelum memasukkan adonan bakwan.</li>
+                <li><strong>Pembentukan Bakwan:</strong> Ambil satu sendok adonan tahu, lalu goreng satu per satu ke dalam minyak panas. Jangan terlalu banyak memasukkan adonan ke dalam wajan agar suhu minyak tidak turun drastis dan bakwan bisa matang merata serta renyah.</li>
+                <li><strong>Memasak Hingga Matang:</strong> Goreng bakwan hingga berwarna kuning keemasan dan matang sempurna di kedua sisinya. Balik sesekali agar matangnya merata.</li>
+                <li><strong>Tiriskan dan Sajikan:</strong> Angkat bakwan tahu telur yang sudah matang, tiriskan minyaknya di atas rak kawat atau tisu dapur. Bakwan tahu telur siap disajikan selagi hangat dengan cocolan saus sambal atau cabai rawit.</li>
+            </ol>
+        </div>
+
+        <p>Membuat bakwan tahu telur ini adalah cara yang <span class="highlight">mudah dan hemat</span> untuk menyajikan camilan lezat bagi keluarga. Anda bisa berkreasi dengan menambahkan sayuran lain seperti tauge atau kol yang diiris tipis. Kunci kerenyahan bakwan terletak pada penggunaan tepung beras dan menggorengnya dalam minyak panas yang <span class="highlight">cukup banyak</span>. Selamat mencoba dan nikmati kelezatan bakwan tahu telur buatan sendiri!</p>
+
+        <footer>
+            <p>&copy; Resep Camilan Nusantara</p>
+        </footer>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-nastar">Bakpia Nastar</a></li>
+<li><a href="/harga-bakpia-kukus-di-stasiun-lempuyangan">Harga Bakpia Kukus Di Stasiun Lempuyangan</a></li>
+<li><a href="/nastar-juwara-satoe">Nastar Juwara Satoe</a></li>
+<li><a href="/bakso-beranak-urat">Bakso Beranak Urat</a></li>
+<li><a href="/cara-membuat-bakwan-jamur">Cara Membuat Bakwan Jamur</a></li>
+<li><a href="/bakwan-bumbu">Bakwan Bumbu</a></li>
+<li><a href="/bakpia-pathok-88">Bakpia Pathok 88</a></li>
+<li><a href="/jenis-jenis-mikroba">Jenis Jenis Mikroba</a></li>
+<li><a href="/adonan-bakpia">Adonan Bakpia</a></li>
+<li><a href="/resep-bakwan-jagung-manis">Resep Bakwan Jagung Manis</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

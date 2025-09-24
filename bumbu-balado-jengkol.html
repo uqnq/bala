@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumbu Balado Jengkol Nikmat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Biru muda cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Hijau toska gelap */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #004d40; /* Hijau tua pekat */
+        }
+        .recipe-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .ingredients, .steps {
+            background-color: #f0f8ff; /* Biru pucat */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .ingredients h2, .steps h2 {
+            color: #00796b;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .steps ol li {
+            background-color: #e6f7ff; /* Biru sangat pucat */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .tip {
+            background-color: #fff9c4; /* Kuning pucat */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.7em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .recipe-image {
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bumbu Balado Jengkol: Lezatnya Sambal Khas yang Menggugah Selera</h1>
+
+        <!-- SVG Image -->
+        <svg class="recipe-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" aria-label="Ilustrasi Jengkol Balado dalam Mangkuk">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f44336;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+                </linearGradient>
+                <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:#f8bbd0;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#e1bee7;stop-opacity:0.8" />
+                </radialGradient>
+            </defs>
+            <rect width="800" height="400" rx="15" ry="15" fill="#fff9e6"/>
+
+            <!-- Bowl -->
+            <ellipse cx="400" cy="350" rx="250" ry="80" fill="#ffe0b2" />
+            <path d="M150 270 Q 400 100 650 270 L 630 280 Q 400 140 170 280 Z" fill="#ffcc80" />
+
+            <!-- Jengkol -->
+            <circle cx="300" cy="200" r="30" fill="#a1887f" />
+            <ellipse cx="280" cy="180" rx="25" ry="20" fill="#a1887f" />
+            <ellipse cx="330" cy="220" rx="28" ry="22" fill="#a1887f" />
+            <circle cx="450" cy="190" r="35" fill="#a1887f" />
+            <ellipse cx="470" cy="160" rx="30" ry="25" fill="#a1887f" />
+
+            <!-- Sambal Balado -->
+            <path d="M200 230 Q 300 180 400 230 T 600 230 L 580 250 Q 300 200 220 250 Z" fill="url(#grad1)" />
+            <circle cx="250" cy="210" r="15" fill="#f44336" opacity="0.8"/>
+            <circle cx="350" cy="200" r="12" fill="#ff9800" opacity="0.7"/>
+            <circle cx="480" cy="215" r="18" fill="#f44336" opacity="0.8"/>
+
+            <!-- Garnish -->
+            <path d="M550 180 L 570 170 L 590 180 Z" fill="#66bb6a" />
+            <circle cx="570" cy="175" r="5" fill="#66bb6a" />
+
+            <!-- Text -->
+            <text x="50%" y="50" font-size="30" fill="#00796b" text-anchor="middle" font-weight="bold">Jengkol Balado</text>
+            <text x="50%" y="90" font-size="20" fill="#00796b" text-anchor="middle">Sajian Pedas Nikmat</text>
+        </svg>
+
+        <p>
+            Siapa yang tidak kenal dengan kelezatan hidangan pedas khas Indonesia? Salah satunya adalah jengkol balado. Meskipun memiliki aroma yang khas, jengkol yang diolah dengan bumbu balado mampu menyajikan cita rasa yang luar biasa nikmat dan bikin ketagihan. Kombinasi rasa pedas, gurih, dan sedikit manis dari bumbu balado berpadu sempurna dengan tekstur jengkol yang kenyal. Hidangan ini sangat cocok disantap bersama nasi putih hangat, menjadikannya pilihan lauk yang digemari banyak kalangan.
+        </p>
+
+        <div class="ingredients">
+            <h2>Bahan Utama</h2>
+            <ul>
+                <li>500 gram jengkol tua</li>
+                <li>1 lembar daun salam</li>
+                <li>2 cm lengkuas, memarkan</li>
+                <li>Air secukupnya untuk merebus</li>
+            </ul>
+
+            <h2>Bumbu Balado Halus</h2>
+            <ul>
+                <li>10-15 buah cabai merah keriting (sesuaikan selera pedas)</li>
+                <li>5 buah cabai rawit merah (opsional, untuk menambah pedas)</li>
+                <li>8 siung bawang merah</li>
+                <li>4 siung bawang putih</li>
+                <li>2 cm jahe</li>
+                <li>1 buah tomat merah ukuran sedang</li>
+                <li>1/2 sendok teh terasi bakar (opsional)</li>
+            </ul>
+
+            <h2>Bumbu Pelengkap</h2>
+            <ul>
+                <li>2 lembar daun jeruk</li>
+                <li>1 batang serai, memarkan</li>
+                <li>1 sendok makan gula merah, sisir</li>
+                <li>1/2 sendok teh garam (atau sesuai selera)</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>Minyak goreng secukupnya untuk menumis</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li>
+                    <strong>Persiapan Jengkol:</strong> Cuci bersih jengkol. Rebus jengkol bersama daun salam dan lengkuas hingga benar-benar empuk. Proses perebusan ini bisa memakan waktu cukup lama, sekitar 1-2 jam. Jika menggunakan panci presto, waktu perebusan akan lebih singkat. Setelah empuk, tiriskan jengkol dan pipihkan satu per satu menggunakan ulekan atau alat pipih lainnya. Sisihkan.
+                </li>
+                <li>
+                    <strong>Haluskan Bumbu:</strong> Siapkan semua bahan bumbu balado halus. Blender atau ulek semua bahan hingga benar-benar halus. Jika menggunakan blender, tambahkan sedikit minyak agar lebih mudah halus.
+                </li>
+                <li>
+                    <strong>Menumis Bumbu:</strong> Panaskan secukupnya minyak goreng dalam wajan. Tumis bumbu halus bersama daun jeruk dan serai hingga harum dan matang. Pastikan bumbu benar-benar matang agar tidak langu.
+                </li>
+                <li>
+                    <strong>Memasak Jengkol Balado:</strong> Masukkan jengkol yang sudah dipipihkan ke dalam tumisan bumbu. Aduk rata hingga semua jengkol terbalut bumbu. Tambahkan gula merah, garam, dan kaldu bubuk jika menggunakan. Aduk kembali.
+                </li>
+                <li>
+                    <strong>Tambahkan Air (Jika Perlu):</strong> Jika bumbu terasa terlalu kering, tambahkan sedikit air (sekitar 50-100 ml). Masak terus dengan api kecil hingga bumbu meresap sempurna ke dalam jengkol dan kuah mengental. Koreksi rasa, tambahkan garam atau gula jika perlu.
+                </li>
+                <li>
+                    <strong>Penyajian:</strong> Angkat jengkol balado yang sudah matang dan sajikan selagi hangat bersama nasi putih.
+                </li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <strong>Tips Tambahan:</strong>
+            <ul>
+                <li>Untuk mengurangi bau khas jengkol, Anda bisa merendam jengkol yang sudah direbus sebentar dengan air daun jambu biji atau air cucian beras sebelum diolah lebih lanjut.</li>
+                <li>Anda bisa menambahkan irisan petai untuk variasi rasa dan aroma.</li>
+                <li>Tingkat kepedasan bisa disesuaikan dengan jumlah cabai yang digunakan.</li>
+            </ul>
+        </div>
+
+        <p>
+            Membuat bumbu balado jengkol sendiri di rumah ternyata tidak sesulit yang dibayangkan. Dengan mengikuti langkah-langkah di atas, Anda bisa menyajikan hidangan lezat ini kapan saja. Nikmati kelezatan dan aroma khasnya yang menggugah selera. Selamat mencoba!
+        </p>
+
+        <footer>
+            <p>Resep masakan nusantara</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-ikan-bilis">Bakwan Ikan Bilis</a></li>
+<li><a href="/bale-pindah">Bale Pindah</a></li>
+<li><a href="/cara-bikin-bakwan-jagung">Cara Bikin Bakwan Jagung</a></li>
+<li><a href="/resep-simple-bakwan-jagung">Resep Simple Bakwan Jagung</a></li>
+<li><a href="/jamur-bakteri">Jamur Bakteri</a></li>
+<li><a href="/cara-membuat-gorengan-bakwan-jagung">Cara Membuat Gorengan Bakwan Jagung</a></li>
+<li><a href="/bakpao-selatan">Bakpao Selatan</a></li>
+<li><a href="/resep-membuat-bakwan-sayur">Resep Membuat Bakwan Sayur</a></li>
+<li><a href="/cara-buat-perkedel-jagung-yang-enak">Cara Buat Perkedel Jagung Yang Enak</a></li>
+<li><a href="/resep-bumbu-pentol-mercon">Resep Bumbu Pentol Mercon</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

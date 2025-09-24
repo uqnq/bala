@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Godok Pisang yang Lezat dan Lembut</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --warna-primer: #4CAF50; /* Hijau cerah */
+            --warna-sekunder: #FFEB3B; /* Kuning cerah */
+            --warna-kontras: #FFFFFF; /* Putih */
+            --warna-teks-gelap: #333333; /* Teks gelap */
+            --warna-background: #E8F5E9; /* Hijau pastel muda */
+            --warna-border: #8BC34A; /* Hijau daun */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--warna-background);
+            color: var(--warna-teks-gelap);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--warna-kontras);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: var(--warna-primer);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: var(--warna-sekunder);
+            border-bottom: 2px dashed var(--warna-border);
+            padding-bottom: 5px;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .resep-list {
+            list-style: disc inside;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .resep-list li {
+            margin-bottom: 10px;
+            color: var(--warna-primer);
+        }
+
+        .resep-list li strong {
+            color: var(--warna-teks-gelap);
+        }
+
+        .langkah-list {
+            list-style: decimal inside;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .langkah-list li {
+            margin-bottom: 15px;
+        }
+
+        .tips-trik {
+            background-color: var(--warna-sekunder);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 25px;
+            color: var(--warna-teks-gelap);
+            font-weight: bold;
+        }
+
+        .tips-trik h3 {
+            color: var(--warna-primer);
+            margin-top: 0;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#FFEB3B;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" fill="url(#grad1)" />
+                <circle cx="100" cy="150" r="50" fill="#FFFFFF" />
+                <path d="M 350 100 Q 400 150 350 200 Q 300 150 350 100 Z" fill="#FFC107" />
+                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="40" fill="#333333" font-weight="bold">
+                    Godok Pisang Nikmat
+                </text>
+            </svg>
+            <p style="font-size: 0.9em; color: #666;">Ilustrasi godok pisang yang mengundang selera.</p>
+        </div>
+
+        <h1>Cara Membuat Godok Pisang yang Lezat dan Lembut</h1>
+
+        <p>Siapa yang tidak suka godok pisang? Kudapan manis tradisional Indonesia ini selalu berhasil menggugah selera. Dengan tekstur yang lembut di dalam dan sedikit renyah di luar, godok pisang sangat cocok dinikmati bersama secangkir teh hangat di sore hari. Membuatnya pun ternyata tidak sulit, bahkan bagi pemula sekalipun. Resep kali ini akan memandu Anda langkah demi langkah untuk menghasilkan godok pisang yang sempurna.</p>
+
+        <h2>Bahan-Bahan yang Diperlukan</h2>
+
+        <ul class="resep-list">
+            <li><strong>Pisang kepok atau pisang uli matang:</strong> 5-7 buah (pilih yang benar-benar matang agar manis alami)</li>
+            <li><strong>Tepung terigu serbaguna:</strong> 200 gram</li>
+            <li><strong>Gula pasir:</strong> 50-75 gram (sesuaikan dengan tingkat kemanisan pisang dan selera)</li>
+            <li><strong>Telur:</strong> 1 butir</li>
+            <li><strong>Santan kental:</strong> 100 ml (opsional, bisa diganti air biasa untuk rasa yang lebih ringan)</li>
+            <li><strong>Garam:</strong> ½ sendok teh</li>
+            <li><strong>Baking powder:</strong> 1 sendok teh (agar godok lebih mengembang dan renyah)</li>
+            <li><strong>Minyak goreng:</strong> secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Langkah-Langkah Pembuatan</h2>
+
+        <ol class="langkah-list">
+            <li><strong>Persiapan Pisang:</strong> Kupas pisang, lalu lumatkan hingga agak halus menggunakan garpu. Tidak perlu sampai benar-benar halus, biarkan sedikit tekstur pisang agar godok lebih menarik.</li>
+            <li><strong>Campur Bahan Kering:</strong> Dalam wadah terpisah, campurkan tepung terigu, gula pasir, garam, dan baking powder. Aduk rata.</li>
+            <li><strong>Buat Adonan Basah:</strong> Kocok telur dalam wadah lain hingga lepas. Tambahkan santan (jika menggunakan) atau air, aduk rata.</li>
+            <li><strong>Gabungkan Semua Bahan:</strong> Masukkan campuran bahan kering ke dalam wadah berisi pisang yang sudah dilumatkan. Tuangkan campuran telur dan santan sedikit demi sedikit sambil diaduk hingga adonan tercampur rata dan tidak ada gumpalan tepung. Kekentalan adonan harus pas, tidak terlalu cair dan tidak terlalu kental agar mudah dibentuk.</li>
+            <li><strong>Istirahatkan Adonan:</strong> Tutup wadah adonan dan diamkan selama sekitar 15-30 menit di suhu ruang. Proses ini membantu adonan lebih meresap dan menghasilkan tekstur yang lebih baik.</li>
+            <li><strong>Panaskan Minyak:</strong> Siapkan wajan dan tuangkan minyak goreng secukupnya. Panaskan minyak dengan api sedang. Pastikan minyak sudah cukup panas sebelum menggoreng.</li>
+            <li><strong>Goreng Godok Pisang:</strong> Ambil satu sendok sayur adonan, lalu tuangkan perlahan ke dalam minyak panas. Goreng godok pisang hingga berwarna kuning keemasan dan matang di kedua sisinya. Jangan terlalu banyak memasukkan adonan ke dalam wajan agar godok matang merata dan tidak menempel satu sama lain.</li>
+            <li><strong>Tiriskan:</strong> Angkat godok pisang yang sudah matang, tiriskan minyaknya menggunakan saringan atau letakkan di atas tisu dapur agar minyak berlebih terserap.</li>
+            <li><strong>Sajikan:</strong> Godok pisang siap disajikan selagi hangat. Nikmati kelezatan dan kelembutan godok pisang buatan Anda sendiri!</li>
+        </ol>
+
+        <div class="tips-trik">
+            <h3>Tips & Trik untuk Godok Pisang Sempurna:</h3>
+            <ul>
+                <li>Gunakan pisang yang benar-benar matang (kulitnya berbintik hitam) untuk rasa manis alami yang maksimal dan tekstur yang lembut.</li>
+                <li>Jangan terlalu banyak mengaduk adonan setelah tepung masuk agar godok tidak keras. Cukup aduk hingga tercampur rata.</li>
+                <li>Uji panas minyak sebelum menggoreng. Teteskan sedikit adonan ke dalam minyak, jika langsung mengapung dan bergelembung, berarti minyak sudah siap.</li>
+                <li>Goreng dengan api sedang agar matang merata hingga ke dalam dan tidak cepat gosong di luar.</li>
+                <li>Anda bisa menambahkan sedikit parutan kelapa atau keju parut ke dalam adonan untuk variasi rasa yang lebih kaya.</li>
+            </ul>
+        </div>
+
+        <p>Membuat godok pisang tidak hanya sekadar mengolah bahan, tetapi juga sebuah kegiatan menyenangkan yang bisa dinikmati bersama keluarga. Hasilnya yang lezat akan menjadi pelipur lara setelah seharian beraktivitas. Selamat mencoba!</p>
+
+        <footer>
+            Terima kasih telah mengunjungi kami.
+        </footer>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-bakwan-keladi">Cara Membuat Bakwan Keladi</a></li>
+<li><a href="/membuat-bakwan-jagung-renyah">Membuat Bakwan Jagung Renyah</a></li>
+<li><a href="/isian-kacang-tanah-untuk-bakpao">Isian Kacang Tanah Untuk Bakpao</a></li>
+<li><a href="/cara-membuat-gorengan-udang-renyah">Cara Membuat Gorengan Udang Renyah</a></li>
+<li><a href="/cara-buat-bakwan-toge">Cara Buat Bakwan Toge</a></li>
+<li><a href="/cara-buat-bakpao-sederhana-empuk">Cara Buat Bakpao Sederhana Empuk</a></li>
+<li><a href="/bakpao-sayur">Bakpao Sayur</a></li>
+<li><a href="/cara-buat-bakpao-mini">Cara Buat Bakpao Mini</a></li>
+<li><a href="/bakwan-kemiri">Bakwan Kemiri</a></li>
+<li><a href="/bakteri-shigella">Bakteri Shigella</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

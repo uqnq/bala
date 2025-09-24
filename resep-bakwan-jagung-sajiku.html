@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Jagung Sajiku: Lezat & Praktis</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna dasar sejuk cerah */
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #00796b; /* Warna cerah aksen */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .content-section {
+            margin-bottom: 25px;
+        }
+        .content-section h2 {
+            border-bottom: 2px solid #80cbc4; /* Garis bawah aksen */
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .recipe-steps ol li, .ingredients ul li {
+            margin-bottom: 10px;
+        }
+        .ingredients ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+        .recipe-steps ol {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+        strong {
+            color: #004d40; /* Warna aksen lebih pekat */
+        }
+        .call-to-action {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f0f8ff; /* Warna latar belakang lebih lembut */
+            border-radius: 8px;
+        }
+        .call-to-action p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #4db6ac; /* Warna tombol cerah */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #26a69a;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .hero-image svg {
+                max-width: 90%;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-image">
+            <!-- SVG Gambar Bakwan Jagung Sederhana -->
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffcc80;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffb74d;stop-opacity:1" />
+                    </linearGradient>
+                    <pattern id="jagungPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <circle cx="5" cy="5" r="2" fill="#ffcc80" />
+                    </pattern>
+                </defs>
+                <!-- Latar belakang bakwan -->
+                <rect x="10" y="10" width="180" height="130" rx="15" fill="url(#grad1)" />
+                <!-- Tampilan tekstur bakwan -->
+                <g fill="#f9a825" opacity="0.7">
+                    <circle cx="30" cy="40" r="8" />
+                    <circle cx="70" cy="30" r="7" />
+                    <circle cx="120" cy="50" r="9" />
+                    <circle cx="170" cy="40" r="8" />
+                    <circle cx="40" cy="80" r="7" />
+                    <circle cx="90" cy="70" r="9" />
+                    <circle cx="140" cy="90" r="8" />
+                    <circle cx="180" cy="70" r="7" />
+                    <circle cx="20" cy="110" r="8" />
+                    <circle cx="60" cy="100" r="7" />
+                    <circle cx="110" cy="120" r="9" />
+                    <circle cx="160" cy="100" r="8" />
+                </g>
+                <!-- Jagung -->
+                <g transform="translate(0, 20)">
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="25" y="30" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="35" y="35" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="45" y="30" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="55" y="38" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="65" y="32" />
+                </g>
+                <g transform="translate(40, 0)">
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="70" y="25" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="80" y="30" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="90" y="25" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="100" y="35" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="110" y="28" />
+                </g>
+                <g transform="translate(0, 50)">
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="120" y="45" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="130" y="50" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="140" y="45" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="150" y="58" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="160" y="52" />
+                </g>
+                <g transform="translate(20, 20)">
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="30" y="70" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="40" y="75" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="50" y="70" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="60" y="83" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="70" y="77" />
+                </g>
+                 <g transform="translate(40, 10)">
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="80" y="75" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="90" y="80" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="100" y="75" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="110" y="88" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="120" y="82" />
+                </g>
+                 <g transform="translate(0, 30)">
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="150" y="70" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="160" y="75" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="170" y="70" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="180" y="83" />
+                    <use xlink:href="#jagungPattern" width="10" height="10" x="190" y="77" />
+                </g>
+            </svg>
+            <p style="font-style: italic; color: #666;">Ilustrasi Bakwan Jagung Lezat</p>
+        </div>
+
+        <h1>Resep Bakwan Jagung Sajiku: Camilan Lezat dan Praktis untuk Keluarga</h1>
+
+        <div class="content-section">
+            <p>Siapa yang tidak suka bakwan jagung? Camilan renyah di luar dan lembut di dalam ini selalu jadi favorit banyak orang. Terlebih lagi jika dibuat dengan praktis menggunakan bumbu siap pakai seperti <strong>Sajiku</strong>. Resep bakwan jagung Sajiku ini sangat cocok bagi Anda yang ingin menyajikan hidangan lezat tanpa repot menyiapkan banyak bumbu. Dengan langkah-langkah yang mudah diikuti, Anda bisa menghasilkan bakwan jagung yang sempurna, menggugah selera, dan disukai seluruh anggota keluarga.</p>
+
+            <p>Bakwan jagung tidak hanya sekadar camilan, namun juga bisa menjadi lauk pendamping yang pas untuk nasi hangat. Aroma jagung manis yang khas berpadu dengan gurihnya adonan tepung akan menciptakan sensasi rasa yang tak terlupakan. Proses pembuatannya pun relatif cepat, menjadikannya pilihan ideal saat ada acara kumpul keluarga atau sekadar ingin menikmati hidangan ringan di sore hari.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Bahan-Bahan yang Dibutuhkan</h2>
+            <div class="ingredients">
+                <ul>
+                    <li>2 buah jagung manis, pipil (sekitar 250-300 gram)</li>
+                    <li>1 bungkus <strong>Sajiku Tepung Bumbu Bakwan Crispy</strong> (atau sesuai petunjuk kemasan untuk takaran)</li>
+                    <li>1 batang daun bawang, iris tipis</li>
+                    <li>1 buah wortel kecil, parut kasar (opsional, untuk menambah warna dan tekstur)</li>
+                    <li>50-100 ml air dingin (sesuaikan kekentalan adonan)</li>
+                    <li>Minyak goreng secukupnya</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Langkah-Langkah Membuat Bakwan Jagung Sajiku</h2>
+            <div class="recipe-steps">
+                <ol>
+                    <li><strong>Persiapan Jagung</strong>: Pipil jagung manis dari bonggolnya. Anda bisa menggunakan pisau atau memarutnya jika ingin tekstur yang lebih halus. Sisihkan.</li>
+                    <li><strong>Membuat Adonan</strong>: Dalam sebuah wadah, campurkan jagung pipil, irisan daun bawang, dan parutan wortel (jika menggunakan).</li>
+                    <li><strong>Tambahkan Tepung</strong>: Masukkan <strong>Sajiku Tepung Bumbu Bakwan Crispy</strong> ke dalam campuran jagung. Aduk rata hingga semua bahan terbalut tepung.</li>
+                    <li><strong>Tuang Air Dingin</strong>: Tambahkan air dingin sedikit demi sedikit sambil terus diaduk hingga adonan mengental dan rata, namun tidak terlalu encer. Kekentalan adonan sangat mempengaruhi kerenyahan bakwan.</li>
+                    <li><strong>Panaskan Minyak</strong>: Siapkan wajan dan panaskan minyak goreng dalam jumlah cukup banyak dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                    <li><strong>Menggoreng Bakwan</strong>: Ambil satu sendok sayur adonan, lalu goreng langsung ke dalam minyak panas. Goreng hingga sisi bawahnya kecoklatan dan kokoh, lalu balik.</li>
+                    <li><strong>Tiriskan</strong>: Goreng hingga kedua sisi bakwan berwarna kuning keemasan dan matang sempurna. Angkat dan tiriskan bakwan menggunakan saringan atau tisu dapur penyerap minyak.</li>
+                    <li><strong>Sajikan</strong>: Bakwan jagung Sajiku siap disajikan selagi hangat. Nikmati bersama cabai rawit, saus sambal, atau sebagai lauk pendamping.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Tips Tambahan untuk Bakwan yang Sempurna</h2>
+            <p>Untuk mendapatkan hasil bakwan jagung yang lebih renyah dan nikmat, ada beberapa tips yang bisa Anda terapkan:</p>
+            <ul>
+                <li>Gunakan air dingin atau bahkan air es saat membuat adonan. Ini akan membantu menciptakan tekstur yang lebih garing saat digoreng.</li>
+                <li>Jangan terlalu banyak mengaduk adonan setelah tepung ditambahkan. Cukup aduk hingga tercampur rata saja.</li>
+                <li>Pastikan minyak goreng benar-benar panas sebelum bakwan dimasukkan. Ini mencegah bakwan menyerap banyak minyak dan menjadi lembek.</li>
+                <li>Jangan menggoreng bakwan terlalu banyak dalam satu waktu agar suhu minyak tetap stabil dan bakwan matang merata serta renyah.</li>
+                <li>Jika ingin rasa yang lebih kaya, Anda bisa menambahkan sedikit bumbu lain seperti kaldu bubuk atau lada ke dalam adonan, namun dengan Sajiku, rasa gurihnya sudah sangat pas.</li>
+            </ul>
+        </div>
+
+        <div class="call-to-action">
+            <p>Siap mencoba resep bakwan jagung Sajiku yang super praktis ini? Segera siapkan bahan-bahannya dan buatlah camilan lezat untuk dinikmati bersama keluarga tercinta!</p>
+            <a href="#" class="cta-button">Yuk, Coba Sekarang!</a>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-tahu-wortel">Bakwan Tahu Wortel</a></li>
+<li><a href="/resep-stik-royco-pakai-fermipan">Resep Stik Royco Pakai Fermipan</a></li>
+<li><a href="/bahan-pembuatan-bakwan-jagung">Bahan Pembuatan Bakwan Jagung</a></li>
+<li><a href="/makanan-coli">Makanan Coli</a></li>
+<li><a href="/bumbu-weci-sederhana">Bumbu Weci Sederhana</a></li>
+<li><a href="/bakpia-wijaya">Bakpia Wijaya</a></li>
+<li><a href="/bakpia-kukus-original">Bakpia Kukus Original</a></li>
+<li><a href="/balasan-doa-bersin">Balasan Doa Bersin</a></li>
+<li><a href="/bakso-beranak-terdekat-dari-sini">Bakso Beranak Terdekat Dari Sini</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-manis">Cara Membuat Bakwan Jagung Manis</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

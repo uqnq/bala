@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Buat Bala-Bala Enak & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #4CAF50; /* Hijau cerah */
+            --color-secondary: #8BC34A; /* Hijau kekuningan */
+            --color-text-dark: #333;
+            --color-text-light: #fff;
+            --color-background: #E8F5E9; /* Hijau sangat muda */
+            --color-accent: #FFC107; /* Kuning cerah */
+            --font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            background-color: var(--color-text-light);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--color-secondary);
+            border-bottom: 2px solid var(--color-accent);
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        img.main-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .ingredients, .instructions {
+            margin-bottom: 20px;
+        }
+
+        .ingredients ul, .instructions ol {
+            padding-left: 20px;
+        }
+
+        .ingredients li, .instructions li {
+            margin-bottom: 8px;
+        }
+
+        .step-title {
+            font-weight: bold;
+            color: var(--color-secondary);
+        }
+
+        .tip {
+            background-color: var(--color-accent);
+            color: var(--color-text-dark);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--color-text-dark);
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.7em;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cara Buat Bala-Bala Enak & Renyah</h1>
+    </header>
+
+    <div class="container">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjcwMCIgdmlld0JveD0iMCAwIDEwMDAgNzAwIiBwcmVzZXJ2ZUFzcGVjdD0ibm9uZSI+CjxyZWN0IHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0iI0U4RjVlOSIvPgo8cGF0aCBkPSJNODY3IDI2MkM4NjcgMjIxLjAxIDY3OSAxMDUuOTQgNDg0LjQ2IDEwNS45NEMzMTEuOTYgMTA1Ljk0IDE1My41OCA3MC4yOSAxNTMuNTggMzMuN0w1NjkuNzIgMzMuN0w4NjcgMjYyWiIgc3Ryb2tlPSIjOEFDM0E0IiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9IiM0Q0FGNTBFLiIvPgo8cGF0aCBkPSJNNDg0LjQ2IDU2MkM4NjcgNTYyIDg2NyA1MDcuMTEgODY3IDQxMEw4NjcgMzQ4LjAxQzQ2OC4yOCAzNDguMDEgNDg0LjQ2IDQxMS44NCA0ODQuNDYgMzExLjk2QzQ4NC40NiAyMTQuMDkgNDY4LjI4IDE2Mi42NCA0NjguMjggMTYyLjY0TDQ4NC40NiA4NDguN0w0ODQuNDYgNTYyWiIgc3Ryb2tlPSIjOEFDM0E0IiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9IiM4QkMzNEEuMCIvPgo8cGF0aCBkPSJNNDg0LjQ2IDUwMUM0ODQuNDYgNDY2LjgyIDQ2OC4yOCA0NDguNDYgNDQ4LjQ2IDQ0OC40NkM0MjguNjQgNDQ4LjQ2IDQxMi40NiA0NjYuODI0MDQgNDEyLjQ2IDQ1MUM0MTIuNDYgNDE1LjE3IDQyOC42NCAzOTYuODQgNDQ4LjQ2IDM5Ni44NEM0NjguMjggMzk2Ljg0IDQ4NC40NiA0MTUuMTcgNDg0LjQ2IDQzM0M0ODQuNDYgNDQ4LjQ2IDQ2OC4yOCA0NjQuNjQgNDQ4LjQ2IDQ2NC42NEw0MzcuOTIgNDY0LjY0TDQ4NC40NiA1MDFaIiBzdHJva2U9IiNGRkMxMDciIHN0cm9rZS13aWR0aD0iNyIgZmlsbD0iI0ZGRkQwNyIvPgo8dGV4dCB4PSIyMTgiIHk9IjU0OCIgZmlsbD0iIzMzMzMzMyIgZm9udC1zaXplPSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIj4zMCBrZSBzdXh1PC90ZXh0Pgo8L3N2Zz4=" alt="Ilustrasi Bala-Bala Goreng Renyah" class="main-image">
+
+        <div class="content">
+            <p>Siapa yang tidak suka camilan gurih dan renyah? Bala-bala, atau yang sering dikenal sebagai bakwan sayur, adalah salah satu gorengan favorit banyak orang di Indonesia. Cocok disantap saat santai, ditemani teh hangat atau sambal, bala-bala selalu bisa membangkitkan selera.</p>
+
+            <p>Membuat bala-bala di rumah ternyata tidak sulit, lho! Dengan bahan-bahan yang mudah didapat dan langkah yang sederhana, Anda bisa menciptakan bala-bala yang renyah di luar dan lembut di dalam. Mari kita simak cara membuatnya.</p>
+
+            <div class="ingredients">
+                <h2>Bahan-Bahan</h2>
+                <ul>
+                    <li>1 buah wortel ukuran sedang, parut kasar atau iris tipis korek api</li>
+                    <li>1/4 kol ukuran kecil, iris tipis</li>
+                    <li>2 batang daun bawang, iris tipis</li>
+                    <li>150 gram tepung terigu protein sedang</li>
+                    <li>50 gram tepung beras (opsional, untuk ekstra renyah)</li>
+                    <li>1/2 sendok teh garam</li>
+                    <li>1/4 sendok teh merica bubuk</li>
+                    <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                    <li>1 siung bawang putih, haluskan</li>
+                    <li>Sekitar 150-200 ml air dingin (sesuaikan kekentalan)</li>
+                    <li>Minyak goreng secukupnya untuk menggoreng</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2>Cara Membuat</h2>
+                <ol>
+                    <li>
+                        <span class="step-title">Persiapan Sayuran:</span>
+                        Campurkan wortel parut, irisan kol, dan irisan daun bawang dalam sebuah wadah.
+                    </li>
+                    <li>
+                        <span class="step-title">Membuat Adonan Tepung:</span>
+                        Dalam wadah terpisah, campurkan tepung terigu, tepung beras (jika pakai), garam, merica bubuk, kaldu bubuk, dan bawang putih halus. Aduk rata.
+                    </li>
+                    <li>
+                        <span class="step-title">Menggabungkan Bahan:</span>
+                        Tuangkan air dingin sedikit demi sedikit ke dalam adonan tepung sambil terus diaduk hingga mendapatkan kekentalan yang pas. Adonan tidak boleh terlalu kental atau terlalu encer. Kekentalannya harus bisa menempel pada sayuran.
+                    </li>
+                    <li>
+                        <span class="step-title">Mencampur Sayuran dan Adonan:</span>
+                        Masukkan campuran sayuran ke dalam adonan tepung. Aduk rata hingga semua sayuran terbalut sempurna oleh adonan.
+                    </li>
+                    <li>
+                        <span class="step-title">Menggoreng Bala-Bala:</span>
+                        Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.
+                    </li>
+                    <li>
+                        <span class="step-title">Membentuk dan Menggoreng:</span>
+                        Ambil satu sendok sayur adonan (atau sesuai selera), masukkan perlahan ke dalam minyak panas. Goreng hingga satu sisi berwarna kuning keemasan, lalu balik dan goreng sisi lainnya hingga matang sempurna dan renyah. Jangan terlalu banyak menggoreng sekaligus agar suhu minyak stabil.
+                    </li>
+                    <li>
+                        <span class="step-title">Meniriskan:</span>
+                        Angkat bala-bala yang sudah matang, tiriskan minyaknya di atas rak atau tisu dapur agar tetap renyah.
+                    </li>
+                    <li>
+                        <span class="step-title">Sajikan:</span>
+                        Sajikan bala-bala selagi hangat dengan cabai rawit hijau, lontong, atau saus sambal favorit Anda.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="tip">
+                <p><strong>Tips Agar Bala-Bala Renyah Tahan Lama:</strong> Gunakan air dingin untuk adonan, jangan terlalu lama mengaduk adonan setelah dicampur sayuran, dan pastikan minyak benar-benar panas saat menggoreng. Menggunakan sedikit tepung beras juga dapat membantu menambah kerenyahan.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </footer>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-sayur-renyah">Bakwan Sayur Renyah</a></li>
+<li><a href="/chikyen">Chikyen</a></li>
+<li><a href="/bakpao-goreng-frozen">Bakpao Goreng Frozen</a></li>
+<li><a href="/cara-membuat-pia-pia-sayur">Cara Membuat Pia Pia Sayur</a></li>
+<li><a href="/bakpia-pathok-24">Bakpia Pathok 24</a></li>
+<li><a href="/resep-weci-kriuk">Resep Weci Kriuk</a></li>
+<li><a href="/cara-membuat-pentol-pedas-mercon">Cara Membuat Pentol Pedas Mercon</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-pakai-telur">Cara Membuat Bakwan Jagung Pakai Telur</a></li>
+<li><a href="/cara-membuat-bakpao-takaran-sendok">Cara Membuat Bakpao Takaran Sendok</a></li>
+<li><a href="/goreng-bakwan-renyah">Goreng Bakwan Renyah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Kol Simple: Resep Cepat & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1, h2, h3 {
+            color: #4682b4; /* SteelBlue */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        h2 {
+            font-size: 1.6em;
+            margin-top: 30px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        strong {
+            color: #5f9ea0; /* CadetBlue */
+        }
+        .main-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-section {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .recipe-section h2 {
+            color: #20b2aa; /* LightSeaGreen */
+            margin-top: 0;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .ingredients li::before, .steps li::before {
+            content: "✔";
+            color: #3cb371; /* MediumSeaGreen */
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .steps li::before {
+            content: counter(step-counter) ".";
+            color: #ffa500; /* Orange */
+            font-weight: bold;
+        }
+        ol {
+            counter-reset: step-counter;
+        }
+        ol li {
+            counter-increment: step-counter;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+        }
+        .cta a {
+            display: inline-block;
+            background-color: #ff6347; /* Tomato */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta a:hover {
+            background-color: #e5523a;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .container {
+                padding: 15px;
+            }
+            .recipe-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="main-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#add8e6;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="400" height="250" rx="20" fill="url(#grad1)" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="30" font-weight="bold" font-family="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                Bakwan Kol Simple
+            </text>
+            <circle cx="50" cy="200" r="20" fill="#ffcc00" />
+            <circle cx="100" cy="180" r="15" fill="#ffcc00" />
+            <circle cx="350" cy="200" r="25" fill="#ffcc00" />
+            <circle cx="300" cy="180" r="18" fill="#ffcc00" />
+            <path d="M150 100 Q 180 50, 200 100 T 250 100" stroke="#ff6347" stroke-width="5" fill="none" />
+            <path d="M150 150 Q 180 100, 200 150 T 250 150" stroke="#ff6347" stroke-width="5" fill="none" />
+        </svg>
+        <h1>Bakwan Kol Simple: Renyah, Lezat, dan Sangat Mudah Dibuat!</h1>
+
+        <p>Siapa bilang membuat camilan enak harus ribet? Bakwan kol simple adalah jawabannya. Camilan gorengan yang satu ini selalu jadi favorit banyak orang, baik anak-anak maupun dewasa. Dengan bahan-bahan yang mudah ditemukan di dapur dan proses pembuatan yang cepat, Anda bisa menikmati bakwan kol yang renyah di luar dan lembut di dalam kapan saja.</p>
+
+        <p>Resep bakwan kol simple ini sangat cocok bagi Anda yang sedang belajar memasak, atau bagi Anda yang ingin menyiapkan camilan sehat dan hemat di rumah. Teksturnya yang unik, perpaduan kol yang sedikit manis dengan bumbu gurih yang meresap, menjadikannya teman sempurna untuk minum teh atau kopi di sore hari. Kelebihannya lagi, resep ini sangat fleksibel, Anda bisa menambahkan sayuran lain seperti wortel parut atau sedikit daun bawang untuk variasi.</p>
+
+        <div class="recipe-section">
+            <h2>Mengapa Bakwan Kol Simple Wajib Dicoba?</h2>
+            <p>Banyak alasan mengapa bakwan kol simple ini patut Anda coba:</p>
+            <ul class="ingredients">
+                <li><strong>Mudah dan Cepat:</strong> Proses persiapannya tidak memakan waktu lama.</li>
+                <li><strong>Ekonomis:</strong> Bahan utamanya, kol, harganya sangat terjangkau.</li>
+                <li><strong>Fleksibel:</strong> Bisa dikreasikan dengan tambahan sayuran lain.</li>
+                <li><strong>Puas:</strong> Hasilnya renyah dan gurih, cocok untuk semua kalangan.</li>
+                <li><strong>Serbaguna:</strong> Bisa dinikmati sebagai camilan atau lauk pendamping.</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Bahan-Bahan Bakwan Kol Simple</h2>
+            <p>Anda hanya memerlukan beberapa bahan dasar:</p>
+            <ul class="ingredients">
+                <li>1/2 bonggol kol ukuran sedang, iris tipis</li>
+                <li>100 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk menambah kerenyahan)</li>
+                <li>1 butir telur ayam</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh garam (atau sesuai selera)</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>Air secukupnya untuk adonan</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Langkah-Langkah Membuat Bakwan Kol Simple</h2>
+            <p>Ikuti panduan ini untuk hasil terbaik:</p>
+            <ol class="steps">
+                <li>Siapkan wadah, campurkan irisan kol dengan garam. Remas-remas kol sebentar untuk mengurangi kadar airnya. Sisihkan.</li>
+                <li>Dalam wadah lain, campurkan tepung terigu, tepung beras (jika pakai), bawang putih halus, merica bubuk, dan kaldu bubuk (jika pakai). Aduk rata.</li>
+                <li>Masukkan telur ke dalam campuran tepung, kocok lepas.</li>
+                <li>Tambahkan irisan kol yang sudah diremas tadi ke dalam adonan tepung. Aduk rata.</li>
+                <li>Tuang air sedikit demi sedikit sambil terus diaduk hingga adonan mengental dan semua bahan tercampur rata. Adonan jangan terlalu encer agar tidak mudah lepas saat digoreng.</li>
+                <li>Panaskan minyak goreng dalam jumlah yang cukup banyak di atas api sedang.</li>
+                <li>Ambil satu sendok sayur adonan, lalu goreng hingga berwarna cokelat keemasan dan matang di kedua sisinya. Pastikan bagian tengahnya matang sempurna.</li>
+                <li>Angkat bakwan kol dan tiriskan minyaknya.</li>
+                <li>Sajikan bakwan kol selagi hangat dengan saus sambal, cabai rawit, atau pelengkap favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Tambahan untuk Bakwan Kol Sempurna</h2>
+            <p>Untuk mendapatkan bakwan kol yang super renyah dan lezat, perhatikan tips berikut:</p>
+            <ul>
+                <li><strong>Jangan Terlalu Banyak Mengaduk Adonan:</strong> Mengaduk terlalu lama bisa membuat kol mengeluarkan banyak air.</li>
+                <li><strong>Gunakan Api Sedang:</strong> Api yang terlalu besar akan membuat bakwan gosong di luar tapi belum matang di dalam.</li>
+                <li><strong>Tiriskan Dengan Baik:</strong> Gunakan saringan atau alas kertas tisu untuk menyerap sisa minyak berlebih.</li>
+                <li><strong>Variasi Sayuran:</strong> Tambahkan irisan wortel, daun bawang, atau tauge untuk tekstur dan rasa yang lebih kaya.</li>
+            </ul>
+        </div>
+
+        <div class="cta">
+            <p>Yuk, segera coba resep bakwan kol simple ini di rumah! Dijamin anti gagal dan bikin ketagihan.</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-jagung-kriuk-tanpa-telur">Bakwan Jagung Kriuk Tanpa Telur</a></li>
+<li><a href="/bumbu-ote-ote-renyah-gurih">Bumbu Ote Ote Renyah Gurih</a></li>
+<li><a href="/bakteri-vibrio-cholerae">Bakteri Vibrio Cholerae</a></li>
+<li><a href="/uji-fisiologis-bakteri">Uji Fisiologis Bakteri</a></li>
+<li><a href="/cara-jualan-bakpao-chik-yen">Cara Jualan Bakpao Chik Yen</a></li>
+<li><a href="/tutorial-bikin-bakwan-jagung">Tutorial Bikin Bakwan Jagung</a></li>
+<li><a href="/masak-bakso-mercon">Masak Bakso Mercon</a></li>
+<li><a href="/bakwan-ikan-tenggiri">Bakwan Ikan Tenggiri</a></li>
+<li><a href="/resep-bakwan-jagung-pakai-tepung-bakwan">Resep Bakwan Jagung Pakai Tepung Bakwan</a></li>
+<li><a href="/bala-bala-kriuk">Bala Bala Kriuk</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

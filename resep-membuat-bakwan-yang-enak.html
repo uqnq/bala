@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Enak & Renyah Sempurna</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #00796b; /* Warna judul cerah */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #80deea; /* Garis bawah warna cerah */
+            padding-bottom: 8px;
+        }
+        .intro {
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #004d40;
+        }
+        .recipe-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .recipe-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #00796b;
+        }
+        .highlight {
+            background-color: #b2ebf2; /* Sorotan warna sejuk */
+            padding: 5px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .tips {
+            background-color: #e0f2f1; /* Latar belakang untuk tips */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 25px;
+            border-left: 5px solid #009688; /* Garis penanda tips */
+        }
+        .tips h3 {
+            margin-top: 0;
+            color: #00796b;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .intro {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Resep Bakwan yang Enak dan Renyah</h1>
+
+        <p class="intro">Siapa yang tidak suka bakwan? Camilan gurih yang renyah di luar dan lembut di dalam ini sangat cocok dinikmati kapan saja. Berikut adalah resep sederhana untuk membuat bakwan yang dijamin enak dan bikin nagih!</p>
+
+        <div class="recipe-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00bcd4;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" fill="url(#grad1)" rx="15" ry="15"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="bold">Bakwan Lezat</text>
+                <circle cx="150" cy="150" r="40" fill="#ffeb3b" />
+                <circle cx="250" cy="150" r="40" fill="#fbc02d" />
+                <circle cx="350" cy="150" r="40" fill="#ffa000" />
+                <circle cx="450" cy="150" r="40" fill="#e65100" />
+                <path d="M 100 200 Q 150 250 200 200 Z" fill="#c62828" />
+                <path d="M 200 200 Q 250 250 300 200 Z" fill="#d32f2f" />
+                <path d="M 300 200 Q 350 250 400 200 Z" fill="#f44336" />
+                <path d="M 400 200 Q 450 250 500 200 Z" fill="#ff7043" />
+            </svg>
+            <div class="alt-text">Ilustrasi bakwan yang terlihat lezat dan menggugah selera.</div>
+        </div>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <ul>
+            <li><span class="highlight">250 gram</span> tepung terigu serbaguna</li>
+            <li><span class="highlight">50 gram</span> tepung beras (untuk kerenyahan ekstra)</li>
+            <li><span class="highlight">1/2 sendok teh</span> baking powder (opsional, untuk sedikit mengembang)</li>
+            <li><span class="highlight">1 buah</span> wortel ukuran sedang, iris tipis memanjang</li>
+            <li><span class="highlight">100 gram</span> kol, iris tipis</li>
+            <li><span class="highlight">1 batang</span> daun bawang, iris tipis</li>
+            <li><span class="highlight">1 batang</span> seledri, iris tipis (opsional)</li>
+            <li><span class="highlight">2 siung</span> bawang putih, haluskan</li>
+            <li><span class="highlight">1/2 sendok teh</span> merica bubuk</li>
+            <li><span class="highlight">1 sendok teh</span> garam (sesuai selera)</li>
+            <li><span class="highlight">1/2 sendok teh</span> kaldu bubuk (ayam/sapi, sesuai selera)</li>
+            <li><span class="highlight">200-250 ml</span> air dingin (untuk adonan)</li>
+            <li>Minyak goreng secukupnya</li>
+        </ul>
+
+        <h2>Cara Membuat Adonan Bakwan</h2>
+        <ol>
+            <li>Dalam wadah besar, campurkan tepung terigu, tepung beras, dan baking powder (jika menggunakan). Aduk rata.</li>
+            <li>Masukkan bawang putih halus, merica bubuk, garam, dan kaldu bubuk.</li>
+            <li>Tuangkan air dingin sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang kental tapi tidak terlalu encer. Konsistensi adonan sangat penting untuk hasil bakwan yang renyah.</li>
+            <li>Masukkan irisan wortel, kol, daun bawang, dan seledri (jika pakai). Aduk rata hingga semua sayuran terlapisi adonan dengan baik.</li>
+        </ol>
+
+        <h2>Menggoreng Bakwan Agar Renyah Sempurna</h2>
+        <ol start="5">
+            <li>Panaskan minyak goreng dalam wajan dengan api sedang hingga benar-benar panas. Anda bisa mengetesnya dengan sedikit adonan, jika langsung mengapung dan berbuih, berarti minyak sudah siap.</li>
+            <li>Ambil satu sendok sayur adonan bakwan, lalu tuang perlahan ke dalam minyak panas. Usahakan agar ketebalannya tidak terlalu tebal.</li>
+            <li>Goreng bakwan hingga berwarna kuning keemasan dan matang di kedua sisinya. Balik sesekali agar matang merata.</li>
+            <li>Angkat bakwan yang sudah matang dan tiriskan minyaknya dengan baik. Gunakan tisu dapur untuk menyerap sisa minyak.</li>
+            <li>Ulangi proses menggoreng hingga semua adonan habis.</li>
+        </ol>
+
+        <div class="tips">
+            <h3>Tips Tambahan untuk Bakwan Super Renyah:</h3>
+            <ul>
+                <li>Gunakan <span class="highlight">air dingin</span> untuk adonan, ini membantu menciptakan tekstur yang lebih renyah.</li>
+                <li>Jangan memasukkan terlalu banyak sayuran ke dalam adonan, agar adonan bisa melapisi sayuran dengan baik.</li>
+                <li>Pastikan <span class="highlight">minyak goreng benar-benar panas</span> sebelum menggoreng. Ini kunci utama agar bakwan tidak menyerap banyak minyak dan menjadi renyah.</li>
+                <li>Jangan menggoreng bakwan terlalu banyak dalam satu waktu, agar suhu minyak tetap stabil.</li>
+                <li>Sajikan bakwan selagi hangat untuk menikmati kerenyahannya yang maksimal.</li>
+            </ul>
+        </div>
+
+        <p>Bakwan siap dinikmati sebagai camilan atau lauk pendamping. Sajikan dengan sambal kecap atau cabai rawit hijau untuk rasa yang lebih menggugah selera. Selamat mencoba!</p>
+
+    </div>
+
+    <footer>
+        Terima kasih telah mengunjungi resep ini.
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-bala-bala-sayur-crispy">Resep Bala Bala Sayur Crispy</a></li>
+<li><a href="/bale-pindah">Bale Pindah</a></li>
+<li><a href="/bakwan-yang-renyah">Bakwan Yang Renyah</a></li>
+<li><a href="/bakwan-tanpa-daun-bawang">Bakwan Tanpa Daun Bawang</a></li>
+<li><a href="/bumbu-perkedel-udang">Bumbu Perkedel Udang</a></li>
+<li><a href="/cara-bikin-dadar-jagung-enak-empuk">Cara Bikin Dadar Jagung Enak Empuk</a></li>
+<li><a href="/resep-dadar-jagung-rumahan">Resep Dadar Jagung Rumahan</a></li>
+<li><a href="/resep-membuat-weci-renyah">Resep Membuat Weci Renyah</a></li>
+<li><a href="/bakpao-rasa">Bakpao Rasa</a></li>
+<li><a href="/cara-membuat-bakso-mercon-sederhana">Cara Membuat Bakso Mercon Sederhana</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ote Ote Gorengan: Gurihnya Camilan Favorit!</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        :root {
+            --primary-color: #6dd5ed; /* Biru muda cerah */
+            --secondary-color: #21c1d1; /* Biru toska cerah */
+            --text-color: #333;
+            --background-color: #f0f8ff; /* AliceBlue */
+            --card-background: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 768px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        h1, h2 {
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 200px;
+            background-color: var(--primary-color);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .hero-image svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .content-section {
+            margin-top: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--secondary-color);
+        }
+
+        .recipe-steps {
+            background-color: var(--primary-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .recipe-steps h3 {
+            color: var(--text-color);
+            text-align: left;
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            width: 100%;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .hero-image {
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .hero-image {
+                height: 150px;
+            }
+            p, li {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ote Ote Gorengan: Camilan Sederhana yang Menggoda Selera</h1>
+
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6dd5ed;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#21c1d1;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="45" fill="url(#grad1)" stroke="#ffffff" stroke-width="3"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">Ote Ote</text>
+                <path d="M30 70 L40 60 L50 70 L60 60 L70 70 L60 80 L50 70 L40 80 Z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak kenal dengan ote-ote? Camilan gorengan yang satu ini memang selalu punya tempat istimewa di hati banyak orang. Bentuknya yang bulat pipih, dengan taburan sayuran segar di dalamnya, serta kerenyahan di bagian luar dan kelembutan di dalam, menjadikannya pilihan sempurna untuk menemani waktu santai, acara kumpul keluarga, atau sekadar pengganjal perut di sela-sela aktivitas. Aroma gurih saat baru diangkat dari penggorengan selalu berhasil menggugah selera siapa pun yang menciumnya.</p>
+
+        <div class="content-section">
+            <h2>Keistimewaan Ote-Ote</h2>
+            <p>Ote-ote, yang juga dikenal sebagai bakwan sayur di beberapa daerah, memiliki daya tarik tersendiri. Perpaduan adonan tepung yang gurih dan renyah dengan aneka sayuran seperti wortel, kol, tauge, dan daun bawang menciptakan rasa yang seimbang. Beberapa variasi bahkan menambahkan udang atau potongan ayam untuk menambah kekayaan rasa dan tekstur. Kelezatannya semakin sempurna jika disantap selagi hangat dengan cocolan sambal kacang, saus sambal, atau kecap manis.</p>
+            <p>Proses pembuatannya pun tergolong mudah, menjadikannya pilihan favorit untuk dibuat sendiri di rumah. Bahan-bahannya mudah ditemukan di pasar tradisional maupun supermarket. Kuncinya terletak pada keseimbangan adonan, kesegaran sayuran, dan teknik menggoreng yang tepat agar menghasilkan ote-ote yang renyah di luar namun tetap lembut di dalam, serta tidak menyerap terlalu banyak minyak.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Tips Membuat Ote-Ote Sempurna</h2>
+            <p>Untuk mendapatkan ote-ote yang lezat dan memikat, perhatikan beberapa tips berikut:</p>
+            <ul>
+                <li><strong>Kualitas Sayuran:</strong> Gunakan sayuran yang masih segar dan berkualitas baik. Potong sayuran tipis-tipis agar matang merata saat digoreng.</li>
+                <li><strong>Adonan yang Pas:</strong> Jangan terlalu encer agar ote-ote tidak melebar saat digoreng, namun juga jangan terlalu kental agar tidak keras.</li>
+                <li><strong>Minyak Panas:</strong> Goreng ote-ote dalam minyak yang benar-benar panas. Ini akan membantu ote-ote menjadi renyah dan tidak menyerap banyak minyak. Gunakan api sedang cenderung besar agar matang merata tanpa gosong.</li>
+                <li><strong>Teknik Menggoreng:</strong> Sendokkan adonan ke dalam minyak panas satu per satu dengan jarak yang cukup agar tidak saling menempel. Balik ote-ote saat satu sisi sudah berwarna keemasan.</li>
+                <li><strong>Tiriskan dengan Baik:</strong> Setelah matang, tiriskan ote-ote di atas kertas tisu atau rak kawat untuk menyerap kelebihan minyak.</li>
+            </ul>
+        </div>
+
+        <div class="content-section recipe-steps">
+            <h3>Resep Dasar Ote-Ote Gorengan</h3>
+            <p><strong>Bahan:</strong></p>
+            <ul>
+                <li>150 gr tepung terigu</li>
+                <li>50 gr tepung beras</li>
+                <li>1 buah wortel, serut kasar</li>
+                <li>100 gr kol, iris tipis</li>
+                <li>50 gr tauge</li>
+                <li>2 batang daun bawang, iris</li>
+                <li>50 gr udang kupas, belah punggung (opsional)</li>
+                <li>1 siung bawang putih, haluskan</li>
+                <li>1/2 sdt ketumbar bubuk</li>
+                <li>Garam, gula, dan merica secukupnya</li>
+                <li>Air secukupnya</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+            <p><strong>Cara Membuat:</strong></p>
+            <ol>
+                <li>Campur tepung terigu, tepung beras, bawang putih halus, ketumbar, garam, gula, dan merica.</li>
+                <li>Tuang air sedikit demi sedikit sambil diaduk hingga menjadi adonan kental yang tidak terlalu encer.</li>
+                <li>Masukkan wortel, kol, tauge, daun bawang, dan udang (jika pakai). Aduk rata.</li>
+                <li>Panaskan minyak goreng dalam wajan.</li>
+                <li>Ambil satu sendok sayur adonan, masukkan perlahan ke dalam minyak panas hingga membentuk bulat pipih. Lakukan hingga wajan terisi secukupnya.</li>
+                <li>Goreng hingga kedua sisi berwarna keemasan dan matang. Angkat dan tiriskan.</li>
+                <li>Sajikan selagi hangat dengan sambal atau saus favorit.</li>
+            </ol>
+        </div>
+
+        <p>Ote-ote gorengan bukan hanya sekadar camilan, tetapi juga sebuah kuliner nusantara yang menawarkan kehangatan dan kelezatan dalam setiap gigitannya. Dengan sedikit kreativitas, Anda bisa menciptakan variasi ote-ote yang sesuai dengan selera keluarga.</p>
+
+    </div>
+
+    <footer>
+        Artikel ini membahas tentang ote-ote gorengan.
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/kembang-bakung-merah">Kembang Bakung Merah</a></li>
+<li><a href="/bakpia-pathok-kurnia">Bakpia Pathok Kurnia</a></li>
+<li><a href="/resep-bakwan-pete">Resep Bakwan Pete</a></li>
+<li><a href="/bakteri-baik-adalah">Bakteri Baik Adalah</a></li>
+<li><a href="/bakpia-pathok-yessica">Bakpia Pathok Yessica</a></li>
+<li><a href="/bakpao-empuk-dan-lembut">Bakpao Empuk Dan Lembut</a></li>
+<li><a href="/resep-bakwan-pakai-cetakan">Resep Bakwan Pakai Cetakan</a></li>
+<li><a href="/bakwan-renyah-dan-tidak-lembek">Bakwan Renyah Dan Tidak Lembek</a></li>
+<li><a href="/resep-bakwan-udang-betawi">Resep Bakwan Udang Betawi</a></li>
+<li><a href="/resep-bakwan-tahu-toge">Resep Bakwan Tahu Toge</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

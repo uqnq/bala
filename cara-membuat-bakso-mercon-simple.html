@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakso Mercon Simple & Enak</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #6ab04c; /* Warna hijau cerah dan sejuk */
+            --secondary-color: #f9ca24; /* Warna kuning cerah */
+            --background-color: #f8f9fa; /* Latar belakang krem muda */
+            --text-color: #333; /* Warna teks gelap */
+            --heading-color: #2d3436; /* Warna heading lebih gelap */
+            --card-background: #ffffff; /* Latar belakang kartu putih */
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: var(--card-background);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3 {
+            color: var(--heading-color);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 8px;
+            margin-top: 25px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .ingredients, .steps {
+            background-color: var(--background-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients h3, .steps h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            text-align: left;
+            border-bottom: none;
+        }
+
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--heading-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hero-image">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:0.8" />
+                        <stop offset="100%" style="stop-color:var(--secondary-color);stop-opacity:0.9" />
+                    </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grad1)" rx="10"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="25" font-weight="bold">Bakso Mercon Super Pedas!</text>
+                <path d="M 150 120 Q 175 100 200 120 T 250 120" stroke="#ff0000" stroke-width="4" fill="none"/>
+                <circle cx="200" cy="130" r="10" fill="#ff0000"/>
+                <circle cx="180" cy="130" r="3" fill="#ff0000"/>
+                <circle cx="220" cy="130" r="3" fill="#ff0000"/>
+            </svg>
+            <p style="font-size: 0.9em; color: #555;">Nikmati sensasi pedas membara dari bakso mercon buatan sendiri.</p>
+        </div>
+
+        <h1>Cara Membuat Bakso Mercon Simple & Lezat</h1>
+
+        <p>Siapa yang tidak tergoda dengan hidangan bakso yang kenyal dengan rasa pedas membahana? Bakso mercon menjadi salah satu favorit banyak orang karena sensasi pedasnya yang unik dan menggugah selera. Membuatnya di rumah ternyata tidak sesulit yang dibayangkan, lho! Dengan beberapa langkah sederhana dan bahan yang mudah didapat, Anda bisa menyajikan bakso mercon super pedas yang pastinya bikin nagih. Mari kita mulai petualangan kuliner pedas ini!</p>
+
+        <h2>Kenapa Bakso Mercon Begitu Spesial?</h2>
+        <p>Perpaduan antara kenyalnya bakso sapi berkualitas dengan bumbu cabai yang melimpah menciptakan harmoni rasa yang luar biasa. Tingkat kepedasan yang bisa Anda sesuaikan sendiri menjadi daya tarik utama. Sempurna disantap saat cuaca dingin atau kapan saja Anda menginginkan sesuatu yang 'menggigit'!</p>
+
+        <h2>Bahan-Bahan yang Anda Butuhkan</h2>
+        <div class="ingredients">
+            <h3>Bahan Utama:</h3>
+            <ul>
+                <li>300 gram bakso sapi, potong menjadi dua atau sesuai selera</li>
+                <li>500 ml air kaldu sapi (bisa dari rebusan tulang sapi atau kaldu bubuk)</li>
+            </ul>
+
+            <h3>Bumbu Halus (untuk Sambal Mercon):</h3>
+            <ul>
+                <li>10-15 buah cabai rawit merah (sesuaikan tingkat kepedasan Anda)</li>
+                <li>5 buah cabai merah keriting</li>
+                <li>3 siung bawang merah</li>
+                <li>2 siung bawang putih</li>
+                <li>1/2 sendok teh terasi bakar (opsional, tapi sangat direkomendasikan!)</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya</li>
+            </ul>
+
+            <h3>Bumbu Lainnya:</h3>
+            <ul>
+                <li>2 lembar daun salam</li>
+                <li>1 batang serai, memarkan</li>
+                <li>1 cm lengkuas, memarkan</li>
+                <li>1-2 sendok makan kecap manis</li>
+                <li>Minyak goreng secukupnya untuk menumis</li>
+            </ul>
+        </div>
+
+        <h2>Langkah-Langkah Membuat Bakso Mercon Simple</h2>
+        <div class="steps">
+            <h3>Cara Membuat:</h3>
+            <ol>
+                <li><strong>Siapkan Bumbu Halus:</strong> Cuci bersih semua cabai, bawang merah, bawang putih. Haluskan bersama terasi (jika menggunakan) menggunakan cobek atau blender. Tambahkan sedikit garam agar lebih mudah dihaluskan.</li>
+                <li><strong>Tumis Bumbu:</strong> Panaskan sedikit minyak goreng dalam wajan. Tumis bumbu halus bersama daun salam, serai, dan lengkuas hingga harum dan matang. Pastikan bumbu benar-benar matang agar tidak langu.</li>
+                <li><strong>Masukkan Bakso:</strong> Setelah bumbu harum, masukkan potongan bakso sapi. Aduk rata dan masak sebentar hingga bakso sedikit berubah warna dan terlumuri bumbu.</li>
+                <li><strong>Tambahkan Kaldu dan Kecap:</strong> Tuangkan air kaldu sapi ke dalam wajan. Masukkan kecap manis, aduk kembali.</li>
+                <li><strong>Masak Hingga Meresap:</strong> Biarkan masakan mendidih. Kecilkan api dan masak terus hingga kuah sedikit menyusut, bumbu meresap sempurna ke dalam bakso, dan kuah mengental. Koreksi rasa, tambahkan garam atau gula jika perlu.</li>
+                <li><strong>Sajikan:</strong> Angkat bakso mercon yang sudah matang. Sajikan selagi hangat.</li>
+            </ol>
+        </div>
+
+        <h2>Tips Tambahan untuk Bakso Mercon Sempurna</h2>
+        <ul>
+            <li>Untuk rasa yang lebih kaya, Anda bisa menambahkan sedikit kaldu bubuk sapi saat menumis bumbu.</li>
+            <li>Jika suka, tambahkan irisan cabai rawit utuh saat menumis untuk menambah sensasi pedas yang 'mencubit'.</li>
+            <li>Anda bisa menambahkan sayuran seperti sawi atau pakcoy menjelang akhir proses memasak untuk keseimbangan nutrisi dan warna.</li>
+            <li>Sajikan bakso mercon dengan nasi hangat, taburan bawang goreng, dan kerupuk untuk pengalaman kuliner yang lebih lengkap.</li>
+        </ul>
+
+        <p>Membuat bakso mercon di rumah adalah cara yang fantastis untuk menikmati kelezatan pedas sesuai selera Anda. Selamat mencoba resep <span class="highlight">cara membuat bakso mercon simple</span> ini dan rasakan kebahagiaan pedasnya!</p>
+
+        <p>Untuk variasi lain, Anda bisa mencari resep bakso mercon kuah atau bakso mercon goreng. Kuncinya adalah keberanian bermain dengan tingkat kepedasan dan rempah-rempah. Selamat memasak dan selamat menikmati!</p>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-75-atau-25">Bakpia 75 Atau 25</a></li>
+<li><a href="/bakpao-dapur-azizam">Bakpao Dapur Azizam</a></li>
+<li><a href="/resep-bakwan-sayur-renyah-dan-tidak-lembek">Resep Bakwan Sayur Renyah Dan Tidak Lembek</a></li>
+<li><a href="/pia-pia-balong">Pia Pia Balong</a></li>
+<li><a href="/bakpao-manis">Bakpao Manis</a></li>
+<li><a href="/cara-membuat-potato-cheese">Cara Membuat Potato Cheese</a></li>
+<li><a href="/bakwan-bumbu-kacang">Bakwan Bumbu Kacang</a></li>
+<li><a href="/resep-pentol-mercon-simple">Resep Pentol Mercon Simple</a></li>
+<li><a href="/bakwan-sayur-air-fryer">Bakwan Sayur Air Fryer</a></li>
+<li><a href="/bakwan-thailand">Bakwan Thailand</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakpao Lipat Enak dan Lembut</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #66cdaa; /* Sejuk, cerah */
+            --secondary-color: #87ceeb; /* Nada cerah lainnya */
+            --text-color: #333;
+            --bg-color: #f0f8ff; /* Latar belakang sangat cerah */
+            --card-bg: #ffffff;
+            --border-color: #add8e6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.6em;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content p, .content ul, .content ol {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .content ul li, .content ol li {
+            margin-bottom: 10px;
+        }
+
+        .step {
+            background-color: var(--secondary-color);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .step h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: left;
+            color: var(--text-color);
+        }
+
+        .step p {
+            margin-bottom: 0;
+            font-size: 1em;
+        }
+
+        .ingredients, .instructions {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: var(--bg-color);
+            border-radius: 10px;
+            border: 1px dashed var(--border-color);
+        }
+
+        .ingredients ul li, .instructions ol li {
+            font-size: 1em;
+        }
+
+        .note {
+            background-color: #fffacd; /* Kuning pucat */
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-style: italic;
+            border-left: 4px solid #ffd700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .content p, .content ul, .content ol {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" aria-label="Ilustrasi bakpao lipat yang lezat">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#a0e9e3;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#87ceeb;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+                        <feOffset dx="3" dy="3" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <path d="M100,150 C150,50 250,50 300,150 S450,250 400,150 S300,50 250,150 S150,250 100,150 Z" fill="url(#grad1)" filter="url(#shadow)"/>
+                <circle cx="250" cy="150" r="40" fill="#f8b400" filter="url(#shadow)"/>
+                <circle cx="250" cy="150" r="20" fill="#fff"/>
+                <path d="M250,130 Q255,120 260,125 T250,150 Z" fill="#333"/>
+                <path d="M150,150 C160,130 170,130 180,150 Z M200,150 C210,130 220,130 230,150 Z" fill="#f8b400"/>
+                <text x="300" y="280" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle">Bakpao Lipat Lezat</text>
+            </svg>
+        </div>
+
+        <h1>Cara Membuat Bakpao Lipat yang Lembut dan Menggoda</h1>
+        <p>Siapa yang tidak suka bakpao? Makanan tradisional yang empuk ini selalu menjadi favorit banyak orang, baik anak-anak maupun orang dewasa. Variasi isiannya yang beragam membuat bakpao semakin menarik. Kali ini, kita akan belajar cara membuat bakpao lipat yang tidak hanya lezat tapi juga memiliki tampilan yang cantik dan rapi. Teknik melipat yang tepat akan membuat bakpao Anda terlihat profesional.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan Adonan Bakpao</h2>
+            <ul>
+                <li>500 gram tepung terigu protein tinggi</li>
+                <li>100 gram gula pasir</li>
+                <li>10 gram ragi instan</li>
+                <li>1 sendok teh baking powder</li>
+                <li>1/2 sendok teh garam</li>
+                <li>250 ml air dingin (atau susu cair dingin)</li>
+                <li>50 ml minyak sayur atau mentega cair</li>
+            </ul>
+        </div>
+
+        <div class="ingredients">
+            <h2>Bahan Isian (Contoh: Coklat Lumer)</h2>
+            <ul>
+                <li>200 gram coklat batang, cincang kasar</li>
+                <li>50 gram margarin atau mentega</li>
+                <li>2 sendok makan susu kental manis (opsional)</li>
+            </ul>
+            <p>Anda bisa mengganti isian ini dengan isian favorit lainnya seperti kacang hijau, daging cincang, atau selai.</p>
+        </div>
+
+        <div class="instructions">
+            <h2>Langkah-Langkah Membuat Bakpao Lipat</h2>
+
+            <div class="step">
+                <h3>1. Mengaktifkan Ragi</h3>
+                <p>Dalam wadah, campurkan ragi instan dengan sedikit gula pasir dan air hangat (sekitar 50 ml dari total air). Aduk rata dan diamkan selama 5-10 menit hingga berbusa. Ini menandakan ragi aktif.</p>
+            </div>
+
+            <div class="step">
+                <h3>2. Membuat Adonan</h3>
+                <p>Dalam mangkuk besar, campurkan tepung terigu, sisa gula pasir, baking powder, dan garam. Aduk rata.</p>
+                <p>Tuang campuran ragi yang sudah aktif dan sisa air dingin sedikit demi sedikit sambil diuleni hingga adonan kalis dan tidak lengket di tangan. Terakhir, masukkan minyak sayur atau mentega cair, uleni kembali hingga benar-benar tercampur rata dan elastis.</p>
+            </div>
+
+            <div class="step">
+                <h3>3. Fermentasi Pertama</h3>
+                <p>Bulatkan adonan, letakkan dalam wadah yang sudah diolesi sedikit minyak. Tutup wadah dengan plastik wrap atau kain bersih yang lembab. Diamkan di tempat hangat selama 45-60 menit atau hingga adonan mengembang dua kali lipat.</p>
+            </div>
+
+            <div class="step">
+                <h3>4. Membuat Isian (Jika Menggunakan Coklat)</h3>
+                <p>Campurkan coklat cincang dan margarin dalam wadah tahan panas. Lelehkan dengan cara ditim (masukkan wadah ke dalam panci berisi air mendidih, jangan sampai air menyentuh dasar wadah coklat) atau gunakan microwave. Aduk rata hingga coklat dan margarin meleleh sempurna. Jika suka, tambahkan susu kental manis. Dinginkan hingga agak mengental dan mudah dibentuk.</p>
+            </div>
+
+            <div class="step">
+                <h3>5. Membentuk dan Melipat Bakpao</h3>
+                <p>Setelah adonan mengembang, kempiskan adonan untuk mengeluarkan gasnya. Bagi adonan menjadi beberapa bagian sesuai ukuran bakpao yang diinginkan. Bulatkan masing-masing bagian.</p>
+                <p>Ambil satu bulatan adonan, pipihkan hingga membentuk lingkaran. Letakkan isian coklat secukupnya di tengahnya.</p>
+                <p><strong>Teknik Melipat:</strong></p>
+                <ol>
+                    <li>Lipat adonan dari satu sisi ke tengah, tekan sedikit.</li>
+                    <li>Lipat lagi dari sisi seberangnya, tumpuk sedikit di atas lipatan pertama, tekan lagi.</li>
+                    <li>Lakukan hal yang sama untuk kedua sisi yang tersisa.</li>
+                    <li>Kumpulkan semua lipatan di bagian atas dan cubit rapat untuk menutup. Pastikan tidak ada celah agar isian tidak bocor saat dikukus.</li>
+                    <li>Balikkan bakpao sehingga bagian yang tertutup rapat berada di bawah. Bentuk kembali agar terlihat rapi dan bulat.</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <h3>6. Fermentasi Kedua</h3>
+                <p>Susun bakpao yang sudah dibentuk di atas kertas roti atau loyang yang sudah diolesi sedikit minyak. Beri jarak antar bakpao karena akan mengembang lagi. Tutup kembali dengan kain bersih dan diamkan selama 15-20 menit hingga mengembang lagi.</p>
+            </div>
+
+            <div class="step">
+                <h3>7. Mengukus Bakpao</h3>
+                <p>Panaskan kukusan hingga air mendidih dan uapnya banyak. Alasi tutup kukusan dengan kain bersih agar air tidak menetes ke bakpao. Kukus bakpao dengan api sedang selama 10-12 menit atau hingga matang. Jangan membuka tutup kukusan terlalu sering saat proses mengukus.</p>
+            </div>
+        </div>
+
+        <div class="note">
+            <p>Tips: Untuk mendapatkan warna putih yang cerah pada bakpao, pastikan Anda menggunakan api sedang saat mengukus dan tutup kukusan dilapisi kain agar tidak ada embun yang menetes langsung ke permukaan bakpao.</p>
+        </div>
+
+        <p>Selamat mencoba membuat bakpao lipat di rumah! Dengan sedikit latihan, Anda akan mahir membuat bakpao yang lembut, empuk, dan tampilannya cantik. Bakpao lipat ini sangat cocok dinikmati sebagai camilan hangat bersama keluarga tercinta.</p>
+
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakteri-ekolik">Bakteri Ekolik</a></li>
+<li><a href="/bakpia-kukus-tugu-harga">Bakpia Kukus Tugu Harga</a></li>
+<li><a href="/adonan-bakwan-jagung-disimpan-di-kulkas">Adonan Bakwan Jagung Disimpan Di Kulkas</a></li>
+<li><a href="/membuat-perkedel-jagung-manis">Membuat Perkedel Jagung Manis</a></li>
+<li><a href="/bumbu-racik-bakwan-jagung">Bumbu Racik Bakwan Jagung</a></li>
+<li><a href="/bumbu-bakwan-jagung-rumahan">Bumbu Bakwan Jagung Rumahan</a></li>
+<li><a href="/bakpia-pathok-25-kumbu-hitam">Bakpia Pathok 25 Kumbu Hitam</a></li>
+<li><a href="/cara-perkedel-jagung">Cara Perkedel Jagung</a></li>
+<li><a href="/cara-membuat-bala-bala-jagung-simple">Cara Membuat Bala Bala Jagung Simple</a></li>
+<li><a href="/resep-bakwan-jagung-sosis">Resep Bakwan Jagung Sosis</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

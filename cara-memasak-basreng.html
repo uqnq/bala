@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pelajari cara memasak basreng, camilan renyah dan gurih yang disukai banyak orang. Ikuti panduan langkah demi langkah yang mudah diikuti.">
+    <title>Cara Memasak Basreng Renyah & Gurih</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            color: #4CAF50; /* Hijau cerah */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #388E3C; /* Hijau lebih tua */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-bottom: 2px solid #E8F5E9; /* Hijau pastel terang */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            color: #2E7D32; /* Hijau gelap */
+            font-weight: bold;
+        }
+        .recipe-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .ingredients li::before, .instructions li::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #66BB6A; /* Hijau medium */
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .step-number {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: #81C784; /* Hijau muda */
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .ingredients .step-number {
+            background-color: #A5D6A7; /* Hijau lebih muda */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #E0E0E0;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .recipe-image {
+                margin: 15px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Memasak Basreng Renyah dan Gurih</h1>
+
+        <svg class="recipe-image" width="500" height="300" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background -->
+            <rect width="100" height="60" fill="#E8F5E9"/>
+            <!-- Bowl -->
+            <ellipse cx="50" cy="50" rx="40" ry="10" fill="#A5D6A7"/>
+            <path d="M 10 50 Q 50 30 90 50 L 90 60 L 10 60 Z" fill="#C8E6C9"/>
+            <!-- Basreng (simplified shapes) -->
+            <circle cx="30" cy="40" r="4" fill="#81C784"/>
+            <circle cx="40" cy="35" r="4" fill="#81C784"/>
+            <circle cx="50" cy="40" r="4" fill="#81C784"/>
+            <circle cx="60" cy="35" r="4" fill="#81C784"/>
+            <circle cx="70" cy="40" r="4" fill="#81C784"/>
+            <!-- Oil splashes (abstract) -->
+            <circle cx="25" cy="20" r="2" fill="#E1F5FE" opacity="0.7"/>
+            <circle cx="65" cy="25" r="1.5" fill="#E1F5FE" opacity="0.6"/>
+            <circle cx="45" cy="15" r="1.8" fill="#E1F5FE" opacity="0.5"/>
+            <!-- Text overlay -->
+            <text x="50" y="30" font-family="Segoe UI, sans-serif" font-size="8" fill="#388E3C" text-anchor="middle" font-weight="bold">Basreng</text>
+        </svg>
+        <p class="image-caption">Bayangkan basreng yang renyah dan menggugah selera!</p>
+
+        <p>Siapa yang tidak suka camilan renyah dan gurih yang bisa menemani waktu santai atau kumpul bersama teman? Basreng, atau bakso goreng, adalah salah satu camilan favorit banyak orang Indonesia. Rasanya yang unik, teksturnya yang renyah di luar dan kenyal di dalam, serta beragam pilihan bumbu membuatnya semakin istimewa. Jika Anda penasaran bagaimana cara membuat basreng sendiri di rumah agar hasilnya maksimal, mari kita simak panduan lengkapnya di sini.</p>
+
+        <h2>Mengapa Memasak Basreng Sendiri?</h2>
+        <p>Membuat basreng di rumah memiliki banyak keuntungan. Pertama, Anda bisa mengontrol kualitas bahan yang digunakan, memastikan kebersihan, dan menyesuaikan tingkat kepedasan atau rasa sesuai selera. Kedua, ini bisa menjadi kegiatan yang menyenangkan, terutama jika dilakukan bersama keluarga atau teman. Terakhir, tentu saja, sensasi memakan camilan buatan sendiri jauh lebih memuaskan!</p>
+
+        <h2>Bahan-Bahan untuk Basreng Gurih</h2>
+        <p>Sebelum memulai proses memasak, pastikan semua bahan sudah tersedia. Berikut adalah daftar bahan yang Anda perlukan:</p>
+        <ul class="ingredients">
+            <li><span class="step-number">1</span> 250 gram bakso sapi atau ayam, potong sesuai selera (bulat, iris, atau bentuk dadu).</li>
+            <li><span class="step-number">2</span> 100 gram tepung tapioka atau tepung kanji.</li>
+            <li><span class="step-number">3</span> 50 gram tepung terigu.</li>
+            <li><span class="step-number">4</span> 1 batang daun bawang, iris tipis.</li>
+            <li><span class="step-number">5</span> 2 siung bawang putih, haluskan.</li>
+            <li><span class="step-number">6</span> 1/2 sendok teh garam.</li>
+            <li><span class="step-number">7</span> 1/4 sendok teh merica bubuk.</li>
+            <li><span class="step-number">8</span> Secukupnya air es.</li>
+            <li><span class="step-number">9</span> Minyak goreng secukupnya untuk menggoreng.</li>
+        </ul>
+
+        <h2>Langkah-Langkah Cara Memasak Basreng</h2>
+        <p>Memasak basreng terbagi menjadi dua tahap utama: membuat adonan basreng yang kenyal, lalu menggorengnya hingga renyah. Ikuti langkah-langkah berikut dengan seksama:</p>
+
+        <h3>Tahap 1: Membuat Adonan Basreng</h3>
+        <ol class="instructions">
+            <li>
+                <span class="step-number">1</span>
+                Siapkan wadah, campurkan tepung tapioka, tepung terigu, garam, merica bubuk, dan bawang putih halus. Aduk rata.
+            </li>
+            <li>
+                <span class="step-number">2</span>
+                Masukkan potongan bakso ke dalam campuran tepung. Aduk rata hingga bakso terlapisi tepung.
+            </li>
+            <li>
+                <span class="step-number">3</span>
+                Tambahkan air es sedikit demi sedikit sambil terus diaduk. Uleni hingga adonan menjadi kalis dan bisa dibentuk. Jangan terlalu banyak air agar adonan tidak lembek.
+            </li>
+            <li>
+                <span class="step-number">4</span>
+                Masukkan irisan daun bawang, aduk kembali hingga tercampur rata dengan adonan.
+            </li>
+            <li>
+                <span class="step-number">5</span>
+                Ambil sedikit adonan, pipihkan atau bentuk sesuai selera Anda. Anda bisa membuat bentuk bulat kecil, pipih, atau memanjang. Pastikan ketebalannya tidak terlalu tebal agar cepat matang dan renyah.</li>
+        </ol>
+
+        <h3>Tahap 2: Menggoreng Basreng</h3>
+        <ol class="instructions">
+            <li>
+                <span class="step-number">1</span>
+                Panaskan minyak goreng dalam jumlah yang cukup banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum memasukkan adonan basreng.
+            </li>
+            <li>
+                <span class="step-number">2</span>
+                Masukkan adonan basreng yang sudah dibentuk ke dalam minyak panas. Goreng sambil terus diaduk agar matang merata dan tidak menempel satu sama lain.
+            </li>
+            <li>
+                <span class="step-number">3</span>
+                Terus goreng hingga basreng berwarna kuning keemasan dan terasa renyah saat diaduk. Proses menggoreng ini membutuhkan waktu yang cukup agar bagian dalam matang sempurna.
+            </li>
+            <li>
+                <span class="step-number">4</span>
+                Angkat basreng yang sudah matang dan tiriskan minyaknya. Letakkan di atas kertas tisu agar sisa minyak terserap dengan baik.</li>
+        </ol>
+
+        <h2>Tips Agar Basreng Renyah Tahan Lama</h2>
+        <p>Untuk mendapatkan basreng yang super renyah dan tahan lama, perhatikan beberapa tips berikut:</p>
+        <ul>
+            <li>Pastikan Anda menggunakan air es saat membuat adonan.</li>
+            <li>Goreng basreng dalam minyak yang benar-benar panas.</li>
+            <li>Goreng dengan api sedang dan jangan terlalu banyak memasukkan basreng sekaligus agar suhu minyak tetap stabil.</li>
+            <li>Setelah matang, tiriskan hingga benar-benar kering.</li>
+            <li>Simpan basreng dalam wadah kedap udara setelah benar-benar dingin.</li>
+        </ul>
+
+        <h2>Variasi Bumbu Basreng</h2>
+        <p>Basreng terasa lebih nikmat dengan berbagai pilihan bumbu. Setelah basreng matang dan ditiriskan, Anda bisa langsung melumuri dengan bumbu favorit:</p>
+        <ul>
+            <li><strong>Bumbu Pedas Daun Jeruk:</strong> Campurkan cabai bubuk, bubuk bawang putih, garam, dan irisan daun jeruk yang sudah digoreng kering.</li>
+            <li><strong>Bumbu Asin Gurih:</strong> Cukup campurkan garam, bubuk kaldu sapi/ayam, dan sedikit merica.</li>
+            <li><strong>Bumbu Balado:</strong> Gunakan bumbu balado siap pakai atau buat sendiri dari cabai, bawang, dan bumbu lainnya.</li>
+        </ul>
+
+        <p>Selamat mencoba resep cara memasak basreng ini di rumah. Nikmati sensasi camilan renyah dan gurih buatan sendiri!</p>
+
+        <div class="footer">
+            Artikel ini memberikan panduan cara memasak basreng yang mudah dan lezat.
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/balasan-ucapan-doa-orang-sakit">Balasan Ucapan Doa Orang Sakit</a></li>
+<li><a href="/balasan-orang-yang-berbuat-baik">Balasan Orang Yang Berbuat Baik</a></li>
+<li><a href="/bakpao-ikan">Bakpao Ikan</a></li>
+<li><a href="/resep-isian-pentol-mercon">Resep Isian Pentol Mercon</a></li>
+<li><a href="/perkedel-jagung-krispi">Perkedel Jagung Krispi</a></li>
+<li><a href="/pia-basah">Pia Basah</a></li>
+<li><a href="/bakteri-jahat">Bakteri Jahat</a></li>
+<li><a href="/makanan-mirip-bakpao">Makanan Mirip Bakpao</a></li>
+<li><a href="/bumbu-bala2-sayur">Bumbu Bala2 Sayur</a></li>
+<li><a href="/bakwan-jagung-perkedel-jagung">Bakwan Jagung Perkedel Jagung</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

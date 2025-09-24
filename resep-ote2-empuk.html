@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Ote-ote Empuk & Lezat | Mudah Dibuat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Mulai dari atas */
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul yang cerah */
+            margin-bottom: 15px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            border-bottom: 2px solid #b2dfdb; /* Garis bawah halus */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .ingredients, .steps {
+            background-color: #f0f8ff; /* Warna latar bahan & langkah yang lebih terang */
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .ingredients h2, .steps h2 {
+            color: #004d40; /* Warna judul bagian yang lebih gelap */
+            margin-bottom: 10px;
+            border-bottom: none;
+        }
+        .ingredients ul li, .steps ol li {
+            background-color: #e0f2f1; /* Warna item yang lebih terang */
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .tip {
+            font-style: italic;
+            color: #00695c;
+            background-color: #e0f2f1;
+            padding: 10px 15px;
+            border-left: 4px solid #00796b;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Ote-ote Empuk dan Lezat</h1>
+
+        <div class="image-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+                <!-- Background: Soft gradient from light blue to light green -->
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#b2ebf2;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="400" fill="url(#grad1)" />
+
+                <!-- Ote-ote shapes -->
+                <circle cx="200" cy="200" r="80" fill="#ffcc80" /> <!-- Golden brown -->
+                <ellipse cx="400" cy="220" rx="100" ry="70" fill="#ffcc80" />
+                <circle cx="600" cy="180" r="70" fill="#ffcc80" />
+
+                <!-- Vegetable details (simple shapes) -->
+                <path d="M 230 150 L 250 130 L 270 150 Z" fill="#a5d6a7" /> <!-- Green leaf/cabbage -->
+                <circle cx="260" cy="170" r="10" fill="#ffe0b2" /> <!-- Carrot bit -->
+
+                <path d="M 430 160 L 450 140 L 470 160 Z" fill="#a5d6a7" />
+                <circle cx="460" cy="190" r="12" fill="#ffe0b2" />
+
+                <path d="M 630 130 L 650 110 L 670 130 Z" fill="#a5d6a7" />
+                <circle cx="660" cy="150" r="8" fill="#ffe0b2" />
+
+                <!-- Text overlay -->
+                <text x="400" y="50" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="40" fill="#004d40" text-anchor="middle" font-weight="bold">Ote-ote</text>
+                <text x="400" y="100" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="20" fill="#004d40" text-anchor="middle">Gurih Renyah di Luar, Lembut di Dalam</text>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak suka ote-ote? Camilan renyah di luar dengan isian sayuran yang lembut di dalam ini memang selalu menggoda selera. Cocok dinikmati kapan saja, baik sebagai teman minum teh, bekal sekolah, atau sekadar camilan pengganjal lapar.</p>
+
+        <p>Membuat ote-ote yang empuk dan lezat ternyata tidak sesulit yang dibayangkan, lho! Kuncinya ada pada adonan tepung yang tepat dan penggunaan bahan isian yang segar. Dengan resep ini, Anda bisa membuat ote-ote yang anti gagal dan pasti disukai seluruh keluarga.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan Utama</h2>
+            <ul>
+                <li>250 gram udang segar, kupas, sisakan ekornya (opsional), belah punggungnya</li>
+                <li>1 buah wortel ukuran sedang, iris korek api tipis</li>
+                <li>100 gram kol, iris halus</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>1 buah labu siam kecil (manisa), kupas, iris korek api tipis</li>
+                <li>100 gram tauge (opsional)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+            <h2>Bahan Adonan Tepung</h2>
+            <ul>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>30 gram tepung beras</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>200-220 ml air es (sesuaikan kekentalan)</li>
+            </ul>
+            <h2>Bumbu Halus</h2>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>2 siung bawang merah</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>Sejumput kunyit bubuk (untuk warna, opsional)</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Cara Membuat Ote-ote Empuk</h2>
+            <ol>
+                <li><strong>Persiapan Bahan:</strong> Cuci bersih semua sayuran. Siapkan udang yang sudah dibersihkan.</li>
+                <li><strong>Membuat Adonan Tepung:</strong> Dalam wadah, campurkan tepung terigu, tepung beras, garam, merica bubuk, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li>Tuangkan air es sedikit demi sedikit sambil terus diaduk hingga adonan licin dan tidak bergerindil. Kekentalan adonan seperti adonan pisang goreng yang pas, tidak terlalu kental dan tidak terlalu encer. Sisihkan.</li>
+                <li><strong>Menumis Bumbu:</strong> Haluskan bawang putih, bawang merah, dan ketumbar bubuk. Panaskan sedikit minyak, tumis bumbu halus hingga harum.</li>
+                <li><strong>Mencampur Isian:</strong> Masukkan tumisan bumbu ke dalam wadah sayuran (wortel, kol, daun bawang, labu siam, tauge). Masukkan udang, aduk rata.</li>
+                <li>Tambahkan sekitar 2-3 sendok makan adonan tepung ke dalam campuran isian. Aduk rata. Tujuannya agar isian lebih menempel saat digoreng.</li>
+                <li><strong>Menggoreng Ote-ote:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar ote-ote terendam.</li>
+                <li>Ambil sekitar satu sendok sayur adonan tepung, lalu masukkan campuran isian secukupnya ke dalamnya. Aduk sebentar hingga tercampur rata.</li>
+                <li>Tuang perlahan adonan yang sudah bercampur isian ke dalam minyak panas. Bentuk bulat atau sesuai selera menggunakan sendok. Jangan terlalu tebal agar matang merata.</li>
+                <li>Goreng hingga ote-ote berwarna kuning keemasan dan matang merata. Balik sesekali agar matangnya sempurna.</li>
+                <li>Angkat ote-ote dan tiriskan di atas kertas tisu untuk menyerap kelebihan minyak.</li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <p><strong>Tips Tambahan:</strong> Untuk mendapatkan ote-ote yang lebih empuk di dalam namun tetap renyah di luar, pastikan menggunakan air es untuk adonan tepungnya. Jangan terlalu banyak memasukkan isian ke dalam adonan tepung agar hasilnya tidak lembek.</p>
+        </div>
+
+        <p>Sajikan ote-ote selagi hangat dengan sambal kecap atau cabai rawit. Nikmati kerenyahan di luar dan kelembutan isian sayuran serta udang yang gurih. Selamat mencoba resep ote-ote empuk ini di rumah!</p>
+
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/ceker-bakso-mercon">Ceker Bakso Mercon</a></li>
+<li><a href="/resep-happy-call">Resep Happy Call</a></li>
+<li><a href="/tulisan-arab-al-jaza-min-jinsil-amal">Tulisan Arab Al Jaza Min Jinsil Amal</a></li>
+<li><a href="/resep-bakwan-jagung-cookpad">Resep Bakwan Jagung Cookpad</a></li>
+<li><a href="/resep-oyong-tumis">Resep Oyong Tumis</a></li>
+<li><a href="/resep-membuat-bakwan-sayur-sederhana">Resep Membuat Bakwan Sayur Sederhana</a></li>
+<li><a href="/agar-cetakan-bakwan-tidak-lengket">Agar Cetakan Bakwan Tidak Lengket</a></li>
+<li><a href="/bumbu-bakwan-tempe">Bumbu Bakwan Tempe</a></li>
+<li><a href="/cara-membuat-potato-cheese">Cara Membuat Potato Cheese</a></li>
+<li><a href="/goreng-bakwan-dengan-air-fryer">Goreng Bakwan Dengan Air Fryer</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakso Beranak Bintara: Sensasi Lezat di Bekasi</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #66c2a5; /* Warna sejuk cerah */
+            --secondary-color: #ffd699; /* Warna cerah pendukung */
+            --text-color: #333;
+            --background-color: #f8f8f8;
+            --card-background: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .main-content {
+            flex: 2;
+            min-width: 300px;
+            background-color: var(--card-background);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        .main-content h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .cta {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        .cta h3 {
+            margin-top: 0;
+            font-size: 1.6em;
+        }
+
+        .cta a {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #56b89a;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .main-content {
+                padding: 20px;
+            }
+            .cta h3 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Nikmati Kelezatan Bakso Beranak di Bintara, Bekasi!</h1>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <div class="image-container">
+                <!-- SVG Gambar Bakso Beranak -->
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#66c2a5;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#a8dadc;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="shadow">
+                            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)" />
+                        </filter>
+                    </defs>
+                    <rect width="400" height="300" rx="15" ry="15" fill="#ffffff" filter="url(#shadow)"/>
+                    <!-- Bakso Utama -->
+                    <circle cx="200" cy="150" r="70" fill="#d62828" filter="url(#shadow)"/>
+                    <!-- Bakso Anak (lebih kecil) -->
+                    <circle cx="170" cy="120" r="25" fill="#f4a261" filter="url(#shadow)"/>
+                    <circle cx="230" cy="130" r="20" fill="#e76f51" filter="url(#shadow)"/>
+                    <circle cx="190" cy="180" r="18" fill="#2a9d8f" filter="url(#shadow)"/>
+                    <!-- Kuah -->
+                    <path d="M50 230 Q 100 210 150 230 T 250 230 T 350 230 L 350 290 L 50 290 Z" fill="url(#grad1)" opacity="0.7"/>
+                    <!-- Taburan Bawang Goreng -->
+                    <circle cx="180" cy="110" r="3" fill="#f4a261" opacity="0.6"/>
+                    <circle cx="220" cy="100" r="3" fill="#f4a261" opacity="0.6"/>
+                    <circle cx="200" cy="160" r="4" fill="#f4a261" opacity="0.7"/>
+                    <!-- Teks -->
+                    <text x="200" y="60" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">Bakso Beranak</text>
+                    <text x="200" y="85" font-family="Arial, sans-serif" font-size="16" fill="#66c2a5" text-anchor="middle">Bintara, Bekasi</text>
+                </svg>
+            </div>
+            <h2>Sensasi Menggugah Selera di Bintara</h2>
+            <p>Bagi para pecinta kuliner bakso di kawasan Bintara, Bekasi, kini hadir sebuah destinasi kuliner yang tak boleh dilewatkan: <span class="highlight">Bakso Beranak Bintara</span>. Konsep unik bakso beranak ini menawarkan pengalaman makan bakso yang berbeda dari biasanya. Bayangkan, di dalam satu bola bakso berukuran jumbo, tersembunyi berbagai ukuran bakso lainnya yang siap memanjakan lidah Anda.</p>
+
+            <p>Keistimewaan Bakso Beranak Bintara terletak pada porsi yang melimpah dan rasa kuah kaldu yang gurih serta kaya rempah. Setiap gigitan akan terasa semakin nikmat dengan perpaduan tekstur bakso yang kenyal dan isian di dalamnya. Tak heran jika tempat ini menjadi perbincangan hangat di kalangan pencari kuliner.</p>
+
+            <h2>Kenikmatan yang Tak Terlupakan</h2>
+            <p>Bakso beranak ini biasanya disajikan dengan pilihan mie, bihun, atau kwetiau, serta dilengkapi dengan taburan seledri, bawang goreng, dan sambal yang menggugah selera. Kuahnya yang bening namun kaya rasa adalah kunci utama kelezatan Bakso Beranak Bintara. Dibuat dari resep turun-temurun dengan bumbu pilihan, kuah ini mampu menghangatkan tubuh dan menenangkan jiwa.</p>
+
+            <p>Bagi Anda yang penasaran dengan sensasi unik ini, Bakso Beranak Bintara menawarkan beberapa pilihan paket yang bisa disesuaikan dengan selera dan jumlah pengunjung. Mulai dari porsi personal hingga paket keluarga, semuanya dirancang untuk memberikan kepuasan maksimal.</p>
+
+            <h2>Lokasi Strategis di Bintara</h2>
+            <p>Menemukan Bakso Beranak Bintara pun tidak sulit. Berlokasi strategis di jantung kawasan Bintara, Bekasi, tempat makan ini mudah dijangkau dari berbagai arah. Suasana tempat yang nyaman dan bersih juga menjadi nilai tambah, membuatnya cocok dijadikan tempat berkumpul bersama keluarga, teman, atau pasangan.</p>
+
+            <p>Jangan lewatkan kesempatan untuk mencicipi Bakso Beranak Bintara. Rasakan sendiri sensasi kelezatan bakso jumbo yang menyimpan kejutan di dalamnya. Pengalaman kuliner yang tak terlupakan ini pasti akan membuat Anda ingin kembali lagi dan lagi.</p>
+        </main>
+    </div>
+
+    <div class="container">
+        <div class="cta">
+            <h3>Ajak Teman & Keluarga Anda!</h3>
+            <p>Kunjungi Bakso Beranak Bintara sekarang dan rasakan kelezatannya.</p>
+            <a href="#">Lihat Peta Lokasi</a>
+        </div>
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/penyebab-balanitis">Penyebab Balanitis</a></li>
+<li><a href="/bakwan-kering">Bakwan Kering</a></li>
+<li><a href="/cara-mengatasi-cetakan-bakwan-yang-lengket">Cara Mengatasi Cetakan Bakwan Yang Lengket</a></li>
+<li><a href="/resep-bakwan-jagung-yang-renyah">Resep Bakwan Jagung Yang Renyah</a></li>
+<li><a href="/kalimantan-timur-balikpapan">Kalimantan Timur Balikpapan</a></li>
+<li><a href="/contoh-bunga-bakung">Contoh Bunga Bakung</a></li>
+<li><a href="/bakpao-oatmeal">Bakpao Oatmeal</a></li>
+<li><a href="/resep-bakwan-jagung-pakai-tepung-sasa">Resep Bakwan Jagung Pakai Tepung Sasa</a></li>
+<li><a href="/cara-membuat-ote-ote-sederhana">Cara Membuat Ote Ote Sederhana</a></li>
+<li><a href="/cara-membuat-dadar-jagung-manis">Cara Membuat Dadar Jagung Manis</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

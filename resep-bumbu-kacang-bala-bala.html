@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bumbu Kacang Bala Bala Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 95%;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2 {
+            color: #007bff; /* Biru cerah untuk judul */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            border-bottom: 2px solid #add8e6; /* LightBlue */
+            padding-bottom: 8px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-section {
+            width: 100%;
+        }
+        .ingredients, .steps {
+            background-color: #e0f7fa; /* Cyan-100 - warna sejuk terang */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .ingredients h3, .steps h3 {
+            color: #0056b3; /* Biru lebih gelap */
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .highlight {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                width: 98%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bumbu Kacang Bala Bala Lezat & Mudah</h1>
+
+        <div class="image-container">
+            <svg class="main-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc">
+                <title id="title">Ilustrasi Bumbu Kacang yang Menggugah Selera</title>
+                <desc id="desc">Ilustrasi bumbu kacang berwarna cokelat keemasan, dengan taburan wijen dan irisan cabai di atasnya.</desc>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:rgb(139,69,19);stop-opacity:1" /> <!-- SaddleBrown -->
+                        <stop offset="100%" style="stop-color:rgb(160,82,45);stop-opacity:1" /> <!-- Sienna -->
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <rect width="600" height="400" rx="20" ry="20" fill="#fffaf0" stroke="#f5deb3" stroke-width="2"/> <!-- FloralWhite dengan border -->
+                <path d="M 50 100 Q 150 50, 250 100 T 450 100 Q 550 50, 550 100 V 300 Q 450 350, 350 300 T 150 300 Q 50 350, 50 300 Z" fill="url(#grad1)" filter="url(#shadow)"/>
+                <circle cx="200" cy="180" r="5" fill="#fff"/> <!-- Kemerahan karena sedikit cabai -->
+                <circle cx="220" cy="170" r="4" fill="#f08080"/> <!-- LightCoral untuk sedikit cabai -->
+                <circle cx="240" cy="190" r="4" fill="#f08080"/>
+                <circle cx="260" cy="160" r="3" fill="#f08080"/>
+
+                <!-- Taburan wijen -->
+                <circle cx="120" cy="140" r="2" fill="#eee"/>
+                <circle cx="150" cy="110" r="2" fill="#eee"/>
+                <circle cx="180" cy="170" r="2" fill="#eee"/>
+                <circle cx="230" cy="120" r="2" fill="#eee"/>
+                <circle cx="260" cy="190" r="2" fill="#eee"/>
+                <circle cx="300" cy="150" r="2" fill="#eee"/>
+                <circle cx="340" cy="110" r="2" fill="#eee"/>
+                <circle cx="370" cy="180" r="2" fill="#eee"/>
+                <circle cx="400" cy="130" r="2" fill="#eee"/>
+                <circle cx="430" cy="160" r="2" fill="#eee"/>
+                <circle cx="460" cy="120" r="2" fill="#eee"/>
+                <circle cx="490" cy="170" r="2" fill="#eee"/>
+                <circle cx="520" cy="140" r="2" fill="#eee"/>
+                <circle cx="550" cy="110" r="2" fill="#eee"/>
+
+                <text x="100" y="50" font-family="Arial, sans-serif" font-size="20" fill="#555">Bala Bala siap disantap!</text>
+            </svg>
+        </div>
+
+        <div class="recipe-section">
+            <p>Bala bala, gorengan renyah yang populer di Indonesia, rasanya semakin nikmat ketika disajikan dengan bumbu kacang yang gurih dan sedikit manis. Membuat bumbu kacang sendiri di rumah ternyata tidak sulit, lho! Dengan <span class="highlight">resep bumbu kacang bala bala</span> yang tepat, Anda bisa menciptakan saus cocolan yang akan membuat bala bala Anda semakin tak terlupakan. Artikel ini akan memandu Anda langkah demi langkah untuk membuat bumbu kacang yang sempurna.</p>
+
+            <p>Kelezatan bala bala sangat bergantung pada tekstur gorengannya yang renyah dan tentu saja, pendampingnya yang pas. Bumbu kacang menjadi salah satu pilihan paling favorit karena kombinasi rasa manis, gurih, pedas, dan sedikit asam yang mampu menyeimbangkan rasa sayuran dalam bala bala. Kunci dari bumbu kacang yang enak adalah penggunaan kacang tanah berkualitas baik dan tingkat kematangan yang pas saat diolah.</p>
+
+            <h2>Bahan-Bahan Bumbu Kacang Bala Bala</h2>
+            <div class="ingredients">
+                <h3>Bahan Utama:</h3>
+                <ul>
+                    <li>250 gram kacang tanah kulit, goreng atau sangrai hingga matang dan renyah</li>
+                    <li>2-3 siung bawang putih, goreng sebentar</li>
+                    <li>5-7 buah cabai merah keriting (sesuaikan selera pedas), goreng sebentar</li>
+                    <li>2 buah cabai rawit (opsional, untuk rasa lebih pedas), goreng sebentar</li>
+                    <li>2 sendok makan gula merah, sisir</li>
+                    <li>1 sendok teh garam</li>
+                    <li>1/2 sendok teh terasi bakar (opsional, jika suka)</li>
+                    <li>1 lembar daun jeruk (opsional, untuk aroma)</li>
+                    <li>300-400 ml air panas (untuk melarutkan)</li>
+                    <li>1 sendok makan air asam jawa (dari 1 sdt asam jawa + 2 sdm air)</li>
+                </ul>
+            </div>
+
+            <h2>Langkah-Langkah Membuat Bumbu Kacang</h2>
+            <div class="steps">
+                <h3>Cara Membuat:</h3>
+                <ol>
+                    <li>Siapkan semua bahan yang sudah digoreng atau disangrai. Pastikan kacang tanah benar-benar matang dan tidak langu.</li>
+                    <li>Haluskan kacang tanah goreng menggunakan blender atau food processor. Proses hingga mendapatkan tekstur yang diinginkan. Ada yang suka halus, ada yang suka sedikit kasar agar terasa teksturnya.</li>
+                    <li>Jika menggunakan blender, masukkan bawang putih goreng, cabai merah keriting, cabai rawit (jika pakai), gula merah sisir, garam, terasi bakar (jika pakai), dan daun jeruk (jika pakai). Blender kembali hingga semua bumbu tercampur rata. Anda bisa menambahkan sedikit air panas saat memblender agar bumbu lebih mudah halus.</li>
+                    <li>Pindahkan bumbu yang sudah dihaluskan ke dalam panci. Tuang air panas sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan bumbu yang pas. Anda bisa menggunakan air panas atau air biasa, namun air panas membantu melarutkan gula merah dan bumbu lebih cepat.</li>
+                    <li>Tambahkan air asam jawa, aduk rata.</li>
+                    <li>Masak bumbu kacang di atas api sedang sambil terus diaduk agar tidak gosong di dasar panci. Masak hingga bumbu mendidih dan mengeluarkan minyak serta mengeluarkan aroma harum. Proses ini penting untuk mematangkan bumbu dan mengeluarkan rasa terbaiknya.</li>
+                    <li>Koreksi rasa. Tambahkan garam atau gula jika dirasa kurang sesuai selera.</li>
+                    <li>Setelah bumbu matang dan kekentalannya pas, angkat dan sajikan selagi hangat bersama bala bala kesukaan Anda.</li>
+                </ol>
+            </div>
+
+            <p>Menyajikan bala bala dengan bumbu kacang buatan sendiri akan memberikan sensasi rasa yang berbeda dan lebih personal. Aroma kacang yang gurih berpadu dengan cita rasa pedas manis yang seimbang, menciptakan harmoni yang pas di setiap gigitan. Jangan ragu untuk menyesuaikan tingkat kepedasan dan kemanisan sesuai dengan preferensi keluarga Anda.</p>
+
+            <p>Dengan mengikuti <span class="highlight">resep bumbu kacang bala bala</span> ini, Anda tidak hanya menyajikan camilan, tetapi juga sebuah hidangan lezat yang bisa dinikmati kapan saja. Selamat mencoba dan nikmati kelezatan bala bala dengan bumbu kacang spesial buatan sendiri!</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpao-tek-kie-tang-ling-pao">Bakpao Tek Kie Tang Ling Pao</a></li>
+<li><a href="/kue-weci">Kue Weci</a></li>
+<li><a href="/resep-buat-bakwan-kol">Resep Buat Bakwan Kol</a></li>
+<li><a href="/resep-bumbu-bakwan-sayur-kol">Resep Bumbu Bakwan Sayur Kol</a></li>
+<li><a href="/bakwan-jagung-resep">Bakwan Jagung Resep</a></li>
+<li><a href="/resep-bakwan-udang-betawi">Resep Bakwan Udang Betawi</a></li>
+<li><a href="/perbedaan-pia-dan-bakpia">Perbedaan Pia Dan Bakpia</a></li>
+<li><a href="/aneka-masakan-sawi">Aneka Masakan Sawi</a></li>
+<li><a href="/harga-tanaman-bakung">Harga Tanaman Bakung</a></li>
+<li><a href="/harga-bakpia-pojok">Harga Bakpia Pojok</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

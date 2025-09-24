@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pelajari cara membuat pia pia sayur yang renyah, lezat, dan sehat. Resep mudah untuk camilan favorit keluarga.">
+    <title>Cara Membuat Pia Pia Sayur Renyah dan Lezat</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        :root {
+            --primary-color: #82C3E8; /* Biru sejuk */
+            --secondary-color: #C8E6C9; /* Hijau lembut */
+            --text-color: #333;
+            --background-color: #F5F5F5;
+            --card-background: #FFFFFF;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--card-background);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 200px;
+            background-color: var(--primary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px 15px 0 0;
+            overflow: hidden;
+        }
+
+        .hero-image svg {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .recipe-section {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .recipe-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-text {
+            flex-grow: 1;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .content {
+                padding: 20px;
+            }
+            .hero-image {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+                <path d="M85.6 31.8c-.7-1.6-2.4-2.7-4.2-2.7H21.8c-1.8 0-3.5 1.1-4.2 2.7L8.1 50c-.3.8-.5 1.6-.5 2.5v32.8c0 3.1 2.5 5.6 5.6 5.6h75.3c3.1 0 5.6-2.5 5.6-5.6V52.5c0-.9-.2-1.7-.5-2.5L85.6 31.8zM50 60c-8.3 0-15-6.7-15-15s6.7-15 15-15 15 6.7 15 15-6.7 15-15 15zm30 18c0 3.9-3.1 7-7 7H27c-3.9 0-7-3.1-7-7V56.1c0-1.8.7-3.4 2-4.6l22.6-22.6c.7-.7 1.6-1.1 2.6-1.1h34.6c3.9 0 7 3.1 7 7v33.9z" fill="#FFFFFF" opacity="0.8"/>
+                <path d="M72.7 38.6c.4-.9.7-1.8.7-2.8 0-8.3-6.7-15-15-15s-15 6.7-15 15c0 1.7.4 3.3 1.1 4.7L36.3 52.5c-1.3-1.2-3-2-4.8-2H19.3c-2.2 0-3.8 1.6-3.8 3.8v31.9c0 2.2 1.6 3.8 3.8 3.8h57.5c2.2 0 3.8-1.6 3.8-3.8V53.9c0-2.2-1.6-3.8-3.8-3.8h-11.6c-1.8 0-3.5-.8-4.7-2L72.7 38.6zM50 63c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="#4CAF50"/>
+                <path d="M75.8 38.9L50 50.3 24.2 38.9c-1.4-1.2-3.3-2-5.2-2H18.1c-2.5 0-4.5 2-4.5 4.5v31.5c0 2.5 2 4.5 4.5 4.5h57.8c2.5 0 4.5-2 4.5-4.5V43.4c0-2.5-2-4.5-4.5-4.5h-9.6c-1.9 0-3.8-.8-5.2-2zM50 66.8c-5.1 0-9.3-4.2-9.3-9.3s4.2-9.3 9.3-9.3 9.3 4.2 9.3 9.3-4.2 9.3-9.3 9.3z" fill="#FBC02D"/>
+            </svg>
+        </div>
+        <div class="content">
+            <h1>Cara Membuat Pia Pia Sayur Renyah dan Lezat</h1>
+            <p>Pia pia sayur, camilan renyah yang digemari banyak orang, kini bisa Anda buat sendiri di rumah. Dengan sedikit usaha dan bahan-bahan yang mudah ditemukan, Anda dapat menyajikan pia pia sayur yang lezat dan lebih sehat untuk keluarga. Resep ini akan memandu Anda langkah demi langkah untuk mendapatkan hasil yang sempurna.</p>
+
+            <h2>Apa Itu Pia Pia Sayur?</h2>
+            <p>Pia pia sayur adalah sejenis gorengan renyah yang biasanya terbuat dari adonan tepung terigu yang dicampur dengan berbagai macam sayuran cincang halus. Bentuknya yang unik, seringkali menyerupai piringan tipis atau gulungan kecil, serta teksturnya yang kriuk menjadikannya pilihan camilan yang disukai, baik untuk teman minum teh maupun sebagai pelengkap hidangan.</p>
+
+            <h2>Manfaat Pia Pia Sayur</h2>
+            <p>Keunggulan utama pia pia sayur adalah kemampuannya untuk memasukkan asupan sayuran ke dalam camilan. Dengan penggunaan sayuran seperti wortel, buncis, kol, atau daun bawang, pia pia ini menjadi lebih bernutrisi dibandingkan camilan gorengan biasa. Sayuran kaya akan vitamin, mineral, dan serat yang baik untuk kesehatan pencernaan dan tubuh secara keseluruhan.</p>
+
+            <div class="recipe-section">
+                <h3>Bahan-bahan Utama</h3>
+                <ul>
+                    <li>250 gram tepung terigu protein sedang</li>
+                    <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                    <li>1 sendok teh garam</li>
+                    <li>1/2 sendok teh merica bubuk</li>
+                    <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                    <li>1 butir telur, kocok lepas</li>
+                    <li>150-180 ml air dingin (secukupnya hingga adonan kalis)</li>
+                    <li>Minyak goreng secukupnya</li>
+                </ul>
+
+                <h3>Bahan Isian Sayuran</h3>
+                <ul>
+                    <li>100 gram wortel, parut kasar atau potong korek api sangat halus</li>
+                    <li>50 gram buncis, iris tipis</li>
+                    <li>50 gram kol, iris tipis</li>
+                    <li>2 batang daun bawang, iris halus</li>
+                    <li>Bumbu halus: 2 siung bawang putih, 1/4 sendok teh ketumbar bubuk</li>
+                    <li>Garam dan merica secukupnya</li>
+                </ul>
+            </div>
+
+            <h2>Langkah-Langkah Membuat Pia Pia Sayur</h2>
+            <p>Membuat pia pia sayur sebenarnya cukup sederhana. Kunci utama terletak pada tekstur adonan dan cara menggorengnya agar renyah sempurna.</p>
+
+            <div class="recipe-section">
+                <h3>Persiapan Adonan</h3>
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Campurkan tepung terigu, tepung beras, garam, merica bubuk, dan kaldu bubuk dalam sebuah wadah. Aduk rata.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Masukkan telur kocok, aduk rata.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Tuang air dingin sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kalis dan tidak lengket di tangan. Konsistensinya harus lebih kental dari adonan bakwan, namun masih bisa dituang. Jika terlalu kental, tambahkan sedikit air lagi.</div>
+                </div>
+            </div>
+
+            <div class="recipe-section">
+                <h3>Mencampur Sayuran</h3>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">Dalam wadah terpisah, campurkan semua bahan isian sayuran (wortel, buncis, kol, daun bawang).</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-text">Masukkan bumbu halus (bawang putih, ketumbar), garam, dan merica ke dalam campuran sayuran. Aduk hingga semua sayuran terbalut bumbu.</div>
+                </div>
+            </div>
+
+            <div class="recipe-section">
+                <h3>Membentuk dan Menggoreng</h3>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-text">Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-text">Ambil sekitar 1-2 sendok makan adonan tepung, letakkan di pinggir wajan yang berisi minyak panas. Biarkan adonan sedikit melebar dan membentuk seperti piringan tipis.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">8</div>
+                    <div class="step-text">Segera tambahkan sekitar 1 sendok teh campuran sayuran di tengah adonan yang sudah sedikit melebar tadi.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">9</div>
+                    <div class="step-text">Gunakan sendok atau spatula untuk menekan pinggiran adonan agar menutupi sayuran, membentuk seperti pangsit atau cakwe pipih. Anda juga bisa sekadar meratakan sayuran di atas adonan tipis.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">10</div>
+                    <div class="step-text">Goreng pia pia sayur hingga berwarna kuning keemasan dan benar-benar renyah. Balik sesekali agar matang merata.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">11</div>
+                    <div class="step-text">Angkat dan tiriskan di atas kertas tisu untuk menyerap kelebihan minyak.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">12</div>
+                    <div class="step-text">Ulangi langkah 7-11 hingga semua adonan dan isian habis.</div>
+                </div>
+            </div>
+
+            <h2>Tips Mendapatkan Pia Pia yang Renyah</h2>
+            <ul>
+                <li>Gunakan api sedang saat menggoreng. Api terlalu besar akan membuat pia pia cepat gosong di luar namun belum matang di dalam.</li>
+                <li>Pastikan minyak sudah benar-benar panas sebelum memasukkan adonan.</li>
+                <li>Jangan terlalu tebal membuat adonannya agar renyah merata.</li>
+                <li>Tiriskan dengan baik setelah digoreng.</li>
+                <li>Pia pia sayur paling nikmat disajikan selagi hangat.</li>
+            </ul>
+
+            <p>Dengan mengikuti panduan ini, Anda akan dapat membuat pia pia sayur yang tidak hanya lezat tetapi juga memuaskan. Selamat mencoba dan menikmati camilan sehat buatan sendiri!</p>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-ellie-75">Bakpia Ellie 75</a></li>
+<li><a href="/bakpia-expired-berapa-lama">Bakpia Expired Berapa Lama</a></li>
+<li><a href="/bakwan-sayur-korea">Bakwan Sayur Korea</a></li>
+<li><a href="/resep-pentol-mercon-daun-jeruk">Resep Pentol Mercon Daun Jeruk</a></li>
+<li><a href="/cara-membuat-bakpia-kacang-hijau">Cara Membuat Bakpia Kacang Hijau</a></li>
+<li><a href="/cara-membuat-bakpao-sederhana">Cara Membuat Bakpao Sederhana</a></li>
+<li><a href="/resep-bakwan-jagung-enak">Resep Bakwan Jagung Enak</a></li>
+<li><a href="/jajanan-batagor">Jajanan Batagor</a></li>
+<li><a href="/resep-perkedel-jagung-renyah-tanpa-telur">Resep Perkedel Jagung Renyah Tanpa Telur</a></li>
+<li><a href="/resep-bakwan-sayur-gurih-dan-renyah">Resep Bakwan Sayur Gurih Dan Renyah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

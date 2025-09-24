@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Udang Bulat Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #FFC107; /* Kuning cerah */
+            --background-color: #E8F5E9; /* Hijau pastel sangat muda */
+            --text-color: #333;
+            --heading-color: #2E7D32; /* Hijau tua */
+            --card-background: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        main {
+            padding: 30px 20px;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        p, ul, ol {
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: var(--heading-color);
+        }
+
+        .svg-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .svg-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px var(--shadow-color);
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 0.9em;
+            margin-top: 30px;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        /* Media Query untuk mobile yang lebih kecil */
+        @media (max-width: 360px) {
+            body {
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 1.7em;
+            }
+            main {
+                padding: 20px 15px;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cara Membuat Bakwan Udang Bulat Lezat</h1>
+        </header>
+        <main>
+            <div class="svg-container">
+                <!-- SVG Image: Bakwan Udang Bulat yang Lezat -->
+                <svg class="svg-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFB74D;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FF8F00;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                            <feOffset dx="2" dy="2" result="offsetblur"/>
+                            <feComponentTransfer>
+                                <feFuncA type="linear" slope="0.5"/>
+                            </feComponentTransfer>
+                            <feMerge>
+                                <feMergeNode in="offsetblur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Latar Belakang Kuning Kecoklatan -->
+                    <rect width="400" height="250" rx="15" ry="15" fill="url(#grad1)"/>
+
+                    <!-- Bakwan 1 -->
+                    <circle cx="100" cy="120" r="40" fill="#FFD54F" filter="url(#shadow)"/>
+                    <!-- Udang di Bakwan 1 -->
+                    <path d="M 80 100 Q 70 80 90 70 T 110 80" stroke="#E65100" stroke-width="3" fill="none" transform="rotate(-20 95 90)"/>
+                    <path d="M 90 90 Q 80 70 100 60 T 120 70" stroke="#E65100" stroke-width="3" fill="none" transform="rotate(-30 95 90)"/>
+
+                    <!-- Bakwan 2 -->
+                    <circle cx="200" cy="110" r="45" fill="#FFD54F" filter="url(#shadow)"/>
+                    <!-- Udang di Bakwan 2 -->
+                    <path d="M 170 90 Q 160 70 180 50 T 200 60" stroke="#E65100" stroke-width="3" fill="none" transform="rotate(10 185 70)"/>
+                    <path d="M 180 100 Q 170 80 190 70 T 210 80" stroke="#E65100" stroke-width="3" fill="none" transform="rotate(5 195 90)"/>
+
+                    <!-- Bakwan 3 -->
+                    <circle cx="300" cy="130" r="38" fill="#FFD54F" filter="url(#shadow)"/>
+                    <!-- Udang di Bakwan 3 -->
+                    <path d="M 280 110 Q 270 90 290 70 T 310 80" stroke="#E65100" stroke-width="3" fill="none" transform="rotate(-15 295 90)"/>
+                    <path d="M 290 120 Q 280 100 300 90 T 320 100" stroke="#E65100" stroke-width="3" fill="none" transform="rotate(-25 305 105)"/>
+
+                    <!-- Catatan: SVG ini sangat sederhana, lebih cocok untuk representasi ikonik. -->
+                    <!-- Alt text: Tiga buah bakwan udang bulat berwarna coklat keemasan yang tampak renyah. -->
+                </svg>
+            </div>
+
+            <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan udang bulat menjadi salah satu primadona di dunia perbakwanan. Bentuknya yang unik dan rasa udangnya yang khas membuatnya digemari oleh semua kalangan. Membuatnya di rumah ternyata tidak sesulit yang dibayangkan, lho! Dengan panduan yang tepat, Anda bisa menyajikan bakwan udang bulat yang sempurna.</p>
+
+            <h2>Bahan-Bahan yang Dibutuhkan</h2>
+            <p>Untuk menciptakan bakwan udang bulat yang lezat, siapkanlah bahan-bahan berikut:</p>
+            <ul>
+                <li>250 gram udang segar, kupas kulit dan sisakan ekornya (opsional, untuk hiasan)</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk hasil lebih renyah)</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>1 buah wortel kecil, parut halus atau potong korek api tipis</li>
+                <li>1/2 buah kol, iris tipis</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh garam (sesuaikan selera)</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>150-200 ml air es (atau secukupnya hingga adonan kental tapi bisa diaduk)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+
+            <h2>Langkah-Langkah Membuat Bakwan Udang Bulat</h2>
+            <p>Ikuti langkah-langkah mudah ini agar bakwan udang bulat Anda sukses:</p>
+            <ol>
+                <li><strong>Persiapan Udang:</strong> Jika Anda tidak menggunakan ekor udang sebagai hiasan, potong udang menjadi dua atau tiga bagian agar ukurannya lebih pas di dalam bakwan. Jika menggunakan ekor, biarkan utuh.</li>
+                <li><strong>Membuat Adonan Tepung:</strong> Dalam wadah, campurkan tepung terigu, tepung beras, bawang putih halus, merica bubuk, garam, dan kaldu bubuk. Aduk rata.</li>
+                <li><strong>Menambahkan Sayuran:</strong> Masukkan irisan daun bawang, wortel parut, dan kol iris ke dalam campuran tepung. Aduk kembali hingga semua tercampur rata.</li>
+                <li><strong>Mengatur Kekentalan Adonan:</strong> Tuangkan air es sedikit demi sedikit sambil terus diaduk. Adonan harus cukup kental agar udang dan sayuran menempel, namun tidak terlalu padat agar tidak keras saat digoreng. Kekentalan yang ideal mirip dengan adonan bakwan pada umumnya.</li>
+                <li><strong>Mencampur Udang:</strong> Masukkan potongan udang (atau udang utuh dengan ekor) ke dalam adonan. Aduk perlahan hingga semua udang terbalut adonan.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum mulai menggoreng.</li>
+                <li><strong>Membentuk Bakwan Bulat:</strong> Ambil satu sendok sayur adonan, lalu perlahan masukkan ke dalam minyak panas. Cara membentuknya bisa dengan menuang sedikit demi sedikit agar menghasilkan bentuk yang lebih bulat. Jika menggunakan udang utuh dengan ekor, posisikan ekor udang keluar agar terlihat cantik. Lakukan berulang hingga wajan terisi secukupnya, jangan terlalu penuh.</li>
+                <li><strong>Memasak Hingga Matang:</strong> Goreng bakwan hingga berwarna cokelat keemasan dan matang merata. Balik sesekali agar matang sempurna. Gunakan api sedang agar bagian dalam matang tanpa gosong di luar.</li>
+                <li><strong>Meniriskan:</strong> Angkat bakwan udang yang sudah matang, tiriskan minyaknya menggunakan tisu dapur atau saringan kawat.</li>
+            </ol>
+
+            <h2>Tips Tambahan untuk Bakwan Sempurna</h2>
+            <ul>
+                <li>Gunakan air es untuk adonan agar bakwan lebih renyah.</li>
+                <li>Jangan terlalu banyak mengaduk adonan setelah dicampur air, karena bisa membuat bakwan menjadi keras.</li>
+                <li>Pastikan minyak benar-benar panas saat akan menggoreng.</li>
+                <li>Saat membentuk bakwan, tuang adonan perlahan agar bentuknya lebih bundar.</li>
+                <li>Jika suka, Anda bisa menambahkan sedikit cabai rawit iris ke dalam adonan untuk sensasi pedas.</li>
+            </ul>
+
+            <p>Bakwan udang bulat siap disajikan selagi hangat. Cocok dinikmati bersama cabai rawit hijau atau saus sambal sebagai teman bersantai. Selamat mencoba!</p>
+        </main>
+        <footer>
+            Semoga berhasil membuat bakwan udang bulat favorit Anda!
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-cara-membuat-pempek">Resep Cara Membuat Pempek</a></li>
+<li><a href="/bakso-mercon-mas-gendut">Bakso Mercon Mas Gendut</a></li>
+<li><a href="/bakpia-kukus-tahan-berapa-hari">Bakpia Kukus Tahan Berapa Hari</a></li>
+<li><a href="/cara-buat-bakwan-sederhana">Cara Buat Bakwan Sederhana</a></li>
+<li><a href="/pentol-bakso-mercon">Pentol Bakso Mercon</a></li>
+<li><a href="/balasan-tuhan-lebih-kejam-dari-perbuatan">Balasan Tuhan Lebih Kejam Dari Perbuatan</a></li>
+<li><a href="/cara-membuat-gorengan-jagung">Cara Membuat Gorengan Jagung</a></li>
+<li><a href="/alat-dan-bahan-membuat-bakwan-jagung">Alat Dan Bahan Membuat Bakwan Jagung</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-dengan-tepung-kobe">Cara Membuat Bakwan Jagung Dengan Tepung Kobe</a></li>
+<li><a href="/bakpao-mini-kukus">Bakpao Mini Kukus</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

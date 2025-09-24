@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Jagung Solo Lezat & Mudah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah */
+            --secondary-color: #81C784; /* Hijau muda */
+            --background-color: #E8F5E9; /* Hijau sangat muda */
+            --text-color: #333;
+            --accent-color: #FFC107; /* Kuning cerah */
+            --card-background: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: var(--card-background);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .recipe-section {
+            margin-bottom: 30px;
+        }
+
+        .ingredients ul,
+        .instructions ol {
+            padding-left: 25px;
+        }
+
+        .ingredients li,
+        .instructions li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .tips {
+            background-color: var(--secondary-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .tips strong {
+            color: var(--text-color);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta a {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #fbc02d; /* Kuning lebih tua saat hover */
+        }
+
+        /* SVG Favicon */
+        .svg-inline {
+            display: inline-block;
+            vertical-align: middle;
+            fill: var(--primary-color); /* Menggunakan warna primer */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <svg class="svg-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40" height="40" aria-label="Ikon Jagung">
+                <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 400c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm80-160H176c-8.8 0-16-7.2-16-16s7.2-16 16-16h80c8.8 0 16 7.2 16 16s-7.2 16-16 16z"/>
+                <circle cx="304" cy="256" r="16"/>
+                <circle cx="208" cy="256" r="16"/>
+            </svg>
+            <h1>Resep Bakwan Jagung Khas Solo</h1>
+        </header>
+
+        <img src="https://via.placeholder.com/600x250/E8F5E9/4CAF50?text=Bakwan+Jagung+Solo" alt="Bakwan Jagung Solo Lezat" class="hero-image">
+
+        <p>Siapa yang tidak tergiur dengan aroma gurih dan tekstur renyah dari bakwan jagung? Terutama bakwan jagung khas Solo yang memiliki cita rasa autentik, ringan, namun tetap kaya rasa. Camilan ini sangat cocok dinikmati kapan saja, baik sebagai teman minum teh di sore hari, pendamping nasi hangat, atau sekadar pengganjal lapar di sela-sela aktivitas. Memasaknya pun relatif mudah, bahkan bagi pemula sekalipun. Mari kita simak resep sederhana namun menghasilkan bakwan jagung yang istimewa ala Kota Bengawan.</p>
+
+        <div class="recipe-section ingredients">
+            <h2>Bahan-Bahan Utama</h2>
+            <ul>
+                <li>3 buah jagung manis, pipil halus (jangan terlalu halus agar masih terasa teksturnya)</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (opsional, untuk tambahan kerenyahan)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>1 batang seledri, iris tipis (opsional, untuk aroma segar)</li>
+                <li>1 butir telur ayam</li>
+                <li>150-200 ml air (sesuaikan kekentalan adonan)</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya (sekitar 1/2 sendok teh)</li>
+                <li>Kaldu bubuk secukupnya (opsional)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section ingredients">
+            <h2>Bumbu Halus</h2>
+            <ul>
+                <li>3 siung bawang merah</li>
+                <li>2 siung bawang putih</li>
+                <li>1/2 sendok teh ketumbar bubuk (atau 1/4 sendok teh ketumbar butiran)</li>
+                <li>1/4 sendok teh merica butiran (atau sejumput merica bubuk)</li>
+                <li>1-2 buah cabai rawit merah (sesuai selera pedas)</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li><strong>Persiapan Bumbu:</strong> Haluskan semua bahan bumbu halus menggunakan cobek atau blender.</li>
+                <li><strong>Campurkan Adonan:</strong> Dalam wadah, campurkan jagung pipil, irisan daun bawang, dan seledri. Masukkan bumbu halus, garam, gula pasir, dan kaldu bubuk (jika pakai). Aduk rata.</li>
+                <li><strong>Tambahkan Tepung dan Telur:</strong> Masukkan telur, tepung terigu, dan tepung beras. Aduk hingga tercampur rata.</li>
+                <li><strong>Tuang Air Sedikit Demi Sedikit:</strong> Tuangkan air sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan tidak boleh terlalu encer agar tidak meleber saat digoreng, namun juga tidak terlalu kental agar tidak keras. Konsistensinya mirip adonan pisang goreng.</li>
+                <li><strong>Panaskan Minyak:</strong> Panaskan minyak goreng dalam jumlah yang cukup banyak di wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li><strong>Goreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga berwarna kuning keemasan dan matang di kedua sisinya. Jangan terlalu banyak mengisi wajan agar bakwan matang merata dan renyah.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan tisu dapur atau saringan.</li>
+                <li><strong>Sajikan:</strong> Bakwan jagung Solo siap disajikan selagi hangat. Nikmati dengan cabai rawit hijau, saus sambal, atau sebagai pendamping hidangan utama.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h2>Tips Sukses Membuat Bakwan Jagung Solo</h2>
+            <ul>
+                <li><strong>Pilih Jagung Manis:</strong> Gunakan jagung manis segar agar rasa manisnya alami dan teksturnya lebih renyah.</li>
+                <li><strong>Jangan Pipil Terlalu Halus:</strong> Sisakan sedikit tekstur pada biji jagung agar bakwan tidak lembek.</li>
+                <li><strong>Kekentalan Adonan:</strong> Kunci kerenyahan terletak pada kekentalan adonan. Coba tes goreng sedikit adonan terlebih dahulu untuk memastikan kekentalannya.</li>
+                <li><strong>Minyak Panas:</strong> Pastikan minyak benar-benar panas sebelum menggoreng agar bakwan cepat matang dan renyah di luar namun tetap lembut di dalam. Gunakan api sedang agar tidak gosong di luar tapi mentah di dalam.</li>
+                <li><strong>Tepung Beras:</strong> Penambahan sedikit tepung beras akan sangat membantu menciptakan tekstur yang lebih renyah dan tahan lama.</li>
+            </ul>
+        </div>
+
+        <div class="cta">
+            <p>Selamat mencoba resep bakwan jagung Solo yang lezat ini di rumah!</p>
+            <a href="javascript:void(0);" onclick="alert('Terima kasih telah membaca!');">Bagikan Resep Ini</a>
+        </div>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/pao-kacang-merah">Pao Kacang Merah</a></li>
+<li><a href="/cara-menyimpan-bakpao-agar-awet">Cara Menyimpan Bakpao Agar Awet</a></li>
+<li><a href="/gambar-bakteri-vibrio-cholerae">Gambar Bakteri Vibrio Cholerae</a></li>
+<li><a href="/resep-bakwan-jagung-simple">Resep Bakwan Jagung Simple</a></li>
+<li><a href="/resep-gorengan-bakwan-sayur">Resep Gorengan Bakwan Sayur</a></li>
+<li><a href="/streptococcus-bakteri-gram">Streptococcus Bakteri Gram</a></li>
+<li><a href="/bakpia-pathok-55">Bakpia Pathok 55</a></li>
+<li><a href="/pentol-bakwan">Pentol Bakwan</a></li>
+<li><a href="/bumbu-halus-buat-bakwan">Bumbu Halus Buat Bakwan</a></li>
+<li><a href="/resep-bala-bala-crispy">Resep Bala Bala Crispy</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

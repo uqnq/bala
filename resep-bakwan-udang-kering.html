@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Udang Kering Renyah & Nikmat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #87CEEB; /* Sky Blue */
+            --color-secondary: #98FB98; /* Pale Green */
+            --color-accent: #FFD700; /* Gold */
+            --color-text-dark: #333;
+            --color-text-light: #f8f8f8;
+            --color-background: #f0fff0; /* Honeydew */
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            text-align: justify;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px; /* Batasan lebar untuk tampilan desktop, tapi tetap responsif */
+            margin: 20px auto;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1, h2, h3 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 600px; /* Ukuran gambar proporsional */
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-intro {
+            font-size: 1.1em;
+            color: #555;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .ingredients-list, .instructions-list {
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        .ingredients-list li, .instructions-list li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .ingredients-list li::before {
+            content: '✓ ';
+            color: var(--color-accent);
+            margin-right: 8px;
+            font-weight: bold;
+        }
+
+        .instructions-list li::before {
+            content: counter(list-item) '. ';
+            color: var(--color-primary);
+            margin-right: 8px;
+            font-weight: bold;
+        }
+
+        .step-highlight {
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+
+        .tips-section {
+            background-color: var(--color-secondary);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+            color: var(--color-text-dark);
+        }
+
+        .tips-section h3 {
+            color: var(--color-text-dark);
+            text-align: left;
+            border-bottom: none;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            font-size: 0.9em;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .hero-image {
+                max-width: 95%;
+            }
+            .recipe-intro {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .ingredients-list li, .instructions-list li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Udang Kering: Renyahnya Menggoda, Rasanya Juara!</h1>
+
+        <svg class="hero-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" preserveAspectRatio="xMidYMid meet" aria-label="Ilustrasi bakwan udang kering yang renyah">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--color-primary);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:var(--color-secondary);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="500" height="300" fill="url(#grad1)" rx="15" ry="15"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="30" font-weight="bold" font-family="Verdana, sans-serif">
+                Bakwan Udang Kering
+            </text>
+            <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" fill="var(--color-accent)" font-size="20" font-weight="bold" font-family="Verdana, sans-serif">
+                #ResepEnak
+            </text>
+        </svg>
+
+        <p class="recipe-intro">
+            Siapa yang bisa menolak kelezatan bakwan? Apalagi jika bakwan tersebut menggunakan udang kering yang memberikan sensasi gurih dan tekstur unik. Resep bakwan udang kering ini patut dicoba untuk camilan sore yang hangat, pendamping nasi, atau bahkan suguhan saat ada acara. Proses membuatnya pun relatif mudah, menjadikannya pilihan sempurna bagi para pencari kuliner rumahan yang praktis namun tetap istimewa. Nikmati setiap gigitan renyah bakwan udang kering buatan Anda!
+        </p>
+
+        <h2>Bahan-Bahan untuk Bakwan Udang Kering</h2>
+        <ul class="ingredients-list">
+            <li>250 gram tepung terigu serbaguna</li>
+            <li>50 gram tepung beras (untuk ekstra renyah)</li>
+            <li>100 gram udang rebon/udang kering, rendam air hangat sebentar lalu tiriskan</li>
+            <li>1 batang daun bawang, iris halus</li>
+            <li>2 siung bawang putih, haluskan</li>
+            <li>1/2 sendok teh ketumbar bubuk</li>
+            <li>1/4 sendok teh merica bubuk</li>
+            <li>Garam secukupnya</li>
+            <li>Gula pasir sejumput (opsional, untuk menyeimbangkan rasa)</li>
+            <li>Air secukupnya (sekitar 200-250 ml, sesuaikan konsistensi)</li>
+            <li>Minyak goreng secukupnya untuk menggoreng</li>
+        </ul>
+
+        <h2>Langkah-Langkah Pembuatan</h2>
+        <ol class="instructions-list">
+            <li>
+                <span class="step-highlight">Campurkan bahan kering:</span> Dalam sebuah wadah besar, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan gula pasir (jika menggunakan). Aduk rata.
+            </li>
+            <li>
+                <span class="step-highlight">Masukkan udang rebon dan daun bawang:</span> Tambahkan udang rebon yang sudah ditiriskan dan irisan daun bawang ke dalam campuran tepung. Aduk kembali hingga semua tercampur merata.
+            </li>
+            <li>
+                <span class="step-highlight">Buat adonan:</span> Tuang air sedikit demi sedikit sambil terus diaduk hingga terbentuk adonan yang kental namun tidak terlalu encer. Konsistensi adonan harus cukup untuk melapisi udang dan sayuran, namun tidak membuat bakwan menjadi lembek.</li>
+            <li>
+                <span class="step-highlight">Panaskan minyak:</span> Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam saat digoreng.</li>
+            <li>
+                <span class="step-highlight">Goreng bakwan:</span> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga bakwan berwarna kuning keemasan dan matang sempurna. Balik sesekali agar matang merata.</li>
+            <li>
+                <span class="step-highlight">Tiriskan:</span> Angkat bakwan yang sudah matang dan tiriskan di atas kertas tisu untuk menyerap kelebihan minyak.</li>
+            <li>
+                <span class="step-highlight">Sajikan:</span> Bakwan udang kering siap disajikan selagi hangat. Nikmati dengan cabai rawit hijau atau saus sambal favorit Anda.</li>
+        </ol>
+
+        <div class="tips-section">
+            <h3>Tips untuk Bakwan Udang Kering yang Sempurna</h3>
+            <ul>
+                <li>Untuk hasil yang lebih renyah, pastikan minyak benar-benar panas saat menggoreng.</li>
+                <li>Jangan terlalu banyak memasukkan adonan ke dalam wajan agar bakwan matang merata dan tidak saling menempel.</li>
+                <li>Menambahkan sedikit tepung beras akan memberikan tekstur yang lebih kriuk.</li>
+                <li>Anda bisa menambahkan sedikit parutan wortel atau kol untuk variasi sayuran.</li>
+                <li>Udang rebon yang segar akan memberikan aroma dan rasa yang lebih kuat.</li>
+            </ul>
+        </div>
+
+        <p style="margin-top: 30px; text-align: center; font-style: italic; color: #777;">
+            Membuat bakwan udang kering adalah cara yang menyenangkan untuk menikmati hidangan gurih dan renyah. Selamat mencoba di rumah!
+        </p>
+    </div>
+
+    <footer>
+        Resep Bakwan Udang Kering | Camilan Lezat dan Mudah
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/resep-pentol-bumbu-pedas">Resep Pentol Bumbu Pedas</a></li>
+<li><a href="/bakwan-resep-enak">Bakwan Resep Enak</a></li>
+<li><a href="/bakpao-china">Bakpao China</a></li>
+<li><a href="/cara-masak-bakwan-tahu">Cara Masak Bakwan Tahu</a></li>
+<li><a href="/cara-membuat-mini-pao">Cara Membuat Mini Pao</a></li>
+<li><a href="/resep-bakso-tahu-mercon">Resep Bakso Tahu Mercon</a></li>
+<li><a href="/bakwan-dempo-manyar">Bakwan Dempo Manyar</a></li>
+<li><a href="/bakwan-dempo-halal">Bakwan Dempo Halal</a></li>
+<li><a href="/bakwan-jagung-pakai-tepung-bakwan">Bakwan Jagung Pakai Tepung Bakwan</a></li>
+<li><a href="/cara-membuat-bakwan-sosis-kanzler">Cara Membuat Bakwan Sosis Kanzler</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

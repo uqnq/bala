@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumbu Heci / Ote Ote: Rahasia Rasa Khas</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        :root {
+            --primary-color: #87CEEB; /* Sky Blue */
+            --secondary-color: #FFDAB9; /* Peach Puff */
+            --accent-color: #90EE90; /* Light Green */
+            --text-color: #333;
+            --background-color: #F0FFF0; /* Honeydew */
+            --card-background: #FFFFFF;
+            --border-color: #E0FFFF; /* Light Cyan */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .content-section {
+            background-color: var(--card-background);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .content-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .content-section h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .caption {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .list-ingredients, .list-steps {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list-ingredients li, .list-steps li {
+            background-color: var(--secondary-color);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .list-ingredients li::before, .list-steps li::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            flex-shrink: 0;
+        }
+
+        .list-steps li::before {
+            background-color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 0.9em;
+            border-radius: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            .content-section {
+                padding: 20px;
+            }
+            .list-ingredients li, .list-steps li {
+                padding: 10px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .list-ingredients li::before, .list-steps li::before {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Menguak Kelezatan Bumbu Heci dan Ote Ote</h1>
+    </header>
+
+    <div class="container">
+        <div class="content-section">
+            <h2>Kenali Bumbu Heci, Sang Jiwa Ote Ote</h2>
+            <p>
+                Bagi penikmat kuliner nusantara, terutama yang berasal dari daerah Jawa Timur, nama "heci" mungkin sudah tidak asing lagi. Lebih dikenal luas sebagai bumbu dasar untuk membuat <span class="highlight">ote-ote</span> (bakwan sayur), bumbu heci adalah kunci utama yang memberikan cita rasa gurih, renyah, dan sedikit manis yang khas. Tanpa bumbu heci yang pas, ote-ote hanyalah sekumpulan sayuran goreng biasa. Artikel ini akan membawa Anda menyelami rahasia di balik kelezatan bumbu heci, bagaimana ia menjadi elemen penting dalam hidangan populer ini.
+            </p>
+            <p>
+                Bumbu heci sejatinya adalah sebuah racikan sederhana namun penuh makna. Tujuannya adalah untuk menciptakan harmoni rasa yang membuat adonan ote-ote terasa lebih kaya dan menggugah selera. Penggunaan bahan-bahan yang tepat dan proporsi yang seimbang menjadi determinan penting dalam menghasilkan bumbu heci berkualitas. Kerap kali, resep bumbu heci ini diwariskan dari generasi ke generasi, menjadikannya bagian dari kekayaan kuliner tradisional yang patut dilestarikan.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>Komponen Utama Bumbu Heci yang Wajib Anda Ketahui</h2>
+            <p>
+                Setiap juru masak memiliki sedikit variasi dalam meracik bumbu heci, namun beberapa komponen dasar umumnya selalu hadir. Bahan-bahan ini dipilih karena kemampuannya untuk berpadu dan menciptakan rasa yang optimal ketika digoreng.
+            </p>
+            <ul class="list-ingredients">
+                <li><strong>Bawang Putih:</strong> Memberikan aroma khas dan rasa gurih yang kuat.</li>
+                <li><strong>Bawang Merah:</strong> Menambah manis alami dan kedalaman rasa.</li>
+                <li><strong>Ketumbar:</strong> Memberikan sentuhan rasa hangat dan sedikit pedas yang unik.</li>
+                <li><strong>Merica:</strong> Menambah sedikit rasa pedas yang menyegarkan.</li>
+                <li><strong>Garam:</strong> Penyeimbang rasa, penting untuk mengeluarkan potensi rasa bahan lainnya.</li>
+                <li><strong>Gula Pasir:</strong> Sedikit gula dapat membantu menyeimbangkan rasa gurih dan memberikan efek karamelisasi saat digoreng, menambah kerenyahan.</li>
+                <li><strong>Tepung Beras (opsional):</strong> Terkadang ditambahkan sedikit tepung beras untuk membantu mengikat bumbu dan memberikan tekstur yang lebih renyah.</li>
+            </ul>
+            <p>
+                Proses menghaluskan bumbu-bumbu ini pun penting. Menggunakan cobek batu tradisional seringkali dianggap memberikan hasil yang lebih maksimal dibandingkan blender, karena dapat mengeluarkan aroma dan rasa bahan secara lebih utuh. Bumbu yang halus namun tidak terlalu lembek adalah kunci agar bumbu merata sempurna pada adonan ote-ote.
+            </p>
+        </div>
+
+        <div class="image-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--accent-color);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="400" height="200" rx="20" fill="var(--border-color)"/>
+                <circle cx="50" cy="100" r="30" fill="var(--secondary-color)" />
+                <circle cx="120" cy="100" r="30" fill="var(--secondary-color)" />
+                <circle cx="190" cy="100" r="30" fill="var(--secondary-color)" />
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="var(--primary-color)" font-size="24" font-weight="bold">Bumbu Heci</text>
+                <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" fill="var(--text-color)" font-size="18">Kelezatan Gurih & Renyah</text>
+            </svg>
+            <div class="caption">Visualisasi Sederhana Bumbu Heci</div>
+        </div>
+
+        <div class="content-section">
+            <h2>Cara Membuat Ote-Ote dengan Bumbu Heci yang Sempurna</h2>
+            <p>
+                Setelah bumbu heci siap, langkah selanjutnya adalah mengolahnya menjadi ote-ote yang menggugah selera. Prosesnya relatif mudah dan cocok untuk dicoba di rumah.
+            </p>
+            <ol class="list-steps">
+                <li><strong>Siapkan Sayuran:</strong> Iris tipis kol, wortel, tauge, dan tambahkan udang kecil atau potongan ayam jika suka.</li>
+                <li><strong>Buat Adonan Tepung:</strong> Campurkan tepung terigu, tepung beras (jika menggunakan), dan bumbu heci yang sudah dihaluskan. Tambahkan air secukupnya hingga membentuk adonan kental yang bisa melapisi sayuran.</li>
+                <li><strong>Campurkan Bahan:</strong> Masukkan irisan sayuran dan udang/ayam ke dalam adonan tepung. Aduk rata.</li>
+                <li><strong>Goreng Hingga Keemasan:</strong> Panaskan minyak goreng dalam jumlah banyak. Ambil satu sendok sayur adonan, letakkan di pinggir wajan agar bentuknya pipih. Goreng hingga matang dan berwarna kuning keemasan di kedua sisinya.</li>
+                <li><strong>Tiriskan dan Sajikan:</strong> Angkat ote-ote yang sudah matang, tiriskan minyaknya. Sajikan selagi hangat bersama cabai rawit hijau segar atau saus sambal favorit.</li>
+            </ol>
+            <p>
+                Kunci kerenyahan ote-ote terletak pada pemilihan minyak yang cukup panas dan tidak menggunakan adonan yang terlalu tebal. Bumbu heci yang meresap sempurna akan membuat setiap gigitan terasa beraroma dan lezat.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>Variasi dan Tips Tambahan</h2>
+            <p>
+                Meskipun resep dasar bumbu heci dan ote-ote sudah lezat, Anda bisa berkreasi lebih lanjut. Tambahkan daun bawang yang diiris halus ke dalam adonan untuk aroma yang lebih segar. Beberapa daerah bahkan menambahkan sedikit parutan kelapa untuk rasa yang lebih kaya. Kunci sukses lainnya adalah penggunaan <span class="highlight">minyak goreng</span> yang baru dan cukup panas agar ote-ote tidak menyerap banyak minyak dan tetap renyah tahan lama.
+            </p>
+            <p>
+                Bumbu heci juga bisa dimodifikasi. Jika Anda menyukai rasa pedas, tambahkan lebih banyak merica atau sedikit cabai rawit ke dalam bumbu halus. Eksplorasi adalah bagian dari keasyikan memasak.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Semua Hak Dilindungi.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-mangkok-beranak">Bakso Mangkok Beranak</a></li>
+<li><a href="/bakpia-pathok-145-ibu-sri-astuti">Bakpia Pathok 145 Ibu Sri Astuti</a></li>
+<li><a href="/pia-almair">Pia Almair</a></li>
+<li><a href="/resep-gorengan-weci">Resep Gorengan Weci</a></li>
+<li><a href="/penyebab-penyakit-balanitis">Penyebab Penyakit Balanitis</a></li>
+<li><a href="/penjual-bakso-mercon-terdekat">Penjual Bakso Mercon Terdekat</a></li>
+<li><a href="/bakpao-b8-duta-mas">Bakpao B8 Duta Mas</a></li>
+<li><a href="/harga-bakpia-mangkok">Harga Bakpia Mangkok</a></li>
+<li><a href="/cara-mengisi-bakso-mercon">Cara Mengisi Bakso Mercon</a></li>
+<li><a href="/resep-bakwan-sawi-putih">Resep Bakwan Sawi Putih</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

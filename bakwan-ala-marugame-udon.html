@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Ala Marugame Udon: Lezat & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4fc3f7; /* Biru cerah */
+            --secondary-color: #81c784; /* Hijau sejuk */
+            --background-color: #e3f2fd; /* Biru muda pucat */
+            --text-color: #333;
+            --heading-color: #1976d2; /* Biru lebih gelap */
+            --card-background: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 768px; /* Lebar maksimal untuk tampilan mobile */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 10px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-color) 0 4px 8px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 200px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: var(--shadow-color) 0 4px 8px;
+        }
+
+        .hero-image svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        .content-section {
+            background-color: var(--card-background);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-color) 0 4px 8px;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+
+        p, ul li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        strong {
+            color: var(--heading-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p, ul li {
+                font-size: 1em;
+            }
+            .container {
+                padding: 15px;
+            }
+            .hero-image {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bakwan Ala Marugame Udon: Renyah, Gurih, dan Bikin Nagih!</h1>
+        </header>
+
+        <div class="hero-image">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 9C17.1046 9 18 8.10457 18 7C18 5.89543 17.1046 5 16 5C14.8954 5 14 5.89543 14 7C14 8.10457 14.8954 9 16 9Z" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 9C9.10457 9 10 8.10457 10 7C10 5.89543 9.10457 5 8 5C6.89543 5 6 5.89543 6 7C6 8.10457 6.89543 9 8 9Z" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 17C17.1046 17 18 16.1046 18 15C18 13.8954 17.1046 13 16 13C14.8954 13 14 13.8954 14 15C14 16.1046 14.8954 17 16 17Z" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 17C9.10457 17 10 16.1046 10 15C10 13.8954 9.10457 13 8 13C6.89543 13 6 13.8954 6 15C6 16.1046 6.89543 17 8 17Z" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 12C21 11.4477 20.5523 11 20 11C19.4477 11 19 11.4477 19 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 12C3 11.4477 3.44772 11 4 11C4.55228 11 5 11.4477 5 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 21C11.4477 21 11 21.4477 11 22C11 22.5523 11.4477 23 12 23C12.5523 23 13 22.5523 13 22C13 21.4477 12.5523 21 12 21Z" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 3C11.4477 3 11 3.44772 11 4C11 4.55228 11.4477 5 12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3Z" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span style="color: white; font-size: 1.2em; font-weight: bold;">Bayangkan renyahnya!</span>
+        </div>
+
+        <div class="content-section">
+            <h2>Mengapa Bakwan Ala Marugame Udon Begitu Istimewa?</h2>
+            <p>
+                Siapa yang tidak suka bakwan? Camilan gurih dan renyah ini selalu berhasil membangkitkan selera. Namun, kali ini kita akan menyelami sensasi berbeda: bakwan yang terinspirasi dari kekhasan cita rasa Marugame Udon. Bukan sembarang bakwan, sajian ini menawarkan pengalaman kuliner yang unik, menggabungkan kelezatan tradisional dengan sentuhan modern yang disukai banyak orang.
+            </p>
+            <p>
+                Marugame Udon dikenal dengan sajian udon segar yang disajikan dengan berbagai pilihan tempura renyah. Ide membuat bakwan ala Marugame Udon muncul dari keinginan untuk menangkap elemen-elemen kunci yang membuat tempura mereka begitu digemari: kerenyahan yang tahan lama, adonan yang ringan namun beraroma, dan isian yang melimpah serta berkualitas. Hasilnya adalah bakwan yang tidak hanya menggugah selera visualnya, tetapi juga memanjakan lidah dengan setiap gigitannya.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>Rahasia Kelezatan Bakwan Ala Marugame Udon</h2>
+            <p>
+                Kunci utama dari bakwan ini terletak pada komposisi adonannya. Berbeda dengan adonan bakwan pada umumnya yang terkadang terasa berat, resep ini mengadopsi teknik yang menghasilkan lapisan luar yang sangat renyah dan ringan, mirip dengan tekstur tempura. Penggunaan kombinasi tepung beras dan tepung terigu, serta penambahan soda kue atau baking powder dalam takaran yang pas, sangat membantu menciptakan efek kerenyahan yang tahan lama.
+            </p>
+            <p>
+                Selain itu, sentuhan bumbu juga menjadi elemen penting. Adonan diperkaya dengan kaldu bubuk, merica, dan sedikit bawang putih halus untuk memberikan kedalaman rasa yang gurih. Sayuran yang digunakan pun dipilih dengan cermat. Kombinasi kol yang diiris tipis, wortel parut, dan daun bawang cincang memberikan tekstur dan rasa manis alami yang berpadu harmonis. Beberapa varian bahkan menambahkan potongan udang kecil atau ikan teri untuk sentuhan rasa laut yang lebih kaya, menyerupai isian yang sering ditemukan di gerai udon populer.
+            </p>
+            <p>
+                Teknik menggoreng juga tidak kalah krusial. Menggunakan minyak yang cukup panas dan tidak terlalu banyak memasukkan adonan sekaligus adalah kunci agar bakwan matang merata dan menghasilkan warna cokelat keemasan yang menggugah selera tanpa menyerap terlalu banyak minyak.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>Cara Menikmati Bakwan Ala Marugame Udon</h2>
+            <p>
+                Bakwan ala Marugame Udon paling nikmat disantap selagi hangat. Kerenyahannya akan terasa maksimal, memberikan sensasi memecah di mulut yang sangat memuaskan. Sajikan bersama cocolan favorit Anda. Saus sambal klasik selalu menjadi pilihan tepat, namun Anda juga bisa bereksperimen dengan saus cocolan yang terinspirasi dari Jepang, seperti saus teriyaki encer, mayones pedas, atau bahkan saus ponzu untuk sentuhan rasa asam segar.
+            </p>
+            <p>
+                Sajian ini sangat fleksibel, bisa menjadi camilan ringan saat bersantai, teman minum teh atau kopi, atau bahkan pelengkap hidangan utama. Bagi Anda yang merindukan cita rasa tempura Marugame Udon tetapi ingin sesuatu yang lebih merakyat dan mudah dibuat di rumah, resep bakwan ala Marugame Udon ini patut untuk dicoba. Nikmati kelezatan dan kerenyahannya yang tak terlupakan!
+            </p>
+        </div>
+
+        <footer>
+            © Hak Cipta Dilindungi
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakso-mercon-mas-dwi">Bakso Mercon Mas Dwi</a></li>
+<li><a href="/lily-bakung">Lily Bakung</a></li>
+<li><a href="/bakwan-ebi">Bakwan Ebi</a></li>
+<li><a href="/juwara-satoe-cafe">Juwara Satoe Cafe</a></li>
+<li><a href="/resep-bakwan-tempe">Resep Bakwan Tempe</a></li>
+<li><a href="/resep-bala-bala-udang">Resep Bala Bala Udang</a></li>
+<li><a href="/bakpia-pathok-25-gofood">Bakpia Pathok 25 Gofood</a></li>
+<li><a href="/bakteri-pdf">Bakteri Pdf</a></li>
+<li><a href="/makanan-untuk-menghilangkan-bakteri-dalam-tubuh">Makanan Untuk Menghilangkan Bakteri Dalam Tubuh</a></li>
+<li><a href="/bumbu-membuat-bakwan-goreng">Bumbu Membuat Bakwan Goreng</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

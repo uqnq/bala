@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakpao Lembut dan Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna sejuk cerah */
+            color: #004d40; /* Warna teks gelap untuk kontras */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna judul yang sedikit lebih gelap */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        p, li {
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        strong {
+            color: #00695c;
+        }
+        .section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #b2dfdb;
+        }
+        .recipe-steps ol {
+            counter-reset: step-counter;
+        }
+        .recipe-steps li {
+            counter-increment: step-counter;
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 15px;
+        }
+        .recipe-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background-color: #00796b;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .ingredients ul {
+            list-style: disc;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #4db6ac;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="hero-image" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#80deea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#4dd0e1;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="300" height="200" rx="15" fill="url(#grad1)" />
+            <path d="M 50 150 Q 70 130 100 150 T 150 150 T 200 150 T 250 150 L 250 180 Q 200 200 150 180 T 100 180 T 50 180 Z" fill="#ffffff" stroke="#00796b" stroke-width="2"/>
+            <circle cx="100" cy="120" r="20" fill="#ffcc80" stroke="#e65100" stroke-width="2"/>
+            <circle cx="180" cy="120" r="20" fill="#ffcc80" stroke="#e65100" stroke-width="2"/>
+            <circle cx="130" cy="80" r="20" fill="#ffcc80" stroke="#e65100" stroke-width="2"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#00796b" font-weight="bold">Bakpao Istimewa</text>
+        </svg>
+        <h1>Resep Bakpao Lembut dan Lezat</h1>
+        <p>Siapa yang tidak suka bakpao? Kue kukus yang empuk dengan isian manis atau gurih ini selalu menjadi favorit banyak orang. Membuat bakpao sendiri di rumah ternyata tidak sesulit yang dibayangkan. Dengan resep yang tepat dan sedikit kesabaran, Anda bisa menghasilkan bakpao yang lembut, mengembang sempurna, dan tentunya lezat.</p>
+
+        <div class="section">
+            <h2>Kunci Bakpao Sempurna</h2>
+            <p>Kunci utama untuk mendapatkan bakpao yang lembut adalah penggunaan ragi yang berkualitas baik dan proses fermentasi yang tepat. Selain itu, pemilihan bahan-bahan yang segar dan teknik menguleni adonan juga sangat berpengaruh. Jangan takut untuk mencoba, karena setiap percobaan akan membawa Anda lebih dekat pada hasil yang diinginkan. Bakpao ini bisa menjadi camilan sehat untuk keluarga atau ide jualan yang menguntungkan.</p>
+        </div>
+
+        <div class="section ingredients">
+            <h2>Bahan-bahan Adonan Bakpao</h2>
+            <ul>
+                <li>500 gram tepung terigu protein tinggi</li>
+                <li>100 gram gula pasir</li>
+                <li>10 gram ragi instan</li>
+                <li>1/2 sendok teh garam</li>
+                <li>250 ml air hangat (suhu kuku)</li>
+                <li>50 ml minyak sayur atau mentega cair</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Bahan Isian (Contoh: Cokelat dan Kacang Merah)</h2>
+            <p>Anda bisa berkreasi dengan berbagai macam isian favorit, seperti cokelat leleh, kacang merah manis, daging cincang, atau keju.</p>
+            <h3>Isian Cokelat</h3>
+            <ul>
+                <li>Cokelat batang, potong dadu kecil</li>
+            </ul>
+            <h3>Isian Kacang Merah</h3>
+            <ul>
+                <li>200 gram kacang merah, rebus hingga empuk</li>
+                <li>50 gram gula pasir</li>
+                <li>Sedikit air</li>
+                <li>Vanili secukupnya</li>
+            </ul>
+        </div>
+
+        <div class="section recipe-steps">
+            <h2>Langkah-langkah Membuat Bakpao</h2>
+            <ol>
+                <li><strong>Persiapan Ragi:</strong> Dalam wadah kecil, campurkan ragi instan dengan sedikit gula pasir dan air hangat. Aduk rata, lalu diamkan selama 5-10 menit hingga berbusa. Ini menandakan ragi aktif.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam wadah besar, campurkan tepung terigu, sisa gula pasir, dan garam. Tuang campuran ragi yang sudah berbusa, lalu tambahkan sisa air hangat sedikit demi sedikit sambil diuleni hingga adonan kalis dan elastis.</li>
+                <li><strong>Menambahkan Minyak:</strong> Masukkan minyak sayur atau mentega cair ke dalam adonan. Uleni kembali hingga minyak tercampur rata dan adonan menjadi sangat lembut serta tidak lengket di tangan.</li>
+                <li><strong>Fermentasi Pertama:</strong> Bulatkan adonan, letakkan dalam wadah yang sudah diolesi sedikit minyak. Tutup wadah dengan plastik wrap atau serbet lembap. Diamkan di tempat hangat selama kurang lebih 1 jam hingga adonan mengembang dua kali lipat.</li>
+                <li><strong>Mengempiskan dan Membagi Adonan:</strong> Setelah mengembang, kempiskan adonan dengan meninjunya perlahan. Bagi adonan menjadi beberapa bagian sesuai ukuran yang diinginkan.</li>
+                <li><strong>Membentuk dan Mengisi:</strong> Ambil satu bagian adonan, pipihkan. Beri isian sesuai selera, lalu tutup dan bentuk bulat sempurna. Pastikan isian tertutup rapat agar tidak bocor saat dikukus.</li>
+                <li><strong>Fermentasi Kedua:</strong> Tata bakpao yang sudah diisi di atas kertas roti atau daun pisang yang sudah diolesi minyak. Beri jarak antar bakpao karena akan mengembang lagi. Tutup kembali dengan serbet lembap dan diamkan selama sekitar 20-30 menit.</li>
+                <li><strong>Proses Mengukus:</strong> Siapkan kukusan yang sudah panas dengan api sedang. Kukus bakpao selama kurang lebih 10-15 menit hingga matang dan mengembang. Jangan membuka tutup kukusan terlalu sering agar bakpao tidak kempes.</li>
+                <li><strong>Penyajian:</strong> Angkat bakpao dari kukusan. Bakpao siap disajikan selagi hangat.</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Tips Tambahan</h2>
+            <p>Untuk isian kacang merah, setelah direbus, haluskan kacang merah lalu masak dengan gula pasir dan sedikit air hingga mengental seperti selai. Dinginkan sebelum digunakan. Pastikan kukusan benar-benar panas sebelum bakpao dimasukkan. Menggunakan api sedang saat mengukus akan menghasilkan kulit bakpao yang lebih halus.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Resep Bakpao</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/penyakit-escherichia-coli">Penyakit Escherichia Coli</a></li>
+<li><a href="/membuat-pentol-bakar">Membuat Pentol Bakar</a></li>
+<li><a href="/cara-bikin-bala-bala-jagung">Cara Bikin Bala Bala Jagung</a></li>
+<li><a href="/bakpia-145-jalan-kusumanegara">Bakpia 145 Jalan Kusumanegara</a></li>
+<li><a href="/ote-ote-adalah">Ote Ote Adalah</a></li>
+<li><a href="/cara-membuat-bakwan-kampung">Cara Membuat Bakwan Kampung</a></li>
+<li><a href="/bakung-bunga">Bakung Bunga</a></li>
+<li><a href="/gambar-perkedel-jagung">Gambar Perkedel Jagung</a></li>
+<li><a href="/bakpia-yola">Bakpia Yola</a></li>
+<li><a href="/bakpia-pathok-25-malioboro">Bakpia Pathok 25 Malioboro</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

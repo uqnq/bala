@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Talas Goreng: Gurih & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna sejuk cerah biru muda */
+            color: #333;
+            line-height: 1.6;
+            text-align: justify;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #00796b; /* Warna hijau toska gelap */
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 5px;
+        }
+        .recipe-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            display: block; /* Agar margin auto bekerja */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #00796b;
+        }
+        .ingredients, .instructions {
+            width: 100%;
+            text-align: left;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+
+        /* Media Query untuk tampilan mobile yang lebih responsif */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .recipe-image {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bakwan Talas Goreng: Gurih, Renyah, dan Menggugah Selera</h1>
+
+        <svg class="recipe-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <linearGradient id="gradient-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#81c784;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feMerge>
+                        <feMergeNode in="offsetblur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect width="600" height="300" rx="15" ry="15" fill="url(#gradient-bg)" filter="url(#shadow)"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Verdana, Geneva, sans-serif" font-size="30" fill="#ffffff" font-weight="bold" filter="url(#shadow)">
+                Bakwan Talas Goreng
+            </text>
+            <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="Verdana, Geneva, sans-serif" font-size="18" fill="#e0e0e0" filter="url(#shadow)">
+                Siap Menggoyang Lidah
+            </text>
+        </svg>
+        <p>Siapa yang tidak suka camilan renyah dan gurih? Bakwan talas goreng adalah salah satu pilihan jajanan pasar yang selalu disukai banyak orang. Berbeda dengan bakwan sayur pada umumnya, bakwan talas menawarkan tekstur yang sedikit berbeda, yaitu lebih lembut di dalam namun tetap bisa renyah di luar jika digoreng dengan benar. Keunggulan talas adalah kandungan pati yang membuatnya memiliki tekstur unik saat dimasak. Mari kita simak resep sederhana namun lezat ini.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan</h2>
+            <ul>
+                <li>500 gram talas, kupas dan iris tipis atau parut kasar</li>
+                <li>100 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras</li>
+                <li>2 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh garam (sesuaikan selera)</li>
+                <li>Sejumput kaldu bubuk (opsional)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>1 batang seledri, iris tipis (opsional, untuk aroma)</li>
+                <li>Air secukupnya untuk adonan</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Cara Membuat</h2>
+            <ol>
+                <li><strong>Persiapan Talas:</strong> Kupas talas, cuci bersih, lalu iris sangat tipis memanjang atau parut kasar. Jika Anda memiliki talas yang agak tua dan keras, merendamnya sebentar dalam air garam dapat membantu mengurangi rasa gatal dan membuat teksturnya lebih lunak. Tiriskan dengan baik.</li>
+                <li><strong>Membuat Adonan:</strong> Dalam wadah besar, campurkan tepung terigu, tepung beras, bawang putih halus, ketumbar bubuk, merica bubuk, garam, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li><strong>Menambahkan Talas dan Sayuran:</strong> Masukkan irisan atau parutan talas ke dalam campuran tepung. Tambahkan irisan daun bawang dan seledri (jika pakai).</li>
+                <li><strong>Menguleni Adonan:</strong> Tuangkan air sedikit demi sedikit sambil diaduk dan diuleni hingga semua bahan tercampur rata dan membentuk adonan yang kental namun tidak terlalu encer. Konsistensi adonan sangat penting; jika terlalu encer, bakwan akan lembek, jika terlalu kental, talas mungkin tidak matang merata.</li>
+                <li><strong>Menggoreng Bakwan:</strong> Panaskan minyak goreng yang cukup banyak dalam wajan dengan api sedang. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li><strong>Membentuk dan Menggoreng:</strong> Ambil sekitar satu sendok makan adonan, ratakan sedikit di sendok, lalu masukkan perlahan ke dalam minyak panas. Goreng beberapa buah sekaligus, jangan terlalu penuh agar bakwan matang merata dan renyah.</li>
+                <li><strong>Membalik dan Meniriskan:</strong> Goreng hingga satu sisi berwarna kuning keemasan. Balik bakwan dan goreng sisi lainnya hingga matang sempurna dan berwarna cokelat keemasan. Angkat bakwan menggunakan saringan dan tiriskan di atas kertas tisu untuk menyerap kelebihan minyak.</li>
+                <li><strong>Sajikan:</strong> Bakwan talas goreng siap disajikan selagi hangat. Nikmati bersama cabai rawit, sambal, atau saus favorit Anda sebagai camilan yang mengenyangkan.</li>
+            </ol>
+        </div>
+
+        <p>Bakwan talas goreng adalah camilan yang cocok dinikmati saat santai, berkumpul bersama keluarga, atau bahkan sebagai teman nasi hangat. Kunci kelezatan bakwan talas terletak pada pemilihan talas yang tepat dan cara menggorengnya. Hindari menggunakan talas yang terlalu muda karena bisa terasa gatal di tenggorokan. Pastikan minyak benar-benar panas agar bakwan langsung membentuk lapisan luar yang renyah dan tidak menyerap banyak minyak. Tambahan daun bawang dan seledri memberikan aroma segar yang menggugah selera. Dengan sedikit sentuhan kreatif, Anda bisa menambahkan udang cincang atau sedikit parutan wortel untuk variasi rasa. Selamat mencoba resep bakwan talas goreng yang lezat ini!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-bakwan-yang-kriuk">Cara Membuat Bakwan Yang Kriuk</a></li>
+<li><a href="/bakpia-djava-laksda-adisucipto">Bakpia Djava Laksda Adisucipto</a></li>
+<li><a href="/bahan-bahan-membuat-bakwan">Bahan Bahan Membuat Bakwan</a></li>
+<li><a href="/bala-bala-sayur">Bala Bala Sayur</a></li>
+<li><a href="/bakpia-145-gambiran">Bakpia 145 Gambiran</a></li>
+<li><a href="/bakpia-mama">Bakpia Mama</a></li>
+<li><a href="/cara-membuat-bakpao-kacang-ijo">Cara Membuat Bakpao Kacang Ijo</a></li>
+<li><a href="/bakpia-mutiara-tahan-berapa-hari">Bakpia Mutiara Tahan Berapa Hari</a></li>
+<li><a href="/bakpia-pathok-75-terdekat">Bakpia Pathok 75 Terdekat</a></li>
+<li><a href="/bakso-beranak-mas-feri">Bakso Beranak Mas Feri</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

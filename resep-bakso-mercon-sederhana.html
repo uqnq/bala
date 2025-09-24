@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakso Mercon Sederhana & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Warna hijau mint cerah */
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2e7d32; /* Hijau tua yang menenangkan */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p, li {
+            margin-bottom: 15px;
+        }
+        img.hero-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .recipe-section {
+            background-color: #f1f8e9; /* Hijau sangat muda */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .recipe-section h3 {
+            color: #388e3c; /* Hijau sedang */
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .ingredients ul, .instructions ol {
+            padding-left: 25px;
+        }
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .ingredients li::before, .instructions li::before {
+            content: '•'; /* Bullet point */
+            color: #4CAF50; /* Warna hijau */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .instructions li::before {
+            content: counter(list-item) '.'; /* Nomor urut */
+            color: #4CAF50;
+            font-weight: bold;
+            margin-left: -2em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        ol {
+            counter-reset: list-item;
+        }
+        li {
+            counter-increment: list-item;
+        }
+        .tips {
+            font-style: italic;
+            color: #555;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f5e9;
+            border-left: 5px solid #4CAF50;
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .ingredients li, .instructions li {
+                padding-left: 20px;
+            }
+            .ingredients li::before, .instructions li::before {
+                margin-left: -15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakso Mercon Sederhana: Kelezatan Pedas di Rumah</h1>
+
+        <svg class="hero-image" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" aria-labelledby="baksoMerconTitle">
+            <title id="baksoMerconTitle">Ilustrasi semangkuk bakso mercon pedas dengan taburan cabai dan daun bawang</title>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#f44336;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="800" height="400" fill="#e0e0e0" />
+            <!-- Bowl -->
+            <path d="M100 200 C 100 150, 200 100, 300 100 C 400 100, 500 150, 500 200 C 500 250, 400 300, 300 300 C 200 300, 100 250, 100 200 Z" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="3"/>
+            <!-- Content - Bakso -->
+            <circle cx="200" cy="210" r="25" fill="#c62828" />
+            <circle cx="250" cy="180" r="20" fill="#c62828" />
+            <circle cx="300" cy="220" r="22" fill="#c62828" />
+            <circle cx="350" cy="190" r="24" fill="#c62828" />
+            <circle cx="400" cy="200" r="23" fill="#c62828" />
+            <!-- Content - Chili -->
+            <g transform="translate(220, 190) rotate(30)">
+                <path d="M0 0 L 15 5 L 5 15 Z" fill="#f44336" />
+                <path d="M15 5 L 20 10 L 10 15 Z" fill="#e57373" />
+            </g>
+            <g transform="translate(280, 170) rotate(-45)">
+                <path d="M0 0 L 12 4 L 4 12 Z" fill="#f44336" />
+                <path d="M12 4 L 15 8 L 7 13 Z" fill="#e57373" />
+            </g>
+            <g transform="translate(330, 210) rotate(15)">
+                <path d="M0 0 L 13 6 L 6 13 Z" fill="#f44336" />
+                <path d="M13 6 L 18 10 L 8 15 Z" fill="#e57373" />
+            </g>
+            <!-- Content - Herbs -->
+            <text x="180" y="175" font-size="15" fill="#4CAF50" transform="rotate(10)">.</text>
+            <text x="230" y="155" font-size="12" fill="#4CAF50" transform="rotate(-5)">.</text>
+            <text x="280" y="195" font-size="14" fill="#4CAF50" transform="rotate(20)">.</text>
+            <text x="330" y="165" font-size="13" fill="#4CAF50" transform="rotate(-15)">.</text>
+            <text x="380" y="180" font-size="16" fill="#4CAF50" transform="rotate(5)">.</text>
+            <!-- Ground -->
+            <rect x="0" y="300" width="800" height="100" fill="#a5d6a7" />
+            <text x="400" y="330" text-anchor="middle" font-size="20" fill="#388e3c" font-weight="bold">Bakso Mercon</text>
+        </svg>
+
+        <p>Siapa yang tidak tergoda dengan sensasi pedas yang membangkitkan selera? Bakso mercon, dengan cita rasa pedasnya yang khas, kini bisa Anda buat sendiri di rumah dengan resep sederhana ini. Cocok disajikan saat kumpul keluarga atau sekadar menemani santai Anda, hidangan ini pasti akan menjadi favorit baru.</p>
+
+        <div class="recipe-section">
+            <h2>Mengapa Bakso Mercon Sederhana?</h2>
+            <p>Resep ini dirancang agar mudah diikuti oleh siapa saja, bahkan bagi yang baru pertama kali mencoba membuat bakso pedas. Bahan-bahannya mudah ditemukan di pasar tradisional maupun supermarket, dan prosesnya tidak memakan waktu terlalu lama. Hasilnya? Bakso kenyal dengan kuah pedas beraroma rempah yang menggugah selera!</p>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Bahan-bahan:</h3>
+            <div class="ingredients">
+                <ul>
+                    <li>300 gram daging sapi giling (pilih yang sedikit lemak)</li>
+                    <li>100 gram tepung tapioka</li>
+                    <li>1 butir telur</li>
+                    <li>2 siung bawang putih, haluskan</li>
+                    <li>1/2 sdt garam</li>
+                    <li>1/4 sdt lada bubuk</li>
+                    <li>1/4 sdt kaldu bubuk (opsional)</li>
+                    <li>Es batu secukupnya (untuk membantu tekstur bakso)</li>
+                </ul>
+                <h4>Bahan Kuah Mercon:</h4>
+                <ul>
+                    <li>1 liter air</li>
+                    <li>5 siung bawang merah, iris tipis</li>
+                    <li>3 siung bawang putih, iris tipis</li>
+                    <li>10-15 buah cabai rawit merah (sesuai selera pedas), iris halus</li>
+                    <li>3 buah cabai merah keriting, iris halus</li>
+                    <li>2 cm jahe, memarkan</li>
+                    <li>1 batang serai, memarkan</li>
+                    <li>2 lembar daun salam</li>
+                    <li>1 batang daun bawang, iris kasar</li>
+                    <li>Garam, gula, dan kaldu bubuk secukupnya</li>
+                    <li>Minyak goreng secukupnya untuk menumis</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Cara Membuat Bakso:</h3>
+            <div class="instructions">
+                <ol>
+                    <li>Campurkan daging sapi giling, tepung tapioka, telur, bawang putih halus, garam, lada bubuk, dan kaldu bubuk dalam sebuah wadah.</li>
+                    <li>Uleni adonan hingga tercampur rata dan terasa kalis.</li>
+                    <li>Tambahkan sedikit demi sedikit es batu sambil terus diuleni hingga adonan menjadi lebih padat dan elastis.</li>
+                    <li>Didihkan air dalam panci yang cukup besar. Kecilkan api.</li>
+                    <li>Ambil adonan secukupnya, bulatkan menggunakan tangan atau sendok, lalu masukkan ke dalam air panas. Ulangi hingga semua adonan habis.</li>
+                    <li>Rebus bakso hingga mengapung, menandakan bakso sudah matang. Angkat dan tiriskan.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Cara Membuat Kuah Mercon:</h3>
+            <div class="instructions">
+                <ol>
+                    <li>Panaskan sedikit minyak goreng dalam panci. Tumis bawang merah dan bawang putih hingga harum.</li>
+                    <li>Masukkan irisan cabai rawit dan cabai merah keriting. Aduk rata dan masak hingga cabai sedikit layu.</li>
+                    <li>Masukkan jahe memar, serai memar, dan daun salam. Aduk kembali.</li>
+                    <li>Tuangkan air, lalu masak hingga mendidih.</li>
+                    <li>Bumbui dengan garam, gula, dan kaldu bubuk secukupnya. Koreksi rasa.</li>
+                    <li>Masukkan bakso yang sudah direbus ke dalam kuah. Biarkan mendidih sebentar agar bumbu meresap.</li>
+                    <li>Terakhir, masukkan irisan daun bawang. Aduk sebentar lalu matikan api.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="tips">
+            <p><strong>Tips Tambahan:</strong></p>
+            <ul>
+                <li>Untuk rasa yang lebih "mercon", Anda bisa menambahkan sedikit bubuk cabai ke dalam adonan bakso atau saat menumis bumbu kuah.</li>
+                <li>Jika suka, tambahkan irisan tomat ke dalam kuah sebelum disajikan untuk kesegaran ekstra.</li>
+                <li>Bakso bisa disajikan dengan mie kuning, bihun, sayuran hijau seperti sawi, dan taburan bawang goreng.</li>
+            </ul>
+        </div>
+
+        <p>Membuat bakso mercon sederhana di rumah ternyata tidak sesulit yang dibayangkan, bukan? Dengan sedikit usaha, Anda bisa menikmati hidangan lezat yang pedasnya pas di lidah. Selamat mencoba dan selamat menikmati kelezatan bakso mercon buatan sendiri!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/jenis-pohon-bakung">Jenis Pohon Bakung</a></li>
+<li><a href="/bakso-beranak-jumbo">Bakso Beranak Jumbo</a></li>
+<li><a href="/cara-memasak-pelas-jagung">Cara Memasak Pelas Jagung</a></li>
+<li><a href="/jamur-enoki-berasal-dari">Jamur Enoki Berasal Dari</a></li>
+<li><a href="/resep-bakwan-kuah-pempek">Resep Bakwan Kuah Pempek</a></li>
+<li><a href="/ok-google-resep-bakwan-jagung">Ok Google Resep Bakwan Jagung</a></li>
+<li><a href="/bumbu-instan-bakwan">Bumbu Instan Bakwan</a></li>
+<li><a href="/bakpia-mayang-757">Bakpia Mayang 757</a></li>
+<li><a href="/bakwan-bala-bala">Bakwan Bala Bala</a></li>
+<li><a href="/fotosintetik-adalah">Fotosintetik Adalah</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

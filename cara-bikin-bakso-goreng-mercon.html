@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Bikin Bakso Goreng Mercon Pedas Mantap</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4682b4; /* SteelBlue - warna cerah */
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #5f9ea0; /* CadetBlue - warna cerah */
+            border-bottom: 2px solid #e0ffff; /* LightCyan - garis cerah */
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .recipe-section {
+            background-color: #e0ffff; /* LightCyan - sedikit berbeda tapi tetap cerah */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff6347; /* Tomato - aksen pedas */
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: #ff6347; /* Tomato - aksen pedas */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e55337;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .cta-button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Bikin Bakso Goreng Mercon Pedas Mantap</h1>
+
+        <div class="image-container">
+            <!-- SVG Gambar Bakso Goreng Mercon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" aria-labelledby="title-bakso-mercon">
+                <title id="title-bakso-mercon">Ilustrasi Bakso Goreng Mercon dengan Cabai</title>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f87979;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:1" />
+                    </linearGradient>
+                    <radialGradient id="fireGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:#ff4500;stop-opacity:1" /> <!-- OrangeRed -->
+                        <stop offset="50%" style="stop-color:#ffa500;stop-opacity:1" /> <!-- Orange -->
+                        <stop offset="100%" style="stop-color:#ffffe0;stop-opacity:0" /> <!-- LightYellow, transparan -->
+                    </radialGradient>
+                </defs>
+                <!-- Latar belakang -->
+                <rect width="100%" height="100%" fill="#f0f8ff"/>
+
+                <!-- Bakso Goreng -->
+                <ellipse cx="250" cy="150" rx="80" ry="70" fill="url(#grad1)" stroke="#e4717a" stroke-width="4"/>
+                <ellipse cx="220" cy="120" rx="60" ry="55" fill="#ffe0c0" stroke="#d08f4a" stroke-width="3"/>
+                <ellipse cx="280" cy="130" rx="55" ry="50" fill="#ffe0c0" stroke="#d08f4a" stroke-width="3"/>
+
+                <!-- Efek Goreng / Keriput -->
+                <path d="M220,120 Q200,100 180,130 T200,170" fill="none" stroke="#d08f4a" stroke-width="2" opacity="0.7"/>
+                <path d="M280,130 Q300,110 320,140 T300,180" fill="none" stroke="#d08f4a" stroke-width="2" opacity="0.7"/>
+                <path d="M250,150 Q230,170 260,190 T280,170" fill="none" stroke="#d08f4a" stroke-width="2" opacity="0.7"/>
+
+                <!-- Cabai Rawit Merah (Mercon) -->
+                <g transform="translate(260, 90) rotate(20)">
+                    <path d="M0,0 L15,20 L5,25 Z" fill="#ff4500" stroke="#8b0000" stroke-width="1"/>
+                    <circle cx="10" cy="5" r="3" fill="#ff0000"/> <!-- Ujung cabai -->
+                </g>
+                <g transform="translate(230, 100) rotate(-10)">
+                    <path d="M0,0 L12,18 L4,22 Z" fill="#ff4500" stroke="#8b0000" stroke-width="1"/>
+                    <circle cx="8" cy="4" r="2.5" fill="#ff0000"/>
+                </g>
+                 <g transform="translate(290, 110) rotate(10)">
+                    <path d="M0,0 L10,15 L3,19 Z" fill="#ff4500" stroke="#8b0000" stroke-width="1"/>
+                    <circle cx="6" cy="3" r="2" fill="#ff0000"/>
+                </g>
+
+                <!-- Percikan Api (simbolis) -->
+                <circle cx="230" cy="80" r="5" fill="url(#fireGradient)" opacity="0.8"/>
+                <circle cx="270" cy="70" r="4" fill="url(#fireGradient)" opacity="0.7"/>
+                <circle cx="250" cy="190" r="3" fill="url(#fireGradient)" opacity="0.6"/>
+
+                <!-- Nama Makanan (opsional, bisa diganti) -->
+                <text x="50%" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#4682b4">Bakso Goreng Mercon</text>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak suka camilan gurih dengan sensasi pedas yang membakar lidah? Bakso goreng mercon adalah jawaban sempurna bagi Anda para pencinta kuliner pedas. Perpaduan tekstur bakso yang kenyal di dalam dan renyah di luar, berpadu dengan bumbu mercon yang kaya rasa dan pedasnya nendang, akan membuat Anda ketagihan. Membuatnya sendiri di rumah ternyata tidak sesulit yang dibayangkan. Yuk, simak <span class="highlight">cara bikin bakso goreng mercon</span> yang lezat ini!</p>
+
+        <div class="recipe-section">
+            <h2>Bahan-bahan Utama:</h2>
+            <ul>
+                <li>300 gram bakso sapi siap pakai (pilih yang berkualitas baik)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+
+            <h2>Bumbu Halus Mercon:</h2>
+            <ul>
+                <li>10-15 buah cabai rawit merah (sesuaikan selera pedas Anda)</li>
+                <li>5 buah cabai merah keriting</li>
+                <li>3 siung bawang putih</li>
+                <li>2 siung bawang merah</li>
+                <li>1 cm kencur (opsional, untuk aroma khas)</li>
+                <li>Garam secukupnya</li>
+                <li>Gula pasir secukupnya (opsional, untuk menyeimbangkan rasa)</li>
+                <li>Kaldu bubuk (opsional)</li>
+            </ul>
+
+            <h2>Bumbu Lainnya:</h2>
+            <ul>
+                <li>1 lembar daun jeruk, buang tulang daunnya, iris tipis</li>
+                <li>1 batang serai, memarkan</li>
+                <li>1 cm lengkuas, memarkan</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Langkah-langkah Membuat Bakso Goreng Mercon:</h2>
+
+            <ol>
+                <li><strong>Persiapan Bakso:</strong> Iris bakso menjadi beberapa bagian. Anda bisa memotongnya menjadi dua atau empat, tergantung ukuran bakso dan selera. Untuk mendapatkan tekstur yang lebih renyah, Anda bisa sedikit memipihkan bakso sebelum diiris.</li>
+                <li><strong>Menggoreng Bakso:</strong> Panaskan minyak goreng dalam wajan dengan api sedang. Goreng irisan bakso hingga bakso mengembang dan permukaannya sedikit berkulit atau berwarna kecoklatan. Angkat dan tiriskan. Sisihkan.</li>
+                <li><strong>Menghaluskan Bumbu:</strong> Haluskan semua bahan bumbu halus menggunakan cobek atau blender. Jika menggunakan blender, tambahkan sedikit minyak agar lebih mudah halus.</li>
+                <li><strong>Menumis Bumbu:</strong> Panaskan sedikit minyak goreng (sekitar 2-3 sendok makan) dalam wajan. Tumis bumbu halus hingga harum dan matang. Masukkan daun jeruk, serai, dan lengkuas. Aduk rata hingga bumbu tanak dan mengeluarkan aroma sedap.</li>
+                <li><strong>Memasak Bumbu Mercon:</strong> Masukkan bakso goreng yang sudah ditiriskan ke dalam tumisan bumbu. Aduk cepat hingga semua bakso terlumuri bumbu mercon secara merata.</li>
+                <li><strong>Menggoreng Kembali:</strong> Goreng kembali campuran bakso dan bumbu mercon dengan api kecil hingga sedang. Aduk sesekali agar tidak gosong. Proses ini bertujuan agar bumbu meresap sempurna ke dalam bakso dan membuat tekstur bakso semakin renyah. Goreng hingga dirasa cukup renyah sesuai selera Anda.</li>
+                <li><strong>Penyajian:</strong> Angkat bakso goreng mercon dan tiriskan kembali. Sajikan selagi hangat sebagai camilan atau lauk pelengkap.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Tips Tambahan:</h2>
+            <ul>
+                <li>Anda bisa menambahkan perasan jeruk nipis sesaat sebelum disajikan untuk memberikan kesegaran.</li>
+                <li>Jika suka, tambahkan sedikit kecap manis pada bumbu saat menumis untuk variasi rasa manis gurih.</li>
+                <li>Untuk penyimpanan, pastikan bakso goreng mercon benar-benar dingin sebelum dimasukkan ke dalam wadah kedap udara agar tetap renyah.</li>
+                <li>Jika ingin rasa yang lebih 'mercon', Anda bisa menambahkan potongan cabai rawit segar saat menumis bumbu terakhir atau saat penyajian.</li>
+            </ul>
+        </div>
+
+        <p>Membuat <span class="highlight">bakso goreng mercon</span> sendiri di rumah adalah cara yang menyenangkan untuk menikmati camilan pedas favorit tanpa perlu repot mencari di luar. Dengan bahan-bahan yang mudah didapat dan langkah-langkah yang jelas, Anda bisa menyajikan hidangan lezat ini kapan saja. Selamat mencoba dan nikmati sensasi pedasnya!</p>
+
+        <a href="#" class="cta-button">Coba Resep Lainnya!</a>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-mematikan-kuman-tbc">Cara Mematikan Kuman Tbc</a></li>
+<li><a href="/cara-membuat-pentol-bakar-untuk-dijual">Cara Membuat Pentol Bakar Untuk Dijual</a></li>
+<li><a href="/bakpia-kukus-tugu-harga">Bakpia Kukus Tugu Harga</a></li>
+<li><a href="/bakwan-udang-goreng">Bakwan Udang Goreng</a></li>
+<li><a href="/resep-bakwan-sosis-kanzler">Resep Bakwan Sosis Kanzler</a></li>
+<li><a href="/adonan-bala-bala-renyah">Adonan Bala Bala Renyah</a></li>
+<li><a href="/penjual-bakso-mercon">Penjual Bakso Mercon</a></li>
+<li><a href="/bakpao-bulat">Bakpao Bulat</a></li>
+<li><a href="/resep-bakwan-takaran-sendok">Resep Bakwan Takaran Sendok</a></li>
+<li><a href="/bale-gareth">Bale Gareth</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

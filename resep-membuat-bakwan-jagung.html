@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Jagung Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9ff; /* Warna sejuk cerah */
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2196f3; /* Warna biru cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .intro, .recipe-section, .tips-section {
+            margin-bottom: 30px;
+        }
+        .recipe-section ul, .recipe-section ol {
+            padding-left: 25px;
+        }
+        .recipe-section li, .recipe-section p {
+            margin-bottom: 10px;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 12px;
+        }
+        .ingredients span, .steps span {
+            font-weight: bold;
+            color: #0077cc; /* Warna biru lebih gelap */
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .tips-section ul li {
+            margin-bottom: 15px;
+        }
+        .tips-section strong {
+            color: #0077cc;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #e3f2fd; /* Warna latar belakang footer sejuk */
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-container">
+            <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e1f5fe;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="300" fill="url(#grad1)" />
+                <!-- Jagung -->
+                <circle cx="150" cy="150" r="50" fill="#ffb300" /> <!-- Warna jagung cerah -->
+                <circle cx="170" cy="140" r="45" fill="#ffca28" />
+                <circle cx="190" cy="160" r="40" fill="#ffd54f" />
+                <circle cx="130" cy="160" r="45" fill="#ffc107" />
+                <circle cx="140" cy="120" r="35" fill="#f9a825" />
+                <!-- Daun Bawang -->
+                <path d="M 250 100 Q 260 80 270 60 L 280 80 Q 270 100 260 120 Z" fill="#66bb6a" /> <!-- Warna hijau daun -->
+                <path d="M 260 110 Q 270 90 280 70 L 290 90 Q 280 110 270 130 Z" fill="#4caf50" />
+                <!-- Cabai (opsional, sebagai aksen warna) -->
+                <polygon points="350,120 370,100 390,120" fill="#ef5350" /> <!-- Merah cerah -->
+                <!-- Teks "Bakwan Jagung" -->
+                <text x="300" y="50" font-family="Verdana" font-size="30" fill="#0277bd" text-anchor="middle" font-weight="bold">Bakwan</text>
+                <text x="300" y="90" font-family="Verdana" font-size="40" fill="#0277bd" text-anchor="middle" font-weight="bold">Jagung</text>
+            </svg>
+        </div>
+
+        <h1>Resep Bakwan Jagung Renyah dan Lezat</h1>
+
+        <div class="intro">
+            <p>Siapa yang tidak suka bakwan jagung? Camilan gurih ini sangat populer di Indonesia, cocok dinikmati kapan saja, baik saat santai maupun sebagai lauk pendamping.</p>
+            <p>Menyajikan bakwan jagung yang renyah di luar dan lembut di dalam ternyata tidaklah sulit. Dengan resep yang tepat dan beberapa tips rahasia, Anda bisa membuat bakwan jagung seenak buatan restoran.</p>
+            <p>Mari kita simak resep sederhana namun menggugah selera untuk membuat bakwan jagung yang pasti disukai keluarga.</p>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Bahan-bahan</h2>
+            <ul class="ingredients">
+                <li><span>2 buah</span> jagung manis, pipil atau serut kasar</li>
+                <li><span>100 gram</span> tepung terigu protein sedang</li>
+                <li><span>3 sendok makan</span> tepung beras</li>
+                <li><span>1 batang</span> daun bawang, iris halus</li>
+                <li><span>2 siung</span> bawang putih, haluskan</li>
+                <li><span>1/2 sendok teh</span> ketumbar bubuk</li>
+                <li><span>1/4 sendok teh</span> lada bubuk</li>
+                <li><span>1/2 sendok teh</span> garam (sesuai selera)</li>
+                <li><span>1/4 sendok teh</span> kaldu bubuk (opsional)</li>
+                <li><span>1 butir</span> telur (opsional, untuk tekstur lebih lembut)</li>
+                <li><span>Secukupnya</span> air untuk adonan</li>
+                <li><span>Minyak goreng</span> secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h2>Cara Membuat</h2>
+            <ol class="steps">
+                <li>Campurkan <span>jagung pipil/serut</span>, <span>daun bawang iris</span>, <span>bawang putih halus</span>, <span>ketumbar bubuk</span>, <span>lada bubuk</span>, <span>garam</span>, dan <span>kaldu bubuk (jika pakai)</span> dalam sebuah wadah. Aduk rata.</li>
+                <li>Masukkan <span>telur (jika pakai)</span>, kocok lepas lalu campurkan dengan adonan jagung.</li>
+                <li>Tambahkan <span>tepung terigu</span> dan <span>tepung beras</span>. Aduk kembali hingga semua bahan tercampur.</li>
+                <li>Tuangkan <span>air sedikit demi sedikit</span> sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan jangan terlalu encer agar bakwan tidak lembek, tapi jangan juga terlalu kental agar tidak keras. Tekstur yang diinginkan adalah sedikit kental dan bisa menempel pada jagung.</li>
+                <li>Panaskan <span>minyak goreng</span> dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam saat digoreng.</li>
+                <li>Ambil satu sendok sayur adonan, lalu tuang ke dalam minyak panas. Anda bisa membentuknya bulat pipih atau agak memanjang sesuai selera.</li>
+                <li>Goreng bakwan hingga berwarna cokelat keemasan dan matang di kedua sisinya. Balik sekali saja agar tidak terlalu menyerap minyak.</li>
+                <li>Angkat bakwan dan tiriskan minyaknya menggunakan tisu dapur agar hasilnya lebih renyah.</li>
+                <li>Sajikan bakwan jagung selagi hangat.</li>
+            </ol>
+        </div>
+
+        <div class="tips-section">
+            <h2>Tips Membuat Bakwan Jagung Makin Sempurna</h2>
+            <ul>
+                <li><span>Pilih Jagung yang Tepat:</span> Gunakan jagung manis yang masih muda agar rasanya manis alami dan teksturnya lembut.</li>
+                <li><span>Jangan Terlalu Banyak Tepung:</span> Gunakan perbandingan tepung yang pas agar rasa jagung tetap dominan dan tekstur bakwan tidak keras.</li>
+                <li><span>Adonan Jangan Terlalu Kental/Cair:</span> Kekentalan adonan sangat krusial. Jika terlalu kental, bakwan akan keras. Jika terlalu cair, bakwan akan lembek dan mudah hancur.</li>
+                <li><span>Gunakan Api Sedang:</span> Menggoreng dengan api sedang akan memastikan bakwan matang merata hingga ke dalam, sekaligus menghasilkan warna cokelat keemasan yang cantik tanpa gosong.</li>
+                <li><span>Tiriskan dengan Baik:</span> Meniriskan minyak berlebih adalah kunci bakwan renyah. Gunakan tisu dapur atau alat peniris minyak.</li>
+                <li><span>Tambahkan Bahan Lain (Opsional):</span> Anda bisa menambahkan irisan cabai rawit jika suka sedikit pedas, atau sedikit irisan wortel parut untuk variasi.</li>
+            </ul>
+        </div>
+
+        <p>Membuat bakwan jagung memang menyenangkan dan hasilnya memuaskan. Sajikan bersama sambal favorit Anda atau nikmati begitu saja. Selamat mencoba!</p>
+    </div>
+
+    <footer>
+        Terima kasih telah mengunjungi halaman resep ini.
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-dempo-citraland">Bakwan Dempo Citraland</a></li>
+<li><a href="/cara-membuat-isian-bakso-mercon">Cara Membuat Isian Bakso Mercon</a></li>
+<li><a href="/ote2-renyah">Ote2 Renyah</a></li>
+<li><a href="/resep-bakwan-ayam-goreng-bulat">Resep Bakwan Ayam Goreng Bulat</a></li>
+<li><a href="/cara-bikin-sambal-bakso-mercon">Cara Bikin Sambal Bakso Mercon</a></li>
+<li><a href="/cara-menyimpan-bakpia">Cara Menyimpan Bakpia</a></li>
+<li><a href="/bakwan-ubi-kayu">Bakwan Ubi Kayu</a></li>
+<li><a href="/bakpia-kurnia-sari-jalan-solo">Bakpia Kurnia Sari Jalan Solo</a></li>
+<li><a href="/alat-dan-bahan-membuat-perkedel-jagung">Alat Dan Bahan Membuat Perkedel Jagung</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-kriuk">Cara Membuat Bakwan Sayur Kriuk</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

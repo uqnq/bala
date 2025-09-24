@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Sayur Kriuk Sederhana & Nikmat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 15px;
+            background-color: #e0f7fa; /* Warna dasar sejuk cerah */
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #00796b; /* Warna aksen sejuk */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 22px;
+            border-bottom: 2px solid #80cbc4;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            max-width: 600px; /* Batasi lebar gambar agar proporsional */
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .content p, .content ul, .content ol {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .content ul li, .content ol li {
+            margin-bottom: 8px;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .ingredients li::before, .steps li::before {
+            content: '✔'; /* Simbol centang yang cerah */
+            color: #4caf50; /* Warna hijau cerah */
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .ingredients {
+            list-style: none;
+            padding-left: 0;
+        }
+        .steps {
+            list-style: none;
+            padding-left: 0;
+        }
+        .steps li::before {
+            content: counter(step) '.'; /* Gunakan counter untuk penomoran */
+            color: #ff9800; /* Warna oranye cerah */
+            font-weight: bold;
+            font-size: 18px;
+            left: 0;
+        }
+        .steps {
+            counter-reset: step;
+        }
+        .steps li {
+            counter-increment: step;
+        }
+        .highlight {
+            color: #00796b;
+            font-weight: bold;
+        }
+        .tips {
+            background-color: #fff9c4; /* Warna kuning muda yang cerah */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 25px;
+            border-left: 5px solid #fbc02d; /* Garis aksen kuning */
+        }
+        .tips h3 {
+            color: #f57f17; /* Warna kuning tua untuk judul tips */
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .tips p {
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsif untuk mobile */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            img {
+                margin: 15px auto;
+            }
+            .content p, .content ul, .content ol {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 20px auto;">
+            <circle cx="50" cy="50" r="45" fill="#80CBC4" stroke="#00796B" stroke-width="4"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="20" fill="#FFFFFF" font-weight="bold">Bakwan</text>
+            <path d="M40 65L30 75L40 85" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M60 65L70 75L60 85" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M50 30L50 50" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M50 50L35 65" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M50 50L65 65" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div class="content">
+            <h1>Resep Bakwan Sayur Kriuk Sederhana & Nikmat</h1>
+            <p>Siapa yang bisa menolak kelezatan bakwan sayur yang renyah dan gurih? Camilan favorit keluarga ini ternyata sangat mudah dibuat di rumah, bahkan bagi Anda yang baru belajar memasak. Dengan sedikit trik, bakwan buatan Anda akan menjadi super kriuk dan disukai semua orang.</p>
+
+            <p>Artikel ini akan memandu Anda langkah demi langkah untuk menciptakan bakwan sayur yang sempurna. Mulai dari pemilihan sayuran yang tepat, adonan yang pas, hingga teknik menggoreng agar menghasilkan tekstur renyah tahan lama. Siapkan diri Anda untuk aroma harum yang akan memenuhi dapur Anda!</p>
+
+            <h2>Bahan-Bahan Utama</h2>
+            <ul class="ingredients">
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk tambahan kriuk)</li>
+                <li>1/4 sendok teh bubuk kunyit (opsional, untuk warna cantik)</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (ayam/sapi/jamur)</li>
+                <li>150-200 ml air es (atau secukupnya hingga adonan mengental tapi tidak terlalu cair)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+
+            <h2>Sayuran Pilihan Anda</h2>
+            <ul class="ingredients">
+                <li>1 buah wortel ukuran sedang, iris korek api tipis</li>
+                <li>1/4 bagian kol ukuran kecil, iris tipis</li>
+                <li>50 gram tauge (buang ekornya jika suka)</li>
+                <li>2 batang daun bawang, iris tipis</li>
+                <li>Bisa ditambahkan sayuran lain seperti buncis, sawi, atau labu siam sesuai selera.</li>
+            </ul>
+
+            <h2>Bumbu Halus (Opsional, untuk rasa lebih kaya)</h2>
+            <ul class="ingredients">
+                <li>2 siung bawang putih</li>
+                <li>1 butir kemiri sangrai</li>
+            </ul>
+
+            <h2>Langkah-Langkah Pembuatan</h2>
+            <ol class="steps">
+                <li><strong>Persiapan Adonan Kering:</strong> Dalam wadah besar, campurkan tepung terigu, tepung beras, bubuk kunyit (jika pakai), garam, merica, dan kaldu bubuk. Aduk rata. Jika menggunakan bumbu halus, masukkan juga ke dalam campuran tepung ini.</li>
+                <li><strong>Membuat Adonan Basah:</strong> Tuangkan air es sedikit demi sedikit ke dalam campuran tepung sambil terus diaduk. Pastikan tidak ada gumpalan. Adonan harus memiliki kekentalan yang pas, tidak terlalu encer agar sayuran menempel, tetapi juga tidak terlalu kental agar tidak keras.</li>
+                <li><strong>Campurkan Sayuran:</strong> Masukkan semua sayuran yang sudah diiris dan tauge ke dalam adonan. Aduk perlahan hingga semua sayuran terbalut rata dengan adonan. Jangan terlalu lama mengaduk agar sayuran tetap segar.</li>
+                <li><strong>Panaskan Minyak:</strong> Siapkan wajan dengan minyak goreng yang cukup banyak. Panaskan dengan api sedang cenderung besar. Minyak yang cukup banyak dan panas akan membantu bakwan matang merata dan renyah.</li>
+                <li><strong>Goreng Bakwan:</strong> Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga kedua sisinya berwarna kuning keemasan dan matang. Usahakan menggoreng tidak terlalu penuh agar suhu minyak tetap stabil.</li>
+                <li><strong>Tiriskan:</strong> Angkat bakwan yang sudah matang, tiriskan minyaknya menggunakan saringan atau alasi dengan tisu dapur agar minyak berlebih terserap.</li>
+                <li><strong>Sajikan:</strong> Bakwan sayur kriuk siap disajikan selagi hangat. Nikmati bersama cabai rawit hijau, sambal, atau lontong.</li>
+            </ol>
+
+            <div class="tips">
+                <h3>Tips Agar Bakwan Super Kriuk</h3>
+                <p><strong>1. Gunakan Air Es:</strong> Air dingin atau air es membantu adonan lebih renyah.</p>
+                <p><strong>2. Tepung Beras:</strong> Campuran tepung beras sangat penting untuk menambah tekstur renyah.</p>
+                <p><strong>3. Minyak Panas & Cukup:</strong> Pastikan minyak benar-benar panas sebelum memasukkan adonan dan gunakan minyak yang cukup banyak agar bakwan terendam.</p>
+                <p><strong>4. Jangan Terlalu Banyak Mengaduk:</strong> Mengaduk adonan terlalu lama bisa membuat gluten berkembang dan bakwan menjadi keras.</p>
+                <p><strong>5. Goreng Sekali Jalan:</strong> Sebaiknya goreng adonan dalam satu atau dua kali penggorengan agar suhu minyak stabil dan bakwan tidak menyerap banyak minyak.</p>
+            </div>
+
+            <p>Membuat bakwan sayur yang renyah dan lezat ternyata tidak sesulit yang dibayangkan. Dengan mengikuti panduan ini, Anda bisa menyajikan camilan sehat dan ekonomis untuk keluarga tercinta. Selamat mencoba dan selamat menikmati!</p>
+        </div>
+
+        <footer>
+            <p>Temukan lebih banyak resep seru lainnya!</p>
+        </footer>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/alat-dan-bahan-membuat-bakwan-jagung">Alat Dan Bahan Membuat Bakwan Jagung</a></li>
+<li><a href="/cara-membuat-bakso-beranak">Cara Membuat Bakso Beranak</a></li>
+<li><a href="/cara-membuat-bakpao-lembut-dan-enak">Cara Membuat Bakpao Lembut Dan Enak</a></li>
+<li><a href="/bakwan-jagung-tepung-sajiku">Bakwan Jagung Tepung Sajiku</a></li>
+<li><a href="/bumbu-racik-tumis">Bumbu Racik Tumis</a></li>
+<li><a href="/bakpia-viral">Bakpia Viral</a></li>
+<li><a href="/bakpao-disney">Bakpao Disney</a></li>
+<li><a href="/gambar-bakteri-salmonella">Gambar Bakteri Salmonella</a></li>
+<li><a href="/lokasi-bakso-mercon">Lokasi Bakso Mercon</a></li>
+<li><a href="/bakpao-ilufa">Bakpao Ilufa</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

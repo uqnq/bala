@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakso Bumbu Mercon Pedas Mantap</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --warna-utama: #6ECB63; /* Hijau segar */
+            --warna-sekunder: #FFD365; /* Kuning cerah */
+            --warna-teks-gelap: #333;
+            --warna-teks-terang: #fff;
+            --latar-belakang: #F0FFF0; /* Hijau sangat muda */
+            --bayangan: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--latar-belakang);
+            color: var(--warna-teks-gelap);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 768px;
+            width: 100%;
+            background-color: var(--warna-teks-terang);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--bayangan);
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        header {
+            background-color: var(--warna-utama);
+            color: var(--warna-teks-terang);
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 1px 1px 3px var(--bayangan);
+        }
+
+        .content {
+            padding: 25px 20px;
+        }
+
+        .content h2 {
+            color: var(--warna-utama);
+            border-bottom: 2px solid var(--warna-sekunder);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+
+        .content p, .content ul, .content ol {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .content ul li, .content ol li {
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px var(--bayangan);
+        }
+
+        .ingredients, .steps {
+            background-color: var(--latar-belakang);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients ul li, .steps ol li {
+            background-color: var(--warna-teks-terang);
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            border-left: 5px solid var(--warna-sekunder);
+        }
+
+        .ingredients h3, .steps h3 {
+            margin-top: 0;
+            color: var(--warna-utama);
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: var(--warna-utama);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666;
+            background-color: #e0ffe0; /* Hijau sangat muda lagi */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            .content h2 {
+                font-size: 1.4em;
+            }
+            .content p, .content ul, .content ol {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resep Bakso Bumbu Mercon Pedas Menggugah Selera</h1>
+        </header>
+        <div class="content">
+            <div class="image-container">
+                <svg width="100%" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Base bowl -->
+                    <ellipse cx="300" cy="160" rx="250" ry="40" fill="#E8F5E9" stroke="#81C784" stroke-width="3"/>
+                    <!-- Bakso -->
+                    <circle cx="250" cy="120" r="20" fill="#F44336" stroke="#D32F2F" stroke-width="2"/>
+                    <circle cx="350" cy="100" r="20" fill="#F44336" stroke="#D32F2F" stroke-width="2"/>
+                    <circle cx="280" cy="80" r="18" fill="#F44336" stroke="#D32F2F" stroke-width="2"/>
+                    <circle cx="320" cy="140" r="18" fill="#F44336" stroke="#D32F2F" stroke-width="2"/>
+                    <!-- Bumbu Mercon (spicy elements) -->
+                    <path d="M 200 60 Q 250 30 300 60 T 400 60" stroke="#FF9800" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+                    <circle cx="270" cy="50" r="5" fill="#FF5722"/>
+                    <circle cx="330" cy="40" r="5" fill="#FF5722"/>
+                    <circle cx="300" cy="70" r="4" fill="#E65100"/>
+                    <!-- Garnishes -->
+                    <path d="M 150 90 L 170 110 L 155 120 Z" fill="#4CAF50"/>
+                    <path d="M 450 90 L 430 110 L 445 120 Z" fill="#4CAF50"/>
+                    <text x="300" y="40" font-family="Verdana" font-size="12" fill="#f44336" text-anchor="middle" font-weight="bold">Mercon!</text>
+                    <text x="300" y="150" font-family="Verdana" font-size="14" fill="#333" text-anchor="middle">Bakso Bumbu Mercon</text>
+                </svg>
+            </div>
+
+            <p>Siapa yang tidak tergoda dengan kelezatan bakso? Hidangan favorit sejuta umat ini kini hadir dengan sensasi rasa yang berbeda, yaitu Bakso Bumbu Mercon. Perpaduan antara kenyalnya bakso dengan bumbu mercon yang pedas membara dijamin akan membuat lidah bergoyang dan ketagihan. Resep ini dirancang untuk Anda yang suka tantangan rasa dan ingin menciptakan hidangan spesial di rumah. Mari kita siapkan bahan-bahannya dan mulai petualangan rasa ini!</p>
+
+            <div class="ingredients">
+                <h3>Bahan-Bahan Utama:</h3>
+                <ul>
+                    <li>30-40 butir bakso sapi (ukuran sedang), rebus sebentar lalu tiriskan</li>
+                    <li>1 batang serai, memarkan</li>
+                    <li>2 lembar daun salam</li>
+                    <li>3 lembar daun jeruk, buang tulang daunnya</li>
+                    <li>2 cm lengkuas, memarkan</li>
+                    <li>1 cm jahe, memarkan</li>
+                    <li>1 batang daun bawang, iris tipis (untuk taburan)</li>
+                    <li>Minyak goreng secukupnya untuk menumis</li>
+                    <li>Garam secukupnya</li>
+                    <li>Gula pasir secukupnya</li>
+                    <li>Kaldu bubuk secukupnya (opsional)</li>
+                </ul>
+            </div>
+
+            <div class="ingredients">
+                <h3>Bumbu Halus Mercon:</h3>
+                <ul>
+                    <li>10-15 buah cabai merah keriting (sesuaikan tingkat kepedasan)</li>
+                    <li>5-10 buah cabai rawit merah (atau lebih, jika suka sangat pedas!)</li>
+                    <li>5 siung bawang merah</li>
+                    <li>3 siung bawang putih</li>
+                    <li>1/2 sendok teh terasi bakar (opsional, untuk aroma lebih kuat)</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h2>Langkah-Langkah Membuat Bakso Bumbu Mercon:</h2>
+                <ol>
+                    <li>Pertama, siapkan bumbu halus. Haluskan semua bahan bumbu halus mercon menggunakan blender atau ulekan hingga benar-benar halus. Jika menggunakan blender, tambahkan sedikit minyak goreng agar lebih mudah halus.</li>
+                    <li>Panaskan minyak goreng secukupnya dalam wajan. Tumis bumbu halus bersama serai, daun salam, daun jeruk, lengkuas, dan jahe hingga harum dan bumbu matang sempurna. Pastikan tidak ada bau langu.</li>
+                    <li>Masukkan bakso yang sudah ditiriskan ke dalam tumisan bumbu. Aduk rata hingga semua bakso terbalut bumbu dengan baik.</li>
+                    <li>Tambahkan garam, gula pasir, dan kaldu bubuk (jika menggunakan). Aduk kembali dan cicipi rasa. Sesuaikan rasa pedas, manis, dan gurihnya sesuai selera Anda.</li>
+                    <li>Masak sebentar hingga bumbu meresap sempurna ke dalam bakso dan kuahnya sedikit mengental.</li>
+                    <li>Angkat bakso bumbu mercon, sajikan selagi hangat dalam mangkuk. Taburi dengan irisan daun bawang agar tampilan lebih menarik dan menambah aroma segar.</li>
+                </ol>
+            </div>
+
+            <p>Nikmati <span class="highlight">Bakso Bumbu Mercon</span> ini sebagai camilan pedas yang menggoda atau sebagai lauk pendamping nasi hangat. Kelezatannya akan langsung terasa di suapan pertama. Jangan ragu untuk menyesuaikan jumlah cabai agar sesuai dengan tingkat toleransi pedas Anda. Selamat mencoba dan rasakan sensasi ledakan rasa di setiap gigitan!</p>
+        </div>
+        <footer>
+            <p>&copy; Resep Lezat | Semua Hak Dilindungi.</p>
+        </footer>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/balasan-orang-zalim-di-dunia">Balasan Orang Zalim Di Dunia</a></li>
+<li><a href="/bakpia-mami">Bakpia Mami</a></li>
+<li><a href="/balasan-untuk-suami-yang-menyakiti-hati-istri">Balasan Untuk Suami Yang Menyakiti Hati Istri</a></li>
+<li><a href="/resep-ote-ote-empuk-dan-renyah">Resep Ote Ote Empuk Dan Renyah</a></li>
+<li><a href="/balasan-bagi-orang-yang-bersedekah">Balasan Bagi Orang Yang Bersedekah</a></li>
+<li><a href="/pewarnaan-gram-pdf">Pewarnaan Gram Pdf</a></li>
+<li><a href="/pia-kacang-merah">Pia Kacang Merah</a></li>
+<li><a href="/bumbu-bakwan-goreng-enak">Bumbu Bakwan Goreng Enak</a></li>
+<li><a href="/bale-gareth">Bale Gareth</a></li>
+<li><a href="/resep-bakwan-devina-hermawan">Resep Bakwan Devina Hermawan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

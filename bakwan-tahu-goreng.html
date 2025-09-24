@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Tahu Goreng Renyah & Lezat</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e8f5e9; /* Warna hijau muda yang sejuk */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #2e7d32; /* Hijau tua untuk judul */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        .article-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            display: block; /* Agar bisa di-margin auto */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p, ul, h2 {
+            margin-bottom: 15px;
+            text-align: justify; /* Merapikan teks */
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #1b5e20; /* Hijau lebih pekat untuk penekanan */
+        }
+        .recipe-section {
+            background-color: #f1f8e9; /* Hijau sangat muda untuk bagian resep */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box; /* Agar padding tidak menambah lebar */
+        }
+        .recipe-section h2 {
+            color: #2e7d32;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakwan Tahu Goreng: Camilan Lezat dan Renyah Khas Nusantara</h1>
+
+        <svg class="article-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title-desc">
+            <title id="title-desc">Ilustrasi bakwan tahu goreng yang renyah</title>
+            <desc>Gambar ilustrasi bakwan tahu goreng berwarna cokelat keemasan, dengan beberapa potongan tahu yang terpotong dadu dan dibalut adonan tepung, disajikan di atas piring dengan latar belakang warna hijau muda.</desc>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feMerge>
+                        <feMergeNode in="offsetblur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <!-- Latar belakang cerah -->
+            <rect width="100%" height="100%" fill="url(#grad1)" />
+
+            <!-- Ilustrasi Tahu Goreng -->
+            <!-- Tahu 1 -->
+            <g transform="translate(150, 180) rotate(5)">
+                <path d="M-40 -20 L40 -20 L40 20 L-40 20 Z" fill="#fbc02d" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/>
+                <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle" font-weight="bold">Tahu</text>
+            </g>
+            <!-- Tahu 2 -->
+            <g transform="translate(250, 150) rotate(-10)">
+                <path d="M-35 -15 L35 -15 L35 15 L-35 15 Z" fill="#fbc02d" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/>
+                <text x="0" y="3" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle" font-weight="bold">Tahu</text>
+            </g>
+            <!-- Tahu 3 -->
+            <g transform="translate(350, 200) rotate(15)">
+                <path d="M-45 -25 L45 -25 L45 25 L-45 25 Z" fill="#fbc02d" stroke="#e65100" stroke-width="2" filter="url(#shadow)"/>
+                <text x="0" y="7" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">Tahu</text>
+            </g>
+
+            <!-- Adonan Tepung yang sedikit menutupi tahu -->
+            <g filter="url(#shadow)">
+                <path d="M120 160 Q 180 100 240 160 T 320 160 Q 360 220 350 280 T 250 290 Q 180 350 120 280 T 100 180 Z" fill="#f5deb3" opacity="0.7"/>
+            </g>
+
+            <!-- Detail renyah (opsional, untuk efek visual) -->
+            <circle cx="130" cy="170" r="3" fill="#e65100" opacity="0.5"/>
+            <circle cx="160" cy="190" r="2" fill="#e65100" opacity="0.5"/>
+            <circle cx="280" cy="130" r="2" fill="#e65100" opacity="0.5"/>
+            <circle cx="300" cy="160" r="3" fill="#e65100" opacity="0.5"/>
+            <circle cx="370" cy="210" r="3" fill="#e65100" opacity="0.5"/>
+        </svg>
+
+        <p>
+            Siapa yang tidak suka camilan renyah dan gurih di sore hari atau saat berkumpul bersama keluarga? Bakwan tahu goreng adalah salah satu jajanan pasar favorit yang selalu berhasil menggugah selera. Keunikan bakwan tahu goreng terletak pada kombinasi tekstur tahu yang lembut di dalam dan lapisan adonan tepung yang garing di luar. Rasanya yang gurih, sedikit asin, dan aroma bumbu yang sedap membuatnya menjadi pilihan camilan yang praktis dan digemari semua kalangan, dari anak-anak hingga orang dewasa.
+        </p>
+
+        <p>
+            Tahu, sebagai bahan dasar utama, adalah sumber protein nabati yang baik dan mudah didapatkan. Pengolahannya menjadi bakwan tahu goreng bukan hanya soal rasa, tetapi juga tentang transformasi sederhana menjadi hidangan yang lebih menarik. Dengan sedikit sentuhan bumbu dan teknik menggoreng yang tepat, tahu yang biasa saja bisa menjadi bintang di meja makan. Cocok disantap hangat-hangat ditemani secangkir teh atau kopi, atau bahkan sebagai pelengkap hidangan utama.
+        </p>
+
+        <div class="recipe-section">
+            <h2>Rahasia Membuat Bakwan Tahu Goreng yang Sempurna</h2>
+            <p>
+                Kunci dari bakwan tahu goreng yang lezat adalah adonan yang pas dan cara menggoreng yang benar. Adonan yang terlalu encer akan membuat bakwan mudah lembek, sementara adonan yang terlalu kental bisa membuat bagian luarnya terlalu keras dan pahit. Perpaduan tepung terigu dan sedikit tepung beras seringkali menjadi rahasia untuk mendapatkan tekstur yang renyah tahan lama. Jangan lupakan bumbu-bumbu dasar seperti bawang putih, garam, merica, dan sedikit ketumbar bubuk untuk memberikan aroma dan rasa yang khas.
+            </p>
+            <p>
+                Memotong tahu dengan ukuran yang seragam juga penting agar matangnya merata saat digoreng. Anda bisa memotong tahu menjadi dadu kecil atau segitiga, sesuai selera. Untuk hasil yang lebih maksimal, pastikan minyak goreng dalam keadaan panas sebelum memasukkan adonan tahu. Menggoreng dengan api sedang cenderung besar akan membantu bakwan cepat matang dan menghasilkan lapisan luar yang renyah tanpa membuat bagian dalamnya terlalu menyerap minyak.
+            </p>
+            <h2>Bahan-bahan:</h2>
+            <ul>
+                <li>250 gram tahu putih, haluskan atau potong dadu kecil</li>
+                <li>100 gram tepung terigu protein sedang</li>
+                <li>25 gram tepung beras</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>1 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya</li>
+                <li>Air dingin secukupnya (sekitar 75-100 ml)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+            <h2>Cara Membuat:</h2>
+            <ol>
+                <li>Dalam wadah, campurkan tepung terigu, tepung beras, ketumbar bubuk, merica bubuk, dan garam. Aduk rata.</li>
+                <li>Masukkan bawang putih halus, tahu yang sudah dihaluskan/dipotong, dan irisan daun bawang. Aduk rata.</li>
+                <li>Tuang air dingin sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas, tidak terlalu encer dan tidak terlalu kental.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam.</li>
+                <li>Ambil adonan tahu dengan sendok atau tangan, lalu goreng hingga berwarna cokelat keemasan dan matang sempurna.</li>
+                <li>Angkat bakwan tahu goreng dan tiriskan minyaknya.</li>
+                <li>Sajikan selagi hangat dengan sambal kecap atau cabai rawit.</li>
+            </ol>
+        </div>
+
+        <p>
+            Menikmati bakwan tahu goreng buatan sendiri memberikan kepuasan tersendiri. Proses pembuatannya yang relatif mudah membuatnya menjadi pilihan resep yang bisa dicoba oleh siapa saja, bahkan bagi yang baru belajar memasak. Variasi bumbu dan tambahan sayuran seperti wortel parut atau kol iris tipis juga bisa ditambahkan untuk menciptakan rasa yang lebih kaya dan nutrisi yang lebih lengkap. Jadi, tunggu apa lagi? Siapkan bahan-bahannya dan segera cicipi kelezatan bakwan tahu goreng yang renyah dan menggoda ini!
+        </p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/orang-munafik-akan-allah-beri-balasan-di-tempat">Orang Munafik Akan Allah Beri Balasan Di Tempat</a></li>
+<li><a href="/bakpia-25-ongko-joyo">Bakpia 25 Ongko Joyo</a></li>
+<li><a href="/bakpia-kencana-wates">Bakpia Kencana Wates</a></li>
+<li><a href="/bakpia-pathok-coklat">Bakpia Pathok Coklat</a></li>
+<li><a href="/bakpia-pathok-nadila">Bakpia Pathok Nadila</a></li>
+<li><a href="/penyebab-bakpao-keriput">Penyebab Bakpao Keriput</a></li>
+<li><a href="/resep-bakwan-biasa">Resep Bakwan Biasa</a></li>
+<li><a href="/devina-hermawan-bakwan-sayur">Devina Hermawan Bakwan Sayur</a></li>
+<li><a href="/bakpia-pathok-25-website">Bakpia Pathok 25 Website</a></li>
+<li><a href="/bakpia-pathok-terbit">Bakpia Pathok Terbit</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bakwan Mie Sederhana & Enak</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* AliceBlue */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff; /* Primary Blue */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #17a2b8; /* Info Blue */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-bottom: 2px solid #e9ecef; /* Light Gray */
+            padding-bottom: 5px;
+        }
+        p, ul, ol {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #28a745; /* Success Green */
+            font-weight: bold;
+        }
+        .recipe-image {
+            display: block;
+            margin: 30px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients, .steps {
+            background-color: #e3f2fd; /* Light Blue */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .ingredients ul li, .steps ol li {
+            background-color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            border-left: 5px solid #007bff;
+        }
+        .ingredients ul li:last-child, .steps ol li:last-child {
+            margin-bottom: 0;
+        }
+        .note {
+            font-style: italic;
+            color: #6c757d; /* Gray */
+            margin-top: 25px;
+            text-align: center;
+            font-size: 0.95em;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p, ul, ol {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cara Membuat Bakwan Mie Sederhana yang Renyah dan Lezat</h1>
+
+        <svg class="recipe-image" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#2ecc71; stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#3498db; stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="400" rx="15" fill="url(#grad1)" />
+            <circle cx="100" cy="100" r="50" fill="#f1c40f" />
+            <path d="M 250 150 L 350 50 L 450 150 Z" fill="#e74c3c" />
+            <text x="300" y="250" font-family="Arial, sans-serif" font-size="40" fill="#ffffff" text-anchor="middle" font-weight="bold">Bakwan Mie</text>
+            <text x="300" y="300" font-family="Arial, sans-serif" font-size="20" fill="#ecf0f1" text-anchor="middle">Nikmat untuk Segala Suasana</text>
+        </svg>
+        <p>
+            Siapa yang tidak suka bakwan? Camilan renyah yang cocok dinikmati kapan saja ini memang selalu jadi favorit. Kali ini, kita akan mencoba resep bakwan yang sedikit berbeda, yaitu bakwan mie. Dengan tambahan mie instan yang sudah direbus, bakwan mie akan terasa lebih kenyal di dalam namun tetap renyah di luar. Resep ini sangat sederhana, cocok untuk pemula yang ingin belajar memasak atau siapa saja yang ingin membuat camilan cepat dan ekonomis.
+        </p>
+        <p>
+            Bakwan mie ini bisa menjadi pilihan ide takjil saat bulan puasa, camilan sore bersama keluarga, atau bahkan bekal makan untuk anak. Kunci kelezatan bakwan mie terletak pada adonan yang pas dan teknik menggoreng yang benar agar hasilnya tidak berminyak dan benar-benar renyah. Mari kita simak cara membuat bakwan mie sederhana yang pasti akan disukai.
+        </p>
+
+        <div class="ingredients">
+            <h2>Bahan-bahan Bakwan Mie</h2>
+            <ul>
+                <li>1 bungkus mie instan (rasa apa saja, tapi rasa kaldu ayam atau sapi lebih cocok), rebus sebentar hingga setengah matang, tiriskan</li>
+                <li>100 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (ini kunci kerenyahannya!)</li>
+                <li>1 batang wortel, serut halus atau potong korek api kecil</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>3 siung bawang putih, haluskan</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional, sesuaikan dengan rasa mie instan)</li>
+                <li>Air secukupnya (sekitar 100-150 ml, sesuaikan konsistensi)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h2>Langkah-langkah Membuat Bakwan Mie</h2>
+            <ol>
+                <li>
+                    Pertama, siapkan mie instan yang sudah direbus setengah matang. Pisahkan dari bumbunya (bumbu bisa disimpan untuk masakan lain). Anda bisa memotong-motong mie agar tidak terlalu panjang dan mudah dibentuk.
+                </li>
+                <li>
+                    Dalam sebuah wadah, campurkan tepung terigu, tepung beras, wortel serut, daun bawang iris, bawang putih halus, garam, merica bubuk, dan kaldu bubuk (jika pakai). Aduk rata semua bahan kering.
+                </li>
+                <li>
+                    Tuangkan air sedikit demi sedikit sambil terus diaduk hingga adonan menjadi kental dan licin. Jangan terlalu encer agar bakwan tidak menyebar saat digoreng, namun juga jangan terlalu kental agar tidak keras. Konsistensi seperti adonan bakwan sayur pada umumnya.
+                </li>
+                <li>
+                    Masukkan mie instan yang sudah ditiriskan ke dalam adonan. Aduk perlahan hingga mie tercampur rata dengan adonan. Pastikan setiap helai mie terlapisi adonan.
+                </li>
+                <li>
+                    Panaskan minyak goreng dalam wajan dengan api sedang. Pastikan minyak cukup banyak agar bakwan terendam saat digoreng.
+                </li>
+                <li>
+                    Setelah minyak panas, ambil satu sendok sayur adonan mie. Bentuk bulat pipih atau sesuai selera Anda. Masukkan perlahan ke dalam minyak panas. Jangan menggoreng terlalu banyak dalam satu waktu agar tidak saling menempel dan suhu minyak tetap stabil.
+                </li>
+                <li>
+                    Goreng bakwan mie hingga berwarna kuning keemasan dan renyah. Balik sesekali agar matang merata di kedua sisi.
+                </li>
+                <li>
+                    Angkat bakwan mie yang sudah matang dan tiriskan minyaknya menggunakan tisu dapur agar tidak terlalu berminyak.
+                </li>
+                <li>
+                    Bakwan mie sederhana siap disajikan selagi hangat. Nikmati dengan cabai rawit, sambal, atau saus sesuai selera Anda.
+                </li>
+            </ol>
+        </div>
+
+        <p>
+            Membuat bakwan mie ini memang sangat mudah. Kombinasi rasa gurih dari bumbu mie instan, tekstur kenyal dari mie, dan kerenyahan dari tepung beras menciptakan sensasi rasa yang berbeda. Jika Anda suka rasa yang lebih pedas, Anda bisa menambahkan irisan cabai rawit ke dalam adonan. Untuk variasi lain, Anda bisa menambahkan sedikit udang cincang atau ayam suwir agar isiannya semakin kaya.
+        </p>
+        <p>
+            Pastikan saat menggoreng, api tidak terlalu besar agar bagian dalam matang sempurna sebelum bagian luar gosong. Jika Anda ingin bakwan yang lebih crispy lagi, Anda bisa menambahkan satu sendok makan tepung beras ekstra pada adonan. Selamat mencoba resep <span class="highlight">cara membuat bakwan mie sederhana</span> ini di rumah! Dijamin anti gagal dan bikin ketagihan.
+        </p>
+
+        <p class="note">
+            Kelezatan bakwan mie ini akan lebih terasa nikmat saat disajikan hangat bersama keluarga.
+        </p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-pathok-terkenal">Bakpia Pathok Terkenal</a></li>
+<li><a href="/bakpao-kingkong">Bakpao Kingkong</a></li>
+<li><a href="/bale-mu">Bale Mu</a></li>
+<li><a href="/bakwan-jagung-cetak">Bakwan Jagung Cetak</a></li>
+<li><a href="/membunuh-kuman-penyakit">Membunuh Kuman Penyakit</a></li>
+<li><a href="/balasan-ucapan-barakallah">Balasan Ucapan Barakallah</a></li>
+<li><a href="/bakpia-aufa-wijaya">Bakpia Aufa Wijaya</a></li>
+<li><a href="/bakso-beranak">Bakso Beranak</a></li>
+<li><a href="/bakso-mercon-nasi">Bakso Mercon Nasi</a></li>
+<li><a href="/bakpao-sun-taman-palem">Bakpao Sun Taman Palem</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

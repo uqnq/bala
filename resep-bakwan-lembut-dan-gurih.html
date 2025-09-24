@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bakwan Lembut & Gurih Idaman</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna biru muda sejuk */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna hijau toska cerah */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #009688; /* Warna hijau toska lebih gelap */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #b2dfdb; /* Garis pemisah warna mint */
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .hero-image svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+        .ingredients, .instructions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .ingredients ul {
+            list-style-type: disc;
+        }
+        .instructions ol {
+            list-style-type: decimal;
+        }
+        .tips {
+            background-color: #e0f2f1; /* Warna mint cerah */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .tips p {
+            margin-bottom: 5px;
+        }
+        strong {
+            color: #00796b;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hero-image">
+            <!-- SVG Gambar Bakwan yang Cantik dan Menggugah Selera -->
+            <svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffcc80;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffb74d;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode in="offsetblur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <rect width="500" height="300" rx="10" fill="#fffde7"/> <!-- Latar belakang krem muda -->
+
+                <!-- Tumpukan Bakwan -->
+                <g transform="translate(50, 180)">
+                    <path d="M 0 20 C 10 0, 40 0, 50 20 C 60 40, 50 60, 30 70 C 10 80, 0 60, 0 40 Z" fill="url(#grad1)" filter="url(#shadow)"/>
+                    <ellipse cx="25" cy="45" rx="22" ry="12" fill="#f9a825"/>
+                    <ellipse cx="25" cy="55" rx="20" ry="10" fill="#ffe0b2"/>
+                </g>
+                <g transform="translate(120, 170)">
+                    <path d="M 0 20 C 10 0, 40 0, 50 20 C 60 40, 50 60, 30 70 C 10 80, 0 60, 0 40 Z" fill="url(#grad1)" filter="url(#shadow)"/>
+                    <ellipse cx="25" cy="45" rx="22" ry="12" fill="#f9a825"/>
+                    <ellipse cx="25" cy="55" rx="20" ry="10" fill="#ffe0b2"/>
+                </g>
+                <g transform="translate(190, 160)">
+                    <path d="M 0 20 C 10 0, 40 0, 50 20 C 60 40, 50 60, 30 70 C 10 80, 0 60, 0 40 Z" fill="url(#grad1)" filter="url(#shadow)"/>
+                    <ellipse cx="25" cy="45" rx="22" ry="12" fill="#f9a825"/>
+                    <ellipse cx="25" cy="55" rx="20" ry="10" fill="#ffe0b2"/>
+                </g>
+                 <g transform="translate(260, 170)">
+                    <path d="M 0 20 C 10 0, 40 0, 50 20 C 60 40, 50 60, 30 70 C 10 80, 0 60, 0 40 Z" fill="url(#grad1)" filter="url(#shadow)"/>
+                    <ellipse cx="25" cy="45" rx="22" ry="12" fill="#f9a825"/>
+                    <ellipse cx="25" cy="55" rx="20" ry="10" fill="#ffe0b2"/>
+                </g>
+                 <g transform="translate(330, 180)">
+                    <path d="M 0 20 C 10 0, 40 0, 50 20 C 60 40, 50 60, 30 70 C 10 80, 0 60, 0 40 Z" fill="url(#grad1)" filter="url(#shadow)"/>
+                    <ellipse cx="25" cy="45" rx="22" ry="12" fill="#f9a825"/>
+                    <ellipse cx="25" cy="55" rx="20" ry="10" fill="#ffe0b2"/>
+                </g>
+
+                <!-- Sayuran (opsional, bisa ditambahkan lebih detail) -->
+                <circle cx="150" cy="130" r="8" fill="#8bc34a"/> <!-- Wortel -->
+                <circle cx="180" cy="125" r="7" fill="#aed581"/>
+                <rect x="200" y="120" width="15" height="15" rx="3" fill="#c5e1a5"/> <!-- Daun bawang -->
+
+                <!-- Teks Judul -->
+                <text x="50%" y="50" font-family="Verdana" font-size="30" font-weight="bold" text-anchor="middle" fill="#00796b">Bakwan,</text>
+                <text x="50%" y="90" font-family="Verdana" font-size="30" font-weight="bold" text-anchor="middle" fill="#00796b">Lembut & Gurih!</text>
+            </svg>
+            <p style="color: #009688; font-style: italic; margin-top: 10px;">Bayangkan kerenyahan di luar dan kelembutan di dalam.</p>
+        </div>
+
+        <h1>Rahasia Resep Bakwan Lembut dan Gurih Idaman Keluarga</h1>
+
+        <p>Siapa yang tidak suka bakwan? Gorengan renyah dengan cita rasa gurih ini selalu menjadi favorit di setiap suasana, mulai dari teman ngopi santai hingga lauk pelengkap nasi. Namun, seringkali kita dihadapkan pada bakwan yang keras atau kurang berasa. Jangan khawatir! Dengan resep dan sedikit trik, Anda bisa menyajikan bakwan yang super lembut di dalam dan tetap renyah di luar, dengan rasa gurih yang menggugah selera.</p>
+
+        <div class="ingredients">
+            <h2>Bahan-Bahan Utama</h2>
+            <ul>
+                <li>250 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 buah wortel ukuran sedang, parut kasar atau iris tipis</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>Sayuran lain sesuai selera (misalnya: buncis iris tipis, tauge, jagung pipil)</li>
+                <li>1 butir telur (opsional, untuk kelembutan ekstra)</li>
+            </ul>
+        </div>
+
+        <div class="ingredients">
+            <h2>Bumbu Halus untuk Adonan Gurih</h2>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>1/2 sendok teh ketumbar bubuk</li>
+                <li>1/4 sendok teh merica bubuk</li>
+                <li>Garam secukupnya (sesuaikan dengan selera)</li>
+                <li>Kaldu bubuk secukupnya (opsional, untuk rasa lebih kaya)</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Langkah-Langkah Membuat Bakwan Lembut dan Gurih</h2>
+            <ol>
+                <li><strong>Persiapan Adonan Kering:</strong> Dalam wadah besar, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+                <li><strong>Persiapan Bumbu:</strong> Haluskan bawang putih, ketumbar, merica, dan garam. Anda bisa menggunakan ulekan atau blender.</li>
+                <li><strong>Pencampuran Bahan:</strong> Masukkan bumbu halus ke dalam campuran tepung. Aduk kembali hingga bumbu tercampur merata dengan tepung.</li>
+                <li><strong>Penambahan Sayuran:</strong> Masukkan irisan wortel, kol, dan daun bawang ke dalam wadah berisi campuran tepung. Jika menggunakan sayuran lain, masukkan juga pada tahap ini. Aduk rata agar sayuran terbalut tepung.</li>
+                <li><strong>Pengadonan Adonan Basah:</strong> Tuangkan air dingin sedikit demi sedikit sambil terus diaduk. Gunakan air dingin agar adonan lebih renyah. Aduk hingga adonan tercampur rata dan memiliki kekentalan yang pas. Adonan tidak boleh terlalu encer agar tidak lembek saat digoreng, namun juga tidak terlalu kental agar tidak keras. Jika menggunakan telur, kocok lepas telur terlebih dahulu lalu masukkan ke dalam adonan dan aduk rata.</li>
+                <li><strong>Pengecekan Rasa:</strong> Cicipi sedikit adonan (pastikan tidak mentah) untuk memastikan rasa garam dan bumbu sudah pas. Tambahkan jika perlu.</li>
+                <li><strong>Proses Menggoreng:</strong> Panaskan minyak goreng dalam jumlah banyak di wajan. Pastikan minyak benar-benar panas sebelum memasukkan adonan bakwan. Ambil satu sendok sayur adonan, lalu tuang perlahan ke dalam minyak panas. Goreng bakwan hingga berwarna kuning keemasan dan matang merata di kedua sisinya. Balik sesekali agar matang sempurna.</li>
+                <li><strong>Penirisan Minyak:</strong> Angkat bakwan yang sudah matang, tiriskan di atas rak atau tisu dapur agar minyak berlebih terserap. Hal ini penting untuk menjaga kerenyahan bakwan.</li>
+                <li><strong>Sajikan:</strong> Bakwan lembut dan gurih siap disajikan selagi hangat bersama cabai rawit hijau atau saus sambal.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <h2>Tips Tambahan untuk Bakwan Sempurna:</h2>
+            <p><strong>1. Gunakan Air Dingin:</strong> Air es atau air dingin saat membuat adonan adalah kunci utama untuk mendapatkan tekstur bakwan yang renyah di luar.</p>
+            <p><strong>2. Jangan Terlalu Banyak Mengaduk:</strong> Mengaduk adonan terlalu lama dapat membuat gluten dalam tepung terigu berkembang, sehingga bakwan menjadi alot dan keras.</p>
+            <p><strong>3. Ukuran Bakwan:</strong> Jangan menggoreng bakwan terlalu besar. Ukuran sedang akan lebih mudah matang merata.</p>
+            <p><strong>4. Suhu Minyak:</strong> Pastikan minyak benar-benar panas sebelum menggoreng. Minyak yang kurang panas akan membuat bakwan menyerap banyak minyak dan menjadi lembek.</p>
+            <p><strong>5. Tiriskan dengan Baik:</strong> Mengangkat dan meniriskan bakwan dengan benar setelah digoreng akan membantu menjaga kerenyahannya.</p>
+            <p>Dengan mengikuti resep dan tips ini, Anda tidak hanya akan menciptakan bakwan yang lezat, tetapi juga bakwan dengan tekstur sempurna yang disukai semua anggota keluarga. Selamat mencoba!</p>
+        </div>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-red-velvet">Bakpia Red Velvet</a></li>
+<li><a href="/masak-bakso-mercon">Masak Bakso Mercon</a></li>
+<li><a href="/bakso-raksasa-beranak">Bakso Raksasa Beranak</a></li>
+<li><a href="/tahu-bakwan">Tahu Bakwan</a></li>
+<li><a href="/resep-bikin-ampal-jagung">Resep Bikin Ampal Jagung</a></li>
+<li><a href="/bakteri-yang-menguntungkan-di-bidang-pertanian">Bakteri Yang Menguntungkan Di Bidang Pertanian</a></li>
+<li><a href="/membuat-perkedel-jagung">Membuat Perkedel Jagung</a></li>
+<li><a href="/mie-ayam-bakwan">Mie Ayam Bakwan</a></li>
+<li><a href="/cara-bakwan">Cara Bakwan</a></li>
+<li><a href="/bakso-mercon-margahayu">Bakso Mercon Margahayu</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

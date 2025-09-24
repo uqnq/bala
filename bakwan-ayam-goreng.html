@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Ayam Goreng: Lezat & Gurih!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* AliceBlue - warna sejuk cerah */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Pastikan konten tidak keluar dari box */
+        }
+        h1, h2 {
+            color: #4682b4; /* SteelBlue - warna cerah yang menenangkan */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #20b2aa; /* LightSeaGreen - aksen cerah */
+        }
+        .recipe-section {
+            background-color: #e0ffff; /* LightCyan - latar belakang bagian resep */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+        .recipe-section h2 {
+            color: #008080; /* Teal - warna cerah untuk judul resep */
+            margin-top: 0;
+        }
+        .recipe-section ul li::before {
+            content: "• "; /* Tanda bulat sederhana */
+            color: #008080;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .recipe-section ol li::before {
+            content: counter(list-item) ". "; /* Penomoran otomatis */
+            font-weight: bold;
+            color: #008080;
+        }
+        .recipe-section ol {
+            counter-reset: list-item;
+        }
+        .recipe-section ol li {
+            counter-increment: list-item;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- SVG Gambar Bakwan Ayam Goreng -->
+        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi bakwan ayam goreng yang renyah">
+            <defs>
+                <linearGradient id="gradient-ayam" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f5deb3;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#d2b48c;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient-renyah" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f0e68c;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#daa520;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                    <feOffset dx="2" dy="2" result="offsetblur"/>
+                    <feComponentTransfer>
+                        <feFuncA type="linear" slope="0.5"/>
+                    </feComponentTransfer>
+                    <feMerge>
+                        <feMergeNode in="offsetblur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+
+            <!-- Latar Belakang Kuning Keemasan -->
+            <rect x="0" y="0" width="300" height="200" fill="#ffe4c4" />
+
+            <!-- Bakwan Utama -->
+            <ellipse cx="150" cy="100" rx="80" ry="60" fill="url(#gradient-ayam)" filter="url(#shadow)" />
+            <ellipse cx="150" cy="100" rx="75" ry="55" fill="#fffaf0" />
+
+            <!-- Potongan Ayam di dalam -->
+            <path d="M130 80 L170 80 L160 100 L140 100 Z" fill="#f5f5dc" transform="rotate(15 150 100)" />
+            <path d="M140 110 L160 110 L150 130 Z" fill="#f5f5dc" transform="rotate(-10 150 100)" />
+
+            <!-- tekstur renyah di pinggiran -->
+            <path d="M 70 100 Q 100 50 150 40 Q 200 50 230 100 Q 200 150 150 160 Q 100 150 70 100 Z" fill="url(#gradient-renyah)" stroke="#daa520" stroke-width="1" opacity="0.7" />
+            <path d="M 80 100 Q 120 60 150 50 Q 180 60 220 100 Q 180 140 150 150 Q 120 140 80 100 Z" fill="url(#gradient-renyah)" stroke="#daa520" stroke-width="0.5" opacity="0.5" />
+
+            <!-- Beberapa remah-remah kecil -->
+            <circle cx="50" cy="140" r="5" fill="#daa520" opacity="0.6" />
+            <circle cx="250" cy="60" r="4" fill="#daa520" opacity="0.5" />
+            <circle cx="120" cy="160" r="3" fill="#daa520" opacity="0.4" />
+        </svg>
+
+        <h1>Bakwan Ayam Goreng: Kenikmatan Renyah di Setiap Gigitan</h1>
+
+        <p>
+            Siapa yang bisa menolak kelezatan <span class="highlight">bakwan ayam goreng</span>? Camilan klasik Indonesia ini selalu berhasil menggoda selera dengan teksturnya yang renyah di luar dan lembut di dalam, berpadu sempurna dengan isian ayam yang gurih. Bakwan ayam goreng bukan sekadar makanan ringan, ia adalah simbol kehangatan keluarga dan kebersamaan, seringkali hadir di setiap momen santai. Aromanya yang khas saat digoreng pun sudah cukup membuat perut keroncongan.
+        </p>
+
+        <p>
+            Perpaduan adonan tepung yang digoreng hingga keemasan dengan potongan daging ayam yang empuk menjadikan bakwan ayam goreng primadona di hati banyak orang. Keunikan rasa gurih dari adonan tepung berpadu dengan kaldu ayam dan bumbu rempah memberikan dimensi rasa yang kaya. Cocok dinikmati kapan saja, baik sebagai teman minum teh sore hari, camilan saat menonton film, atau bahkan sebagai lauk pelengkap nasi. Kepraktisannya juga menjadi nilai tambah, mudah dibuat di rumah dan mudah dibawa ke mana saja.
+        </p>
+
+        <h2>Variasi dan Kelezatan Bakwan Ayam Goreng</h2>
+
+        <p>
+            Keberagaman dalam <span class="highlight">bakwan ayam goreng</span> tidak hanya terbatas pada resep dasar. Para kreator kuliner seringkali menambahkan berbagai bahan lain untuk menciptakan variasi yang lebih menarik. Ada yang menambahkan parutan wortel untuk warna dan nutrisi ekstra, irisan daun bawang untuk aroma yang lebih segar, atau bahkan sedikit cabai rawit untuk sentuhan pedas yang menggugah selera. Beberapa versi juga menggunakan campuran tepung beras dan tapioka untuk mendapatkan kerenyahan maksimal. Daging ayam yang digunakan pun bisa bervariasi, mulai dari fillet dada ayam yang dipotong dadu kecil, hingga ayam cincang yang lebih halus. Teknik menggoreng yang tepat juga menjadi kunci. Menggoreng dalam minyak panas yang cukup hingga berwarna keemasan tanpa membuatnya gosong adalah seni tersendiri yang menghasilkan bakwan ayam goreng yang sempurna.
+        </p>
+
+        <p>
+            Bagi Anda yang ingin mencoba membuatnya sendiri di rumah, prosesnya relatif mudah dan bahan-bahannya pun mudah ditemukan. Bakwan ayam goreng ini bisa menjadi aktivitas menyenangkan bersama keluarga, terutama jika ada anak-anak yang bisa membantu mencampur adonan atau membentuk bakwan. Hasilnya tentu akan lebih memuaskan karena bisa disesuaikan dengan selera masing-masing, mulai dari tingkat kegurihan hingga kekerenyahan yang diinginkan.
+        </p>
+
+        <div class="recipe-section">
+            <h2>Resep Sederhana Bakwan Ayam Goreng</h2>
+
+            <h3>Bahan Utama:</h3>
+            <ul>
+                <li>200 gram daging ayam fillet, potong dadu kecil</li>
+                <li>150 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras (untuk kerenyahan ekstra)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>1 buah wortel kecil, parut kasar (opsional)</li>
+                <li>Air es secukupnya (sekitar 150-200 ml)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+
+            <h3>Bumbu Halus:</h3>
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>1 sendok teh ketumbar bubuk</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh garam (sesuaikan selera)</li>
+                <li>1/4 sendok teh kaldu bubuk ayam (opsional)</li>
+            </ul>
+
+            <h3>Cara Membuat:</h3>
+            <ol>
+                <li>Campurkan tepung terigu, tepung beras, bumbu halus, irisan daun bawang, dan parutan wortel (jika menggunakan) dalam wadah besar. Aduk rata.</li>
+                <li>Masukkan potongan ayam ke dalam campuran tepung.</li>
+                <li>Tuangkan air es sedikit demi sedikit sambil terus diaduk hingga adonan mengental dan semua bahan tercampur rata. Jangan terlalu encer agar bakwan tidak menyebar saat digoreng.</li>
+                <li>Panaskan minyak goreng dalam wajan dengan api sedang.</li>
+                <li>Ambil adonan secukupnya menggunakan sendok atau tangan, lalu masukkan perlahan ke dalam minyak panas. Goreng hingga bakwan berwarna keemasan dan matang sempurna di kedua sisinya.</li>
+                <li>Angkat bakwan ayam goreng dan tiriskan minyaknya menggunakan tisu dapur agar lebih renyah.</li>
+                <li>Sajikan bakwan ayam goreng selagi hangat dengan sambal favorit Anda.</li>
+            </ol>
+        </div>
+
+        <p>
+            Menikmati <span class="highlight">bakwan ayam goreng</span> adalah pengalaman kuliner yang sederhana namun memuaskan. Kerenyahannya yang unik dan rasa gurihnya yang meresap menjadikannya pilihan camilan atau lauk yang tak pernah salah. Selamat mencoba resepnya dan rasakan kelezatannya!
+        </p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-membuat-bakpao-ubi-kuning">Cara Membuat Bakpao Ubi Kuning</a></li>
+<li><a href="/cara-membuat-isian-bakso-mercon">Cara Membuat Isian Bakso Mercon</a></li>
+<li><a href="/bakpia-mino">Bakpia Mino</a></li>
+<li><a href="/bakteri-candida-albicans">Bakteri Candida Albicans</a></li>
+<li><a href="/perkedel-udang-kecil">Perkedel Udang Kecil</a></li>
+<li><a href="/cara-membuat-bakwan-jamur-sawit">Cara Membuat Bakwan Jamur Sawit</a></li>
+<li><a href="/cara-membuat-bakwan-sayur-renyah">Cara Membuat Bakwan Sayur Renyah</a></li>
+<li><a href="/jamur-enoki-berbahaya">Jamur Enoki Berbahaya</a></li>
+<li><a href="/cara-membuat-coklat-isian-bakpao">Cara Membuat Coklat Isian Bakpao</a></li>
+<li><a href="/cara-membuat-bakwan-wortel">Cara Membuat Bakwan Wortel</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

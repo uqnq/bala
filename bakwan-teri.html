@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Teri: Gurih Renyah, Nikmat Tiada Tara!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk cerah */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Menyelaraskan konten ke atas */
+            min-height: 100vh;
+            padding-top: 20px; /* Sedikit jarak dari atas untuk tampilan mobile */
+        }
+        .container {
+            max-width: 800px;
+            width: 95%;
+            background-color: #ffffff;
+            padding: 20px 20px 40px 20px; /* Padding lebih lebar di bawah */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-sizing: border-box; /* Agar padding tidak menambah lebar */
+        }
+        h1 {
+            color: #00796b; /* Warna judul yang menenangkan */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        .svg-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .svg-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-steps {
+            background-color: #f0f8ff; /* Latar belakang sedikit berbeda untuk resep */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+        .recipe-steps ol {
+            padding-left: 25px;
+        }
+        .recipe-steps li {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+        .highlight {
+            color: #00796b;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .container {
+                padding: 15px 15px 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bakwan Teri: Gurih Renyah, Teman Ngemil Favorit Keluarga</h1>
+
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" aria-label="Ilustrasi bakwan teri yang lezat">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4db6ac;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#80cbc4;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="400" height="250" fill="url(#grad1)" rx="15"/>
+
+                <!-- Bakwan 1 -->
+                <path d="M 80 120 q -10 20 -10 40 t 20 40 q 20 10 40 0 t 20 -40 q -10 -20 -30 -30 z" fill="#f5deb3" stroke="#e6c27b" stroke-width="2"/>
+                <circle cx="85" cy="135" r="3" fill="#a0522d"/>
+                <circle cx="95" cy="145" r="3" fill="#a0522d"/>
+                <circle cx="105" cy="130" r="3" fill="#a0522d"/>
+
+                <!-- Bakwan 2 -->
+                <path d="M 180 100 q -10 20 -10 40 t 20 40 q 20 10 40 0 t 20 -40 q -10 -20 -30 -30 z" fill="#f5deb3" stroke="#e6c27b" stroke-width="2"/>
+                <circle cx="185" cy="115" r="3" fill="#a0522d"/>
+                <circle cx="195" cy="125" r="3" fill="#a0522d"/>
+                <circle cx="205" cy="110" r="3" fill="#a0522d"/>
+                <circle cx="215" cy="135" r="3" fill="#a0522d"/>
+
+                <!-- Bakwan 3 -->
+                <path d="M 280 130 q -10 20 -10 40 t 20 40 q 20 10 40 0 t 20 -40 q -10 -20 -30 -30 z" fill="#f5deb3" stroke="#e6c27b" stroke-width="2"/>
+                <circle cx="285" cy="145" r="3" fill="#a0522d"/>
+                <circle cx="295" cy="155" r="3" fill="#a0522d"/>
+                <circle cx="305" cy="140" r="3" fill="#a0522d"/>
+
+                <!-- Awan/Kabut Halus -->
+                <ellipse cx="150" cy="200" rx="60" ry="15" fill="rgba(255,255,255,0.4)" transform="rotate(-10 150 200)"/>
+                <ellipse cx="250" cy="210" rx="50" ry="12" fill="rgba(255,255,255,0.3)" transform="rotate(15 250 210)"/>
+
+                <!-- Detail Teri -->
+                <path d="M 100 125 L 108 128 L 102 135 Z" fill="#8b4513" transform="rotate(10 100 125)"/>
+                <path d="M 110 135 L 118 138 L 112 145 Z" fill="#8b4513" transform="rotate(-5 110 135)"/>
+                <path d="M 190 105 L 198 108 L 192 115 Z" fill="#8b4513" transform="rotate(20 190 105)"/>
+                <path d="M 200 115 L 208 118 L 202 125 Z" fill="#8b4513" transform="rotate(-15 200 115)"/>
+                <path d="M 290 135 L 298 138 L 292 145 Z" fill="#8b4513" transform="rotate(5 290 135)"/>
+                <path d="M 300 145 L 308 148 L 302 155 Z" fill="#8b4513" transform="rotate(-10 300 145)"/>
+            </svg>
+        </div>
+
+        <p>Siapa yang tidak kenal dengan kelezatan <span class="highlight">bakwan teri</span>? Camilan renyah yang satu ini memang selalu berhasil menggoda selera. Perpaduan adonan tepung yang digoreng hingga keemasan dengan cita rasa gurih asin dari teri kecil, menjadikannya primadona di setiap kesempatan. Baik dinikmati saat santai bersama keluarga, sebagai teman makan nasi, atau sekadar pengganjal lapar, bakwan teri selalu punya tempat istimewa.</p>
+
+        <p>Keistimewaan bakwan teri terletak pada kesederhanaannya yang justru menghasilkan rasa yang kaya. Teri, ikan kecil yang kaya nutrisi, memberikan sensasi gurih umami yang khas. Saat digoreng, teri menjadi lebih renyah dan aromanya semakin menggugah. Dipadukan dengan adonan tepung terigu yang diberi bumbu sederhana seperti garam, merica, dan terkadang sedikit ketumbar bubuk, terciptalah tekstur luar yang garing di setiap gigitan. Bagian dalamnya pun tetap lembut dan gurih.</p>
+
+        <h2>Sensasi Renyah yang Membuat Ketagihan</h2>
+        <p>Kunci dari bakwan teri yang sempurna adalah kerenyahannya. Adonan yang tepat, teknik menggoreng yang benar, serta penggunaan teri segar menjadi faktor penentu. Bagi banyak orang, suara "kriuk" saat menggigit bakwan teri adalah salah satu kenikmatan tersendiri. Sensasi ini semakin lengkap ketika dinikmati selagi hangat, ditemani cocolan sambal kacang, sambal kecap, atau cabai rawit hijau.</p>
+
+        <div class="recipe-steps">
+            <h2>Cara Membuat Bakwan Teri Sederhana</h2>
+            <p>Tertarik untuk membuat bakwan teri sendiri di rumah? Berikut adalah resep dasar yang bisa Anda coba:</p>
+            <ol>
+                <li><strong>Persiapan Bahan:</strong> Siapkan sekitar 100 gram teri segar, cuci bersih, dan tiriskan. Campurkan 150 gram tepung terigu, 50 gram tepung beras (untuk kerenyahan ekstra), 1 sdt garam, 1/2 sdt merica bubuk, dan 1/2 sdt kaldu bubuk (opsional).</li>
+                <li><strong>Membuat Adonan:</strong> Masukkan teri ke dalam campuran tepung. Tuang air dingin sedikit demi sedikit sambil diaduk hingga adonan mengental dan tidak terlalu encer. Pastikan adonan menutupi teri secara merata.</li>
+                <li><strong>Menggoreng:</strong> Panaskan minyak goreng secukupnya dalam wajan. Ambil satu sendok makan adonan, masukkan ke dalam minyak panas. Goreng bakwan teri hingga berwarna kuning keemasan dan matang merata. Balik sesekali agar matang sempurna.</li>
+                <li><strong>Penyajian:</strong> Angkat bakwan teri yang sudah matang dan tiriskan di atas kertas tisu agar minyak berlebih terserap. Sajikan selagi hangat dengan pelengkap favorit Anda.</li>
+            </ol>
+            <p>Anda bisa menambahkan irisan daun bawang atau seledri ke dalam adonan untuk aroma yang lebih segar. Jika ingin rasa yang lebih pedas, sedikit irisan cabai rawit bisa ditambahkan.</p>
+        </div>
+
+        <p>Lebih dari sekadar camilan, <span class="highlight">bakwan teri</span> adalah kuliner merakyat yang menyatukan rasa nostalgia dan kelezatan sederhana. Dengan bahan-bahan yang mudah ditemukan dan proses pembuatannya yang tidak rumit, Anda bisa menghadirkan kelezatan ini kapan saja. Nikmati kehangatan dan kerenyahan bakwan teri sebagai teman setia di berbagai momen.</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakpia-wahyu-62">Bakpia Wahyu 62</a></li>
+<li><a href="/cara-membuat-kumbu-hitam">Cara Membuat Kumbu Hitam</a></li>
+<li><a href="/chikyen">Chikyen</a></li>
+<li><a href="/bakwan-tipis">Bakwan Tipis</a></li>
+<li><a href="/bahan2-perkedel-jagung">Bahan2 Perkedel Jagung</a></li>
+<li><a href="/bakwan-gunting">Bakwan Gunting</a></li>
+<li><a href="/bakpia-bogem">Bakpia Bogem</a></li>
+<li><a href="/balasan-itu-sesuai-dengan-amalan">Balasan Itu Sesuai Dengan Amalan</a></li>
+<li><a href="/bakwan-bola">Bakwan Bola</a></li>
+<li><a href="/ternak-bakpia">Ternak Bakpia</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

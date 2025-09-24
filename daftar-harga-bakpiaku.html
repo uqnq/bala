@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga Bakpiaku Terbaru & Paling Enak</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #87CEEB; /* Sky Blue */
+            --color-secondary: #FFB6C1; /* Light Pink */
+            --color-text-dark: #333;
+            --color-text-light: #f9f9f9;
+            --color-accent: #FFD700; /* Gold */
+            --color-background: #f0fff0; /* Honeydew */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text-dark);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            padding: 20px 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2em;
+            color: var(--color-text-light);
+        }
+
+        main {
+            flex: 1;
+            padding: 20px 15px;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro-section p {
+            font-size: 1.1em;
+            color: var(--color-text-dark);
+        }
+
+        .bakpia-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .price-list {
+            background-color: var(--color-text-light);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        .price-list h3 {
+            color: var(--color-accent);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px dashed var(--color-secondary);
+        }
+
+        .price-item:last-child {
+            border-bottom: none;
+        }
+
+        .price-item span {
+            font-size: 1.1em;
+        }
+
+        .price-item .flavor {
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+
+        .price-item .price {
+            font-weight: bold;
+            color: var(--color-accent);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 30px;
+            background-color: var(--color-secondary);
+            padding: 25px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        }
+
+        .cta-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: var(--color-text-dark);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: var(--color-text-dark);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e6c300; /* Darker Gold */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: var(--color-text-dark);
+            background-color: var(--color-primary);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            .bakpia-image {
+                max-width: 250px;
+            }
+            .price-item span {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Daftar Harga Bakpiaku</h1>
+        <p>Temukan Varian Rasa Terbaik dengan Harga Terjangkau!</p>
+    </header>
+
+    <main>
+        <div class="intro-section">
+            <svg class="bakpia-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bakpiaTitle">
+                <title id="bakpiaTitle">Ilustrasi Bakpia Kue Tradisional Indonesia</title>
+                <circle cx="50" cy="50" r="45" fill="#f5deb3" stroke="#d2b48c" stroke-width="3"/>
+                <path d="M25 50 Q 35 20, 50 50 T 75 50" fill="none" stroke="#a0522d" stroke-width="4"/>
+                <path d="M25 50 Q 35 80, 50 50 T 75 50" fill="none" stroke="#a0522d" stroke-width="4"/>
+                <circle cx="38" cy="40" r="4" fill="#e0c49e"/>
+                <circle cx="62" cy="40" r="4" fill="#e0c49e"/>
+                <circle cx="38" cy="60" r="4" fill="#e0c49e"/>
+                <circle cx="62" cy="60" r="4" fill="#e0c49e"/>
+                <text x="50" y="55" font-family="Arial, sans-serif" font-size="10" fill="#a0522d" text-anchor="middle" stroke="none">Bakpia</text>
+            </svg>
+            <p>Bakpia, jajanan manis khas Yogyakarta, kini hadir dalam berbagai varian rasa yang menggugah selera dari Bakpiaku. Dibuat dengan resep turun-temurun dan bahan pilihan berkualitas, Bakpiaku menawarkan pengalaman kuliner tak terlupakan. Cocok sebagai oleh-oleh untuk keluarga tercinta atau sebagai camilan nikmat di sela aktivitas Anda.</p>
+            <p>Kami menyajikan daftar harga yang transparan agar Anda dapat memilih varian favorit tanpa khawatir. Nikmati kelezatan Bakpiaku yang lembut di dalam dan renyah di luar, dengan isian melimpah yang memanjakan lidah.</p>
+        </div>
+
+        <div class="price-list">
+            <h3>Pilihan Varian & Harga</h3>
+            <div class="price-item">
+                <span class="flavor">Bakpia Keju</span>
+                <span class="price">Rp 25.000</span>
+            </div>
+            <div class="price-item">
+                <span class="flavor">Bakpia Cokelat</span>
+                <span class="price">Rp 25.000</span>
+            </div>
+            <div class="price-item">
+                <span class="flavor">Bakpia Kacang Hijau</span>
+                <span class="price">Rp 27.000</span>
+            </div>
+            <div class="price-item">
+                <span class="flavor">Bakpia Pandan</span>
+                <span class="price">Rp 27.000</span>
+            </div>
+            <div class="price-item">
+                <span class="flavor">Bakpia Ubi Ungu</span>
+                <span class="price">Rp 28.000</span>
+            </div>
+            <div class="price-item">
+                <span class="flavor">Bakpia Durian</span>
+                <span class="price">Rp 30.000</span>
+            </div>
+            <div class="price-item">
+                <span class="flavor">Paket Campur (4 Varian)</span>
+                <span class="price">Rp 100.000</span>
+            </div>
+        </div>
+
+        <div class="intro-section">
+            <p>Harga di atas berlaku untuk kemasan standar berisi 10 buah bakpia. Kami selalu berusaha menghadirkan kualitas terbaik dengan harga yang bersaing. Setiap gigitan Bakpiaku adalah perpaduan sempurna antara tradisi dan inovasi rasa.</p>
+            <p>Kelezatan bakpia kami tidak hanya terletak pada isiannya yang kaya, tetapi juga pada kulitnya yang renyah dan tak berminyak. Sangat pas dinikmati bersama secangkir teh hangat atau kopi di pagi hari, atau sebagai teman bersantai di sore hari. Jangan lewatkan kesempatan untuk mencicipi kelezatan otentik yang dihadirkan oleh Bakpiaku.</p>
+        </div>
+
+        <div class="cta-section">
+            <p>Siap Mencicipi Kelezatan Bakpiaku?</p>
+            <a href="#order" class="cta-button">Pesan Sekarang!</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi. Nikmati Kelezatan Bakpiaku.</p>
+    </footer>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/cara-buat-bakpao-kacang-hijau">Cara Buat Bakpao Kacang Hijau</a></li>
+<li><a href="/cara-membuat-bakwan-jagung-pakai-tepung-bakwan">Cara Membuat Bakwan Jagung Pakai Tepung Bakwan</a></li>
+<li><a href="/bakso-beranak-pare">Bakso Beranak Pare</a></li>
+<li><a href="/pia-coklat">Pia Coklat</a></li>
+<li><a href="/cara-bikin-bakso-mercon">Cara Bikin Bakso Mercon</a></li>
+<li><a href="/resep-bakwan-tanpa-kol">Resep Bakwan Tanpa Kol</a></li>
+<li><a href="/cara-membuat-pentol-mercon-pedas">Cara Membuat Pentol Mercon Pedas</a></li>
+<li><a href="/bakpia-45-terdekat">Bakpia 45 Terdekat</a></li>
+<li><a href="/outlet-bakpia-pathok-25">Outlet Bakpia Pathok 25</a></li>
+<li><a href="/resep-bakwan-sederhana">Resep Bakwan Sederhana</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Bala Bala Kriuk Renyah & Gurih</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #66BB6A; /* Hijau cerah */
+            --secondary-color: #FFD54F; /* Kuning cerah */
+            --text-color: #333;
+            --background-color: #F0FFF0; /* Hijau muda lembut */
+            --card-background: #FFFFFF;
+            --border-radius: 12px;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            font-size: 1.5em;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 300px; /* Adjust size as needed */
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .ingredients ul, .instructions ol {
+            padding-left: 20px;
+        }
+
+        .ingredients li, .instructions li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .tips {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-top: 25px;
+            font-style: italic;
+        }
+
+        .tips strong {
+            color: var(--primary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                padding: 15px;
+            }
+            .hero-image {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Bala Bala Kriuk Renyah & Gurih</h1>
+
+        <svg class="hero-image" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:0.8" />
+                    <stop offset="100%" style="stop-color:var(--secondary-color);stop-opacity:0.8" />
+                </linearGradient>
+            </defs>
+            <path d="M10 10 Q 20 0, 30 10 T 50 10 T 70 10 T 90 10 V 70 Q 80 80, 70 70 T 50 70 T 30 70 T 10 70 Z" fill="url(#grad1)" stroke="var(--primary-color)" stroke-width="2"/>
+            <!-- Simple representation of vegetables -->
+            <circle cx="25" cy="45" r="5" fill="#8BC34A"/> <!-- Broccoli -->
+            <circle cx="40" cy="50" r="5" fill="#FFC107"/> <!-- Corn -->
+            <circle cx="55" cy="40" r="5" fill="#FF9800"/> <!-- Carrot -->
+            <circle cx="70" cy="45" r="5" fill="#4CAF50"/> <!-- Green Bean -->
+            <text x="50" y="25" font-family="Verdana" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Bala Bala</text>
+        </svg>
+
+        <p>Siapa yang tidak suka dengan kelezatan bala bala? Camilan gorengan favorit keluarga Indonesia ini selalu berhasil menggugah selera. Teksturnya yang <span class="highlight">kriuk</span> di luar dan lembut di dalam, berpadu dengan rasa gurih sayuran, menjadikannya teman sempurna untuk menikmati waktu santai atau sekadar pelepas dahaga saat ngemil.</p>
+
+        <p>Membuat bala bala yang sempurna ternyata tidak sulit, lho! Dengan beberapa langkah sederhana dan bahan-bahan yang mudah ditemukan, Anda bisa menciptakan bala bala <span class="highlight">kriuk</span> yang tak kalah lezat dari penjual langganan Anda. Artikel ini akan memandu Anda selangkah demi selangkah untuk menghasilkan gorengan yang renyah tahan lama dan kaya rasa.</p>
+
+        <h2>Bahan-Bahan Utama</h2>
+        <div class="ingredients">
+            <ul>
+                <li>250 gram tepung terigu protein sedang</li>
+                <li>50 gram tepung beras (untuk tambahan kriuk)</li>
+                <li>1 buah wortel ukuran sedang, iris korek api tipis</li>
+                <li>1/4 buah kol ukuran kecil, iris tipis memanjang</li>
+                <li>1 batang daun bawang, iris halus</li>
+                <li>100 ml air (sesuaikan kekentalan adonan)</li>
+                <li>Minyak goreng secukupnya untuk menggoreng</li>
+            </ul>
+        </div>
+
+        <h2>Bumbu Halus</h2>
+        <div class="ingredients">
+            <ul>
+                <li>3 siung bawang putih</li>
+                <li>1/2 sendok teh merica butiran</li>
+                <li>1 sendok teh garam (sesuai selera)</li>
+                <li>1/2 sendok teh kaldu bubuk (opsional, untuk rasa lebih gurih)</li>
+            </ul>
+        </div>
+
+        <h2>Cara Membuat Bala Bala Kriuk</h2>
+        <div class="instructions">
+            <ol>
+                <li>Pertama, haluskan semua bahan bumbu halus menggunakan ulekan atau blender.</li>
+                <li>Dalam wadah besar, campurkan tepung terigu dan tepung beras. Aduk rata.</li>
+                <li>Masukkan bumbu halus ke dalam campuran tepung. Aduk kembali.</li>
+                <li>Masukkan irisan wortel, kol, dan daun bawang ke dalam adonan. Aduk sayuran hingga terbalut rata dengan bumbu dan tepung.</li>
+                <li>Tuang air sedikit demi sedikit sambil terus diaduk hingga adonan tercampur rata dan memiliki kekentalan yang pas. Adonan tidak boleh terlalu encer agar sayuran menempel, namun juga tidak terlalu kental.</li>
+                <li>Panaskan minyak goreng dalam jumlah banyak di wajan. Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+                <li>Ambil satu sendok sayur adonan, lalu masukkan perlahan ke dalam minyak panas. Goreng bala bala hingga berwarna kuning keemasan dan matang sempurna.</li>
+                <li>Balik sesekali agar matang merata di kedua sisi.</li>
+                <li>Angkat bala bala yang sudah matang, tiriskan minyaknya dengan baik menggunakan saringan atau letakkan di atas tisu dapur untuk menyerap sisa minyak.</li>
+                <li>Sajikan bala bala kriuk selagi hangat bersama cabai rawit atau saus sambal favorit Anda.</li>
+            </ol>
+        </div>
+
+        <div class="tips">
+            <p><strong>Tips Tambahan untuk Bala Bala Super Kriuk:</strong></p>
+            <ul>
+                <li>Gunakan perbandingan tepung terigu dan tepung beras sesuai resep untuk hasil maksimal. Tepung beras berperan penting dalam menciptakan tekstur yang lebih renyah.</li>
+                <li>Pastikan minyak benar-benar panas sebelum menggoreng. Minyak yang kurang panas akan membuat bala bala menyerap banyak minyak dan menjadi lembek.</li>
+                <li>Jangan terlalu banyak memasukkan adonan ke dalam wajan sekaligus. Biarkan ada ruang agar bala bala matang merata dan tidak saling menempel.</li>
+                <li>Tiriskan minyak dengan benar setelah menggoreng.</li>
+                <li>Untuk menjaga kerenyahannya, sebaiknya bala bala dikonsumsi segera setelah digoreng. Jika terpaksa disimpan, pastikan benar-benar dingin dan simpan dalam wadah kedap udara.</li>
+            </ul>
+        </div>
+
+        <p>Dengan resep dan tips di atas, kini Anda siap menyajikan hidangan bala bala <span class="highlight">kriuk</span> yang lezat dan disukai seluruh anggota keluarga. Selamat mencoba dan nikmati kelezatan gorengan rumahan ini!</p>
+    </div>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bahan-pembuatan-bakwan-jagung">Bahan Pembuatan Bakwan Jagung</a></li>
+<li><a href="/bakwan-jagung-resep-enak">Bakwan Jagung Resep Enak</a></li>
+<li><a href="/bakwan-nike">Bakwan Nike</a></li>
+<li><a href="/bakso-beranak-jumbo-rusuk-joss">Bakso Beranak Jumbo Rusuk Joss</a></li>
+<li><a href="/nitrosococcus-sp">Nitrosococcus Sp</a></li>
+<li><a href="/bakpao-apel">Bakpao Apel</a></li>
+<li><a href="/resep-bakwan-lembut-dan-gurih">Resep Bakwan Lembut Dan Gurih</a></li>
+<li><a href="/balasan-kebaikan-adalah-kebaikan-pula">Balasan Kebaikan Adalah Kebaikan Pula</a></li>
+<li><a href="/aneka-resep-bakwan-jagung">Aneka Resep Bakwan Jagung</a></li>
+<li><a href="/tetanus-disebabkan-oleh">Tetanus Disebabkan Oleh</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

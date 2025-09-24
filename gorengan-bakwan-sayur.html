@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakwan Sayur: Gorengan Lezat & Renyah</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #FFC107; /* Kuning cerah */
+            --secondary-color: #8BC34A; /* Hijau cerah */
+            --text-color: #333;
+            --background-color: #FFF9C4; /* Krem muda */
+            --card-background: #FFFDE7; /* Krem lebih terang */
+            --border-color: #FFD54F; /* Kuning sedikit lebih tua */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .ingredients-list, .steps-list {
+            padding-left: 20px;
+        }
+
+        .ingredients-list li, .steps-list li {
+            margin-bottom: 10px;
+        }
+
+        .recipe-card {
+            background-color: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .recipe-card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        /* SVG Styling */
+        .svg-icon {
+            display: block;
+            margin: 10px auto;
+            width: 80px; /* Ukuran ikon */
+            height: 80px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .container {
+                width: 90%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sensasi Renyah: Mengenal Gorengan Bakwan Sayur</h1>
+
+        <!-- SVG Icon -->
+        <svg class="svg-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FFD54F;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#FFAB00;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="45" fill="#FFF9C4" stroke="#FFD54F" stroke-width="3"/>
+            <g transform="translate(30, 30)">
+                <path d="M 10 10 L 20 15 L 15 25 L 5 20 Z" fill="#8BC34A"/>
+                <path d="M 25 10 L 35 15 L 30 25 L 20 20 Z" fill="#8BC34A"/>
+                <path d="M 10 30 L 20 35 L 15 45 L 5 40 Z" fill="#8BC34A"/>
+                <path d="M 25 30 L 35 35 L 30 45 L 20 40 Z" fill="#8BC34A"/>
+            </g>
+            <text x="50" y="60" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">Sayur</text>
+        </svg>
+
+        <p>Siapa yang tak kenal dengan kelezatan <span class="highlight">gorengan bakwan sayur</span>? Camilan renyah dengan cita rasa gurih ini telah menjadi primadona di berbagai kalangan, dari anak-anak hingga orang dewasa. Bakwan sayur, atau yang sering juga disebut 'bala-bala' di beberapa daerah, adalah perpaduan sempurna antara adonan tepung yang kriuk dan aneka sayuran segar yang kaya nutrisi. Kehadirannya selalu dinantikan, baik sebagai teman santai di sore hari, pelengkap makan nasi, maupun hidangan pembuka yang menggugah selera.</p>
+
+        <p>Proses pembuatan bakwan sayur terbilang cukup sederhana, namun membutuhkan sentuhan khusus agar menghasilkan tekstur yang renyah di luar dan lembut di dalam. Kunci utamanya terletak pada pemilihan bahan dan teknik menggoreng yang tepat. Dengan bahan-bahan yang mudah ditemukan di pasar tradisional maupun supermarket, siapa pun bisa mencoba membuatnya di rumah.</p>
+
+        <h2>Komponen Utama Bakwan Sayur yang Menggugah Selera</h2>
+
+        <p>Keistimewaan bakwan sayur terletak pada kekayaan isian sayurannya. Umumnya, jenis sayuran yang digunakan cukup beragam, memberikan warna, tekstur, dan rasa yang khas. Beberapa sayuran favorit yang sering menjadi bintang dalam adonan bakwan antara lain:</p>
+
+        <ul class="ingredients-list">
+            <li><strong>Wortel:</strong> Memberikan warna oranye yang menarik, rasa manis alami, dan tekstur yang sedikit renyah saat digigit. Irisan wortel yang halus menambah estetika bakwan.</li>
+            <li><strong>Kol/Kubis:</strong> Memberikan rasa sedikit pahit yang menyeimbangkan rasa manis wortel, serta tekstur yang empuk namun tetap memberikan sensasi gigitan.</li>
+            <li><strong>Tauge:</strong> Memberikan kontribusi tekstur yang renyah dan sedikit rasa unik yang menyegarkan.</li>
+            <li><strong>Daun Bawang:</strong> Menambah aroma harum yang khas dan sentuhan rasa gurih yang lebih dalam pada adonan.</li>
+            <li><strong>Buncis:</strong> Memberikan warna hijau yang cantik dan tekstur yang sedikit kenyal.</li>
+        </ul>
+
+        <p>Selain sayuran, adonan tepung juga menjadi elemen penting. Campuran tepung terigu, sedikit tepung beras (untuk menambah kerenyahan), air, bumbu halus seperti bawang putih, merica, ketumbar, garam, dan penyedap rasa (jika digunakan) menjadi fondasi utama bakwan. Beberapa orang menambahkan sedikit kunyit bubuk untuk memberikan warna kuning keemasan yang lebih menarik pada adonan.</p>
+
+        <div class="recipe-card">
+            <h3>Tips Membuat Bakwan Sayur Renyah Tahan Lama</h3>
+            <ul class="steps-list">
+                <li><strong>Adonan Jangan Terlalu Kental atau Cair:</strong> Konsistensi adonan yang pas akan menghasilkan bakwan yang tidak bantat dan tetap renyah.</li>
+                <li><strong>Gunakan Tepung Beras:</strong> Sedikit tambahan tepung beras pada adonan tepung terigu akan sangat membantu menciptakan tekstur yang lebih renyah.</li>
+                <li><strong>Suhu Minyak yang Tepat:</strong> Pastikan minyak goreng sudah benar-benar panas sebelum memasukkan adonan bakwan.</li>
+                <li><strong>Jangan Terlalu Banyak Memasukkan Bakwan Sekaligus:</strong> Menggoreng dalam jumlah banyak sekaligus dapat menurunkan suhu minyak, membuat bakwan menyerap banyak minyak dan menjadi lembek.</li>
+                <li><strong>Balik Saat Tepat:</strong> Goreng hingga satu sisi berwarna keemasan sebelum dibalik agar matang merata dan tidak gosong.</li>
+                <li><strong>Tiriskan dengan Baik:</strong> Gunakan saringan atau tisu dapur untuk menyerap kelebihan minyak agar bakwan tetap renyah.</li>
+            </ul>
+        </div>
+
+        <p>Setiap daerah mungkin memiliki variasi dalam resep bakwan sayurnya, namun esensi kelezatan dan kenikmatannya tetap sama. Kehadiran <span class="highlight">gorengan bakwan sayur</span> selalu berhasil membawa keceriaan di setiap gigitannya. Camilan ini cocok dinikmati kapan saja dan di mana saja, menjadi simbol kehangatan dan kebersamaan dalam budaya kuliner Indonesia.</p>
+
+        <p>Dengan kaya akan serat dari sayuran dan karbohidrat dari tepung, bakwan sayur tidak hanya sekadar camilan pengisi perut, tetapi juga bisa menjadi alternatif lauk yang nikmat. Aroma gurihnya yang khas saat digoreng pun selalu berhasil memanggil siapa saja untuk segera mencicipinya. Jadi, jika Anda sedang mencari camilan yang mudah dibuat, lezat, dan disukai banyak orang, bakwan sayur adalah pilihan yang tepat!</p>
+
+    </div>
+
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bakwan-indomie-goreng">Bakwan Indomie Goreng</a></li>
+<li><a href="/harga-bakpia-25-di-pabriknya">Harga Bakpia 25 Di Pabriknya</a></li>
+<li><a href="/resep-dan-cara-membuat-perkedel-jagung">Resep Dan Cara Membuat Perkedel Jagung</a></li>
+<li><a href="/resep-kue-bawang-jagung">Resep Kue Bawang Jagung</a></li>
+<li><a href="/bakpao-anti-kempes">Bakpao Anti Kempes</a></li>
+<li><a href="/membuat-bakwan-jagung-renyah-dan-enak">Membuat Bakwan Jagung Renyah Dan Enak</a></li>
+<li><a href="/bakung-madonna">Bakung Madonna</a></li>
+<li><a href="/bakpao-keriput-karena">Bakpao Keriput Karena</a></li>
+<li><a href="/resep-bakwan-goreng-bulat">Resep Bakwan Goreng Bulat</a></li>
+<li><a href="/harga-pia-ajik">Harga Pia Ajik</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

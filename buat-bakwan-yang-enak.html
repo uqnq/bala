@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Bakwan yang Enak, Dijamin Nagih!</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna sejuk cerah biru muda */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        h1, h2 {
+            color: #00796b; /* Warna sejuk hijau kebiruan */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 {
+            font-size: 1.6em;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            color: #009688; /* Warna hijau kebiruan yang lebih cerah */
+            font-weight: bold;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-steps {
+            border-left: 4px solid #80cbc4; /* Garis pemisah resep warna sejuk */
+            padding-left: 15px;
+        }
+        .recipe-steps h3 {
+            color: #00796b;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <!-- SVG for a delicious bakwan -->
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Base of the bakwan -->
+                <path d="M50 150 Q 100 50 200 50 T 350 150 Q 300 250 200 250 T 50 150 Z" fill="#fbc02d" stroke="#e65100" stroke-width="4"/>
+                <!-- Veggies inside -->
+                <circle cx="100" cy="100" r="10" fill="#8bc34a"/>
+                <circle cx="150" cy="80" r="8" fill="#8bc34a"/>
+                <circle cx="250" cy="90" r="12" fill="#8bc34a"/>
+                <circle cx="300" cy="120" r="10" fill="#8bc34a"/>
+                <circle cx="80" cy="180" r="9" fill="#8bc34a"/>
+                <circle cx="130" cy="200" r="11" fill="#8bc34a"/>
+                <circle cx="270" cy="190" r="10" fill="#8bc34a"/>
+                <circle cx="320" cy="170" r="8" fill="#8bc34a"/>
+                <!-- Crispy edges -->
+                <path d="M40 140 Q 30 120 50 110 T 80 120 T 120 130 T 160 135 T 200 135 T 240 130 T 280 120 T 320 110 T 360 120 T 350 140 Q 300 250 200 250 T 50 150 Z" fill="none" stroke="#e65100" stroke-width="3"/>
+                <!-- Some sparkle/shine -->
+                <circle cx="200" cy="70" r="3" fill="#fff9c4"/>
+                <circle cx="150" cy="120" r="2" fill="#fff9c4"/>
+                <circle cx="250" cy="170" r="3" fill="#fff9c4"/>
+                <circle cx="100" cy="170" r="2" fill="#fff9c4"/>
+                <!-- Caption for the SVG -->
+                <text x="200" y="290" font-family="Arial, sans-serif" font-size="14" fill="#00796b" text-anchor="middle">Bakwan Goreng Lezat</text>
+            </svg>
+        </div>
+
+        <h1>Buat Bakwan yang Enak, Dijamin Nagih!</h1>
+        <p>Siapa yang tidak suka bakwan? Camilan gurih renyah ini adalah favorit banyak orang, cocok dinikmati kapan saja, baik saat santai di sore hari, teman ngobrol, maupun pelengkap makan. Membuat bakwan yang enak dan renyah ternyata tidak sesulit yang dibayangkan. Kuncinya ada pada pemilihan bahan dan teknik menggoreng yang tepat. Mari kita simak cara membuat bakwan yang super lezat.</p>
+
+        <h2>Rahasia Bakwan Renyah dan Gurih</h2>
+        <p>Untuk mendapatkan bakwan yang sempurna, ada beberapa hal yang perlu diperhatikan:</p>
+        <ul>
+            <li><span class="highlight">Konsistensi Adonan</span>: Adonan tidak boleh terlalu encer agar tidak menyerap banyak minyak, namun juga tidak terlalu kental agar tidak keras.</li>
+            <li><span class="highlight">Sayuran Segar</span>: Gunakan sayuran yang masih segar untuk rasa terbaik. Iris tipis agar matang merata.</li>
+            <li><span class="highlight">Tepung yang Tepat</span>: Kombinasi tepung terigu dan tepung beras memberikan tekstur yang renyah.</li>
+            <li><span class="highlight">Minyak Panas</span>: Goreng bakwan dalam minyak yang benar-benar panas. Ini kunci agar bakwan tidak bantat dan menyerap banyak minyak.</li>
+            <li><span class="highlight">Jangan Terlalu Penuh</span>: Hindari mengisi wajan terlalu penuh saat menggoreng agar suhu minyak tidak turun drastis.</li>
+        </ul>
+
+        <div class="recipe-steps">
+            <h2>Resep Bakwan Sayur Sederhana</h2>
+            <p>Berikut adalah resep dasar yang bisa Anda kreasikan sesuai selera:</p>
+
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>200 gram tepung terigu serbaguna</li>
+                <li>50 gram tepung beras</li>
+                <li>1 sendok teh garam</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>1/4 sendok teh kaldu bubuk (opsional)</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>1 buah wortel ukuran sedang, iris korek api tipis</li>
+                <li>100 gram kol, iris tipis</li>
+                <li>1 buah jagung manis pipil (opsional)</li>
+                <li>Air secukupnya (sekitar 200-250 ml)</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+
+            <h3>Cara Membuat:</h3>
+            <ol>
+                <li>Dalam mangkuk besar, campurkan tepung terigu, tepung beras, garam, merica bubuk, dan kaldu bubuk (jika menggunakan). Aduk rata.</li>
+                <li>Masukkan irisan daun bawang, wortel, kol, dan jagung pipil ke dalam campuran tepung. Aduk hingga sayuran terbalut rata dengan tepung.</li>
+                <li>Tuang air sedikit demi sedikit sambil terus diaduk hingga mendapatkan kekentalan adonan yang pas. Adonan sebaiknya cukup kental untuk melapisi sayuran, tidak terlalu cair.</li>
+                <li>Panaskan minyak goreng dalam jumlah banyak di wajan dengan api sedang hingga benar-benar panas. Tes dengan sedikit adonan, jika langsung mengapung dan berbuih, berarti minyak sudah siap.</li>
+                <li>Ambil satu sendok sayur adonan, masukkan ke dalam minyak panas. Lakukan hingga wajan terisi secukupnya, jangan terlalu padat.</li>
+                <li>Goreng bakwan hingga berwarna kuning keemasan dan matang merata di kedua sisinya. Balik sesekali agar matang sempurna.</li>
+                <li>Angkat bakwan dan tiriskan di atas rak kawat atau tisu dapur untuk menyerap kelebihan minyak.</li>
+                <li>Sajikan bakwan selagi hangat dengan cabai rawit atau saus sambal favorit Anda.</li>
+            </ol>
+        </div>
+
+        <h2>Variasi Bakwan</h2>
+        <p>Jangan ragu untuk berkreasi! Anda bisa menambahkan bahan lain seperti udang cincang, udang rebon, tempe yang dipotong kecil-kecil, atau bahkan irisan jamur. Setiap variasi akan memberikan rasa yang unik dan lezat. Kunci utamanya tetap pada adonan yang pas dan penggorengan yang sempurna.</p>
+        <p>Dengan resep dan tips di atas, kini Anda siap untuk <span class="highlight">buat bakwan yang enak</span> dan memanjakan lidah Anda serta keluarga. Selamat mencoba!</p>
+    </div>
+
+    <footer>
+        <p>&copy; Hak Cipta Dilindungi</p>
+    </footer>
+
+<style>
+.related-posts {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.related-posts li {
+  margin: 6px 0;
+}
+</style>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/bumbu-bakwan-udang-crispy">Bumbu Bakwan Udang Crispy</a></li>
+<li><a href="/bakwan-kelapa">Bakwan Kelapa</a></li>
+<li><a href="/cara-membuat-ote-ote-sederhana">Cara Membuat Ote Ote Sederhana</a></li>
+<li><a href="/anaerob-obligat">Anaerob Obligat</a></li>
+<li><a href="/nitrosomonas-sp-adalah">Nitrosomonas Sp Adalah</a></li>
+<li><a href="/bakso-beranak-jakober">Bakso Beranak Jakober</a></li>
+<li><a href="/bikin-dadar-jagung-yang-enak">Bikin Dadar Jagung Yang Enak</a></li>
+<li><a href="/bakso-tumpeng-mercon-adzakwan">Bakso Tumpeng Mercon Adzakwan</a></li>
+<li><a href="/resep-bumbu-pentol-mercon">Resep Bumbu Pentol Mercon</a></li>
+<li><a href="/resep-makanan-bakwan-jagung">Resep Makanan Bakwan Jagung</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>
